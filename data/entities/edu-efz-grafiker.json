@@ -1,0 +1,55 @@
+{
+  "id": "edu-efz-grafiker",
+  "kind": "education",
+  "route": "vocational",
+  "eduType": "EFZ",
+  "name": {
+    "en": "Graphic designer EFZ",
+    "de": "Grafiker/in EFZ",
+    "fr": null,
+    "it": null
+  },
+  "codes": {
+    "isco08": "2166"
+  },
+  "sector": "Design / communication",
+  "refs": {
+    "vetName": "Grafiker/in EFZ",
+    "qualLevel": "apprenticeship",
+    "besta": "68-75",
+    "nogaSection": "M"
+  },
+  "pathway": [
+    {
+      "label": "Grafiker/in EFZ",
+      "years": 4,
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/grafiker-in-efz",
+      "confidence": "measured"
+    }
+  ],
+  "leadsTo": [
+    "occ-grafiker"
+  ],
+  "trainedVia": [],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "entryAccess": {
+      "value": 2,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/grafiker-in-efz",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "Few training places; many offered in full-time design schools with entrance exams."
+    }
+  },
+  "meta": {
+    "addedBy": "initial-dataset",
+    "reviewed": "2026-11-03"
+  }
+}

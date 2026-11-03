@@ -1,0 +1,55 @@
+{
+  "id": "edu-efz-koch",
+  "kind": "education",
+  "route": "vocational",
+  "eduType": "EFZ",
+  "name": {
+    "en": "Cook EFZ",
+    "de": "Köchin/Koch EFZ",
+    "fr": null,
+    "it": null
+  },
+  "codes": {
+    "isco08": "5120"
+  },
+  "sector": "Hospitality",
+  "refs": {
+    "vetName": "Koch/Köchin EFZ",
+    "qualLevel": "apprenticeship",
+    "besta": "55-56",
+    "nogaSection": "I"
+  },
+  "pathway": [
+    {
+      "label": "Köchin/Koch EFZ",
+      "years": 3,
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/koch-koechin-efz",
+      "confidence": "measured"
+    }
+  ],
+  "leadsTo": [
+    "occ-koch"
+  ],
+  "trainedVia": [],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "entryAccess": {
+      "value": 1,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/koch-koechin-efz",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "Apprenticeship contract required."
+    }
+  },
+  "meta": {
+    "addedBy": "initial-dataset",
+    "reviewed": "2026-11-03"
+  }
+}

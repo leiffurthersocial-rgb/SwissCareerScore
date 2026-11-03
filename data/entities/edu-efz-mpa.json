@@ -1,0 +1,55 @@
+{
+  "id": "edu-efz-mpa",
+  "kind": "education",
+  "route": "vocational",
+  "eduType": "EFZ",
+  "name": {
+    "en": "Medical practice assistant EFZ",
+    "de": "Medizinische/r Praxisassistent/in EFZ",
+    "fr": null,
+    "it": null
+  },
+  "codes": {
+    "isco08": "3256"
+  },
+  "sector": "Health",
+  "refs": {
+    "vetName": "Medizinische/r Praxisassistent/in EFZ",
+    "qualLevel": "apprenticeship",
+    "besta": "86-88",
+    "nogaSection": "Q"
+  },
+  "pathway": [
+    {
+      "label": "Medizinische/r Praxisassistent/in EFZ",
+      "years": 3,
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/medizinische-r-praxisassistent-in-efz",
+      "confidence": "measured"
+    }
+  ],
+  "leadsTo": [
+    "occ-mpa"
+  ],
+  "trainedVia": [],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "entryAccess": {
+      "value": 1,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/medizinische-r-praxisassistent-in-efz",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "Apprenticeship contract required."
+    }
+  },
+  "meta": {
+    "addedBy": "initial-dataset",
+    "reviewed": "2026-11-03"
+  }
+}

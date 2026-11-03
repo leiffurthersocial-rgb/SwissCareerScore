@@ -1,0 +1,57 @@
+{
+  "id": "occ-architekt",
+  "kind": "occupation",
+  "route": "academic",
+  "name": {
+    "en": "Architect",
+    "de": "Architekt/in",
+    "fr": null,
+    "it": null
+  },
+  "codes": {
+    "isco08": "2161",
+    "chIsco19": "21610"
+  },
+  "sector": "Construction / engineering",
+  "refs": {
+    "qualLevel": "higherEducation",
+    "nogaSection": "M",
+    "besta": "68-75"
+  },
+  "pathway": [],
+  "leadsTo": [],
+  "trainedVia": [
+    "edu-fh-architektur"
+  ],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "mobility": {
+      "value": 7,
+      "unit": "rubric 0–9",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#11-international-mobility",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "recognition 3/3, language independence 2/3, transferability 2/3. Architects benefit from automatic recognition (EU Directive 2005/36); planning law national."
+    },
+    "regionalUbiquity": {
+      "value": 2,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#12-regional-availability",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "Offices in cities and regional centres."
+    }
+  },
+  "meta": {
+    "addedBy": "initial-dataset",
+    "reviewed": "2026-11-03"
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "id": "edu-efz-logistiker",
+  "kind": "education",
+  "route": "vocational",
+  "eduType": "EFZ",
+  "name": {
+    "en": "Logistics specialist EFZ",
+    "de": "Logistiker/in EFZ",
+    "fr": null,
+    "it": null
+  },
+  "codes": {
+    "isco08": "4321"
+  },
+  "sector": "Logistics",
+  "refs": {
+    "vetName": "Logistiker/in EFZ",
+    "qualLevel": "apprenticeship",
+    "besta": "49-53",
+    "nogaSection": "H"
+  },
+  "pathway": [
+    {
+      "label": "Logistiker/in EFZ",
+      "years": 3,
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/logistiker-in-efz",
+      "confidence": "measured"
+    }
+  ],
+  "leadsTo": [
+    "occ-logistiker"
+  ],
+  "trainedVia": [],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "entryAccess": {
+      "value": 1,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/logistiker-in-efz",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "Apprenticeship contract required."
+    }
+  },
+  "meta": {
+    "addedBy": "initial-dataset",
+    "reviewed": "2026-11-03"
+  }
+}

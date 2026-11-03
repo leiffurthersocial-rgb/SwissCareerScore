@@ -1,0 +1,70 @@
+{
+  "id": "edu-uh-medizin",
+  "kind": "education",
+  "route": "academic",
+  "eduType": "UH-MMed",
+  "name": {
+    "en": "Master of Medicine (UH)",
+    "de": "Master Humanmedizin (UH)",
+    "fr": null,
+    "it": null
+  },
+  "codes": {
+    "isco08": "2211"
+  },
+  "sector": "Health",
+  "refs": {
+    "studyField": "UH:Medizin und Pharmazie",
+    "gradIncome": "uh:Master:Medizin und Pharmazie",
+    "qualLevel": "higherEducation",
+    "besta": "86-88",
+    "nogaSection": "Q"
+  },
+  "pathway": [
+    {
+      "label": "Gymnasiale Maturität",
+      "years": 4,
+      "sourceUrl": "https://www.berufsberatung.ch/de/bildungssystem/d/gymnasiale-maturitaetsschulen",
+      "confidence": "estimated",
+      "note": "berufsberatung.ch states 3–6 years depending on canton (partly overlapping compulsory school); 4 years after compulsory school assumed."
+    },
+    {
+      "label": "Bachelor Humanmedizin",
+      "years": 3,
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/arzt-aerztin",
+      "confidence": "measured"
+    },
+    {
+      "label": "Master Humanmedizin",
+      "years": 3,
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/arzt-aerztin",
+      "confidence": "measured",
+      "note": "Specialist training (5–6 years after the federal exam) not included."
+    }
+  ],
+  "leadsTo": [
+    "occ-arzt"
+  ],
+  "trainedVia": [],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "entryAccess": {
+      "value": 3,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://www.berufsberatung.ch/de/studienrichtungen/humanmedizin",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "Numerus clausus: aptitude test (EMS/Eignungstest) in German- and Italian-speaking universities, selection in first year in Romandie."
+    }
+  },
+  "meta": {
+    "addedBy": "initial-dataset",
+    "reviewed": "2026-11-03"
+  }
+}

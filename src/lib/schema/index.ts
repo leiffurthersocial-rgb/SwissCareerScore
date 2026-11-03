@@ -108,19 +108,55 @@ export const EntityFile = z
         isco08: z.string().regex(/^\d{4}$/).optional(),
         /** CH-ISCO-19 5-digit Berufsart (SECO/AVAM). */
         chIsco19: z.string().regex(/^\d{4,5}$/).optional(),
-        /** NOGA 2008 section letter of the dominant employing sector. */
-        noga: z.string().regex(/^[A-U]$/).optional(),
-        /** BFS higher-education field group / education field code where relevant. */
-        field: z.string().optional(),
       })
       .strict(),
     sector: z.string().min(1),
+    /**
+     * Keys used by the build step to join ingested statistics. Every key is optional; a missing
+     * key means "no statistic available" and yields a null datapoint, never a guess.
+     */
+    refs: z
+      .object({
+        /** BESTA economic-division code used for recruitment difficulty, e.g. "86-88". */
+        besta: z.string().optional(),
+        /** Qualification level of the job / path for BESTA recruitment difficulty. */
+        qualLevel: z.enum(["apprenticeship", "higherVet", "higherEducation"]).optional(),
+        /** NOGA section letter(s) for SAKE tables by economic section (telework, hours). */
+        nogaSection: z.string().regex(/^[A-U]$/).optional(),
+        /** Exact occupation name in BFS LABB certification table (VET only). */
+        vetName: z.string().optional(),
+        /** BFS study-success field: "UH:<Fachbereichsgruppe>" or "FH:<Fachbereich>". */
+        studyField: z.string().optional(),
+        /** BFS graduate-survey income field: "uh:Master:<field>" / "fh:Bachelor:<field>". */
+        gradIncome: z.string().optional(),
+        /** LSE education category code (PXWeb px-x-0304010000_202) for paths without a target occupation. */
+        lseEducation: z.string().optional(),
+      })
+      .strict()
+      .default({}),
+    /**
+     * Shortest standard full-time route from the end of compulsory school, stage by stage.
+     * Each stage cites the page stating its official minimum duration.
+     */
+    pathway: z
+      .array(
+        z
+          .object({
+            label: z.string(),
+            years: z.number().positive().max(10),
+            sourceUrl: z.url(),
+            confidence: Confidence.default("measured"),
+            note: z.string().optional(),
+          })
+          .strict(),
+      )
+      .default([]),
     /** education → occupations it typically leads to; occupation → typical training paths. */
     leadsTo: z.array(z.string()).default([]),
     trainedVia: z.array(z.string()).default([]),
     /** Language regions where the training is offered / the occupation is broadly practised. */
     languageRegions: z.array(LanguageRegion).min(1),
-    /** Official training duration and prerequisites, for the time-to-qualify dimension. */
+    /** Hand-curated datapoints (rubric scores etc.). Ingested statistics are joined at build time. */
     raw: RawInputs.default({}),
     meta: z
       .object({

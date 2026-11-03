@@ -1,0 +1,57 @@
+{
+  "id": "occ-polymechaniker",
+  "kind": "occupation",
+  "route": "vocational",
+  "name": {
+    "en": "Polymechanic",
+    "de": "Polymechaniker/in",
+    "fr": null,
+    "it": null
+  },
+  "codes": {
+    "isco08": "7223",
+    "chIsco19": "72230"
+  },
+  "sector": "Industry (MEM)",
+  "refs": {
+    "qualLevel": "apprenticeship",
+    "nogaSection": "C",
+    "besta": "28"
+  },
+  "pathway": [],
+  "leadsTo": [],
+  "trainedVia": [
+    "edu-efz-polymechaniker"
+  ],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "mobility": {
+      "value": 6,
+      "unit": "rubric 0–9",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#11-international-mobility",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "recognition 1/3, language independence 3/3, transferability 2/3. EFZ = EQF 4; technical work largely language-independent; MEM skills in demand abroad."
+    },
+    "regionalUbiquity": {
+      "value": 2,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#12-regional-availability",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "Industrial employers across the Mittelland and Jura arc, fewer in alpine regions."
+    }
+  },
+  "meta": {
+    "addedBy": "initial-dataset",
+    "reviewed": "2026-11-03"
+  }
+}

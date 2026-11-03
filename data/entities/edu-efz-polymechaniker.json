@@ -1,0 +1,55 @@
+{
+  "id": "edu-efz-polymechaniker",
+  "kind": "education",
+  "route": "vocational",
+  "eduType": "EFZ",
+  "name": {
+    "en": "Polymechanic EFZ",
+    "de": "Polymechaniker/in EFZ",
+    "fr": null,
+    "it": null
+  },
+  "codes": {
+    "isco08": "7223"
+  },
+  "sector": "Industry (MEM)",
+  "refs": {
+    "vetName": "Polymechaniker/in EFZ",
+    "qualLevel": "apprenticeship",
+    "besta": "28",
+    "nogaSection": "C"
+  },
+  "pathway": [
+    {
+      "label": "Polymechaniker/in EFZ",
+      "years": 4,
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/polymechaniker-in-efz",
+      "confidence": "measured"
+    }
+  ],
+  "leadsTo": [
+    "occ-polymechaniker"
+  ],
+  "trainedVia": [],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "entryAccess": {
+      "value": 1,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/polymechaniker-in-efz",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "Apprenticeship contract required."
+    }
+  },
+  "meta": {
+    "addedBy": "initial-dataset",
+    "reviewed": "2026-11-03"
+  }
+}

@@ -1,0 +1,1641 @@
+{
+  "source": "bfs-lse-2024",
+  "table": "px-x-0304010000_205",
+  "year": 2024,
+  "unit": "CHF/month (gross, full-time equivalent)",
+  "note": "Grossregion = Schweiz, Geschlecht = Total, private and public sector combined.",
+  "groups": {
+    "1": {
+      "code": "1",
+      "label": "1 Führungskräfte",
+      "values": {
+        "Lebensalter - Total": {
+          "Zentralwert": 10208,
+          "P10": 5957,
+          "P25": 7667,
+          "P75": 13731,
+          "P90": 19237
+        },
+        "<=29 Jahre": {
+          "Zentralwert": 6505,
+          "P10": 4830,
+          "P25": 5490,
+          "P75": 7954,
+          "P90": 9927
+        },
+        "30-49 Jahre": {
+          "Zentralwert": 9887,
+          "P10": 6060,
+          "P25": 7608,
+          "P75": 12934,
+          "P90": 17796
+        },
+        "> =50 Jahre": {
+          "Zentralwert": 11344,
+          "P10": 6404,
+          "P25": 8500,
+          "P75": 15243,
+          "P90": 21536
+        }
+      }
+    },
+    "2": {
+      "code": "2",
+      "label": "2 Intellektuelle und wissenschaftliche Berufe",
+      "values": {
+        "Lebensalter - Total": {
+          "Zentralwert": 9027,
+          "P10": 6078,
+          "P25": 7345,
+          "P75": 11237,
+          "P90": 14121
+        },
+        "<=29 Jahre": {
+          "Zentralwert": 6783,
+          "P10": 4892,
+          "P25": 5836,
+          "P75": 7730,
+          "P90": 8824
+        },
+        "30-49 Jahre": {
+          "Zentralwert": 9125,
+          "P10": 6522,
+          "P25": 7654,
+          "P75": 11020,
+          "P90": 13849
+        },
+        "> =50 Jahre": {
+          "Zentralwert": 10681,
+          "P10": 7374,
+          "P25": 8801,
+          "P75": 12857,
+          "P90": 16617
+        }
+      }
+    },
+    "3": {
+      "code": "3",
+      "label": "3 Techniker und gleichrangige nichttechnische Berufe",
+      "values": {
+        "Lebensalter - Total": {
+          "Zentralwert": 7523,
+          "P10": 5199,
+          "P25": 6198,
+          "P75": 9224,
+          "P90": 11497
+        },
+        "<=29 Jahre": {
+          "Zentralwert": 5833,
+          "P10": 4567,
+          "P25": 5094,
+          "P75": 6823,
+          "P90": 7856
+        },
+        "30-49 Jahre": {
+          "Zentralwert": 7663,
+          "P10": 5532,
+          "P25": 6484,
+          "P75": 9251,
+          "P90": 11347
+        },
+        "> =50 Jahre": {
+          "Zentralwert": 8457,
+          "P10": 5994,
+          "P25": 7083,
+          "P75": 10355,
+          "P90": 12937
+        }
+      }
+    },
+    "4": {
+      "code": "4",
+      "label": "4 Bürokräfte und verwandte Berufe",
+      "values": {
+        "Lebensalter - Total": {
+          "Zentralwert": 6370,
+          "P10": 4667,
+          "P25": 5343,
+          "P75": 7587,
+          "P90": 9225
+        },
+        "<=29 Jahre": {
+          "Zentralwert": 5348,
+          "P10": 4375,
+          "P25": 4809,
+          "P75": 6022,
+          "P90": 6872
+        },
+        "30-49 Jahre": {
+          "Zentralwert": 6475,
+          "P10": 4744,
+          "P25": 5496,
+          "P75": 7613,
+          "P90": 9349
+        },
+        "> =50 Jahre": {
+          "Zentralwert": 7040,
+          "P10": 5054,
+          "P25": 6025,
+          "P75": 8242,
+          "P90": 10056
+        }
+      }
+    },
+    "5": {
+      "code": "5",
+      "label": "5 Dienstleistungsberufe und Verkäufer",
+      "values": {
+        "Lebensalter - Total": {
+          "Zentralwert": 5136,
+          "P10": 4083,
+          "P25": 4563,
+          "P75": 6140,
+          "P90": 7643
+        },
+        "<=29 Jahre": {
+          "Zentralwert": 4739,
+          "P10": 3893,
+          "P25": 4326,
+          "P75": 5279,
+          "P90": 6079
+        },
+        "30-49 Jahre": {
+          "Zentralwert": 5185,
+          "P10": 4108,
+          "P25": 4597,
+          "P75": 6253,
+          "P90": 7798
+        },
+        "> =50 Jahre": {
+          "Zentralwert": 5445,
+          "P10": 4293,
+          "P25": 4771,
+          "P75": 6667,
+          "P90": 8243
+        }
+      }
+    },
+    "6": {
+      "code": "6",
+      "label": "6 Fachkräfte in Land- und Forstwirtschaft und Fischerei",
+      "values": {
+        "Lebensalter - Total": {
+          "Zentralwert": 5670,
+          "P10": 4504,
+          "P25": 5040,
+          "P75": 6441,
+          "P90": 7522
+        },
+        "<=29 Jahre": {
+          "Zentralwert": 5190,
+          "P10": 4270,
+          "P25": 4737,
+          "P75": 5614,
+          "P90": 6083
+        },
+        "30-49 Jahre": {
+          "Zentralwert": 5873,
+          "P10": 4667,
+          "P25": 5239,
+          "P75": 6519,
+          "P90": 7427
+        },
+        "> =50 Jahre": {
+          "Zentralwert": 6237,
+          "P10": 4770,
+          "P25": 5432,
+          "P75": 7326,
+          "P90": 8543
+        }
+      }
+    },
+    "7": {
+      "code": "7",
+      "label": "7 Handwerks- und verwandte Berufe",
+      "values": {
+        "Lebensalter - Total": {
+          "Zentralwert": 6190,
+          "P10": 4791,
+          "P25": 5440,
+          "P75": 7044,
+          "P90": 8015
+        },
+        "<=29 Jahre": {
+          "Zentralwert": 5482,
+          "P10": 4497,
+          "P25": 4950,
+          "P75": 6055,
+          "P90": 6650
+        },
+        "30-49 Jahre": {
+          "Zentralwert": 6341,
+          "P10": 4968,
+          "P25": 5642,
+          "P75": 7105,
+          "P90": 7994
+        },
+        "> =50 Jahre": {
+          "Zentralwert": 6705,
+          "P10": 5193,
+          "P25": 5912,
+          "P75": 7618,
+          "P90": 8662
+        }
+      }
+    },
+    "8": {
+      "code": "8",
+      "label": "8 Bediener von Anlagen und Maschinen und Montageberufe",
+      "values": {
+        "Lebensalter - Total": {
+          "Zentralwert": 5897,
+          "P10": 4356,
+          "P25": 5054,
+          "P75": 6802,
+          "P90": 7755
+        },
+        "<=29 Jahre": {
+          "Zentralwert": 5305,
+          "P10": 4120,
+          "P25": 4643,
+          "P75": 6024,
+          "P90": 6777
+        },
+        "30-49 Jahre": {
+          "Zentralwert": 5880,
+          "P10": 4381,
+          "P25": 5065,
+          "P75": 6738,
+          "P90": 7654
+        },
+        "> =50 Jahre": {
+          "Zentralwert": 6205,
+          "P10": 4529,
+          "P25": 5281,
+          "P75": 7124,
+          "P90": 8164
+        }
+      }
+    },
+    "9": {
+      "code": "9",
+      "label": "9 Hilfsarbeitskräfte",
+      "values": {
+        "Lebensalter - Total": {
+          "Zentralwert": 5120,
+          "P10": 3919,
+          "P25": 4399,
+          "P75": 5982,
+          "P90": 6866
+        },
+        "<=29 Jahre": {
+          "Zentralwert": 4832,
+          "P10": 3817,
+          "P25": 4273,
+          "P75": 5464,
+          "P90": 6144
+        },
+        "30-49 Jahre": {
+          "Zentralwert": 5112,
+          "P10": 3917,
+          "P25": 4389,
+          "P75": 5965,
+          "P90": 6811
+        },
+        "> =50 Jahre": {
+          "Zentralwert": 5309,
+          "P10": 3952,
+          "P25": 4506,
+          "P75": 6255,
+          "P90": 7178
+        }
+      }
+    },
+    "11": {
+      "code": "11",
+      "label": "11 Geschäftsführer, Vorstände, leitende Verwaltungsbedienstete und Angehörige gesetzgebender Körperschaften",
+      "values": {
+        "Lebensalter - Total": {
+          "Zentralwert": 10831,
+          "P10": 5855,
+          "P25": 7736,
+          "P75": 15276,
+          "P90": 21472
+        },
+        "<=29 Jahre": {
+          "Zentralwert": 6505,
+          "P10": 4785,
+          "P25": 5376,
+          "P75": 8195,
+          "P90": 10320
+        },
+        "30-49 Jahre": {
+          "Zentralwert": 10277,
+          "P10": 5887,
+          "P25": 7500,
+          "P75": 14035,
+          "P90": 19948
+        },
+        "> =50 Jahre": {
+          "Zentralwert": 11958,
+          "P10": 6156,
+          "P25": 8510,
+          "P75": 16651,
+          "P90": 23745
+        }
+      }
+    },
+    "12": {
+      "code": "12",
+      "label": "12 Führungskräfte im kaufmännischen Bereich",
+      "values": {
+        "Lebensalter - Total": {
+          "Zentralwert": 10375,
+          "P10": 6258,
+          "P25": 7986,
+          "P75": 13606,
+          "P90": 18841
+        },
+        "<=29 Jahre": {
+          "Zentralwert": 6664,
+          "P10": 4973,
+          "P25": 5606,
+          "P75": 8000,
+          "P90": 9855
+        },
+        "30-49 Jahre": {
+          "Zentralwert": 10165,
+          "P10": 6500,
+          "P25": 8046,
+          "P75": 13136,
+          "P90": 18145
+        },
+        "> =50 Jahre": {
+          "Zentralwert": 11485,
+          "P10": 7040,
+          "P25": 8999,
+          "P75": 14904,
+          "P90": 20975
+        }
+      }
+    },
+    "13": {
+      "code": "13",
+      "label": "13 Führungskräfte in der Produktion und bei spezialisierten Dienstleistungen",
+      "values": {
+        "Lebensalter - Total": {
+          "Zentralwert": 9594,
+          "P10": 6257,
+          "P25": 7644,
+          "P75": 12355,
+          "P90": 16019
+        },
+        "<=29 Jahre": {
+          "Zentralwert": 6581,
+          "P10": 4990,
+          "P25": 5655,
+          "P75": 7667,
+          "P90": 9112
+        },
+        "30-49 Jahre": {
+          "Zentralwert": 9407,
+          "P10": 6288,
+          "P25": 7580,
+          "P75": 11856,
+          "P90": 15109
+        },
+        "> =50 Jahre": {
+          "Zentralwert": 10403,
+          "P10": 6858,
+          "P25": 8322,
+          "P75": 13328,
+          "P90": 17749
+        }
+      }
+    },
+    "14": {
+      "code": "14",
+      "label": "14 Führungskräfte in Hotels und Restaurants, im Handel und in der Erbringung sonstiger Dienstleistungen",
+      "values": {
+        "Lebensalter - Total": {
+          "Zentralwert": 6723,
+          "P10": 4372,
+          "P25": 5441,
+          "P75": 8584,
+          "P90": 10411
+        },
+        "<=29 Jahre": {
+          "Zentralwert": 5636,
+          "P10": 3920,
+          "P25": 4646,
+          "P75": 6926,
+          "P90": 9730
+        },
+        "30-49 Jahre": {
+          "Zentralwert": 6739,
+          "P10": 4432,
+          "P25": 5524,
+          "P75": 8361,
+          "P90": 9851
+        },
+        "> =50 Jahre": {
+          "Zentralwert": 7002,
+          "P10": 4444,
+          "P25": 5613,
+          "P75": 8768,
+          "P90": 11889
+        }
+      }
+    },
+    "21": {
+      "code": "21",
+      "label": "21 Naturwissenschaftler, Mathematiker und Ingenieure",
+      "values": {
+        "Lebensalter - Total": {
+          "Zentralwert": 8730,
+          "P10": 5985,
+          "P25": 7194,
+          "P75": 10720,
+          "P90": 13151
+        },
+        "<=29 Jahre": {
+          "Zentralwert": 6734,
+          "P10": 4941,
+          "P25": 5751,
+          "P75": 7600,
+          "P90": 8544
+        },
+        "30-49 Jahre": {
+          "Zentralwert": 8801,
+          "P10": 6349,
+          "P25": 7492,
+          "P75": 10476,
+          "P90": 12695
+        },
+        "> =50 Jahre": {
+          "Zentralwert": 10670,
+          "P10": 7600,
+          "P25": 8934,
+          "P75": 12718,
+          "P90": 15431
+        }
+      }
+    },
+    "22": {
+      "code": "22",
+      "label": "22 Spezialisten in Gesundheitsberufen",
+      "values": {
+        "Lebensalter - Total": {
+          "Zentralwert": 8000,
+          "P10": 6024,
+          "P25": 6862,
+          "P75": 9722,
+          "P90": 14238
+        },
+        "<=29 Jahre": {
+          "Zentralwert": 6642,
+          "P10": 5555,
+          "P25": 6088,
+          "P75": 7297,
+          "P90": 8112
+        },
+        "30-49 Jahre": {
+          "Zentralwert": 8152,
+          "P10": 6308,
+          "P25": 7138,
+          "P75": 9919,
+          "P90": 13820
+        },
+        "> =50 Jahre": {
+          "Zentralwert": 8968,
+          "P10": 6658,
+          "P25": 7826,
+          "P75": 11521,
+          "P90": 18995
+        }
+      }
+    },
+    "23": {
+      "code": "23",
+      "label": "23 Lehrkräfte",
+      "values": {
+        "Lebensalter - Total": {
+          "Zentralwert": 9697,
+          "P10": 6740,
+          "P25": 8117,
+          "P75": 11302,
+          "P90": 12965
+        },
+        "<=29 Jahre": {
+          "Zentralwert": 7316,
+          "P10": 5395,
+          "P25": 6634,
+          "P75": 8232,
+          "P90": 8853
+        },
+        "30-49 Jahre": {
+          "Zentralwert": 9462,
+          "P10": 6967,
+          "P25": 8222,
+          "P75": 10738,
+          "P90": 12071
+        },
+        "> =50 Jahre": {
+          "Zentralwert": 11048,
+          "P10": 8083,
+          "P25": 9713,
+          "P75": 12415,
+          "P90": 14067
+        }
+      }
+    },
+    "24": {
+      "code": "24",
+      "label": "24 Betriebswirte und vergleichbare Spezialisten",
+      "values": {
+        "Lebensalter - Total": {
+          "Zentralwert": 9509,
+          "P10": 6030,
+          "P25": 7447,
+          "P75": 12568,
+          "P90": 17135
+        },
+        "<=29 Jahre": {
+          "Zentralwert": 6706,
+          "P10": 4867,
+          "P25": 5654,
+          "P75": 7935,
+          "P90": 9409
+        },
+        "30-49 Jahre": {
+          "Zentralwert": 9707,
+          "P10": 6552,
+          "P25": 7793,
+          "P75": 12500,
+          "P90": 16637
+        },
+        "> =50 Jahre": {
+          "Zentralwert": 11215,
+          "P10": 7255,
+          "P25": 8759,
+          "P75": 14924,
+          "P90": 21662
+        }
+      }
+    },
+    "25": {
+      "code": "25",
+      "label": "25 Spezialisten in der Informations- und Kommunikationstechnologie",
+      "values": {
+        "Lebensalter - Total": {
+          "Zentralwert": 9949,
+          "P10": 6592,
+          "P25": 8079,
+          "P75": 11957,
+          "P90": 15079
+        },
+        "<=29 Jahre": {
+          "Zentralwert": 7200,
+          "P10": 5300,
+          "P25": 6098,
+          "P75": 8394,
+          "P90": 10088
+        },
+        "30-49 Jahre": {
+          "Zentralwert": 9995,
+          "P10": 7143,
+          "P25": 8455,
+          "P75": 11869,
+          "P90": 15697
+        },
+        "> =50 Jahre": {
+          "Zentralwert": 11349,
+          "P10": 8378,
+          "P25": 9837,
+          "P75": 12973,
+          "P90": 15420
+        }
+      }
+    },
+    "26": {
+      "code": "26",
+      "label": "26 Juristen, Sozialwissenschaftler und Kulturberufe",
+      "values": {
+        "Lebensalter - Total": {
+          "Zentralwert": 9122,
+          "P10": 6103,
+          "P25": 7501,
+          "P75": 11412,
+          "P90": 14750
+        },
+        "<=29 Jahre": {
+          "Zentralwert": 6707,
+          "P10": 4683,
+          "P25": 5619,
+          "P75": 7794,
+          "P90": 8928
+        },
+        "30-49 Jahre": {
+          "Zentralwert": 9064,
+          "P10": 6458,
+          "P25": 7684,
+          "P75": 11190,
+          "P90": 14462
+        },
+        "> =50 Jahre": {
+          "Zentralwert": 10326,
+          "P10": 7052,
+          "P25": 8603,
+          "P75": 12579,
+          "P90": 16850
+        }
+      }
+    },
+    "31": {
+      "code": "31",
+      "label": "31 Ingenieurtechnische und vergleichbare Fachkräfte",
+      "values": {
+        "Lebensalter - Total": {
+          "Zentralwert": 7507,
+          "P10": 5450,
+          "P25": 6407,
+          "P75": 8783,
+          "P90": 10497
+        },
+        "<=29 Jahre": {
+          "Zentralwert": 6088,
+          "P10": 4818,
+          "P25": 5340,
+          "P75": 6894,
+          "P90": 7766
+        },
+        "30-49 Jahre": {
+          "Zentralwert": 7568,
+          "P10": 5753,
+          "P25": 6614,
+          "P75": 8750,
+          "P90": 10318
+        },
+        "> =50 Jahre": {
+          "Zentralwert": 8208,
+          "P10": 6140,
+          "P25": 7146,
+          "P75": 9624,
+          "P90": 11609
+        }
+      }
+    },
+    "32": {
+      "code": "32",
+      "label": "32 Assistenzberufe im Gesundheitswesen",
+      "values": {
+        "Lebensalter - Total": {
+          "Zentralwert": 6203,
+          "P10": 4739,
+          "P25": 5349,
+          "P75": 7275,
+          "P90": 8558
+        },
+        "<=29 Jahre": {
+          "Zentralwert": 5357,
+          "P10": 4404,
+          "P25": 4835,
+          "P75": 5990,
+          "P90": 6902
+        },
+        "30-49 Jahre": {
+          "Zentralwert": 6484,
+          "P10": 5101,
+          "P25": 5749,
+          "P75": 7484,
+          "P90": 8644
+        },
+        "> =50 Jahre": {
+          "Zentralwert": 7032,
+          "P10": 5394,
+          "P25": 6200,
+          "P75": 8103,
+          "P90": 9410
+        }
+      }
+    },
+    "33": {
+      "code": "33",
+      "label": "33 Betriebswirtschaftliche und kaufmännische Fachkräfte und Verwaltungsfachkräfte",
+      "values": {
+        "Lebensalter - Total": {
+          "Zentralwert": 7900,
+          "P10": 5292,
+          "P25": 6407,
+          "P75": 9961,
+          "P90": 12893
+        },
+        "<=29 Jahre": {
+          "Zentralwert": 5945,
+          "P10": 4621,
+          "P25": 5155,
+          "P75": 6986,
+          "P90": 8215
+        },
+        "30-49 Jahre": {
+          "Zentralwert": 7980,
+          "P10": 5548,
+          "P25": 6606,
+          "P75": 9937,
+          "P90": 12856
+        },
+        "> =50 Jahre": {
+          "Zentralwert": 8818,
+          "P10": 6104,
+          "P25": 7282,
+          "P75": 11017,
+          "P90": 14191
+        }
+      }
+    },
+    "34": {
+      "code": "34",
+      "label": "34 Juristische, soziale, kulturelle und verwandte Fachkräfte",
+      "values": {
+        "Lebensalter - Total": {
+          "Zentralwert": 7078,
+          "P10": 4791,
+          "P25": 5742,
+          "P75": 8407,
+          "P90": 9924
+        },
+        "<=29 Jahre": {
+          "Zentralwert": 5674,
+          "P10": 4190,
+          "P25": 4793,
+          "P75": 6804,
+          "P90": 7835
+        },
+        "30-49 Jahre": {
+          "Zentralwert": 7181,
+          "P10": 5038,
+          "P25": 5986,
+          "P75": 8349,
+          "P90": 9804
+        },
+        "> =50 Jahre": {
+          "Zentralwert": 7865,
+          "P10": 5288,
+          "P25": 6534,
+          "P75": 9205,
+          "P90": 10886
+        }
+      }
+    },
+    "35": {
+      "code": "35",
+      "label": "35 Informations- und Kommunikationstechniker",
+      "values": {
+        "Lebensalter - Total": {
+          "Zentralwert": 7859,
+          "P10": 5343,
+          "P25": 6414,
+          "P75": 9567,
+          "P90": 11373
+        },
+        "<=29 Jahre": {
+          "Zentralwert": 6012,
+          "P10": 4635,
+          "P25": 5250,
+          "P75": 6910,
+          "P90": 7987
+        },
+        "30-49 Jahre": {
+          "Zentralwert": 7892,
+          "P10": 5654,
+          "P25": 6669,
+          "P75": 9449,
+          "P90": 11156
+        },
+        "> =50 Jahre": {
+          "Zentralwert": 9148,
+          "P10": 6666,
+          "P25": 7800,
+          "P75": 10738,
+          "P90": 12366
+        }
+      }
+    },
+    "41": {
+      "code": "41",
+      "label": "41 Allgemeine Büro- und Sekretariatskräfte",
+      "values": {
+        "Lebensalter - Total": {
+          "Zentralwert": 6637,
+          "P10": 4803,
+          "P25": 5617,
+          "P75": 7762,
+          "P90": 9201
+        },
+        "<=29 Jahre": {
+          "Zentralwert": 5439,
+          "P10": 4406,
+          "P25": 4899,
+          "P75": 6085,
+          "P90": 6844
+        },
+        "30-49 Jahre": {
+          "Zentralwert": 6717,
+          "P10": 4993,
+          "P25": 5858,
+          "P75": 7741,
+          "P90": 9208
+        },
+        "> =50 Jahre": {
+          "Zentralwert": 7244,
+          "P10": 5243,
+          "P25": 6282,
+          "P75": 8344,
+          "P90": 9873
+        }
+      }
+    },
+    "42": {
+      "code": "42",
+      "label": "42 Bürokräfte mit Kundenkontakt",
+      "values": {
+        "Lebensalter - Total": {
+          "Zentralwert": 5965,
+          "P10": 4339,
+          "P25": 4921,
+          "P75": 7654,
+          "P90": 10644
+        },
+        "<=29 Jahre": {
+          "Zentralwert": 5079,
+          "P10": 4139,
+          "P25": 4561,
+          "P75": 5909,
+          "P90": 7016
+        },
+        "30-49 Jahre": {
+          "Zentralwert": 6126,
+          "P10": 4383,
+          "P25": 4997,
+          "P75": 8137,
+          "P90": 11296
+        },
+        "> =50 Jahre": {
+          "Zentralwert": 6871,
+          "P10": 4727,
+          "P25": 5681,
+          "P75": 8921,
+          "P90": 12626
+        }
+      }
+    },
+    "43": {
+      "code": "43",
+      "label": "43 Bürokräfte im Finanz- und Rechnungswesen, in der Statistik und in der Materialwirtschaft",
+      "values": {
+        "Lebensalter - Total": {
+          "Zentralwert": 6035,
+          "P10": 4589,
+          "P25": 5151,
+          "P75": 7155,
+          "P90": 8507
+        },
+        "<=29 Jahre": {
+          "Zentralwert": 5236,
+          "P10": 4344,
+          "P25": 4754,
+          "P75": 5890,
+          "P90": 6719
+        },
+        "30-49 Jahre": {
+          "Zentralwert": 6075,
+          "P10": 4619,
+          "P25": 5196,
+          "P75": 7103,
+          "P90": 8458
+        },
+        "> =50 Jahre": {
+          "Zentralwert": 6685,
+          "P10": 4864,
+          "P25": 5638,
+          "P75": 7779,
+          "P90": 9260
+        }
+      }
+    },
+    "44": {
+      "code": "44",
+      "label": "44 Sonstige Bürokräfte und verwandte Berufe",
+      "values": {
+        "Lebensalter - Total": {
+          "Zentralwert": 6356,
+          "P10": 4772,
+          "P25": 5362,
+          "P75": 7671,
+          "P90": 9718
+        },
+        "<=29 Jahre": {
+          "Zentralwert": 5396,
+          "P10": 4545,
+          "P25": 4881,
+          "P75": 6121,
+          "P90": 7090
+        },
+        "30-49 Jahre": {
+          "Zentralwert": 6573,
+          "P10": 4875,
+          "P25": 5552,
+          "P75": 7900,
+          "P90": 10045
+        },
+        "> =50 Jahre": {
+          "Zentralwert": 6933,
+          "P10": 5164,
+          "P25": 6106,
+          "P75": 8352,
+          "P90": 10728
+        }
+      }
+    },
+    "51": {
+      "code": "51",
+      "label": "51 Berufe im Bereich personenbezogener Dienstleistungen",
+      "values": {
+        "Lebensalter - Total": {
+          "Zentralwert": 4927,
+          "P10": 3883,
+          "P25": 4334,
+          "P75": 5783,
+          "P90": 7027
+        },
+        "<=29 Jahre": {
+          "Zentralwert": 4554,
+          "P10": 3766,
+          "P25": 4076,
+          "P75": 5044,
+          "P90": 5650
+        },
+        "30-49 Jahre": {
+          "Zentralwert": 4934,
+          "P10": 3892,
+          "P25": 4336,
+          "P75": 5782,
+          "P90": 6878
+        },
+        "> =50 Jahre": {
+          "Zentralwert": 5309,
+          "P10": 4092,
+          "P25": 4642,
+          "P75": 6508,
+          "P90": 7734
+        }
+      }
+    },
+    "52": {
+      "code": "52",
+      "label": "52 Verkaufskräfte",
+      "values": {
+        "Lebensalter - Total": {
+          "Zentralwert": 4970,
+          "P10": 4197,
+          "P25": 4545,
+          "P75": 5804,
+          "P90": 7521
+        },
+        "<=29 Jahre": {
+          "Zentralwert": 4712,
+          "P10": 4001,
+          "P25": 4394,
+          "P75": 5136,
+          "P90": 5935
+        },
+        "30-49 Jahre": {
+          "Zentralwert": 5058,
+          "P10": 4237,
+          "P25": 4600,
+          "P75": 6055,
+          "P90": 7825
+        },
+        "> =50 Jahre": {
+          "Zentralwert": 5149,
+          "P10": 4297,
+          "P25": 4661,
+          "P75": 6127,
+          "P90": 8433
+        }
+      }
+    },
+    "53": {
+      "code": "53",
+      "label": "53 Betreuungsberufe",
+      "values": {
+        "Lebensalter - Total": {
+          "Zentralwert": 5629,
+          "P10": 4564,
+          "P25": 5005,
+          "P75": 6426,
+          "P90": 7488
+        },
+        "<=29 Jahre": {
+          "Zentralwert": 5109,
+          "P10": 4335,
+          "P25": 4677,
+          "P75": 5706,
+          "P90": 6311
+        },
+        "30-49 Jahre": {
+          "Zentralwert": 5663,
+          "P10": 4620,
+          "P25": 5045,
+          "P75": 6464,
+          "P90": 7518
+        },
+        "> =50 Jahre": {
+          "Zentralwert": 5912,
+          "P10": 4783,
+          "P25": 5275,
+          "P75": 6765,
+          "P90": 7846
+        }
+      }
+    },
+    "54": {
+      "code": "54",
+      "label": "54 Schutzkräfte und Sicherheitsbedienstete",
+      "values": {
+        "Lebensalter - Total": {
+          "Zentralwert": 6528,
+          "P10": 4622,
+          "P25": 5138,
+          "P75": 8412,
+          "P90": 9862
+        },
+        "<=29 Jahre": {
+          "Zentralwert": 5340,
+          "P10": 4461,
+          "P25": 4785,
+          "P75": 6403,
+          "P90": 7392
+        },
+        "30-49 Jahre": {
+          "Zentralwert": 7158,
+          "P10": 4732,
+          "P25": 5344,
+          "P75": 8620,
+          "P90": 9878
+        },
+        "> =50 Jahre": {
+          "Zentralwert": null,
+          "P10": null,
+          "P25": null,
+          "P75": null,
+          "P90": null
+        }
+      }
+    },
+    "61": {
+      "code": "61",
+      "label": "61 Fachkräfte in der Landwirtschaft",
+      "values": {
+        "Lebensalter - Total": {
+          "Zentralwert": 5622,
+          "P10": 4471,
+          "P25": 5003,
+          "P75": 6379,
+          "P90": 7398
+        },
+        "<=29 Jahre": {
+          "Zentralwert": 5154,
+          "P10": 4208,
+          "P25": 4706,
+          "P75": 5570,
+          "P90": 6002
+        },
+        "30-49 Jahre": {
+          "Zentralwert": 5828,
+          "P10": 4628,
+          "P25": 5198,
+          "P75": 6450,
+          "P90": 7366
+        },
+        "> =50 Jahre": {
+          "Zentralwert": 6149,
+          "P10": 4770,
+          "P25": 5394,
+          "P75": 7158,
+          "P90": 8411
+        }
+      }
+    },
+    "62": {
+      "code": "62",
+      "label": "62 Fachkräfte in Forstwirtschaft, Fischerei und Jagd - Marktproduktion",
+      "values": {
+        "Lebensalter - Total": {
+          "Zentralwert": 6109,
+          "P10": 5026,
+          "P25": 5471,
+          "P75": 7139,
+          "P90": 8199
+        },
+        "<=29 Jahre": {
+          "Zentralwert": 5486,
+          "P10": 4870,
+          "P25": 5200,
+          "P75": 5814,
+          "P90": 6262
+        },
+        "30-49 Jahre": {
+          "Zentralwert": 6406,
+          "P10": 5340,
+          "P25": 5936,
+          "P75": 6953,
+          "P90": 7796
+        },
+        "> =50 Jahre": {
+          "Zentralwert": 7359,
+          "P10": 5470,
+          "P25": 6323,
+          "P75": 8358,
+          "P90": 9446
+        }
+      }
+    },
+    "71": {
+      "code": "71",
+      "label": "71 Bau- und Ausbaufachkräfte sowie verwandte Berufe, ausgenommen Elektriker",
+      "values": {
+        "Lebensalter - Total": {
+          "Zentralwert": 6172,
+          "P10": 5041,
+          "P25": 5587,
+          "P75": 6846,
+          "P90": 7656
+        },
+        "<=29 Jahre": {
+          "Zentralwert": 5546,
+          "P10": 4648,
+          "P25": 5035,
+          "P75": 6070,
+          "P90": 6624
+        },
+        "30-49 Jahre": {
+          "Zentralwert": 6277,
+          "P10": 5240,
+          "P25": 5729,
+          "P75": 6882,
+          "P90": 7672
+        },
+        "> =50 Jahre": {
+          "Zentralwert": 6540,
+          "P10": 5515,
+          "P25": 5957,
+          "P75": 7225,
+          "P90": 8092
+        }
+      }
+    },
+    "72": {
+      "code": "72",
+      "label": "72 Metallarbeiter, Mechaniker, Polymechaniker, Produktionsmechaniker und verwandte Berufe",
+      "values": {
+        "Lebensalter - Total": {
+          "Zentralwert": 6394,
+          "P10": 4777,
+          "P25": 5486,
+          "P75": 7319,
+          "P90": 8278
+        },
+        "<=29 Jahre": {
+          "Zentralwert": 5409,
+          "P10": 4485,
+          "P25": 4891,
+          "P75": 6016,
+          "P90": 6650
+        },
+        "30-49 Jahre": {
+          "Zentralwert": 6545,
+          "P10": 5041,
+          "P25": 5780,
+          "P75": 7321,
+          "P90": 8181
+        },
+        "> =50 Jahre": {
+          "Zentralwert": 7112,
+          "P10": 5378,
+          "P25": 6218,
+          "P75": 8000,
+          "P90": 9056
+        }
+      }
+    },
+    "73": {
+      "code": "73",
+      "label": "73 Präzisionshandwerker, Drucker und kunsthandwerkliche Berufe",
+      "values": {
+        "Lebensalter - Total": {
+          "Zentralwert": 6165,
+          "P10": 4542,
+          "P25": 5244,
+          "P75": 7161,
+          "P90": 8269
+        },
+        "<=29 Jahre": {
+          "Zentralwert": 5291,
+          "P10": 4301,
+          "P25": 4700,
+          "P75": 6020,
+          "P90": 6676
+        },
+        "30-49 Jahre": {
+          "Zentralwert": 6189,
+          "P10": 4571,
+          "P25": 5310,
+          "P75": 7090,
+          "P90": 8165
+        },
+        "> =50 Jahre": {
+          "Zentralwert": 6787,
+          "P10": 5117,
+          "P25": 5793,
+          "P75": 7874,
+          "P90": 8916
+        }
+      }
+    },
+    "74": {
+      "code": "74",
+      "label": "74 Elektriker und Elektroniker",
+      "values": {
+        "Lebensalter - Total": {
+          "Zentralwert": 6432,
+          "P10": 5199,
+          "P25": 5730,
+          "P75": 7358,
+          "P90": 8438
+        },
+        "<=29 Jahre": {
+          "Zentralwert": 5765,
+          "P10": 4920,
+          "P25": 5307,
+          "P75": 6258,
+          "P90": 6824
+        },
+        "30-49 Jahre": {
+          "Zentralwert": 6681,
+          "P10": 5465,
+          "P25": 6101,
+          "P75": 7497,
+          "P90": 8561
+        },
+        "> =50 Jahre": {
+          "Zentralwert": 7352,
+          "P10": 5717,
+          "P25": 6419,
+          "P75": 8300,
+          "P90": 9548
+        }
+      }
+    },
+    "75": {
+      "code": "75",
+      "label": "75 Berufe in der Nahrungsmittelverarbeitung, Holzverarbeitung und Bekleidungsherstellung und verwandte handwerkliche Fachkräfte",
+      "values": {
+        "Lebensalter - Total": {
+          "Zentralwert": 5302,
+          "P10": 4185,
+          "P25": 4672,
+          "P75": 6216,
+          "P90": 7292
+        },
+        "<=29 Jahre": {
+          "Zentralwert": 4862,
+          "P10": 4063,
+          "P25": 4451,
+          "P75": 5308,
+          "P90": 5962
+        },
+        "30-49 Jahre": {
+          "Zentralwert": 5417,
+          "P10": 4238,
+          "P25": 4757,
+          "P75": 6341,
+          "P90": 7427
+        },
+        "> =50 Jahre": {
+          "Zentralwert": 5643,
+          "P10": 4253,
+          "P25": 4937,
+          "P75": 6574,
+          "P90": 7759
+        }
+      }
+    },
+    "81": {
+      "code": "81",
+      "label": "81 Bediener stationärer Anlagen und Maschinen",
+      "values": {
+        "Lebensalter - Total": {
+          "Zentralwert": 5778,
+          "P10": 4332,
+          "P25": 4949,
+          "P75": 6691,
+          "P90": 7641
+        },
+        "<=29 Jahre": {
+          "Zentralwert": 5246,
+          "P10": 4093,
+          "P25": 4625,
+          "P75": 5999,
+          "P90": 6812
+        },
+        "30-49 Jahre": {
+          "Zentralwert": 5756,
+          "P10": 4332,
+          "P25": 4951,
+          "P75": 6607,
+          "P90": 7514
+        },
+        "> =50 Jahre": {
+          "Zentralwert": 6105,
+          "P10": 4483,
+          "P25": 5180,
+          "P75": 7046,
+          "P90": 8048
+        }
+      }
+    },
+    "82": {
+      "code": "82",
+      "label": "82 Montageberufe",
+      "values": {
+        "Lebensalter - Total": {
+          "Zentralwert": 5980,
+          "P10": 4510,
+          "P25": 5278,
+          "P75": 6815,
+          "P90": 7731
+        },
+        "<=29 Jahre": {
+          "Zentralwert": 5509,
+          "P10": 4383,
+          "P25": 4958,
+          "P75": 6047,
+          "P90": 6641
+        },
+        "30-49 Jahre": {
+          "Zentralwert": 5936,
+          "P10": 4323,
+          "P25": 5235,
+          "P75": 6753,
+          "P90": 7575
+        },
+        "> =50 Jahre": {
+          "Zentralwert": 6463,
+          "P10": 4877,
+          "P25": 5677,
+          "P75": 7264,
+          "P90": 8165
+        }
+      }
+    },
+    "83": {
+      "code": "83",
+      "label": "83 Fahrzeugführer und Bediener mobiler Anlagen",
+      "values": {
+        "Lebensalter - Total": {
+          "Zentralwert": 5951,
+          "P10": 4354,
+          "P25": 5074,
+          "P75": 6866,
+          "P90": 7836
+        },
+        "<=29 Jahre": {
+          "Zentralwert": 5215,
+          "P10": 4061,
+          "P25": 4564,
+          "P75": 6045,
+          "P90": 6784
+        },
+        "30-49 Jahre": {
+          "Zentralwert": 5968,
+          "P10": 4443,
+          "P25": 5106,
+          "P75": 6833,
+          "P90": 7737
+        },
+        "> =50 Jahre": {
+          "Zentralwert": 6195,
+          "P10": 4500,
+          "P25": 5271,
+          "P75": 7135,
+          "P90": 8233
+        }
+      }
+    },
+    "91": {
+      "code": "91",
+      "label": "91 Reinigungspersonal und Hilfskräfte",
+      "values": {
+        "Lebensalter - Total": {
+          "Zentralwert": 4549,
+          "P10": 3801,
+          "P25": 4078,
+          "P75": 5188,
+          "P90": 5908
+        },
+        "<=29 Jahre": {
+          "Zentralwert": 4293,
+          "P10": 3669,
+          "P25": 3948,
+          "P75": 4783,
+          "P90": 5432
+        },
+        "30-49 Jahre": {
+          "Zentralwert": 4489,
+          "P10": 3801,
+          "P25": 4047,
+          "P75": 5105,
+          "P90": 5796
+        },
+        "> =50 Jahre": {
+          "Zentralwert": 4684,
+          "P10": 3850,
+          "P25": 4179,
+          "P75": 5359,
+          "P90": 6110
+        }
+      }
+    },
+    "92": {
+      "code": "92",
+      "label": "92 Hilfsarbeiter in der Land- und Forstwirtschaft und Fischerei",
+      "values": {
+        "Lebensalter - Total": {
+          "Zentralwert": 4919,
+          "P10": 3031,
+          "P25": 4177,
+          "P75": 5491,
+          "P90": 6190
+        },
+        "<=29 Jahre": {
+          "Zentralwert": 4574,
+          "P10": 2760,
+          "P25": 3985,
+          "P75": 5071,
+          "P90": 5732
+        },
+        "30-49 Jahre": {
+          "Zentralwert": 4985,
+          "P10": 3108,
+          "P25": 4170,
+          "P75": 5467,
+          "P90": 6060
+        },
+        "> =50 Jahre": {
+          "Zentralwert": 5193,
+          "P10": 3279,
+          "P25": 4384,
+          "P75": 5914,
+          "P90": 6782
+        }
+      }
+    },
+    "93": {
+      "code": "93",
+      "label": "93 Hilfsarbeiter im Bergbau, im Bau, bei der Herstellung von Waren und im Transportwesen",
+      "values": {
+        "Lebensalter - Total": {
+          "Zentralwert": 5541,
+          "P10": 4241,
+          "P25": 4821,
+          "P75": 6343,
+          "P90": 7146
+        },
+        "<=29 Jahre": {
+          "Zentralwert": 5109,
+          "P10": 4118,
+          "P25": 4585,
+          "P75": 5736,
+          "P90": 6356
+        },
+        "30-49 Jahre": {
+          "Zentralwert": 5544,
+          "P10": 4247,
+          "P25": 4840,
+          "P75": 6309,
+          "P90": 7085
+        },
+        "> =50 Jahre": {
+          "Zentralwert": 5848,
+          "P10": 4346,
+          "P25": 5045,
+          "P75": 6648,
+          "P90": 7510
+        }
+      }
+    },
+    "94": {
+      "code": "94",
+      "label": "94 Hilfskräfte in der Nahrungsmittelzubereitung",
+      "values": {
+        "Lebensalter - Total": {
+          "Zentralwert": 4429,
+          "P10": 3679,
+          "P25": 4012,
+          "P75": 4921,
+          "P90": 5546
+        },
+        "<=29 Jahre": {
+          "Zentralwert": 4242,
+          "P10": 3649,
+          "P25": 3858,
+          "P75": 4699,
+          "P90": 5110
+        },
+        "30-49 Jahre": {
+          "Zentralwert": 4411,
+          "P10": 3628,
+          "P25": 3985,
+          "P75": 4861,
+          "P90": 5550
+        },
+        "> =50 Jahre": {
+          "Zentralwert": 4579,
+          "P10": 3785,
+          "P25": 4151,
+          "P75": 5148,
+          "P90": 5671
+        }
+      }
+    },
+    "96": {
+      "code": "96",
+      "label": "96 Abfallentsorgungsarbeiter und sonstige Hilfsarbeitskräfte",
+      "values": {
+        "Lebensalter - Total": {
+          "Zentralwert": 5288,
+          "P10": 3904,
+          "P25": 4517,
+          "P75": 6200,
+          "P90": 6979
+        },
+        "<=29 Jahre": {
+          "Zentralwert": 4598,
+          "P10": 3747,
+          "P25": 4061,
+          "P75": 5185,
+          "P90": 5682
+        },
+        "30-49 Jahre": {
+          "Zentralwert": 5346,
+          "P10": 4084,
+          "P25": 4621,
+          "P75": 6220,
+          "P90": 6919
+        },
+        "> =50 Jahre": {
+          "Zentralwert": 5677,
+          "P10": 4037,
+          "P25": 4804,
+          "P75": 6530,
+          "P90": 7421
+        }
+      }
+    },
+    "total": {
+      "code": "total",
+      "label": "Berufsgruppe - Total",
+      "values": {
+        "Lebensalter - Total": {
+          "Zentralwert": 7024,
+          "P10": 4635,
+          "P25": 5524,
+          "P75": 9326,
+          "P90": 12526
+        },
+        "<=29 Jahre": {
+          "Zentralwert": 5570,
+          "P10": 4282,
+          "P25": 4814,
+          "P75": 6617,
+          "P90": 7780
+        },
+        "30-49 Jahre": {
+          "Zentralwert": 7288,
+          "P10": 4745,
+          "P25": 5772,
+          "P75": 9509,
+          "P90": 12431
+        },
+        "> =50 Jahre": {
+          "Zentralwert": 7806,
+          "P10": 4874,
+          "P25": 6028,
+          "P75": 10673,
+          "P90": 14373
+        }
+      }
+    }
+  }
+}

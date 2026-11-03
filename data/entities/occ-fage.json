@@ -1,0 +1,57 @@
+{
+  "id": "occ-fage",
+  "kind": "occupation",
+  "route": "vocational",
+  "name": {
+    "en": "Health care assistant (FaGe)",
+    "de": "Fachfrau/Fachmann Gesundheit",
+    "fr": null,
+    "it": null
+  },
+  "codes": {
+    "isco08": "5321",
+    "chIsco19": "53210"
+  },
+  "sector": "Health",
+  "refs": {
+    "qualLevel": "apprenticeship",
+    "nogaSection": "Q",
+    "besta": "86-88"
+  },
+  "pathway": [],
+  "leadsTo": [],
+  "trainedVia": [
+    "edu-efz-fage"
+  ],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "mobility": {
+      "value": 4,
+      "unit": "rubric 0–9",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#11-international-mobility",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "recognition 1/3, language independence 1/3, transferability 2/3. EFZ = EQF 4; recognition abroad case by case; patient contact requires local language."
+    },
+    "regionalUbiquity": {
+      "value": 3,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#12-regional-availability",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "Needed in every hospital, care home and Spitex region."
+    }
+  },
+  "meta": {
+    "addedBy": "initial-dataset",
+    "reviewed": "2026-11-03"
+  }
+}

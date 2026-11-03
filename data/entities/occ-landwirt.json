@@ -1,0 +1,56 @@
+{
+  "id": "occ-landwirt",
+  "kind": "occupation",
+  "route": "vocational",
+  "name": {
+    "en": "Farmer",
+    "de": "Landwirt/in",
+    "fr": null,
+    "it": null
+  },
+  "codes": {
+    "isco08": "6130",
+    "chIsco19": "61300"
+  },
+  "sector": "Agriculture",
+  "refs": {
+    "qualLevel": "apprenticeship",
+    "nogaSection": "A"
+  },
+  "pathway": [],
+  "leadsTo": [],
+  "trainedVia": [
+    "edu-efz-landwirt"
+  ],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "mobility": {
+      "value": 4,
+      "unit": "rubric 0–9",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#11-international-mobility",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "recognition 1/3, language independence 2/3, transferability 1/3. EFZ; farming tied to land ownership and national subsidy systems."
+    },
+    "regionalUbiquity": {
+      "value": 2,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#12-regional-availability",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "Rural regions; limited in urban cantons."
+    }
+  },
+  "meta": {
+    "addedBy": "initial-dataset",
+    "reviewed": "2026-11-03"
+  }
+}

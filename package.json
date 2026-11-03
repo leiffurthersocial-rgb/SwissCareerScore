@@ -14,7 +14,7 @@
     "format": "prettier --write .",
     "data:ingest": "tsx scripts/ingest/index.ts",
     "data:build": "tsx scripts/build-data.ts",
-    "data:validate": "tsx scripts/validate-data.ts",
+    "data:validate": "tsx scripts/build-data.ts --check",
     "prepare": "husky"
   },
   "dependencies": {
@@ -55,12 +55,14 @@
     "eslint": "^9",
     "eslint-config-next": "16.4.4",
     "husky": "^9.1.7",
+    "pdfjs-dist": "^6.5.438",
     "prettier": "^3.9.10",
     "prettier-plugin-tailwindcss": "^0.8.1",
     "tailwindcss": "^4",
     "tsx": "^4.23.15",
     "typescript": "^5",
-    "vitest": "^5.1.0"
+    "vitest": "^5.1.0",
+    "xlsx": "^0.18.5"
   },
   "engines": {
     "node": ">=22"

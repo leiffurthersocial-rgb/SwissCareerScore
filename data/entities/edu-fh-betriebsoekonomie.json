@@ -1,0 +1,62 @@
+{
+  "id": "edu-fh-betriebsoekonomie",
+  "kind": "education",
+  "route": "mixed",
+  "eduType": "FH-BSc",
+  "name": {
+    "en": "BSc Business Administration (FH)",
+    "de": "Bachelor Betriebsökonomie FH",
+    "fr": null,
+    "it": null
+  },
+  "codes": {
+    "isco08": "2421"
+  },
+  "sector": "Business services",
+  "refs": {
+    "studyField": "FH:Wirtschaft und Dienstleistungen",
+    "gradIncome": "fh:Bachelor:Wirtschaft und Dienstleistungen",
+    "qualLevel": "higherEducation",
+    "besta": "68-75",
+    "nogaSection": "M"
+  },
+  "pathway": [
+    {
+      "label": "Kauffrau/Kaufmann EFZ with Berufsmaturität (BM 1)",
+      "years": 3,
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/kaufmann-frau-efz",
+      "confidence": "measured"
+    },
+    {
+      "label": "Bachelor Betriebsökonomie FH",
+      "years": 3,
+      "sourceUrl": "https://www.berufsberatung.ch/de/studienrichtungen/betriebswirtschaft",
+      "confidence": "measured"
+    }
+  ],
+  "leadsTo": [
+    "occ-betriebsoekonom"
+  ],
+  "trainedVia": [],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "entryAccess": {
+      "value": 0,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://www.berufsberatung.ch/de/studienrichtungen/betriebswirtschaft",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "Admission with BM; no capacity limit."
+    }
+  },
+  "meta": {
+    "addedBy": "initial-dataset",
+    "reviewed": "2026-11-03"
+  }
+}

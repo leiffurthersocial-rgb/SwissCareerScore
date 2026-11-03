@@ -1,0 +1,57 @@
+{
+  "id": "occ-elektroingenieur",
+  "kind": "occupation",
+  "route": "academic",
+  "name": {
+    "en": "Electrical engineer",
+    "de": "Elektroingenieur/in",
+    "fr": null,
+    "it": null
+  },
+  "codes": {
+    "isco08": "2151",
+    "chIsco19": "21510"
+  },
+  "sector": "Industry / energy",
+  "refs": {
+    "qualLevel": "higherEducation",
+    "nogaSection": "C",
+    "besta": "26"
+  },
+  "pathway": [],
+  "leadsTo": [],
+  "trainedVia": [
+    "edu-eth-elektrotechnik"
+  ],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "mobility": {
+      "value": 9,
+      "unit": "rubric 0–9",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#11-international-mobility",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "recognition 3/3, language independence 3/3, transferability 3/3. Master internationally standard; technical work largely language-independent."
+    },
+    "regionalUbiquity": {
+      "value": 2,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#12-regional-availability",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "Industry and utilities, concentrated in centres."
+    }
+  },
+  "meta": {
+    "addedBy": "initial-dataset",
+    "reviewed": "2026-11-03"
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "id": "edu-efz-zimmermann",
+  "kind": "education",
+  "route": "vocational",
+  "eduType": "EFZ",
+  "name": {
+    "en": "Carpenter EFZ",
+    "de": "Zimmermann/Zimmerin EFZ",
+    "fr": null,
+    "it": null
+  },
+  "codes": {
+    "isco08": "7115"
+  },
+  "sector": "Construction",
+  "refs": {
+    "vetName": "Zimmermann/Zimmerin EFZ",
+    "qualLevel": "apprenticeship",
+    "besta": "41-43",
+    "nogaSection": "F"
+  },
+  "pathway": [
+    {
+      "label": "Zimmermann/Zimmerin EFZ",
+      "years": 4,
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/zimmermann-zimmerin-efz",
+      "confidence": "measured"
+    }
+  ],
+  "leadsTo": [
+    "occ-zimmermann"
+  ],
+  "trainedVia": [],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "entryAccess": {
+      "value": 1,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/zimmermann-zimmerin-efz",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "Apprenticeship contract required."
+    }
+  },
+  "meta": {
+    "addedBy": "initial-dataset",
+    "reviewed": "2026-11-03"
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "id": "edu-fh-physio",
+  "kind": "education",
+  "route": "mixed",
+  "eduType": "FH-BSc",
+  "name": {
+    "en": "BSc Physiotherapy (FH)",
+    "de": "Bachelor Physiotherapie FH",
+    "fr": null,
+    "it": null
+  },
+  "codes": {
+    "isco08": "2264"
+  },
+  "sector": "Health",
+  "refs": {
+    "studyField": "FH:Gesundheit",
+    "gradIncome": "fh:Bachelor:Gesundheit",
+    "qualLevel": "higherEducation",
+    "besta": "86-88",
+    "nogaSection": "Q"
+  },
+  "pathway": [
+    {
+      "label": "Fachfrau/Fachmann Gesundheit EFZ with Berufsmaturität (BM 1)",
+      "years": 3,
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/fachmann-frau-gesundheit-efz",
+      "confidence": "measured"
+    },
+    {
+      "label": "Bachelor Physiotherapie FH",
+      "years": 3,
+      "sourceUrl": "https://www.berufsberatung.ch/de/studienrichtungen/physiotherapie",
+      "confidence": "measured"
+    }
+  ],
+  "leadsTo": [
+    "occ-physiotherapeut"
+  ],
+  "trainedVia": [],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "entryAccess": {
+      "value": 3,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://www.berufsberatung.ch/de/studienrichtungen/physiotherapie",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "Limited study places with aptitude assessment; demand exceeds capacity."
+    }
+  },
+  "meta": {
+    "addedBy": "initial-dataset",
+    "reviewed": "2026-11-03"
+  }
+}

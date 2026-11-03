@@ -1,0 +1,62 @@
+{
+  "id": "edu-ph-primar",
+  "kind": "education",
+  "route": "academic",
+  "eduType": "FH-BSc",
+  "name": {
+    "en": "Primary teacher diploma (PH, Bachelor)",
+    "de": "Lehrdiplom Primarstufe (PH, Bachelor)",
+    "fr": null,
+    "it": null
+  },
+  "codes": {
+    "isco08": "2341"
+  },
+  "sector": "Education",
+  "refs": {
+    "gradIncome": "fh:Lehrdiplome:Lehrkräfteausbildung",
+    "qualLevel": "higherEducation",
+    "besta": "85",
+    "nogaSection": "P"
+  },
+  "pathway": [
+    {
+      "label": "Gymnasiale Maturität",
+      "years": 4,
+      "sourceUrl": "https://www.berufsberatung.ch/de/bildungssystem/d/gymnasiale-maturitaetsschulen",
+      "confidence": "estimated",
+      "note": "berufsberatung.ch states 3–6 years depending on canton (partly overlapping compulsory school); 4 years after compulsory school assumed."
+    },
+    {
+      "label": "Bachelor Vorschul-/Primarstufe PH",
+      "years": 3,
+      "sourceUrl": "https://www.berufsberatung.ch/de/studienrichtungen/unterricht-vorschulstufe-primarstufe",
+      "confidence": "measured"
+    }
+  ],
+  "leadsTo": [
+    "occ-primarlehrperson"
+  ],
+  "trainedVia": [],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "entryAccess": {
+      "value": 1,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://www.berufsberatung.ch/de/studienrichtungen/unterricht-vorschulstufe-primarstufe",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "Admission with Matura; some PH run aptitude assessments."
+    }
+  },
+  "meta": {
+    "addedBy": "initial-dataset",
+    "reviewed": "2026-11-03"
+  }
+}

@@ -41,7 +41,13 @@ export const DIMENSIONS: Record<DimensionId, DimensionDef> = {
     alwaysEstimate: false,
     unit: "%",
   },
-  demand: { id: "demand", key: "dem", higherIsBetter: true, alwaysEstimate: false, unit: "%" },
+  demand: {
+    id: "demand",
+    key: "dem",
+    higherIsBetter: true, // raw = % of firms that found recruiting at this level hard or impossible
+    alwaysEstimate: false,
+    unit: "% firms",
+  },
   aiResilience: {
     id: "aiResilience",
     key: "ai",
@@ -59,9 +65,9 @@ export const DIMENSIONS: Record<DimensionId, DimensionDef> = {
   entryAccess: {
     id: "entryAccess",
     key: "cmp",
-    higherIsBetter: false, // raw = applicants per place / selectivity
-    alwaysEstimate: false,
-    unit: "applicants/place",
+    higherIsBetter: false, // raw = admission-hurdle rubric 0–3
+    alwaysEstimate: true,
+    unit: "rubric 0–3",
   },
   timeToQualify: {
     id: "timeToQualify",
@@ -80,9 +86,9 @@ export const DIMENSIONS: Record<DimensionId, DimensionDef> = {
   workLifeBalance: {
     id: "workLifeBalance",
     key: "wlb",
-    higherIsBetter: false, // raw = % with atypical working hours (evening/night/weekend)
+    higherIsBetter: true, // raw = index 0–100 from night-work share and usual weekly hours (both inverted)
     alwaysEstimate: false,
-    unit: "%",
+    unit: "index 0–100",
   },
   flexibility: {
     id: "flexibility",

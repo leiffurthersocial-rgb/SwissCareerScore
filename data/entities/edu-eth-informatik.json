@@ -1,0 +1,68 @@
+{
+  "id": "edu-eth-informatik",
+  "kind": "education",
+  "route": "academic",
+  "eduType": "ETH-MSc",
+  "name": {
+    "en": "MSc Computer Science (ETH/EPFL)",
+    "de": "Master Informatik (ETH/EPFL)",
+    "fr": null,
+    "it": null
+  },
+  "codes": {
+    "isco08": "2512"
+  },
+  "sector": "ICT",
+  "refs": {
+    "studyField": "UH:Exakte und Naturwissenschaften",
+    "gradIncome": "uh:Master:Exakte und Naturwissenschaften",
+    "qualLevel": "higherEducation",
+    "besta": "62-63",
+    "nogaSection": "J"
+  },
+  "pathway": [
+    {
+      "label": "Gymnasiale Maturität",
+      "years": 4,
+      "sourceUrl": "https://www.berufsberatung.ch/de/bildungssystem/d/gymnasiale-maturitaetsschulen",
+      "confidence": "estimated",
+      "note": "berufsberatung.ch states 3–6 years depending on canton (partly overlapping compulsory school); 4 years after compulsory school assumed."
+    },
+    {
+      "label": "Bachelor Informatik (ETH)",
+      "years": 3,
+      "sourceUrl": "https://www.berufsberatung.ch/de/studienrichtungen/informatik",
+      "confidence": "measured"
+    },
+    {
+      "label": "Master Informatik (ETH)",
+      "years": 1.5,
+      "sourceUrl": "https://www.berufsberatung.ch/de/studienrichtungen/informatik",
+      "confidence": "measured"
+    }
+  ],
+  "leadsTo": [
+    "occ-softwareentwickler"
+  ],
+  "trainedVia": [],
+  "languageRegions": [
+    "de",
+    "fr"
+  ],
+  "raw": {
+    "entryAccess": {
+      "value": 0,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://www.berufsberatung.ch/de/studienrichtungen/informatik",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "Open admission with Swiss Matura; selection happens through the first-year exam."
+    }
+  },
+  "meta": {
+    "addedBy": "initial-dataset",
+    "reviewed": "2026-11-03"
+  }
+}

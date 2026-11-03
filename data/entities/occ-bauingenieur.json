@@ -1,0 +1,57 @@
+{
+  "id": "occ-bauingenieur",
+  "kind": "occupation",
+  "route": "academic",
+  "name": {
+    "en": "Civil engineer",
+    "de": "Bauingenieur/in",
+    "fr": null,
+    "it": null
+  },
+  "codes": {
+    "isco08": "2142",
+    "chIsco19": "21420"
+  },
+  "sector": "Construction / engineering",
+  "refs": {
+    "qualLevel": "higherEducation",
+    "nogaSection": "M",
+    "besta": "68-75"
+  },
+  "pathway": [],
+  "leadsTo": [],
+  "trainedVia": [
+    "edu-eth-bauingenieur"
+  ],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "mobility": {
+      "value": 7,
+      "unit": "rubric 0–9",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#11-international-mobility",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "recognition 3/3, language independence 2/3, transferability 2/3. Master internationally standard; building codes are national."
+    },
+    "regionalUbiquity": {
+      "value": 3,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#12-regional-availability",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "Engineering offices and public administration in all regions."
+    }
+  },
+  "meta": {
+    "addedBy": "initial-dataset",
+    "reviewed": "2026-11-03"
+  }
+}

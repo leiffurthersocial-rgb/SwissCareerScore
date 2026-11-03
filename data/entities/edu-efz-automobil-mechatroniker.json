@@ -1,0 +1,55 @@
+{
+  "id": "edu-efz-automobil-mechatroniker",
+  "kind": "education",
+  "route": "vocational",
+  "eduType": "EFZ",
+  "name": {
+    "en": "Automotive mechatronics technician EFZ",
+    "de": "Automobil-Mechatroniker/in EFZ",
+    "fr": null,
+    "it": null
+  },
+  "codes": {
+    "isco08": "7231"
+  },
+  "sector": "Automotive trade",
+  "refs": {
+    "vetName": "Automobil-Mechatroniker/in EFZ",
+    "qualLevel": "apprenticeship",
+    "besta": "45-47",
+    "nogaSection": "G"
+  },
+  "pathway": [
+    {
+      "label": "Automobil-Mechatroniker/in EFZ",
+      "years": 4,
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/automobil-mechatroniker-in-efz",
+      "confidence": "measured"
+    }
+  ],
+  "leadsTo": [
+    "occ-automobil-mechatroniker"
+  ],
+  "trainedVia": [],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "entryAccess": {
+      "value": 1,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/automobil-mechatroniker-in-efz",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "Apprenticeship contract required."
+    }
+  },
+  "meta": {
+    "addedBy": "initial-dataset",
+    "reviewed": "2026-11-03"
+  }
+}

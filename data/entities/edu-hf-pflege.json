@@ -1,0 +1,60 @@
+{
+  "id": "edu-hf-pflege",
+  "kind": "education",
+  "route": "vocational",
+  "eduType": "HF",
+  "name": {
+    "en": "Nursing diploma HF",
+    "de": "Dipl. Pflegefachfrau/-mann HF",
+    "fr": null,
+    "it": null
+  },
+  "codes": {
+    "isco08": "2221"
+  },
+  "sector": "Health",
+  "refs": {
+    "qualLevel": "higherVet",
+    "besta": "86-88",
+    "nogaSection": "Q"
+  },
+  "pathway": [
+    {
+      "label": "Fachfrau/Fachmann Gesundheit EFZ",
+      "years": 3,
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/fachmann-frau-gesundheit-efz",
+      "confidence": "measured"
+    },
+    {
+      "label": "Höhere Fachschule Pflege (shortened for FaGe)",
+      "years": 2,
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/pflegefachmann-frau",
+      "confidence": "measured"
+    }
+  ],
+  "leadsTo": [
+    "occ-pflegefachperson"
+  ],
+  "trainedVia": [],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "entryAccess": {
+      "value": 2,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/pflegefachmann-frau",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "HF entrance procedure (aptitude assessment) plus training contract with a health institution."
+    }
+  },
+  "meta": {
+    "addedBy": "initial-dataset",
+    "reviewed": "2026-11-03"
+  }
+}

@@ -1,0 +1,422 @@
+{
+  "source": "seco",
+  "stmp": {
+    "sourceUrl": "https://www.arbeit.swiss/de/arbeitgebende/stellenmeldepflicht-checkup-2027",
+    "fileUrl": "https://www.arbeit.swiss/api/media/fileservice/sdweb-docs-prod-arbeitswiss-files/files/2026/10/28/90a7c3bf-2618-4aa1-a553-ba293c84c566.pdf",
+    "period": "2025-Q4 to 2026-Q3",
+    "threshold": 5,
+    "rows": {
+      "1221": {
+        "code": "1221",
+        "name": "Führungskräfte in Vertrieb und Marketing",
+        "unemployed": 3642,
+        "employed": 50931,
+        "rate": 7.2
+      },
+      "2422": {
+        "code": "2422",
+        "name": "Spezialisten/Spezialistinnen in der strategischen Planung in Politik und Wirtschaft",
+        "unemployed": 226,
+        "employed": 3084,
+        "rate": 7.3
+      },
+      "21130": {
+        "code": "21130",
+        "name": "Chemiker/-innen",
+        "unemployed": 262,
+        "employed": 3944,
+        "rate": 6.6
+      },
+      "21310": {
+        "code": "21310",
+        "name": "Biologen/Biologinnen, Botaniker/-innen, Zoologen/Zoologinnen und verwandte Berufe",
+        "unemployed": 726,
+        "employed": 8981,
+        "rate": 8.1
+      },
+      "21330": {
+        "code": "21330",
+        "name": "Umweltwissenschaftler/-innen",
+        "unemployed": 256,
+        "employed": 3527,
+        "rate": 7.3
+      },
+      "21660": {
+        "code": "21660",
+        "name": "Grafik- und Multimediadesigner-/innen",
+        "unemployed": 859,
+        "employed": 13373,
+        "rate": 6.4
+      },
+      "24331": {
+        "code": "24331",
+        "name": "Technische Verkaufsfachkräfte (ohne Informations- und Kommunikationstechnologie), Technik",
+        "unemployed": 651,
+        "employed": 10214,
+        "rate": 6.4
+      },
+      "24332": {
+        "code": "24332",
+        "name": "Technische Verkaufsfachkräfte (ohne Informations- und Kommunikationstechnologie), Medizin",
+        "unemployed": 187,
+        "employed": 2080,
+        "rate": 9
+      },
+      "26310": {
+        "code": "26310",
+        "name": "Volkswirtschaftler/-innen",
+        "unemployed": 153,
+        "employed": 2340,
+        "rate": 6.6
+      },
+      "26320": {
+        "code": "26320",
+        "name": "Soziologen/Soziologinnen, Anthropologen/Anthropologinnen und verwandte Wissenschaftler/-innen",
+        "unemployed": 122,
+        "employed": 1460,
+        "rate": 8.3
+      },
+      "26330": {
+        "code": "26330",
+        "name": "Philosophen/Philosophinnen, Historiker/Historikerinnen und Politologen/Politologinnen",
+        "unemployed": 97,
+        "employed": 1342,
+        "rate": 7.2
+      },
+      "26540": {
+        "code": "26540",
+        "name": "Regisseure/Regisseurinnen und Produzenten/Produzentinnen im Film- und Bühnenbereich sowie in verwandten Berufen",
+        "unemployed": 298,
+        "employed": 5694,
+        "rate": 5.2
+      },
+      "26550": {
+        "code": "26550",
+        "name": "Schauspieler/-innen",
+        "unemployed": 183,
+        "employed": 1504,
+        "rate": 12.2
+      },
+      "33320": {
+        "code": "33320",
+        "name": "Konferenz- und Veranstaltungsplaner/-innen",
+        "unemployed": 472,
+        "employed": 5480,
+        "rate": 8.6
+      },
+      "42240": {
+        "code": "42240",
+        "name": "Hotelrezeptionisten/-rezeptionistinnen",
+        "unemployed": 324,
+        "employed": 3740,
+        "rate": 8.7
+      },
+      "51200": {
+        "code": "51200",
+        "name": "Köche/Köchinnen",
+        "unemployed": 2496,
+        "employed": 43570,
+        "rate": 5.7
+      },
+      "51311": {
+        "code": "51311",
+        "name": "Chefs/Cheffes de Service in Restaurants",
+        "unemployed": 602,
+        "employed": 5862,
+        "rate": 10.3
+      },
+      "51313": {
+        "code": "51313",
+        "name": "Servicehilfskräfte in Restaurants",
+        "unemployed": 2123,
+        "employed": 26969,
+        "rate": 7.9
+      },
+      "51320": {
+        "code": "51320",
+        "name": "Barkeeper/-innen",
+        "unemployed": 415,
+        "employed": 8219,
+        "rate": 5
+      },
+      "52230": {
+        "code": "52230",
+        "name": "Verkäufer/-innen in Handelsgeschäften",
+        "unemployed": 7470,
+        "employed": 140946,
+        "rate": 5.3
+      },
+      "54140": {
+        "code": "54140",
+        "name": "Sicherheitsdienstleistungspersonal",
+        "unemployed": 875,
+        "employed": 16506,
+        "rate": 5.3
+      },
+      "71140": {
+        "code": "71140",
+        "name": "Betonierer/-innen, Betonoberflächenfertiger/- innen und verwandte Berufe",
+        "unemployed": 356,
+        "employed": 4074,
+        "rate": 8.7
+      },
+      "71190": {
+        "code": "71190",
+        "name": "Baukonstruktions- und verwandte Berufe, anderweitig nicht genannt",
+        "unemployed": 380,
+        "employed": 4983,
+        "rate": 7.6
+      },
+      "71230": {
+        "code": "71230",
+        "name": "Gipser/-innen, Trockenbauer/-innen",
+        "unemployed": 683,
+        "employed": 7777,
+        "rate": 8.8
+      },
+      "71310": {
+        "code": "71310",
+        "name": "Maler/-innen und verwandte Berufe",
+        "unemployed": 1012,
+        "employed": 20388,
+        "rate": 5
+      },
+      "72120": {
+        "code": "72120",
+        "name": "Schweisser/-innen und Brennschneider/-innen",
+        "unemployed": 168,
+        "employed": 3368,
+        "rate": 5
+      },
+      "72240": {
+        "code": "72240",
+        "name": "Metallpolierer/-innen, Rundschleifer/-innen und Werkzeugschärfer/-innen",
+        "unemployed": 174,
+        "employed": 2610,
+        "rate": 6.7
+      },
+      "73112": {
+        "code": "73112",
+        "name": "Uhrenarbeiter/-innen",
+        "unemployed": 750,
+        "employed": 8686,
+        "rate": 8.6
+      },
+      "81570": {
+        "code": "81570",
+        "name": "Bediener/-innen von Wäschereimaschinen",
+        "unemployed": 295,
+        "employed": 4761,
+        "rate": 6.2
+      },
+      "83440": {
+        "code": "83440",
+        "name": "Gabelstaplerfahrer/-innen und verwandte Berufe",
+        "unemployed": 110,
+        "employed": 1446,
+        "rate": 7.6
+      },
+      "91120": {
+        "code": "91120",
+        "name": "Reinigungspersonal und Hilfskräfte in Büros, Hotels und andere Einrichtungen",
+        "unemployed": 4512,
+        "employed": 79529,
+        "rate": 5.7
+      },
+      "92110": {
+        "code": "92110",
+        "name": "Hilfsarbeiter/-innen im Gemüse- und Obstbau",
+        "unemployed": 224,
+        "employed": 1577,
+        "rate": 14.2
+      },
+      "92140": {
+        "code": "92140",
+        "name": "Hilfsarbeiter/-innen im Gartenbau",
+        "unemployed": 393,
+        "employed": 5372,
+        "rate": 7.3
+      }
+    }
+  },
+  "majorGroups": {
+    "sourceUrl": "https://www.arbeit.swiss/de/informationszentrum/arbeitsmarktstatistik-schweiz",
+    "window": {
+      "from": "2025-10",
+      "to": "2026-09"
+    },
+    "monthsUsed": [
+      "2026-01",
+      "2026-02",
+      "2026-03",
+      "2026-04",
+      "2026-05",
+      "2026-06",
+      "2026-07",
+      "2026-08",
+      "2026-09"
+    ],
+    "perMonth": {
+      "2026-01": {
+        "0": 1.3,
+        "1": 2.5,
+        "2": 2.5,
+        "3": 2.4,
+        "4": 3.8,
+        "5": 4.3,
+        "6": 0.9,
+        "7": 4,
+        "8": 3.5,
+        "9": 9.5
+      },
+      "2026-02": {
+        "0": 1,
+        "1": 2.5,
+        "2": 2.5,
+        "3": 2.4,
+        "4": 3.8,
+        "5": 4.3,
+        "6": 0.9,
+        "7": 3.9,
+        "8": 3.3,
+        "9": 9.3
+      },
+      "2026-03": {
+        "0": 1.1,
+        "1": 2.5,
+        "2": 2.5,
+        "3": 2.4,
+        "4": 3.7,
+        "5": 4.2,
+        "6": 0.8,
+        "7": 3.5,
+        "8": 3.1,
+        "9": 8.8
+      },
+      "2026-04": {
+        "0": 1.3,
+        "1": 2.5,
+        "2": 2.5,
+        "3": 2.4,
+        "4": 3.6,
+        "5": 4.1,
+        "6": 0.7,
+        "7": 3.2,
+        "8": 3,
+        "9": 8.4
+      },
+      "2026-05": {
+        "0": 1.4,
+        "1": 2.5,
+        "2": 2.4,
+        "3": 2.4,
+        "4": 3.6,
+        "5": 4,
+        "6": 0.6,
+        "7": 3.1,
+        "8": 2.9,
+        "9": 8.1
+      },
+      "2026-06": {
+        "0": 1.3,
+        "1": 2.5,
+        "2": 2.5,
+        "3": 2.4,
+        "4": 3.6,
+        "5": 3.9,
+        "6": 0.5,
+        "7": 2.9,
+        "8": 2.8,
+        "9": 7.7
+      },
+      "2026-07": {
+        "0": 1.3,
+        "1": 2.6,
+        "2": 2.6,
+        "3": 2.5,
+        "4": 3.6,
+        "5": 3.8,
+        "6": 0.6,
+        "7": 2.8,
+        "8": 2.7,
+        "9": 7.5
+      },
+      "2026-08": {
+        "0": 1.3,
+        "1": 2.6,
+        "2": 2.6,
+        "3": 2.5,
+        "4": 3.7,
+        "5": 4,
+        "6": 0.7,
+        "7": 2.9,
+        "8": 2.6,
+        "9": 7.3
+      },
+      "2026-09": {
+        "0": 1,
+        "1": 2.6,
+        "2": 2.6,
+        "3": 2.5,
+        "4": 3.7,
+        "5": 4,
+        "6": 0.6,
+        "7": 2.8,
+        "8": 2.6,
+        "9": 7.3
+      }
+    },
+    "average": {
+      "0": {
+        "label": "Angehörige der regulären Streitkräfte",
+        "rate": 1.22,
+        "months": 9
+      },
+      "1": {
+        "label": "Führungskräfte",
+        "rate": 2.53,
+        "months": 9
+      },
+      "2": {
+        "label": "Akademische Berufe",
+        "rate": 2.52,
+        "months": 9
+      },
+      "3": {
+        "label": "Techniker/innen und gleichrangige nichttechnische Berufe",
+        "rate": 2.43,
+        "months": 9
+      },
+      "4": {
+        "label": "Bürokräfte und verwandte Berufe",
+        "rate": 3.68,
+        "months": 9
+      },
+      "5": {
+        "label": "Dienstleistungsberufe und Verkäufer",
+        "rate": 4.07,
+        "months": 9
+      },
+      "6": {
+        "label": "Fachkräfte in Land- und Forstwirtschaft und Fischerei",
+        "rate": 0.7,
+        "months": 9
+      },
+      "7": {
+        "label": "Handwerks- und verwandte Berufe",
+        "rate": 3.23,
+        "months": 9
+      },
+      "8": {
+        "label": "Bediener/innen von Anlagen und Maschinen und",
+        "rate": 2.94,
+        "months": 9
+      },
+      "9": {
+        "label": "Hilfsarbeitskräfte",
+        "rate": 8.21,
+        "months": 9
+      }
+    }
+  }
+}

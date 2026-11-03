@@ -1,0 +1,457 @@
+{
+  "berufsberatung/berufe_architekt-in.html": {
+    "url": "https://www.berufsberatung.ch/de/berufe/architekt-in",
+    "file": "berufsberatung/berufe_architekt-in.html",
+    "sha256": "7802ac26db293ac1c871739e5754a7638eb0945b4b0a18ee4e0748ad00be2a86",
+    "retrieved": "2026-11-03",
+    "bytes": 301979
+  },
+  "berufsberatung/berufe_arzt-aerztin.html": {
+    "url": "https://www.berufsberatung.ch/de/berufe/arzt-aerztin",
+    "file": "berufsberatung/berufe_arzt-aerztin.html",
+    "sha256": "d6264993ca44ddf09ed7561736de49bdd1d71d86f886f3eb6a250d595d8871a3",
+    "retrieved": "2026-11-03",
+    "bytes": 293119
+  },
+  "berufsberatung/berufe_automobil-mechatroniker-in-efz.html": {
+    "url": "https://www.berufsberatung.ch/de/berufe/automobil-mechatroniker-in-efz",
+    "file": "berufsberatung/berufe_automobil-mechatroniker-in-efz.html",
+    "sha256": "3a79bb65350dfddc3b41fd378f81f60531b0db49ea6df9c87e2212e7b49be004",
+    "retrieved": "2026-11-03",
+    "bytes": 365321
+  },
+  "berufsberatung/berufe_detailhandelsassistent-in-eba.html": {
+    "url": "https://www.berufsberatung.ch/de/berufe/detailhandelsassistent-in-eba",
+    "file": "berufsberatung/berufe_detailhandelsassistent-in-eba.html",
+    "sha256": "8fc58aa766bd56632743d387869385bdc7f820b6b24338556ce0beffe449abaa",
+    "retrieved": "2026-11-03",
+    "bytes": 340492
+  },
+  "berufsberatung/berufe_detailhandelsfachmann-frau-efz.html": {
+    "url": "https://www.berufsberatung.ch/de/berufe/detailhandelsfachmann-frau-efz",
+    "file": "berufsberatung/berufe_detailhandelsfachmann-frau-efz.html",
+    "sha256": "90c7d01eb2a17396e6620df4331ed5c9e3ece775e7013ab932c1b0ffcf6f93ec",
+    "retrieved": "2026-11-03",
+    "bytes": 424654
+  },
+  "berufsberatung/berufe_elektroinstallateur-in-efz.html": {
+    "url": "https://www.berufsberatung.ch/de/berufe/elektroinstallateur-in-efz",
+    "file": "berufsberatung/berufe_elektroinstallateur-in-efz.html",
+    "sha256": "daafb938518fec1b73a627e0f076db54baee7c16b4d301614fa17fe0f852ef92",
+    "retrieved": "2026-11-03",
+    "bytes": 399630
+  },
+  "berufsberatung/berufe_fachmann-frau-betreuung-efz.html": {
+    "url": "https://www.berufsberatung.ch/de/berufe/fachmann-frau-betreuung-efz",
+    "file": "berufsberatung/berufe_fachmann-frau-betreuung-efz.html",
+    "sha256": "f57a22241b26ff161f753bfe7a553c42269dd28d1bb25007fa140b2620632a58",
+    "retrieved": "2026-11-03",
+    "bytes": 370388
+  },
+  "berufsberatung/berufe_fachmann-frau-gesundheit-efz.html": {
+    "url": "https://www.berufsberatung.ch/de/berufe/fachmann-frau-gesundheit-efz",
+    "file": "berufsberatung/berufe_fachmann-frau-gesundheit-efz.html",
+    "sha256": "83cf4a12591e36a93a739f1b71b6c09996992f724d4c7d3c8b1995c25ba85d4d",
+    "retrieved": "2026-11-03",
+    "bytes": 435042
+  },
+  "berufsberatung/berufe_fachmann-frau-im-finanz-und-rechnungswesen-bp.html": {
+    "url": "https://www.berufsberatung.ch/de/berufe/fachmann-frau-im-finanz-und-rechnungswesen-bp",
+    "file": "berufsberatung/berufe_fachmann-frau-im-finanz-und-rechnungswesen-bp.html",
+    "sha256": "7da4f059a6e24420a8e9ac77c3505faf3b139a417b961901d2245006cf251f6a",
+    "retrieved": "2026-11-03",
+    "bytes": 282624
+  },
+  "berufsberatung/berufe_grafiker-in-efz.html": {
+    "url": "https://www.berufsberatung.ch/de/berufe/grafiker-in-efz",
+    "file": "berufsberatung/berufe_grafiker-in-efz.html",
+    "sha256": "633ea590daa15b2f73549bfd8670bbd93fae0ac70df11dcaba1945ac5ace35d5",
+    "retrieved": "2026-11-03",
+    "bytes": 382907
+  },
+  "berufsberatung/berufe_informatiker-in-efz.html": {
+    "url": "https://www.berufsberatung.ch/de/berufe/informatiker-in-efz",
+    "file": "berufsberatung/berufe_informatiker-in-efz.html",
+    "sha256": "46484b61c43061b9a846bd53a962b0cc808c46dacb72e0478147cb61f83fac7d",
+    "retrieved": "2026-11-03",
+    "bytes": 397650
+  },
+  "berufsberatung/berufe_kaufmann-frau-efz.html": {
+    "url": "https://www.berufsberatung.ch/de/berufe/kaufmann-frau-efz",
+    "file": "berufsberatung/berufe_kaufmann-frau-efz.html",
+    "sha256": "d176e1c8fdb5750f91de2757ab4fce7d99ca34e5be21136542cb5a75a4dabcf4",
+    "retrieved": "2026-11-03",
+    "bytes": 728432
+  },
+  "berufsberatung/berufe_koch-koechin-efz.html": {
+    "url": "https://www.berufsberatung.ch/de/berufe/koch-koechin-efz",
+    "file": "berufsberatung/berufe_koch-koechin-efz.html",
+    "sha256": "5a5a841532700e66097df14f65d8e6fb5c72b2b32d45e6a43199cabf2c250eb4",
+    "retrieved": "2026-11-03",
+    "bytes": 477413
+  },
+  "berufsberatung/berufe_laborant-in-efz.html": {
+    "url": "https://www.berufsberatung.ch/de/berufe/laborant-in-efz",
+    "file": "berufsberatung/berufe_laborant-in-efz.html",
+    "sha256": "231d85361b78b271fb83b0bae13f295b56e2c7e5f00e07fc48448881bc4a9f9b",
+    "retrieved": "2026-11-03",
+    "bytes": 335903
+  },
+  "berufsberatung/berufe_landwirt-in-efz.html": {
+    "url": "https://www.berufsberatung.ch/de/berufe/landwirt-in-efz",
+    "file": "berufsberatung/berufe_landwirt-in-efz.html",
+    "sha256": "77d7ae931ac42e54c7ab43c303045f3dae0e17683e7befbf500b80426ef4c776",
+    "retrieved": "2026-11-03",
+    "bytes": 339149
+  },
+  "berufsberatung/berufe_logistiker-in-efz.html": {
+    "url": "https://www.berufsberatung.ch/de/berufe/logistiker-in-efz",
+    "file": "berufsberatung/berufe_logistiker-in-efz.html",
+    "sha256": "b0a268bd603ba47966df68f8e1173bec35bcb4619a0f28e1cc61987fd1ffac27",
+    "retrieved": "2026-11-03",
+    "bytes": 378901
+  },
+  "berufsberatung/berufe_maschinenbautechniker-in-hf.html": {
+    "url": "https://www.berufsberatung.ch/de/berufe/maschinenbautechniker-in-hf",
+    "file": "berufsberatung/berufe_maschinenbautechniker-in-hf.html",
+    "sha256": "4f328bb794fa763f0c1699a60df09ef9a07782293a460fc8bd0cd301a54feb3e",
+    "retrieved": "2026-11-03",
+    "bytes": 312220
+  },
+  "berufsberatung/berufe_medizinische-r-praxisassistent-in-efz.html": {
+    "url": "https://www.berufsberatung.ch/de/berufe/medizinische-r-praxisassistent-in-efz",
+    "file": "berufsberatung/berufe_medizinische-r-praxisassistent-in-efz.html",
+    "sha256": "e13117c45e2a4d0b4cedc28ca83d3f6420cb9136224f308c991012af97f24369",
+    "retrieved": "2026-11-03",
+    "bytes": 357352
+  },
+  "berufsberatung/berufe_pflegefachmann-frau.html": {
+    "url": "https://www.berufsberatung.ch/de/berufe/pflegefachmann-frau",
+    "file": "berufsberatung/berufe_pflegefachmann-frau.html",
+    "sha256": "236310f3f3f6f7a80bfaea5ac5d4db66c00445cf1dc1a63f27aedae4007951dc",
+    "retrieved": "2026-11-03",
+    "bytes": 400582
+  },
+  "berufsberatung/berufe_polizist-in-bp.html": {
+    "url": "https://www.berufsberatung.ch/de/berufe/polizist-in-bp",
+    "file": "berufsberatung/berufe_polizist-in-bp.html",
+    "sha256": "e6469499e71b536a071dfdebb5a0b11a0666e14d18b2b9515c7d0596daaf3668",
+    "retrieved": "2026-11-03",
+    "bytes": 299210
+  },
+  "berufsberatung/berufe_polymechaniker-in-efz.html": {
+    "url": "https://www.berufsberatung.ch/de/berufe/polymechaniker-in-efz",
+    "file": "berufsberatung/berufe_polymechaniker-in-efz.html",
+    "sha256": "0036f13166ceaa850f889ad068334034c351a0954691acaaaa2b20302977c0b9",
+    "retrieved": "2026-11-03",
+    "bytes": 420714
+  },
+  "berufsberatung/berufe_sanitaerinstallateur-in-efz.html": {
+    "url": "https://www.berufsberatung.ch/de/berufe/sanitaerinstallateur-in-efz",
+    "file": "berufsberatung/berufe_sanitaerinstallateur-in-efz.html",
+    "sha256": "8798c49c54f314ac63ce74c17dc3403ea63765dc019c34a87724a6ec3a2ae6dd",
+    "retrieved": "2026-11-03",
+    "bytes": 369548
+  },
+  "berufsberatung/berufe_strassentransportfachmann-frau-efz.html": {
+    "url": "https://www.berufsberatung.ch/de/berufe/strassentransportfachmann-frau-efz",
+    "file": "berufsberatung/berufe_strassentransportfachmann-frau-efz.html",
+    "sha256": "b4cab113d5d71039311ea2b708e5d1717d061c7fa4422a9cf166a31746e00755",
+    "retrieved": "2026-11-03",
+    "bytes": 321851
+  },
+  "berufsberatung/berufe_zeichner-in-efz.html": {
+    "url": "https://www.berufsberatung.ch/de/berufe/zeichner-in-efz",
+    "file": "berufsberatung/berufe_zeichner-in-efz.html",
+    "sha256": "0e0a528f68d5432929229b27e8569555fe1c6abcd02a1208ba19a75fecca2b00",
+    "retrieved": "2026-11-03",
+    "bytes": 390100
+  },
+  "berufsberatung/berufe_zimmermann-zimmerin-efz.html": {
+    "url": "https://www.berufsberatung.ch/de/berufe/zimmermann-zimmerin-efz",
+    "file": "berufsberatung/berufe_zimmermann-zimmerin-efz.html",
+    "sha256": "e33a83fe0e783baddcf2add2c3206145302eedccfe5f9d6ca649c6c44ffb333f",
+    "retrieved": "2026-11-03",
+    "bytes": 346523
+  },
+  "berufsberatung/bildungssystem_d_berufsmaturitaet.html": {
+    "url": "https://www.berufsberatung.ch/de/bildungssystem/d/berufsmaturitaet",
+    "file": "berufsberatung/bildungssystem_d_berufsmaturitaet.html",
+    "sha256": "16b8266fd7cb44292c7259658c74a9f6f105faace99af798c891cc683ec618ad",
+    "retrieved": "2026-11-03",
+    "bytes": 204014
+  },
+  "berufsberatung/bildungssystem_d_gymnasiale-maturitaetsschulen.html": {
+    "url": "https://www.berufsberatung.ch/de/bildungssystem/d/gymnasiale-maturitaetsschulen",
+    "file": "berufsberatung/bildungssystem_d_gymnasiale-maturitaetsschulen.html",
+    "sha256": "9a8a8cc7acf4ca9ffb016ea9c7444d920c62cc109d2a270847c74f0d676ddc72",
+    "retrieved": "2026-11-03",
+    "bytes": 204576
+  },
+  "berufsberatung/bildungssystem_d_lehre-efz.html": {
+    "url": "https://www.berufsberatung.ch/de/bildungssystem/d/lehre-efz",
+    "file": "berufsberatung/bildungssystem_d_lehre-efz.html",
+    "sha256": "3b43ad9598d4fb2f85f473a6d2ab46f4ca3c6196d61f90460daead8912aac568",
+    "retrieved": "2026-11-03",
+    "bytes": 201998
+  },
+  "berufsberatung/studienrichtungen_bauingenieurwissenschaften.html": {
+    "url": "https://www.berufsberatung.ch/de/studienrichtungen/bauingenieurwissenschaften",
+    "file": "berufsberatung/studienrichtungen_bauingenieurwissenschaften.html",
+    "sha256": "5fe66e72816887d87d11dd1f4dd9085d3a204a13ae3f77ffedff7a00ace8e915",
+    "retrieved": "2026-11-03",
+    "bytes": 414199
+  },
+  "berufsberatung/studienrichtungen_betriebswirtschaft.html": {
+    "url": "https://www.berufsberatung.ch/de/studienrichtungen/betriebswirtschaft",
+    "file": "berufsberatung/studienrichtungen_betriebswirtschaft.html",
+    "sha256": "9c98ee11521627419ac29fce512bbdf86e90a0c897949f50b477f0ef287140b8",
+    "retrieved": "2026-11-03",
+    "bytes": 527259
+  },
+  "berufsberatung/studienrichtungen_biologie.html": {
+    "url": "https://www.berufsberatung.ch/de/studienrichtungen/biologie",
+    "file": "berufsberatung/studienrichtungen_biologie.html",
+    "sha256": "7e8fe903c757d27303f30a80c00ec7f663c7121591aa7bb29ae6e74217a6436e",
+    "retrieved": "2026-11-03",
+    "bytes": 449915
+  },
+  "berufsberatung/studienrichtungen_elektrotechnik-informationstechnologie.html": {
+    "url": "https://www.berufsberatung.ch/de/studienrichtungen/elektrotechnik-informationstechnologie",
+    "file": "berufsberatung/studienrichtungen_elektrotechnik-informationstechnologie.html",
+    "sha256": "7287fc00940d9a5cb7f24eca215467d95b5f67c401ffb3e8464fddf6c90629f4",
+    "retrieved": "2026-11-03",
+    "bytes": 438632
+  },
+  "berufsberatung/studienrichtungen_informatik.html": {
+    "url": "https://www.berufsberatung.ch/de/studienrichtungen/informatik",
+    "file": "berufsberatung/studienrichtungen_informatik.html",
+    "sha256": "2b760f99017d5380af9321df7ca7b8b1a947b7790c8798d4cf4fb3259475e200",
+    "retrieved": "2026-11-03",
+    "bytes": 497632
+  },
+  "berufsberatung/studienrichtungen_maschineningenieurwissenschaften.html": {
+    "url": "https://www.berufsberatung.ch/de/studienrichtungen/maschineningenieurwissenschaften",
+    "file": "berufsberatung/studienrichtungen_maschineningenieurwissenschaften.html",
+    "sha256": "56c0041ea4cdf3718c47fb04e70b3c1dd9746c800b37c70b7d22a2a0c2033a09",
+    "retrieved": "2026-11-03",
+    "bytes": 431935
+  },
+  "berufsberatung/studienrichtungen_physiotherapie.html": {
+    "url": "https://www.berufsberatung.ch/de/studienrichtungen/physiotherapie",
+    "file": "berufsberatung/studienrichtungen_physiotherapie.html",
+    "sha256": "f8db0a5f09850eaf89d8e143433c9b5d9eb59af230f53820bb1c2a21d228af82",
+    "retrieved": "2026-11-03",
+    "bytes": 478842
+  },
+  "berufsberatung/studienrichtungen_psychologie.html": {
+    "url": "https://www.berufsberatung.ch/de/studienrichtungen/psychologie",
+    "file": "berufsberatung/studienrichtungen_psychologie.html",
+    "sha256": "d940740f162b8c4210179baf989a6268827c499a4d75518bc2c24368c4de81f9",
+    "retrieved": "2026-11-03",
+    "bytes": 445252
+  },
+  "berufsberatung/studienrichtungen_rechtswissenschaft.html": {
+    "url": "https://www.berufsberatung.ch/de/studienrichtungen/rechtswissenschaft",
+    "file": "berufsberatung/studienrichtungen_rechtswissenschaft.html",
+    "sha256": "46b8f4fa2299e99c5c3baea600318617908819dbb812e2afb724183e4a0e94d3",
+    "retrieved": "2026-11-03",
+    "bytes": 474043
+  },
+  "berufsberatung/studienrichtungen_soziale-arbeit.html": {
+    "url": "https://www.berufsberatung.ch/de/studienrichtungen/soziale-arbeit",
+    "file": "berufsberatung/studienrichtungen_soziale-arbeit.html",
+    "sha256": "2c8879b922c65631f0369a11a243f778edc19dc560f9728f4d0371cb5eed7145",
+    "retrieved": "2026-11-03",
+    "bytes": 400531
+  },
+  "berufsberatung/studienrichtungen_unterricht-vorschulstufe-primarstufe.html": {
+    "url": "https://www.berufsberatung.ch/de/studienrichtungen/unterricht-vorschulstufe-primarstufe",
+    "file": "berufsberatung/studienrichtungen_unterricht-vorschulstufe-primarstufe.html",
+    "sha256": "f3e7d776060c06767b742de48002b79551793e657fe647137e53144aa06c31c6",
+    "retrieved": "2026-11-03",
+    "bytes": 448066
+  },
+  "berufsberatung/studienrichtungen_volkswirtschaft.html": {
+    "url": "https://www.berufsberatung.ch/de/studienrichtungen/volkswirtschaft",
+    "file": "berufsberatung/studienrichtungen_volkswirtschaft.html",
+    "sha256": "7351b4d737c50e09dbb4f8e8f43da0e5cb299916faaee3b240d14fb9d5b96ecc",
+    "retrieved": "2026-11-03",
+    "bytes": 454931
+  },
+  "bfs-dam/304654.xls": {
+    "url": "https://dam-api.bfs.admin.ch/hub/api/dam/assets/304654/master",
+    "file": "bfs-dam/304654.xls",
+    "sha256": "b11caec7e267c2a1bf3e02147344890e26c8167109e52865f4d94cfd8b8241a9",
+    "retrieved": "2026-11-03",
+    "bytes": 33280
+  },
+  "bfs-dam/36077550.xlsx": {
+    "url": "https://dam-api.bfs.admin.ch/hub/api/dam/assets/36077550/master",
+    "file": "bfs-dam/36077550.xlsx",
+    "sha256": "20516eacd03e8baabc3ec29fd659e951e680b2a808b65ed7a1bc58aaf386ef77",
+    "retrieved": "2026-11-03",
+    "bytes": 29820
+  },
+  "bfs-dam/36304956.xlsx": {
+    "url": "https://dam-api.bfs.admin.ch/hub/api/dam/assets/36304956/master",
+    "file": "bfs-dam/36304956.xlsx",
+    "sha256": "b99c2c7522853376cce288ca760adb647ceecc7479da6d5400c8dd98a9b845bd",
+    "retrieved": "2026-11-03",
+    "bytes": 304692
+  },
+  "bfs-dam/36508654.xlsx": {
+    "url": "https://dam-api.bfs.admin.ch/hub/api/dam/assets/36508654/master",
+    "file": "bfs-dam/36508654.xlsx",
+    "sha256": "48f70b08e7d5d28ebffebdc1b51d55ac07a45d506b7802c68c0e5ae79bebc72b",
+    "retrieved": "2026-11-03",
+    "bytes": 116924
+  },
+  "bfs-dam/36576942.xlsx": {
+    "url": "https://dam-api.bfs.admin.ch/hub/api/dam/assets/36576942/master",
+    "file": "bfs-dam/36576942.xlsx",
+    "sha256": "0e1203806ec2879695e4ae316def973062bc3fa544dd8f620225338fc5076deb",
+    "retrieved": "2026-11-03",
+    "bytes": 54323
+  },
+  "bfs-dam/36732664.xlsx": {
+    "url": "https://dam-api.bfs.admin.ch/hub/api/dam/assets/36732664/master",
+    "file": "bfs-dam/36732664.xlsx",
+    "sha256": "b0c7a6d6e7aafede329e02cfcb2e1f8372eb9e4dba2ffdd786c109c364537b3c",
+    "retrieved": "2026-11-03",
+    "bytes": 140292
+  },
+  "bfs-dam/36829811.xlsx": {
+    "url": "https://dam-api.bfs.admin.ch/hub/api/dam/assets/36829811/master",
+    "file": "bfs-dam/36829811.xlsx",
+    "sha256": "f97350232af5708124d458ebeb8559eef8d6ff7ecf9f49b901ce07be44b1ce33",
+    "retrieved": "2026-11-03",
+    "bytes": 330288
+  },
+  "bfs-dam/36829817.xlsx": {
+    "url": "https://dam-api.bfs.admin.ch/hub/api/dam/assets/36829817/master",
+    "file": "bfs-dam/36829817.xlsx",
+    "sha256": "a7c849de628959a57c111885c1bdea92b4e1c900af169cb210d7f3d1db9ec437",
+    "retrieved": "2026-11-03",
+    "bytes": 330158
+  },
+  "bfs-dam/36829823.xlsx": {
+    "url": "https://dam-api.bfs.admin.ch/hub/api/dam/assets/36829823/master",
+    "file": "bfs-dam/36829823.xlsx",
+    "sha256": "73b89d9813b6e875364a97cbb2c489312855353ccac1dba10470890e25bc2376",
+    "retrieved": "2026-11-03",
+    "bytes": 329872
+  },
+  "bfs-lse/px-x-0304010000_202-2024-ch.json": {
+    "url": "https://www.pxweb.bfs.admin.ch/api/v1/de/px-x-0304010000_202/px-x-0304010000_202.px",
+    "file": "bfs-lse/px-x-0304010000_202-2024-ch.json",
+    "sha256": "c711b19ed1d0b86273a9ad931a9b5a9391c535f29a77a8002c45468a48f476fb",
+    "retrieved": "2026-11-03",
+    "bytes": 3360
+  },
+  "bfs-lse/px-x-0304010000_202-meta.json": {
+    "url": "https://www.pxweb.bfs.admin.ch/api/v1/de/px-x-0304010000_202/px-x-0304010000_202.px",
+    "file": "bfs-lse/px-x-0304010000_202-meta.json",
+    "sha256": "bb9a65c694eb5b8deac3a1546aa346048bf53ea6e764f45dd7ac8158b82466d9",
+    "retrieved": "2026-11-03",
+    "bytes": 1566
+  },
+  "bfs-lse/px-x-0304010000_205-2024-ch.json": {
+    "url": "https://www.pxweb.bfs.admin.ch/api/v1/de/px-x-0304010000_205/px-x-0304010000_205.px",
+    "file": "bfs-lse/px-x-0304010000_205-2024-ch.json",
+    "sha256": "afa6e6ea0d26a820774a3338b8eb64b4f67aa655a1ca11fbade7aafb93ce46ce",
+    "retrieved": "2026-11-03",
+    "bytes": 56761
+  },
+  "bfs-lse/px-x-0304010000_205-meta.json": {
+    "url": "https://www.pxweb.bfs.admin.ch/api/v1/de/px-x-0304010000_205/px-x-0304010000_205.px",
+    "file": "bfs-lse/px-x-0304010000_205-meta.json",
+    "sha256": "f03abccc0e5dfe15aefadcc8c9d3a607cbd03ae1ebb234bd84dd0b3111445745",
+    "retrieved": "2026-11-03",
+    "bytes": 4007
+  },
+  "seco/arbeitsmarktstatistik-schweiz.html": {
+    "url": "https://www.arbeit.swiss/de/informationszentrum/arbeitsmarktstatistik-schweiz",
+    "file": "seco/arbeitsmarktstatistik-schweiz.html",
+    "sha256": "2dcf03e47a0a633bbeb95c433c77c72e4e0eb993527bbd0cbe3b9b38311994ca",
+    "retrieved": "2026-11-03",
+    "bytes": 663656
+  },
+  "seco/lage-2026-01.pdf": {
+    "url": "https://www.arbeit.swiss/api/media/fileservice/sdweb-docs-prod-arbeitswiss-files/files/2026/06/01/9c430302-0955-4980-b5fa-1de9ed6fa80e.pdf",
+    "file": "seco/lage-2026-01.pdf",
+    "sha256": "badb2e4518f213d7fb785637fa5ca4bb1898c00f7b3a4485e16629efdf8917b1",
+    "retrieved": "2026-11-03",
+    "bytes": 415755
+  },
+  "seco/lage-2026-02.pdf": {
+    "url": "https://www.arbeit.swiss/api/media/fileservice/sdweb-docs-prod-arbeitswiss-files/files/2026/06/01/f081b2e7-0dc8-47e9-bf29-1212fae99aa2.pdf",
+    "file": "seco/lage-2026-02.pdf",
+    "sha256": "948a39f0dc006f7b27f1264a18ec0ee97e6e943a1eb576394d497e5d883773e6",
+    "retrieved": "2026-11-03",
+    "bytes": 416117
+  },
+  "seco/lage-2026-03.pdf": {
+    "url": "https://www.arbeit.swiss/api/media/fileservice/sdweb-docs-prod-arbeitswiss-files/files/2026/06/01/4cd65334-465e-4d30-a21b-7ca62ad5b580.pdf",
+    "file": "seco/lage-2026-03.pdf",
+    "sha256": "d663ca74de12e6260930197cb77cca0291e382ceeb0021c419db5fd84f748824",
+    "retrieved": "2026-11-03",
+    "bytes": 415947
+  },
+  "seco/lage-2026-04.pdf": {
+    "url": "https://www.arbeit.swiss/api/media/fileservice/sdweb-docs-prod-arbeitswiss-files/files/2026/06/01/f97dbf66-d888-404d-a789-10b075a79e77.pdf",
+    "file": "seco/lage-2026-04.pdf",
+    "sha256": "401af9dfb279f9edeb54889b24154774777ce8ba3202fa515f9c127a22f4ca9b",
+    "retrieved": "2026-11-03",
+    "bytes": 416258
+  },
+  "seco/lage-2026-05.pdf": {
+    "url": "https://www.arbeit.swiss/api/media/fileservice/sdweb-docs-prod-arbeitswiss-files/files/2026/06/10/97480b7c-462e-4e66-8829-a4eca8784f43.pdf",
+    "file": "seco/lage-2026-05.pdf",
+    "sha256": "4b72a6c1913ced5449a9bd3e22e866bf9954dd34ecedf2e79c099775beba8447",
+    "retrieved": "2026-11-03",
+    "bytes": 416294
+  },
+  "seco/lage-2026-06.pdf": {
+    "url": "https://www.arbeit.swiss/api/media/fileservice/sdweb-docs-prod-arbeitswiss-files/files/2026/07/03/ad88b5c1-2afa-43d1-8fdf-94df030e4cfe.pdf",
+    "file": "seco/lage-2026-06.pdf",
+    "sha256": "ff8550ef37a05627caf0458fde279cb2f13083bca7036f3dbebcbb228b10ab68",
+    "retrieved": "2026-11-03",
+    "bytes": 416649
+  },
+  "seco/lage-2026-07.pdf": {
+    "url": "https://www.arbeit.swiss/api/media/fileservice/sdweb-docs-prod-arbeitswiss-files/files/2026/08/05/e533403c-36ee-473f-9945-5171d45b6205.pdf",
+    "file": "seco/lage-2026-07.pdf",
+    "sha256": "e3eb91f458165924fbd4c778b285cb2f02a7c206eec6d67abf0f02135e3de676",
+    "retrieved": "2026-11-03",
+    "bytes": 416380
+  },
+  "seco/lage-2026-08.pdf": {
+    "url": "https://www.arbeit.swiss/api/media/fileservice/sdweb-docs-prod-arbeitswiss-files/files/2026/09/04/f72d8d9d-0117-47cb-89b0-16bbefe6d78a.pdf",
+    "file": "seco/lage-2026-08.pdf",
+    "sha256": "378568316f62492fecfe191ce714519c4ca70c8712f0124a31317c3fdc237464",
+    "retrieved": "2026-11-03",
+    "bytes": 416410
+  },
+  "seco/lage-2026-09.pdf": {
+    "url": "https://www.arbeit.swiss/api/media/fileservice/sdweb-docs-prod-arbeitswiss-files/files/2026/10/05/24f655b7-ca92-4132-95f7-44c3e421e0e0.pdf",
+    "file": "seco/lage-2026-09.pdf",
+    "sha256": "5ccfa02e3ff5cad6ca0f6984e3294657d4440554bfc614659f3e0eb0d5bb18b4",
+    "retrieved": "2026-11-03",
+    "bytes": 416801
+  },
+  "seco/meldepflichtige-berufsarten-2027-de.pdf": {
+    "url": "https://www.arbeit.swiss/api/media/fileservice/sdweb-docs-prod-arbeitswiss-files/files/2026/10/28/90a7c3bf-2618-4aa1-a553-ba293c84c566.pdf",
+    "file": "seco/meldepflichtige-berufsarten-2027-de.pdf",
+    "sha256": "ba68101d6740971ef30f47b6e33dda7e57d83f3c23bc5f9e9a7b71bc8f397205",
+    "retrieved": "2026-11-03",
+    "bytes": 172293
+  },
+  "seco/stellenmeldepflicht-checkup-2027.html": {
+    "url": "https://www.arbeit.swiss/de/arbeitgebende/stellenmeldepflicht-checkup-2027",
+    "file": "seco/stellenmeldepflicht-checkup-2027.html",
+    "sha256": "850fc8293dcf8f3a8fbed3680d563b75ca5bc5bfc6a760bfbfeace783c597025",
+    "retrieved": "2026-11-03",
+    "bytes": 552309
+  }
+}

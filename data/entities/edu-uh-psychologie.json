@@ -1,0 +1,68 @@
+{
+  "id": "edu-uh-psychologie",
+  "kind": "education",
+  "route": "academic",
+  "eduType": "UH-MSc",
+  "name": {
+    "en": "MSc Psychology (UH)",
+    "de": "Master Psychologie (UH)",
+    "fr": null,
+    "it": null
+  },
+  "codes": {
+    "isco08": "2634"
+  },
+  "sector": "Health",
+  "refs": {
+    "studyField": "UH:Geistes- und Sozialwissenschaften",
+    "gradIncome": "uh:Master:Geistes- und Sozialwissenschaften",
+    "qualLevel": "higherEducation",
+    "besta": "86-88",
+    "nogaSection": "Q"
+  },
+  "pathway": [
+    {
+      "label": "Gymnasiale Maturität",
+      "years": 4,
+      "sourceUrl": "https://www.berufsberatung.ch/de/bildungssystem/d/gymnasiale-maturitaetsschulen",
+      "confidence": "estimated",
+      "note": "berufsberatung.ch states 3–6 years depending on canton (partly overlapping compulsory school); 4 years after compulsory school assumed."
+    },
+    {
+      "label": "Bachelor Psychologie (UH)",
+      "years": 3,
+      "sourceUrl": "https://www.berufsberatung.ch/de/studienrichtungen/psychologie",
+      "confidence": "measured"
+    },
+    {
+      "label": "Master Psychologie (UH)",
+      "years": 2,
+      "sourceUrl": "https://www.berufsberatung.ch/de/studienrichtungen/psychologie",
+      "confidence": "measured"
+    }
+  ],
+  "leadsTo": [
+    "occ-psychologe"
+  ],
+  "trainedVia": [],
+  "languageRegions": [
+    "de",
+    "fr"
+  ],
+  "raw": {
+    "entryAccess": {
+      "value": 0,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://www.berufsberatung.ch/de/studienrichtungen/psychologie",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "Open admission with Matura (some universities apply limits only in exceptional years)."
+    }
+  },
+  "meta": {
+    "addedBy": "initial-dataset",
+    "reviewed": "2026-11-03"
+  }
+}

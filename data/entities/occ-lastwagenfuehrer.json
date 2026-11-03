@@ -1,0 +1,57 @@
+{
+  "id": "occ-lastwagenfuehrer",
+  "kind": "occupation",
+  "route": "vocational",
+  "name": {
+    "en": "Truck driver",
+    "de": "Lastwagenführer/in (Strassentransportfachmann/-frau)",
+    "fr": null,
+    "it": null
+  },
+  "codes": {
+    "isco08": "8332",
+    "chIsco19": "83320"
+  },
+  "sector": "Logistics / transport",
+  "refs": {
+    "qualLevel": "apprenticeship",
+    "nogaSection": "H",
+    "besta": "49-53"
+  },
+  "pathway": [],
+  "leadsTo": [],
+  "trainedVia": [
+    "edu-efz-strassentransport"
+  ],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "mobility": {
+      "value": 6,
+      "unit": "rubric 0–9",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#11-international-mobility",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "recognition 2/3, language independence 2/3, transferability 2/3. EU/CH licence categories mutually recognised (C/CE, CZV)."
+    },
+    "regionalUbiquity": {
+      "value": 3,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#12-regional-availability",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "Transport firms in all regions."
+    }
+  },
+  "meta": {
+    "addedBy": "initial-dataset",
+    "reviewed": "2026-11-03"
+  }
+}

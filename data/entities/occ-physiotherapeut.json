@@ -1,0 +1,57 @@
+{
+  "id": "occ-physiotherapeut",
+  "kind": "occupation",
+  "route": "academic",
+  "name": {
+    "en": "Physiotherapist",
+    "de": "Physiotherapeut/in",
+    "fr": null,
+    "it": null
+  },
+  "codes": {
+    "isco08": "2264",
+    "chIsco19": "22640"
+  },
+  "sector": "Health",
+  "refs": {
+    "qualLevel": "higherEducation",
+    "nogaSection": "Q",
+    "besta": "86-88"
+  },
+  "pathway": [],
+  "leadsTo": [],
+  "trainedVia": [
+    "edu-fh-physio"
+  ],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "mobility": {
+      "value": 5,
+      "unit": "rubric 0–9",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#11-international-mobility",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "recognition 2/3, language independence 1/3, transferability 2/3. Regulated profession; recognition with possible compensation measures; patient contact language-bound."
+    },
+    "regionalUbiquity": {
+      "value": 3,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#12-regional-availability",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "Practices and hospitals in all regions."
+    }
+  },
+  "meta": {
+    "addedBy": "initial-dataset",
+    "reviewed": "2026-11-03"
+  }
+}

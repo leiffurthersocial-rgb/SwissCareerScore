@@ -1,0 +1,386 @@
+{
+  "description": "Task-content shares (% of working time) per ISCO-08 unit group, assigned by the project from ISCO-08 task descriptions (ILO 2012, Vol. 1). Expert judgment — see docs/methodology.md §4.",
+  "weights": {
+    "NRA": 0.6,
+    "NRI": 0.15,
+    "RC": 1.0,
+    "RM": 0.5,
+    "NRM": 0.1
+  },
+  "occupations": {
+    "5321": {
+      "label": "Health care assistants",
+      "shares": {
+        "NRA": 10,
+        "NRI": 40,
+        "RC": 15,
+        "RM": 5,
+        "NRM": 30
+      },
+      "rationale": "Bedside care, mobilisation and observation (physical, interpersonal) dominate; documentation is the routine-cognitive share."
+    },
+    "2221": {
+      "label": "Nursing professionals",
+      "shares": {
+        "NRA": 25,
+        "NRI": 40,
+        "RC": 15,
+        "RM": 0,
+        "NRM": 20
+      },
+      "rationale": "Clinical assessment and care planning (analytic) plus patient interaction; documentation routine."
+    },
+    "2211": {
+      "label": "Generalist medical practitioners",
+      "shares": {
+        "NRA": 45,
+        "NRI": 35,
+        "RC": 10,
+        "RM": 0,
+        "NRM": 10
+      },
+      "rationale": "Diagnosis and treatment decisions (analytic), consultation (interpersonal), examinations (physical)."
+    },
+    "2264": {
+      "label": "Physiotherapists",
+      "shares": {
+        "NRA": 20,
+        "NRI": 40,
+        "RC": 5,
+        "RM": 0,
+        "NRM": 35
+      },
+      "rationale": "Hands-on treatment and exercise guidance are physical/interpersonal."
+    },
+    "5311": {
+      "label": "Child care workers",
+      "shares": {
+        "NRA": 10,
+        "NRI": 55,
+        "RC": 5,
+        "RM": 0,
+        "NRM": 30
+      },
+      "rationale": "Supervision, education and care of children; little routine information processing."
+    },
+    "2635": {
+      "label": "Social work and counselling professionals",
+      "shares": {
+        "NRA": 30,
+        "NRI": 55,
+        "RC": 15,
+        "RM": 0,
+        "NRM": 0
+      },
+      "rationale": "Case assessment and counselling; case documentation routine."
+    },
+    "2634": {
+      "label": "Psychologists",
+      "shares": {
+        "NRA": 40,
+        "NRI": 50,
+        "RC": 10,
+        "RM": 0,
+        "NRM": 0
+      },
+      "rationale": "Assessment, diagnosis and therapy conversations; report writing."
+    },
+    "3256": {
+      "label": "Medical assistants",
+      "shares": {
+        "NRA": 10,
+        "NRI": 35,
+        "RC": 35,
+        "RM": 5,
+        "NRM": 15
+      },
+      "rationale": "Reception, scheduling, billing (routine cognitive) plus lab tasks and patient contact."
+    },
+    "2341": {
+      "label": "Primary school teachers",
+      "shares": {
+        "NRA": 25,
+        "NRI": 60,
+        "RC": 10,
+        "RM": 0,
+        "NRM": 5
+      },
+      "rationale": "Teaching and classroom management (interpersonal); lesson preparation (analytic); grading/admin."
+    },
+    "2512": {
+      "label": "Software developers",
+      "shares": {
+        "NRA": 65,
+        "NRI": 10,
+        "RC": 25,
+        "RM": 0,
+        "NRM": 0
+      },
+      "rationale": "Design and problem solving (analytic) with a sizeable share of codifiable coding work; highly exposed to generative AI."
+    },
+    "7223": {
+      "label": "Metal working machine tool setters and operators",
+      "shares": {
+        "NRA": 20,
+        "NRI": 5,
+        "RC": 15,
+        "RM": 40,
+        "NRM": 20
+      },
+      "rationale": "CNC programming/set-up (analytic) but machining and quality checks are routine manual."
+    },
+    "7411": {
+      "label": "Building and related electricians",
+      "shares": {
+        "NRA": 20,
+        "NRI": 10,
+        "RC": 5,
+        "RM": 15,
+        "NRM": 50
+      },
+      "rationale": "Installation on varied sites is non-routine physical; planning and troubleshooting analytic."
+    },
+    "2144": {
+      "label": "Mechanical engineers",
+      "shares": {
+        "NRA": 60,
+        "NRI": 15,
+        "RC": 20,
+        "RM": 0,
+        "NRM": 5
+      },
+      "rationale": "Design, calculation and simulation (analytic); documentation routine."
+    },
+    "3115": {
+      "label": "Mechanical engineering technicians",
+      "shares": {
+        "NRA": 40,
+        "NRI": 10,
+        "RC": 30,
+        "RM": 10,
+        "NRM": 10
+      },
+      "rationale": "Construction drawings and process support; CAD and documentation partly routine."
+    },
+    "2151": {
+      "label": "Electrical engineers",
+      "shares": {
+        "NRA": 60,
+        "NRI": 15,
+        "RC": 20,
+        "RM": 0,
+        "NRM": 5
+      },
+      "rationale": "System design and analysis (analytic)."
+    },
+    "2142": {
+      "label": "Civil engineers",
+      "shares": {
+        "NRA": 55,
+        "NRI": 20,
+        "RC": 20,
+        "RM": 0,
+        "NRM": 5
+      },
+      "rationale": "Structural design, project coordination (interpersonal), site supervision."
+    },
+    "2161": {
+      "label": "Building architects",
+      "shares": {
+        "NRA": 55,
+        "NRI": 25,
+        "RC": 15,
+        "RM": 0,
+        "NRM": 5
+      },
+      "rationale": "Design (analytic/creative), client and authority coordination; drafting partly routine."
+    },
+    "7115": {
+      "label": "Carpenters and joiners",
+      "shares": {
+        "NRA": 15,
+        "NRI": 5,
+        "RC": 5,
+        "RM": 25,
+        "NRM": 50
+      },
+      "rationale": "Assembly on site (non-routine physical); prefabrication increasingly automated (routine manual)."
+    },
+    "7126": {
+      "label": "Plumbers and pipe fitters",
+      "shares": {
+        "NRA": 15,
+        "NRI": 10,
+        "RC": 5,
+        "RM": 20,
+        "NRM": 50
+      },
+      "rationale": "Installation and repair in varied buildings (non-routine physical)."
+    },
+    "7231": {
+      "label": "Motor vehicle mechanics and repairers",
+      "shares": {
+        "NRA": 25,
+        "NRI": 10,
+        "RC": 10,
+        "RM": 25,
+        "NRM": 30
+      },
+      "rationale": "Diagnostics (analytic) and varied repairs (physical)."
+    },
+    "3111": {
+      "label": "Chemical and physical science technicians",
+      "shares": {
+        "NRA": 25,
+        "NRI": 5,
+        "RC": 35,
+        "RM": 30,
+        "NRM": 5
+      },
+      "rationale": "Standardised analyses and sample handling (routine cognitive/manual), increasingly automated."
+    },
+    "2131": {
+      "label": "Biologists, botanists, zoologists",
+      "shares": {
+        "NRA": 60,
+        "NRI": 10,
+        "RC": 20,
+        "RM": 5,
+        "NRM": 5
+      },
+      "rationale": "Research design and analysis (analytic); lab routines."
+    },
+    "2166": {
+      "label": "Graphic and multimedia designers",
+      "shares": {
+        "NRA": 55,
+        "NRI": 15,
+        "RC": 30,
+        "RM": 0,
+        "NRM": 0
+      },
+      "rationale": "Creative design work (analytic) with production tasks that generative image tools already perform."
+    },
+    "4110": {
+      "label": "General office clerks",
+      "shares": {
+        "NRA": 10,
+        "NRI": 15,
+        "RC": 70,
+        "RM": 5,
+        "NRM": 0
+      },
+      "rationale": "Data entry, correspondence, filing: predominantly routine cognitive."
+    },
+    "3313": {
+      "label": "Accounting associate professionals",
+      "shares": {
+        "NRA": 20,
+        "NRI": 10,
+        "RC": 70,
+        "RM": 0,
+        "NRM": 0
+      },
+      "rationale": "Bookkeeping, reconciliation and reporting: largely routine cognitive."
+    },
+    "2421": {
+      "label": "Management and organisation analysts",
+      "shares": {
+        "NRA": 55,
+        "NRI": 30,
+        "RC": 15,
+        "RM": 0,
+        "NRM": 0
+      },
+      "rationale": "Analysis, reporting and stakeholder work."
+    },
+    "2631": {
+      "label": "Economists",
+      "shares": {
+        "NRA": 65,
+        "NRI": 15,
+        "RC": 20,
+        "RM": 0,
+        "NRM": 0
+      },
+      "rationale": "Data analysis, modelling and writing (analytic)."
+    },
+    "2611": {
+      "label": "Lawyers",
+      "shares": {
+        "NRA": 55,
+        "NRI": 30,
+        "RC": 15,
+        "RM": 0,
+        "NRM": 0
+      },
+      "rationale": "Legal analysis and drafting (analytic, highly exposed to generative AI) plus client/court interaction."
+    },
+    "5223": {
+      "label": "Shop sales assistants",
+      "shares": {
+        "NRA": 5,
+        "NRI": 45,
+        "RC": 25,
+        "RM": 20,
+        "NRM": 5
+      },
+      "rationale": "Customer advice (interpersonal), checkout and stocking (routine)."
+    },
+    "4321": {
+      "label": "Stock clerks",
+      "shares": {
+        "NRA": 5,
+        "NRI": 10,
+        "RC": 40,
+        "RM": 35,
+        "NRM": 10
+      },
+      "rationale": "Inventory recording (routine cognitive) and goods handling (routine manual)."
+    },
+    "8332": {
+      "label": "Heavy truck and lorry drivers",
+      "shares": {
+        "NRA": 5,
+        "NRI": 10,
+        "RC": 10,
+        "RM": 35,
+        "NRM": 40
+      },
+      "rationale": "Driving and loading; long-run exposure to autonomous driving."
+    },
+    "5120": {
+      "label": "Cooks",
+      "shares": {
+        "NRA": 10,
+        "NRI": 15,
+        "RC": 10,
+        "RM": 35,
+        "NRM": 30
+      },
+      "rationale": "Food preparation partly routine; varied manual work in kitchen."
+    },
+    "5412": {
+      "label": "Police officers",
+      "shares": {
+        "NRA": 20,
+        "NRI": 45,
+        "RC": 15,
+        "RM": 0,
+        "NRM": 20
+      },
+      "rationale": "Interaction with public, investigation, patrol."
+    },
+    "6130": {
+      "label": "Mixed crop and animal producers",
+      "shares": {
+        "NRA": 25,
+        "NRI": 5,
+        "RC": 10,
+        "RM": 25,
+        "NRM": 35
+      },
+      "rationale": "Farm management decisions plus varied physical work; milking/feeding partly automated."
+    }
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "id": "occ-arzt",
+  "kind": "occupation",
+  "route": "academic",
+  "name": {
+    "en": "Physician",
+    "de": "Ärztin/Arzt",
+    "fr": null,
+    "it": null
+  },
+  "codes": {
+    "isco08": "2211",
+    "chIsco19": "22110"
+  },
+  "sector": "Health",
+  "refs": {
+    "qualLevel": "higherEducation",
+    "nogaSection": "Q",
+    "besta": "86-88"
+  },
+  "pathway": [],
+  "leadsTo": [],
+  "trainedVia": [
+    "edu-uh-medizin"
+  ],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "mobility": {
+      "value": 7,
+      "unit": "rubric 0–9",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#11-international-mobility",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "recognition 3/3, language independence 1/3, transferability 3/3. Automatic recognition of basic medical training in EU/EFTA; high international demand; clinical work language-bound."
+    },
+    "regionalUbiquity": {
+      "value": 2,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#12-regional-availability",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "Hospitals and practices in all regions, specialists concentrated in centres."
+    }
+  },
+  "meta": {
+    "addedBy": "initial-dataset",
+    "reviewed": "2026-11-03"
+  }
+}

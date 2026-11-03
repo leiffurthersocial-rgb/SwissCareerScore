@@ -1,0 +1,62 @@
+{
+  "id": "edu-fh-maschinentechnik",
+  "kind": "education",
+  "route": "mixed",
+  "eduType": "FH-BSc",
+  "name": {
+    "en": "BSc Mechanical Engineering (FH)",
+    "de": "Bachelor Maschinentechnik FH",
+    "fr": null,
+    "it": null
+  },
+  "codes": {
+    "isco08": "2144"
+  },
+  "sector": "Industry (MEM)",
+  "refs": {
+    "studyField": "FH:Technik und IT",
+    "gradIncome": "fh:Bachelor:Technik und IT",
+    "qualLevel": "higherEducation",
+    "besta": "28",
+    "nogaSection": "C"
+  },
+  "pathway": [
+    {
+      "label": "Polymechaniker/in EFZ with Berufsmaturität (BM 1)",
+      "years": 4,
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/polymechaniker-in-efz",
+      "confidence": "measured"
+    },
+    {
+      "label": "Bachelor Maschinentechnik FH",
+      "years": 3,
+      "sourceUrl": "https://www.berufsberatung.ch/de/studienrichtungen/maschineningenieurwissenschaften",
+      "confidence": "measured"
+    }
+  ],
+  "leadsTo": [
+    "occ-maschineningenieur"
+  ],
+  "trainedVia": [],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "entryAccess": {
+      "value": 0,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://www.berufsberatung.ch/de/studienrichtungen/maschineningenieurwissenschaften",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "Admission with BM in a related field; no capacity limit."
+    }
+  },
+  "meta": {
+    "addedBy": "initial-dataset",
+    "reviewed": "2026-11-03"
+  }
+}

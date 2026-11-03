@@ -1,0 +1,58 @@
+{
+  "id": "occ-pflegefachperson",
+  "kind": "occupation",
+  "route": "vocational",
+  "name": {
+    "en": "Registered nurse",
+    "de": "Pflegefachfrau/Pflegefachmann",
+    "fr": null,
+    "it": null
+  },
+  "codes": {
+    "isco08": "2221",
+    "chIsco19": "22210"
+  },
+  "sector": "Health",
+  "refs": {
+    "qualLevel": "higherVet",
+    "nogaSection": "Q",
+    "besta": "86-88"
+  },
+  "pathway": [],
+  "leadsTo": [],
+  "trainedVia": [
+    "edu-hf-pflege",
+    "edu-fh-pflege"
+  ],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "mobility": {
+      "value": 7,
+      "unit": "rubric 0–9",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#11-international-mobility",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "recognition 3/3, language independence 1/3, transferability 3/3. General care nurses benefit from automatic recognition under EU Directive 2005/36 (bilateral agreement); strong demand in neighbouring countries; patient communication language-bound."
+    },
+    "regionalUbiquity": {
+      "value": 3,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#12-regional-availability",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "Employed in every region (hospitals, homes, Spitex)."
+    }
+  },
+  "meta": {
+    "addedBy": "initial-dataset",
+    "reviewed": "2026-11-03"
+  }
+}

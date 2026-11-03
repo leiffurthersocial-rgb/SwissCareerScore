@@ -1,0 +1,59 @@
+{
+  "id": "occ-softwareentwickler",
+  "kind": "occupation",
+  "route": "mixed",
+  "name": {
+    "en": "Software developer",
+    "de": "Softwareentwickler/in",
+    "fr": null,
+    "it": null
+  },
+  "codes": {
+    "isco08": "2512",
+    "chIsco19": "25120"
+  },
+  "sector": "ICT",
+  "refs": {
+    "qualLevel": "higherEducation",
+    "nogaSection": "J",
+    "besta": "62-63"
+  },
+  "pathway": [],
+  "leadsTo": [],
+  "trainedVia": [
+    "edu-fh-informatik",
+    "edu-efz-informatiker",
+    "edu-eth-informatik"
+  ],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "mobility": {
+      "value": 9,
+      "unit": "rubric 0–9",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#11-international-mobility",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "recognition 3/3, language independence 3/3, transferability 3/3. Unregulated, English is the working language in much of the field, strong global demand."
+    },
+    "regionalUbiquity": {
+      "value": 2,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#12-regional-availability",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "Concentrated in urban centres, but remote work widens access."
+    }
+  },
+  "meta": {
+    "addedBy": "initial-dataset",
+    "reviewed": "2026-11-03"
+  }
+}

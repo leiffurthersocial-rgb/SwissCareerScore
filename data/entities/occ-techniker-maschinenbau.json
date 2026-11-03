@@ -1,0 +1,57 @@
+{
+  "id": "occ-techniker-maschinenbau",
+  "kind": "occupation",
+  "route": "vocational",
+  "name": {
+    "en": "Mechanical engineering technician (HF)",
+    "de": "Maschinenbautechniker/in HF",
+    "fr": null,
+    "it": null
+  },
+  "codes": {
+    "isco08": "3115",
+    "chIsco19": "31150"
+  },
+  "sector": "Industry (MEM)",
+  "refs": {
+    "qualLevel": "higherVet",
+    "nogaSection": "C",
+    "besta": "28"
+  },
+  "pathway": [],
+  "leadsTo": [],
+  "trainedVia": [
+    "edu-hf-maschinenbau"
+  ],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "mobility": {
+      "value": 7,
+      "unit": "rubric 0–9",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#11-international-mobility",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "recognition 2/3, language independence 3/3, transferability 2/3. HF diploma (EQF 6) with diploma supplement; less known abroad than Bachelor."
+    },
+    "regionalUbiquity": {
+      "value": 2,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#12-regional-availability",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "Industrial employers across the Mittelland."
+    }
+  },
+  "meta": {
+    "addedBy": "initial-dataset",
+    "reviewed": "2026-11-03"
+  }
+}

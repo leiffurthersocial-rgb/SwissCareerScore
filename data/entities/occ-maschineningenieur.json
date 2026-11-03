@@ -1,0 +1,57 @@
+{
+  "id": "occ-maschineningenieur",
+  "kind": "occupation",
+  "route": "academic",
+  "name": {
+    "en": "Mechanical engineer",
+    "de": "Maschineningenieur/in",
+    "fr": null,
+    "it": null
+  },
+  "codes": {
+    "isco08": "2144",
+    "chIsco19": "21440"
+  },
+  "sector": "Industry (MEM)",
+  "refs": {
+    "qualLevel": "higherEducation",
+    "nogaSection": "C",
+    "besta": "28"
+  },
+  "pathway": [],
+  "leadsTo": [],
+  "trainedVia": [
+    "edu-fh-maschinentechnik"
+  ],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "mobility": {
+      "value": 9,
+      "unit": "rubric 0–9",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#11-international-mobility",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "recognition 3/3, language independence 3/3, transferability 3/3. Bachelor/Master internationally standard, largely language-independent, global industry."
+    },
+    "regionalUbiquity": {
+      "value": 2,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#12-regional-availability",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "Industrial centres across the Mittelland."
+    }
+  },
+  "meta": {
+    "addedBy": "initial-dataset",
+    "reviewed": "2026-11-03"
+  }
+}

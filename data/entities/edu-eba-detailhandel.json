@@ -1,0 +1,55 @@
+{
+  "id": "edu-eba-detailhandel",
+  "kind": "education",
+  "route": "vocational",
+  "eduType": "EBA",
+  "name": {
+    "en": "Retail assistant EBA",
+    "de": "Detailhandelsassistent/in EBA",
+    "fr": null,
+    "it": null
+  },
+  "codes": {
+    "isco08": "5223"
+  },
+  "sector": "Retail",
+  "refs": {
+    "vetName": "Detailhandelsassistent/in EBA",
+    "qualLevel": "apprenticeship",
+    "besta": "45-47",
+    "nogaSection": "G"
+  },
+  "pathway": [
+    {
+      "label": "Detailhandelsassistent/in EBA",
+      "years": 2,
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/detailhandelsassistent-in-eba",
+      "confidence": "measured"
+    }
+  ],
+  "leadsTo": [
+    "occ-detailhandel"
+  ],
+  "trainedVia": [],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "entryAccess": {
+      "value": 1,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/detailhandelsassistent-in-eba",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "Apprenticeship contract required."
+    }
+  },
+  "meta": {
+    "addedBy": "initial-dataset",
+    "reviewed": "2026-11-03"
+  }
+}

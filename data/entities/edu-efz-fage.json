@@ -1,0 +1,55 @@
+{
+  "id": "edu-efz-fage",
+  "kind": "education",
+  "route": "vocational",
+  "eduType": "EFZ",
+  "name": {
+    "en": "Health care assistant EFZ",
+    "de": "Fachfrau/Fachmann Gesundheit EFZ",
+    "fr": null,
+    "it": null
+  },
+  "codes": {
+    "isco08": "5321"
+  },
+  "sector": "Health",
+  "refs": {
+    "vetName": "Fachmann/-frau Gesundheit EFZ",
+    "qualLevel": "apprenticeship",
+    "besta": "86-88",
+    "nogaSection": "Q"
+  },
+  "pathway": [
+    {
+      "label": "Fachfrau/Fachmann Gesundheit EFZ",
+      "years": 3,
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/fachmann-frau-gesundheit-efz",
+      "confidence": "measured"
+    }
+  ],
+  "leadsTo": [
+    "occ-fage"
+  ],
+  "trainedVia": [],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "entryAccess": {
+      "value": 1,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/fachmann-frau-gesundheit-efz",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "Apprenticeship contract with a health institution required."
+    }
+  },
+  "meta": {
+    "addedBy": "initial-dataset",
+    "reviewed": "2026-11-03"
+  }
+}

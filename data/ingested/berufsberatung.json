@@ -1,0 +1,707 @@
+{
+  "source": "berufsberatung",
+  "retrieved": "2026-11-03",
+  "pages": {
+    "https://www.berufsberatung.ch/de/berufe/architekt-in": {
+      "durationSnippets": [
+        "Bachelorstudium: mind. 3 Jahre | Masterstudium: mind. 1,5 Jahre"
+      ],
+      "yearsMentioned": [
+        1.5,
+        3
+      ],
+      "apprenticeWages": []
+    },
+    "https://www.berufsberatung.ch/de/berufe/arzt-aerztin": {
+      "durationSnippets": [
+        "Bachelorstudium: mind. 3 Jahre | Masterstudium: mind. 3 Jahre"
+      ],
+      "yearsMentioned": [
+        3
+      ],
+      "apprenticeWages": []
+    },
+    "https://www.berufsberatung.ch/de/berufe/automobil-mechatroniker-in-efz": {
+      "durationSnippets": [
+        "4 Jahre",
+        "4 Jahre"
+      ],
+      "yearsMentioned": [
+        4
+      ],
+      "apprenticeWages": [
+        {
+          "year": 1,
+          "chf": "700.–"
+        },
+        {
+          "year": 2,
+          "chf": "850.–"
+        },
+        {
+          "year": 3,
+          "chf": "1050.–"
+        },
+        {
+          "year": 4,
+          "chf": "1300.–"
+        }
+      ]
+    },
+    "https://www.berufsberatung.ch/de/berufe/detailhandelsassistent-in-eba": {
+      "durationSnippets": [
+        "2 Jahre",
+        "2 Jahre"
+      ],
+      "yearsMentioned": [
+        2
+      ],
+      "apprenticeWages": [
+        {
+          "year": 1,
+          "chf": "835.–"
+        },
+        {
+          "year": 2,
+          "chf": "1050.–"
+        }
+      ]
+    },
+    "https://www.berufsberatung.ch/de/berufe/detailhandelsfachmann-frau-efz": {
+      "durationSnippets": [
+        "3 Jahre",
+        "3 Jahre"
+      ],
+      "yearsMentioned": [
+        3
+      ],
+      "apprenticeWages": [
+        {
+          "year": 1,
+          "chf": "835.–"
+        },
+        {
+          "year": 2,
+          "chf": "1050.–"
+        },
+        {
+          "year": 3,
+          "chf": "1520.–"
+        }
+      ]
+    },
+    "https://www.berufsberatung.ch/de/berufe/elektroinstallateur-in-efz": {
+      "durationSnippets": [
+        "4 Jahre",
+        "4 Jahre"
+      ],
+      "yearsMentioned": [
+        4
+      ],
+      "apprenticeWages": [
+        {
+          "year": 1,
+          "chf": "700.–"
+        },
+        {
+          "year": 2,
+          "chf": "900.–"
+        },
+        {
+          "year": 3,
+          "chf": "1150.–"
+        },
+        {
+          "year": 4,
+          "chf": "1462.–"
+        }
+      ]
+    },
+    "https://www.berufsberatung.ch/de/berufe/fachmann-frau-betreuung-efz": {
+      "durationSnippets": [
+        "3 Jahre",
+        "3 Jahre"
+      ],
+      "yearsMentioned": [
+        3
+      ],
+      "apprenticeWages": [
+        {
+          "year": 1,
+          "chf": "835.–"
+        },
+        {
+          "year": 2,
+          "chf": "1045.–"
+        },
+        {
+          "year": 3,
+          "chf": "1400.–"
+        }
+      ]
+    },
+    "https://www.berufsberatung.ch/de/berufe/fachmann-frau-gesundheit-efz": {
+      "durationSnippets": [
+        "3 Jahre",
+        "3 Jahre"
+      ],
+      "yearsMentioned": [
+        3
+      ],
+      "apprenticeWages": [
+        {
+          "year": 1,
+          "chf": "740"
+        },
+        {
+          "year": 2,
+          "chf": "987"
+        },
+        {
+          "year": 3,
+          "chf": "1255"
+        }
+      ]
+    },
+    "https://www.berufsberatung.ch/de/berufe/fachmann-frau-im-finanz-und-rechnungswesen-bp": {
+      "durationSnippets": [
+        "4 Jahre"
+      ],
+      "yearsMentioned": [
+        4
+      ],
+      "apprenticeWages": []
+    },
+    "https://www.berufsberatung.ch/de/berufe/grafiker-in-efz": {
+      "durationSnippets": [
+        "4 Jahre",
+        "4 Jahre"
+      ],
+      "yearsMentioned": [
+        4
+      ],
+      "apprenticeWages": [
+        {
+          "year": 1,
+          "chf": "400.–"
+        },
+        {
+          "year": 2,
+          "chf": "700.–"
+        },
+        {
+          "year": 3,
+          "chf": "1000.–"
+        },
+        {
+          "year": 4,
+          "chf": "1200.–"
+        }
+      ]
+    },
+    "https://www.berufsberatung.ch/de/berufe/informatiker-in-efz": {
+      "durationSnippets": [
+        "4 Jahre",
+        "4 Jahre"
+      ],
+      "yearsMentioned": [
+        4
+      ],
+      "apprenticeWages": [
+        {
+          "year": 1,
+          "chf": "550–700.–"
+        },
+        {
+          "year": 2,
+          "chf": "750–900.–"
+        },
+        {
+          "year": 3,
+          "chf": "950–1200.–"
+        },
+        {
+          "year": 4,
+          "chf": "1250–1500.–"
+        }
+      ]
+    },
+    "https://www.berufsberatung.ch/de/berufe/kaufmann-frau-efz": {
+      "durationSnippets": [
+        "Lehre im Betrieb: 3 Jahre Handelsmittelschule: 4 Jahre",
+        "Lehre im Betrieb: 3 Jahre | Handelsmittelschule: 4 Jahre"
+      ],
+      "yearsMentioned": [
+        3,
+        4
+      ],
+      "apprenticeWages": [
+        {
+          "year": 1,
+          "chf": "835.–"
+        },
+        {
+          "year": 2,
+          "chf": "1050.–"
+        },
+        {
+          "year": 3,
+          "chf": "1520.–"
+        }
+      ]
+    },
+    "https://www.berufsberatung.ch/de/berufe/koch-koechin-efz": {
+      "durationSnippets": [
+        "3 Jahre",
+        "3 Jahre"
+      ],
+      "yearsMentioned": [
+        3
+      ],
+      "apprenticeWages": [
+        {
+          "year": 1,
+          "chf": "1020.–"
+        },
+        {
+          "year": 2,
+          "chf": "1300.–"
+        },
+        {
+          "year": 3,
+          "chf": "1550.–"
+        }
+      ]
+    },
+    "https://www.berufsberatung.ch/de/berufe/laborant-in-efz": {
+      "durationSnippets": [
+        "3 Jahre",
+        "3 Jahre"
+      ],
+      "yearsMentioned": [
+        3
+      ],
+      "apprenticeWages": [
+        {
+          "year": 1,
+          "chf": "835.–"
+        },
+        {
+          "year": 2,
+          "chf": "1050.–"
+        },
+        {
+          "year": 3,
+          "chf": "1520.–"
+        }
+      ]
+    },
+    "https://www.berufsberatung.ch/de/berufe/landwirt-in-efz": {
+      "durationSnippets": [
+        "3 Jahre",
+        "3 Jahre"
+      ],
+      "yearsMentioned": [
+        3
+      ],
+      "apprenticeWages": [
+        {
+          "year": 1,
+          "chf": "1200–1500.–"
+        },
+        {
+          "year": 2,
+          "chf": "1400–1600.–"
+        },
+        {
+          "year": 3,
+          "chf": "1250–1750.–"
+        }
+      ]
+    },
+    "https://www.berufsberatung.ch/de/berufe/logistiker-in-efz": {
+      "durationSnippets": [
+        "3 Jahre",
+        "3 Jahre"
+      ],
+      "yearsMentioned": [
+        3
+      ],
+      "apprenticeWages": [
+        {
+          "year": 1,
+          "chf": "800–900.–"
+        },
+        {
+          "year": 2,
+          "chf": "1000–1150.–"
+        },
+        {
+          "year": 3,
+          "chf": "1300–1450.–"
+        }
+      ]
+    },
+    "https://www.berufsberatung.ch/de/berufe/maschinenbautechniker-in-hf": {
+      "durationSnippets": [
+        "2–3 Jahre"
+      ],
+      "yearsMentioned": [
+        2,
+        2.5,
+        3
+      ],
+      "apprenticeWages": []
+    },
+    "https://www.berufsberatung.ch/de/berufe/medizinische-r-praxisassistent-in-efz": {
+      "durationSnippets": [
+        "3 Jahre",
+        "3 Jahre"
+      ],
+      "yearsMentioned": [
+        3
+      ],
+      "apprenticeWages": [
+        {
+          "year": 1,
+          "chf": "400–700.–"
+        },
+        {
+          "year": 2,
+          "chf": "900–1045.–"
+        },
+        {
+          "year": 3,
+          "chf": "1200–1485.–"
+        }
+      ]
+    },
+    "https://www.berufsberatung.ch/de/berufe/pflegefachmann-frau": {
+      "durationSnippets": [
+        "mind. 2 Jahre",
+        "mind. 3 Jahre"
+      ],
+      "yearsMentioned": [
+        2,
+        3
+      ],
+      "apprenticeWages": []
+    },
+    "https://www.berufsberatung.ch/de/berufe/polizist-in-bp": {
+      "durationSnippets": [
+        "2 Jahre"
+      ],
+      "yearsMentioned": [
+        2
+      ],
+      "apprenticeWages": []
+    },
+    "https://www.berufsberatung.ch/de/berufe/polymechaniker-in-efz": {
+      "durationSnippets": [
+        "4 Jahre",
+        "4 Jahre"
+      ],
+      "yearsMentioned": [
+        4
+      ],
+      "apprenticeWages": [
+        {
+          "year": 1,
+          "chf": "570–615.–"
+        },
+        {
+          "year": 2,
+          "chf": "750–815.–"
+        },
+        {
+          "year": 3,
+          "chf": "985–1065.–"
+        },
+        {
+          "year": 4,
+          "chf": "1170–1265.–"
+        }
+      ]
+    },
+    "https://www.berufsberatung.ch/de/berufe/sanitaerinstallateur-in-efz": {
+      "durationSnippets": [
+        "4 Jahre",
+        "4 Jahre"
+      ],
+      "yearsMentioned": [
+        4
+      ],
+      "apprenticeWages": [
+        {
+          "year": 1,
+          "chf": "850.–"
+        },
+        {
+          "year": 2,
+          "chf": "1200.–"
+        },
+        {
+          "year": 3,
+          "chf": "1400.–"
+        },
+        {
+          "year": 4,
+          "chf": "1600.–"
+        }
+      ]
+    },
+    "https://www.berufsberatung.ch/de/berufe/strassentransportfachmann-frau-efz": {
+      "durationSnippets": [
+        "3 Jahre",
+        "3 Jahre | Mindestalter 16 Jahre (bis zum 30. November des 1. Lehrjahres)"
+      ],
+      "yearsMentioned": [
+        3
+      ],
+      "apprenticeWages": [
+        {
+          "year": 1,
+          "chf": "650.–"
+        },
+        {
+          "year": 2,
+          "chf": "850.–"
+        },
+        {
+          "year": 3,
+          "chf": "1200.–"
+        }
+      ]
+    },
+    "https://www.berufsberatung.ch/de/berufe/zeichner-in-efz": {
+      "durationSnippets": [
+        "4 Jahre",
+        "4 Jahre"
+      ],
+      "yearsMentioned": [
+        4
+      ],
+      "apprenticeWages": [
+        {
+          "year": 1,
+          "chf": "630.–"
+        },
+        {
+          "year": 2,
+          "chf": "790.–"
+        },
+        {
+          "year": 3,
+          "chf": "1000.–"
+        },
+        {
+          "year": 4,
+          "chf": "1320.–"
+        }
+      ]
+    },
+    "https://www.berufsberatung.ch/de/berufe/zimmermann-zimmerin-efz": {
+      "durationSnippets": [
+        "4 Jahre",
+        "4 Jahre"
+      ],
+      "yearsMentioned": [
+        4
+      ],
+      "apprenticeWages": [
+        {
+          "year": 1,
+          "chf": "814.–"
+        },
+        {
+          "year": 2,
+          "chf": "1061.–"
+        },
+        {
+          "year": 3,
+          "chf": "1440.–"
+        },
+        {
+          "year": 4,
+          "chf": "1838.–"
+        }
+      ]
+    },
+    "https://www.berufsberatung.ch/de/bildungssystem/d/berufsmaturitaet": {
+      "durationSnippets": [
+        "3 bis 4 Jahre während der EFZ-Lehre, 1 bis 2.5 Jahre nach der EFZ-Lehre"
+      ],
+      "yearsMentioned": [
+        1,
+        1.5,
+        2,
+        2.5,
+        3,
+        3.5,
+        4
+      ],
+      "apprenticeWages": []
+    },
+    "https://www.berufsberatung.ch/de/bildungssystem/d/gymnasiale-maturitaetsschulen": {
+      "durationSnippets": [
+        "3 bis 6 Jahre, je nach Kanton"
+      ],
+      "yearsMentioned": [
+        3,
+        3.5,
+        4,
+        4.5,
+        5,
+        5.5,
+        6
+      ],
+      "apprenticeWages": []
+    },
+    "https://www.berufsberatung.ch/de/bildungssystem/d/lehre-efz": {
+      "durationSnippets": [
+        "3 oder 4 Jahre Vollzeit."
+      ],
+      "yearsMentioned": [
+        3,
+        3.5,
+        4
+      ],
+      "apprenticeWages": []
+    },
+    "https://www.berufsberatung.ch/de/studienrichtungen/bauingenieurwissenschaften": {
+      "durationSnippets": [
+        "Fachhochschule: mind. 3 Jahre Vollzeit | Universität, ETH: mind. 3 Jahre Vollzeit",
+        "Fachhochschule: mind. 1,5 Jahre Vollzeit | Universität, ETH: mind. 2 Jahre Vollzeit"
+      ],
+      "yearsMentioned": [
+        1.5,
+        2,
+        3
+      ],
+      "apprenticeWages": []
+    },
+    "https://www.berufsberatung.ch/de/studienrichtungen/betriebswirtschaft": {
+      "durationSnippets": [
+        "Fachhochschule: mind. 3 Jahre Vollzeit | Universität: mind. 3 Jahre Vollzeit",
+        "Fachhochschule: mind. 1,5 Jahre Vollzeit | Universität: mind. 1,5 Jahre Vollzeit"
+      ],
+      "yearsMentioned": [
+        1.5,
+        3
+      ],
+      "apprenticeWages": []
+    },
+    "https://www.berufsberatung.ch/de/studienrichtungen/biologie": {
+      "durationSnippets": [
+        "Universität, ETH: mind. 3 Jahre Vollzeit",
+        "Universität, ETH: mind. 2 Jahre Vollzeit"
+      ],
+      "yearsMentioned": [
+        2,
+        3
+      ],
+      "apprenticeWages": []
+    },
+    "https://www.berufsberatung.ch/de/studienrichtungen/elektrotechnik-informationstechnologie": {
+      "durationSnippets": [
+        "Fachhochschule: mind. 3 Jahre Vollzeit | ETH: mind. 3 Jahre Vollzeit",
+        "Fachhochschule: mind. 1,5 Jahre Vollzeit | Universität: mind. 2 Jahre Vollzeit | ETH: mind. 1,5 Jahre Vollzeit"
+      ],
+      "yearsMentioned": [
+        1.5,
+        2,
+        3
+      ],
+      "apprenticeWages": []
+    },
+    "https://www.berufsberatung.ch/de/studienrichtungen/informatik": {
+      "durationSnippets": [
+        "Fachhochschule: mind. 3 Jahre Vollzeit | Universität, ETH: mind. 3 Jahre Vollzeit",
+        "Fachhochschule: mind. 1,5 Jahre Vollzeit | Universität, ETH: mind. 1,5 Jahre Vollzeit"
+      ],
+      "yearsMentioned": [
+        1.5,
+        3
+      ],
+      "apprenticeWages": []
+    },
+    "https://www.berufsberatung.ch/de/studienrichtungen/maschineningenieurwissenschaften": {
+      "durationSnippets": [
+        "Fachhochschule: mind. 3 Jahre Vollzeit | ETH: mind. 3 Jahre Vollzeit",
+        "Fachhochschule: mind. 1,5 Jahre Vollzeit | Universität, ETH: mind. 1,5 Jahre Vollzeit"
+      ],
+      "yearsMentioned": [
+        1.5,
+        3
+      ],
+      "apprenticeWages": []
+    },
+    "https://www.berufsberatung.ch/de/studienrichtungen/physiotherapie": {
+      "durationSnippets": [
+        "Fachhochschule: mind. 3 Jahre Vollzeit",
+        "Fachhochschule: mind. 1,5 Jahre Vollzeit | Universität: mind. 2 Jahre Vollzeit"
+      ],
+      "yearsMentioned": [
+        1.5,
+        2,
+        3
+      ],
+      "apprenticeWages": []
+    },
+    "https://www.berufsberatung.ch/de/studienrichtungen/psychologie": {
+      "durationSnippets": [
+        "Fachhochschule: mind. 3 Jahre Vollzeit | Universität: mind. 3 Jahre Vollzeit",
+        "Fachhochschule: mind. 2 Jahre Vollzeit | Universität: mind. 2 Jahre Vollzeit"
+      ],
+      "yearsMentioned": [
+        2,
+        3
+      ],
+      "apprenticeWages": []
+    },
+    "https://www.berufsberatung.ch/de/studienrichtungen/rechtswissenschaft": {
+      "durationSnippets": [
+        "Fachhochschule: mind. 3 Jahre Vollzeit | Universität: mind. 3 Jahre Vollzeit",
+        "Fachhochschule: mind. 1,5 Jahre Vollzeit | Universität: mind. 1,5 Jahre Vollzeit"
+      ],
+      "yearsMentioned": [
+        1.5,
+        3
+      ],
+      "apprenticeWages": []
+    },
+    "https://www.berufsberatung.ch/de/studienrichtungen/soziale-arbeit": {
+      "durationSnippets": [
+        "Fachhochschule: mind. 3 Jahre Vollzeit | Universität: mind. 3 Jahre Vollzeit",
+        "Fachhochschule: mind. 1,5 Jahre Vollzeit | Universität: mind. 1,5 Jahre Vollzeit"
+      ],
+      "yearsMentioned": [
+        1.5,
+        3
+      ],
+      "apprenticeWages": []
+    },
+    "https://www.berufsberatung.ch/de/studienrichtungen/unterricht-vorschulstufe-primarstufe": {
+      "durationSnippets": [
+        "Pädagogische Hochschule: mind. 3 Vollzeit | Universität: mind. 3 Jahre Vollzeit",
+        "Universität: mind. 1,5 Jahre Vollzeit"
+      ],
+      "yearsMentioned": [
+        1.5,
+        3
+      ],
+      "apprenticeWages": []
+    },
+    "https://www.berufsberatung.ch/de/studienrichtungen/volkswirtschaft": {
+      "durationSnippets": [
+        "Universität: mind. 3 Jahre Vollzeit",
+        "Fachhochschule: mind. 1,5 Jahre Vollzeit | Universität, ETH: mind. 1,5 Jahre Vollzeit"
+      ],
+      "yearsMentioned": [
+        1.5,
+        3
+      ],
+      "apprenticeWages": []
+    }
+  }
+}

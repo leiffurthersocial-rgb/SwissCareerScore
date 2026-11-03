@@ -1,0 +1,57 @@
+{
+  "id": "occ-laborant",
+  "kind": "occupation",
+  "route": "vocational",
+  "name": {
+    "en": "Laboratory technician",
+    "de": "Laborant/in",
+    "fr": null,
+    "it": null
+  },
+  "codes": {
+    "isco08": "3111",
+    "chIsco19": "31110"
+  },
+  "sector": "Chemistry / pharma",
+  "refs": {
+    "qualLevel": "apprenticeship",
+    "nogaSection": "C",
+    "besta": "10-33"
+  },
+  "pathway": [],
+  "leadsTo": [],
+  "trainedVia": [
+    "edu-efz-laborant"
+  ],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "mobility": {
+      "value": 6,
+      "unit": "rubric 0–9",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#11-international-mobility",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "recognition 1/3, language independence 3/3, transferability 2/3. EFZ; lab methods international; pharma industry global."
+    },
+    "regionalUbiquity": {
+      "value": 1,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#12-regional-availability",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "Concentrated in chemical/pharma clusters (Basel, Valais, Geneva, Zurich)."
+    }
+  },
+  "meta": {
+    "addedBy": "initial-dataset",
+    "reviewed": "2026-11-03"
+  }
+}

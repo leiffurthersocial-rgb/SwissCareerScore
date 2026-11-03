@@ -1,0 +1,61 @@
+{
+  "id": "edu-bp-polizist",
+  "kind": "education",
+  "route": "vocational",
+  "eduType": "BP",
+  "name": {
+    "en": "Police officer with federal certificate (BP)",
+    "de": "Polizist/in mit eidg. Fachausweis",
+    "fr": null,
+    "it": null
+  },
+  "codes": {
+    "isco08": "5412"
+  },
+  "sector": "Public safety",
+  "refs": {
+    "qualLevel": "higherVet",
+    "besta": "84",
+    "nogaSection": "O"
+  },
+  "pathway": [
+    {
+      "label": "EFZ apprenticeship (3-year profile)",
+      "years": 3,
+      "sourceUrl": "https://www.berufsberatung.ch/de/bildungssystem/d/lehre-efz",
+      "confidence": "measured",
+      "note": "An EFZ or Matura is required before police school."
+    },
+    {
+      "label": "Police school and practice to federal exam",
+      "years": 2,
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/polizist-in-bp",
+      "confidence": "measured"
+    }
+  ],
+  "leadsTo": [
+    "occ-polizist"
+  ],
+  "trainedVia": [],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "entryAccess": {
+      "value": 2,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/polizist-in-bp",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "Multi-stage selection by police corps (tests, fitness, interview), limited places."
+    }
+  },
+  "meta": {
+    "addedBy": "initial-dataset",
+    "reviewed": "2026-11-03"
+  }
+}

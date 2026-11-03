@@ -1,0 +1,61 @@
+{
+  "id": "edu-bp-finanz-rechnungswesen",
+  "kind": "education",
+  "route": "vocational",
+  "eduType": "BP",
+  "name": {
+    "en": "Accountant with federal certificate (BP)",
+    "de": "Fachfrau/Fachmann im Finanz- und Rechnungswesen mit eidg. FA",
+    "fr": null,
+    "it": null
+  },
+  "codes": {
+    "isco08": "3313"
+  },
+  "sector": "Finance / accounting",
+  "refs": {
+    "qualLevel": "higherVet",
+    "besta": "68-75",
+    "nogaSection": "M"
+  },
+  "pathway": [
+    {
+      "label": "Kauffrau/Kaufmann EFZ",
+      "years": 3,
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/kaufmann-frau-efz",
+      "confidence": "measured"
+    },
+    {
+      "label": "Professional practice and exam preparation",
+      "years": 4,
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/fachmann-frau-im-finanz-und-rechnungswesen-bp",
+      "confidence": "measured",
+      "note": "berufsberatung.ch lists 4 years (including the professional practice required for exam admission)."
+    }
+  ],
+  "leadsTo": [
+    "occ-buchhalter"
+  ],
+  "trainedVia": [],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "entryAccess": {
+      "value": 0,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/fachmann-frau-im-finanz-und-rechnungswesen-bp",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "Admission to the federal exam is by professional experience; no capacity limit."
+    }
+  },
+  "meta": {
+    "addedBy": "initial-dataset",
+    "reviewed": "2026-11-03"
+  }
+}

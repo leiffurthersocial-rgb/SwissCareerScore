@@ -1,0 +1,57 @@
+{
+  "id": "occ-buchhalter",
+  "kind": "occupation",
+  "route": "vocational",
+  "name": {
+    "en": "Accountant (federal certificate)",
+    "de": "Fachfrau/Fachmann im Finanz- und Rechnungswesen",
+    "fr": null,
+    "it": null
+  },
+  "codes": {
+    "isco08": "3313",
+    "chIsco19": "33130"
+  },
+  "sector": "Finance / accounting",
+  "refs": {
+    "qualLevel": "higherVet",
+    "nogaSection": "M",
+    "besta": "68-75"
+  },
+  "pathway": [],
+  "leadsTo": [],
+  "trainedVia": [
+    "edu-bp-finanz-rechnungswesen"
+  ],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "mobility": {
+      "value": 5,
+      "unit": "rubric 0–9",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#11-international-mobility",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "recognition 2/3, language independence 1/3, transferability 2/3. Federal certificate (EQF 6); accounting standards partly national (OR, Swiss GAAP)."
+    },
+    "regionalUbiquity": {
+      "value": 3,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#12-regional-availability",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "Every sector and region."
+    }
+  },
+  "meta": {
+    "addedBy": "initial-dataset",
+    "reviewed": "2026-11-03"
+  }
+}

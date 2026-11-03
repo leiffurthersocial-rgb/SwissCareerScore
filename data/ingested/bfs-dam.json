@@ -1,0 +1,1892 @@
+{
+  "source": "bfs-dam",
+  "assets": {
+    "recruitApprentice": 36829817,
+    "recruitHigherVet": 36829811,
+    "recruitHigherEd": 36829823,
+    "telework": 36508654,
+    "hours": 36576942,
+    "nightWork": 304654,
+    "studySuccess": 36077550,
+    "vetCertification": 36304956,
+    "gradIncome": 36732664
+  },
+  "recruitment": {
+    "apprenticeship": {
+      "26": {
+        "label": "Herstellung von Datenverarbeitungsgeräten und Uhren",
+        "difficultyPct": 34.7,
+        "quarters": 4
+      },
+      "28": {
+        "label": "Maschinenbau",
+        "difficultyPct": 48.1,
+        "quarters": 4
+      },
+      "84": {
+        "label": "Öffentliche Verwaltung",
+        "difficultyPct": 18.6,
+        "quarters": 4
+      },
+      "85": {
+        "label": "Erziehung und Unterricht",
+        "difficultyPct": 20.9,
+        "quarters": 4
+      },
+      "5-96": {
+        "label": "Total",
+        "difficultyPct": 42.1,
+        "quarters": 4
+      },
+      "5-43": {
+        "label": "SEKTOR II",
+        "difficultyPct": 54.1,
+        "quarters": 4
+      },
+      "10-33": {
+        "label": "Verarbeitendes Gewerbe/Herstellung von Waren",
+        "difficultyPct": 47.9,
+        "quarters": 4
+      },
+      "24-25": {
+        "label": "Herstellung von Metallerzeugnissen",
+        "difficultyPct": 61.3,
+        "quarters": 4
+      },
+      "41-43": {
+        "label": "Baugewerbe/Bau",
+        "difficultyPct": 68.8,
+        "quarters": 4
+      },
+      "45-96": {
+        "label": "SEKTOR III",
+        "difficultyPct": 38.7,
+        "quarters": 4
+      },
+      "45-47": {
+        "label": "Handel, Instandhaltung und Rep. von Kraftfahrzeugen",
+        "difficultyPct": 45.6,
+        "quarters": 4
+      },
+      "49-53": {
+        "label": "Verkehr und Lagerei",
+        "difficultyPct": 26.2,
+        "quarters": 4
+      },
+      "55-56": {
+        "label": "Gastgewerbe/Beherbergung und Gastronomie",
+        "difficultyPct": 60.8,
+        "quarters": 4
+      },
+      "58-63": {
+        "label": "Information und Kommunikation",
+        "difficultyPct": 24.7,
+        "quarters": 4
+      },
+      "62-63": {
+        "label": "Informationstechnologische und Informationsdienstl.",
+        "difficultyPct": 28.5,
+        "quarters": 4
+      },
+      "64-66": {
+        "label": "Erbringung von Finanz- und Versicherungsdienstl.",
+        "difficultyPct": 20,
+        "quarters": 4
+      },
+      "68-75": {
+        "label": "Grundstk- u. Wohn.wesen; freiberufl., wiss., techn. Dienstl.",
+        "difficultyPct": 36.2,
+        "quarters": 4
+      },
+      "77-82": {
+        "label": "Erbringung von sonstigen wirtschaftlichen Dienstl.",
+        "difficultyPct": 53.8,
+        "quarters": 4
+      },
+      "86-88": {
+        "label": "Gesundheits- und Sozialwesen",
+        "difficultyPct": 47.4,
+        "quarters": 4
+      },
+      "90-96": {
+        "label": "Kunst, Unterhaltung u. Erholung; sonstige Dienstl.",
+        "difficultyPct": 35.9,
+        "quarters": 4
+      }
+    },
+    "higherVet": {
+      "26": {
+        "label": "Herstellung von Datenverarbeitungsgeräten und Uhren",
+        "difficultyPct": 62.6,
+        "quarters": 4
+      },
+      "28": {
+        "label": "Maschinenbau",
+        "difficultyPct": 75,
+        "quarters": 4
+      },
+      "84": {
+        "label": "Öffentliche Verwaltung",
+        "difficultyPct": 33.5,
+        "quarters": 4
+      },
+      "85": {
+        "label": "Erziehung und Unterricht",
+        "difficultyPct": 30.9,
+        "quarters": 4
+      },
+      "5-96": {
+        "label": "Total",
+        "difficultyPct": 58.6,
+        "quarters": 4
+      },
+      "5-43": {
+        "label": "SEKTOR II",
+        "difficultyPct": 65.9,
+        "quarters": 4
+      },
+      "10-33": {
+        "label": "Verarbeitendes Gewerbe/Herstellung von Waren",
+        "difficultyPct": 61.5,
+        "quarters": 4
+      },
+      "24-25": {
+        "label": "Herstellung von Metallerzeugnissen",
+        "difficultyPct": 71,
+        "quarters": 4
+      },
+      "41-43": {
+        "label": "Baugewerbe/Bau",
+        "difficultyPct": 84.7,
+        "quarters": 4
+      },
+      "45-96": {
+        "label": "SEKTOR III",
+        "difficultyPct": 56.9,
+        "quarters": 4
+      },
+      "45-47": {
+        "label": "Handel, Instandhaltung und Rep. von Kraftfahrzeugen",
+        "difficultyPct": 67.9,
+        "quarters": 4
+      },
+      "49-53": {
+        "label": "Verkehr und Lagerei",
+        "difficultyPct": 52.7,
+        "quarters": 4
+      },
+      "55-56": {
+        "label": "Gastgewerbe/Beherbergung und Gastronomie",
+        "difficultyPct": 69.3,
+        "quarters": 4
+      },
+      "58-63": {
+        "label": "Information und Kommunikation",
+        "difficultyPct": 70.8,
+        "quarters": 4
+      },
+      "62-63": {
+        "label": "Informationstechnologische und Informationsdienstl.",
+        "difficultyPct": 65,
+        "quarters": 4
+      },
+      "64-66": {
+        "label": "Erbringung von Finanz- und Versicherungsdienstl.",
+        "difficultyPct": 32.8,
+        "quarters": 4
+      },
+      "68-75": {
+        "label": "Grundstk- u. Wohn.wesen; freiberufl., wiss., techn. Dienstl.",
+        "difficultyPct": 49.1,
+        "quarters": 4
+      },
+      "77-82": {
+        "label": "Erbringung von sonstigen wirtschaftlichen Dienstl.",
+        "difficultyPct": 67.2,
+        "quarters": 4
+      },
+      "86-88": {
+        "label": "Gesundheits- und Sozialwesen",
+        "difficultyPct": 77.3,
+        "quarters": 4
+      },
+      "90-96": {
+        "label": "Kunst, Unterhaltung u. Erholung; sonstige Dienstl.",
+        "difficultyPct": 38.6,
+        "quarters": 4
+      }
+    },
+    "higherEducation": {
+      "26": {
+        "label": "Herstellung von Datenverarbeitungsgeräten und Uhren",
+        "difficultyPct": 64.3,
+        "quarters": 4
+      },
+      "28": {
+        "label": "Maschinenbau",
+        "difficultyPct": 73.3,
+        "quarters": 4
+      },
+      "84": {
+        "label": "Öffentliche Verwaltung",
+        "difficultyPct": 47.4,
+        "quarters": 4
+      },
+      "85": {
+        "label": "Erziehung und Unterricht",
+        "difficultyPct": 40.7,
+        "quarters": 4
+      },
+      "5-96": {
+        "label": "Total",
+        "difficultyPct": 62.6,
+        "quarters": 4
+      },
+      "5-43": {
+        "label": "SEKTOR II",
+        "difficultyPct": 69.3,
+        "quarters": 4
+      },
+      "10-33": {
+        "label": "Verarbeitendes Gewerbe/Herstellung von Waren",
+        "difficultyPct": 64.8,
+        "quarters": 4
+      },
+      "24-25": {
+        "label": "Herstellung von Metallerzeugnissen",
+        "difficultyPct": 68.6,
+        "quarters": 4
+      },
+      "41-43": {
+        "label": "Baugewerbe/Bau",
+        "difficultyPct": 85.1,
+        "quarters": 4
+      },
+      "45-96": {
+        "label": "SEKTOR III",
+        "difficultyPct": 60.9,
+        "quarters": 4
+      },
+      "45-47": {
+        "label": "Handel, Instandhaltung und Rep. von Kraftfahrzeugen",
+        "difficultyPct": 66,
+        "quarters": 4
+      },
+      "49-53": {
+        "label": "Verkehr und Lagerei",
+        "difficultyPct": 50.1,
+        "quarters": 4
+      },
+      "55-56": {
+        "label": "Gastgewerbe/Beherbergung und Gastronomie",
+        "difficultyPct": 68.3,
+        "quarters": 4
+      },
+      "58-63": {
+        "label": "Information und Kommunikation",
+        "difficultyPct": 56.3,
+        "quarters": 4
+      },
+      "62-63": {
+        "label": "Informationstechnologische und Informationsdienstl.",
+        "difficultyPct": 52,
+        "quarters": 4
+      },
+      "64-66": {
+        "label": "Erbringung von Finanz- und Versicherungsdienstl.",
+        "difficultyPct": 38,
+        "quarters": 4
+      },
+      "68-75": {
+        "label": "Grundstk- u. Wohn.wesen; freiberufl., wiss., techn. Dienstl.",
+        "difficultyPct": 52.9,
+        "quarters": 4
+      },
+      "77-82": {
+        "label": "Erbringung von sonstigen wirtschaftlichen Dienstl.",
+        "difficultyPct": 73.8,
+        "quarters": 4
+      },
+      "86-88": {
+        "label": "Gesundheits- und Sozialwesen",
+        "difficultyPct": 82.1,
+        "quarters": 4
+      },
+      "90-96": {
+        "label": "Kunst, Unterhaltung u. Erholung; sonstige Dienstl.",
+        "difficultyPct": 43.2,
+        "quarters": 4
+      }
+    }
+  },
+  "telework": {
+    "year": 2025,
+    "bySection": {
+      "A": {
+        "label": "Land- und Forstwirtschaft",
+        "pct": 21.1
+      },
+      "B-E": {
+        "label": "Verarbeitendes Gewerbe/Energieversorgung",
+        "pct": 32
+      },
+      "F": {
+        "label": "Baugewerbe",
+        "pct": 18.1
+      },
+      "G": {
+        "label": "Handel, Reparaturgewerbe",
+        "pct": 28.7
+      },
+      "H": {
+        "label": "Verkehr und Lagerei",
+        "pct": 25.2
+      },
+      "I": {
+        "label": "Gastgewerbe",
+        "pct": 11.1
+      },
+      "J": {
+        "label": "Information und Kommunikation",
+        "pct": 81.8
+      },
+      "K": {
+        "label": "Kredit- und Versicherungsgewerbe",
+        "pct": 70.5
+      },
+      "L/N": {
+        "label": "Immobilien, sonst. wirtschaftliche DL",
+        "pct": 31.7
+      },
+      "M": {
+        "label": "Freiberufliche, wiss. und techn. DL",
+        "pct": 61
+      },
+      "O/U": {
+        "label": "Öffentliche Verwaltung, exterritoriale Organisationen",
+        "pct": 47.9
+      },
+      "P": {
+        "label": "Erziehung und Unterricht",
+        "pct": 56.9
+      },
+      "Q": {
+        "label": "Gesundheits- u. Sozialwesen",
+        "pct": 22.2
+      },
+      "R/S/T": {
+        "label": "Kunst, Unterhalt., priv. HH, sonst. DL",
+        "pct": 31.3
+      }
+    }
+  },
+  "hours": {
+    "year": 2025,
+    "bySection": {
+      "A-T": {
+        "label": "Total",
+        "hours": 42.57
+      },
+      "A": {
+        "label": "Land- und Forstwirtschaft",
+        "hours": 49
+      },
+      "B-E": {
+        "label": "Verarbeitendes Gewerbe/Energieversorgung",
+        "hours": 42.15
+      },
+      "F": {
+        "label": "Baugewerbe",
+        "hours": 42.2
+      },
+      "G": {
+        "label": "Handel, Reparaturgewerbe",
+        "hours": 42.58
+      },
+      "H": {
+        "label": "Verkehr und Lagerei",
+        "hours": 42.68
+      },
+      "I": {
+        "label": "Gastgewerbe",
+        "hours": 43.22
+      },
+      "J": {
+        "label": "Information und Kommunikation",
+        "hours": 42.09
+      },
+      "K": {
+        "label": "Kredit- und Versicherungsgewerbe",
+        "hours": 43.09
+      },
+      "L/N": {
+        "label": "Immobilien, sonst. wirtschaftliche DL",
+        "hours": 42.23
+      },
+      "M": {
+        "label": "Freiberufliche, wiss. und techn. DL",
+        "hours": 42.91
+      },
+      "O": {
+        "label": "Öff.Verwaltung",
+        "hours": 43.02
+      },
+      "P": {
+        "label": "Erziehung und Unterricht 3",
+        "hours": 40.45
+      },
+      "Q": {
+        "label": "Gesundheits- u. Sozialwesen",
+        "hours": 43.07
+      },
+      "R/S/T": {
+        "label": "Kunst, Unterhalt., priv. HH, sonst. DL",
+        "hours": 42.55
+      }
+    }
+  },
+  "nightWork": {
+    "year": 2013,
+    "byIsco1": {
+      "1": {
+        "label": "Führungskräfte",
+        "nightPct": 14.2
+      },
+      "2": {
+        "label": "Akademische Berufe",
+        "nightPct": 12.6
+      },
+      "3": {
+        "label": "Techniker/innen und gleichrangige Berufe",
+        "nightPct": 13.2
+      },
+      "4": {
+        "label": "Bürokräfte und verwandte Berufe",
+        "nightPct": 6
+      },
+      "5": {
+        "label": "Dienstleistungsberufe und Verkäufer/innen",
+        "nightPct": 15.2
+      },
+      "6": {
+        "label": "Fachkräfte in Land- und Forstwirtschaft",
+        "nightPct": 28.8
+      },
+      "7": {
+        "label": "Handwerks- und verwandte Berufe",
+        "nightPct": 12.3
+      },
+      "8": {
+        "label": "Anlagen- und Maschinenbediener/innen, Montierer/innen",
+        "nightPct": 34.7
+      },
+      "9": {
+        "label": "Hilfsarbeitskräfte",
+        "nightPct": 9.3
+      }
+    }
+  },
+  "studySuccess": {
+    "cohort": null,
+    "byType": {
+      "UH": {
+        "Total": {
+          "label": "UH",
+          "noSuccessPct": 15.3
+        },
+        "Geistes- und Sozialwissenschaften": {
+          "label": "Geistes- und Sozialwissenschaften",
+          "noSuccessPct": 17.4
+        },
+        "Wirtschaftswissenschaften": {
+          "label": "Wirtschaftswissenschaften",
+          "noSuccessPct": 14.5
+        },
+        "Recht": {
+          "label": "Recht",
+          "noSuccessPct": 17.6
+        },
+        "Exakte und Naturwissenschaften": {
+          "label": "Exakte und Naturwissenschaften",
+          "noSuccessPct": 16.6
+        },
+        "Medizin und Pharmazie": {
+          "label": "Medizin und Pharmazie",
+          "noSuccessPct": 12.6
+        },
+        "Technische Wissenschaften": {
+          "label": "Technische Wissenschaften",
+          "noSuccessPct": 9.8
+        },
+        "Interdisziplinäre und andere": {
+          "label": "Interdisziplinäre und andere",
+          "noSuccessPct": 13
+        }
+      },
+      "FH": {
+        "Total": {
+          "label": "FH",
+          "noSuccessPct": 18.5
+        },
+        "Architektur, Bauwesen und Plannung": {
+          "label": "Architektur, Bauwesen und Plannung",
+          "noSuccessPct": 15.4
+        },
+        "Technik und IT": {
+          "label": "Technik und IT",
+          "noSuccessPct": 20.1
+        },
+        "Chemie und Life Sciences": {
+          "label": "Chemie und Life Sciences",
+          "noSuccessPct": 24.1
+        },
+        "Land- und Fortwirtschaft": {
+          "label": "Land- und Fortwirtschaft",
+          "noSuccessPct": 25
+        },
+        "Wirtschaft und Dienstleistungen": {
+          "label": "Wirtschaft und Dienstleistungen",
+          "noSuccessPct": 24.4
+        },
+        "Design": {
+          "label": "Design",
+          "noSuccessPct": 9.4
+        },
+        "Sport": {
+          "label": "Sport",
+          "noSuccessPct": 6.3
+        },
+        "Musik, Theater und andere Künste": {
+          "label": "Musik, Theater und andere Künste",
+          "noSuccessPct": 8.3
+        },
+        "Angewandte Linguistik": {
+          "label": "Angewandte Linguistik",
+          "noSuccessPct": 16.7
+        },
+        "Soziale Arbeit": {
+          "label": "Soziale Arbeit",
+          "noSuccessPct": 11.5
+        },
+        "Angewandte Psychologie": {
+          "label": "Angewandte Psychologie",
+          "noSuccessPct": 9.9
+        },
+        "Gesundheit": {
+          "label": "Gesundheit",
+          "noSuccessPct": 12.1
+        }
+      }
+    }
+  },
+  "vetCertification": {
+    "cohort": 2019,
+    "observedUntil": "31.12.2024",
+    "byOccupation": {
+      "Printmedienpraktiker/in EBA": {
+        "learners": 37,
+        "passedPct": 81.1,
+        "failedPct": 0,
+        "stillInTrainingPct": 2.7,
+        "leftSystemPct": 16.2,
+        "nonCompletionPct": 16.2
+      },
+      "Medientechnologe/-technologin EFZ": {
+        "learners": 81,
+        "passedPct": 91.4,
+        "failedPct": 0,
+        "stillInTrainingPct": 2.5,
+        "leftSystemPct": 6.2,
+        "nonCompletionPct": 6.2
+      },
+      "Fotofachmann/-frau EFZ": {
+        "learners": 45,
+        "passedPct": 86.7,
+        "failedPct": 0,
+        "stillInTrainingPct": 0,
+        "leftSystemPct": 13.3,
+        "nonCompletionPct": 13.3
+      },
+      "Polygraf/in EFZ": {
+        "learners": 100,
+        "passedPct": 94,
+        "failedPct": 0,
+        "stillInTrainingPct": 2,
+        "leftSystemPct": 4,
+        "nonCompletionPct": 4
+      },
+      "Interactive Media Designer EFZ": {
+        "learners": 52,
+        "passedPct": 88.5,
+        "failedPct": 0,
+        "stillInTrainingPct": 5.8,
+        "leftSystemPct": 5.8,
+        "nonCompletionPct": 5.8
+      },
+      "Mediamatiker/in EFZ": {
+        "learners": 338,
+        "passedPct": 93.5,
+        "failedPct": 0.3,
+        "stillInTrainingPct": 1.5,
+        "leftSystemPct": 4.7,
+        "nonCompletionPct": 5
+      },
+      "Veranstaltungsfachmann/-frau EFZ": {
+        "learners": 32,
+        "passedPct": 84.4,
+        "failedPct": 9.4,
+        "stillInTrainingPct": 0,
+        "leftSystemPct": 6.3,
+        "nonCompletionPct": 15.7
+      },
+      "Grafiker/in EFZ": {
+        "learners": 50,
+        "passedPct": 96,
+        "failedPct": 0,
+        "stillInTrainingPct": 2,
+        "leftSystemPct": 2,
+        "nonCompletionPct": 2
+      },
+      "Gestalter/in Werbetechnik EFZ": {
+        "learners": 100,
+        "passedPct": 89,
+        "failedPct": 1,
+        "stillInTrainingPct": 3,
+        "leftSystemPct": 7,
+        "nonCompletionPct": 8
+      },
+      "Polydesigner/in 3D EFZ": {
+        "learners": 72,
+        "passedPct": 95.8,
+        "failedPct": 0,
+        "stillInTrainingPct": 1.4,
+        "leftSystemPct": 2.8,
+        "nonCompletionPct": 2.8
+      },
+      "Florist/in EFZ": {
+        "learners": 162,
+        "passedPct": 87,
+        "failedPct": 1.2,
+        "stillInTrainingPct": 1.9,
+        "leftSystemPct": 9.9,
+        "nonCompletionPct": 11.1
+      },
+      "Fachmann/-frau Information und Dokumentation EFZ": {
+        "learners": 68,
+        "passedPct": 88.2,
+        "failedPct": 0,
+        "stillInTrainingPct": 1.5,
+        "leftSystemPct": 10.3,
+        "nonCompletionPct": 10.3
+      },
+      "Büroassistent/in EBA": {
+        "learners": 273,
+        "passedPct": 82.8,
+        "failedPct": 2.2,
+        "stillInTrainingPct": 2.9,
+        "leftSystemPct": 12.1,
+        "nonCompletionPct": 14.3
+      },
+      "Kaufmann/-frau EFZ E": {
+        "learners": 7282,
+        "passedPct": 93.8,
+        "failedPct": 0.8,
+        "stillInTrainingPct": 1.5,
+        "leftSystemPct": 4,
+        "nonCompletionPct": 4.8
+      },
+      "Kaufmann/-frau EFZ B": {
+        "learners": 711,
+        "passedPct": 81.4,
+        "failedPct": 2.5,
+        "stillInTrainingPct": 4.4,
+        "leftSystemPct": 11.7,
+        "nonCompletionPct": 14.2
+      },
+      "Detailhandelsassistent/in EBA": {
+        "learners": 1083,
+        "passedPct": 82.4,
+        "failedPct": 2.4,
+        "stillInTrainingPct": 1.7,
+        "leftSystemPct": 13.6,
+        "nonCompletionPct": 16
+      },
+      "Detailhandelsfachmann/-frau EFZ": {
+        "learners": 3098,
+        "passedPct": 86.7,
+        "failedPct": 1.4,
+        "stillInTrainingPct": 3.4,
+        "leftSystemPct": 8.5,
+        "nonCompletionPct": 9.9
+      },
+      "Drogist/in EFZ": {
+        "learners": 221,
+        "passedPct": 92.3,
+        "failedPct": 0.9,
+        "stillInTrainingPct": 2.7,
+        "leftSystemPct": 4.1,
+        "nonCompletionPct": 5
+      },
+      "Pharma-Assistent/in EFZ": {
+        "learners": 841,
+        "passedPct": 89.4,
+        "failedPct": 1.8,
+        "stillInTrainingPct": 3.4,
+        "leftSystemPct": 5.4,
+        "nonCompletionPct": 7.2
+      },
+      "Buchhändler/in EFZ": {
+        "learners": 44,
+        "passedPct": 84.1,
+        "failedPct": 0,
+        "stillInTrainingPct": 2.3,
+        "leftSystemPct": 13.6,
+        "nonCompletionPct": 13.6
+      },
+      "Fachmann/-frau Kundendialog EFZ": {
+        "learners": 82,
+        "passedPct": 95.1,
+        "failedPct": 0,
+        "stillInTrainingPct": 1.2,
+        "leftSystemPct": 3.7,
+        "nonCompletionPct": 3.7
+      },
+      "ICT-Fachmann/-frau EFZ": {
+        "learners": 116,
+        "passedPct": 92.2,
+        "failedPct": 0,
+        "stillInTrainingPct": 0,
+        "leftSystemPct": 7.8,
+        "nonCompletionPct": 7.8
+      },
+      "Informatiker/in EFZ": {
+        "learners": 1254,
+        "passedPct": 90.9,
+        "failedPct": 1,
+        "stillInTrainingPct": 2.9,
+        "leftSystemPct": 5.2,
+        "nonCompletionPct": 6.2
+      },
+      "Chemie- und Pharmatechnologe/-technologin EFZ": {
+        "learners": 57,
+        "passedPct": 86,
+        "failedPct": 0,
+        "stillInTrainingPct": 8.8,
+        "leftSystemPct": 5.3,
+        "nonCompletionPct": 5.3
+      },
+      "Laborant/in EFZ": {
+        "learners": 370,
+        "passedPct": 90.5,
+        "failedPct": 0.8,
+        "stillInTrainingPct": 4.1,
+        "leftSystemPct": 4.6,
+        "nonCompletionPct": 5.4
+      },
+      "Physiklaborant/in EFZ": {
+        "learners": 30,
+        "passedPct": 86.7,
+        "failedPct": 0,
+        "stillInTrainingPct": 3.3,
+        "leftSystemPct": 10,
+        "nonCompletionPct": 10
+      },
+      "Elektroinstallateur/in EFZ": {
+        "learners": 1497,
+        "passedPct": 85.4,
+        "failedPct": 3.9,
+        "stillInTrainingPct": 5,
+        "leftSystemPct": 5.7,
+        "nonCompletionPct": 9.6
+      },
+      "Kältesystem-Monteur/in EFZ": {
+        "learners": 45,
+        "passedPct": 77.8,
+        "failedPct": 6.7,
+        "stillInTrainingPct": 8.9,
+        "leftSystemPct": 6.7,
+        "nonCompletionPct": 13.4
+      },
+      "Montage-Elektriker/in EFZ": {
+        "learners": 719,
+        "passedPct": 78.3,
+        "failedPct": 3.2,
+        "stillInTrainingPct": 6.4,
+        "leftSystemPct": 12.1,
+        "nonCompletionPct": 15.3
+      },
+      "Netzelektriker/in EFZ": {
+        "learners": 135,
+        "passedPct": 81.5,
+        "failedPct": 5.9,
+        "stillInTrainingPct": 4.4,
+        "leftSystemPct": 8.1,
+        "nonCompletionPct": 14
+      },
+      "Elektroplaner/in EFZ": {
+        "learners": 115,
+        "passedPct": 84.3,
+        "failedPct": 3.5,
+        "stillInTrainingPct": 0.9,
+        "leftSystemPct": 11.3,
+        "nonCompletionPct": 14.8
+      },
+      "Anlagenführer/in EFZ": {
+        "learners": 70,
+        "passedPct": 85.7,
+        "failedPct": 1.4,
+        "stillInTrainingPct": 1.4,
+        "leftSystemPct": 11.4,
+        "nonCompletionPct": 12.8
+      },
+      "Automatiker/in EFZ": {
+        "learners": 528,
+        "passedPct": 94.5,
+        "failedPct": 0.6,
+        "stillInTrainingPct": 1.7,
+        "leftSystemPct": 3.2,
+        "nonCompletionPct": 3.8
+      },
+      "Elektroniker/in EFZ": {
+        "learners": 226,
+        "passedPct": 88.9,
+        "failedPct": 0.4,
+        "stillInTrainingPct": 5.8,
+        "leftSystemPct": 4.9,
+        "nonCompletionPct": 5.3
+      },
+      "Automatikmonteur/in EFZ": {
+        "learners": 121,
+        "passedPct": 92.6,
+        "failedPct": 0,
+        "stillInTrainingPct": 3.3,
+        "leftSystemPct": 4.1,
+        "nonCompletionPct": 4.1
+      },
+      "Multimediaelektroniker/in EFZ": {
+        "learners": 72,
+        "passedPct": 76.4,
+        "failedPct": 1.4,
+        "stillInTrainingPct": 9.7,
+        "leftSystemPct": 12.5,
+        "nonCompletionPct": 13.9
+      },
+      "Anlagen- und Apparatebauer/in EFZ": {
+        "learners": 160,
+        "passedPct": 87.5,
+        "failedPct": 3.1,
+        "stillInTrainingPct": 3.8,
+        "leftSystemPct": 5.6,
+        "nonCompletionPct": 8.7
+      },
+      "Mechanikpraktiker/in EBA": {
+        "learners": 115,
+        "passedPct": 87,
+        "failedPct": 0.9,
+        "stillInTrainingPct": 0.9,
+        "leftSystemPct": 11.3,
+        "nonCompletionPct": 12.2
+      },
+      "Produktionsmechaniker/in EFZ": {
+        "learners": 330,
+        "passedPct": 87.3,
+        "failedPct": 0.9,
+        "stillInTrainingPct": 3.6,
+        "leftSystemPct": 8.2,
+        "nonCompletionPct": 9.1
+      },
+      "Metallbaupraktiker/in EBA": {
+        "learners": 98,
+        "passedPct": 81.6,
+        "failedPct": 0,
+        "stillInTrainingPct": 4.1,
+        "leftSystemPct": 14.3,
+        "nonCompletionPct": 14.3
+      },
+      "Metallbauer/in EFZ": {
+        "learners": 315,
+        "passedPct": 86.7,
+        "failedPct": 1.3,
+        "stillInTrainingPct": 5.7,
+        "leftSystemPct": 6.3,
+        "nonCompletionPct": 7.6
+      },
+      "Polymechaniker/in EFZ": {
+        "learners": 1162,
+        "passedPct": 92.6,
+        "failedPct": 1.2,
+        "stillInTrainingPct": 2.4,
+        "leftSystemPct": 3.8,
+        "nonCompletionPct": 5
+      },
+      "Uhrenarbeiter/in EBA": {
+        "learners": 48,
+        "passedPct": 79.2,
+        "failedPct": 0,
+        "stillInTrainingPct": 0,
+        "leftSystemPct": 20.8,
+        "nonCompletionPct": 20.8
+      },
+      "Lackierassistent/in EBA": {
+        "learners": 79,
+        "passedPct": 84.8,
+        "failedPct": 1.3,
+        "stillInTrainingPct": 2.5,
+        "leftSystemPct": 11.4,
+        "nonCompletionPct": 12.7
+      },
+      "Konstrukteur/in EFZ": {
+        "learners": 454,
+        "passedPct": 92.5,
+        "failedPct": 0.2,
+        "stillInTrainingPct": 2.9,
+        "leftSystemPct": 4.4,
+        "nonCompletionPct": 4.6
+      },
+      "Metallbaukonstrukteur/in EFZ": {
+        "learners": 49,
+        "passedPct": 83.7,
+        "failedPct": 4.1,
+        "stillInTrainingPct": 6.1,
+        "leftSystemPct": 6.1,
+        "nonCompletionPct": 10.2
+      },
+      "Automobil-Mechatroniker/in EFZ": {
+        "learners": 442,
+        "passedPct": 90.5,
+        "failedPct": 1.8,
+        "stillInTrainingPct": 2.3,
+        "leftSystemPct": 5.4,
+        "nonCompletionPct": 7.2
+      },
+      "Automobil-Assistent/in EBA": {
+        "learners": 285,
+        "passedPct": 83.5,
+        "failedPct": 3.5,
+        "stillInTrainingPct": 1.1,
+        "leftSystemPct": 11.9,
+        "nonCompletionPct": 15.4
+      },
+      "Automobil-Fachmann/-frau EFZ": {
+        "learners": 947,
+        "passedPct": 87.2,
+        "failedPct": 1.8,
+        "stillInTrainingPct": 4.9,
+        "leftSystemPct": 6.1,
+        "nonCompletionPct": 7.9
+      },
+      "Baumaschinenmechaniker/in EFZ": {
+        "learners": 95,
+        "passedPct": 95.8,
+        "failedPct": 1.1,
+        "stillInTrainingPct": 0,
+        "leftSystemPct": 3.2,
+        "nonCompletionPct": 4.3
+      },
+      "Carrosseriespengler/in EFZ": {
+        "learners": 156,
+        "passedPct": 67.3,
+        "failedPct": 4.5,
+        "stillInTrainingPct": 11.5,
+        "leftSystemPct": 16.7,
+        "nonCompletionPct": 21.2
+      },
+      "Fahrradmechaniker/in EFZ": {
+        "learners": 129,
+        "passedPct": 82.2,
+        "failedPct": 3.9,
+        "stillInTrainingPct": 3.9,
+        "leftSystemPct": 10.1,
+        "nonCompletionPct": 14
+      },
+      "Fahrzeugschlosser/in EFZ": {
+        "learners": 35,
+        "passedPct": 91.4,
+        "failedPct": 0,
+        "stillInTrainingPct": 2.9,
+        "leftSystemPct": 5.7,
+        "nonCompletionPct": 5.7
+      },
+      "Landmaschinenmechaniker/in EFZ": {
+        "learners": 283,
+        "passedPct": 91.2,
+        "failedPct": 1.1,
+        "stillInTrainingPct": 6,
+        "leftSystemPct": 1.8,
+        "nonCompletionPct": 2.9
+      },
+      "Motorradmechaniker/in EFZ": {
+        "learners": 88,
+        "passedPct": 73.9,
+        "failedPct": 2.3,
+        "stillInTrainingPct": 9.1,
+        "leftSystemPct": 14.8,
+        "nonCompletionPct": 17.1
+      },
+      "Reifenpraktiker/in EBA": {
+        "learners": 135,
+        "passedPct": 73.3,
+        "failedPct": 3,
+        "stillInTrainingPct": 3,
+        "leftSystemPct": 20.7,
+        "nonCompletionPct": 23.7
+      },
+      "Carrosserielackierer/in EFZ": {
+        "learners": 211,
+        "passedPct": 76.3,
+        "failedPct": 3.8,
+        "stillInTrainingPct": 6.2,
+        "leftSystemPct": 13.7,
+        "nonCompletionPct": 17.5
+      },
+      "Bäcker/in-Konditor/in-Confiseur/in EFZ": {
+        "learners": 422,
+        "passedPct": 85.3,
+        "failedPct": 1.4,
+        "stillInTrainingPct": 5.9,
+        "leftSystemPct": 7.3,
+        "nonCompletionPct": 8.7
+      },
+      "Bäcker/in-Konditor/in-Confiseur/in EBA": {
+        "learners": 89,
+        "passedPct": 67.4,
+        "failedPct": 1.1,
+        "stillInTrainingPct": 4.5,
+        "leftSystemPct": 27,
+        "nonCompletionPct": 28.1
+      },
+      "Lebensmitteltechnologe/-technologin EFZ": {
+        "learners": 86,
+        "passedPct": 90.7,
+        "failedPct": 0,
+        "stillInTrainingPct": 4.7,
+        "leftSystemPct": 4.7,
+        "nonCompletionPct": 4.7
+      },
+      "Fleischfachassistent/in EBA (ab 2017)": {
+        "learners": 45,
+        "passedPct": 80,
+        "failedPct": 2.2,
+        "stillInTrainingPct": 4.4,
+        "leftSystemPct": 13.3,
+        "nonCompletionPct": 15.5
+      },
+      "Fleischfachmann/-frau EFZ": {
+        "learners": 151,
+        "passedPct": 88.7,
+        "failedPct": 0,
+        "stillInTrainingPct": 2.6,
+        "leftSystemPct": 8.6,
+        "nonCompletionPct": 8.6
+      },
+      "Milchtechnologe/-technologin EFZ": {
+        "learners": 94,
+        "passedPct": 90.4,
+        "failedPct": 1.1,
+        "stillInTrainingPct": 0,
+        "leftSystemPct": 8.5,
+        "nonCompletionPct": 9.6
+      },
+      "Holzbearbeiter/in EBA": {
+        "learners": 70,
+        "passedPct": 82.9,
+        "failedPct": 2.9,
+        "stillInTrainingPct": 1.4,
+        "leftSystemPct": 12.9,
+        "nonCompletionPct": 15.8
+      },
+      "Schreiner/in EFZ": {
+        "learners": 1010,
+        "passedPct": 89.5,
+        "failedPct": 0.8,
+        "stillInTrainingPct": 3.3,
+        "leftSystemPct": 6.4,
+        "nonCompletionPct": 7.2
+      },
+      "Schreinerpraktiker/in EBA": {
+        "learners": 168,
+        "passedPct": 84.5,
+        "failedPct": 0,
+        "stillInTrainingPct": 1.8,
+        "leftSystemPct": 13.7,
+        "nonCompletionPct": 13.7
+      },
+      "Kunststofftechnologe/-technologin EFZ": {
+        "learners": 46,
+        "passedPct": 89.1,
+        "failedPct": 0,
+        "stillInTrainingPct": 4.3,
+        "leftSystemPct": 6.5,
+        "nonCompletionPct": 6.5
+      },
+      "Bekleidungsgestalter/in EFZ": {
+        "learners": 30,
+        "passedPct": 86.7,
+        "failedPct": 0,
+        "stillInTrainingPct": 3.3,
+        "leftSystemPct": 10,
+        "nonCompletionPct": 10
+      },
+      "Geomatiker/in EFZ": {
+        "learners": 169,
+        "passedPct": 94.7,
+        "failedPct": 1.8,
+        "stillInTrainingPct": 1.8,
+        "leftSystemPct": 1.8,
+        "nonCompletionPct": 3.6
+      },
+      "Zeichner/in EFZ": {
+        "learners": 1250,
+        "passedPct": 89.7,
+        "failedPct": 1.4,
+        "stillInTrainingPct": 3.8,
+        "leftSystemPct": 5.1,
+        "nonCompletionPct": 6.5
+      },
+      "Zimmermann/Zimmerin EFZ": {
+        "learners": 746,
+        "passedPct": 91.4,
+        "failedPct": 2.1,
+        "stillInTrainingPct": 3.6,
+        "leftSystemPct": 2.8,
+        "nonCompletionPct": 4.9
+      },
+      "Heizungsinstallateur/in EFZ": {
+        "learners": 273,
+        "passedPct": 82.4,
+        "failedPct": 4,
+        "stillInTrainingPct": 2.9,
+        "leftSystemPct": 10.6,
+        "nonCompletionPct": 14.6
+      },
+      "Haustechnikpraktiker/in EBA": {
+        "learners": 322,
+        "passedPct": 77.3,
+        "failedPct": 6.8,
+        "stillInTrainingPct": 1.6,
+        "leftSystemPct": 14.3,
+        "nonCompletionPct": 21.1
+      },
+      "Sanitärinstallateur/in EFZ": {
+        "learners": 526,
+        "passedPct": 81,
+        "failedPct": 3.6,
+        "stillInTrainingPct": 5.1,
+        "leftSystemPct": 10.3,
+        "nonCompletionPct": 13.9
+      },
+      "Lüftungsanlagenbauer/in EFZ": {
+        "learners": 42,
+        "passedPct": 69,
+        "failedPct": 2.4,
+        "stillInTrainingPct": 0,
+        "leftSystemPct": 28.6,
+        "nonCompletionPct": 31
+      },
+      "Spengler/in EFZ": {
+        "learners": 140,
+        "passedPct": 82.9,
+        "failedPct": 5.7,
+        "stillInTrainingPct": 2.1,
+        "leftSystemPct": 9.3,
+        "nonCompletionPct": 15
+      },
+      "Baupraktiker/in EBA": {
+        "learners": 117,
+        "passedPct": 74.4,
+        "failedPct": 7.7,
+        "stillInTrainingPct": 3.4,
+        "leftSystemPct": 14.5,
+        "nonCompletionPct": 22.2
+      },
+      "Boden-Parkettleger/in EFZ": {
+        "learners": 96,
+        "passedPct": 69.8,
+        "failedPct": 6.3,
+        "stillInTrainingPct": 5.2,
+        "leftSystemPct": 18.8,
+        "nonCompletionPct": 25.1
+      },
+      "Dachdecker/in EFZ": {
+        "learners": 64,
+        "passedPct": 85.9,
+        "failedPct": 1.6,
+        "stillInTrainingPct": 3.1,
+        "leftSystemPct": 9.4,
+        "nonCompletionPct": 11
+      },
+      "Gipser/in-Trockenbauer/in EFZ": {
+        "learners": 67,
+        "passedPct": 65.7,
+        "failedPct": 3,
+        "stillInTrainingPct": 4.5,
+        "leftSystemPct": 26.9,
+        "nonCompletionPct": 29.9
+      },
+      "Maurer/in EFZ": {
+        "learners": 559,
+        "passedPct": 79.2,
+        "failedPct": 3.4,
+        "stillInTrainingPct": 5,
+        "leftSystemPct": 12.3,
+        "nonCompletionPct": 15.7
+      },
+      "Plattenleger/in EFZ": {
+        "learners": 73,
+        "passedPct": 64.4,
+        "failedPct": 11,
+        "stillInTrainingPct": 5.5,
+        "leftSystemPct": 19.2,
+        "nonCompletionPct": 30.2
+      },
+      "Strassenbauer/in EFZ": {
+        "learners": 176,
+        "passedPct": 81.8,
+        "failedPct": 2.8,
+        "stillInTrainingPct": 6.3,
+        "leftSystemPct": 9.1,
+        "nonCompletionPct": 11.9
+      },
+      "Gleisbauer/in EFZ": {
+        "learners": 48,
+        "passedPct": 87.5,
+        "failedPct": 0,
+        "stillInTrainingPct": 2.1,
+        "leftSystemPct": 10.4,
+        "nonCompletionPct": 10.4
+      },
+      "Strassenbaupraktiker/in EBA": {
+        "learners": 46,
+        "passedPct": 78.3,
+        "failedPct": 6.5,
+        "stillInTrainingPct": 2.2,
+        "leftSystemPct": 13,
+        "nonCompletionPct": 19.5
+      },
+      "Maler/in EFZ": {
+        "learners": 439,
+        "passedPct": 79.3,
+        "failedPct": 4.6,
+        "stillInTrainingPct": 5,
+        "leftSystemPct": 11.2,
+        "nonCompletionPct": 15.8
+      },
+      "Malerpraktiker/in EBA": {
+        "learners": 169,
+        "passedPct": 81.1,
+        "failedPct": 3,
+        "stillInTrainingPct": 4.1,
+        "leftSystemPct": 11.8,
+        "nonCompletionPct": 14.8
+      },
+      "Gebäudetechnikplaner/in Heizung EFZ": {
+        "learners": 94,
+        "passedPct": 79.8,
+        "failedPct": 2.1,
+        "stillInTrainingPct": 10.6,
+        "leftSystemPct": 7.4,
+        "nonCompletionPct": 9.5
+      },
+      "Gebäudetechnikplaner/in Lüftung EFZ": {
+        "learners": 73,
+        "passedPct": 90.4,
+        "failedPct": 1.4,
+        "stillInTrainingPct": 2.7,
+        "leftSystemPct": 5.5,
+        "nonCompletionPct": 6.9
+      },
+      "Gebäudetechnikplaner/in Sanitär EFZ": {
+        "learners": 52,
+        "passedPct": 73.1,
+        "failedPct": 5.8,
+        "stillInTrainingPct": 5.8,
+        "leftSystemPct": 15.4,
+        "nonCompletionPct": 21.2
+      },
+      "Agrarpraktiker/in EBA": {
+        "learners": 55,
+        "passedPct": 78.2,
+        "failedPct": 1.8,
+        "stillInTrainingPct": 1.8,
+        "leftSystemPct": 18.2,
+        "nonCompletionPct": 20
+      },
+      "Landwirt/in EFZ": {
+        "learners": 517,
+        "passedPct": 92.3,
+        "failedPct": 1.4,
+        "stillInTrainingPct": 1.5,
+        "leftSystemPct": 4.8,
+        "nonCompletionPct": 6.2
+      },
+      "Winzer/in EFZ": {
+        "learners": 39,
+        "passedPct": 87.2,
+        "failedPct": 0,
+        "stillInTrainingPct": 0,
+        "leftSystemPct": 12.8,
+        "nonCompletionPct": 12.8
+      },
+      "Pferdefachmann/-frau EFZ": {
+        "learners": 77,
+        "passedPct": 87,
+        "failedPct": 1.3,
+        "stillInTrainingPct": 3.9,
+        "leftSystemPct": 7.8,
+        "nonCompletionPct": 9.1
+      },
+      "Tierpfleger/in EFZ": {
+        "learners": 72,
+        "passedPct": 81.9,
+        "failedPct": 1.4,
+        "stillInTrainingPct": 4.2,
+        "leftSystemPct": 12.5,
+        "nonCompletionPct": 13.9
+      },
+      "Gärtner/in EBA": {
+        "learners": 198,
+        "passedPct": 80.3,
+        "failedPct": 3,
+        "stillInTrainingPct": 1,
+        "leftSystemPct": 15.7,
+        "nonCompletionPct": 18.7
+      },
+      "Gärtner/in EFZ": {
+        "learners": 706,
+        "passedPct": 86.3,
+        "failedPct": 3.3,
+        "stillInTrainingPct": 3,
+        "leftSystemPct": 7.5,
+        "nonCompletionPct": 10.8
+      },
+      "Forstwart/in EFZ": {
+        "learners": 263,
+        "passedPct": 93.9,
+        "failedPct": 0.4,
+        "stillInTrainingPct": 1.9,
+        "leftSystemPct": 3.8,
+        "nonCompletionPct": 4.2
+      },
+      "Tiermedizinische/r Praxisassistent/in EFZ": {
+        "learners": 205,
+        "passedPct": 91.7,
+        "failedPct": 0,
+        "stillInTrainingPct": 1,
+        "leftSystemPct": 7.3,
+        "nonCompletionPct": 7.3
+      },
+      "Zahntechniker/in EFZ": {
+        "learners": 35,
+        "passedPct": 85.7,
+        "failedPct": 2.9,
+        "stillInTrainingPct": 0,
+        "leftSystemPct": 11.4,
+        "nonCompletionPct": 14.3
+      },
+      "Dentalassistent/in EFZ": {
+        "learners": 879,
+        "passedPct": 93.4,
+        "failedPct": 0.7,
+        "stillInTrainingPct": 1.8,
+        "leftSystemPct": 4.1,
+        "nonCompletionPct": 4.8
+      },
+      "Fachmann/-frau Gesundheit EFZ": {
+        "learners": 3779,
+        "passedPct": 91.6,
+        "failedPct": 0.2,
+        "stillInTrainingPct": 2.1,
+        "leftSystemPct": 6,
+        "nonCompletionPct": 6.2
+      },
+      "Podologe/Podologin EFZ": {
+        "learners": 37,
+        "passedPct": 75.7,
+        "failedPct": 0,
+        "stillInTrainingPct": 5.4,
+        "leftSystemPct": 18.9,
+        "nonCompletionPct": 18.9
+      },
+      "Augenoptiker/in EFZ": {
+        "learners": 228,
+        "passedPct": 89.9,
+        "failedPct": 0.9,
+        "stillInTrainingPct": 3.9,
+        "leftSystemPct": 5.3,
+        "nonCompletionPct": 6.2
+      },
+      "Medizinische/r Praxisassistent/in EFZ": {
+        "learners": 834,
+        "passedPct": 92.8,
+        "failedPct": 0.4,
+        "stillInTrainingPct": 2.3,
+        "leftSystemPct": 4.6,
+        "nonCompletionPct": 5
+      },
+      "Assistent/in Gesundheit und Soziales EBA": {
+        "learners": 880,
+        "passedPct": 89.5,
+        "failedPct": 0.5,
+        "stillInTrainingPct": 1.8,
+        "leftSystemPct": 8.2,
+        "nonCompletionPct": 8.7
+      },
+      "Fachmann/-frau Betreuung EFZ": {
+        "learners": 2689,
+        "passedPct": 91.6,
+        "failedPct": 0.5,
+        "stillInTrainingPct": 1.2,
+        "leftSystemPct": 6.7,
+        "nonCompletionPct": 7.2
+      },
+      "Fachmann/-frau Bewegungs- und Gesundheitsförderung EFZ": {
+        "learners": 111,
+        "passedPct": 88.3,
+        "failedPct": 0.9,
+        "stillInTrainingPct": 3.6,
+        "leftSystemPct": 7.2,
+        "nonCompletionPct": 8.1
+      },
+      "Fachmann/-frau Hauswirtschaft EFZ": {
+        "learners": 244,
+        "passedPct": 84.4,
+        "failedPct": 2,
+        "stillInTrainingPct": 3.7,
+        "leftSystemPct": 9.8,
+        "nonCompletionPct": 11.8
+      },
+      "Hauswirtschaftspraktiker/in EBA": {
+        "learners": 197,
+        "passedPct": 77.2,
+        "failedPct": 3.6,
+        "stillInTrainingPct": 2,
+        "leftSystemPct": 17.3,
+        "nonCompletionPct": 20.9
+      },
+      "Unterhaltspraktiker/in EBA": {
+        "learners": 167,
+        "passedPct": 85,
+        "failedPct": 1.2,
+        "stillInTrainingPct": 0.6,
+        "leftSystemPct": 13.2,
+        "nonCompletionPct": 14.4
+      },
+      "Gebäudereiniger/in EBA": {
+        "learners": 45,
+        "passedPct": 71.1,
+        "failedPct": 2.2,
+        "stillInTrainingPct": 2.2,
+        "leftSystemPct": 24.4,
+        "nonCompletionPct": 26.6
+      },
+      "Gebäudereiniger/in EFZ": {
+        "learners": 45,
+        "passedPct": 71.1,
+        "failedPct": 4.4,
+        "stillInTrainingPct": 6.7,
+        "leftSystemPct": 17.8,
+        "nonCompletionPct": 22.2
+      },
+      "Kaminfeger/in EFZ": {
+        "learners": 43,
+        "passedPct": 90.7,
+        "failedPct": 0,
+        "stillInTrainingPct": 4.7,
+        "leftSystemPct": 4.7,
+        "nonCompletionPct": 4.7
+      },
+      "Fachmann/-frau Betriebsunterhalt EFZ": {
+        "learners": 543,
+        "passedPct": 86,
+        "failedPct": 0.9,
+        "stillInTrainingPct": 2.6,
+        "leftSystemPct": 10.5,
+        "nonCompletionPct": 11.4
+      },
+      "Coiffeur/-euse EFZ": {
+        "learners": 691,
+        "passedPct": 82.8,
+        "failedPct": 2.5,
+        "stillInTrainingPct": 2,
+        "leftSystemPct": 12.7,
+        "nonCompletionPct": 15.2
+      },
+      "Coiffeur/-euse EBA": {
+        "learners": 141,
+        "passedPct": 81.6,
+        "failedPct": 1.4,
+        "stillInTrainingPct": 2.1,
+        "leftSystemPct": 14.9,
+        "nonCompletionPct": 16.3
+      },
+      "Kosmetiker/in EFZ": {
+        "learners": 80,
+        "passedPct": 80,
+        "failedPct": 0,
+        "stillInTrainingPct": 1.3,
+        "leftSystemPct": 18.8,
+        "nonCompletionPct": 18.8
+      },
+      "Hotellerieangestellte/r EBA": {
+        "learners": 30,
+        "passedPct": 73.3,
+        "failedPct": 0,
+        "stillInTrainingPct": 6.7,
+        "leftSystemPct": 20,
+        "nonCompletionPct": 20
+      },
+      "Hotelfachmann/-frau EFZ": {
+        "learners": 236,
+        "passedPct": 89.8,
+        "failedPct": 0.8,
+        "stillInTrainingPct": 1.3,
+        "leftSystemPct": 8.1,
+        "nonCompletionPct": 8.9
+      },
+      "Hotel-Kommunikationsfachmann/-frau EFZ": {
+        "learners": 99,
+        "passedPct": 94.9,
+        "failedPct": 0,
+        "stillInTrainingPct": 0,
+        "leftSystemPct": 5.1,
+        "nonCompletionPct": 5.1
+      },
+      "Restaurantfachmann/-frau EFZ (ab 2019)": {
+        "learners": 342,
+        "passedPct": 77.2,
+        "failedPct": 4.1,
+        "stillInTrainingPct": 5,
+        "leftSystemPct": 13.7,
+        "nonCompletionPct": 17.8
+      },
+      "Restaurantangestellte/r EBA (ab 2019)": {
+        "learners": 115,
+        "passedPct": 77.4,
+        "failedPct": 4.3,
+        "stillInTrainingPct": 3.5,
+        "leftSystemPct": 14.8,
+        "nonCompletionPct": 19.1
+      },
+      "Koch/Köchin EFZ": {
+        "learners": 1194,
+        "passedPct": 80.5,
+        "failedPct": 1.3,
+        "stillInTrainingPct": 4.7,
+        "leftSystemPct": 13.5,
+        "nonCompletionPct": 14.8
+      },
+      "Küchenangestellte/r EBA": {
+        "learners": 306,
+        "passedPct": 73.5,
+        "failedPct": 2.3,
+        "stillInTrainingPct": 2.3,
+        "leftSystemPct": 21.9,
+        "nonCompletionPct": 24.2
+      },
+      "Systemgastronomiefachmann/-frau EFZ": {
+        "learners": 43,
+        "passedPct": 74.4,
+        "failedPct": 0,
+        "stillInTrainingPct": 9.3,
+        "leftSystemPct": 16.3,
+        "nonCompletionPct": 16.3
+      },
+      "Fachmann/-frau öffentlicher Verkehr EFZ": {
+        "learners": 61,
+        "passedPct": 91.8,
+        "failedPct": 0,
+        "stillInTrainingPct": 3.3,
+        "leftSystemPct": 4.9,
+        "nonCompletionPct": 4.9
+      },
+      "Strassentransportfachmann/-frau EFZ": {
+        "learners": 160,
+        "passedPct": 79.4,
+        "failedPct": 2.5,
+        "stillInTrainingPct": 1.9,
+        "leftSystemPct": 16.3,
+        "nonCompletionPct": 18.8
+      },
+      "Logistiker/in EFZ": {
+        "learners": 1240,
+        "passedPct": 88.2,
+        "failedPct": 1.5,
+        "stillInTrainingPct": 2.7,
+        "leftSystemPct": 7.6,
+        "nonCompletionPct": 9.1
+      },
+      "Logistiker/in EBA": {
+        "learners": 276,
+        "passedPct": 85.9,
+        "failedPct": 0.7,
+        "stillInTrainingPct": 2.2,
+        "leftSystemPct": 11.2,
+        "nonCompletionPct": 11.9
+      }
+    }
+  },
+  "gradIncome": {
+    "uh": {
+      "year": 2024,
+      "byLevel": {
+        "Bachelor": {
+          "Total": {
+            "p25": 50700,
+            "median": 72200,
+            "p75": 90000
+          },
+          "Geistes- und Sozialwissenschaften": {
+            "p25": 52000,
+            "median": 72000,
+            "p75": 91300
+          },
+          "Wirtschaftswissenschaften": {
+            "p25": 60000,
+            "median": 79000,
+            "p75": 90000
+          },
+          "Recht": {
+            "p25": 51000,
+            "median": 71900,
+            "p75": 91000
+          },
+          "Exakte und Naturwissenschaften": {
+            "p25": 44200,
+            "median": 72000,
+            "p75": 88800
+          },
+          "Medizin und Pharmazie": {
+            "p25": 36400,
+            "median": 50000,
+            "p75": 76100
+          },
+          "Technische Wissenschaften": {
+            "p25": 28600,
+            "median": 50000,
+            "p75": 72000
+          },
+          "Interdisziplinäre und Andere": {
+            "p25": 60000,
+            "median": 77000,
+            "p75": 91000
+          }
+        },
+        "Master": {
+          "Total": {
+            "p25": 57800,
+            "median": 80500,
+            "p75": 95000
+          },
+          "Geistes- und Sozialwissenschaften": {
+            "p25": 55000,
+            "median": 78000,
+            "p75": 96400
+          },
+          "Wirtschaftswissenschaften": {
+            "p25": 71500,
+            "median": 88000,
+            "p75": 100000
+          },
+          "Recht": {
+            "p25": 46800,
+            "median": 70000,
+            "p75": 94000
+          },
+          "Exakte und Naturwissenschaften": {
+            "p25": 52000,
+            "median": 71900,
+            "p75": 91000
+          },
+          "Medizin und Pharmazie": {
+            "p25": 78000,
+            "median": 90000,
+            "p75": 95000
+          },
+          "Technische Wissenschaften": {
+            "p25": 63000,
+            "median": 80000,
+            "p75": 91000
+          },
+          "Interdisziplinäre und Andere": {
+            "p25": 58000,
+            "median": 79500,
+            "p75": 95000
+          }
+        },
+        "Doktorat": {
+          "Total": {
+            "p25": 75000,
+            "median": 95700,
+            "p75": 113800
+          },
+          "Geistes- und Sozialwissenschaften": {
+            "p25": 62400,
+            "median": 90100,
+            "p75": 111100
+          },
+          "Wirtschaftswissenschaften": {
+            "p25": 70000,
+            "median": 101000,
+            "p75": 125000
+          },
+          "Recht": {
+            "p25": 100000,
+            "median": 126800,
+            "p75": 150000
+          },
+          "Exakte und Naturwissenschaften": {
+            "p25": 62000,
+            "median": 90000,
+            "p75": 101000
+          },
+          "Medizin und Pharmazie": {
+            "p25": 92000,
+            "median": 105000,
+            "p75": 129300
+          },
+          "Technische Wissenschaften": {
+            "p25": 70000,
+            "median": 92000,
+            "p75": 104000
+          }
+        }
+      }
+    },
+    "fh": {
+      "year": 2024,
+      "byLevel": {
+        "Bachelor": {
+          "Total": {
+            "p25": 71500,
+            "median": 81400,
+            "p75": 91900
+          },
+          "Architektur, Bau- und Planungswesen": {
+            "p25": 66500,
+            "median": 78000,
+            "p75": 85800
+          },
+          "Technik und IT": {
+            "p25": 79500,
+            "median": 87500,
+            "p75": 97000
+          },
+          "Chemie und Life Sciences": {
+            "p25": 63600,
+            "median": 79300,
+            "p75": 87000
+          },
+          "Land- und Forstwirtschaft": {
+            "p25": 74300,
+            "median": 82700,
+            "p75": 91300
+          },
+          "Wirtschaft und Dienstleistungen": {
+            "p25": 73700,
+            "median": 85000,
+            "p75": 95800
+          },
+          "Design": {
+            "p25": 37500,
+            "median": 56400,
+            "p75": 75800
+          },
+          "Musik, Theater und andere Künste": {
+            "p25": 38800,
+            "median": 60000,
+            "p75": 80000
+          },
+          "Angewandte Linguistik": {
+            "p25": 65000,
+            "median": 78000,
+            "p75": 88400
+          },
+          "Soziale Arbeit": {
+            "p25": 76700,
+            "median": 85200,
+            "p75": 96200
+          },
+          "Angewandte Psychologie": {
+            "p25": 70000,
+            "median": 82000,
+            "p75": 93300
+          },
+          "Gesundheit": {
+            "p25": 71400,
+            "median": 74500,
+            "p75": 81300
+          }
+        },
+        "Master": {
+          "Total": {
+            "p25": 66000,
+            "median": 90000,
+            "p75": 105700
+          },
+          "Architektur, Bau- und Planungswesen": {
+            "p25": 72000,
+            "median": 84500,
+            "p75": 96000
+          },
+          "Technik und IT": {
+            "p25": 80000,
+            "median": 91000,
+            "p75": 102100
+          },
+          "Chemie und Life Sciences": {
+            "p25": 84500,
+            "median": 90800,
+            "p75": 104600
+          },
+          "Wirtschaft und Dienstleistungen": {
+            "p25": 83000,
+            "median": 99000,
+            "p75": 115000
+          },
+          "Design": {
+            "p25": 44000,
+            "median": 72000,
+            "p75": 96000
+          },
+          "Musik, Theater und andere Künste": {
+            "p25": 33300,
+            "median": 66700,
+            "p75": 95600
+          },
+          "Angewandte Linguistik": {
+            "p25": 76000,
+            "median": 94600,
+            "p75": 110000
+          },
+          "Soziale Arbeit": {
+            "p25": 87500,
+            "median": 95800,
+            "p75": 118000
+          },
+          "Angewandte Psychologie": {
+            "p25": 88400,
+            "median": 100000,
+            "p75": 117500
+          },
+          "Gesundheit": {
+            "p25": 82900,
+            "median": 92500,
+            "p75": 106000
+          }
+        },
+        "Lehrdiplome": {
+          "Total": {
+            "p25": 83900,
+            "median": 98900,
+            "p75": 115900
+          },
+          "Lehrkräfteausbildung": {
+            "p25": 83900,
+            "median": 98900,
+            "p75": 115900
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "source": "bfs-lse-2024-education",
+  "table": "px-x-0304010000_202",
+  "year": 2024,
+  "byEducation": {
+    "1": {
+      "label": "Universitäre Hochschule (UNI,ETH)",
+      "values": {
+        "Zentralwert": 10533,
+        "P10": 6190,
+        "P25": 7994,
+        "P75": 13963,
+        "P90": 20217
+      }
+    },
+    "2": {
+      "label": "Fachhochschule (FH), Pädagogische Hochschule (PH) oder gleichwertige Ausbildung",
+      "values": {
+        "Zentralwert": 9288,
+        "P10": 6320,
+        "P25": 7573,
+        "P75": 11512,
+        "P90": 14477
+      }
+    },
+    "3": {
+      "label": "Höhere Berufsausbildung mit eidgenössischem Fachausweis",
+      "values": {
+        "Zentralwert": 8562,
+        "P10": 5983,
+        "P25": 7143,
+        "P75": 10476,
+        "P90": 13056
+      }
+    },
+    "4": {
+      "label": "Lehrpatent",
+      "values": {
+        "Zentralwert": 8619,
+        "P10": 5132,
+        "P25": 6705,
+        "P75": 10363,
+        "P90": 11788
+      }
+    },
+    "5": {
+      "label": "Gymnasiale Maturität, Berufsmaturität",
+      "values": {
+        "Zentralwert": 6631,
+        "P10": 4333,
+        "P25": 5219,
+        "P75": 8415,
+        "P90": 10852
+      }
+    },
+    "6": {
+      "label": "Abgeschlossene Berufsausbildung",
+      "values": {
+        "Zentralwert": 6390,
+        "P10": 4700,
+        "P25": 5370,
+        "P75": 7642,
+        "P90": 9297
+      }
+    },
+    "7": {
+      "label": "Unternehmensinterne Ausbildung",
+      "values": {
+        "Zentralwert": 5556,
+        "P10": 4062,
+        "P25": 4689,
+        "P75": 6540,
+        "P90": 7702
+      }
+    },
+    "8": {
+      "label": "Obligatorische Schule, ohne abgeschlossene Berufsausbildung",
+      "values": {
+        "Zentralwert": 5183,
+        "P10": 3961,
+        "P25": 4489,
+        "P75": 6212,
+        "P90": 7555
+      }
+    },
+    "-1": {
+      "label": "Ausbildung - Total",
+      "values": {
+        "Zentralwert": 7024,
+        "P10": 4635,
+        "P25": 5524,
+        "P75": 9326,
+        "P90": 12526
+      }
+    }
+  }
+}

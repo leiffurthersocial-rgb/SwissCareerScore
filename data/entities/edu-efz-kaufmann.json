@@ -1,0 +1,55 @@
+{
+  "id": "edu-efz-kaufmann",
+  "kind": "education",
+  "route": "vocational",
+  "eduType": "EFZ",
+  "name": {
+    "en": "Commercial employee EFZ",
+    "de": "Kauffrau/Kaufmann EFZ",
+    "fr": null,
+    "it": null
+  },
+  "codes": {
+    "isco08": "4110"
+  },
+  "sector": "Cross-sector (administration)",
+  "refs": {
+    "vetName": "Kaufmann/-frau EFZ E",
+    "qualLevel": "apprenticeship",
+    "besta": "5-96",
+    "nogaSection": "N"
+  },
+  "pathway": [
+    {
+      "label": "Kauffrau/Kaufmann EFZ",
+      "years": 3,
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/kaufmann-frau-efz",
+      "confidence": "measured"
+    }
+  ],
+  "leadsTo": [
+    "occ-kaufmann"
+  ],
+  "trainedVia": [],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "entryAccess": {
+      "value": 1,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/kaufmann-frau-efz",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "Apprenticeship contract required."
+    }
+  },
+  "meta": {
+    "addedBy": "initial-dataset",
+    "reviewed": "2026-11-03"
+  }
+}

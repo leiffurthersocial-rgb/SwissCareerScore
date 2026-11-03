@@ -1,0 +1,57 @@
+{
+  "id": "occ-psychologe",
+  "kind": "occupation",
+  "route": "academic",
+  "name": {
+    "en": "Psychologist",
+    "de": "Psychologin/Psychologe",
+    "fr": null,
+    "it": null
+  },
+  "codes": {
+    "isco08": "2634",
+    "chIsco19": "26340"
+  },
+  "sector": "Health",
+  "refs": {
+    "qualLevel": "higherEducation",
+    "nogaSection": "Q",
+    "besta": "86-88"
+  },
+  "pathway": [],
+  "leadsTo": [],
+  "trainedVia": [
+    "edu-uh-psychologie"
+  ],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "mobility": {
+      "value": 4,
+      "unit": "rubric 0–9",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#11-international-mobility",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "recognition 2/3, language independence 0/3, transferability 2/3. Master degree internationally standard; psychotherapy licence regulated nationally; language-bound."
+    },
+    "regionalUbiquity": {
+      "value": 2,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#12-regional-availability",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "Concentrated in cities and institutions."
+    }
+  },
+  "meta": {
+    "addedBy": "initial-dataset",
+    "reviewed": "2026-11-03"
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "id": "edu-fh-pflege",
+  "kind": "education",
+  "route": "mixed",
+  "eduType": "FH-BSc",
+  "name": {
+    "en": "BSc Nursing (FH)",
+    "de": "Bachelor Pflege FH",
+    "fr": null,
+    "it": null
+  },
+  "codes": {
+    "isco08": "2221"
+  },
+  "sector": "Health",
+  "refs": {
+    "studyField": "FH:Gesundheit",
+    "gradIncome": "fh:Bachelor:Gesundheit",
+    "qualLevel": "higherEducation",
+    "besta": "86-88",
+    "nogaSection": "Q"
+  },
+  "pathway": [
+    {
+      "label": "Fachfrau/Fachmann Gesundheit EFZ with Berufsmaturität (BM 1)",
+      "years": 3,
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/fachmann-frau-gesundheit-efz",
+      "confidence": "measured"
+    },
+    {
+      "label": "Bachelor Pflege FH",
+      "years": 3,
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/pflegefachmann-frau",
+      "confidence": "measured"
+    }
+  ],
+  "leadsTo": [
+    "occ-pflegefachperson"
+  ],
+  "trainedVia": [],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "entryAccess": {
+      "value": 2,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/pflegefachmann-frau",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "Aptitude assessment at most FH health departments; limited places."
+    }
+  },
+  "meta": {
+    "addedBy": "initial-dataset",
+    "reviewed": "2026-11-03"
+  }
+}

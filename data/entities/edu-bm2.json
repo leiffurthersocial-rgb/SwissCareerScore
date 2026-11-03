@@ -1,0 +1,59 @@
+{
+  "id": "edu-bm2",
+  "kind": "education",
+  "route": "vocational",
+  "eduType": "BM",
+  "name": {
+    "en": "Federal vocational baccalaureate (BM 2, after EFZ)",
+    "de": "Berufsmaturität (BM 2, nach EFZ)",
+    "fr": null,
+    "it": null
+  },
+  "codes": {},
+  "sector": "Cross-sector",
+  "refs": {
+    "lseEducation": "5",
+    "besta": "5-96",
+    "qualLevel": "apprenticeship",
+    "nogaSection": "N"
+  },
+  "pathway": [
+    {
+      "label": "EFZ apprenticeship (3-year profile)",
+      "years": 3,
+      "sourceUrl": "https://www.berufsberatung.ch/de/bildungssystem/d/lehre-efz",
+      "confidence": "measured"
+    },
+    {
+      "label": "Berufsmaturität after EFZ (full-time)",
+      "years": 1,
+      "sourceUrl": "https://www.berufsberatung.ch/de/bildungssystem/d/berufsmaturitaet",
+      "confidence": "measured",
+      "note": "berufsberatung.ch: 1 to 2.5 years after the EFZ; full-time minimum used."
+    }
+  ],
+  "leadsTo": [],
+  "trainedVia": [],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "entryAccess": {
+      "value": 1,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://www.berufsberatung.ch/de/bildungssystem/d/berufsmaturitaet",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "Admission via cantonal entrance exam or EFZ grades."
+    }
+  },
+  "meta": {
+    "addedBy": "initial-dataset",
+    "reviewed": "2026-11-03",
+    "notes": "Outcome dimensions use LSE wages for holders of a Matura/Berufsmaturität as highest qualification (education-level match)."
+  }
+}
