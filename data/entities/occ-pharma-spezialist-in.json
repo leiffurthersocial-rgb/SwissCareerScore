@@ -1,0 +1,58 @@
+{
+  "id": "occ-pharma-spezialist-in",
+  "kind": "occupation",
+  "route": "vocational",
+  "name": {
+    "en": "Technische Verkaufsfachkräfte (ohne Informations- und Kommunikationstechnologie), Medizin",
+    "de": "Pharma-Spezialist / Pharma-Spezialistin",
+    "fr": "Spécialiste pharmaceutique",
+    "it": "Specialista farmaceutico"
+  },
+  "codes": {
+    "isco08": "2433",
+    "chIsco19": "24332"
+  },
+  "sector": "CH-ISCO-19 24: Betriebswirte und vergleichbare Spezialisten",
+  "refs": {
+    "qualLevel": "higherVet",
+    "nogaSection": "M",
+    "besta": "68-75"
+  },
+  "pathway": [],
+  "leadsTo": [],
+  "trainedVia": [
+    "edu-bp-pharma-spezialist-in"
+  ],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "mobility": {
+      "value": 7,
+      "unit": "rubric 0–9",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#11-international-mobility",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed): recognition 3/3, language independence 2/3, transferability 2/3."
+    },
+    "regionalUbiquity": {
+      "value": 2,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#12-regional-availability",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed)."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Occupation = CH-ISCO-19 occupation type 24332 (Technische Verkaufsfachkräfte (ohne Informations- und Kommunikationstechnologie), Medizin). Sector for demand/telework/hours assigned from the occupation group (estimate)."
+  }
+}

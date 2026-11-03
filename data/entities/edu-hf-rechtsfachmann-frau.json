@@ -1,0 +1,63 @@
+{
+  "id": "edu-hf-rechtsfachmann-frau",
+  "kind": "education",
+  "route": "vocational",
+  "eduType": "HF",
+  "name": {
+    "en": "Rechtsfachmann / Rechtsfachfrau HF",
+    "de": "Rechtsfachmann / Rechtsfachfrau HF",
+    "fr": "Spécialiste en droit ES",
+    "it": "Specialista legale SSS"
+  },
+  "codes": {
+    "isco08": "3411"
+  },
+  "sector": "CH-ISCO-19 34: Juristische, soziale, kulturelle und verwandte Fachkräfte",
+  "refs": {
+    "qualLevel": "higherVet",
+    "besta": "86-88",
+    "nogaSection": "Q"
+  },
+  "pathway": [
+    {
+      "label": "EFZ apprenticeship in a related occupation",
+      "years": 3,
+      "sourceUrl": "https://www.berufsberatung.ch/de/bildungssystem/d/lehre-efz",
+      "confidence": "measured",
+      "note": "Admission normally requires a relevant EFZ (3 or 4 years); the shorter variant is counted."
+    },
+    {
+      "label": "Rechtsfachmann / Rechtsfachfrau HF",
+      "years": 3.0,
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/rechtsfachmann-frau-hf",
+      "confidence": "measured",
+      "note": "Full-time minimum; part-time variants take longer."
+    }
+  ],
+  "leadsTo": [
+    "occ-fachmann-frau-betreibung-und-konkurs"
+  ],
+  "trainedVia": [],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "entryAccess": {
+      "value": 1,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/rechtsfachmann-frau-hf",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "HF entrance procedure (relevant EFZ required)."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Language regions assumed (all three) — not individually verified."
+  }
+}

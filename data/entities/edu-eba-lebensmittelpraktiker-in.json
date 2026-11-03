@@ -1,0 +1,55 @@
+{
+  "id": "edu-eba-lebensmittelpraktiker-in",
+  "kind": "education",
+  "route": "vocational",
+  "eduType": "EBA",
+  "name": {
+    "en": "Food Production Assistant (EBA)",
+    "de": "Lebensmittelpraktiker/in EBA",
+    "fr": "Praticien en denrées alimentaires AFP",
+    "it": "Addetto alimentarista CFP"
+  },
+  "codes": {
+    "isco08": "8160"
+  },
+  "sector": "CH-ISCO-19 81: Bediener stationärer Anlagen und Maschinen",
+  "refs": {
+    "qualLevel": "apprenticeship",
+    "besta": "10-33",
+    "nogaSection": "C"
+  },
+  "pathway": [
+    {
+      "label": "Lebensmittelpraktiker/in EBA",
+      "years": 2.0,
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/lebensmittelpraktiker-in-eba",
+      "confidence": "measured"
+    }
+  ],
+  "leadsTo": [
+    "occ-mueller-in"
+  ],
+  "trainedVia": [],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "entryAccess": {
+      "value": 1,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/lebensmittelpraktiker-in-eba",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "Apprenticeship contract with a training company required (default for dual VET)."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Language regions assumed (all three) — not individually verified. No BFS completion statistic for this occupation (missing)."
+  }
+}

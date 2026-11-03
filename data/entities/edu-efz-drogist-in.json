@@ -1,0 +1,56 @@
+{
+  "id": "edu-efz-drogist-in",
+  "kind": "education",
+  "route": "vocational",
+  "eduType": "EFZ",
+  "name": {
+    "en": "Druggist (EFZ)",
+    "de": "Drogist/in EFZ",
+    "fr": "Droguiste CFC",
+    "it": "Droghiere AFC"
+  },
+  "codes": {
+    "isco08": "5223"
+  },
+  "sector": "CH-ISCO-19 52: Verkaufskräfte",
+  "refs": {
+    "qualLevel": "apprenticeship",
+    "besta": "45-47",
+    "nogaSection": "G",
+    "vetName": "Drogist/in EFZ"
+  },
+  "pathway": [
+    {
+      "label": "Drogist/in EFZ",
+      "years": 4.0,
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/drogist-in-efz",
+      "confidence": "measured"
+    }
+  ],
+  "leadsTo": [
+    "occ-drogist-in"
+  ],
+  "trainedVia": [],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "entryAccess": {
+      "value": 1,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/drogist-in-efz",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "Apprenticeship contract with a training company required (default for dual VET)."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Language regions assumed (all three) — not individually verified."
+  }
+}

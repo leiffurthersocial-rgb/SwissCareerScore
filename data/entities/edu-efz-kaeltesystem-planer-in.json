@@ -1,0 +1,55 @@
+{
+  "id": "edu-efz-kaeltesystem-planer-in",
+  "kind": "education",
+  "route": "vocational",
+  "eduType": "EFZ",
+  "name": {
+    "en": "Refrigeration Designer (EFZ)",
+    "de": "Kältesystem-Planer / Kältesystem-Planerin EFZ",
+    "fr": "Projeteur frigoriste CFC",
+    "it": "Progettista di sistemi di refrigerazione AFC"
+  },
+  "codes": {
+    "isco08": "3118"
+  },
+  "sector": "CH-ISCO-19 31: Ingenieurtechnische und vergleichbare Fachkräfte",
+  "refs": {
+    "qualLevel": "apprenticeship",
+    "besta": "10-33",
+    "nogaSection": "C"
+  },
+  "pathway": [
+    {
+      "label": "Kältesystem-Planer / Kältesystem-Planerin EFZ",
+      "years": 4.0,
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/kaeltesystem-planer-in-efz",
+      "confidence": "measured"
+    }
+  ],
+  "leadsTo": [
+    "occ-gebaeudetechnikplaner-in-sanitaer"
+  ],
+  "trainedVia": [],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "entryAccess": {
+      "value": 1,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/kaeltesystem-planer-in-efz",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "Apprenticeship contract with a training company required (default for dual VET)."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Language regions assumed (all three) — not individually verified. No BFS completion statistic for this occupation (missing)."
+  }
+}

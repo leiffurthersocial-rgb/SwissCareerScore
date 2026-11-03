@@ -1,0 +1,55 @@
+{
+  "id": "edu-efz-entwaesserungstechnologe-login",
+  "kind": "education",
+  "route": "vocational",
+  "eduType": "EFZ",
+  "name": {
+    "en": "Dewatering Technician (EFZ)",
+    "de": "Entwässerungstechnologin / Entwässerungstechnologe EFZ",
+    "fr": "Technologue en assainissement CFC",
+    "it": "Tecnologo per lo smaltimento delle acque AFC"
+  },
+  "codes": {
+    "isco08": "7126"
+  },
+  "sector": "Construction / building services",
+  "refs": {
+    "qualLevel": "apprenticeship",
+    "besta": "41-43",
+    "nogaSection": "F"
+  },
+  "pathway": [
+    {
+      "label": "Entwässerungstechnologin / Entwässerungstechnologe EFZ",
+      "years": 3.0,
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/entwaesserungstechnologe-login-efz",
+      "confidence": "measured"
+    }
+  ],
+  "leadsTo": [
+    "occ-sanitaerinstallateur"
+  ],
+  "trainedVia": [],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "entryAccess": {
+      "value": 1,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/entwaesserungstechnologe-login-efz",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "Apprenticeship contract with a training company required (default for dual VET)."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Language regions assumed (all three) — not individually verified. No BFS completion statistic for this occupation (missing)."
+  }
+}

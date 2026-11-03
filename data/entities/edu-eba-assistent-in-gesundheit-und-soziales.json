@@ -1,0 +1,56 @@
+{
+  "id": "edu-eba-assistent-in-gesundheit-und-soziales",
+  "kind": "education",
+  "route": "vocational",
+  "eduType": "EBA",
+  "name": {
+    "en": "Health and Social Care Worker (EBA)",
+    "de": "Assistent Gesundheit und Soziales / Assistentin Gesundheit und Soziales EBA",
+    "fr": "Aide en soins et accompagnement AFP",
+    "it": "Addetto alle cure sociosanitarie CFP"
+  },
+  "codes": {
+    "isco08": "3221"
+  },
+  "sector": "Health",
+  "refs": {
+    "qualLevel": "apprenticeship",
+    "besta": "86-88",
+    "nogaSection": "Q",
+    "vetName": "Assistent/in Gesundheit und Soziales EBA"
+  },
+  "pathway": [
+    {
+      "label": "Assistent Gesundheit und Soziales / Assistentin Gesundheit und Soziales EBA",
+      "years": 2.0,
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/assistent-in-gesundheit-und-soziales-eba",
+      "confidence": "measured"
+    }
+  ],
+  "leadsTo": [
+    "occ-fage"
+  ],
+  "trainedVia": [],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "entryAccess": {
+      "value": 1,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/assistent-in-gesundheit-und-soziales-eba",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "Apprenticeship contract with a training company required (default for dual VET)."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Language regions assumed (all three) — not individually verified."
+  }
+}

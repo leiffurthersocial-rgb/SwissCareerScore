@@ -1,0 +1,56 @@
+{
+  "id": "edu-efz-tierpfleger-in",
+  "kind": "education",
+  "route": "vocational",
+  "eduType": "EFZ",
+  "name": {
+    "en": "Animal Caretaker (EFZ)",
+    "de": "Tierpfleger/in EFZ",
+    "fr": "Gardien d'animaux CFC",
+    "it": "Guardiano di animali AFC"
+  },
+  "codes": {
+    "isco08": "5164"
+  },
+  "sector": "CH-ISCO-19 51: Berufe im Bereich personenbezogener Dienstleistungen",
+  "refs": {
+    "qualLevel": "apprenticeship",
+    "besta": "90-96",
+    "nogaSection": "S",
+    "vetName": "Tierpfleger/in EFZ"
+  },
+  "pathway": [
+    {
+      "label": "Tierpfleger/in EFZ",
+      "years": 3.0,
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/tierpfleger-in-efz",
+      "confidence": "measured"
+    }
+  ],
+  "leadsTo": [
+    "occ-blindenfuehrhundeinstruktor-in"
+  ],
+  "trainedVia": [],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "entryAccess": {
+      "value": 1,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/tierpfleger-in-efz",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "Apprenticeship contract with a training company required (default for dual VET)."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Language regions assumed (all three) — not individually verified."
+  }
+}

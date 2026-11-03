@@ -1,0 +1,56 @@
+{
+  "id": "edu-eba-restaurantangestellte-r",
+  "kind": "education",
+  "route": "vocational",
+  "eduType": "EBA",
+  "name": {
+    "en": "Restaurantangestellte / Restaurantangestellter EBA",
+    "de": "Restaurantangestellte / Restaurantangestellter EBA",
+    "fr": "Employé en restauration AFP",
+    "it": "Addetto di ristorazione CFP"
+  },
+  "codes": {
+    "isco08": "5131"
+  },
+  "sector": "CH-ISCO-19 51: Berufe im Bereich personenbezogener Dienstleistungen",
+  "refs": {
+    "qualLevel": "apprenticeship",
+    "besta": "55-56",
+    "nogaSection": "I",
+    "vetName": "Restaurantangestellte/r EBA (ab 2019)"
+  },
+  "pathway": [
+    {
+      "label": "Restaurantangestellte / Restaurantangestellter EBA",
+      "years": 2.0,
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/restaurantangestellte-r-eba",
+      "confidence": "measured"
+    }
+  ],
+  "leadsTo": [
+    "occ-restaurantangestellte-r"
+  ],
+  "trainedVia": [],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "entryAccess": {
+      "value": 1,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/restaurantangestellte-r-eba",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "Apprenticeship contract with a training company required (default for dual VET)."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Language regions assumed (all three) — not individually verified."
+  }
+}

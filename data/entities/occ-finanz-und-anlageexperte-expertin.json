@@ -1,0 +1,60 @@
+{
+  "id": "occ-finanz-und-anlageexperte-expertin",
+  "kind": "occupation",
+  "route": "vocational",
+  "name": {
+    "en": "Expert in Finance and Investment",
+    "de": "Finanzanalysten",
+    "fr": "Expert en finance et investissements",
+    "it": "Esperto in finanza e investimenti"
+  },
+  "codes": {
+    "isco08": "2413",
+    "chIsco19": "24130"
+  },
+  "sector": "CH-ISCO-19 24: Betriebswirte und vergleichbare Spezialisten",
+  "refs": {
+    "qualLevel": "higherVet",
+    "nogaSection": "K",
+    "besta": "64-66"
+  },
+  "pathway": [],
+  "leadsTo": [],
+  "trainedVia": [
+    "edu-hfp-finanz-und-anlageexperte-expertin",
+    "edu-hfp-kmu-finanzexperte-expertin",
+    "edu-hfp-finanzanalytiker-in-und-vermoegensverwalter-in"
+  ],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "mobility": {
+      "value": 7,
+      "unit": "rubric 0–9",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#11-international-mobility",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed): recognition 3/3, language independence 2/3, transferability 2/3."
+    },
+    "regionalUbiquity": {
+      "value": 2,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#12-regional-availability",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed)."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Occupation = CH-ISCO-19 occupation type 24130 (Finanzanalysten). Sector for demand/telework/hours assigned from the occupation group (estimate). Several job titles share this occupation type: Finanz- und Anlageexperte / Finanz- und Anlageexpertin; Finanzanalytiker und Vermögensverwalter / Finanzanalytikerin und Vermögensverwalterin; KMU-Finanzexperte / KMU-Finanzexpertin."
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "id": "occ-information-security-manager",
+  "kind": "occupation",
+  "route": "vocational",
+  "name": {
+    "en": "Fachkräfte für Datenbanken und Netzwerke, anderweitig nicht genannt (ohne Sicherheitsmanagement und Data Mining)",
+    "de": "Information Security Manager",
+    "fr": "Spécialistes des bases de données et des réseaux d’ordinateurs non classés ailleurs (à l'exception de la sécurité et du data mining)",
+    "it": "Specialisti in banche dati e in reti informatiche non classificati altrove (ad eccezione di sicurezza e data mining)"
+  },
+  "codes": {
+    "isco08": "2529",
+    "chIsco19": "25290"
+  },
+  "sector": "CH-ISCO-19 25: Spezialisten in der Informations- und Kommunikationstechnologie",
+  "refs": {
+    "qualLevel": "higherVet",
+    "nogaSection": "J",
+    "besta": "62-63"
+  },
+  "pathway": [],
+  "leadsTo": [],
+  "trainedVia": [
+    "edu-hfp-information-security-manager"
+  ],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "mobility": {
+      "value": 9,
+      "unit": "rubric 0–9",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#11-international-mobility",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed): recognition 3/3, language independence 3/3, transferability 3/3."
+    },
+    "regionalUbiquity": {
+      "value": 2,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#12-regional-availability",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed)."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Occupation = CH-ISCO-19 occupation type 25290 (Fachkräfte für Datenbanken und Netzwerke, anderweitig nicht genannt (ohne Sicherheitsmanagement und Data Mining)). Sector for demand/telework/hours assigned from the occupation group (estimate)."
+  }
+}

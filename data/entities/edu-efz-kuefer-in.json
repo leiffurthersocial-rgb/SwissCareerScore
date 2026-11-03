@@ -1,0 +1,55 @@
+{
+  "id": "edu-efz-kuefer-in",
+  "kind": "education",
+  "route": "vocational",
+  "eduType": "EFZ",
+  "name": {
+    "en": "Barrel Maker (EFZ)",
+    "de": "Küfer / Küferin EFZ",
+    "fr": "Tonnelier CFC",
+    "it": "Bottaio AFC"
+  },
+  "codes": {
+    "isco08": "7522"
+  },
+  "sector": "CH-ISCO-19 75: Berufe in der Nahrungsmittelverarbeitung, Holzverarbeitung und Be",
+  "refs": {
+    "qualLevel": "apprenticeship",
+    "besta": "10-33",
+    "nogaSection": "C"
+  },
+  "pathway": [
+    {
+      "label": "Küfer / Küferin EFZ",
+      "years": 3.0,
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/kuefer-in-efz",
+      "confidence": "measured"
+    }
+  ],
+  "leadsTo": [
+    "occ-architekturmodellbauer-in"
+  ],
+  "trainedVia": [],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "entryAccess": {
+      "value": 1,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/kuefer-in-efz",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "Apprenticeship contract with a training company required (default for dual VET)."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Language regions assumed (all three) — not individually verified. No BFS completion statistic for this occupation (missing)."
+  }
+}

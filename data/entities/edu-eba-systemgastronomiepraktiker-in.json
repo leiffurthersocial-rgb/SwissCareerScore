@@ -1,0 +1,55 @@
+{
+  "id": "edu-eba-systemgastronomiepraktiker-in",
+  "kind": "education",
+  "route": "vocational",
+  "eduType": "EBA",
+  "name": {
+    "en": "Systemgastronomiepraktiker / Systemgastronomiepraktikerin EBA",
+    "de": "Systemgastronomiepraktiker / Systemgastronomiepraktikerin EBA",
+    "fr": null,
+    "it": null
+  },
+  "codes": {
+    "isco08": "9411"
+  },
+  "sector": "CH-ISCO-19 94: Hilfskräfte in der Nahrungsmittelzubereitung",
+  "refs": {
+    "qualLevel": "apprenticeship",
+    "besta": "55-56",
+    "nogaSection": "I"
+  },
+  "pathway": [
+    {
+      "label": "Systemgastronomiepraktiker / Systemgastronomiepraktikerin EBA",
+      "years": 2.0,
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/systemgastronomiepraktiker-in-eba",
+      "confidence": "measured"
+    }
+  ],
+  "leadsTo": [
+    "occ-systemgastronomiepraktiker-in"
+  ],
+  "trainedVia": [],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "entryAccess": {
+      "value": 1,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/systemgastronomiepraktiker-in-eba",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "Apprenticeship contract with a training company required (default for dual VET)."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Language regions assumed (all three) — not individually verified. No BFS completion statistic for this occupation (missing). Occupation code 94110 assigned by the project (title not in the SECO/AVAM list) — estimate."
+  }
+}

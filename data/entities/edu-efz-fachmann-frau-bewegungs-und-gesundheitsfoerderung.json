@@ -1,0 +1,56 @@
+{
+  "id": "edu-efz-fachmann-frau-bewegungs-und-gesundheitsfoerderung",
+  "kind": "education",
+  "route": "vocational",
+  "eduType": "EFZ",
+  "name": {
+    "en": "Physical Activity and Health Promotion Attendant (EFZ)",
+    "de": "Fachmann Bewegungs- und Gesundheitsförderung / Fachfrau Bewegungs- und Gesundheitsförderung EFZ",
+    "fr": "Assistant en promotion de l'activité physique et de la santé CFC",
+    "it": "Operatore per la promozione dell'attività fisica e della salute AFC"
+  },
+  "codes": {
+    "isco08": "3423"
+  },
+  "sector": "CH-ISCO-19 34: Juristische, soziale, kulturelle und verwandte Fachkräfte",
+  "refs": {
+    "qualLevel": "apprenticeship",
+    "besta": "86-88",
+    "nogaSection": "Q",
+    "vetName": "Fachmann/-frau Bewegungs- und Gesundheitsförderung EFZ"
+  },
+  "pathway": [
+    {
+      "label": "Fachmann Bewegungs- und Gesundheitsförderung / Fachfrau Bewegungs- und Gesundheitsförderung EFZ",
+      "years": 3.0,
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/fachmann-frau-bewegungs-und-gesundheitsfoerderung-efz",
+      "confidence": "measured"
+    }
+  ],
+  "leadsTo": [
+    "occ-fachmann-frau-bewegungs-und-gesundheitsfoerderung"
+  ],
+  "trainedVia": [],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "entryAccess": {
+      "value": 1,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/fachmann-frau-bewegungs-und-gesundheitsfoerderung-efz",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "Apprenticeship contract with a training company required (default for dual VET)."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Language regions assumed (all three) — not individually verified."
+  }
+}

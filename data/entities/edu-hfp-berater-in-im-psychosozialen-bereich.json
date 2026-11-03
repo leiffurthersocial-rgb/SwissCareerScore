@@ -1,0 +1,63 @@
+{
+  "id": "edu-hfp-berater-in-im-psychosozialen-bereich",
+  "kind": "education",
+  "route": "vocational",
+  "eduType": "HFP",
+  "name": {
+    "en": "Counsellor (HFP)",
+    "de": "Beraterin im psychosozialen Bereich / Berater im psychosozialen Bereich HFP",
+    "fr": "Conseiller dans le domaine psychosocial DF",
+    "it": "Consulente in ambito psicosociale DPF"
+  },
+  "codes": {
+    "isco08": "3412"
+  },
+  "sector": "CH-ISCO-19 34: Juristische, soziale, kulturelle und verwandte Fachkräfte",
+  "refs": {
+    "qualLevel": "higherVet",
+    "besta": "86-88",
+    "nogaSection": "Q"
+  },
+  "pathway": [
+    {
+      "label": "EFZ apprenticeship in a related occupation",
+      "years": 3,
+      "sourceUrl": "https://www.berufsberatung.ch/de/bildungssystem/d/lehre-efz",
+      "confidence": "measured",
+      "note": "Admission normally requires a relevant EFZ (3 or 4 years); the shorter variant is counted."
+    },
+    {
+      "label": "Preparation for the advanced federal exam: Beraterin im psychosozialen Bereich / Berater im psychosozialen Bereich HFP",
+      "years": 3.0,
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/berater-in-im-psychosozialen-bereich-hfp",
+      "confidence": "estimated",
+      "note": "Duration of the preparatory course as stated; admission also requires professional experience (see exam regulations), so the true time to qualify is longer."
+    }
+  ],
+  "leadsTo": [
+    "occ-job-coach-in-arbeitsintegration"
+  ],
+  "trainedVia": [],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "entryAccess": {
+      "value": 0,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/berater-in-im-psychosozialen-bereich-hfp",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "Admission to the federal exam is based on professional experience; no capacity limit."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Language regions assumed (all three) — not individually verified."
+  }
+}

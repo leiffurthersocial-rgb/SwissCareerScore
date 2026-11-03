@@ -1,0 +1,47 @@
+{
+  "id": "edu-hfp-gemuesegaertnermeister-in",
+  "kind": "education",
+  "route": "vocational",
+  "eduType": "HFP",
+  "name": {
+    "en": "Vegetable Production Manager (HFP)",
+    "de": "Gemüsegärtnermeister/in HFP",
+    "fr": "Maître maraîcher DF",
+    "it": "Maestro orticoltore DPF"
+  },
+  "codes": {
+    "isco08": "6111"
+  },
+  "sector": "CH-ISCO-19 61: Fachkräfte in der Landwirtschaft",
+  "refs": {
+    "qualLevel": "higherVet",
+    "nogaSection": "A"
+  },
+  "pathway": [],
+  "leadsTo": [
+    "occ-gemuesegaertnermeister-in"
+  ],
+  "trainedVia": [],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "entryAccess": {
+      "value": 0,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/gemuesegaertnermeister-in-hfp",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "Admission to the federal exam is based on professional experience; no capacity limit."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Language regions assumed (all three) — not individually verified. No duration statement found on berufsberatung.ch — time to qualify is missing."
+  }
+}

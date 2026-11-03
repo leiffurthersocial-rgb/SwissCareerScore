@@ -1,6 +1,6 @@
 "use client";
 import { useSearchParams } from "next/navigation";
-import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { useCallback, useDeferredValue, useEffect, useMemo, useRef, useState } from "react";
 import { scorable } from "@/lib/dataset";
 import { DIMENSION_IDS, type DimensionId } from "@/lib/dimensions";
 import { PRESETS, type PresetId } from "@/lib/presets";
@@ -68,8 +68,10 @@ export function useAppState() {
 
 /** Score all entities for the current weights. Memoised; full pipeline incl. MC + sensitivity. */
 export function useScores(weights: Record<DimensionId, number>): Map<string, EntityResult> {
+  // Deferred: slider drags stay responsive while the full pipeline (MC + sensitivity) recomputes.
+  const deferred = useDeferredValue(weights);
   return useMemo(() => {
-    const res = scoreEntities(scorable, weights, { draws: 300 });
+    const res = scoreEntities(scorable, deferred, { draws: 200 });
     return new Map(res.map((r) => [r.id, r]));
-  }, [weights]);
+  }, [deferred]);
 }

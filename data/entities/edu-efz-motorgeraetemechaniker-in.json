@@ -1,0 +1,55 @@
+{
+  "id": "edu-efz-motorgeraetemechaniker-in",
+  "kind": "education",
+  "route": "vocational",
+  "eduType": "EFZ",
+  "name": {
+    "en": "Motor Mechanic (EFZ)",
+    "de": "Motorgerätemechaniker/in EFZ",
+    "fr": "Mécanicien d'appareils à moteur CFC",
+    "it": "Meccanico d'apparecchi a motore AFC"
+  },
+  "codes": {
+    "isco08": "7233"
+  },
+  "sector": "CH-ISCO-19 72: Metallarbeiter, Mechaniker, Polymechaniker, Produktionsmechaniker",
+  "refs": {
+    "qualLevel": "apprenticeship",
+    "besta": "28",
+    "nogaSection": "C"
+  },
+  "pathway": [
+    {
+      "label": "Motorgerätemechaniker/in EFZ",
+      "years": 4.0,
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/motorgeraetemechaniker-in-efz",
+      "confidence": "measured"
+    }
+  ],
+  "leadsTo": [
+    "occ-baumaschinenmechaniker-in"
+  ],
+  "trainedVia": [],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "entryAccess": {
+      "value": 1,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/motorgeraetemechaniker-in-efz",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "Apprenticeship contract with a training company required (default for dual VET)."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Language regions assumed (all three) — not individually verified. No BFS completion statistic for this occupation (missing)."
+  }
+}

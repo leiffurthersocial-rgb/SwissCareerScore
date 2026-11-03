@@ -1,0 +1,59 @@
+{
+  "id": "occ-kunsthistoriker-in",
+  "kind": "occupation",
+  "route": "academic",
+  "name": {
+    "en": "Art historian / curator",
+    "de": "Archiv- und Museumswissenschaftler",
+    "fr": "Archivistes paléographes et conservateurs de musée",
+    "it": "Archivisti e curatori di musei"
+  },
+  "codes": {
+    "isco08": "2621",
+    "chIsco19": "26210"
+  },
+  "sector": "CH-ISCO-19 26: Juristen, Sozialwissenschaftler und Kulturberufe",
+  "refs": {
+    "qualLevel": "higherEducation",
+    "nogaSection": "R",
+    "besta": "90-96"
+  },
+  "pathway": [],
+  "leadsTo": [],
+  "trainedVia": [
+    "edu-uh-kunstgeschichte",
+    "edu-fh-konservierung-restaurierung"
+  ],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "mobility": {
+      "value": 4,
+      "unit": "rubric 0–9",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#11-international-mobility",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed): recognition 2/3, language independence 1/3, transferability 1/3."
+    },
+    "regionalUbiquity": {
+      "value": 2,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#12-regional-availability",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed)."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Occupation = CH-ISCO-19 occupation type 26210 (Archiv- und Museumswissenschaftler). Sector for demand/telework/hours assigned from the occupation group (estimate). Several job titles share this occupation type: Archiv- und Museumswissenschaftler; Kunsthistoriker/in."
+  }
+}

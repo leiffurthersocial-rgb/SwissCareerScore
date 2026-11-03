@@ -64,3 +64,30 @@ export interface Dataset {
   /** Spearman rank correlations between direction-adjusted dimension raw values (all entities). */
   correlations: Partial<Record<DimensionId, Partial<Record<DimensionId, number | null>>>>;
 }
+
+/** Compact per-entity record shipped to the browser (ranking, filters, scoring). */
+export interface CoreEntity {
+  id: string;
+  kind: EntityKind;
+  route: Route;
+  eduType?: EduType;
+  name: LocalizedText;
+  sector: string;
+  languageRegions: LanguageRegion[];
+  leadsTo: string[];
+  trainedVia: string[];
+  /** dimension → [raw, confidence initial (m|e|x), match level] */
+  m: Partial<Record<DimensionId, [number | null, "m" | "e" | "x", MatchLevel]>>;
+  /** years to qualify */
+  y: number | null;
+  /** median mid-career pay */
+  p: number | null;
+}
+
+export interface CoreDataset {
+  version: string;
+  generated: string;
+  entities: CoreEntity[];
+  sources: Source[];
+  correlations: Dataset["correlations"];
+}

@@ -1,0 +1,58 @@
+{
+  "id": "occ-systemgastronomiepraktiker-in",
+  "kind": "occupation",
+  "route": "vocational",
+  "name": {
+    "en": "Zubereiter von Fast Food und anderen Imbissen",
+    "de": "Systemgastronomiepraktiker / Systemgastronomiepraktikerin",
+    "fr": "Cuisiniers, restauration rapide",
+    "it": "Addetti di fast food"
+  },
+  "codes": {
+    "isco08": "9411",
+    "chIsco19": "94110"
+  },
+  "sector": "CH-ISCO-19 94: Hilfskräfte in der Nahrungsmittelzubereitung",
+  "refs": {
+    "qualLevel": "apprenticeship",
+    "nogaSection": "I",
+    "besta": "55-56"
+  },
+  "pathway": [],
+  "leadsTo": [],
+  "trainedVia": [
+    "edu-eba-systemgastronomiepraktiker-in"
+  ],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "mobility": {
+      "value": 3,
+      "unit": "rubric 0–9",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#11-international-mobility",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed): recognition 0/3, language independence 2/3, transferability 1/3."
+    },
+    "regionalUbiquity": {
+      "value": 3,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#12-regional-availability",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed)."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Occupation = CH-ISCO-19 occupation type 94110 (Zubereiter von Fast Food und anderen Imbissen). Sector for demand/telework/hours assigned from the occupation group (estimate)."
+  }
+}

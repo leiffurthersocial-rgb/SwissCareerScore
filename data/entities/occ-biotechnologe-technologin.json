@@ -1,0 +1,60 @@
+{
+  "id": "occ-biotechnologe-technologin",
+  "kind": "occupation",
+  "route": "academic",
+  "name": {
+    "en": "Bioprocess / chemical engineer",
+    "de": "Chemieingenieure",
+    "fr": "Ingénieurs chimistes",
+    "it": "Ingegneri chimici"
+  },
+  "codes": {
+    "isco08": "2145",
+    "chIsco19": "21450"
+  },
+  "sector": "CH-ISCO-19 21: Naturwissenschaftler, Mathematiker und Ingenieure",
+  "refs": {
+    "qualLevel": "higherEducation",
+    "nogaSection": "M",
+    "besta": "68-75"
+  },
+  "pathway": [],
+  "leadsTo": [],
+  "trainedVia": [
+    "edu-fh-biotechnologie",
+    "edu-eth-lebensmittelwissenschaften",
+    "edu-fh-lebensmittelwissenschaften"
+  ],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "mobility": {
+      "value": 9,
+      "unit": "rubric 0–9",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#11-international-mobility",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed): recognition 3/3, language independence 3/3, transferability 3/3."
+    },
+    "regionalUbiquity": {
+      "value": 2,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#12-regional-availability",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed)."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Occupation = CH-ISCO-19 occupation type 21450 (Chemieingenieure). Sector for demand/telework/hours assigned from the occupation group (estimate). Several job titles share this occupation type: Biotechnologe/-technologin; Lebensmittelingenieur/in."
+  }
+}

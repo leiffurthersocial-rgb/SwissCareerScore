@@ -1,0 +1,58 @@
+{
+  "id": "occ-informationswissenschaftler-in",
+  "kind": "occupation",
+  "route": "academic",
+  "name": {
+    "en": "Information / library scientist",
+    "de": "Informationswissenschaftler/in",
+    "fr": "Bibliothécaires, documentalistes et professions assimilées",
+    "it": "Bibliotecari, documentalisti ed assimilati"
+  },
+  "codes": {
+    "isco08": "2622",
+    "chIsco19": "26220"
+  },
+  "sector": "CH-ISCO-19 26: Juristen, Sozialwissenschaftler und Kulturberufe",
+  "refs": {
+    "qualLevel": "higherEducation",
+    "nogaSection": "O",
+    "besta": "84"
+  },
+  "pathway": [],
+  "leadsTo": [],
+  "trainedVia": [
+    "edu-fh-informationswissenschaft"
+  ],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "mobility": {
+      "value": 4,
+      "unit": "rubric 0–9",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#11-international-mobility",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed): recognition 2/3, language independence 1/3, transferability 1/3."
+    },
+    "regionalUbiquity": {
+      "value": 2,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#12-regional-availability",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed)."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Occupation = CH-ISCO-19 occupation type 26220 (Bibliothekswissenschaftler und verwandte Informationswissenschaftler). Sector for demand/telework/hours assigned from the occupation group (estimate)."
+  }
+}

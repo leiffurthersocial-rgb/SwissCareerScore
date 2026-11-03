@@ -1,0 +1,60 @@
+{
+  "id": "occ-oberflaechenbeschichter-in",
+  "kind": "occupation",
+  "route": "vocational",
+  "name": {
+    "en": "Electroplater",
+    "de": "Bediener von Anlagen zur Metallveredlung, Plattierung und Beschichtung von Metallen",
+    "fr": "Electroplaste",
+    "it": "Galvanostegista"
+  },
+  "codes": {
+    "isco08": "8122",
+    "chIsco19": "81220"
+  },
+  "sector": "CH-ISCO-19 81: Bediener stationärer Anlagen und Maschinen",
+  "refs": {
+    "qualLevel": "apprenticeship",
+    "nogaSection": "C",
+    "besta": "10-33"
+  },
+  "pathway": [],
+  "leadsTo": [],
+  "trainedVia": [
+    "edu-efz-oberflaechenbeschichter-in",
+    "edu-bp-oberflaechenbeschichter-in",
+    "edu-eba-oberflaechenpraktiker-in"
+  ],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "mobility": {
+      "value": 4,
+      "unit": "rubric 0–9",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#11-international-mobility",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed): recognition 1/3, language independence 2/3, transferability 1/3."
+    },
+    "regionalUbiquity": {
+      "value": 1,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#12-regional-availability",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed)."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Occupation = CH-ISCO-19 occupation type 81220 (Bediener von Anlagen zur Metallveredlung, Plattierung und Beschichtung von Metallen). Sector for demand/telework/hours assigned from the occupation group (estimate). Several job titles share this occupation type: Oberflächenbeschichter / Oberflächenbeschichterin; Oberflächenbeschichter/in; Oberflächenpraktiker/in."
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "id": "occ-meister-in-waermetechnikplanung",
+  "kind": "occupation",
+  "route": "vocational",
+  "name": {
+    "en": "Bauführer, Ausbau",
+    "de": "Bauführer, Ausbau",
+    "fr": "Maître en planification dans la thermique du bâtiment",
+    "it": "Maestro in pianificazione nella termica dell'edificio"
+  },
+  "codes": {
+    "isco08": "3112",
+    "chIsco19": "31122"
+  },
+  "sector": "CH-ISCO-19 31: Ingenieurtechnische und vergleichbare Fachkräfte",
+  "refs": {
+    "qualLevel": "higherVet",
+    "nogaSection": "C",
+    "besta": "10-33"
+  },
+  "pathway": [],
+  "leadsTo": [],
+  "trainedVia": [
+    "edu-hfp-meister-in-waermetechnikplanung",
+    "edu-bp-metallbau-produktions-und-montageleiter-in",
+    "edu-bp-projektleiter-in-sonnenschutz-und-storentechnik",
+    "edu-bp-projektleiter-in-gebaeudeautomation",
+    "edu-hf-gebaeudetechniker-in",
+    "edu-bp-projektleiter-in-sicherheitssysteme",
+    "edu-hfp-brandschutzexperte-expertin",
+    "edu-hfp-experte-expertin-fuer-gesundes-und-nachhaltiges-bauen",
+    "edu-hfp-metallbauprojektleiter-in",
+    "edu-bp-projektleiter-in-gebaeudetechnik",
+    "edu-hf-metall-und-fassadenbautechniker-in",
+    "edu-bp-brandschutzfachmann-frau",
+    "edu-bp-metallbau-projektleiter-in"
+  ],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "mobility": {
+      "value": 6,
+      "unit": "rubric 0–9",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#11-international-mobility",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed): recognition 1/3, language independence 3/3, transferability 2/3."
+    },
+    "regionalUbiquity": {
+      "value": 2,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#12-regional-availability",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed)."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Occupation = CH-ISCO-19 occupation type 31122 (Bauführer, Ausbau). Sector for demand/telework/hours assigned from the occupation group (estimate). Several job titles share this occupation type: Brandschutzexpertin / Brandschutzexperte; Brandschutzfachmann / Brandschutzfachfrau; Experte für gesundes und nachhaltiges Bauen / Expertin für gesundes und nachhaltiges Bauen; Gebäudetechniker/in; Meister Wärmetechnikplanung / Meisterin Wärmetechnikplanung; Metall- und Fassadenbautechniker/in; Metallbau Produktions- und Montageleiter/in; Metallbau Projektleiter / Metallbau Projektleiterin; Metall."
+  }
+}

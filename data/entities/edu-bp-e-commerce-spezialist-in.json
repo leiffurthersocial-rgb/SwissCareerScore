@@ -1,0 +1,63 @@
+{
+  "id": "edu-bp-e-commerce-spezialist-in",
+  "kind": "education",
+  "route": "vocational",
+  "eduType": "BP",
+  "name": {
+    "en": "E-Commerce Spezialist / E-Commerce Spezialistin BP",
+    "de": "E-Commerce Spezialist / E-Commerce Spezialistin BP",
+    "fr": "Spécialiste du e-commerce BF",
+    "it": "Specialista dell'e-commerce APF"
+  },
+  "codes": {
+    "isco08": "3322"
+  },
+  "sector": "CH-ISCO-19 33: Betriebswirtschaftliche und kaufmännische Fachkräfte und Verwaltu",
+  "refs": {
+    "qualLevel": "higherVet",
+    "besta": "5-96",
+    "nogaSection": "*"
+  },
+  "pathway": [
+    {
+      "label": "EFZ apprenticeship in a related occupation",
+      "years": 3,
+      "sourceUrl": "https://www.berufsberatung.ch/de/bildungssystem/d/lehre-efz",
+      "confidence": "measured",
+      "note": "Admission normally requires a relevant EFZ (3 or 4 years); the shorter variant is counted."
+    },
+    {
+      "label": "Preparation for the federal exam: E-Commerce Spezialist / E-Commerce Spezialistin BP",
+      "years": 1.25,
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/e-commerce-spezialist-in-bp",
+      "confidence": "estimated",
+      "note": "Duration of the preparatory course as stated; admission also requires professional experience (see exam regulations), so the true time to qualify is longer."
+    }
+  ],
+  "leadsTo": [
+    "occ-automobil-serviceberater-in"
+  ],
+  "trainedVia": [],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "entryAccess": {
+      "value": 0,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/e-commerce-spezialist-in-bp",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "Admission to the federal exam is based on professional experience; no capacity limit."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Language regions assumed (all three) — not individually verified."
+  }
+}

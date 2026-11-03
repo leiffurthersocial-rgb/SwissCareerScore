@@ -1,0 +1,56 @@
+{
+  "id": "edu-efz-fachmann-frau-kundendialog",
+  "kind": "education",
+  "route": "vocational",
+  "eduType": "EFZ",
+  "name": {
+    "en": "Customer Dialogue Specialist (EFZ)",
+    "de": "Fachmann Kundendialog / Fachfrau Kundendialog EFZ",
+    "fr": "Agent relation client CFC",
+    "it": "Operatore per la comunicazione con la clientela AFC"
+  },
+  "codes": {
+    "isco08": "4222"
+  },
+  "sector": "CH-ISCO-19 42: Bürokräfte mit Kundenkontakt",
+  "refs": {
+    "qualLevel": "apprenticeship",
+    "besta": "45-96",
+    "nogaSection": "*",
+    "vetName": "Fachmann/-frau Kundendialog EFZ"
+  },
+  "pathway": [
+    {
+      "label": "Fachmann Kundendialog / Fachfrau Kundendialog EFZ",
+      "years": 3.0,
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/fachmann-frau-kundendialog-efz",
+      "confidence": "measured"
+    }
+  ],
+  "leadsTo": [
+    "occ-fachmann-frau-kundendialog"
+  ],
+  "trainedVia": [],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "entryAccess": {
+      "value": 1,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/fachmann-frau-kundendialog-efz",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "Apprenticeship contract with a training company required (default for dual VET)."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Language regions assumed (all three) — not individually verified."
+  }
+}

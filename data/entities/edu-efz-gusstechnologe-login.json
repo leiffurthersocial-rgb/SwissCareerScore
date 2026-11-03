@@ -1,0 +1,55 @@
+{
+  "id": "edu-efz-gusstechnologe-login",
+  "kind": "education",
+  "route": "vocational",
+  "eduType": "EFZ",
+  "name": {
+    "en": "Casting Technician (EFZ)",
+    "de": "Gusstechnologin / Gusstechnologe EFZ",
+    "fr": "Technologue de fonderie CFC",
+    "it": "Tecnologo di fonderia AFC"
+  },
+  "codes": {
+    "isco08": "8121"
+  },
+  "sector": "CH-ISCO-19 81: Bediener stationärer Anlagen und Maschinen",
+  "refs": {
+    "qualLevel": "apprenticeship",
+    "besta": "10-33",
+    "nogaSection": "C"
+  },
+  "pathway": [
+    {
+      "label": "Gusstechnologin / Gusstechnologe EFZ",
+      "years": 4.0,
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/gusstechnologe-login-efz",
+      "confidence": "measured"
+    }
+  ],
+  "leadsTo": [
+    "occ-gusstechnologe-login"
+  ],
+  "trainedVia": [],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "entryAccess": {
+      "value": 1,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/gusstechnologe-login-efz",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "Apprenticeship contract with a training company required (default for dual VET)."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Language regions assumed (all three) — not individually verified. No BFS completion statistic for this occupation (missing)."
+  }
+}

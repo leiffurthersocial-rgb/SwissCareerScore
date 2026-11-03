@@ -37,6 +37,31 @@ the weights. This document explains every number: where it comes from, how it is
 - **Separate pools.** Occupations and education paths are normalized and ranked **separately**.
   Mixing them would make an apprenticeship compete with the job it leads to on the same scale.
 
+### How the catalogue was built
+
+- **Sources of entries.** Every berufsberatung.ch profile of type EFZ, EBA, HF, BP and HFP, plus its
+  ~110 fields of study (*Studienrichtungen*), was considered. Each page's official title (masculine
+  and feminine) and its duration statement are extracted and cached in `data/raw/berufsberatung/`.
+- **Classification.** Titles are matched to a CH-ISCO-19 occupation type (5 digits) via SECO's
+  AVAM occupation list (~1,270 titles; exact match, otherwise fuzzy ≥ 0.9). ~110 titles missing from
+  that list were assigned a code by the project (flagged *"assigned by the project — estimate"* in the
+  entry notes); ~20 niche titles that could not be classified were left out. Study fields were mapped
+  by hand to their most typical professional destination (flagged in notes).
+- **One occupation per code.** Several job titles can share one CH-ISCO-19 occupation type (e.g.
+  *Polymechaniker/in* and *Produktionsmechaniker/in*). Because all occupation-level statistics exist
+  only at that level (or coarser), they are represented by **one occupation entry per code**, and
+  every training path links to it.
+- **Group defaults (flagged).** Entries without an individual assessment use documented
+  ISCO sub-major-group defaults for the AI task profile (match level *ISCO 2-digit*), the mobility and
+  ubiquity rubrics (note *"ISCO group default"*), and the economic sector used for demand, telework
+  and hours (note *"assigned from the occupation group"*). Cross-sector jobs (clerks, managers) use
+  the whole-economy figures.
+- **Missing, not guessed.** No completion statistic exists for HF, BP, HFP and most PH programmes →
+  *training ease* is missing for those. BP/HFP durations are the preparation-course lengths stated on
+  berufsberatung.ch and are marked *estimated*: the professional experience required for exam
+  admission is not counted, so true time to qualify is longer. Profiles without any duration
+  statement have *time to qualify* missing.
+
 ## 3. Normalization: percentile ranks
 
 For each dimension, raw values of all entries in the same pool that have data are converted to
@@ -237,7 +262,7 @@ judgment calls documented here; they express *relative* trust, not a statistical
 For every dimension with positive weight, the weight is multiplied by 0.8 and by 1.2 (others
 unchanged, then renormalized) and the pool is re-ranked. The largest absolute rank change across
 these 2·k scenarios is reported per entry and per dimension. An entry is **fragile** if this change is
-**≥ 3 places**. Fragile rankings mean "small changes in what you care about would reorder this part of
+**≥ 3 places or ≥ 2 % of its pool**, whichever is larger (6 places among ~300 occupations). Fragile rankings mean "small changes in what you care about would reorder this part of
 the list" — treat neighbouring entries as ties.
 
 ## 8. Correlated dimensions

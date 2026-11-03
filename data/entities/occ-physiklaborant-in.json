@@ -1,0 +1,59 @@
+{
+  "id": "occ-physiklaborant-in",
+  "kind": "occupation",
+  "route": "vocational",
+  "name": {
+    "en": "Physics Laboratory Technician",
+    "de": "Physikotechniker",
+    "fr": "Laborantin en physique",
+    "it": "Laboratorista in fisica"
+  },
+  "codes": {
+    "isco08": "3111",
+    "chIsco19": "31112"
+  },
+  "sector": "CH-ISCO-19 31: Ingenieurtechnische und vergleichbare Fachkräfte",
+  "refs": {
+    "qualLevel": "apprenticeship",
+    "nogaSection": "C",
+    "besta": "10-33"
+  },
+  "pathway": [],
+  "leadsTo": [],
+  "trainedVia": [
+    "edu-efz-physiklaborant-in",
+    "edu-hfp-naturwissenschaftliche-r-labortechniker-in"
+  ],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "mobility": {
+      "value": 6,
+      "unit": "rubric 0–9",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#11-international-mobility",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed): recognition 1/3, language independence 3/3, transferability 2/3."
+    },
+    "regionalUbiquity": {
+      "value": 2,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#12-regional-availability",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed)."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Occupation = CH-ISCO-19 occupation type 31112 (Physikotechniker). Sector for demand/telework/hours assigned from the occupation group (estimate). Several job titles share this occupation type: Naturwissenschaftliche Labortechnikerin / Naturwissenschaftlicher Labortechniker; Physiklaborant / Physiklaborantin."
+  }
+}

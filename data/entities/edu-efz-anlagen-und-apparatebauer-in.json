@@ -1,0 +1,56 @@
+{
+  "id": "edu-efz-anlagen-und-apparatebauer-in",
+  "kind": "education",
+  "route": "vocational",
+  "eduType": "EFZ",
+  "name": {
+    "en": "Machinery and Equipment Maker (EFZ)",
+    "de": "Anlagen- und Apparatebauer/in EFZ",
+    "fr": "Constructeur d'appareils industriels CFC",
+    "it": "Costruttore d'impianti e apparecchi AFC"
+  },
+  "codes": {
+    "isco08": "7210"
+  },
+  "sector": "CH-ISCO-19 72: Metallarbeiter, Mechaniker, Polymechaniker, Produktionsmechaniker",
+  "refs": {
+    "qualLevel": "apprenticeship",
+    "besta": "28",
+    "nogaSection": "C",
+    "vetName": "Anlagen- und Apparatebauer/in EFZ"
+  },
+  "pathway": [
+    {
+      "label": "Anlagen- und Apparatebauer/in EFZ",
+      "years": 4.0,
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/anlagen-und-apparatebauer-in-efz",
+      "confidence": "measured"
+    }
+  ],
+  "leadsTo": [
+    "occ-anlagen-und-apparatebauer-in"
+  ],
+  "trainedVia": [],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "entryAccess": {
+      "value": 1,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/anlagen-und-apparatebauer-in-efz",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "Apprenticeship contract with a training company required (default for dual VET)."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Language regions assumed (all three) — not individually verified."
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "id": "occ-formenpraktiker-in",
+  "kind": "occupation",
+  "route": "vocational",
+  "name": {
+    "en": "Mouldmaking Assistant",
+    "de": "Former und Kernmacher (für Metallguss)",
+    "fr": "Aide-mouleur",
+    "it": "Aiuto costruttore di modelli e stampi"
+  },
+  "codes": {
+    "isco08": "7211",
+    "chIsco19": "72110"
+  },
+  "sector": "CH-ISCO-19 72: Metallarbeiter, Mechaniker, Polymechaniker, Produktionsmechaniker",
+  "refs": {
+    "qualLevel": "apprenticeship",
+    "nogaSection": "C",
+    "besta": "28"
+  },
+  "pathway": [],
+  "leadsTo": [],
+  "trainedVia": [
+    "edu-eba-formenpraktiker-in",
+    "edu-efz-gussformer-in",
+    "edu-efz-formenbauer-in"
+  ],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "mobility": {
+      "value": 6,
+      "unit": "rubric 0–9",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#11-international-mobility",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed): recognition 1/3, language independence 3/3, transferability 2/3."
+    },
+    "regionalUbiquity": {
+      "value": 2,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#12-regional-availability",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed)."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Occupation = CH-ISCO-19 occupation type 72110 (Former und Kernmacher (für Metallguss)). Sector for demand/telework/hours assigned from the occupation group (estimate). Several job titles share this occupation type: Formenbauer/in; Formenpraktiker/in; Gussformer/in."
+  }
+}

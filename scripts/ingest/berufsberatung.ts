@@ -25,15 +25,17 @@ function pageText(html: string): string {
 export function yearsMentioned(input: string): number[] {
   let snippet = input;
   const out = new Set<number>();
-  const re = /(\d+(?:[.,]\d+)?)\s*(?:(?:–|-|bis|oder)\s*(\d+(?:[.,]\d+)?))?\s*(?:Jahre|Jahr|Vollzeit)/g;
+  const re = /(\d+(?:[.,]\d+)?)\s*(?:(?:–|-|bis|oder)\s*(\d+(?:[.,]\d+)?))?\s*(Jahre|Jahr|Vollzeit|Semester|Monate)/g;
   snippet = snippet.replace(/Mindestalter[^|]*/g, "");
   let m: RegExpExecArray | null;
   while ((m = re.exec(snippet))) {
-    const a = parseNum(m[1]);
-    const b = m[2] ? parseNum(m[2]) : null;
+    const div = m[3] === "Semester" ? 2 : m[3] === "Monate" ? 12 : 1;
+    const q = (x: number | null) => (x === null ? null : Math.round((x / div) * 4) / 4);
+    const a = q(parseNum(m[1]));
+    const b = m[2] ? q(parseNum(m[2])) : null;
     if (a !== null) out.add(a);
     if (b !== null) out.add(b);
-    if (a !== null && b !== null) for (let x = a; x <= b; x += 0.5) out.add(x);
+    if (a !== null && b !== null) for (let x = a; x <= b; x += 0.25) out.add(x);
   }
   return [...out].sort((x, y) => x - y);
 }
@@ -46,15 +48,25 @@ export async function ingestBerufsberatung() {
     for (const s of e.pathway ?? []) if (s.sourceUrl.includes("berufsberatung.ch")) urls.add(s.sourceUrl);
   }
   const pages: Record<string, { durationSnippets: string[]; yearsMentioned: number[]; apprenticeWages: { year: number; chf: string }[] }> = {};
-  for (const url of [...urls].sort()) {
-    const slug = url.replace(/^https:\/\/www\.berufsberatung\.ch\/de\//, "").replace(/\//g, "_");
-    const text = pageText((await fetchRaw(url, `berufsberatung/${slug}.html`)).toString());
+  const sorted = [...urls].sort();
+  const texts = new Map<string, string>();
+  // polite concurrency: 8 parallel requests
+  for (let i = 0; i < sorted.length; i += 8) {
+    await Promise.all(
+      sorted.slice(i, i + 8).map(async (url) => {
+        const slug = url.replace(/^https:\/\/www\.berufsberatung\.ch\/de\//, "").replace(/\//g, "_");
+        texts.set(url, pageText((await fetchRaw(url, `berufsberatung/${slug}.html`)).toString()));
+      }),
+    );
+  }
+  for (const url of sorted) {
+    const text = texts.get(url)!;
     const snippets: string[] = [];
     const re = /Dauer:?\s*\n([^\n]+(?:\n[^\n]+){0,3})/g;
     let m: RegExpExecArray | null;
     while ((m = re.exec(text))) {
       const lines = m[1].split("\n").map((s) => s.trim()).filter(Boolean);
-      const keep = lines.filter((l) => /\d/.test(l) && /Jahr|Vollzeit/.test(l));
+      const keep = lines.filter((l) => /\d/.test(l) && /Jahr|Vollzeit|Semester|Monat/.test(l));
       if (keep.length) snippets.push(keep.join(" | "));
     }
     const wages: { year: number; chf: string }[] = [];

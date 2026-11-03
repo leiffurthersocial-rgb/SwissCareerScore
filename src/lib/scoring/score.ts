@@ -247,10 +247,14 @@ export function scoreEntities(
         }
       }
     }
+    // Threshold scales with pool size: ≥ fragileShift places or ≥ 2 % of the ranked pool.
+    const poolSize = new Map<string, number>();
+    ranks.forEach((r, i) => r !== null && poolSize.set(pools[i], (poolSize.get(pools[i]) ?? 0) + 1));
     for (let i = 0; i < n; i++) {
       if (ranks[i] === null) continue;
       const maxShift = Math.max(0, ...Object.values(byDim[i]).map((v) => v ?? 0));
-      sens[i] = { maxShift, byDimension: byDim[i], fragile: maxShift >= opt.fragileShift };
+      const threshold = Math.max(opt.fragileShift, Math.ceil(0.02 * (poolSize.get(pools[i]) ?? 0)));
+      sens[i] = { maxShift, byDimension: byDim[i], fragile: maxShift >= threshold };
     }
   }
 

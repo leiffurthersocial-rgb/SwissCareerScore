@@ -21,7 +21,13 @@
   "pathway": [],
   "leadsTo": [],
   "trainedVia": [
-    "edu-efz-grafiker"
+    "edu-efz-grafiker",
+    "edu-bp-multimedia-content-creator",
+    "edu-efz-interactive-media-designer",
+    "edu-bp-motion-designer-in",
+    "edu-bp-user-experience-user-interface-designer",
+    "edu-hf-kommunikationsdesigner-in",
+    "edu-fh-visuelle-kommunikation"
   ],
   "languageRegions": [
     "de",

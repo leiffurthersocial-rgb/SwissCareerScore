@@ -1,0 +1,64 @@
+{
+  "id": "edu-fh-mechatronik",
+  "kind": "education",
+  "route": "mixed",
+  "eduType": "FH-BSc",
+  "name": {
+    "en": "Mechatronik – BSc/BA (FH)",
+    "de": "Bachelor Mechatronik (FH)",
+    "fr": null,
+    "it": null
+  },
+  "codes": {
+    "isco08": "2144"
+  },
+  "sector": "CH-ISCO-19 21: Naturwissenschaftler, Mathematiker und Ingenieure",
+  "refs": {
+    "qualLevel": "higherEducation",
+    "studyField": "FH:Technik und IT",
+    "gradIncome": "fh:Bachelor:Technik und IT",
+    "besta": "68-75",
+    "nogaSection": "M"
+  },
+  "pathway": [
+    {
+      "label": "EFZ with integrated Berufsmaturität (BM 1)",
+      "years": 3,
+      "sourceUrl": "https://www.berufsberatung.ch/de/bildungssystem/d/berufsmaturitaet",
+      "confidence": "measured",
+      "note": "Typical vocational route to FH (3–4 years); Gymnasiale Matura plus one year of work experience is an alternative."
+    },
+    {
+      "label": "Bachelor Mechatronik (FH)",
+      "years": 3.0,
+      "sourceUrl": "https://www.berufsberatung.ch/de/studienrichtungen/mechatronik",
+      "confidence": "measured"
+    }
+  ],
+  "leadsTo": [
+    "occ-systemtechnik-ingenieur-in"
+  ],
+  "trainedVia": [],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "entryAccess": {
+      "value": 0,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://www.berufsberatung.ch/de/studienrichtungen/mechatronik",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "Admission with a relevant Berufsmaturität; no capacity limit."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "English name of the field kept in German where no official translation was available. Target occupation chosen by the project as the most typical professional destination (estimate)."
+  }
+}

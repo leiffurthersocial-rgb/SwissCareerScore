@@ -1,0 +1,58 @@
+{
+  "id": "occ-industriekeramiker-in",
+  "kind": "occupation",
+  "route": "vocational",
+  "name": {
+    "en": "Bediener von Anlagen zur Glas- und Keramikherstellung",
+    "de": "Industriekeramiker / Industriekeramikerin",
+    "fr": "Céramiste industriel",
+    "it": "Ceramista industriale"
+  },
+  "codes": {
+    "isco08": "8181",
+    "chIsco19": "81810"
+  },
+  "sector": "CH-ISCO-19 81: Bediener stationärer Anlagen und Maschinen",
+  "refs": {
+    "qualLevel": "apprenticeship",
+    "nogaSection": "C",
+    "besta": "10-33"
+  },
+  "pathway": [],
+  "leadsTo": [],
+  "trainedVia": [
+    "edu-efz-industriekeramiker-in"
+  ],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "mobility": {
+      "value": 4,
+      "unit": "rubric 0–9",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#11-international-mobility",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed): recognition 1/3, language independence 2/3, transferability 1/3."
+    },
+    "regionalUbiquity": {
+      "value": 1,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#12-regional-availability",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed)."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Occupation = CH-ISCO-19 occupation type 81810 (Bediener von Anlagen zur Glas- und Keramikherstellung). Sector for demand/telework/hours assigned from the occupation group (estimate)."
+  }
+}

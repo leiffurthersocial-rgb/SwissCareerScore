@@ -1,0 +1,48 @@
+{
+  "id": "edu-hf-marketing-und-verkaufsleiter-in-nds",
+  "kind": "education",
+  "route": "vocational",
+  "eduType": "HF",
+  "name": {
+    "en": "Marketing- und Verkaufsleiter/in HF",
+    "de": "Marketing- und Verkaufsleiter/in HF",
+    "fr": null,
+    "it": null
+  },
+  "codes": {
+    "isco08": "1221"
+  },
+  "sector": "CH-ISCO-19 12: Führungskräfte im kaufmännischen Bereich",
+  "refs": {
+    "qualLevel": "higherVet",
+    "besta": "5-96",
+    "nogaSection": "*"
+  },
+  "pathway": [],
+  "leadsTo": [
+    "occ-marketing-und-verkaufsleiter-in-nds"
+  ],
+  "trainedVia": [],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "entryAccess": {
+      "value": 1,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/marketing-und-verkaufsleiter-in-nds-hf",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "HF entrance procedure (relevant EFZ required)."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Language regions assumed (all three) — not individually verified.  Occupation code 12210 assigned by the project (title not in the SECO/AVAM list) — estimate. No duration statement found on berufsberatung.ch — time to qualify is missing."
+  }
+}

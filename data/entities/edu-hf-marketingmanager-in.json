@@ -1,0 +1,63 @@
+{
+  "id": "edu-hf-marketingmanager-in",
+  "kind": "education",
+  "route": "vocational",
+  "eduType": "HF",
+  "name": {
+    "en": "Marketing Manager (HF)",
+    "de": "Marketingmanager / Marketingmanagerin HF",
+    "fr": "Marketing manager ES",
+    "it": "Marketing manager SSS"
+  },
+  "codes": {
+    "isco08": "1221"
+  },
+  "sector": "CH-ISCO-19 12: Führungskräfte im kaufmännischen Bereich",
+  "refs": {
+    "qualLevel": "higherVet",
+    "besta": "5-96",
+    "nogaSection": "*"
+  },
+  "pathway": [
+    {
+      "label": "EFZ apprenticeship in a related occupation",
+      "years": 3,
+      "sourceUrl": "https://www.berufsberatung.ch/de/bildungssystem/d/lehre-efz",
+      "confidence": "measured",
+      "note": "Admission normally requires a relevant EFZ (3 or 4 years); the shorter variant is counted."
+    },
+    {
+      "label": "Marketingmanager / Marketingmanagerin HF",
+      "years": 3.0,
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/marketingmanager-in-hf",
+      "confidence": "measured",
+      "note": "Full-time minimum; part-time variants take longer."
+    }
+  ],
+  "leadsTo": [
+    "occ-marketingleiter-in"
+  ],
+  "trainedVia": [],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "entryAccess": {
+      "value": 1,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/marketingmanager-in-hf",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "HF entrance procedure (relevant EFZ required)."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Language regions assumed (all three) — not individually verified."
+  }
+}

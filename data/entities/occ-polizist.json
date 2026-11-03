@@ -21,7 +21,8 @@
   "pathway": [],
   "leadsTo": [],
   "trainedVia": [
-    "edu-bp-polizist"
+    "edu-bp-polizist",
+    "edu-hfp-polizist-in"
   ],
   "languageRegions": [
     "de",

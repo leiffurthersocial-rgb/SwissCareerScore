@@ -1,0 +1,62 @@
+{
+  "id": "edu-hfp-winzermeister-in",
+  "kind": "education",
+  "route": "vocational",
+  "eduType": "HFP",
+  "name": {
+    "en": "Viticulture Manager (HFP)",
+    "de": "Winzermeister/in HFP",
+    "fr": "Maître viticulteur DF",
+    "it": "Maestro viticoltore DPF"
+  },
+  "codes": {
+    "isco08": "6112"
+  },
+  "sector": "CH-ISCO-19 61: Fachkräfte in der Landwirtschaft",
+  "refs": {
+    "qualLevel": "higherVet",
+    "nogaSection": "A"
+  },
+  "pathway": [
+    {
+      "label": "EFZ apprenticeship in a related occupation",
+      "years": 3,
+      "sourceUrl": "https://www.berufsberatung.ch/de/bildungssystem/d/lehre-efz",
+      "confidence": "measured",
+      "note": "Admission normally requires a relevant EFZ (3 or 4 years); the shorter variant is counted."
+    },
+    {
+      "label": "Preparation for the advanced federal exam: Winzermeister/in HFP",
+      "years": 1.0,
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/winzermeister-in-hfp",
+      "confidence": "estimated",
+      "note": "Duration of the preparatory course as stated; admission also requires professional experience (see exam regulations), so the true time to qualify is longer."
+    }
+  ],
+  "leadsTo": [
+    "occ-winzermeister-in"
+  ],
+  "trainedVia": [],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "entryAccess": {
+      "value": 0,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/winzermeister-in-hfp",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "Admission to the federal exam is based on professional experience; no capacity limit."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Language regions assumed (all three) — not individually verified."
+  }
+}

@@ -9,8 +9,8 @@
     "it": null
   },
   "codes": {
-    "isco08": "4321",
-    "chIsco19": "43210"
+    "isco08": "4320",
+    "chIsco19": "43200"
   },
   "sector": "Logistics",
   "refs": {
@@ -21,7 +21,11 @@
   "pathway": [],
   "leadsTo": [],
   "trainedVia": [
-    "edu-efz-logistiker"
+    "edu-efz-logistiker",
+    "edu-eba-logistiker-in",
+    "edu-hfp-logistiker-in",
+    "edu-bp-logistikfachmann-frau",
+    "edu-bp-logistiker-in"
   ],
   "languageRegions": [
     "de",
@@ -52,6 +56,7 @@
   },
   "meta": {
     "addedBy": "initial-dataset",
-    "reviewed": "2026-11-03"
+    "reviewed": "2026-11-03",
+    "notes": "CH-ISCO-19 code corrected to 43200 per SECO/AVAM occupation list."
   }
 }

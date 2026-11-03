@@ -1,0 +1,65 @@
+{
+  "id": "occ-schneesportlehrer-in",
+  "kind": "occupation",
+  "route": "vocational",
+  "name": {
+    "en": "Sportlehrer, Sporttrainer und Sportfunktionäre",
+    "de": "Sportlehrer, Sporttrainer und Sportfunktionäre",
+    "fr": "Entraîneurs sportifs et arbitres de sport",
+    "it": "Allenatori, istruttori e agenti"
+  },
+  "codes": {
+    "isco08": "3422",
+    "chIsco19": "34220"
+  },
+  "sector": "CH-ISCO-19 34: Juristische, soziale, kulturelle und verwandte Fachkräfte",
+  "refs": {
+    "qualLevel": "higherVet",
+    "nogaSection": "R",
+    "besta": "90-96"
+  },
+  "pathway": [],
+  "leadsTo": [],
+  "trainedVia": [
+    "edu-bp-schneesportlehrer-in",
+    "edu-hfp-sportartenschulleiter-in",
+    "edu-hfp-trainer-in-spitzensport",
+    "edu-hf-bewegungspaedagoge-paedagogin",
+    "edu-bp-sportartenlehrer-in",
+    "edu-bp-trainer-in-leistungssport",
+    "edu-uh-sport-sportwissenschaften",
+    "edu-fh-sport-sportwissenschaften"
+  ],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "mobility": {
+      "value": 3,
+      "unit": "rubric 0–9",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#11-international-mobility",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed): recognition 1/3, language independence 1/3, transferability 1/3."
+    },
+    "regionalUbiquity": {
+      "value": 2,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#12-regional-availability",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed)."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Occupation = CH-ISCO-19 occupation type 34220 (Sportlehrer, Sporttrainer und Sportfunktionäre). Sector for demand/telework/hours assigned from the occupation group (estimate). Several job titles share this occupation type: Bewegungspädagoge / Bewegungspädagogin; Schneesportlehrer / Schneesportlehrerin; Sportartenlehrer / Sportartenlehrerin; Sportartenschulleiter/in; Sportwissenschaftler/in, Trainer/in; Trainerin Leistungssport / Trainer Leistungssport; Trainerin Spitzensport / Trainer Spitzensport."
+  }
+}

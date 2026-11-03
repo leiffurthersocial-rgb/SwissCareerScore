@@ -1,0 +1,48 @@
+{
+  "id": "edu-hf-online-marketing-manager-nds",
+  "kind": "education",
+  "route": "vocational",
+  "eduType": "HF",
+  "name": {
+    "en": "Online Marketing Manager NDS HF",
+    "de": "Online Marketing Manager NDS HF",
+    "fr": null,
+    "it": null
+  },
+  "codes": {
+    "isco08": "2431"
+  },
+  "sector": "CH-ISCO-19 24: Betriebswirte und vergleichbare Spezialisten",
+  "refs": {
+    "qualLevel": "higherVet",
+    "besta": "68-75",
+    "nogaSection": "M"
+  },
+  "pathway": [],
+  "leadsTo": [
+    "occ-online-marketing-manager-nds"
+  ],
+  "trainedVia": [],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "entryAccess": {
+      "value": 1,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/online-marketing-manager-nds-hf",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "HF entrance procedure (relevant EFZ required)."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Language regions assumed (all three) — not individually verified.  Occupation code 24310 assigned by the project (title not in the SECO/AVAM list) — estimate. No duration statement found on berufsberatung.ch — time to qualify is missing."
+  }
+}

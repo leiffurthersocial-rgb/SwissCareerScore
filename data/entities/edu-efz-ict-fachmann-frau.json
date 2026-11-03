@@ -1,0 +1,56 @@
+{
+  "id": "edu-efz-ict-fachmann-frau",
+  "kind": "education",
+  "route": "vocational",
+  "eduType": "EFZ",
+  "name": {
+    "en": "ICT-Fachmann / ICT-Fachfrau EFZ",
+    "de": "ICT-Fachmann / ICT-Fachfrau EFZ",
+    "fr": null,
+    "it": null
+  },
+  "codes": {
+    "isco08": "3512"
+  },
+  "sector": "CH-ISCO-19 35: Informations- und Kommunikationstechniker",
+  "refs": {
+    "qualLevel": "apprenticeship",
+    "besta": "62-63",
+    "nogaSection": "J",
+    "vetName": "ICT-Fachmann/-frau EFZ"
+  },
+  "pathway": [
+    {
+      "label": "ICT-Fachmann / ICT-Fachfrau EFZ",
+      "years": 3.0,
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/ict-fachmann-frau-efz",
+      "confidence": "measured"
+    }
+  ],
+  "leadsTo": [
+    "occ-ict-fachmann-frau"
+  ],
+  "trainedVia": [],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "entryAccess": {
+      "value": 1,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/ict-fachmann-frau-efz",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "Apprenticeship contract with a training company required (default for dual VET)."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Language regions assumed (all three) — not individually verified.  Occupation code 35120 assigned by the project (title not in the SECO/AVAM list) — estimate."
+  }
+}

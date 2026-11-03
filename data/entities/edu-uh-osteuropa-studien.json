@@ -1,0 +1,68 @@
+{
+  "id": "edu-uh-osteuropa-studien",
+  "kind": "education",
+  "route": "academic",
+  "eduType": "UH-MSc",
+  "name": {
+    "en": "Osteuropa-Studien – MSc/MA (UH)",
+    "de": "Master Osteuropa-Studien (UH)",
+    "fr": null,
+    "it": null
+  },
+  "codes": {
+    "isco08": "2633"
+  },
+  "sector": "CH-ISCO-19 26: Juristen, Sozialwissenschaftler und Kulturberufe",
+  "refs": {
+    "qualLevel": "higherEducation",
+    "studyField": "UH:Geistes- und Sozialwissenschaften",
+    "gradIncome": "uh:Master:Geistes- und Sozialwissenschaften",
+    "besta": "68-75",
+    "nogaSection": "M"
+  },
+  "pathway": [
+    {
+      "label": "Gymnasiale Maturität",
+      "years": 4,
+      "sourceUrl": "https://www.berufsberatung.ch/de/bildungssystem/d/gymnasiale-maturitaetsschulen",
+      "confidence": "estimated",
+      "note": "berufsberatung.ch states 3–6 years depending on canton (partly overlapping compulsory school); 4 years after compulsory school assumed."
+    },
+    {
+      "label": "Bachelor Osteuropa-Studien (UH)",
+      "years": 3.0,
+      "sourceUrl": "https://www.berufsberatung.ch/de/studienrichtungen/osteuropa-studien",
+      "confidence": "measured"
+    },
+    {
+      "label": "Master Osteuropa-Studien (UH)",
+      "years": 2.0,
+      "sourceUrl": "https://www.berufsberatung.ch/de/studienrichtungen/osteuropa-studien",
+      "confidence": "measured"
+    }
+  ],
+  "leadsTo": [
+    "occ-politologe-politologin"
+  ],
+  "trainedVia": [],
+  "languageRegions": [
+    "de"
+  ],
+  "raw": {
+    "entryAccess": {
+      "value": 0,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://www.berufsberatung.ch/de/studienrichtungen/osteuropa-studien",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "Open admission with Matura."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "English name of the field kept in German where no official translation was available. Target occupation chosen by the project as the most typical professional destination (estimate)."
+  }
+}

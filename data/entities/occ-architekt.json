@@ -21,7 +21,9 @@
   "pathway": [],
   "leadsTo": [],
   "trainedVia": [
-    "edu-fh-architektur"
+    "edu-fh-architektur",
+    "edu-eth-architektur",
+    "edu-fh-innenarchitektur"
   ],
   "languageRegions": [
     "de",

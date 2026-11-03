@@ -1,0 +1,60 @@
+{
+  "id": "occ-fachmann-frau-bewegungs-und-gesundheitsfoerderung",
+  "kind": "occupation",
+  "route": "vocational",
+  "name": {
+    "en": "Physical Activity and Health Promotion Attendant",
+    "de": "Trainer und Betreuer im Bereich Fitness und Erholung",
+    "fr": "Assistant en promotion de l'activité physique et de la santé",
+    "it": "Operatore per la promozione dell'attività fisica e della salute"
+  },
+  "codes": {
+    "isco08": "3423",
+    "chIsco19": "34230"
+  },
+  "sector": "CH-ISCO-19 34: Juristische, soziale, kulturelle und verwandte Fachkräfte",
+  "refs": {
+    "qualLevel": "apprenticeship",
+    "nogaSection": "Q",
+    "besta": "86-88"
+  },
+  "pathway": [],
+  "leadsTo": [],
+  "trainedVia": [
+    "edu-efz-fachmann-frau-bewegungs-und-gesundheitsfoerderung",
+    "edu-bp-bergfuehrer-in",
+    "edu-bp-spezialist-in-bewegungs-und-gesundheitsfoerderung"
+  ],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "mobility": {
+      "value": 3,
+      "unit": "rubric 0–9",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#11-international-mobility",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed): recognition 1/3, language independence 1/3, transferability 1/3."
+    },
+    "regionalUbiquity": {
+      "value": 2,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#12-regional-availability",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed)."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Occupation = CH-ISCO-19 occupation type 34230 (Trainer und Betreuer im Bereich Fitness und Erholung). Sector for demand/telework/hours assigned from the occupation group (estimate). Several job titles share this occupation type: Bergführer / Bergführerin; Fachmann Bewegungs- und Gesundheitsförderung / Fachfrau Bewegungs- und Gesundheitsförderung; Spezialist Bewegungs- und Gesundheitsförderung / Spezialistin Bewegungs- und Gesundheitsförderung."
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "id": "occ-fachmann-frau-oeffentlicher-verkehr",
+  "kind": "occupation",
+  "route": "vocational",
+  "name": {
+    "en": "Public Transport Agent",
+    "de": "Bürokräfte in der Transportwirtschaft und verwandte Berufe",
+    "fr": "Agent de transports publics",
+    "it": "Agente dei trasporti pubblici"
+  },
+  "codes": {
+    "isco08": "4323",
+    "chIsco19": "43230"
+  },
+  "sector": "CH-ISCO-19 43: Bürokräfte im Finanz- und Rechnungswesen, in der Statistik und in",
+  "refs": {
+    "qualLevel": "apprenticeship",
+    "nogaSection": "H",
+    "besta": "49-53"
+  },
+  "pathway": [],
+  "leadsTo": [],
+  "trainedVia": [
+    "edu-efz-fachmann-frau-oeffentlicher-verkehr",
+    "edu-bp-disponent-in-transport-und-logistik"
+  ],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "mobility": {
+      "value": 2,
+      "unit": "rubric 0–9",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#11-international-mobility",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed): recognition 1/3, language independence 0/3, transferability 1/3."
+    },
+    "regionalUbiquity": {
+      "value": 3,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#12-regional-availability",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed)."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Occupation = CH-ISCO-19 occupation type 43230 (Bürokräfte in der Transportwirtschaft und verwandte Berufe). Sector for demand/telework/hours assigned from the occupation group (estimate). Several job titles share this occupation type: Disponentin Transport und Logistik / Disponent Transport und Logistik; Fachmann öffentlicher Verkehr / Fachfrau öffentlicher Verkehr."
+  }
+}

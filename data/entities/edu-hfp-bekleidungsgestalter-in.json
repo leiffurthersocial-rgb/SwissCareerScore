@@ -1,0 +1,63 @@
+{
+  "id": "edu-hfp-bekleidungsgestalter-in",
+  "kind": "education",
+  "route": "vocational",
+  "eduType": "HFP",
+  "name": {
+    "en": "Clothing Designer (HFP)",
+    "de": "Bekleidungsgestalter/in HFP",
+    "fr": "Créateur de vêtements DF",
+    "it": "Creatore d'abbigliamento DPF"
+  },
+  "codes": {
+    "isco08": "7531"
+  },
+  "sector": "CH-ISCO-19 75: Berufe in der Nahrungsmittelverarbeitung, Holzverarbeitung und Be",
+  "refs": {
+    "qualLevel": "higherVet",
+    "besta": "10-33",
+    "nogaSection": "C"
+  },
+  "pathway": [
+    {
+      "label": "EFZ apprenticeship in a related occupation",
+      "years": 3,
+      "sourceUrl": "https://www.berufsberatung.ch/de/bildungssystem/d/lehre-efz",
+      "confidence": "measured",
+      "note": "Admission normally requires a relevant EFZ (3 or 4 years); the shorter variant is counted."
+    },
+    {
+      "label": "Preparation for the advanced federal exam: Bekleidungsgestalter/in HFP",
+      "years": 1.5,
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/bekleidungsgestalter-in-hfp",
+      "confidence": "estimated",
+      "note": "Duration of the preparatory course as stated; admission also requires professional experience (see exam regulations), so the true time to qualify is longer."
+    }
+  ],
+  "leadsTo": [
+    "occ-bekleidungsgestalter-in"
+  ],
+  "trainedVia": [],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "entryAccess": {
+      "value": 0,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/bekleidungsgestalter-in-hfp",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "Admission to the federal exam is based on professional experience; no capacity limit."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Language regions assumed (all three) — not individually verified."
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "id": "edu-eba-praktiker-in-hotellerie-hauswirtschaft",
+  "kind": "education",
+  "route": "vocational",
+  "eduType": "EBA",
+  "name": {
+    "en": "Praktiker Hotellerie-Hauswirtschaft / Praktikerin Hotellerie-Hauswirtschaft EBA",
+    "de": "Praktiker Hotellerie-Hauswirtschaft / Praktikerin Hotellerie-Hauswirtschaft EBA",
+    "fr": null,
+    "it": null
+  },
+  "codes": {
+    "isco08": "5151"
+  },
+  "sector": "CH-ISCO-19 51: Berufe im Bereich personenbezogener Dienstleistungen",
+  "refs": {
+    "qualLevel": "apprenticeship",
+    "besta": "55-56",
+    "nogaSection": "I"
+  },
+  "pathway": [
+    {
+      "label": "Praktiker Hotellerie-Hauswirtschaft / Praktikerin Hotellerie-Hauswirtschaft EBA",
+      "years": 2.0,
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/praktiker-in-hotellerie-hauswirtschaft-eba",
+      "confidence": "measured"
+    }
+  ],
+  "leadsTo": [
+    "occ-fachmann-frau-hotellerie-hauswirtschaft"
+  ],
+  "trainedVia": [],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "entryAccess": {
+      "value": 1,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/praktiker-in-hotellerie-hauswirtschaft-eba",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "Apprenticeship contract with a training company required (default for dual VET)."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Language regions assumed (all three) — not individually verified. No BFS completion statistic for this occupation (missing). Occupation code 51512 assigned by the project (title not in the SECO/AVAM list) — estimate."
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "id": "edu-bp-spezialist-in-fuer-arbeitssicherheit-und-gesundheitsschutz",
+  "kind": "education",
+  "route": "vocational",
+  "eduType": "BP",
+  "name": {
+    "en": "Specialist in Occupational Safety and Health (BP)",
+    "de": "Spezialistin für Arbeitssicherheit und Gesundheitsschutz / Spezialist für Arbeitssicherheit und Gesundheitsschutz BP",
+    "fr": "Spécialiste de la sécurité au travail et de la protection de la santé BF",
+    "it": "Specialista della sicurezza sul lavoro e della protezione della salute APF"
+  },
+  "codes": {
+    "isco08": "3257"
+  },
+  "sector": "CH-ISCO-19 32: Assistenzberufe im Gesundheitswesen",
+  "refs": {
+    "qualLevel": "higherVet",
+    "besta": "84",
+    "nogaSection": "O"
+  },
+  "pathway": [
+    {
+      "label": "EFZ apprenticeship in a related occupation",
+      "years": 3,
+      "sourceUrl": "https://www.berufsberatung.ch/de/bildungssystem/d/lehre-efz",
+      "confidence": "measured",
+      "note": "Admission normally requires a relevant EFZ (3 or 4 years); the shorter variant is counted."
+    },
+    {
+      "label": "Preparation for the federal exam: Spezialistin für Arbeitssicherheit und Gesundheitsschutz / Spezialist für Arbeitssicherheit und Gesundheitsschutz BP",
+      "years": 1.0,
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/spezialist-in-fuer-arbeitssicherheit-und-gesundheitsschutz-bp",
+      "confidence": "estimated",
+      "note": "Duration of the preparatory course as stated; admission also requires professional experience (see exam regulations), so the true time to qualify is longer."
+    }
+  ],
+  "leadsTo": [
+    "occ-fachexperte-expertin-fuer-infektionspraevention-im-gesundhei"
+  ],
+  "trainedVia": [],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "entryAccess": {
+      "value": 0,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/spezialist-in-fuer-arbeitssicherheit-und-gesundheitsschutz-bp",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "Admission to the federal exam is based on professional experience; no capacity limit."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Language regions assumed (all three) — not individually verified."
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "id": "edu-bp-bereichsleiter-in-raumausstattung",
+  "kind": "education",
+  "route": "vocational",
+  "eduType": "BP",
+  "name": {
+    "en": "Bereichsleiter Raumausstattung / Bereichsleiterin Raumausstattung BP",
+    "de": "Bereichsleiter Raumausstattung / Bereichsleiterin Raumausstattung BP",
+    "fr": null,
+    "it": null
+  },
+  "codes": {
+    "isco08": "7534"
+  },
+  "sector": "CH-ISCO-19 75: Berufe in der Nahrungsmittelverarbeitung, Holzverarbeitung und Be",
+  "refs": {
+    "qualLevel": "higherVet",
+    "besta": "10-33",
+    "nogaSection": "C"
+  },
+  "pathway": [
+    {
+      "label": "EFZ apprenticeship in a related occupation",
+      "years": 3,
+      "sourceUrl": "https://www.berufsberatung.ch/de/bildungssystem/d/lehre-efz",
+      "confidence": "measured",
+      "note": "Admission normally requires a relevant EFZ (3 or 4 years); the shorter variant is counted."
+    },
+    {
+      "label": "Preparation for the federal exam: Bereichsleiter Raumausstattung / Bereichsleiterin Raumausstattung BP",
+      "years": 2.0,
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/bereichsleiter-in-raumausstattung-bp",
+      "confidence": "estimated",
+      "note": "Duration of the preparatory course as stated; admission also requires professional experience (see exam regulations), so the true time to qualify is longer."
+    }
+  ],
+  "leadsTo": [
+    "occ-industriepolsterer-polsterin"
+  ],
+  "trainedVia": [],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "entryAccess": {
+      "value": 0,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/bereichsleiter-in-raumausstattung-bp",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "Admission to the federal exam is based on professional experience; no capacity limit."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Language regions assumed (all three) — not individually verified.  Occupation code 75340 assigned by the project (title not in the SECO/AVAM list) — estimate."
+  }
+}

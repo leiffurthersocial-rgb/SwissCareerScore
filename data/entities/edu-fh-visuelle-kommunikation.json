@@ -1,0 +1,64 @@
+{
+  "id": "edu-fh-visuelle-kommunikation",
+  "kind": "education",
+  "route": "mixed",
+  "eduType": "FH-BSc",
+  "name": {
+    "en": "Visuelle Kommunikation – BSc/BA (FH)",
+    "de": "Bachelor Visuelle Kommunikation (FH)",
+    "fr": null,
+    "it": null
+  },
+  "codes": {
+    "isco08": "2166"
+  },
+  "sector": "Design / communication",
+  "refs": {
+    "qualLevel": "higherEducation",
+    "studyField": "FH:Design",
+    "gradIncome": "fh:Bachelor:Design",
+    "besta": "68-75",
+    "nogaSection": "M"
+  },
+  "pathway": [
+    {
+      "label": "EFZ with integrated Berufsmaturität (BM 1)",
+      "years": 3,
+      "sourceUrl": "https://www.berufsberatung.ch/de/bildungssystem/d/berufsmaturitaet",
+      "confidence": "measured",
+      "note": "Typical vocational route to FH (3–4 years); Gymnasiale Matura plus one year of work experience is an alternative."
+    },
+    {
+      "label": "Bachelor Visuelle Kommunikation (FH)",
+      "years": 3.0,
+      "sourceUrl": "https://www.berufsberatung.ch/de/studienrichtungen/visuelle-kommunikation",
+      "confidence": "measured"
+    }
+  ],
+  "leadsTo": [
+    "occ-grafiker"
+  ],
+  "trainedVia": [],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "entryAccess": {
+      "value": 2,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://www.berufsberatung.ch/de/studienrichtungen/visuelle-kommunikation",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "Portfolio and aptitude assessment."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "English name of the field kept in German where no official translation was available. Target occupation chosen by the project as the most typical professional destination (estimate)."
+  }
+}

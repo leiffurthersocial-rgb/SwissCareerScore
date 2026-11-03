@@ -1,0 +1,60 @@
+{
+  "id": "occ-online-marketing-manager-nds",
+  "kind": "occupation",
+  "route": "vocational",
+  "name": {
+    "en": "Fachkräfte in Marketing und Werbung",
+    "de": "Fachkräfte in Marketing und Werbung",
+    "fr": "Spécialistes du marketing et de la publicité",
+    "it": "Specialisti della pubblicità e del marketing"
+  },
+  "codes": {
+    "isco08": "2431",
+    "chIsco19": "24310"
+  },
+  "sector": "CH-ISCO-19 24: Betriebswirte und vergleichbare Spezialisten",
+  "refs": {
+    "qualLevel": "higherVet",
+    "nogaSection": "M",
+    "besta": "68-75"
+  },
+  "pathway": [],
+  "leadsTo": [],
+  "trainedVia": [
+    "edu-hf-online-marketing-manager-nds",
+    "edu-bp-marketingfachmann-frau",
+    "edu-bp-kommunikationsfachmann-frau"
+  ],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "mobility": {
+      "value": 7,
+      "unit": "rubric 0–9",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#11-international-mobility",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed): recognition 3/3, language independence 2/3, transferability 2/3."
+    },
+    "regionalUbiquity": {
+      "value": 2,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#12-regional-availability",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed)."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Occupation = CH-ISCO-19 occupation type 24310 (Fachkräfte in Marketing und Werbung). Sector for demand/telework/hours assigned from the occupation group (estimate). Several job titles share this occupation type: Kommunikationsfachmann / Kommunikationsfachfrau; Marketingfachmann / Marketingfachfrau; Online Marketing Manager NDS."
+  }
+}

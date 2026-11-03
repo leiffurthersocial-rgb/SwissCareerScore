@@ -1,0 +1,55 @@
+{
+  "id": "edu-efz-buehnentaenzer-in",
+  "kind": "education",
+  "route": "vocational",
+  "eduType": "EFZ",
+  "name": {
+    "en": "Degree in Contemporary Dancing (EFZ)",
+    "de": "Bühnentänzer/in EFZ",
+    "fr": "Danseur interprète CFC",
+    "it": "Danzatore AFC"
+  },
+  "codes": {
+    "isco08": "2653"
+  },
+  "sector": "CH-ISCO-19 26: Juristen, Sozialwissenschaftler und Kulturberufe",
+  "refs": {
+    "qualLevel": "apprenticeship",
+    "besta": "90-96",
+    "nogaSection": "R"
+  },
+  "pathway": [
+    {
+      "label": "Bühnentänzer/in EFZ",
+      "years": 4.0,
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/buehnentaenzer-in-efz",
+      "confidence": "measured"
+    }
+  ],
+  "leadsTo": [
+    "occ-buehnentaenzer-in"
+  ],
+  "trainedVia": [],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "entryAccess": {
+      "value": 1,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/buehnentaenzer-in-efz",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "Apprenticeship contract with a training company required (default for dual VET)."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Language regions assumed (all three) — not individually verified. No BFS completion statistic for this occupation (missing)."
+  }
+}

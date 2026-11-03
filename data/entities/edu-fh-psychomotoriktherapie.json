@@ -1,0 +1,55 @@
+{
+  "id": "edu-fh-psychomotoriktherapie",
+  "kind": "education",
+  "route": "mixed",
+  "eduType": "FH-BSc",
+  "name": {
+    "en": "Psychomotoriktherapie – BSc/BA (FH)",
+    "de": "Bachelor Psychomotoriktherapie (FH)",
+    "fr": null,
+    "it": null
+  },
+  "codes": {
+    "isco08": "2269"
+  },
+  "sector": "CH-ISCO-19 22: Spezialisten in Gesundheitsberufen",
+  "refs": {
+    "qualLevel": "higherEducation",
+    "besta": "86-88",
+    "nogaSection": "Q"
+  },
+  "pathway": [
+    {
+      "label": "EFZ with integrated Berufsmaturität (BM 1)",
+      "years": 3,
+      "sourceUrl": "https://www.berufsberatung.ch/de/bildungssystem/d/berufsmaturitaet",
+      "confidence": "measured",
+      "note": "Typical vocational route to FH (3–4 years); Gymnasiale Matura plus one year of work experience is an alternative."
+    }
+  ],
+  "leadsTo": [
+    "occ-experte-expertin-bewegungs-und-gesundheitsfoerderung"
+  ],
+  "trainedVia": [],
+  "languageRegions": [
+    "de",
+    "fr"
+  ],
+  "raw": {
+    "entryAccess": {
+      "value": 2,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://www.berufsberatung.ch/de/studienrichtungen/psychomotoriktherapie",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "Aptitude assessment, limited places."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "English name of the field kept in German where no official translation was available. Target occupation chosen by the project as the most typical professional destination (estimate)."
+  }
+}

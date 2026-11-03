@@ -1,0 +1,63 @@
+{
+  "id": "occ-spezialist-in-fuer-tanksicherheit",
+  "kind": "occupation",
+  "route": "vocational",
+  "name": {
+    "en": "Bauführer, Bauhauptgewerbe",
+    "de": "Bauführer, Bauhauptgewerbe",
+    "fr": "Spécialiste pour la sécurité des citernes",
+    "it": "Specialista per la sicurezza dei serbatoi"
+  },
+  "codes": {
+    "isco08": "3112",
+    "chIsco19": "31121"
+  },
+  "sector": "CH-ISCO-19 31: Ingenieurtechnische und vergleichbare Fachkräfte",
+  "refs": {
+    "qualLevel": "higherVet",
+    "nogaSection": "C",
+    "besta": "10-33"
+  },
+  "pathway": [],
+  "leadsTo": [],
+  "trainedVia": [
+    "edu-bp-spezialist-in-fuer-tanksicherheit",
+    "edu-hfp-bauleiter-in",
+    "edu-hfp-baufuehrer-in-im-bauhauptgewerbe",
+    "edu-bp-geomatiktechniker-in",
+    "edu-hf-holzbau-baufuehrer-in",
+    "edu-bp-baustoffpruefer-in"
+  ],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "mobility": {
+      "value": 6,
+      "unit": "rubric 0–9",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#11-international-mobility",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed): recognition 1/3, language independence 3/3, transferability 2/3."
+    },
+    "regionalUbiquity": {
+      "value": 2,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#12-regional-availability",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed)."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Occupation = CH-ISCO-19 occupation type 31121 (Bauführer, Bauhauptgewerbe). Sector for demand/telework/hours assigned from the occupation group (estimate). Several job titles share this occupation type: Bauführerin im Bauhauptgewerbe / Bauführer im Bauhauptgewerbe; Bauleiter/in; Baustoffprüfer/in; Geomatiktechniker/in; Holzbau-Bauführer/in; Spezialistin für Tanksicherheit / Spezialist für Tanksicherheit."
+  }
+}

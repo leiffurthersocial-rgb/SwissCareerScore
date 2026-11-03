@@ -1,0 +1,63 @@
+{
+  "id": "edu-hfp-baufuehrer-in-im-bauhauptgewerbe",
+  "kind": "education",
+  "route": "vocational",
+  "eduType": "HFP",
+  "name": {
+    "en": "Bauführerin im Bauhauptgewerbe / Bauführer im Bauhauptgewerbe HFP",
+    "de": "Bauführerin im Bauhauptgewerbe / Bauführer im Bauhauptgewerbe HFP",
+    "fr": null,
+    "it": null
+  },
+  "codes": {
+    "isco08": "3112"
+  },
+  "sector": "CH-ISCO-19 31: Ingenieurtechnische und vergleichbare Fachkräfte",
+  "refs": {
+    "qualLevel": "higherVet",
+    "besta": "10-33",
+    "nogaSection": "C"
+  },
+  "pathway": [
+    {
+      "label": "EFZ apprenticeship in a related occupation",
+      "years": 3,
+      "sourceUrl": "https://www.berufsberatung.ch/de/bildungssystem/d/lehre-efz",
+      "confidence": "measured",
+      "note": "Admission normally requires a relevant EFZ (3 or 4 years); the shorter variant is counted."
+    },
+    {
+      "label": "Preparation for the advanced federal exam: Bauführerin im Bauhauptgewerbe / Bauführer im Bauhauptgewerbe HFP",
+      "years": 2.5,
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/baufuehrer-in-im-bauhauptgewerbe-hfp",
+      "confidence": "estimated",
+      "note": "Duration of the preparatory course as stated; admission also requires professional experience (see exam regulations), so the true time to qualify is longer."
+    }
+  ],
+  "leadsTo": [
+    "occ-spezialist-in-fuer-tanksicherheit"
+  ],
+  "trainedVia": [],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "entryAccess": {
+      "value": 0,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/baufuehrer-in-im-bauhauptgewerbe-hfp",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "Admission to the federal exam is based on professional experience; no capacity limit."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Language regions assumed (all three) — not individually verified.  Occupation code 31121 assigned by the project (title not in the SECO/AVAM list) — estimate."
+  }
+}

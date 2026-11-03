@@ -1,0 +1,56 @@
+{
+  "id": "edu-eba-printmedienpraktiker-in",
+  "kind": "education",
+  "route": "vocational",
+  "eduType": "EBA",
+  "name": {
+    "en": "Printmedienpraktiker/in EBA",
+    "de": "Printmedienpraktiker/in EBA",
+    "fr": "Assistant en médias imprimés AFP",
+    "it": "Assistente alla stampa e all'allestimento CFP"
+  },
+  "codes": {
+    "isco08": "7322"
+  },
+  "sector": "CH-ISCO-19 73: Präzisionshandwerker, Drucker und kunsthandwerkliche Berufe",
+  "refs": {
+    "qualLevel": "apprenticeship",
+    "besta": "10-33",
+    "nogaSection": "C",
+    "vetName": "Printmedienpraktiker/in EBA"
+  },
+  "pathway": [
+    {
+      "label": "Printmedienpraktiker/in EBA",
+      "years": 2.0,
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/printmedienpraktiker-in-eba",
+      "confidence": "measured"
+    }
+  ],
+  "leadsTo": [
+    "occ-printmedienpraktiker-in"
+  ],
+  "trainedVia": [],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "entryAccess": {
+      "value": 1,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/printmedienpraktiker-in-eba",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "Apprenticeship contract with a training company required (default for dual VET)."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Language regions assumed (all three) — not individually verified."
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "id": "edu-bp-diagnosetechniker-in-baumaschinen",
+  "kind": "education",
+  "route": "vocational",
+  "eduType": "BP",
+  "name": {
+    "en": "Construction Machinery Diagnostic Technician (BP)",
+    "de": "Diagnosetechnikerin Baumaschinen / Diagnosetechniker Baumaschinen BP",
+    "fr": "Techno-diagnosticien en machines de chantier BF",
+    "it": "Tecnico di diagnostica di macchine edili APF"
+  },
+  "codes": {
+    "isco08": "7233"
+  },
+  "sector": "CH-ISCO-19 72: Metallarbeiter, Mechaniker, Polymechaniker, Produktionsmechaniker",
+  "refs": {
+    "qualLevel": "higherVet",
+    "besta": "28",
+    "nogaSection": "C"
+  },
+  "pathway": [
+    {
+      "label": "EFZ apprenticeship in a related occupation",
+      "years": 3,
+      "sourceUrl": "https://www.berufsberatung.ch/de/bildungssystem/d/lehre-efz",
+      "confidence": "measured",
+      "note": "Admission normally requires a relevant EFZ (3 or 4 years); the shorter variant is counted."
+    },
+    {
+      "label": "Preparation for the federal exam: Diagnosetechnikerin Baumaschinen / Diagnosetechniker Baumaschinen BP",
+      "years": 2.0,
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/diagnosetechniker-in-baumaschinen-bp",
+      "confidence": "estimated",
+      "note": "Duration of the preparatory course as stated; admission also requires professional experience (see exam regulations), so the true time to qualify is longer."
+    }
+  ],
+  "leadsTo": [
+    "occ-baumaschinenmechaniker-in"
+  ],
+  "trainedVia": [],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "entryAccess": {
+      "value": 0,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/diagnosetechniker-in-baumaschinen-bp",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "Admission to the federal exam is based on professional experience; no capacity limit."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Language regions assumed (all three) — not individually verified."
+  }
+}

@@ -1,5 +1,5 @@
 {
-  "description": "Task-content shares (% of working time) per ISCO-08 unit group, assigned by the project from ISCO-08 task descriptions (ILO 2012, Vol. 1). Expert judgment — see docs/methodology.md §4.",
+  "description": "Task-content shares (% of working time) per CH-ISCO-19 / ISCO-08 unit group (4-digit), with sub-major group (2-digit) defaults. Assigned by the project from ISCO-08 task descriptions (ILO 2012). Expert judgment — see docs/methodology.md §4.",
   "weights": {
     "NRA": 0.6,
     "NRI": 0.15,
@@ -8,7 +8,7 @@
     "NRM": 0.1
   },
   "occupations": {
-    "5321": {
+    "3221": {
       "label": "Health care assistants",
       "shares": {
         "NRA": 10,
@@ -52,7 +52,7 @@
       },
       "rationale": "Hands-on treatment and exercise guidance are physical/interpersonal."
     },
-    "5311": {
+    "5322": {
       "label": "Child care workers",
       "shares": {
         "NRA": 10,
@@ -118,7 +118,7 @@
       },
       "rationale": "Design and problem solving (analytic) with a sizeable share of codifiable coding work; highly exposed to generative AI."
     },
-    "7223": {
+    "7200": {
       "label": "Metal working machine tool setters and operators",
       "shares": {
         "NRA": 20,
@@ -305,7 +305,7 @@
       },
       "rationale": "Data analysis, modelling and writing (analytic)."
     },
-    "2611": {
+    "2610": {
       "label": "Lawyers",
       "shares": {
         "NRA": 55,
@@ -327,7 +327,7 @@
       },
       "rationale": "Customer advice (interpersonal), checkout and stocking (routine)."
     },
-    "4321": {
+    "4320": {
       "label": "Stock clerks",
       "shares": {
         "NRA": 5,
@@ -381,6 +381,437 @@
         "NRM": 35
       },
       "rationale": "Farm management decisions plus varied physical work; milking/feeding partly automated."
+    }
+  },
+  "groups": {
+    "11": {
+      "label": "Chief executives, senior officials",
+      "shares": {
+        "NRA": 50,
+        "NRI": 40,
+        "RC": 10,
+        "RM": 0,
+        "NRM": 0
+      },
+      "rationale": "ISCO-08 sub-major group default, used when an occupation has no individual task profile."
+    },
+    "12": {
+      "label": "Administrative and commercial managers",
+      "shares": {
+        "NRA": 45,
+        "NRI": 35,
+        "RC": 20,
+        "RM": 0,
+        "NRM": 0
+      },
+      "rationale": "ISCO-08 sub-major group default, used when an occupation has no individual task profile."
+    },
+    "13": {
+      "label": "Production and specialised services managers",
+      "shares": {
+        "NRA": 45,
+        "NRI": 35,
+        "RC": 15,
+        "RM": 0,
+        "NRM": 5
+      },
+      "rationale": "ISCO-08 sub-major group default, used when an occupation has no individual task profile."
+    },
+    "14": {
+      "label": "Hospitality, retail and other services managers",
+      "shares": {
+        "NRA": 30,
+        "NRI": 45,
+        "RC": 20,
+        "RM": 0,
+        "NRM": 5
+      },
+      "rationale": "ISCO-08 sub-major group default, used when an occupation has no individual task profile."
+    },
+    "21": {
+      "label": "Science and engineering professionals",
+      "shares": {
+        "NRA": 55,
+        "NRI": 15,
+        "RC": 20,
+        "RM": 5,
+        "NRM": 5
+      },
+      "rationale": "ISCO-08 sub-major group default, used when an occupation has no individual task profile."
+    },
+    "22": {
+      "label": "Health professionals",
+      "shares": {
+        "NRA": 35,
+        "NRI": 40,
+        "RC": 10,
+        "RM": 0,
+        "NRM": 15
+      },
+      "rationale": "ISCO-08 sub-major group default, used when an occupation has no individual task profile."
+    },
+    "23": {
+      "label": "Teaching professionals",
+      "shares": {
+        "NRA": 25,
+        "NRI": 60,
+        "RC": 10,
+        "RM": 0,
+        "NRM": 5
+      },
+      "rationale": "ISCO-08 sub-major group default, used when an occupation has no individual task profile."
+    },
+    "24": {
+      "label": "Business and administration professionals",
+      "shares": {
+        "NRA": 45,
+        "NRI": 25,
+        "RC": 30,
+        "RM": 0,
+        "NRM": 0
+      },
+      "rationale": "ISCO-08 sub-major group default, used when an occupation has no individual task profile."
+    },
+    "25": {
+      "label": "ICT professionals",
+      "shares": {
+        "NRA": 60,
+        "NRI": 10,
+        "RC": 30,
+        "RM": 0,
+        "NRM": 0
+      },
+      "rationale": "ISCO-08 sub-major group default, used when an occupation has no individual task profile."
+    },
+    "26": {
+      "label": "Legal, social and cultural professionals",
+      "shares": {
+        "NRA": 50,
+        "NRI": 30,
+        "RC": 20,
+        "RM": 0,
+        "NRM": 0
+      },
+      "rationale": "ISCO-08 sub-major group default, used when an occupation has no individual task profile."
+    },
+    "31": {
+      "label": "Science and engineering associate professionals",
+      "shares": {
+        "NRA": 35,
+        "NRI": 10,
+        "RC": 30,
+        "RM": 15,
+        "NRM": 10
+      },
+      "rationale": "ISCO-08 sub-major group default, used when an occupation has no individual task profile."
+    },
+    "32": {
+      "label": "Health associate professionals",
+      "shares": {
+        "NRA": 20,
+        "NRI": 35,
+        "RC": 20,
+        "RM": 10,
+        "NRM": 15
+      },
+      "rationale": "ISCO-08 sub-major group default, used when an occupation has no individual task profile."
+    },
+    "33": {
+      "label": "Business and administration associate professionals",
+      "shares": {
+        "NRA": 25,
+        "NRI": 25,
+        "RC": 50,
+        "RM": 0,
+        "NRM": 0
+      },
+      "rationale": "ISCO-08 sub-major group default, used when an occupation has no individual task profile."
+    },
+    "34": {
+      "label": "Legal, social, cultural associate professionals",
+      "shares": {
+        "NRA": 25,
+        "NRI": 40,
+        "RC": 20,
+        "RM": 0,
+        "NRM": 15
+      },
+      "rationale": "ISCO-08 sub-major group default, used when an occupation has no individual task profile."
+    },
+    "35": {
+      "label": "ICT technicians",
+      "shares": {
+        "NRA": 35,
+        "NRI": 15,
+        "RC": 35,
+        "RM": 5,
+        "NRM": 10
+      },
+      "rationale": "ISCO-08 sub-major group default, used when an occupation has no individual task profile."
+    },
+    "41": {
+      "label": "General and keyboard clerks",
+      "shares": {
+        "NRA": 10,
+        "NRI": 15,
+        "RC": 70,
+        "RM": 5,
+        "NRM": 0
+      },
+      "rationale": "ISCO-08 sub-major group default, used when an occupation has no individual task profile."
+    },
+    "42": {
+      "label": "Customer services clerks",
+      "shares": {
+        "NRA": 5,
+        "NRI": 40,
+        "RC": 50,
+        "RM": 5,
+        "NRM": 0
+      },
+      "rationale": "ISCO-08 sub-major group default, used when an occupation has no individual task profile."
+    },
+    "43": {
+      "label": "Numerical and material recording clerks",
+      "shares": {
+        "NRA": 10,
+        "NRI": 10,
+        "RC": 55,
+        "RM": 20,
+        "NRM": 5
+      },
+      "rationale": "ISCO-08 sub-major group default, used when an occupation has no individual task profile."
+    },
+    "44": {
+      "label": "Other clerical support workers",
+      "shares": {
+        "NRA": 10,
+        "NRI": 15,
+        "RC": 60,
+        "RM": 10,
+        "NRM": 5
+      },
+      "rationale": "ISCO-08 sub-major group default, used when an occupation has no individual task profile."
+    },
+    "51": {
+      "label": "Personal service workers",
+      "shares": {
+        "NRA": 10,
+        "NRI": 35,
+        "RC": 10,
+        "RM": 20,
+        "NRM": 25
+      },
+      "rationale": "ISCO-08 sub-major group default, used when an occupation has no individual task profile."
+    },
+    "52": {
+      "label": "Sales workers",
+      "shares": {
+        "NRA": 5,
+        "NRI": 45,
+        "RC": 25,
+        "RM": 20,
+        "NRM": 5
+      },
+      "rationale": "ISCO-08 sub-major group default, used when an occupation has no individual task profile."
+    },
+    "53": {
+      "label": "Personal care workers",
+      "shares": {
+        "NRA": 10,
+        "NRI": 45,
+        "RC": 10,
+        "RM": 5,
+        "NRM": 30
+      },
+      "rationale": "ISCO-08 sub-major group default, used when an occupation has no individual task profile."
+    },
+    "54": {
+      "label": "Protective services workers",
+      "shares": {
+        "NRA": 15,
+        "NRI": 45,
+        "RC": 15,
+        "RM": 0,
+        "NRM": 25
+      },
+      "rationale": "ISCO-08 sub-major group default, used when an occupation has no individual task profile."
+    },
+    "61": {
+      "label": "Market-oriented skilled agricultural workers",
+      "shares": {
+        "NRA": 20,
+        "NRI": 5,
+        "RC": 10,
+        "RM": 30,
+        "NRM": 35
+      },
+      "rationale": "ISCO-08 sub-major group default, used when an occupation has no individual task profile."
+    },
+    "62": {
+      "label": "Forestry, fishery and hunting workers",
+      "shares": {
+        "NRA": 15,
+        "NRI": 5,
+        "RC": 5,
+        "RM": 30,
+        "NRM": 45
+      },
+      "rationale": "ISCO-08 sub-major group default, used when an occupation has no individual task profile."
+    },
+    "71": {
+      "label": "Building and related trades workers",
+      "shares": {
+        "NRA": 15,
+        "NRI": 5,
+        "RC": 5,
+        "RM": 25,
+        "NRM": 50
+      },
+      "rationale": "ISCO-08 sub-major group default, used when an occupation has no individual task profile."
+    },
+    "72": {
+      "label": "Metal, machinery and related trades workers",
+      "shares": {
+        "NRA": 20,
+        "NRI": 5,
+        "RC": 10,
+        "RM": 40,
+        "NRM": 25
+      },
+      "rationale": "ISCO-08 sub-major group default, used when an occupation has no individual task profile."
+    },
+    "73": {
+      "label": "Handicraft and printing workers",
+      "shares": {
+        "NRA": 20,
+        "NRI": 5,
+        "RC": 10,
+        "RM": 40,
+        "NRM": 25
+      },
+      "rationale": "ISCO-08 sub-major group default, used when an occupation has no individual task profile."
+    },
+    "74": {
+      "label": "Electrical and electronics trades workers",
+      "shares": {
+        "NRA": 20,
+        "NRI": 10,
+        "RC": 10,
+        "RM": 20,
+        "NRM": 40
+      },
+      "rationale": "ISCO-08 sub-major group default, used when an occupation has no individual task profile."
+    },
+    "75": {
+      "label": "Food processing, wood working, garment and other craft workers",
+      "shares": {
+        "NRA": 10,
+        "NRI": 5,
+        "RC": 10,
+        "RM": 50,
+        "NRM": 25
+      },
+      "rationale": "ISCO-08 sub-major group default, used when an occupation has no individual task profile."
+    },
+    "81": {
+      "label": "Stationary plant and machine operators",
+      "shares": {
+        "NRA": 10,
+        "NRI": 5,
+        "RC": 15,
+        "RM": 55,
+        "NRM": 15
+      },
+      "rationale": "ISCO-08 sub-major group default, used when an occupation has no individual task profile."
+    },
+    "82": {
+      "label": "Assemblers",
+      "shares": {
+        "NRA": 5,
+        "NRI": 5,
+        "RC": 15,
+        "RM": 60,
+        "NRM": 15
+      },
+      "rationale": "ISCO-08 sub-major group default, used when an occupation has no individual task profile."
+    },
+    "83": {
+      "label": "Drivers and mobile plant operators",
+      "shares": {
+        "NRA": 5,
+        "NRI": 10,
+        "RC": 10,
+        "RM": 35,
+        "NRM": 40
+      },
+      "rationale": "ISCO-08 sub-major group default, used when an occupation has no individual task profile."
+    },
+    "91": {
+      "label": "Cleaners and helpers",
+      "shares": {
+        "NRA": 0,
+        "NRI": 10,
+        "RC": 5,
+        "RM": 40,
+        "NRM": 45
+      },
+      "rationale": "ISCO-08 sub-major group default, used when an occupation has no individual task profile."
+    },
+    "92": {
+      "label": "Agricultural, forestry and fishery labourers",
+      "shares": {
+        "NRA": 0,
+        "NRI": 5,
+        "RC": 5,
+        "RM": 45,
+        "NRM": 45
+      },
+      "rationale": "ISCO-08 sub-major group default, used when an occupation has no individual task profile."
+    },
+    "93": {
+      "label": "Labourers in mining, construction, manufacturing and transport",
+      "shares": {
+        "NRA": 0,
+        "NRI": 5,
+        "RC": 5,
+        "RM": 50,
+        "NRM": 40
+      },
+      "rationale": "ISCO-08 sub-major group default, used when an occupation has no individual task profile."
+    },
+    "94": {
+      "label": "Food preparation assistants",
+      "shares": {
+        "NRA": 0,
+        "NRI": 10,
+        "RC": 5,
+        "RM": 55,
+        "NRM": 30
+      },
+      "rationale": "ISCO-08 sub-major group default, used when an occupation has no individual task profile."
+    },
+    "95": {
+      "label": "Street and related sales and service workers",
+      "shares": {
+        "NRA": 0,
+        "NRI": 40,
+        "RC": 10,
+        "RM": 20,
+        "NRM": 30
+      },
+      "rationale": "ISCO-08 sub-major group default, used when an occupation has no individual task profile."
+    },
+    "96": {
+      "label": "Refuse workers and other elementary workers",
+      "shares": {
+        "NRA": 0,
+        "NRI": 10,
+        "RC": 10,
+        "RM": 40,
+        "NRM": 40
+      },
+      "rationale": "ISCO-08 sub-major group default, used when an occupation has no individual task profile."
     }
   }
 }

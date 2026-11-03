@@ -21,7 +21,7 @@ test.describe("weights, filters, URL state", () => {
   });
 
   test("filters hide entries without changing scores", async ({ page }) => {
-    await page.goto("/en");
+    await page.goto("/en?q=Cook");
     const row = page.locator("li", { hasText: "Cook" }).filter({ has: page.getByRole("link", { name: "Cook", exact: true }) });
     const before = await row.locator("span[aria-label^='Score']").textContent();
     await page.getByRole("combobox", { name: /^Show/ }).selectOption("occupation");
@@ -29,12 +29,15 @@ test.describe("weights, filters, URL state", () => {
     await expect(page.getByRole("heading", { name: "Education paths" })).toHaveCount(0);
     await expect(row.locator("span[aria-label^='Score']")).toHaveText(before!);
     await page.getByRole("combobox", { name: /^Max. years of training/ }).selectOption("3");
+    await page.getByRole("searchbox", { name: "Search" }).fill("Physician");
     await expect(page.getByRole("link", { name: "Physician" })).toHaveCount(0);
   });
 
   test("compare up to four entries", async ({ page }) => {
-    await page.goto("/en");
+    await page.goto("/en?k=occupation");
+    await page.getByRole("searchbox", { name: "Search" }).fill("Cook");
     await page.getByRole("button", { name: "Add Cook to comparison" }).click();
+    await page.getByRole("searchbox", { name: "Search" }).fill("Electrician");
     await page.getByRole("button", { name: "Add Electrician to comparison" }).click();
     await page.getByRole("link", { name: "Compare 2 selected" }).click();
     await expect(page).toHaveURL(/\/en\/compare\?.*c=/);

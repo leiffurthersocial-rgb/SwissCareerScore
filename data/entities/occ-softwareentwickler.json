@@ -10,7 +10,7 @@
   },
   "codes": {
     "isco08": "2512",
-    "chIsco19": "25120"
+    "chIsco19": "25121"
   },
   "sector": "ICT",
   "refs": {
@@ -23,7 +23,8 @@
   "trainedVia": [
     "edu-fh-informatik",
     "edu-efz-informatiker",
-    "edu-eth-informatik"
+    "edu-eth-informatik",
+    "edu-bp-ict-application-development-specialist"
   ],
   "languageRegions": [
     "de",
@@ -54,6 +55,7 @@
   },
   "meta": {
     "addedBy": "initial-dataset",
-    "reviewed": "2026-11-03"
+    "reviewed": "2026-11-03",
+    "notes": "CH-ISCO-19 code corrected to 25121 per SECO/AVAM occupation list."
   }
 }

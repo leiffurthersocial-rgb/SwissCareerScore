@@ -1,0 +1,68 @@
+{
+  "id": "edu-uh-chiropraktik",
+  "kind": "education",
+  "route": "academic",
+  "eduType": "UH-MMed",
+  "name": {
+    "en": "Chiropraktik – Master (UH)",
+    "de": "Master Chiropraktik (UH)",
+    "fr": null,
+    "it": null
+  },
+  "codes": {
+    "isco08": "2269"
+  },
+  "sector": "CH-ISCO-19 22: Spezialisten in Gesundheitsberufen",
+  "refs": {
+    "qualLevel": "higherEducation",
+    "studyField": "UH:Medizin und Pharmazie",
+    "gradIncome": "uh:Master:Medizin und Pharmazie",
+    "besta": "86-88",
+    "nogaSection": "Q"
+  },
+  "pathway": [
+    {
+      "label": "Gymnasiale Maturität",
+      "years": 4,
+      "sourceUrl": "https://www.berufsberatung.ch/de/bildungssystem/d/gymnasiale-maturitaetsschulen",
+      "confidence": "estimated",
+      "note": "berufsberatung.ch states 3–6 years depending on canton (partly overlapping compulsory school); 4 years after compulsory school assumed."
+    },
+    {
+      "label": "Bachelor Chiropraktik (UH)",
+      "years": 3.0,
+      "sourceUrl": "https://www.berufsberatung.ch/de/studienrichtungen/chiropraktik",
+      "confidence": "measured"
+    },
+    {
+      "label": "Master Chiropraktik (UH)",
+      "years": 3.0,
+      "sourceUrl": "https://www.berufsberatung.ch/de/studienrichtungen/chiropraktik",
+      "confidence": "measured"
+    }
+  ],
+  "leadsTo": [
+    "occ-experte-expertin-bewegungs-und-gesundheitsfoerderung"
+  ],
+  "trainedVia": [],
+  "languageRegions": [
+    "de"
+  ],
+  "raw": {
+    "entryAccess": {
+      "value": 3,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://www.berufsberatung.ch/de/studienrichtungen/chiropraktik",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "Numerus clausus together with human medicine (aptitude test)."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "English name of the field kept in German where no official translation was available. Target occupation chosen by the project as the most typical professional destination (estimate)."
+  }
+}

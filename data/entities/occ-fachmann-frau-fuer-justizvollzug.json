@@ -1,0 +1,58 @@
+{
+  "id": "occ-fachmann-frau-fuer-justizvollzug",
+  "kind": "occupation",
+  "route": "vocational",
+  "name": {
+    "en": "Prison Officer",
+    "de": "Fachfrau für Justizvollzug / Fachmann für Justizvollzug",
+    "fr": "Agent de détention",
+    "it": "Agente di custodia"
+  },
+  "codes": {
+    "isco08": "5413",
+    "chIsco19": "54130"
+  },
+  "sector": "CH-ISCO-19 54: Schutzkräfte und Sicherheitsbedienstete",
+  "refs": {
+    "qualLevel": "higherVet",
+    "nogaSection": "O",
+    "besta": "84"
+  },
+  "pathway": [],
+  "leadsTo": [],
+  "trainedVia": [
+    "edu-bp-fachmann-frau-fuer-justizvollzug"
+  ],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "mobility": {
+      "value": 0,
+      "unit": "rubric 0–9",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#11-international-mobility",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed): recognition 0/3, language independence 0/3, transferability 0/3."
+    },
+    "regionalUbiquity": {
+      "value": 3,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#12-regional-availability",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed)."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Occupation = CH-ISCO-19 occupation type 54130 (Gefängnisaufseher). Sector for demand/telework/hours assigned from the occupation group (estimate)."
+  }
+}

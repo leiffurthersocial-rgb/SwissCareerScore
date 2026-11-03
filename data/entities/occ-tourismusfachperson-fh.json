@@ -1,0 +1,58 @@
+{
+  "id": "occ-tourismusfachperson-fh",
+  "kind": "occupation",
+  "route": "academic",
+  "name": {
+    "en": "Tourism manager",
+    "de": "Tourismusfachperson (FH)",
+    "fr": "Autres directeurs et gérants",
+    "it": "Dirigenti in altri servizi"
+  },
+  "codes": {
+    "isco08": "1430",
+    "chIsco19": "14300"
+  },
+  "sector": "CH-ISCO-19 14: Führungskräfte in Hotels und Restaurants, im Handel und in der Er",
+  "refs": {
+    "qualLevel": "higherEducation",
+    "nogaSection": "*",
+    "besta": "45-96"
+  },
+  "pathway": [],
+  "leadsTo": [],
+  "trainedVia": [
+    "edu-fh-tourismus"
+  ],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "mobility": {
+      "value": 5,
+      "unit": "rubric 0–9",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#11-international-mobility",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed): recognition 2/3, language independence 1/3, transferability 2/3."
+    },
+    "regionalUbiquity": {
+      "value": 2,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#12-regional-availability",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed)."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Occupation = CH-ISCO-19 occupation type 14300 (Führungskräfte in der Erbringung sonstiger Dienstleistungen). Sector for demand/telework/hours assigned from the occupation group (estimate)."
+  }
+}

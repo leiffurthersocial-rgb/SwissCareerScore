@@ -1,0 +1,60 @@
+{
+  "id": "occ-meister-in-schaltanlagen-und-automatik",
+  "kind": "occupation",
+  "route": "vocational",
+  "name": {
+    "en": "Techniker im Bereich Systemtechnik und Automation",
+    "de": "Techniker im Bereich Systemtechnik und Automation",
+    "fr": "Maître tableaux électriques et automation",
+    "it": "Maestro quadri elettrici e automazione"
+  },
+  "codes": {
+    "isco08": "3115",
+    "chIsco19": "31152"
+  },
+  "sector": "CH-ISCO-19 31: Ingenieurtechnische und vergleichbare Fachkräfte",
+  "refs": {
+    "qualLevel": "higherVet",
+    "nogaSection": "C",
+    "besta": "10-33"
+  },
+  "pathway": [],
+  "leadsTo": [],
+  "trainedVia": [
+    "edu-hfp-meister-in-schaltanlagen-und-automatik",
+    "edu-hf-systemtechniker-in",
+    "edu-hf-gebaeudeautomatiker-in"
+  ],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "mobility": {
+      "value": 6,
+      "unit": "rubric 0–9",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#11-international-mobility",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed): recognition 1/3, language independence 3/3, transferability 2/3."
+    },
+    "regionalUbiquity": {
+      "value": 2,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#12-regional-availability",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed)."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Occupation = CH-ISCO-19 occupation type 31152 (Techniker im Bereich Systemtechnik und Automation). Sector for demand/telework/hours assigned from the occupation group (estimate). Several job titles share this occupation type: Gebäudeautomatiker / Gebäudeautomatikerin; Meister Schaltanlagen und Automatik / Meisterin Schaltanlagen und Automatik; Systemtechniker/in."
+  }
+}

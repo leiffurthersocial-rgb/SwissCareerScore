@@ -1,0 +1,55 @@
+{
+  "id": "edu-efz-steinmetz-in",
+  "kind": "education",
+  "route": "vocational",
+  "eduType": "EFZ",
+  "name": {
+    "en": "Stonemason (EFZ)",
+    "de": "Steinmetz/in EFZ",
+    "fr": "Tailleur de pierre CFC",
+    "it": "Scalpellino AFC"
+  },
+  "codes": {
+    "isco08": "7113"
+  },
+  "sector": "CH-ISCO-19 71: Bau- und Ausbaufachkräfte sowie verwandte Berufe, ausgenommen Ele",
+  "refs": {
+    "qualLevel": "apprenticeship",
+    "besta": "41-43",
+    "nogaSection": "F"
+  },
+  "pathway": [
+    {
+      "label": "Steinmetz/in EFZ",
+      "years": 4.0,
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/steinmetz-in-efz",
+      "confidence": "measured"
+    }
+  ],
+  "leadsTo": [
+    "occ-steinmetz-in"
+  ],
+  "trainedVia": [],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "entryAccess": {
+      "value": 1,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/steinmetz-in-efz",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "Apprenticeship contract with a training company required (default for dual VET)."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Language regions assumed (all three) — not individually verified. No BFS completion statistic for this occupation (missing)."
+  }
+}

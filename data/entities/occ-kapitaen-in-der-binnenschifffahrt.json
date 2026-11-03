@@ -1,0 +1,58 @@
+{
+  "id": "occ-kapitaen-in-der-binnenschifffahrt",
+  "kind": "occupation",
+  "route": "vocational",
+  "name": {
+    "en": "Schiffsführer, nautische Schiffsoffiziere und Schiffslotsen",
+    "de": "Kapitän der Binnenschifffahrt / Kapitänin der Binnenschifffahrt",
+    "fr": "Officiers de pont et pilotes",
+    "it": "Ufficiali di bordo e piloti navali"
+  },
+  "codes": {
+    "isco08": "3152",
+    "chIsco19": "31520"
+  },
+  "sector": "CH-ISCO-19 31: Ingenieurtechnische und vergleichbare Fachkräfte",
+  "refs": {
+    "qualLevel": "apprenticeship",
+    "nogaSection": "H",
+    "besta": "49-53"
+  },
+  "pathway": [],
+  "leadsTo": [],
+  "trainedVia": [
+    "edu-efz-kapitaen-in-der-binnenschifffahrt"
+  ],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "mobility": {
+      "value": 6,
+      "unit": "rubric 0–9",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#11-international-mobility",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed): recognition 1/3, language independence 3/3, transferability 2/3."
+    },
+    "regionalUbiquity": {
+      "value": 2,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#12-regional-availability",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed)."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Occupation = CH-ISCO-19 occupation type 31520 (Schiffsführer, nautische Schiffsoffiziere und Schiffslotsen). Sector for demand/telework/hours assigned from the occupation group (estimate)."
+  }
+}

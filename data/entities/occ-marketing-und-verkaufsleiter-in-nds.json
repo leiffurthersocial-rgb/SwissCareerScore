@@ -1,0 +1,58 @@
+{
+  "id": "occ-marketing-und-verkaufsleiter-in-nds",
+  "kind": "occupation",
+  "route": "vocational",
+  "name": {
+    "en": "Führungskräfte in Vertrieb und Marketing",
+    "de": "Marketing- und Verkaufsleiter/in",
+    "fr": "Directeurs et cadres de direction, ventes et marketing",
+    "it": "Dirigenti nei servizi di vendita e di marketing"
+  },
+  "codes": {
+    "isco08": "1221",
+    "chIsco19": "12210"
+  },
+  "sector": "CH-ISCO-19 12: Führungskräfte im kaufmännischen Bereich",
+  "refs": {
+    "qualLevel": "higherVet",
+    "nogaSection": "*",
+    "besta": "5-96"
+  },
+  "pathway": [],
+  "leadsTo": [],
+  "trainedVia": [
+    "edu-hf-marketing-und-verkaufsleiter-in-nds"
+  ],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "mobility": {
+      "value": 5,
+      "unit": "rubric 0–9",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#11-international-mobility",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed): recognition 2/3, language independence 1/3, transferability 2/3."
+    },
+    "regionalUbiquity": {
+      "value": 2,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#12-regional-availability",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed)."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Occupation = CH-ISCO-19 occupation type 12210 (Führungskräfte in Vertrieb und Marketing). Sector for demand/telework/hours assigned from the occupation group (estimate)."
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "id": "edu-efz-hotel-kommunikationsfachmann-frau",
+  "kind": "education",
+  "route": "vocational",
+  "eduType": "EFZ",
+  "name": {
+    "en": "Guest Relations Officer (EFZ)",
+    "de": "Hotel-Kommunikationsfachfrau/-mann EFZ",
+    "fr": "Spécialiste en communication hôtelière CFC",
+    "it": "Impiegato in comunicazione alberghiera AFC"
+  },
+  "codes": {
+    "isco08": "4224"
+  },
+  "sector": "CH-ISCO-19 42: Bürokräfte mit Kundenkontakt",
+  "refs": {
+    "qualLevel": "apprenticeship",
+    "besta": "45-96",
+    "nogaSection": "*",
+    "vetName": "Hotel-Kommunikationsfachmann/-frau EFZ"
+  },
+  "pathway": [
+    {
+      "label": "Hotel-Kommunikationsfachfrau/-mann EFZ",
+      "years": 3.0,
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/hotel-kommunikationsfachmann-frau-efz",
+      "confidence": "measured"
+    }
+  ],
+  "leadsTo": [
+    "occ-chef-fe-de-reception"
+  ],
+  "trainedVia": [],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "entryAccess": {
+      "value": 1,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/hotel-kommunikationsfachmann-frau-efz",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "Apprenticeship contract with a training company required (default for dual VET)."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Language regions assumed (all three) — not individually verified."
+  }
+}

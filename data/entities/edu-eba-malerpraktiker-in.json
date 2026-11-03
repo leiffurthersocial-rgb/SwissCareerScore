@@ -1,0 +1,56 @@
+{
+  "id": "edu-eba-malerpraktiker-in",
+  "kind": "education",
+  "route": "vocational",
+  "eduType": "EBA",
+  "name": {
+    "en": "Painting Assistant (EBA)",
+    "de": "Malerpraktiker/in EBA",
+    "fr": "Aide-peintre AFP",
+    "it": "Aiuto pittore CFP"
+  },
+  "codes": {
+    "isco08": "7131"
+  },
+  "sector": "CH-ISCO-19 71: Bau- und Ausbaufachkräfte sowie verwandte Berufe, ausgenommen Ele",
+  "refs": {
+    "qualLevel": "apprenticeship",
+    "besta": "41-43",
+    "nogaSection": "F",
+    "vetName": "Malerpraktiker/in EBA"
+  },
+  "pathway": [
+    {
+      "label": "Malerpraktiker/in EBA",
+      "years": 2.0,
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/malerpraktiker-in-eba",
+      "confidence": "measured"
+    }
+  ],
+  "leadsTo": [
+    "occ-maler-in"
+  ],
+  "trainedVia": [],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "entryAccess": {
+      "value": 1,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/malerpraktiker-in-eba",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "Apprenticeship contract with a training company required (default for dual VET)."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Language regions assumed (all three) — not individually verified."
+  }
+}

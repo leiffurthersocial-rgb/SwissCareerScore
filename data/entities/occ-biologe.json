@@ -21,7 +21,9 @@
   "pathway": [],
   "leadsTo": [],
   "trainedVia": [
-    "edu-uh-biologie"
+    "edu-uh-biologie",
+    "edu-uh-biochemie",
+    "edu-uh-biomedizinische-wissenschaften"
   ],
   "languageRegions": [
     "de",

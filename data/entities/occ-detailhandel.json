@@ -22,7 +22,10 @@
   "leadsTo": [],
   "trainedVia": [
     "edu-efz-detailhandel",
-    "edu-eba-detailhandel"
+    "edu-eba-detailhandel",
+    "edu-bp-kundenberater-in-im-uhrenverkauf",
+    "edu-efz-weinfachmann-frau",
+    "edu-bp-automobil-verkaufsberater-in"
   ],
   "languageRegions": [
     "de",

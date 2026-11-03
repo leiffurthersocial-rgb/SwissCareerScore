@@ -1,0 +1,56 @@
+{
+  "id": "edu-efz-montage-elektriker-in",
+  "kind": "education",
+  "route": "vocational",
+  "eduType": "EFZ",
+  "name": {
+    "en": "Construction Electrician (EFZ)",
+    "de": "Montage-Elektriker / Montage-Elektrikerin EFZ",
+    "fr": "Electricien de montage CFC",
+    "it": "Elettricista di montaggio AFC"
+  },
+  "codes": {
+    "isco08": "7411"
+  },
+  "sector": "Construction / building services",
+  "refs": {
+    "qualLevel": "apprenticeship",
+    "besta": "41-43",
+    "nogaSection": "F",
+    "vetName": "Montage-Elektriker/in EFZ"
+  },
+  "pathway": [
+    {
+      "label": "Montage-Elektriker / Montage-Elektrikerin EFZ",
+      "years": 3.0,
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/montage-elektriker-in-efz",
+      "confidence": "measured"
+    }
+  ],
+  "leadsTo": [
+    "occ-elektroinstallateur"
+  ],
+  "trainedVia": [],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "entryAccess": {
+      "value": 1,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/montage-elektriker-in-efz",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "Apprenticeship contract with a training company required (default for dual VET)."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Language regions assumed (all three) — not individually verified."
+  }
+}

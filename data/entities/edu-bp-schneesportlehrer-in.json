@@ -1,0 +1,63 @@
+{
+  "id": "edu-bp-schneesportlehrer-in",
+  "kind": "education",
+  "route": "vocational",
+  "eduType": "BP",
+  "name": {
+    "en": "Schneesportlehrer / Schneesportlehrerin BP",
+    "de": "Schneesportlehrer / Schneesportlehrerin BP",
+    "fr": null,
+    "it": null
+  },
+  "codes": {
+    "isco08": "3422"
+  },
+  "sector": "CH-ISCO-19 34: Juristische, soziale, kulturelle und verwandte Fachkräfte",
+  "refs": {
+    "qualLevel": "higherVet",
+    "besta": "90-96",
+    "nogaSection": "R"
+  },
+  "pathway": [
+    {
+      "label": "EFZ apprenticeship in a related occupation",
+      "years": 3,
+      "sourceUrl": "https://www.berufsberatung.ch/de/bildungssystem/d/lehre-efz",
+      "confidence": "measured",
+      "note": "Admission normally requires a relevant EFZ (3 or 4 years); the shorter variant is counted."
+    },
+    {
+      "label": "Preparation for the federal exam: Schneesportlehrer / Schneesportlehrerin BP",
+      "years": 2.0,
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/schneesportlehrer-in-bp",
+      "confidence": "estimated",
+      "note": "Duration of the preparatory course as stated; admission also requires professional experience (see exam regulations), so the true time to qualify is longer."
+    }
+  ],
+  "leadsTo": [
+    "occ-schneesportlehrer-in"
+  ],
+  "trainedVia": [],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "entryAccess": {
+      "value": 0,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/schneesportlehrer-in-bp",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "Admission to the federal exam is based on professional experience; no capacity limit."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Language regions assumed (all three) — not individually verified.  Occupation code 34220 assigned by the project (title not in the SECO/AVAM list) — estimate."
+  }
+}

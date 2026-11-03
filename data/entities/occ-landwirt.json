@@ -20,7 +20,13 @@
   "pathway": [],
   "leadsTo": [],
   "trainedVia": [
-    "edu-efz-landwirt"
+    "edu-efz-landwirt",
+    "edu-eba-agrarpraktiker-in",
+    "edu-bp-fachmann-frau-in-biologisch-dynamischer-landwirtschaft",
+    "edu-hfp-meisterlandwirt-in",
+    "edu-hfp-baeuerlicher-haushaltleiter-baeuerin",
+    "edu-bp-betriebsleiter-in-landwirtschaft",
+    "edu-bp-baeuerlicher-haushaltleiter-baeuerin"
   ],
   "languageRegions": [
     "de",

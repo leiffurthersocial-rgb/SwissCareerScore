@@ -1,0 +1,68 @@
+{
+  "id": "edu-uh-indische-sprachen-und-kulturen",
+  "kind": "education",
+  "route": "academic",
+  "eduType": "UH-MSc",
+  "name": {
+    "en": "Indische Sprachen und Kulturen – MSc/MA (UH)",
+    "de": "Master Indische Sprachen und Kulturen (UH)",
+    "fr": null,
+    "it": null
+  },
+  "codes": {
+    "isco08": "2643"
+  },
+  "sector": "CH-ISCO-19 26: Juristen, Sozialwissenschaftler und Kulturberufe",
+  "refs": {
+    "qualLevel": "higherEducation",
+    "studyField": "UH:Geistes- und Sozialwissenschaften",
+    "gradIncome": "uh:Master:Geistes- und Sozialwissenschaften",
+    "besta": "68-75",
+    "nogaSection": "M"
+  },
+  "pathway": [
+    {
+      "label": "Gymnasiale Maturität",
+      "years": 4,
+      "sourceUrl": "https://www.berufsberatung.ch/de/bildungssystem/d/gymnasiale-maturitaetsschulen",
+      "confidence": "estimated",
+      "note": "berufsberatung.ch states 3–6 years depending on canton (partly overlapping compulsory school); 4 years after compulsory school assumed."
+    },
+    {
+      "label": "Bachelor Indische Sprachen und Kulturen (UH)",
+      "years": 3.0,
+      "sourceUrl": "https://www.berufsberatung.ch/de/studienrichtungen/indische-sprachen-und-kulturen",
+      "confidence": "measured"
+    },
+    {
+      "label": "Master Indische Sprachen und Kulturen (UH)",
+      "years": 1.5,
+      "sourceUrl": "https://www.berufsberatung.ch/de/studienrichtungen/indische-sprachen-und-kulturen",
+      "confidence": "measured"
+    }
+  ],
+  "leadsTo": [
+    "occ-dolmetscher-in"
+  ],
+  "trainedVia": [],
+  "languageRegions": [
+    "de"
+  ],
+  "raw": {
+    "entryAccess": {
+      "value": 0,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://www.berufsberatung.ch/de/studienrichtungen/indische-sprachen-und-kulturen",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "Open admission with Matura."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "English name of the field kept in German where no official translation was available. Target occupation chosen by the project as the most typical professional destination (estimate)."
+  }
+}

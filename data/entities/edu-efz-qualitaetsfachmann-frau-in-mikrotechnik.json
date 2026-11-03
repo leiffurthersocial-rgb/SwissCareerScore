@@ -1,0 +1,55 @@
+{
+  "id": "edu-efz-qualitaetsfachmann-frau-in-mikrotechnik",
+  "kind": "education",
+  "route": "vocational",
+  "eduType": "EFZ",
+  "name": {
+    "en": "Qualitätsfachmann in Mikrotechnik / Qualitätsfachfrau in Mikrotechnik EFZ",
+    "de": "Qualitätsfachmann in Mikrotechnik / Qualitätsfachfrau in Mikrotechnik EFZ",
+    "fr": null,
+    "it": null
+  },
+  "codes": {
+    "isco08": "7311"
+  },
+  "sector": "CH-ISCO-19 73: Präzisionshandwerker, Drucker und kunsthandwerkliche Berufe",
+  "refs": {
+    "qualLevel": "apprenticeship",
+    "besta": "26",
+    "nogaSection": "C"
+  },
+  "pathway": [
+    {
+      "label": "Qualitätsfachmann in Mikrotechnik / Qualitätsfachfrau in Mikrotechnik EFZ",
+      "years": 4.0,
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/qualitaetsfachmann-frau-in-mikrotechnik-efz",
+      "confidence": "measured"
+    }
+  ],
+  "leadsTo": [
+    "occ-mikromechaniker-in"
+  ],
+  "trainedVia": [],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "entryAccess": {
+      "value": 1,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/qualitaetsfachmann-frau-in-mikrotechnik-efz",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "Apprenticeship contract with a training company required (default for dual VET)."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Language regions assumed (all three) — not individually verified. No BFS completion statistic for this occupation (missing). Occupation code 73113 assigned by the project (title not in the SECO/AVAM list) — estimate."
+  }
+}

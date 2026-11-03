@@ -1,0 +1,56 @@
+{
+  "id": "edu-efz-dentalassistent-in",
+  "kind": "education",
+  "route": "vocational",
+  "eduType": "EFZ",
+  "name": {
+    "en": "Dental Assistant (EFZ)",
+    "de": "Dentalassistent / Dentalassistentin EFZ",
+    "fr": "Assistant dentaire CFC",
+    "it": "Assistente dentale AFC"
+  },
+  "codes": {
+    "isco08": "3251"
+  },
+  "sector": "CH-ISCO-19 32: Assistenzberufe im Gesundheitswesen",
+  "refs": {
+    "qualLevel": "apprenticeship",
+    "besta": "86-88",
+    "nogaSection": "Q",
+    "vetName": "Dentalassistent/in EFZ"
+  },
+  "pathway": [
+    {
+      "label": "Dentalassistent / Dentalassistentin EFZ",
+      "years": 3.0,
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/dentalassistent-in-efz",
+      "confidence": "measured"
+    }
+  ],
+  "leadsTo": [
+    "occ-dentalassistent-in"
+  ],
+  "trainedVia": [],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "entryAccess": {
+      "value": 1,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/dentalassistent-in-efz",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "Apprenticeship contract with a training company required (default for dual VET)."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Language regions assumed (all three) — not individually verified."
+  }
+}

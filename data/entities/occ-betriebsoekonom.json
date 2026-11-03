@@ -21,7 +21,10 @@
   "pathway": [],
   "leadsTo": [],
   "trainedVia": [
-    "edu-fh-betriebsoekonomie"
+    "edu-fh-betriebsoekonomie",
+    "edu-hfp-organisationsberater-in",
+    "edu-bp-spezialist-in-unternehmensorganisation",
+    "edu-uh-betriebswirtschaft"
   ],
   "languageRegions": [
     "de",

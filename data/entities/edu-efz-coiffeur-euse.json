@@ -1,0 +1,56 @@
+{
+  "id": "edu-efz-coiffeur-euse",
+  "kind": "education",
+  "route": "vocational",
+  "eduType": "EFZ",
+  "name": {
+    "en": "Hairdresser (EFZ)",
+    "de": "Coiffeur / Coiffeuse EFZ",
+    "fr": "Coiffeur CFC",
+    "it": "Parrucchiere AFC"
+  },
+  "codes": {
+    "isco08": "5141"
+  },
+  "sector": "CH-ISCO-19 51: Berufe im Bereich personenbezogener Dienstleistungen",
+  "refs": {
+    "qualLevel": "apprenticeship",
+    "besta": "90-96",
+    "nogaSection": "S",
+    "vetName": "Coiffeur/-euse EBA"
+  },
+  "pathway": [
+    {
+      "label": "Coiffeur / Coiffeuse EFZ",
+      "years": 3.0,
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/coiffeur-euse-efz",
+      "confidence": "measured"
+    }
+  ],
+  "leadsTo": [
+    "occ-coiffeur-coiffeuse"
+  ],
+  "trainedVia": [],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "entryAccess": {
+      "value": 1,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/coiffeur-euse-efz",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "Apprenticeship contract with a training company required (default for dual VET)."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Language regions assumed (all three) — not individually verified."
+  }
+}

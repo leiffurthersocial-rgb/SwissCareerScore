@@ -61,3 +61,33 @@ describe("derived dataset", () => {
     expect(lse.groups.total.values["Lebensalter - Total"].Zentralwert).toBe(7024);
   });
 });
+
+describe("expanded catalogue", () => {
+  it("contains hundreds of occupations and education paths of every type", () => {
+    const occ = ds.entities.filter((e) => e.kind === "occupation").length;
+    const types = new Set(ds.entities.map((e) => e.eduType).filter(Boolean));
+    expect(occ).toBeGreaterThan(250);
+    expect(ds.entities.length).toBeGreaterThan(1000);
+    for (const t of ["EBA", "EFZ", "BM", "HF", "BP", "HFP", "FH-BSc", "UH-MSc", "ETH-MSc", "UH-MMed"]) expect(types.has(t as never)).toBe(true);
+  });
+
+  it("every occupation has a 5-digit CH-ISCO-19 code and at least one training path", () => {
+    for (const e of ds.entities.filter((x) => x.kind === "occupation")) {
+      expect(e.codes.chIsco19, e.id).toMatch(/^\d{5}$/);
+      expect(e.trainedVia.length, e.id).toBeGreaterThan(0);
+    }
+  });
+
+  it("no tertiary path counts only its prerequisite as time to qualify", () => {
+    for (const e of ds.entities.filter((x) => ["HF", "BP", "HFP"].includes(x.eduType ?? ""))) {
+      if (e.pathway.length === 1) expect(e.pathway[0].label.startsWith("EFZ apprenticeship"), e.id).toBe(false);
+      if (!e.pathway.length) expect(e.inputs.yearsToQualify?.value ?? null).toBeNull();
+    }
+  });
+
+  it("BP/HFP preparation durations are labelled as estimates", () => {
+    const curated = new Set(["edu-bp-polizist", "edu-bp-finanz-rechnungswesen"]); // hand-checked: durations are the training itself
+    for (const e of ds.entities.filter((x) => (x.eduType === "BP" || x.eduType === "HFP") && !curated.has(x.id)))
+      for (const s of e.pathway.slice(1)) expect(s.confidence, e.id).toBe("estimated");
+  });
+});

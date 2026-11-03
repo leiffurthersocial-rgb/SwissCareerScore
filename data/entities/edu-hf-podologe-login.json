@@ -1,0 +1,63 @@
+{
+  "id": "edu-hf-podologe-login",
+  "kind": "education",
+  "route": "vocational",
+  "eduType": "HF",
+  "name": {
+    "en": "Podiatrist (HF)",
+    "de": "Podologin / Podologe HF",
+    "fr": "Podologue ES",
+    "it": "Podologo SSS"
+  },
+  "codes": {
+    "isco08": "3255"
+  },
+  "sector": "CH-ISCO-19 32: Assistenzberufe im Gesundheitswesen",
+  "refs": {
+    "qualLevel": "higherVet",
+    "besta": "86-88",
+    "nogaSection": "Q"
+  },
+  "pathway": [
+    {
+      "label": "EFZ apprenticeship in a related occupation",
+      "years": 3,
+      "sourceUrl": "https://www.berufsberatung.ch/de/bildungssystem/d/lehre-efz",
+      "confidence": "measured",
+      "note": "Admission normally requires a relevant EFZ (3 or 4 years); the shorter variant is counted."
+    },
+    {
+      "label": "Podologin / Podologe HF",
+      "years": 3.0,
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/podologe-login-hf",
+      "confidence": "measured",
+      "note": "Full-time minimum; part-time variants take longer."
+    }
+  ],
+  "leadsTo": [
+    "occ-medizinische-r-masseur-in"
+  ],
+  "trainedVia": [],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "entryAccess": {
+      "value": 2,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/podologe-login-hf",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "HF entrance procedure with aptitude assessment and training contract (health)."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Language regions assumed (all three) — not individually verified."
+  }
+}

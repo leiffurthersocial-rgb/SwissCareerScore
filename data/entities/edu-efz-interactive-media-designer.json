@@ -1,0 +1,56 @@
+{
+  "id": "edu-efz-interactive-media-designer",
+  "kind": "education",
+  "route": "vocational",
+  "eduType": "EFZ",
+  "name": {
+    "en": "Interactive Media Designer EFZ",
+    "de": "Interactive Media Designer EFZ",
+    "fr": "Interactive Media Designer CFC",
+    "it": "Interactive Media Designer AFC"
+  },
+  "codes": {
+    "isco08": "2166"
+  },
+  "sector": "Design / communication",
+  "refs": {
+    "qualLevel": "apprenticeship",
+    "besta": "68-75",
+    "nogaSection": "M",
+    "vetName": "Interactive Media Designer EFZ"
+  },
+  "pathway": [
+    {
+      "label": "Interactive Media Designer EFZ",
+      "years": 4.0,
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/interactive-media-designer-efz",
+      "confidence": "measured"
+    }
+  ],
+  "leadsTo": [
+    "occ-grafiker"
+  ],
+  "trainedVia": [],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "entryAccess": {
+      "value": 1,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/interactive-media-designer-efz",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "Apprenticeship contract with a training company required (default for dual VET)."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Language regions assumed (all three) — not individually verified."
+  }
+}

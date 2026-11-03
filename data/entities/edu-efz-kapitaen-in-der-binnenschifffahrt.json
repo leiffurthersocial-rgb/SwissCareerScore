@@ -1,0 +1,55 @@
+{
+  "id": "edu-efz-kapitaen-in-der-binnenschifffahrt",
+  "kind": "education",
+  "route": "vocational",
+  "eduType": "EFZ",
+  "name": {
+    "en": "Kapitän der Binnenschifffahrt / Kapitänin der Binnenschifffahrt EFZ",
+    "de": "Kapitän der Binnenschifffahrt / Kapitänin der Binnenschifffahrt EFZ",
+    "fr": null,
+    "it": null
+  },
+  "codes": {
+    "isco08": "3152"
+  },
+  "sector": "CH-ISCO-19 31: Ingenieurtechnische und vergleichbare Fachkräfte",
+  "refs": {
+    "qualLevel": "apprenticeship",
+    "besta": "49-53",
+    "nogaSection": "H"
+  },
+  "pathway": [
+    {
+      "label": "Kapitän der Binnenschifffahrt / Kapitänin der Binnenschifffahrt EFZ",
+      "years": 3.5,
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/kapitaen-in-der-binnenschifffahrt-efz",
+      "confidence": "measured"
+    }
+  ],
+  "leadsTo": [
+    "occ-kapitaen-in-der-binnenschifffahrt"
+  ],
+  "trainedVia": [],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "entryAccess": {
+      "value": 1,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/kapitaen-in-der-binnenschifffahrt-efz",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "Apprenticeship contract with a training company required (default for dual VET)."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Language regions assumed (all three) — not individually verified. No BFS completion statistic for this occupation (missing). Occupation code 31520 assigned by the project (title not in the SECO/AVAM list) — estimate."
+  }
+}

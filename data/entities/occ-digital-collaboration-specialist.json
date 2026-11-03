@@ -1,0 +1,58 @@
+{
+  "id": "occ-digital-collaboration-specialist",
+  "kind": "occupation",
+  "route": "vocational",
+  "name": {
+    "en": "Sekretariatsleiter",
+    "de": "Digital Collaboration Specialist",
+    "fr": "Digital Collaboration Specialist",
+    "it": "Digital Collaboration Specialist"
+  },
+  "codes": {
+    "isco08": "3341",
+    "chIsco19": "33410"
+  },
+  "sector": "CH-ISCO-19 33: Betriebswirtschaftliche und kaufmännische Fachkräfte und Verwaltu",
+  "refs": {
+    "qualLevel": "higherVet",
+    "nogaSection": "*",
+    "besta": "5-96"
+  },
+  "pathway": [],
+  "leadsTo": [],
+  "trainedVia": [
+    "edu-bp-digital-collaboration-specialist"
+  ],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "mobility": {
+      "value": 4,
+      "unit": "rubric 0–9",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#11-international-mobility",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed): recognition 1/3, language independence 1/3, transferability 2/3."
+    },
+    "regionalUbiquity": {
+      "value": 3,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#12-regional-availability",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed)."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Occupation = CH-ISCO-19 occupation type 33410 (Sekretariatsleiter). Sector for demand/telework/hours assigned from the occupation group (estimate)."
+  }
+}

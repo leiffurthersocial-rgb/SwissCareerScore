@@ -1,0 +1,56 @@
+{
+  "id": "edu-efz-veranstaltungsfachmann-frau",
+  "kind": "education",
+  "route": "vocational",
+  "eduType": "EFZ",
+  "name": {
+    "en": "Veranstaltungsfachmann / Veranstaltungsfachfrau EFZ",
+    "de": "Veranstaltungsfachmann / Veranstaltungsfachfrau EFZ",
+    "fr": "Techniscéniste CFC",
+    "it": "Operatore di palcoscenico AFC"
+  },
+  "codes": {
+    "isco08": "3521"
+  },
+  "sector": "CH-ISCO-19 35: Informations- und Kommunikationstechniker",
+  "refs": {
+    "qualLevel": "apprenticeship",
+    "besta": "58-63",
+    "nogaSection": "J",
+    "vetName": "Veranstaltungsfachmann/-frau EFZ"
+  },
+  "pathway": [
+    {
+      "label": "Veranstaltungsfachmann / Veranstaltungsfachfrau EFZ",
+      "years": 4.0,
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/veranstaltungsfachmann-frau-efz",
+      "confidence": "measured"
+    }
+  ],
+  "leadsTo": [
+    "occ-veranstaltungsfachmann-frau"
+  ],
+  "trainedVia": [],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "entryAccess": {
+      "value": 1,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/veranstaltungsfachmann-frau-efz",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "Apprenticeship contract with a training company required (default for dual VET)."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Language regions assumed (all three) — not individually verified."
+  }
+}

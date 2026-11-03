@@ -21,7 +21,9 @@
   "pathway": [],
   "leadsTo": [],
   "trainedVia": [
-    "edu-efz-koch"
+    "edu-efz-koch",
+    "edu-eba-kuechenangestellte-r",
+    "edu-bp-diaetkoch-koechin"
   ],
   "languageRegions": [
     "de",

@@ -1,0 +1,58 @@
+{
+  "id": "occ-flugverkehrsleiter-in",
+  "kind": "occupation",
+  "route": "vocational",
+  "name": {
+    "en": "Flugverkehrslotsen",
+    "de": "Flugverkehrsleiter / Flugverkehrsleiterin",
+    "fr": "Contrôleur de la circulation aérienne",
+    "it": "Controllore del traffico aereo"
+  },
+  "codes": {
+    "isco08": "3154",
+    "chIsco19": "31540"
+  },
+  "sector": "CH-ISCO-19 31: Ingenieurtechnische und vergleichbare Fachkräfte",
+  "refs": {
+    "qualLevel": "higherVet",
+    "nogaSection": "H",
+    "besta": "49-53"
+  },
+  "pathway": [],
+  "leadsTo": [],
+  "trainedVia": [
+    "edu-hf-flugverkehrsleiter-in"
+  ],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "mobility": {
+      "value": 6,
+      "unit": "rubric 0–9",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#11-international-mobility",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed): recognition 1/3, language independence 3/3, transferability 2/3."
+    },
+    "regionalUbiquity": {
+      "value": 2,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#12-regional-availability",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed)."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Occupation = CH-ISCO-19 occupation type 31540 (Flugverkehrslotsen). Sector for demand/telework/hours assigned from the occupation group (estimate)."
+  }
+}

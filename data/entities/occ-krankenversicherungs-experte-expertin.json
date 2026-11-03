@@ -1,0 +1,63 @@
+{
+  "id": "occ-krankenversicherungs-experte-expertin",
+  "kind": "occupation",
+  "route": "vocational",
+  "name": {
+    "en": "Fachkräfte in Sozialverwaltung und -versicherung",
+    "de": "Fachkräfte in Sozialverwaltung und -versicherung",
+    "fr": "Agents des services publics accordant des prestations sociales",
+    "it": "Agenti dei servizi pubblici di prestazioni sociali"
+  },
+  "codes": {
+    "isco08": "3353",
+    "chIsco19": "33530"
+  },
+  "sector": "CH-ISCO-19 33: Betriebswirtschaftliche und kaufmännische Fachkräfte und Verwaltu",
+  "refs": {
+    "qualLevel": "higherVet",
+    "nogaSection": "*",
+    "besta": "5-96"
+  },
+  "pathway": [],
+  "leadsTo": [],
+  "trainedVia": [
+    "edu-hfp-krankenversicherungs-experte-expertin",
+    "edu-hfp-sozialversicherungs-experte-expertin",
+    "edu-bp-fachperson-krankenversicherung",
+    "edu-hfp-experte-expertin-fuer-berufliche-vorsorge",
+    "edu-bp-fachmann-frau-fuer-personalvorsorge",
+    "edu-bp-sozialversicherungs-fachmann-frau"
+  ],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "mobility": {
+      "value": 4,
+      "unit": "rubric 0–9",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#11-international-mobility",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed): recognition 1/3, language independence 1/3, transferability 2/3."
+    },
+    "regionalUbiquity": {
+      "value": 3,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#12-regional-availability",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed)."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Occupation = CH-ISCO-19 occupation type 33530 (Fachkräfte in Sozialverwaltung und -versicherung). Sector for demand/telework/hours assigned from the occupation group (estimate). Several job titles share this occupation type: Experte für berufliche Vorsorge / Expertin für berufliche Vorsorge; Fachmann für Personalvorsorge / Fachfrau für Personalvorsorge; Fachperson Krankenversicherung; Krankenversicherungs-Expertin / Krankenversicherungs-Experte; Sozialversicherungs-Experte / Sozialversicherungs-Expertin; Sozialversicherungs-Fachfrau/-mann."
+  }
+}

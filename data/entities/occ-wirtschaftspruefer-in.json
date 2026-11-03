@@ -1,0 +1,61 @@
+{
+  "id": "occ-wirtschaftspruefer-in",
+  "kind": "occupation",
+  "route": "vocational",
+  "name": {
+    "en": "Wirtschaftsprüfer, Steuerberater und verwandte Berufe",
+    "de": "Wirtschaftsprüfer, Steuerberater und verwandte Berufe",
+    "fr": "Expert-comptable",
+    "it": "Esperto contabile"
+  },
+  "codes": {
+    "isco08": "2411",
+    "chIsco19": "24110"
+  },
+  "sector": "CH-ISCO-19 24: Betriebswirte und vergleichbare Spezialisten",
+  "refs": {
+    "qualLevel": "higherVet",
+    "nogaSection": "M",
+    "besta": "68-75"
+  },
+  "pathway": [],
+  "leadsTo": [],
+  "trainedVia": [
+    "edu-hfp-wirtschaftspruefer-in",
+    "edu-hfp-treuhandexperte-expertin",
+    "edu-hfp-steuerexperte-expertin",
+    "edu-bp-treuhaender-in"
+  ],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "mobility": {
+      "value": 7,
+      "unit": "rubric 0–9",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#11-international-mobility",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed): recognition 3/3, language independence 2/3, transferability 2/3."
+    },
+    "regionalUbiquity": {
+      "value": 2,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#12-regional-availability",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed)."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Occupation = CH-ISCO-19 occupation type 24110 (Wirtschaftsprüfer, Steuerberater und verwandte Berufe). Sector for demand/telework/hours assigned from the occupation group (estimate). Several job titles share this occupation type: Steuerexperte / Steuerexpertin; Treuhandexperte / Treuhandexpertin; Treuhänder / Treuhänderin; Wirtschaftsprüfer / Wirtschaftsprüferin."
+  }
+}

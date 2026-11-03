@@ -1,0 +1,63 @@
+{
+  "id": "edu-hf-bewegungspaedagoge-paedagogin",
+  "kind": "education",
+  "route": "vocational",
+  "eduType": "HF",
+  "name": {
+    "en": "Bewegungspädagoge / Bewegungspädagogin HF",
+    "de": "Bewegungspädagoge / Bewegungspädagogin HF",
+    "fr": "Éducateur du mouvement ES",
+    "it": "Educatore del movimento SSS"
+  },
+  "codes": {
+    "isco08": "3422"
+  },
+  "sector": "CH-ISCO-19 34: Juristische, soziale, kulturelle und verwandte Fachkräfte",
+  "refs": {
+    "qualLevel": "higherVet",
+    "besta": "90-96",
+    "nogaSection": "R"
+  },
+  "pathway": [
+    {
+      "label": "EFZ apprenticeship in a related occupation",
+      "years": 3,
+      "sourceUrl": "https://www.berufsberatung.ch/de/bildungssystem/d/lehre-efz",
+      "confidence": "measured",
+      "note": "Admission normally requires a relevant EFZ (3 or 4 years); the shorter variant is counted."
+    },
+    {
+      "label": "Bewegungspädagoge / Bewegungspädagogin HF",
+      "years": 4.0,
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/bewegungspaedagoge-paedagogin-hf",
+      "confidence": "measured",
+      "note": "Full-time minimum; part-time variants take longer."
+    }
+  ],
+  "leadsTo": [
+    "occ-schneesportlehrer-in"
+  ],
+  "trainedVia": [],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "entryAccess": {
+      "value": 1,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/bewegungspaedagoge-paedagogin-hf",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "HF entrance procedure (relevant EFZ required)."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Language regions assumed (all three) — not individually verified."
+  }
+}

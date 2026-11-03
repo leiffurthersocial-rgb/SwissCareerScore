@@ -1,0 +1,55 @@
+{
+  "id": "edu-eba-textilpraktiker-in",
+  "kind": "education",
+  "route": "vocational",
+  "eduType": "EBA",
+  "name": {
+    "en": "Textile Assistant (EBA)",
+    "de": "Textilpraktiker / Textilpraktikerin EBA",
+    "fr": "Agent en produits textiles AFP",
+    "it": "Addetto tessile CFP"
+  },
+  "codes": {
+    "isco08": "8150"
+  },
+  "sector": "CH-ISCO-19 81: Bediener stationärer Anlagen und Maschinen",
+  "refs": {
+    "qualLevel": "apprenticeship",
+    "besta": "10-33",
+    "nogaSection": "C"
+  },
+  "pathway": [
+    {
+      "label": "Textilpraktiker / Textilpraktikerin EBA",
+      "years": 2.0,
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/textilpraktiker-in-eba",
+      "confidence": "measured"
+    }
+  ],
+  "leadsTo": [
+    "occ-textiltechnologe-login"
+  ],
+  "trainedVia": [],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "entryAccess": {
+      "value": 1,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/textilpraktiker-in-eba",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "Apprenticeship contract with a training company required (default for dual VET)."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Language regions assumed (all three) — not individually verified. No BFS completion statistic for this occupation (missing)."
+  }
+}

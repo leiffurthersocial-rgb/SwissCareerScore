@@ -6,10 +6,16 @@ All data lives in `/data`. Nothing in `/data/derived` or `/data/ingested` is edi
 data/
   entities/<id>.json     hand-curated entity definitions (one file per occupation / education path)
   inputs/*.json          hand-curated lookup tables (AI task content per ISCO unit group)
-  raw/                   untouched downloads + manifest.json (sha256, retrieval date, URL)
+  raw/                   untouched downloads + manifest.json (sha256, retrieval date, URL);
+                         berufsberatung.ch pages are not committed (size) — see manifest + ingested/berufsberatung.json
   ingested/*.json        tidy tables parsed from raw/ by scripts/ingest/*
-  derived/dataset.json   the dataset the app loads (built by scripts/build-data.ts)
+  derived/dataset.json   full dataset (all datapoints; server/build time and tests)
+  derived/core.json      compact dataset shipped to the browser (names, filters, dimension raw values)
 ```
+
+`npm run build` first runs `scripts/split-details.ts`, which writes one detail file per entry to
+`public/data/e/<id>.json` (fetched by the compare view). Entry pages are rendered at build time with
+the full details.
 
 ## Entity file (`data/entities/<id>.json`)
 
@@ -27,7 +33,7 @@ Validated by `EntityFile` in [`src/lib/schema/index.ts`](../src/lib/schema/index
 | `sector` | text | Human-readable sector label. |
 | `refs.besta` | e.g. `"86-88"` | BFS BESTA economic-division code for recruitment difficulty (demand). |
 | `refs.qualLevel` | `apprenticeship` \| `higherVet` \| `higherEducation` | Which BESTA qualification level applies. |
-| `refs.nogaSection` | `A`…`U` | NOGA section for telework and weekly hours. |
+| `refs.nogaSection` | `A`…`U` or `*` | NOGA section for telework and weekly hours; `*` = whole economy (cross-sector jobs). |
 | `refs.vetName` | text | Exact occupation name in the BFS LABB certification table (EBA/EFZ). |
 | `refs.studyField` | `UH:<field>` / `FH:<field>` | BFS study-success field. |
 | `refs.gradIncome` | `uh:Master:<field>` / `fh:Bachelor:<field>` | BFS graduate-survey income cell. |

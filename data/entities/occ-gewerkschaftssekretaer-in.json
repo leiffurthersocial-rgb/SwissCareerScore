@@ -1,0 +1,58 @@
+{
+  "id": "occ-gewerkschaftssekretaer-in",
+  "kind": "occupation",
+  "route": "vocational",
+  "name": {
+    "en": "Trade Union Secretary",
+    "de": "Gewerkschaftssekretär / Gewerkschaftssekretärin",
+    "fr": "Secrétaire syndical",
+    "it": "Segretario sindacale"
+  },
+  "codes": {
+    "isco08": "1114",
+    "chIsco19": "11140"
+  },
+  "sector": "CH-ISCO-19 11: Geschäftsführer, Vorstände, leitende Verwaltungsbedienstete und A",
+  "refs": {
+    "qualLevel": "higherVet",
+    "nogaSection": "*",
+    "besta": "5-96"
+  },
+  "pathway": [],
+  "leadsTo": [],
+  "trainedVia": [
+    "edu-bp-gewerkschaftssekretaer-in"
+  ],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "mobility": {
+      "value": 5,
+      "unit": "rubric 0–9",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#11-international-mobility",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed): recognition 2/3, language independence 1/3, transferability 2/3."
+    },
+    "regionalUbiquity": {
+      "value": 2,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#12-regional-availability",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed)."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Occupation = CH-ISCO-19 occupation type 11140 (Leitende Bedienstete von Interessenorganisationen). Sector for demand/telework/hours assigned from the occupation group (estimate)."
+  }
+}

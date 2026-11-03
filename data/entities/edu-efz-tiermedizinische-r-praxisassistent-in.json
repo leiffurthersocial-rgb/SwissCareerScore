@@ -1,0 +1,56 @@
+{
+  "id": "edu-efz-tiermedizinische-r-praxisassistent-in",
+  "kind": "education",
+  "route": "vocational",
+  "eduType": "EFZ",
+  "name": {
+    "en": "Veterinary Assistant (EFZ)",
+    "de": "Tiermedizinische Praxisassistentin / Tiermedizinischer Praxisassistent EFZ",
+    "fr": "Assistant en médecine vétérinaire CFC",
+    "it": "Assistente di studio veterinario AFC"
+  },
+  "codes": {
+    "isco08": "3240"
+  },
+  "sector": "CH-ISCO-19 32: Assistenzberufe im Gesundheitswesen",
+  "refs": {
+    "qualLevel": "apprenticeship",
+    "besta": "68-75",
+    "nogaSection": "M",
+    "vetName": "Tiermedizinische/r Praxisassistent/in EFZ"
+  },
+  "pathway": [
+    {
+      "label": "Tiermedizinische Praxisassistentin / Tiermedizinischer Praxisassistent EFZ",
+      "years": 3.0,
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/tiermedizinische-r-praxisassistent-in-efz",
+      "confidence": "measured"
+    }
+  ],
+  "leadsTo": [
+    "occ-tiermedizinische-r-praxisassistent-in"
+  ],
+  "trainedVia": [],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "entryAccess": {
+      "value": 1,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/tiermedizinische-r-praxisassistent-in-efz",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "Apprenticeship contract with a training company required (default for dual VET)."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Language regions assumed (all three) — not individually verified."
+  }
+}

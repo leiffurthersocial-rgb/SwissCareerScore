@@ -1,0 +1,60 @@
+{
+  "id": "occ-seilbahner-in",
+  "kind": "occupation",
+  "route": "vocational",
+  "name": {
+    "en": "Funicular Assistant",
+    "de": "Kranführer, Aufzugmaschinisten und Bediener verwandter Hebeeinrichtungen, Seilbahn",
+    "fr": "Employé de remontées mécaniques",
+    "it": "Addetto degli impianti di trasporto a fune"
+  },
+  "codes": {
+    "isco08": "8343",
+    "chIsco19": "83432"
+  },
+  "sector": "CH-ISCO-19 83: Fahrzeugführer und Bediener mobiler Anlagen",
+  "refs": {
+    "qualLevel": "apprenticeship",
+    "nogaSection": "H",
+    "besta": "49-53"
+  },
+  "pathway": [],
+  "leadsTo": [],
+  "trainedVia": [
+    "edu-eba-seilbahner-in",
+    "edu-efz-seilbahn-mechatroniker-in",
+    "edu-bp-seilbahnfachmann-frau"
+  ],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "mobility": {
+      "value": 4,
+      "unit": "rubric 0–9",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#11-international-mobility",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed): recognition 1/3, language independence 2/3, transferability 1/3."
+    },
+    "regionalUbiquity": {
+      "value": 3,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#12-regional-availability",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed)."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Occupation = CH-ISCO-19 occupation type 83432 (Kranführer, Aufzugmaschinisten und Bediener verwandter Hebeeinrichtungen, Seilbahn). Sector for demand/telework/hours assigned from the occupation group (estimate). Several job titles share this occupation type: Seilbahn-Mechatroniker/in; Seilbahner / Seilbahnerin; Seilbahnfachfrau/-mann."
+  }
+}

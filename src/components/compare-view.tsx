@@ -1,11 +1,15 @@
 "use client";
 import { X } from "lucide-react";
 import { useLocale, useTranslations } from "next-intl";
+import { useEffect, useState } from "react";
 import { ScoreRadar, SERIES_COLORS } from "@/components/entity/radar";
 import { SourceBadge } from "@/components/source-badge";
 import { useAppState, useScores } from "@/hooks/use-app-state";
 import { Link } from "@/i18n/navigation";
 import { displayName, getEntity } from "@/lib/dataset";
+import type { DatasetEntity } from "@/lib/dataset-types";
+import { formatValue } from "@/lib/format";
+import { DIMENSIONS } from "@/lib/dimensions";
 import { DIMENSION_IDS } from "@/lib/dimensions";
 
 export function CompareView() {
@@ -18,8 +22,22 @@ export function CompareView() {
   const results = useScores(state.weights);
   const items = state.compare.map((id) => getEntity(id)).filter((e): e is NonNullable<typeof e> => !!e);
   const qs = queryString ? `?${queryString}` : "";
+  const [details, setDetails] = useState<Record<string, DatasetEntity>>({});
+  const key = state.compare.join("~");
+  useEffect(() => {
+    let alive = true;
+    for (const id of key.split("~").filter(Boolean)) {
+      fetch(`/data/e/${id}.json`)
+        .then((r) => (r.ok ? r.json() : null))
+        .then((d: DatasetEntity | null) => alive && d && setDetails((x) => ({ ...x, [id]: d })))
+        .catch(() => {});
+    }
+    return () => {
+      alive = false;
+    };
+  }, [key]);
   if (!items.length) return <p className="py-10 text-center text-muted-foreground">{t("empty")}</p>;
-  const dims = DIMENSION_IDS.filter((d) => items.some((e) => e.metrics[d]?.raw !== null && e.metrics[d] !== undefined));
+  const dims = DIMENSION_IDS.filter((d) => items.some((e) => e.m[d] !== undefined && e.m[d]![0] !== null));
 
   return (
     <div className="space-y-6">
@@ -75,14 +93,18 @@ export function CompareView() {
                 </th>
                 {items.map((e) => {
                   const s = results.get(e.id)?.dimensionScores[d]?.score;
-                  const m = e.metrics[d];
+                  const det = details[e.id];
+                  const m = det?.metrics[d];
+                  const raw = e.m[d]?.[0] ?? null;
                   return (
                     <td key={e.id} className="p-2 align-top">
                       <span className="font-semibold tabular-nums">{s !== null && s !== undefined ? s.toFixed(0) : "—"}</span>
                       <span className="mt-1 flex flex-wrap gap-1">
-                        {(m?.inputs ?? []).map((k) => (
-                          <SourceBadge key={k} dp={e.inputs[k]} label={ti(k)} className="text-xs" />
-                        ))}
+                        {det ? (
+                          (m?.inputs ?? []).map((k) => <SourceBadge key={k} dp={det.inputs[k]} label={ti(k)} className="text-xs" />)
+                        ) : (
+                          <span className="text-xs text-muted-foreground">{formatValue(raw, DIMENSIONS[d].unit, locale)}</span>
+                        )}
                       </span>
                     </td>
                   );

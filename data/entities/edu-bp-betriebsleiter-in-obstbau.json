@@ -1,0 +1,47 @@
+{
+  "id": "edu-bp-betriebsleiter-in-obstbau",
+  "kind": "education",
+  "route": "vocational",
+  "eduType": "BP",
+  "name": {
+    "en": "Betriebsleiterin Obstbau / Betriebsleiter Obstbau BP",
+    "de": "Betriebsleiterin Obstbau / Betriebsleiter Obstbau BP",
+    "fr": "Chef d'exploitation arboricole BF",
+    "it": "Responsabile di azienda frutticola APF"
+  },
+  "codes": {
+    "isco08": "6112"
+  },
+  "sector": "CH-ISCO-19 61: Fachkräfte in der Landwirtschaft",
+  "refs": {
+    "qualLevel": "higherVet",
+    "nogaSection": "A"
+  },
+  "pathway": [],
+  "leadsTo": [
+    "occ-obstbaumeister-in"
+  ],
+  "trainedVia": [],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "entryAccess": {
+      "value": 0,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/betriebsleiter-in-obstbau-bp",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "Admission to the federal exam is based on professional experience; no capacity limit."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Language regions assumed (all three) — not individually verified. No duration statement found on berufsberatung.ch — time to qualify is missing."
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "id": "occ-grundbaupraktiker-in",
+  "kind": "occupation",
+  "route": "vocational",
+  "name": {
+    "en": "Foundation Works Assistant",
+    "de": "Führer von Erdbewegungs- und verwandten Maschinen, Strassenbau",
+    "fr": "Assistant-constructeur de fondations",
+    "it": "Addetto sondatore"
+  },
+  "codes": {
+    "isco08": "8342",
+    "chIsco19": "83421"
+  },
+  "sector": "CH-ISCO-19 83: Fahrzeugführer und Bediener mobiler Anlagen",
+  "refs": {
+    "qualLevel": "apprenticeship",
+    "nogaSection": "H",
+    "besta": "49-53"
+  },
+  "pathway": [],
+  "leadsTo": [],
+  "trainedVia": [
+    "edu-eba-grundbaupraktiker-in",
+    "edu-efz-grundbauer-in",
+    "edu-eba-strassenbaupraktiker-in",
+    "edu-efz-strassenbauer-in",
+    "edu-efz-pflaesterer-pflaesterin",
+    "edu-eba-steinsetzer-in",
+    "edu-eba-gleisbaupraktiker-in",
+    "edu-efz-gleisbauer-in"
+  ],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "mobility": {
+      "value": 4,
+      "unit": "rubric 0–9",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#11-international-mobility",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed): recognition 1/3, language independence 2/3, transferability 1/3."
+    },
+    "regionalUbiquity": {
+      "value": 3,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#12-regional-availability",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed)."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Occupation = CH-ISCO-19 occupation type 83421 (Führer von Erdbewegungs- und verwandten Maschinen, Strassenbau). Sector for demand/telework/hours assigned from the occupation group (estimate). Several job titles share this occupation type: Gleisbauer / Gleisbauerin; Gleisbaupraktiker/in; Grundbauer / Grundbauerin; Grundbaupraktiker / Grundbaupraktikerin; Pflästerin / Pflästerer; Steinsetzer/in; Strassenbauer/in; Strassenbaupraktiker/in."
+  }
+}

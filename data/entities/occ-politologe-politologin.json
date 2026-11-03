@@ -1,0 +1,63 @@
+{
+  "id": "occ-politologe-politologin",
+  "kind": "occupation",
+  "route": "academic",
+  "name": {
+    "en": "Political scientist",
+    "de": "Philosophen, Historiker und Politologen",
+    "fr": "Philosophes, historiens et spécialistes des sciences politiques",
+    "it": "Filosofi, storici e specialisti in scienze politiche"
+  },
+  "codes": {
+    "isco08": "2633",
+    "chIsco19": "26330"
+  },
+  "sector": "CH-ISCO-19 26: Juristen, Sozialwissenschaftler und Kulturberufe",
+  "refs": {
+    "qualLevel": "higherEducation",
+    "nogaSection": "M",
+    "besta": "68-75"
+  },
+  "pathway": [],
+  "leadsTo": [],
+  "trainedVia": [
+    "edu-uh-politikwissenschaft",
+    "edu-uh-geschichte",
+    "edu-uh-philosophie",
+    "edu-uh-osteuropa-studien",
+    "edu-uh-musikwissenschaft",
+    "edu-uh-latein-griechisch"
+  ],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "mobility": {
+      "value": 4,
+      "unit": "rubric 0–9",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#11-international-mobility",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed): recognition 2/3, language independence 1/3, transferability 1/3."
+    },
+    "regionalUbiquity": {
+      "value": 2,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#12-regional-availability",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed)."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Occupation = CH-ISCO-19 occupation type 26330 (Philosophen, Historiker und Politologen). Sector for demand/telework/hours assigned from the occupation group (estimate). Several job titles share this occupation type: Historiker/in; Philosophen, Historiker und Politologen; Politologe/Politologin."
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "id": "occ-entwickler-in-digitales-business",
+  "kind": "occupation",
+  "route": "vocational",
+  "name": {
+    "en": "Softwareentwickler, Wirtschaftsinformatik",
+    "de": "Softwareentwickler, Wirtschaftsinformatik",
+    "fr": "Concepteurs de logiciels, informatique de gestion",
+    "it": "Sviluppatori di software, informatica di gestione"
+  },
+  "codes": {
+    "isco08": "2512",
+    "chIsco19": "25122"
+  },
+  "sector": "CH-ISCO-19 25: Spezialisten in der Informations- und Kommunikationstechnologie",
+  "refs": {
+    "qualLevel": "apprenticeship",
+    "nogaSection": "J",
+    "besta": "62-63"
+  },
+  "pathway": [],
+  "leadsTo": [],
+  "trainedVia": [
+    "edu-efz-entwickler-in-digitales-business",
+    "edu-bp-wirtschaftsinformatiker-in",
+    "edu-hf-wirtschaftsinformatiker-in",
+    "edu-uh-wirtschaftsinformatik",
+    "edu-fh-wirtschaftsinformatik"
+  ],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "mobility": {
+      "value": 9,
+      "unit": "rubric 0–9",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#11-international-mobility",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed): recognition 3/3, language independence 3/3, transferability 3/3."
+    },
+    "regionalUbiquity": {
+      "value": 2,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#12-regional-availability",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed)."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Occupation = CH-ISCO-19 occupation type 25122 (Softwareentwickler, Wirtschaftsinformatik). Sector for demand/telework/hours assigned from the occupation group (estimate). Several job titles share this occupation type: Entwicklerin digitales Business / Entwickler digitales Business; Wirtschaftsinformatiker / Wirtschaftsinformatikerin; Wirtschaftsinformatiker/in."
+  }
+}

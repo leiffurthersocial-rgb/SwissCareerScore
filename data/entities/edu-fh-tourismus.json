@@ -1,0 +1,64 @@
+{
+  "id": "edu-fh-tourismus",
+  "kind": "education",
+  "route": "mixed",
+  "eduType": "FH-BSc",
+  "name": {
+    "en": "Tourismus – BSc/BA (FH)",
+    "de": "Bachelor Tourismus (FH)",
+    "fr": null,
+    "it": null
+  },
+  "codes": {
+    "isco08": "1430"
+  },
+  "sector": "CH-ISCO-19 14: Führungskräfte in Hotels und Restaurants, im Handel und in der Er",
+  "refs": {
+    "qualLevel": "higherEducation",
+    "studyField": "FH:Wirtschaft und Dienstleistungen",
+    "gradIncome": "fh:Bachelor:Wirtschaft und Dienstleistungen",
+    "besta": "45-96",
+    "nogaSection": "*"
+  },
+  "pathway": [
+    {
+      "label": "EFZ with integrated Berufsmaturität (BM 1)",
+      "years": 3,
+      "sourceUrl": "https://www.berufsberatung.ch/de/bildungssystem/d/berufsmaturitaet",
+      "confidence": "measured",
+      "note": "Typical vocational route to FH (3–4 years); Gymnasiale Matura plus one year of work experience is an alternative."
+    },
+    {
+      "label": "Bachelor Tourismus (FH)",
+      "years": 3.0,
+      "sourceUrl": "https://www.berufsberatung.ch/de/studienrichtungen/tourismus",
+      "confidence": "measured"
+    }
+  ],
+  "leadsTo": [
+    "occ-tourismusfachperson-fh"
+  ],
+  "trainedVia": [],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "entryAccess": {
+      "value": 0,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://www.berufsberatung.ch/de/studienrichtungen/tourismus",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "Admission with a relevant Berufsmaturität; no capacity limit."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "English name of the field kept in German where no official translation was available. Target occupation chosen by the project as the most typical professional destination (estimate)."
+  }
+}

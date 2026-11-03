@@ -9,8 +9,8 @@
     "it": null
   },
   "codes": {
-    "isco08": "2611",
-    "chIsco19": "26110"
+    "isco08": "2610",
+    "chIsco19": "26100"
   },
   "sector": "Legal services",
   "refs": {
@@ -52,6 +52,7 @@
   },
   "meta": {
     "addedBy": "initial-dataset",
-    "reviewed": "2026-11-03"
+    "reviewed": "2026-11-03",
+    "notes": "CH-ISCO-19 code corrected to 26100 per SECO/AVAM occupation list."
   }
 }

@@ -1,0 +1,55 @@
+{
+  "id": "edu-efz-forstwart-in",
+  "kind": "education",
+  "route": "vocational",
+  "eduType": "EFZ",
+  "name": {
+    "en": "Skilled Forest Worker (EFZ)",
+    "de": "Forstwart / Forstwartin EFZ",
+    "fr": "Forestier-bûcheron CFC",
+    "it": "Selvicoltore AFC"
+  },
+  "codes": {
+    "isco08": "6210"
+  },
+  "sector": "CH-ISCO-19 62: Fachkräfte in Forstwirtschaft, Fischerei und Jagd – Marktprodukti",
+  "refs": {
+    "qualLevel": "apprenticeship",
+    "nogaSection": "A",
+    "vetName": "Forstwart/in EFZ"
+  },
+  "pathway": [
+    {
+      "label": "Forstwart / Forstwartin EFZ",
+      "years": 3.0,
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/forstwart-in-efz",
+      "confidence": "measured"
+    }
+  ],
+  "leadsTo": [
+    "occ-forstpraktiker-in"
+  ],
+  "trainedVia": [],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "entryAccess": {
+      "value": 1,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/forstwart-in-efz",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "Apprenticeship contract with a training company required (default for dual VET)."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Language regions assumed (all three) — not individually verified."
+  }
+}

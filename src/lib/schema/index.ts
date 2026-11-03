@@ -122,7 +122,7 @@ export const EntityFile = z
         /** Qualification level of the job / path for BESTA recruitment difficulty. */
         qualLevel: z.enum(["apprenticeship", "higherVet", "higherEducation"]).optional(),
         /** NOGA section letter(s) for SAKE tables by economic section (telework, hours). */
-        nogaSection: z.string().regex(/^[A-U]$/).optional(),
+        nogaSection: z.string().regex(/^([A-U]|\*)$/).optional(), // "*" = whole economy
         /** Exact occupation name in BFS LABB certification table (VET only). */
         vetName: z.string().optional(),
         /** BFS study-success field: "UH:<Fachbereichsgruppe>" or "FH:<Fachbereich>". */

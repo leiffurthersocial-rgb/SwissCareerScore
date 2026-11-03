@@ -1,0 +1,64 @@
+{
+  "id": "edu-ph-unterricht-sekundarstufe-1",
+  "kind": "education",
+  "route": "academic",
+  "eduType": "FH-BSc",
+  "name": {
+    "en": "Unterricht Sekundarstufe 1 – Teaching diploma (PH)",
+    "de": "Lehrdiplom Unterricht Sekundarstufe 1 (PH)",
+    "fr": null,
+    "it": null
+  },
+  "codes": {
+    "isco08": "2330"
+  },
+  "sector": "CH-ISCO-19 23: Lehrkräfte",
+  "refs": {
+    "qualLevel": "higherEducation",
+    "gradIncome": "fh:Lehrdiplome:Lehrkräfteausbildung",
+    "besta": "85",
+    "nogaSection": "P"
+  },
+  "pathway": [
+    {
+      "label": "Gymnasiale Maturität",
+      "years": 4,
+      "sourceUrl": "https://www.berufsberatung.ch/de/bildungssystem/d/gymnasiale-maturitaetsschulen",
+      "confidence": "estimated",
+      "note": "berufsberatung.ch states 3–6 years depending on canton (partly overlapping compulsory school); 4 years after compulsory school assumed."
+    },
+    {
+      "label": "Studium Unterricht Sekundarstufe 1 (PH)",
+      "years": 3.0,
+      "sourceUrl": "https://www.berufsberatung.ch/de/studienrichtungen/unterricht-sekundarstufe-1",
+      "confidence": "measured",
+      "note": "Teaching diploma programme (bachelor and/or master as stated)."
+    }
+  ],
+  "leadsTo": [
+    "occ-lehrperson-sekundarstufe-i"
+  ],
+  "trainedVia": [],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "entryAccess": {
+      "value": 1,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://www.berufsberatung.ch/de/studienrichtungen/unterricht-sekundarstufe-1",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "Admission with Matura; some PH run aptitude assessments."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "English name of the field kept in German where no official translation was available. Target occupation chosen by the project as the most typical professional destination (estimate)."
+  }
+}

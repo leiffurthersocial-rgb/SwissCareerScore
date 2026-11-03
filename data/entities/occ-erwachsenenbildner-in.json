@@ -1,0 +1,59 @@
+{
+  "id": "occ-erwachsenenbildner-in",
+  "kind": "occupation",
+  "route": "vocational",
+  "name": {
+    "en": "Adult Educationalist",
+    "de": "Lehrkräfte",
+    "fr": "Formateur d'adultes",
+    "it": "Formatore di adulti"
+  },
+  "codes": {
+    "isco08": "2300",
+    "chIsco19": "23000"
+  },
+  "sector": "CH-ISCO-19 23: Lehrkräfte",
+  "refs": {
+    "qualLevel": "higherVet",
+    "nogaSection": "P",
+    "besta": "85"
+  },
+  "pathway": [],
+  "leadsTo": [],
+  "trainedVia": [
+    "edu-hf-erwachsenenbildner-in",
+    "edu-bp-ausbilder-in"
+  ],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "mobility": {
+      "value": 3,
+      "unit": "rubric 0–9",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#11-international-mobility",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed): recognition 2/3, language independence 0/3, transferability 1/3."
+    },
+    "regionalUbiquity": {
+      "value": 3,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#12-regional-availability",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed)."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Occupation = CH-ISCO-19 occupation type 23000 (Lehrkräfte). Sector for demand/telework/hours assigned from the occupation group (estimate). Several job titles share this occupation type: Ausbilder / Ausbilderin; Erwachsenenbildner / Erwachsenenbildnerin."
+  }
+}

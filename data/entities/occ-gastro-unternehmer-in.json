@@ -1,0 +1,61 @@
+{
+  "id": "occ-gastro-unternehmer-in",
+  "kind": "occupation",
+  "route": "vocational",
+  "name": {
+    "en": "Führungskräfte in Restaurants",
+    "de": "Führungskräfte in Restaurants",
+    "fr": "Directeurs et gérants, restauration",
+    "it": "Dirigenti nella ristorazione"
+  },
+  "codes": {
+    "isco08": "1412",
+    "chIsco19": "14120"
+  },
+  "sector": "CH-ISCO-19 14: Führungskräfte in Hotels und Restaurants, im Handel und in der Er",
+  "refs": {
+    "qualLevel": "higherVet",
+    "nogaSection": "I",
+    "besta": "55-56"
+  },
+  "pathway": [],
+  "leadsTo": [],
+  "trainedVia": [
+    "edu-hfp-gastro-unternehmer-in",
+    "edu-hfp-leiter-in-restauration",
+    "edu-hfp-leiter-in-gemeinschaftsgastronomie",
+    "edu-bp-gastro-betriebsleiter-in"
+  ],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "mobility": {
+      "value": 5,
+      "unit": "rubric 0–9",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#11-international-mobility",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed): recognition 2/3, language independence 1/3, transferability 2/3."
+    },
+    "regionalUbiquity": {
+      "value": 2,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#12-regional-availability",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed)."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Occupation = CH-ISCO-19 occupation type 14120 (Führungskräfte in Restaurants). Sector for demand/telework/hours assigned from the occupation group (estimate). Several job titles share this occupation type: Gastro-Betriebsleiter / Gastro-Betriebsleiterin; Gastro-Unternehmer/in; Leiterin Gemeinschaftsgastronomie / Leiter Gemeinschaftsgastronomie; Leiterin Restauration / Leiter Restauration."
+  }
+}

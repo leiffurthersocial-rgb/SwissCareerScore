@@ -322,6 +322,10 @@
   "telework": {
     "year": 2025,
     "bySection": {
+      "*": {
+        "label": "Total (whole economy)",
+        "pct": 37.3
+      },
       "A": {
         "label": "Land- und Forstwirtschaft",
         "pct": 21.1

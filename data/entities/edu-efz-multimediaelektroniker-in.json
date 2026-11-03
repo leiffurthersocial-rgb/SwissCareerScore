@@ -1,0 +1,56 @@
+{
+  "id": "edu-efz-multimediaelektroniker-in",
+  "kind": "education",
+  "route": "vocational",
+  "eduType": "EFZ",
+  "name": {
+    "en": "Multimedia Electronics Technician (EFZ)",
+    "de": "Multimediaelektroniker / Multimediaelektronikerin EFZ",
+    "fr": "Electronicien en multimédia CFC",
+    "it": "Elettronico multimediale AFC"
+  },
+  "codes": {
+    "isco08": "7422"
+  },
+  "sector": "CH-ISCO-19 74: Elektriker und Elektroniker",
+  "refs": {
+    "qualLevel": "apprenticeship",
+    "besta": "26",
+    "nogaSection": "C",
+    "vetName": "Multimediaelektroniker/in EFZ"
+  },
+  "pathway": [
+    {
+      "label": "Multimediaelektroniker / Multimediaelektronikerin EFZ",
+      "years": 4.0,
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/multimediaelektroniker-in-efz",
+      "confidence": "measured"
+    }
+  ],
+  "leadsTo": [
+    "occ-multimediaelektroniker-in"
+  ],
+  "trainedVia": [],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "entryAccess": {
+      "value": 1,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/multimediaelektroniker-in-efz",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "Apprenticeship contract with a training company required (default for dual VET)."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Language regions assumed (all three) — not individually verified."
+  }
+}

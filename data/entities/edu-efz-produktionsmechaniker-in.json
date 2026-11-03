@@ -1,0 +1,56 @@
+{
+  "id": "edu-efz-produktionsmechaniker-in",
+  "kind": "education",
+  "route": "vocational",
+  "eduType": "EFZ",
+  "name": {
+    "en": "Produktionsmechaniker / Produktionsmechanikerin EFZ",
+    "de": "Produktionsmechaniker / Produktionsmechanikerin EFZ",
+    "fr": "Mécanicien de production CFC",
+    "it": "Meccanico di produzione AFC"
+  },
+  "codes": {
+    "isco08": "7200"
+  },
+  "sector": "Industry (MEM)",
+  "refs": {
+    "qualLevel": "apprenticeship",
+    "besta": "28",
+    "nogaSection": "C",
+    "vetName": "Produktionsmechaniker/in EFZ"
+  },
+  "pathway": [
+    {
+      "label": "Produktionsmechaniker / Produktionsmechanikerin EFZ",
+      "years": 3.0,
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/produktionsmechaniker-in-efz",
+      "confidence": "measured"
+    }
+  ],
+  "leadsTo": [
+    "occ-polymechaniker"
+  ],
+  "trainedVia": [],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "entryAccess": {
+      "value": 1,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/produktionsmechaniker-in-efz",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "Apprenticeship contract with a training company required (default for dual VET)."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Language regions assumed (all three) — not individually verified."
+  }
+}

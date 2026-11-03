@@ -1,0 +1,48 @@
+{
+  "id": "edu-bp-spezialist-in-fuer-tanksicherheit",
+  "kind": "education",
+  "route": "vocational",
+  "eduType": "BP",
+  "name": {
+    "en": "Spezialistin für Tanksicherheit / Spezialist für Tanksicherheit BP",
+    "de": "Spezialistin für Tanksicherheit / Spezialist für Tanksicherheit BP",
+    "fr": "Spécialiste pour la sécurité des citernes BF",
+    "it": "Specialista per la sicurezza dei serbatoi APF"
+  },
+  "codes": {
+    "isco08": "3112"
+  },
+  "sector": "CH-ISCO-19 31: Ingenieurtechnische und vergleichbare Fachkräfte",
+  "refs": {
+    "qualLevel": "higherVet",
+    "besta": "10-33",
+    "nogaSection": "C"
+  },
+  "pathway": [],
+  "leadsTo": [
+    "occ-spezialist-in-fuer-tanksicherheit"
+  ],
+  "trainedVia": [],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "entryAccess": {
+      "value": 0,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/spezialist-in-fuer-tanksicherheit-bp",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "Admission to the federal exam is based on professional experience; no capacity limit."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Language regions assumed (all three) — not individually verified. No duration statement found on berufsberatung.ch — time to qualify is missing."
+  }
+}

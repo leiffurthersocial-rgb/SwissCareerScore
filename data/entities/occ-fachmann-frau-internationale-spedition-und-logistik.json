@@ -1,0 +1,60 @@
+{
+  "id": "occ-fachmann-frau-internationale-spedition-und-logistik",
+  "kind": "occupation",
+  "route": "vocational",
+  "name": {
+    "en": "Specialist in International Freight Forwarding and Logistics",
+    "de": "Fachkräfte für Abrechnungs- und Speditionsdienstleistungen",
+    "fr": "Spécialiste en expédition et logistique internationale",
+    "it": "Specialista di spedizione e logistica internazionale"
+  },
+  "codes": {
+    "isco08": "3331",
+    "chIsco19": "33310"
+  },
+  "sector": "CH-ISCO-19 33: Betriebswirtschaftliche und kaufmännische Fachkräfte und Verwaltu",
+  "refs": {
+    "qualLevel": "higherVet",
+    "nogaSection": "*",
+    "besta": "5-96"
+  },
+  "pathway": [],
+  "leadsTo": [],
+  "trainedVia": [
+    "edu-bp-fachmann-frau-internationale-spedition-und-logistik",
+    "edu-bp-aussenhandelsfachmann-frau",
+    "edu-bp-zolldeklarant-in"
+  ],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "mobility": {
+      "value": 4,
+      "unit": "rubric 0–9",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#11-international-mobility",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed): recognition 1/3, language independence 1/3, transferability 2/3."
+    },
+    "regionalUbiquity": {
+      "value": 3,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#12-regional-availability",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed)."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Occupation = CH-ISCO-19 occupation type 33310 (Fachkräfte für Abrechnungs- und Speditionsdienstleistungen). Sector for demand/telework/hours assigned from the occupation group (estimate). Several job titles share this occupation type: Aussenhandelsfachfrau/-mann; Fachfrau Internationale Spedition und Logistik / Fachmann Internationale Spedition und Logistik; Zolldeklarant / Zolldeklarantin."
+  }
+}

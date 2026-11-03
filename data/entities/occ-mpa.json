@@ -21,7 +21,9 @@
   "pathway": [],
   "leadsTo": [],
   "trainedVia": [
-    "edu-efz-mpa"
+    "edu-efz-mpa",
+    "edu-efz-medizinproduktetechnologe-login",
+    "edu-bp-medizinische-r-praxiskoordinator-in"
   ],
   "languageRegions": [
     "de",

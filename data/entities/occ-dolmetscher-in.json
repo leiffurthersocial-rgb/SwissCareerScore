@@ -1,0 +1,77 @@
+{
+  "id": "occ-dolmetscher-in",
+  "kind": "occupation",
+  "route": "vocational",
+  "name": {
+    "en": "Übersetzer, Dolmetscher und andere Linguisten",
+    "de": "Übersetzer, Dolmetscher und andere Linguisten",
+    "fr": "Traducteurs, interprètes et linguistes",
+    "it": "Traduttori, interpreti e altri linguisti"
+  },
+  "codes": {
+    "isco08": "2643",
+    "chIsco19": "26430"
+  },
+  "sector": "CH-ISCO-19 26: Juristen, Sozialwissenschaftler und Kulturberufe",
+  "refs": {
+    "qualLevel": "higherVet",
+    "nogaSection": "M",
+    "besta": "68-75"
+  },
+  "pathway": [],
+  "leadsTo": [],
+  "trainedVia": [
+    "edu-bp-dolmetscher-in",
+    "edu-uh-uebersetzen-dolmetschen",
+    "edu-fh-uebersetzen-dolmetschen",
+    "edu-uh-allgemeine-sprachwissenschaft",
+    "edu-uh-vergleichende-literaturwissenschaft",
+    "edu-uh-deutsche-sprach-und-literaturwissenschaft",
+    "edu-uh-englische-sprach-und-literaturwissenschaft",
+    "edu-uh-franzoesische-sprach-und-literaturwissenschaft",
+    "edu-uh-italienische-sprach-und-literaturwissenschaft",
+    "edu-uh-spanische-sprach-und-literaturwissenschaft",
+    "edu-uh-slavische-sprach-und-literaturwissenschaft",
+    "edu-uh-nordische-sprach-und-literaturwissenschaft",
+    "edu-uh-neugriechische-sprach-und-literaturwissenschaft",
+    "edu-uh-raetoromanische-sprach-und-literaturwissenschaft",
+    "edu-uh-armenische-sprach-und-literaturwissenschaft",
+    "edu-uh-chinesische-sprachen-und-kulturen",
+    "edu-uh-japanische-sprache-und-kulturen",
+    "edu-uh-indische-sprachen-und-kulturen",
+    "edu-uh-islamische-kulturen-arabisch",
+    "edu-uh-juedische-kulturen-hebraeisch"
+  ],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "mobility": {
+      "value": 4,
+      "unit": "rubric 0–9",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#11-international-mobility",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed): recognition 2/3, language independence 1/3, transferability 1/3."
+    },
+    "regionalUbiquity": {
+      "value": 2,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#12-regional-availability",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed)."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Occupation = CH-ISCO-19 occupation type 26430 (Übersetzer, Dolmetscher und andere Linguisten). Sector for demand/telework/hours assigned from the occupation group (estimate). Several job titles share this occupation type: Dolmetscher/in; Übersetzer, Dolmetscher und andere Linguisten; Übersetzer/in, Dolmetscher/in."
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "id": "occ-geruestbauer-in",
+  "kind": "occupation",
+  "route": "vocational",
+  "name": {
+    "en": "Scaffold Erector",
+    "de": "Baukonstruktions- und verwandte Berufe, anderweitig nicht genannt",
+    "fr": "Echafaudeur",
+    "it": "Costruttore di ponteggi"
+  },
+  "codes": {
+    "isco08": "7119",
+    "chIsco19": "71190"
+  },
+  "sector": "CH-ISCO-19 71: Bau- und Ausbaufachkräfte sowie verwandte Berufe, ausgenommen Ele",
+  "refs": {
+    "qualLevel": "apprenticeship",
+    "nogaSection": "F",
+    "besta": "41-43"
+  },
+  "pathway": [],
+  "leadsTo": [],
+  "trainedVia": [
+    "edu-efz-geruestbauer-in",
+    "edu-eba-geruestbaupraktiker-in",
+    "edu-bp-bautenschutz-fachmann-frau"
+  ],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "mobility": {
+      "value": 6,
+      "unit": "rubric 0–9",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#11-international-mobility",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed): recognition 1/3, language independence 3/3, transferability 2/3."
+    },
+    "regionalUbiquity": {
+      "value": 3,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#12-regional-availability",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed)."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Occupation = CH-ISCO-19 occupation type 71190 (Baukonstruktions- und verwandte Berufe, anderweitig nicht genannt). Sector for demand/telework/hours assigned from the occupation group (estimate). Several job titles share this occupation type: Bautenschutz-Fachmann / Bautenschutz-Fachfrau; Gerüstbauer/in; Gerüstbaupraktiker / Gerüstbaupraktikerin."
+  }
+}

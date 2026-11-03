@@ -1,0 +1,56 @@
+{
+  "id": "edu-efz-gaertner-in",
+  "kind": "education",
+  "route": "vocational",
+  "eduType": "EFZ",
+  "name": {
+    "en": "Gardener; Specialisation Production Or Landscaping (EFZ)",
+    "de": "Gärtner / Gärtnerin EFZ",
+    "fr": "Horticulteur CFC",
+    "it": "Giardiniere AFC"
+  },
+  "codes": {
+    "isco08": "6113"
+  },
+  "sector": "CH-ISCO-19 61: Fachkräfte in der Landwirtschaft",
+  "refs": {
+    "qualLevel": "apprenticeship",
+    "besta": "77-82",
+    "nogaSection": "N",
+    "vetName": "Gärtner/in EFZ"
+  },
+  "pathway": [
+    {
+      "label": "Gärtner / Gärtnerin EFZ",
+      "years": 3.0,
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/gaertner-in-efz",
+      "confidence": "measured"
+    }
+  ],
+  "leadsTo": [
+    "occ-gaertner-in"
+  ],
+  "trainedVia": [],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "entryAccess": {
+      "value": 1,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/gaertner-in-efz",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "Apprenticeship contract with a training company required (default for dual VET)."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Language regions assumed (all three) — not individually verified."
+  }
+}

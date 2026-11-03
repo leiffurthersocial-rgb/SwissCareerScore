@@ -1,0 +1,47 @@
+{
+  "id": "edu-bp-betriebsleiter-in-weinbau",
+  "kind": "education",
+  "route": "vocational",
+  "eduType": "BP",
+  "name": {
+    "en": "Vine Grower (BP)",
+    "de": "Betriebsleiter Weinbau / Betriebsleiterin Weinbau BP",
+    "fr": "Chef d'exploitation viticole BF",
+    "it": "Responsabile di azienda viticola APF"
+  },
+  "codes": {
+    "isco08": "6112"
+  },
+  "sector": "CH-ISCO-19 61: Fachkräfte in der Landwirtschaft",
+  "refs": {
+    "qualLevel": "higherVet",
+    "nogaSection": "A"
+  },
+  "pathway": [],
+  "leadsTo": [
+    "occ-winzermeister-in"
+  ],
+  "trainedVia": [],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "entryAccess": {
+      "value": 0,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/betriebsleiter-in-weinbau-bp",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "Admission to the federal exam is based on professional experience; no capacity limit."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Language regions assumed (all three) — not individually verified. No duration statement found on berufsberatung.ch — time to qualify is missing."
+  }
+}

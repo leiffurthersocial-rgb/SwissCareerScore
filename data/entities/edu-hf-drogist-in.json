@@ -1,0 +1,63 @@
+{
+  "id": "edu-hf-drogist-in",
+  "kind": "education",
+  "route": "vocational",
+  "eduType": "HF",
+  "name": {
+    "en": "Druggist (HF)",
+    "de": "Drogist/in HF",
+    "fr": "Droguiste ES",
+    "it": "Droghiere SSS"
+  },
+  "codes": {
+    "isco08": "5223"
+  },
+  "sector": "CH-ISCO-19 52: Verkaufskräfte",
+  "refs": {
+    "qualLevel": "higherVet",
+    "besta": "45-47",
+    "nogaSection": "G"
+  },
+  "pathway": [
+    {
+      "label": "EFZ apprenticeship in a related occupation",
+      "years": 3,
+      "sourceUrl": "https://www.berufsberatung.ch/de/bildungssystem/d/lehre-efz",
+      "confidence": "measured",
+      "note": "Admission normally requires a relevant EFZ (3 or 4 years); the shorter variant is counted."
+    },
+    {
+      "label": "Drogist/in HF",
+      "years": 2.0,
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/drogist-in-hf",
+      "confidence": "measured",
+      "note": "Full-time minimum; part-time variants take longer."
+    }
+  ],
+  "leadsTo": [
+    "occ-drogist-in"
+  ],
+  "trainedVia": [],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "entryAccess": {
+      "value": 1,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/drogist-in-hf",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "HF entrance procedure (relevant EFZ required)."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Language regions assumed (all three) — not individually verified."
+  }
+}

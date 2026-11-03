@@ -1,0 +1,68 @@
+{
+  "id": "occ-heizungsmeister-in",
+  "kind": "occupation",
+  "route": "vocational",
+  "name": {
+    "en": "Master Heating Technician",
+    "de": "Führungskräfte in der Produktion im Bau, Ausbaugewerbe",
+    "fr": "Maître chauffagiste",
+    "it": "Maestro in riscaldamenti"
+  },
+  "codes": {
+    "isco08": "1323",
+    "chIsco19": "13232"
+  },
+  "sector": "CH-ISCO-19 13: Führungskräfte in der Produktion und bei spezialisierten Dienstle",
+  "refs": {
+    "qualLevel": "higherVet",
+    "nogaSection": "C",
+    "besta": "5-43"
+  },
+  "pathway": [],
+  "leadsTo": [],
+  "trainedVia": [
+    "edu-hfp-heizungsmeister-in",
+    "edu-hfp-glasermeister-in",
+    "edu-hfp-bodenlegermeister-in",
+    "edu-hfp-plattenlegermeister-in",
+    "edu-hfp-spenglermeister-in",
+    "edu-hfp-sanitaermeister-in",
+    "edu-hfp-holzbau-meister-in",
+    "edu-hfp-metallbaumeister-in",
+    "edu-hfp-kaminfegermeister-in",
+    "edu-hfp-malermeister-in",
+    "edu-hfp-ofenbauer-meister-in"
+  ],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "mobility": {
+      "value": 5,
+      "unit": "rubric 0–9",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#11-international-mobility",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed): recognition 2/3, language independence 1/3, transferability 2/3."
+    },
+    "regionalUbiquity": {
+      "value": 2,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#12-regional-availability",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed)."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Occupation = CH-ISCO-19 occupation type 13232 (Führungskräfte in der Produktion im Bau, Ausbaugewerbe). Sector for demand/telework/hours assigned from the occupation group (estimate). Several job titles share this occupation type: Bodenlegermeister/in; Glasermeister / Glasermeisterin; Heizungsmeister / Heizungsmeisterin; Holzbau-Meister / Holzbau-Meisterin; Kaminfegermeister/in; Malermeister / Malermeisterin; Metallbaumeister/in; Ofenbauer-Meister / Ofenbauer-Meisterin; Plattenlegermeister / Plattenlegermeisterin; Sanitärmeister / Sanitärmeisterin; Spenglermeister/in."
+  }
+}

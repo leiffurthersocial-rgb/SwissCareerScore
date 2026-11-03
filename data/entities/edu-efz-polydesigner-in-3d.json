@@ -1,0 +1,56 @@
+{
+  "id": "edu-efz-polydesigner-in-3d",
+  "kind": "education",
+  "route": "vocational",
+  "eduType": "EFZ",
+  "name": {
+    "en": "Polydesigner 3D (EFZ)",
+    "de": "Polydesigner 3D / Polydesignerin 3D EFZ",
+    "fr": "Polydesigner 3D (décorateur) CFC",
+    "it": "Decoratore 3D AFC"
+  },
+  "codes": {
+    "isco08": "3432"
+  },
+  "sector": "CH-ISCO-19 34: Juristische, soziale, kulturelle und verwandte Fachkräfte",
+  "refs": {
+    "qualLevel": "apprenticeship",
+    "besta": "86-88",
+    "nogaSection": "Q",
+    "vetName": "Polydesigner/in 3D EFZ"
+  },
+  "pathway": [
+    {
+      "label": "Polydesigner 3D / Polydesignerin 3D EFZ",
+      "years": 4.0,
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/polydesigner-in-3d-efz",
+      "confidence": "measured"
+    }
+  ],
+  "leadsTo": [
+    "occ-raumausstatter-in"
+  ],
+  "trainedVia": [],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "entryAccess": {
+      "value": 1,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/polydesigner-in-3d-efz",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "Apprenticeship contract with a training company required (default for dual VET)."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Language regions assumed (all three) — not individually verified."
+  }
+}

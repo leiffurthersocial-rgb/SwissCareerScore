@@ -1,0 +1,48 @@
+{
+  "id": "edu-hfp-fachexperte-fachexpertin-operationsbereich",
+  "kind": "education",
+  "route": "vocational",
+  "eduType": "HFP",
+  "name": {
+    "en": "Expert in Operating Room Department (HFP)",
+    "de": "Fachexperte Operationsbereich / Fachexpertin Operationsbereich HFP",
+    "fr": "Expert domaine opératoire DF",
+    "it": "Esperto in ambito operatorio DPF"
+  },
+  "codes": {
+    "isco08": "2221"
+  },
+  "sector": "CH-ISCO-19 22: Spezialisten in Gesundheitsberufen",
+  "refs": {
+    "qualLevel": "higherVet",
+    "besta": "86-88",
+    "nogaSection": "Q"
+  },
+  "pathway": [],
+  "leadsTo": [
+    "occ-fachexperte-expertin-respiratory-care"
+  ],
+  "trainedVia": [],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "entryAccess": {
+      "value": 0,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/fachexperte-fachexpertin-operationsbereich-hfp",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "Admission to the federal exam is based on professional experience; no capacity limit."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Language regions assumed (all three) — not individually verified. No duration statement found on berufsberatung.ch — time to qualify is missing."
+  }
+}

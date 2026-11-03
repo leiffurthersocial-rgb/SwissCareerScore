@@ -1,0 +1,77 @@
+{
+  "id": "occ-packaging-manager-in",
+  "kind": "occupation",
+  "route": "vocational",
+  "name": {
+    "en": "Packaging Manager",
+    "de": "Führungskräfte in der Produktion von Waren",
+    "fr": "Packaging Manager",
+    "it": "Packaging Manager"
+  },
+  "codes": {
+    "isco08": "1321",
+    "chIsco19": "13210"
+  },
+  "sector": "CH-ISCO-19 13: Führungskräfte in der Produktion und bei spezialisierten Dienstle",
+  "refs": {
+    "qualLevel": "higherVet",
+    "nogaSection": "C",
+    "besta": "5-43"
+  },
+  "pathway": [],
+  "leadsTo": [],
+  "trainedVia": [
+    "edu-hfp-packaging-manager-in",
+    "edu-bp-produktionsleiter-in-schreinerei",
+    "edu-hfp-betriebsleiter-in-baeckerei-konditorei-confiserie",
+    "edu-hfp-motorgeraetemechanikermeister-in",
+    "edu-hfp-produktionsleiter-in-industrie",
+    "edu-hfp-betriebsleiter-in-zweiradbranche",
+    "edu-hfp-metzgermeister-in",
+    "edu-hfp-orthopaedieschuhmachermeister-in",
+    "edu-hfp-publikationsmanager-in",
+    "edu-hfp-landmaschinenmechanikermeister-in",
+    "edu-hfp-betriebsleiter-in-carrosserie",
+    "edu-hfp-schreinermeister-in",
+    "edu-hfp-weintechnologiemeister-in",
+    "edu-bp-betriebsfachmann-frau-druck-und-verpackungstechnologie",
+    "edu-hfp-meister-in-leder-und-textil",
+    "edu-hfp-industriepolstermeister-in",
+    "edu-hfp-chemie-und-pharmaproduktionsleiter-in",
+    "edu-bp-betriebsleiter-in-weintechnologie",
+    "edu-bp-betriebsleiter-in-fleischwirtschaft",
+    "edu-bp-chef-in-baecker-in-konditor-in-confiseur-in"
+  ],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "mobility": {
+      "value": 5,
+      "unit": "rubric 0–9",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#11-international-mobility",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed): recognition 2/3, language independence 1/3, transferability 2/3."
+    },
+    "regionalUbiquity": {
+      "value": 2,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#12-regional-availability",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed)."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Occupation = CH-ISCO-19 occupation type 13210 (Führungskräfte in der Produktion von Waren). Sector for demand/telework/hours assigned from the occupation group (estimate). Several job titles share this occupation type: Betriebsfachfrau Druck- und Verpackungstechnologie / Betriebsfachmann Druck- und Verpackungstechnologie; Betriebsleiter Fleischwirtschaft / Betriebsleiterin Fleischwirtschaft; Betriebsleiter Zweiradbranche / Betriebsleiterin Zweiradbranche; Betriebsleiterin Bäckerei-Konditorei-Confiserie / Betriebsleiter Bäckerei-Konditorei-Confiserie; Betriebsleiterin Carrosserie / Betriebsleiter Carrosserie; Bet."
+  }
+}

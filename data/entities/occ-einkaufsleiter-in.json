@@ -1,0 +1,63 @@
+{
+  "id": "occ-einkaufsleiter-in",
+  "kind": "occupation",
+  "route": "vocational",
+  "name": {
+    "en": "Purchasing Manager",
+    "de": "Führungskräfte in der Beschaffung, Logistik und in verwandten Bereichen",
+    "fr": "Responsable achats",
+    "it": "Responsabile degli acquisti"
+  },
+  "codes": {
+    "isco08": "1324",
+    "chIsco19": "13240"
+  },
+  "sector": "CH-ISCO-19 13: Führungskräfte in der Produktion und bei spezialisierten Dienstle",
+  "refs": {
+    "qualLevel": "higherVet",
+    "nogaSection": "C",
+    "besta": "5-43"
+  },
+  "pathway": [],
+  "leadsTo": [],
+  "trainedVia": [
+    "edu-hfp-einkaufsleiter-in",
+    "edu-hfp-supply-chain-manager-in",
+    "edu-hfp-manager-in-oeffentlicher-verkehr",
+    "edu-hfp-seilbahnmanager-in",
+    "edu-bp-spezialist-in-oeffentlicher-verkehr",
+    "edu-hfp-betriebsleiter-in-transport-und-logistik"
+  ],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "mobility": {
+      "value": 5,
+      "unit": "rubric 0–9",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#11-international-mobility",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed): recognition 2/3, language independence 1/3, transferability 2/3."
+    },
+    "regionalUbiquity": {
+      "value": 2,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#12-regional-availability",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed)."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Occupation = CH-ISCO-19 occupation type 13240 (Führungskräfte in der Beschaffung, Logistik und in verwandten Bereichen). Sector for demand/telework/hours assigned from the occupation group (estimate). Several job titles share this occupation type: Betriebsleiter Transport und Logistik / Betriebsleiterin Transport und Logistik; Einkaufsleiter / Einkaufsleiterin; Manager öffentlicher Verkehr / Managerin öffentlicher Verkehr; Seilbahnmanager / Seilbahnmanagerin; Spezialistin öffentlicher Verkehr / Spezialist öffentlicher Verkehr; Supply Chain Manager / Supply Chain Managerin."
+  }
+}

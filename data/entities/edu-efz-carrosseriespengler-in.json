@@ -1,0 +1,56 @@
+{
+  "id": "edu-efz-carrosseriespengler-in",
+  "kind": "education",
+  "route": "vocational",
+  "eduType": "EFZ",
+  "name": {
+    "en": "Carrosseriespengler / Carrosseriespenglerin EFZ",
+    "de": "Carrosseriespengler / Carrosseriespenglerin EFZ",
+    "fr": "Carrossier-tôlier CFC",
+    "it": "Carrozziere lattoniere AFC"
+  },
+  "codes": {
+    "isco08": "7213"
+  },
+  "sector": "CH-ISCO-19 72: Metallarbeiter, Mechaniker, Polymechaniker, Produktionsmechaniker",
+  "refs": {
+    "qualLevel": "apprenticeship",
+    "besta": "28",
+    "nogaSection": "C",
+    "vetName": "Carrosseriespengler/in EFZ"
+  },
+  "pathway": [
+    {
+      "label": "Carrosseriespengler / Carrosseriespenglerin EFZ",
+      "years": 4.0,
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/carrosseriespengler-in-efz",
+      "confidence": "measured"
+    }
+  ],
+  "leadsTo": [
+    "occ-carrosseriereparateur-in"
+  ],
+  "trainedVia": [],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "entryAccess": {
+      "value": 1,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/carrosseriespengler-in-efz",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "Apprenticeship contract with a training company required (default for dual VET)."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Language regions assumed (all three) — not individually verified."
+  }
+}

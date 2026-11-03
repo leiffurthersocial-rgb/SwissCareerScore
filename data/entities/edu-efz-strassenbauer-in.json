@@ -1,0 +1,56 @@
+{
+  "id": "edu-efz-strassenbauer-in",
+  "kind": "education",
+  "route": "vocational",
+  "eduType": "EFZ",
+  "name": {
+    "en": "Road Builder (EFZ)",
+    "de": "Strassenbauer/in EFZ",
+    "fr": "Constructeur de routes CFC",
+    "it": "Costruttore stradale AFC"
+  },
+  "codes": {
+    "isco08": "8342"
+  },
+  "sector": "CH-ISCO-19 83: Fahrzeugführer und Bediener mobiler Anlagen",
+  "refs": {
+    "qualLevel": "apprenticeship",
+    "besta": "49-53",
+    "nogaSection": "H",
+    "vetName": "Strassenbauer/in EFZ"
+  },
+  "pathway": [
+    {
+      "label": "Strassenbauer/in EFZ",
+      "years": 3.0,
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/strassenbauer-in-efz",
+      "confidence": "measured"
+    }
+  ],
+  "leadsTo": [
+    "occ-grundbaupraktiker-in"
+  ],
+  "trainedVia": [],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "entryAccess": {
+      "value": 1,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/strassenbauer-in-efz",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "Apprenticeship contract with a training company required (default for dual VET)."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Language regions assumed (all three) — not individually verified."
+  }
+}

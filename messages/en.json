@@ -4,29 +4,89 @@
     "tagline": "Compare Swiss occupations and education paths on official data — with your own weights.",
     "skip": "Skip to content"
   },
-  "nav": { "ranking": "Ranking", "compare": "Compare", "methodology": "Methodology", "menu": "Main navigation" },
+  "nav": {
+    "ranking": "Ranking",
+    "compare": "Compare",
+    "methodology": "Methodology",
+    "menu": "Main navigation"
+  },
   "disclaimer": {
     "short": "Decision support, not career advice.",
     "long": "Scores combine official Swiss statistics with documented estimates. They describe averages of broad occupation groups, not your personal prospects. Use them to ask better questions — talk to a career counsellor (berufsberatung.ch) before deciding."
   },
-  "theme": { "toggle": "Switch colour theme", "light": "Light", "dark": "Dark", "system": "System" },
-  "locale": { "label": "Language" },
-  "kind": { "occupation": "Occupation", "education": "Education path", "occupations": "Occupations", "educations": "Education paths" },
-  "route": { "vocational": "Vocational", "academic": "Academic", "mixed": "Vocational → academic" },
+  "theme": {
+    "toggle": "Switch colour theme",
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System"
+  },
+  "locale": {
+    "label": "Language"
+  },
+  "kind": {
+    "occupation": "Occupation",
+    "education": "Education path",
+    "occupations": "Occupations",
+    "educations": "Education paths"
+  },
+  "route": {
+    "vocational": "Vocational",
+    "academic": "Academic",
+    "mixed": "Vocational → academic"
+  },
   "dims": {
-    "pay": { "name": "Pay", "desc": "Median gross monthly wage, weighted 35 % entry level and 65 % mid-career." },
-    "stability": { "name": "Job stability", "desc": "Low registered unemployment in the occupation." },
-    "demand": { "name": "Demand", "desc": "Share of employers that find it hard to recruit at this level in this sector." },
-    "aiResilience": { "name": "AI resilience", "desc": "Low exposure of the occupation's tasks to AI and automation (estimate)." },
-    "trainingEase": { "name": "Training ease", "desc": "High share of learners who complete the training." },
-    "entryAccess": { "name": "Easy entry", "desc": "Low admission hurdles (numerus clausus, aptitude tests, limited places)." },
-    "timeToQualify": { "name": "Fast start", "desc": "Few years from the end of compulsory school to qualification." },
-    "careerGrowth": { "name": "Career growth", "desc": "Wage progression from under 30 to over 50 in the occupation group." },
-    "workLifeBalance": { "name": "Work-life balance", "desc": "Little night work and moderate usual weekly hours." },
-    "flexibility": { "name": "Remote / flexibility", "desc": "Share of people in the sector who work from home at least occasionally." },
-    "mobility": { "name": "International mobility", "desc": "Recognition abroad, language independence and transferability (rubric)." },
-    "regional": { "name": "Regional availability", "desc": "Available in many regions and language areas (rubric)." },
-    "meaning": { "name": "Meaning / societal value", "desc": "No defensible Swiss per-occupation source yet — off by default." }
+    "pay": {
+      "name": "Pay",
+      "desc": "Median gross monthly wage, weighted 35 % entry level and 65 % mid-career."
+    },
+    "stability": {
+      "name": "Job stability",
+      "desc": "Low registered unemployment in the occupation."
+    },
+    "demand": {
+      "name": "Demand",
+      "desc": "Share of employers that find it hard to recruit at this level in this sector."
+    },
+    "aiResilience": {
+      "name": "AI resilience",
+      "desc": "Low exposure of the occupation's tasks to AI and automation (estimate)."
+    },
+    "trainingEase": {
+      "name": "Training ease",
+      "desc": "High share of learners who complete the training."
+    },
+    "entryAccess": {
+      "name": "Easy entry",
+      "desc": "Low admission hurdles (numerus clausus, aptitude tests, limited places)."
+    },
+    "timeToQualify": {
+      "name": "Fast start",
+      "desc": "Few years from the end of compulsory school to qualification."
+    },
+    "careerGrowth": {
+      "name": "Career growth",
+      "desc": "Wage progression from under 30 to over 50 in the occupation group."
+    },
+    "workLifeBalance": {
+      "name": "Work-life balance",
+      "desc": "Little night work and moderate usual weekly hours."
+    },
+    "flexibility": {
+      "name": "Remote / flexibility",
+      "desc": "Share of people in the sector who work from home at least occasionally."
+    },
+    "mobility": {
+      "name": "International mobility",
+      "desc": "Recognition abroad, language independence and transferability (rubric)."
+    },
+    "regional": {
+      "name": "Regional availability",
+      "desc": "Available in many regions and language areas (rubric)."
+    },
+    "meaning": {
+      "name": "Meaning / societal value",
+      "desc": "No defensible Swiss per-occupation source yet — off by default."
+    }
   },
   "weights": {
     "title": "What matters to you?",
@@ -61,7 +121,11 @@
     "anyYears": "Any",
     "language": "Language region",
     "anyLanguage": "Any",
-    "lang": { "de": "German", "fr": "French", "it": "Italian" },
+    "lang": {
+      "de": "German",
+      "fr": "French",
+      "it": "Italian"
+    },
     "minPay": "Min. median wage (CHF/month)",
     "search": "Search",
     "searchPlaceholder": "e.g. Pflege, Informatik",
@@ -88,7 +152,8 @@
     "clearCompare": "Clear selection",
     "details": "Details",
     "noResults": "Nothing matches these filters.",
-    "pool": "Occupations and education paths are ranked separately (percentiles within each group)."
+    "pool": "Occupations and education paths are ranked separately (percentiles within each group).",
+    "showMore": "Show more ({shown} of {total} shown)"
   },
   "entity": {
     "back": "Back to ranking",
@@ -153,7 +218,11 @@
     "note": "Note",
     "open": "Open source",
     "missing": "No data — this value is missing and is not imputed.",
-    "conf": { "measured": "Measured", "estimated": "Estimated", "expert-judgment": "Expert judgment" },
+    "conf": {
+      "measured": "Measured",
+      "estimated": "Estimated",
+      "expert-judgment": "Expert judgment"
+    },
     "matchLevel": {
       "exact": "exact match",
       "isco4": "occupation unit group (ISCO 4-digit)",
@@ -198,7 +267,16 @@
       "place": "Place (international mobility, regional availability)"
     }
   },
-  "methodology": { "title": "Methodology" },
-  "share": { "copy": "Copy link", "copied": "Link copied", "help": "Your settings are stored in the URL — share or bookmark it." },
-  "common": { "close": "Close", "loading": "Loading…" }
+  "methodology": {
+    "title": "Methodology"
+  },
+  "share": {
+    "copy": "Copy link",
+    "copied": "Link copied",
+    "help": "Your settings are stored in the URL — share or bookmark it."
+  },
+  "common": {
+    "close": "Close",
+    "loading": "Loading…"
+  }
 }

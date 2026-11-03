@@ -1,0 +1,63 @@
+{
+  "id": "edu-hfp-leiter-in-des-technischen-kundendienstes-service",
+  "kind": "education",
+  "route": "vocational",
+  "eduType": "HFP",
+  "name": {
+    "en": "Technical Customer Service Manager (HFP)",
+    "de": "Leiterin des technischen Kundendienstes/Service / Leiter des technischen Kundendienstes/Service HFP",
+    "fr": "Chef de service après-vente DF",
+    "it": "Capo del servizio tecnico alla clientela DPF"
+  },
+  "codes": {
+    "isco08": "1221"
+  },
+  "sector": "CH-ISCO-19 12: Führungskräfte im kaufmännischen Bereich",
+  "refs": {
+    "qualLevel": "higherVet",
+    "besta": "5-96",
+    "nogaSection": "*"
+  },
+  "pathway": [
+    {
+      "label": "EFZ apprenticeship in a related occupation",
+      "years": 3,
+      "sourceUrl": "https://www.berufsberatung.ch/de/bildungssystem/d/lehre-efz",
+      "confidence": "measured",
+      "note": "Admission normally requires a relevant EFZ (3 or 4 years); the shorter variant is counted."
+    },
+    {
+      "label": "Preparation for the advanced federal exam: Leiterin des technischen Kundendienstes/Service / Leiter des technischen Kundendienstes/Service HFP",
+      "years": 2.5,
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/leiter-in-des-technischen-kundendienstes-service-hfp",
+      "confidence": "estimated",
+      "note": "Duration of the preparatory course as stated; admission also requires professional experience (see exam regulations), so the true time to qualify is longer."
+    }
+  ],
+  "leadsTo": [
+    "occ-leiter-in-des-technischen-kundendienstes-service"
+  ],
+  "trainedVia": [],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "entryAccess": {
+      "value": 0,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/leiter-in-des-technischen-kundendienstes-service-hfp",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "Admission to the federal exam is based on professional experience; no capacity limit."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Language regions assumed (all three) — not individually verified."
+  }
+}

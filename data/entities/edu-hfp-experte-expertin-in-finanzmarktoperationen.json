@@ -1,0 +1,63 @@
+{
+  "id": "edu-hfp-experte-expertin-in-finanzmarktoperationen",
+  "kind": "education",
+  "route": "vocational",
+  "eduType": "HFP",
+  "name": {
+    "en": "Expert in Financial Market Operations (HFP)",
+    "de": "Expertin in Finanzmarktoperationen / Experte in Finanzmarktoperationen HFP",
+    "fr": "Expert en opérations des marchés financiers DF",
+    "it": "Esperto in operazioni dei mercati finanziari DPF"
+  },
+  "codes": {
+    "isco08": "4211"
+  },
+  "sector": "CH-ISCO-19 42: Bürokräfte mit Kundenkontakt",
+  "refs": {
+    "qualLevel": "higherVet",
+    "besta": "45-96",
+    "nogaSection": "*"
+  },
+  "pathway": [
+    {
+      "label": "EFZ apprenticeship in a related occupation",
+      "years": 3,
+      "sourceUrl": "https://www.berufsberatung.ch/de/bildungssystem/d/lehre-efz",
+      "confidence": "measured",
+      "note": "Admission normally requires a relevant EFZ (3 or 4 years); the shorter variant is counted."
+    },
+    {
+      "label": "Preparation for the advanced federal exam: Expertin in Finanzmarktoperationen / Experte in Finanzmarktoperationen HFP",
+      "years": 0.5,
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/experte-expertin-in-finanzmarktoperationen-hfp",
+      "confidence": "estimated",
+      "note": "Duration of the preparatory course as stated; admission also requires professional experience (see exam regulations), so the true time to qualify is longer."
+    }
+  ],
+  "leadsTo": [
+    "occ-bankwirtschafter-in"
+  ],
+  "trainedVia": [],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "entryAccess": {
+      "value": 0,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/experte-expertin-in-finanzmarktoperationen-hfp",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "Admission to the federal exam is based on professional experience; no capacity limit."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Language regions assumed (all three) — not individually verified."
+  }
+}

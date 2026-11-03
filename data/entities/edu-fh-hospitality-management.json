@@ -1,0 +1,63 @@
+{
+  "id": "edu-fh-hospitality-management",
+  "kind": "education",
+  "route": "mixed",
+  "eduType": "FH-BSc",
+  "name": {
+    "en": "Hospitality Management – BSc/BA (FH)",
+    "de": "Bachelor Hospitality Management (FH)",
+    "fr": null,
+    "it": null
+  },
+  "codes": {
+    "isco08": "1411"
+  },
+  "sector": "CH-ISCO-19 14: Führungskräfte in Hotels und Restaurants, im Handel und in der Er",
+  "refs": {
+    "qualLevel": "higherEducation",
+    "studyField": "FH:Wirtschaft und Dienstleistungen",
+    "gradIncome": "fh:Bachelor:Wirtschaft und Dienstleistungen",
+    "besta": "55-56",
+    "nogaSection": "I"
+  },
+  "pathway": [
+    {
+      "label": "EFZ with integrated Berufsmaturität (BM 1)",
+      "years": 3,
+      "sourceUrl": "https://www.berufsberatung.ch/de/bildungssystem/d/berufsmaturitaet",
+      "confidence": "measured",
+      "note": "Typical vocational route to FH (3–4 years); Gymnasiale Matura plus one year of work experience is an alternative."
+    },
+    {
+      "label": "Bachelor Hospitality Management (FH)",
+      "years": 3.0,
+      "sourceUrl": "https://www.berufsberatung.ch/de/studienrichtungen/hospitality-management",
+      "confidence": "measured"
+    }
+  ],
+  "leadsTo": [
+    "occ-hotelmanager-in-nds"
+  ],
+  "trainedVia": [],
+  "languageRegions": [
+    "de",
+    "fr"
+  ],
+  "raw": {
+    "entryAccess": {
+      "value": 1,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://www.berufsberatung.ch/de/studienrichtungen/hospitality-management",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "Application and selection; private schools charge substantial tuition fees."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "English name of the field kept in German where no official translation was available. Target occupation chosen by the project as the most typical professional destination (estimate)."
+  }
+}

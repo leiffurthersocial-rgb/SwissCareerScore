@@ -10,7 +10,7 @@
   },
   "codes": {
     "isco08": "3115",
-    "chIsco19": "31150"
+    "chIsco19": "31151"
   },
   "sector": "Industry (MEM)",
   "refs": {
@@ -21,7 +21,8 @@
   "pathway": [],
   "leadsTo": [],
   "trainedVia": [
-    "edu-hf-maschinenbau"
+    "edu-hf-maschinenbau",
+    "edu-hfp-baumaschinenmechanikermeister-in"
   ],
   "languageRegions": [
     "de",
@@ -52,6 +53,7 @@
   },
   "meta": {
     "addedBy": "initial-dataset",
-    "reviewed": "2026-11-03"
+    "reviewed": "2026-11-03",
+    "notes": "CH-ISCO-19 code corrected to 31151 per SECO/AVAM occupation list."
   }
 }

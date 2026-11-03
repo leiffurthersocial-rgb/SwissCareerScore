@@ -1,0 +1,63 @@
+{
+  "id": "occ-geograf-in-sozialwissenschaftler-in",
+  "kind": "occupation",
+  "route": "academic",
+  "name": {
+    "en": "Geographer / social scientist",
+    "de": "Soziologen, Anthropologen und verwandte Wissenschaftler",
+    "fr": "Sociologues, anthropologues et assimilés",
+    "it": "Sociologi, antropologi ed assimilati"
+  },
+  "codes": {
+    "isco08": "2632",
+    "chIsco19": "26320"
+  },
+  "sector": "CH-ISCO-19 26: Juristen, Sozialwissenschaftler und Kulturberufe",
+  "refs": {
+    "qualLevel": "higherEducation",
+    "nogaSection": "M",
+    "besta": "68-75"
+  },
+  "pathway": [],
+  "leadsTo": [],
+  "trainedVia": [
+    "edu-uh-geographie",
+    "edu-uh-soziologie",
+    "edu-uh-sozialanthropologie-kulturanthropologie",
+    "edu-uh-religionswissenschaft",
+    "edu-uh-gender-studies",
+    "edu-uh-archaeologie-aegyptologie"
+  ],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "mobility": {
+      "value": 4,
+      "unit": "rubric 0–9",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#11-international-mobility",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed): recognition 2/3, language independence 1/3, transferability 1/3."
+    },
+    "regionalUbiquity": {
+      "value": 2,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#12-regional-availability",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed)."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Occupation = CH-ISCO-19 occupation type 26320 (Soziologen, Anthropologen und verwandte Wissenschaftler). Sector for demand/telework/hours assigned from the occupation group (estimate). Several job titles share this occupation type: Geograf/in, Sozialwissenschaftler/in; Soziologe/Soziologin; Soziologen, Anthropologen und verwandte Wissenschaftler."
+  }
+}

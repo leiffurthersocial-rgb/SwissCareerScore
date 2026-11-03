@@ -1,0 +1,58 @@
+{
+  "id": "occ-berater-in-fuer-respiratorische-erkrankungen",
+  "kind": "occupation",
+  "route": "vocational",
+  "name": {
+    "en": "Assistenzberufe im Gesundheitswesen, anderweitig nicht genannt",
+    "de": "Berater für respiratorische Erkrankungen / Beraterin für respiratorische Erkrankungen",
+    "fr": "Conseiller en maladies respiratoires",
+    "it": "Consulente in malattie respiratorie"
+  },
+  "codes": {
+    "isco08": "3259",
+    "chIsco19": "32590"
+  },
+  "sector": "CH-ISCO-19 32: Assistenzberufe im Gesundheitswesen",
+  "refs": {
+    "qualLevel": "higherVet",
+    "nogaSection": "Q",
+    "besta": "86-88"
+  },
+  "pathway": [],
+  "leadsTo": [],
+  "trainedVia": [
+    "edu-bp-berater-in-fuer-respiratorische-erkrankungen"
+  ],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "mobility": {
+      "value": 4,
+      "unit": "rubric 0–9",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#11-international-mobility",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed): recognition 1/3, language independence 1/3, transferability 2/3."
+    },
+    "regionalUbiquity": {
+      "value": 3,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#12-regional-availability",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed)."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Occupation = CH-ISCO-19 occupation type 32590 (Assistenzberufe im Gesundheitswesen, anderweitig nicht genannt). Sector for demand/telework/hours assigned from the occupation group (estimate)."
+  }
+}

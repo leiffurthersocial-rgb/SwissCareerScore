@@ -1,0 +1,61 @@
+{
+  "id": "occ-fachexperte-expertin-fuer-infektionspraevention-im-gesundhei",
+  "kind": "occupation",
+  "route": "vocational",
+  "name": {
+    "en": "Kontrolleure und Beauftragte in den Bereichen Umwelt- und Arbeitsmedizin sowie verwandte Berufe",
+    "de": "Kontrolleure und Beauftragte in den Bereichen Umwelt- und Arbeitsmedizin sowie verwandte Berufe",
+    "fr": "Expert en prévention des infections associées aux soins",
+    "it": "Esperto nella prevenzione delle infezioni associate alle cure"
+  },
+  "codes": {
+    "isco08": "3257",
+    "chIsco19": "32570"
+  },
+  "sector": "CH-ISCO-19 32: Assistenzberufe im Gesundheitswesen",
+  "refs": {
+    "qualLevel": "higherVet",
+    "nogaSection": "O",
+    "besta": "84"
+  },
+  "pathway": [],
+  "leadsTo": [],
+  "trainedVia": [
+    "edu-hfp-fachexperte-expertin-fuer-infektionspraevention-im-gesundhei",
+    "edu-hfp-experte-expertin-fuer-arbeitssicherheit-und-gesundheitsschut",
+    "edu-bp-sicherheitsspezialist-in-in-institutionen-des-gesundheits-un",
+    "edu-bp-spezialist-in-fuer-arbeitssicherheit-und-gesundheitsschutz"
+  ],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "mobility": {
+      "value": 4,
+      "unit": "rubric 0–9",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#11-international-mobility",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed): recognition 1/3, language independence 1/3, transferability 2/3."
+    },
+    "regionalUbiquity": {
+      "value": 3,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#12-regional-availability",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed)."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Occupation = CH-ISCO-19 occupation type 32570 (Kontrolleure und Beauftragte in den Bereichen Umwelt- und Arbeitsmedizin sowie verwandte Berufe). Sector for demand/telework/hours assigned from the occupation group (estimate). Several job titles share this occupation type: Expertin für Arbeitssicherheit und Gesundheitsschutz / Experte für Arbeitssicherheit und Gesundheitsschutz; Fachexperte für Infektionsprävention im Gesundheitswesen / Fachexpertin für Infektionsprävention im Gesundheitswesen; Sicherheitsspezialistin in Institutionen des Gesundheits- und Sozialwesens / Sicherheitsspezialist in Institutionen des Gesundheits- und Sozialwesens; Spezialistin für Arbeit."
+  }
+}

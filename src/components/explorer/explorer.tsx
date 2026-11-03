@@ -12,6 +12,8 @@ import { FilterBar } from "./filter-bar";
 import { RankedList, type Row } from "./ranked-list";
 import { WeightPanel } from "./weight-panel";
 
+const PAGE = 40;
+
 export function Explorer() {
   const t = useTranslations("list");
   const tk = useTranslations("kind");
@@ -21,6 +23,7 @@ export function Explorer() {
   const { state } = app;
   const results = useScores(state.weights);
   const [panelOpen, setPanelOpen] = useState(false);
+  const [limit, setLimit] = useState<Record<string, number>>({ occupation: PAGE, education: PAGE });
 
   const groups = useMemo(() => {
     const rows: Row[] = entities
@@ -67,7 +70,18 @@ export function Explorer() {
               <h2 id={`h-${k}`} className="text-lg font-semibold">
                 {k === "occupation" ? tk("occupations") : tk("educations")}
               </h2>
-              <RankedList rows={groups[k]} compare={state.compare} onToggleCompare={app.toggleCompare} queryString={app.queryString} />
+              <p className="text-xs text-muted-foreground">{t("results", { count: groups[k].length })}</p>
+              <RankedList
+                rows={groups[k].slice(0, limit[k])}
+                compare={state.compare}
+                onToggleCompare={app.toggleCompare}
+                queryString={app.queryString}
+              />
+              {groups[k].length > limit[k] ? (
+                <Button variant="outline" className="w-full" onClick={() => setLimit((l) => ({ ...l, [k]: l[k] + PAGE * 2 }))}>
+                  {t("showMore", { shown: limit[k], total: groups[k].length })}
+                </Button>
+              ) : null}
             </section>
           ) : null,
         )}

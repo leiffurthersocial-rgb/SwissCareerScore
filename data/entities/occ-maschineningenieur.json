@@ -10,7 +10,7 @@
   },
   "codes": {
     "isco08": "2144",
-    "chIsco19": "21440"
+    "chIsco19": "21441"
   },
   "sector": "Industry (MEM)",
   "refs": {
@@ -21,7 +21,8 @@
   "pathway": [],
   "leadsTo": [],
   "trainedVia": [
-    "edu-fh-maschinentechnik"
+    "edu-fh-maschinentechnik",
+    "edu-eth-maschineningenieurwissenschaften"
   ],
   "languageRegions": [
     "de",
@@ -52,6 +53,7 @@
   },
   "meta": {
     "addedBy": "initial-dataset",
-    "reviewed": "2026-11-03"
+    "reviewed": "2026-11-03",
+    "notes": "CH-ISCO-19 code corrected to 21441 per SECO/AVAM occupation list."
   }
 }

@@ -1,0 +1,59 @@
+{
+  "id": "occ-elektroniker-in",
+  "kind": "occupation",
+  "route": "vocational",
+  "name": {
+    "en": "Elektroniker und Elektronik-Servicetechniker",
+    "de": "Elektroniker und Elektronik-Servicetechniker",
+    "fr": "Electronicien",
+    "it": "Elettronico"
+  },
+  "codes": {
+    "isco08": "7421",
+    "chIsco19": "74210"
+  },
+  "sector": "CH-ISCO-19 74: Elektriker und Elektroniker",
+  "refs": {
+    "qualLevel": "apprenticeship",
+    "nogaSection": "C",
+    "besta": "26"
+  },
+  "pathway": [],
+  "leadsTo": [],
+  "trainedVia": [
+    "edu-efz-elektroniker-in",
+    "edu-bp-techniker-in-audio-video"
+  ],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "mobility": {
+      "value": 5,
+      "unit": "rubric 0–9",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#11-international-mobility",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed): recognition 1/3, language independence 2/3, transferability 2/3."
+    },
+    "regionalUbiquity": {
+      "value": 3,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#12-regional-availability",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed)."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Occupation = CH-ISCO-19 occupation type 74210 (Elektroniker und Elektronik-Servicetechniker). Sector for demand/telework/hours assigned from the occupation group (estimate). Several job titles share this occupation type: Elektroniker/in; Techniker Audio Video / Technikerin Audio Video."
+  }
+}

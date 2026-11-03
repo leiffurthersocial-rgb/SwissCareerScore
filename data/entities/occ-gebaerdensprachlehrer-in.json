@@ -1,0 +1,59 @@
+{
+  "id": "occ-gebaerdensprachlehrer-in",
+  "kind": "occupation",
+  "route": "vocational",
+  "name": {
+    "en": "Lehrkräfte im Bereich Sonderpädagogik",
+    "de": "Lehrkräfte im Bereich Sonderpädagogik",
+    "fr": "Enseignant de langue des signes",
+    "it": "Insegnante della lingua dei segni"
+  },
+  "codes": {
+    "isco08": "2352",
+    "chIsco19": "23520"
+  },
+  "sector": "CH-ISCO-19 23: Lehrkräfte",
+  "refs": {
+    "qualLevel": "higherVet",
+    "nogaSection": "P",
+    "besta": "85"
+  },
+  "pathway": [],
+  "leadsTo": [],
+  "trainedVia": [
+    "edu-bp-gebaerdensprachlehrer-in",
+    "edu-ph-sonderpaedagogik"
+  ],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "mobility": {
+      "value": 3,
+      "unit": "rubric 0–9",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#11-international-mobility",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed): recognition 2/3, language independence 0/3, transferability 1/3."
+    },
+    "regionalUbiquity": {
+      "value": 3,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#12-regional-availability",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed)."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Occupation = CH-ISCO-19 occupation type 23520 (Lehrkräfte im Bereich Sonderpädagogik). Sector for demand/telework/hours assigned from the occupation group (estimate). Several job titles share this occupation type: Gebärdensprachlehrer / Gebärdensprachlehrerin; Schulische Heilpädagogin / Heilpädagoge."
+  }
+}

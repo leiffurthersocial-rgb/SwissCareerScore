@@ -1,0 +1,63 @@
+{
+  "id": "occ-baumaschinenmechaniker-in",
+  "kind": "occupation",
+  "route": "vocational",
+  "name": {
+    "en": "Construction Machinery Mechanic",
+    "de": "Landmaschinen- und Industriemaschinenmechaniker und -schlosser",
+    "fr": "Mécanicien en machines de chantier",
+    "it": "Meccanico di macchine edili"
+  },
+  "codes": {
+    "isco08": "7233",
+    "chIsco19": "72330"
+  },
+  "sector": "CH-ISCO-19 72: Metallarbeiter, Mechaniker, Polymechaniker, Produktionsmechaniker",
+  "refs": {
+    "qualLevel": "apprenticeship",
+    "nogaSection": "C",
+    "besta": "28"
+  },
+  "pathway": [],
+  "leadsTo": [],
+  "trainedVia": [
+    "edu-efz-baumaschinenmechaniker-in",
+    "edu-efz-motorgeraetemechaniker-in",
+    "edu-bp-instandhaltungsfachmann-frau",
+    "edu-bp-diagnosetechniker-in-baumaschinen",
+    "edu-bp-diagnosetechniker-in-landmaschinen",
+    "edu-efz-landmaschinenmechaniker-in"
+  ],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "mobility": {
+      "value": 6,
+      "unit": "rubric 0–9",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#11-international-mobility",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed): recognition 1/3, language independence 3/3, transferability 2/3."
+    },
+    "regionalUbiquity": {
+      "value": 2,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#12-regional-availability",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed)."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Occupation = CH-ISCO-19 occupation type 72330 (Landmaschinen- und Industriemaschinenmechaniker und -schlosser). Sector for demand/telework/hours assigned from the occupation group (estimate). Several job titles share this occupation type: Baumaschinenmechaniker / Baumaschinenmechanikerin; Diagnosetechnikerin Baumaschinen / Diagnosetechniker Baumaschinen; Diagnosetechnikerin Landmaschinen / Diagnosetechniker Landmaschinen; Instandhaltungsfachmann / Instandhaltungsfachfrau; Landmaschinenmechaniker/in; Motorgerätemechaniker/in."
+  }
+}

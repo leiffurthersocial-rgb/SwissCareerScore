@@ -1,0 +1,61 @@
+{
+  "id": "occ-automatiker-in",
+  "kind": "occupation",
+  "route": "vocational",
+  "name": {
+    "en": "Automatiker und verwandte Berufe",
+    "de": "Automatiker und verwandte Berufe",
+    "fr": "Automaticien",
+    "it": "Operatore in automazione"
+  },
+  "codes": {
+    "isco08": "7412",
+    "chIsco19": "74120"
+  },
+  "sector": "CH-ISCO-19 74: Elektriker und Elektroniker",
+  "refs": {
+    "qualLevel": "apprenticeship",
+    "nogaSection": "F",
+    "besta": "41-43"
+  },
+  "pathway": [],
+  "leadsTo": [],
+  "trainedVia": [
+    "edu-efz-automatiker-in",
+    "edu-efz-automatikmonteur-in",
+    "edu-efz-gebaeudeinformatiker-in",
+    "edu-bp-automatikfachmann-frau"
+  ],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "mobility": {
+      "value": 5,
+      "unit": "rubric 0–9",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#11-international-mobility",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed): recognition 1/3, language independence 2/3, transferability 2/3."
+    },
+    "regionalUbiquity": {
+      "value": 3,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#12-regional-availability",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed)."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Occupation = CH-ISCO-19 occupation type 74120 (Automatiker und verwandte Berufe). Sector for demand/telework/hours assigned from the occupation group (estimate). Several job titles share this occupation type: Automatiker/in; Automatikfachmann / Automatikfachfrau; Automatikmonteur/in; Gebäudeinformatiker/in."
+  }
+}

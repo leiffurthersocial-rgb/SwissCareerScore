@@ -42,3 +42,8 @@ next-env.d.ts
 /playwright-report/
 /test-results/
 /coverage/
+/public/data/
+
+# berufsberatung.ch pages are large (~250 MB); hashes stay in data/raw/manifest.json and extracted
+# durations in data/ingested/berufsberatung.json. Re-download with `npm run data:ingest`.
+/data/raw/berufsberatung/

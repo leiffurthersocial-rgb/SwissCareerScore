@@ -10,9 +10,13 @@ UH/ETH — across up to 13 dimensions, with **fully adjustable weights**.
 
 ## What it does
 
-- **73 entries** (34 occupations, 39 education paths), vocational and academic, across health,
-  social care, education, ICT, industry, construction, trade, logistics, hospitality, finance, law,
-  research, public safety and agriculture.
+- **1,091 entries**: 309 occupations (CH-ISCO-19 occupation types) and 782 education paths —
+  185 EFZ and 60 EBA apprenticeships, 50 HF diplomas, 226 federal professional
+  exams (BP), 133 advanced federal exams (HFP), Berufsmaturität, 54 FH/PH programmes and
+  73 university/ETH programmes — every profile on berufsberatung.ch
+  that could be classified, plus ~100 fields of study. Where a statistic does not exist the value is
+  shown as missing; where we had to estimate (rubrics, AI task profiles, sector or code assignments),
+  the entry says so.
 - **Dimensions:** pay, job stability, demand, AI/automation resilience, training ease, entry access,
   time to qualify, career growth, work-life balance, remote/flexibility, international mobility,
   regional availability, and meaning (disabled: no defensible source yet).

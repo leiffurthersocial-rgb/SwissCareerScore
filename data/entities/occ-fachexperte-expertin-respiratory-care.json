@@ -1,0 +1,70 @@
+{
+  "id": "occ-fachexperte-expertin-respiratory-care",
+  "kind": "occupation",
+  "route": "vocational",
+  "name": {
+    "en": "Pflegefachkräfte mit Spezialisierung",
+    "de": "Pflegefachkräfte mit Spezialisierung",
+    "fr": "Infirmiers avec spécialisation",
+    "it": "Infermieri con specializzazione"
+  },
+  "codes": {
+    "isco08": "2221",
+    "chIsco19": "22213"
+  },
+  "sector": "CH-ISCO-19 22: Spezialisten in Gesundheitsberufen",
+  "refs": {
+    "qualLevel": "higherVet",
+    "nogaSection": "Q",
+    "besta": "86-88"
+  },
+  "pathway": [],
+  "leadsTo": [],
+  "trainedVia": [
+    "edu-hfp-fachexperte-expertin-respiratory-care",
+    "edu-hfp-fachexperte-expertin-in-diabetesfachberatung",
+    "edu-bp-fachmann-frau-langzeitpflege-und-betreuung",
+    "edu-hfp-fachexperte-expertin-in-psychiatriepflege",
+    "edu-hfp-fachexperte-fachexpertin-operationsbereich",
+    "edu-hfp-fachexperte-expertin-in-geriatrischer-und-psychogeriatrische",
+    "edu-hfp-fachexperte-expertin-in-palliative-care",
+    "edu-hfp-fachexperte-expertin-in-nephrologiepflege",
+    "edu-hfp-fachexperte-expertin-in-onkologiepflege",
+    "edu-hf-experte-expertin-notfallpflege-nds",
+    "edu-hf-experte-expertin-anaesthesiepflege-nds",
+    "edu-hf-experte-expertin-intensivpflege-nds",
+    "edu-uh-pflege-pflegewissenschaft"
+  ],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "mobility": {
+      "value": 6,
+      "unit": "rubric 0–9",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#11-international-mobility",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed): recognition 2/3, language independence 1/3, transferability 3/3."
+    },
+    "regionalUbiquity": {
+      "value": 3,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#12-regional-availability",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed)."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Occupation = CH-ISCO-19 occupation type 22213 (Pflegefachkräfte mit Spezialisierung). Sector for demand/telework/hours assigned from the occupation group (estimate). Several job titles share this occupation type: Experte Notfallpflege NDS / Expertin Notfallpflege NDS; Expertin Anästhesiepflege NDS / Experte Anästhesiepflege NDS; Expertin Intensivpflege NDS / Experte Intensivpflege NDS; Fachexperte Operationsbereich / Fachexpertin Operationsbereich; Fachexperte in Nephrologiepflege / Fachexpertin in Nephrologiepflege; Fachexperte in Psychiatriepflege / Fachexpertin in Psychiatriepflege; Fachexpertin Respira."
+  }
+}

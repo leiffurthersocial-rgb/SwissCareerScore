@@ -1,0 +1,55 @@
+{
+  "id": "edu-eba-entwaesserungspraktiker-in",
+  "kind": "education",
+  "route": "vocational",
+  "eduType": "EBA",
+  "name": {
+    "en": "Dewatering Assistant (EBA)",
+    "de": "Entwässerungspraktiker/in EBA",
+    "fr": "Agent d'entretien en assainissement AFP",
+    "it": "Addetto allo smaltimento delle acque CFP"
+  },
+  "codes": {
+    "isco08": "7126"
+  },
+  "sector": "Construction / building services",
+  "refs": {
+    "qualLevel": "apprenticeship",
+    "besta": "41-43",
+    "nogaSection": "F"
+  },
+  "pathway": [
+    {
+      "label": "Entwässerungspraktiker/in EBA",
+      "years": 2.0,
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/entwaesserungspraktiker-in-eba",
+      "confidence": "measured"
+    }
+  ],
+  "leadsTo": [
+    "occ-sanitaerinstallateur"
+  ],
+  "trainedVia": [],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "entryAccess": {
+      "value": 1,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/entwaesserungspraktiker-in-eba",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "Apprenticeship contract with a training company required (default for dual VET)."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Language regions assumed (all three) — not individually verified. No BFS completion statistic for this occupation (missing)."
+  }
+}

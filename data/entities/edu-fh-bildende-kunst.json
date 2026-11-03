@@ -1,0 +1,64 @@
+{
+  "id": "edu-fh-bildende-kunst",
+  "kind": "education",
+  "route": "mixed",
+  "eduType": "FH-BSc",
+  "name": {
+    "en": "Bildende Kunst – BSc/BA (FH)",
+    "de": "Bachelor Bildende Kunst (FH)",
+    "fr": null,
+    "it": null
+  },
+  "codes": {
+    "isco08": "2651"
+  },
+  "sector": "CH-ISCO-19 26: Juristen, Sozialwissenschaftler und Kulturberufe",
+  "refs": {
+    "qualLevel": "higherEducation",
+    "studyField": "FH:Musik, Theater und andere Künste",
+    "gradIncome": "fh:Bachelor:Musik, Theater und andere Künste",
+    "besta": "90-96",
+    "nogaSection": "R"
+  },
+  "pathway": [
+    {
+      "label": "EFZ with integrated Berufsmaturität (BM 1)",
+      "years": 3,
+      "sourceUrl": "https://www.berufsberatung.ch/de/bildungssystem/d/berufsmaturitaet",
+      "confidence": "measured",
+      "note": "Typical vocational route to FH (3–4 years); Gymnasiale Matura plus one year of work experience is an alternative."
+    },
+    {
+      "label": "Bachelor Bildende Kunst (FH)",
+      "years": 3.0,
+      "sourceUrl": "https://www.berufsberatung.ch/de/studienrichtungen/bildende-kunst",
+      "confidence": "measured"
+    }
+  ],
+  "leadsTo": [
+    "occ-bildende-r-kuenstler-in"
+  ],
+  "trainedVia": [],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "entryAccess": {
+      "value": 3,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://www.berufsberatung.ch/de/studienrichtungen/bildende-kunst",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "Admission by portfolio, few places."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "English name of the field kept in German where no official translation was available. Target occupation chosen by the project as the most typical professional destination (estimate)."
+  }
+}

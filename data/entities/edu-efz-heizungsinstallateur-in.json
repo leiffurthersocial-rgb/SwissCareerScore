@@ -1,0 +1,56 @@
+{
+  "id": "edu-efz-heizungsinstallateur-in",
+  "kind": "education",
+  "route": "vocational",
+  "eduType": "EFZ",
+  "name": {
+    "en": "Heating Technician (EFZ)",
+    "de": "Heizungsinstallateur/in EFZ",
+    "fr": "Installateur en chauffage CFC",
+    "it": "Installatore di riscaldamenti AFC"
+  },
+  "codes": {
+    "isco08": "7126"
+  },
+  "sector": "CH-ISCO-19 71: Bau- und Ausbaufachkräfte sowie verwandte Berufe, ausgenommen Ele",
+  "refs": {
+    "qualLevel": "apprenticeship",
+    "besta": "41-43",
+    "nogaSection": "F",
+    "vetName": "Heizungsinstallateur/in EFZ"
+  },
+  "pathway": [
+    {
+      "label": "Heizungsinstallateur/in EFZ",
+      "years": 4.0,
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/heizungsinstallateur-in-efz",
+      "confidence": "measured"
+    }
+  ],
+  "leadsTo": [
+    "occ-heizungsinstallateur-in"
+  ],
+  "trainedVia": [],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "entryAccess": {
+      "value": 1,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/heizungsinstallateur-in-efz",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "Apprenticeship contract with a training company required (default for dual VET)."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Language regions assumed (all three) — not individually verified."
+  }
+}

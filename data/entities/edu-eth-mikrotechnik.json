@@ -1,0 +1,68 @@
+{
+  "id": "edu-eth-mikrotechnik",
+  "kind": "education",
+  "route": "academic",
+  "eduType": "ETH-MSc",
+  "name": {
+    "en": "Mikrotechnik – MSc (ETH/EPFL)",
+    "de": "Master Mikrotechnik (ETH/EPFL)",
+    "fr": null,
+    "it": null
+  },
+  "codes": {
+    "isco08": "2152"
+  },
+  "sector": "CH-ISCO-19 21: Naturwissenschaftler, Mathematiker und Ingenieure",
+  "refs": {
+    "qualLevel": "higherEducation",
+    "studyField": "UH:Technische Wissenschaften",
+    "gradIncome": "uh:Master:Technische Wissenschaften",
+    "besta": "68-75",
+    "nogaSection": "M"
+  },
+  "pathway": [
+    {
+      "label": "Gymnasiale Maturität",
+      "years": 4,
+      "sourceUrl": "https://www.berufsberatung.ch/de/bildungssystem/d/gymnasiale-maturitaetsschulen",
+      "confidence": "estimated",
+      "note": "berufsberatung.ch states 3–6 years depending on canton (partly overlapping compulsory school); 4 years after compulsory school assumed."
+    },
+    {
+      "label": "Bachelor Mikrotechnik (ETH/EPFL)",
+      "years": 3.0,
+      "sourceUrl": "https://www.berufsberatung.ch/de/studienrichtungen/mikrotechnik",
+      "confidence": "measured"
+    },
+    {
+      "label": "Master Mikrotechnik (ETH/EPFL)",
+      "years": 1.5,
+      "sourceUrl": "https://www.berufsberatung.ch/de/studienrichtungen/mikrotechnik",
+      "confidence": "measured"
+    }
+  ],
+  "leadsTo": [
+    "occ-mikrotechnik-ingenieur-in"
+  ],
+  "trainedVia": [],
+  "languageRegions": [
+    "fr"
+  ],
+  "raw": {
+    "entryAccess": {
+      "value": 0,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://www.berufsberatung.ch/de/studienrichtungen/mikrotechnik",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "Open admission with Swiss Matura; selection via first-year exam."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "English name of the field kept in German where no official translation was available. Target occupation chosen by the project as the most typical professional destination (estimate)."
+  }
+}

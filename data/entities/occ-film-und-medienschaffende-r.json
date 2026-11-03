@@ -1,0 +1,60 @@
+{
+  "id": "occ-film-und-medienschaffende-r",
+  "kind": "occupation",
+  "route": "academic",
+  "name": {
+    "en": "Film / media professional",
+    "de": "Regisseure und Produzenten im Film- und Bühnenbereich sowie in verwandten Bereichen",
+    "fr": "Metteurs en scène de cinéma, de théâtre et d’autres spectacles",
+    "it": "Registi, sceneggiatori, produttori ed assimilati"
+  },
+  "codes": {
+    "isco08": "2654",
+    "chIsco19": "26540"
+  },
+  "sector": "CH-ISCO-19 26: Juristen, Sozialwissenschaftler und Kulturberufe",
+  "refs": {
+    "qualLevel": "higherEducation",
+    "nogaSection": "R",
+    "besta": "90-96"
+  },
+  "pathway": [],
+  "leadsTo": [],
+  "trainedVia": [
+    "edu-uh-filmwissenschaft",
+    "edu-uh-theaterwissenschaft-tanzwissenschaft",
+    "edu-fh-film"
+  ],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "mobility": {
+      "value": 4,
+      "unit": "rubric 0–9",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#11-international-mobility",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed): recognition 2/3, language independence 1/3, transferability 1/3."
+    },
+    "regionalUbiquity": {
+      "value": 2,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#12-regional-availability",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed)."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Occupation = CH-ISCO-19 occupation type 26540 (Regisseure und Produzenten im Film- und Bühnenbereich sowie in verwandten Bereichen). Sector for demand/telework/hours assigned from the occupation group (estimate). Several job titles share this occupation type: Film- und Medienschaffende/r; Regisseure und Produzenten im Film- und Bühnenbereich sowie in verwandten Bereichen."
+  }
+}

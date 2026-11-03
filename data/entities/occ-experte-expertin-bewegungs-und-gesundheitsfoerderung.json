@@ -1,0 +1,64 @@
+{
+  "id": "occ-experte-expertin-bewegungs-und-gesundheitsfoerderung",
+  "kind": "occupation",
+  "route": "vocational",
+  "name": {
+    "en": "Expert in Physical Activity and Health Promotion",
+    "de": "Spezialisten in Gesundheitsberufen, anderweitig nicht genannt",
+    "fr": "Expert en promotion de l’activité physique et de la santé",
+    "it": "Esperto per la promozione dell’attività fisica e della salute"
+  },
+  "codes": {
+    "isco08": "2269",
+    "chIsco19": "22690"
+  },
+  "sector": "CH-ISCO-19 22: Spezialisten in Gesundheitsberufen",
+  "refs": {
+    "qualLevel": "higherVet",
+    "nogaSection": "Q",
+    "besta": "86-88"
+  },
+  "pathway": [],
+  "leadsTo": [],
+  "trainedVia": [
+    "edu-hfp-experte-expertin-bewegungs-und-gesundheitsfoerderung",
+    "edu-hfp-kunsttherapeut-in",
+    "edu-bp-spezialist-in-fuer-angewandte-kinaesthetik",
+    "edu-hf-aktivierungsfachmann-frau",
+    "edu-fh-osteopathie",
+    "edu-fh-psychomotoriktherapie",
+    "edu-uh-chiropraktik"
+  ],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "mobility": {
+      "value": 6,
+      "unit": "rubric 0–9",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#11-international-mobility",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed): recognition 2/3, language independence 1/3, transferability 3/3."
+    },
+    "regionalUbiquity": {
+      "value": 3,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#12-regional-availability",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed)."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Occupation = CH-ISCO-19 occupation type 22690 (Spezialisten in Gesundheitsberufen, anderweitig nicht genannt). Sector for demand/telework/hours assigned from the occupation group (estimate). Several job titles share this occupation type: Aktivierungsfachmann / Aktivierungsfachfrau; Chiropraktor/in; Experte Bewegungs- und Gesundheitsförderung / Expertin Bewegungs- und Gesundheitsförderung; Kunsttherapeut / Kunsttherapeutin; Osteopath/in; Psychomotoriktherapeut/in; Spezialistin für angewandte Kinästhetik / Spezialist für angewandte Kinästhetik."
+  }
+}

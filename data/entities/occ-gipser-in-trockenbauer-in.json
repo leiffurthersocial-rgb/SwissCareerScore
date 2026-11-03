@@ -1,0 +1,60 @@
+{
+  "id": "occ-gipser-in-trockenbauer-in",
+  "kind": "occupation",
+  "route": "vocational",
+  "name": {
+    "en": "Plasterer-Drywaller",
+    "de": "Gipser, Trockenbauer",
+    "fr": "Plâtrier constructeur à sec",
+    "it": "Gessatore-costruttore a secco"
+  },
+  "codes": {
+    "isco08": "7123",
+    "chIsco19": "71230"
+  },
+  "sector": "CH-ISCO-19 71: Bau- und Ausbaufachkräfte sowie verwandte Berufe, ausgenommen Ele",
+  "refs": {
+    "qualLevel": "apprenticeship",
+    "nogaSection": "F",
+    "besta": "41-43"
+  },
+  "pathway": [],
+  "leadsTo": [],
+  "trainedVia": [
+    "edu-efz-gipser-in-trockenbauer-in",
+    "edu-eba-gipserpraktiker-in",
+    "edu-hfp-gipsermeister-in"
+  ],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "mobility": {
+      "value": 6,
+      "unit": "rubric 0–9",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#11-international-mobility",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed): recognition 1/3, language independence 3/3, transferability 2/3."
+    },
+    "regionalUbiquity": {
+      "value": 3,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#12-regional-availability",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed)."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Occupation = CH-ISCO-19 occupation type 71230 (Gipser, Trockenbauer). Sector for demand/telework/hours assigned from the occupation group (estimate). Several job titles share this occupation type: Gipserin-Trockenbauerin / Gipser-Trockenbauer; Gipsermeister/in; Gipserpraktiker / Gipserpraktikerin."
+  }
+}

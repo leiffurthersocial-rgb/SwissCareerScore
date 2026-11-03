@@ -1,0 +1,62 @@
+{
+  "id": "edu-fh-innenarchitektur",
+  "kind": "education",
+  "route": "mixed",
+  "eduType": "FH-BSc",
+  "name": {
+    "en": "Innenarchitektur – BSc/BA (FH)",
+    "de": "Bachelor Innenarchitektur (FH)",
+    "fr": null,
+    "it": null
+  },
+  "codes": {
+    "isco08": "2161"
+  },
+  "sector": "Construction / engineering",
+  "refs": {
+    "qualLevel": "higherEducation",
+    "studyField": "FH:Design",
+    "gradIncome": "fh:Bachelor:Design",
+    "besta": "68-75",
+    "nogaSection": "M"
+  },
+  "pathway": [
+    {
+      "label": "EFZ with integrated Berufsmaturität (BM 1)",
+      "years": 3,
+      "sourceUrl": "https://www.berufsberatung.ch/de/bildungssystem/d/berufsmaturitaet",
+      "confidence": "measured",
+      "note": "Typical vocational route to FH (3–4 years); Gymnasiale Matura plus one year of work experience is an alternative."
+    },
+    {
+      "label": "Bachelor Innenarchitektur (FH)",
+      "years": 3.0,
+      "sourceUrl": "https://www.berufsberatung.ch/de/studienrichtungen/innenarchitektur",
+      "confidence": "measured"
+    }
+  ],
+  "leadsTo": [
+    "occ-architekt"
+  ],
+  "trainedVia": [],
+  "languageRegions": [
+    "de"
+  ],
+  "raw": {
+    "entryAccess": {
+      "value": 2,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://www.berufsberatung.ch/de/studienrichtungen/innenarchitektur",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "Portfolio and aptitude assessment."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "English name of the field kept in German where no official translation was available. Target occupation chosen by the project as the most typical professional destination (estimate)."
+  }
+}

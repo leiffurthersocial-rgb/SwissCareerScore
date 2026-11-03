@@ -21,7 +21,16 @@
   "pathway": [],
   "leadsTo": [],
   "trainedVia": [
-    "edu-efz-automobil-mechatroniker"
+    "edu-efz-automobil-mechatroniker",
+    "edu-efz-bootfachwart-in",
+    "edu-bp-fahrzeugrestaurator-in",
+    "edu-eba-zweirad-assistent-in",
+    "edu-efz-fahrzeugschlosser-in",
+    "edu-efz-automobil-fachmann-frau",
+    "edu-bp-diagnosetechniker-in-motorgeraete",
+    "edu-efz-motorradmechaniker-in",
+    "edu-bp-automobildiagnostiker-in",
+    "edu-eba-automobil-assistent-in"
   ],
   "languageRegions": [
     "de",

@@ -1,0 +1,55 @@
+{
+  "id": "edu-efz-holzindustriefachmann-frau",
+  "kind": "education",
+  "route": "vocational",
+  "eduType": "EFZ",
+  "name": {
+    "en": "Holzindustriefachfrau/-mann EFZ",
+    "de": "Holzindustriefachfrau/-mann EFZ",
+    "fr": "Spécialiste en industrie du bois CFC",
+    "it": "Operatore dell'industria del legno AFC"
+  },
+  "codes": {
+    "isco08": "8172"
+  },
+  "sector": "CH-ISCO-19 81: Bediener stationärer Anlagen und Maschinen",
+  "refs": {
+    "qualLevel": "apprenticeship",
+    "besta": "10-33",
+    "nogaSection": "C"
+  },
+  "pathway": [
+    {
+      "label": "Holzindustriefachfrau/-mann EFZ",
+      "years": 3.0,
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/holzindustriefachmann-frau-efz",
+      "confidence": "measured"
+    }
+  ],
+  "leadsTo": [
+    "occ-holzindustriefachmann-frau"
+  ],
+  "trainedVia": [],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "entryAccess": {
+      "value": 1,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/holzindustriefachmann-frau-efz",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "Apprenticeship contract with a training company required (default for dual VET)."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Language regions assumed (all three) — not individually verified. No BFS completion statistic for this occupation (missing)."
+  }
+}

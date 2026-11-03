@@ -1,0 +1,58 @@
+{
+  "id": "occ-ai-business-specialist",
+  "kind": "occupation",
+  "route": "vocational",
+  "name": {
+    "en": "Systemanalytiker, Beratung",
+    "de": "AI Business Specialist",
+    "fr": "Analystes de systèmes, conseil ICT",
+    "it": "Analisti di sistema, consiglio ICT"
+  },
+  "codes": {
+    "isco08": "2511",
+    "chIsco19": "25112"
+  },
+  "sector": "CH-ISCO-19 25: Spezialisten in der Informations- und Kommunikationstechnologie",
+  "refs": {
+    "qualLevel": "higherVet",
+    "nogaSection": "J",
+    "besta": "62-63"
+  },
+  "pathway": [],
+  "leadsTo": [],
+  "trainedVia": [
+    "edu-bp-ai-business-specialist"
+  ],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "mobility": {
+      "value": 9,
+      "unit": "rubric 0–9",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#11-international-mobility",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed): recognition 3/3, language independence 3/3, transferability 3/3."
+    },
+    "regionalUbiquity": {
+      "value": 2,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#12-regional-availability",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed)."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Occupation = CH-ISCO-19 occupation type 25112 (Systemanalytiker, Beratung). Sector for demand/telework/hours assigned from the occupation group (estimate)."
+  }
+}

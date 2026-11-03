@@ -1,0 +1,60 @@
+{
+  "id": "occ-leiter-in-des-technischen-kundendienstes-service",
+  "kind": "occupation",
+  "route": "vocational",
+  "name": {
+    "en": "Technical Customer Service Manager",
+    "de": "Führungskräfte in Vertrieb",
+    "fr": "Chef de service après-vente",
+    "it": "Capo del servizio tecnico alla clientela"
+  },
+  "codes": {
+    "isco08": "1221",
+    "chIsco19": "12211"
+  },
+  "sector": "CH-ISCO-19 12: Führungskräfte im kaufmännischen Bereich",
+  "refs": {
+    "qualLevel": "higherVet",
+    "nogaSection": "*",
+    "besta": "5-96"
+  },
+  "pathway": [],
+  "leadsTo": [],
+  "trainedVia": [
+    "edu-hfp-leiter-in-des-technischen-kundendienstes-service",
+    "edu-hfp-verkaufsleiter-in",
+    "edu-hfp-aussenhandelsleiter-in"
+  ],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "mobility": {
+      "value": 5,
+      "unit": "rubric 0–9",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#11-international-mobility",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed): recognition 2/3, language independence 1/3, transferability 2/3."
+    },
+    "regionalUbiquity": {
+      "value": 2,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#12-regional-availability",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed)."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Occupation = CH-ISCO-19 occupation type 12211 (Führungskräfte in Vertrieb). Sector for demand/telework/hours assigned from the occupation group (estimate). Several job titles share this occupation type: Aussenhandelsleiter / Aussenhandelsleiterin; Leiterin des technischen Kundendienstes/Service / Leiter des technischen Kundendienstes/Service; Verkaufsleiter / Verkaufsleiterin."
+  }
+}

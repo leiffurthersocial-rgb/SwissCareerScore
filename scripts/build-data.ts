@@ -12,7 +12,7 @@
 import { existsSync, mkdirSync, readFileSync, readdirSync, writeFileSync } from "node:fs";
 import path from "node:path";
 import { DIMENSIONS, DIMENSION_IDS, type DimensionId } from "../src/lib/dimensions";
-import type { Dataset, DatasetDatapoint, DatasetEntity, DatasetMetric, InputId } from "../src/lib/dataset-types";
+import type { CoreDataset, CoreEntity, Dataset, DatasetDatapoint, DatasetEntity, DatasetMetric, InputId } from "../src/lib/dataset-types";
 import { EntityFile, type Confidence, type MatchLevel } from "../src/lib/schema";
 import { correlationMatrix } from "../src/lib/scoring/correlation";
 import { percentileRanks } from "../src/lib/scoring/normalize";
@@ -52,7 +52,6 @@ const byId = new Map(entities.map((e) => [e.id, e]));
 for (const e of entities) {
   for (const ref of [...e.leadsTo, ...e.trainedVia]) if (!byId.has(ref)) fail(`${e.id}: unknown reference ${ref}`);
   if (e.kind === "occupation" && e.trainedVia.length === 0) fail(`${e.id}: occupation needs trainedVia`);
-  if (e.kind === "education" && e.pathway.length === 0) fail(`${e.id}: education path needs a pathway`);
 }
 
 // ------------------------------------------------------------------ helpers
@@ -83,6 +82,7 @@ const MATCH_ORDER: MatchLevel[] = ["exact", "isco4", "isco3", "isco2", "field", 
 const worstMatch = (ms: MatchLevel[]) => ms.reduce((a, b) => (MATCH_ORDER.indexOf(b) > MATCH_ORDER.indexOf(a) ? b : a), "exact" as MatchLevel);
 
 const SECTION_KEY = (letter: string, keys: string[]): string | undefined =>
+  (letter === "*" ? keys.find((k) => k === "*" || k === "A-T") : undefined) ??
   keys.find((k) => k === letter) ??
   keys.find((k) => k.split("/").includes(letter)) ??
   keys.find((k) => {
@@ -96,8 +96,9 @@ type Inputs = Partial<Record<InputId, DatasetDatapoint>>;
 function lseInputs(isco08: string): Inputs {
   const g = lse.groups[isco08.slice(0, 2)];
   if (!g) {
-    fail(`ISCO ${isco08}: 2-digit group not in LSE`);
-    return {};
+    const none = (what: string) =>
+      dp(null, "CHF/month", "bfs-lse-2024", LSE_URL, 2024, "measured", "isco2", `LSE 2024 — ${what}`, `BFS publishes no wage figure for ISCO group ${isco08.slice(0, 2)}.`);
+    return { payEntry: none("age ≤29"), payMid: none("age 30–49"), paySenior: none("age ≥50") };
   }
   const label = `LSE 2024, ISCO ${g.label}`;
   const v = (age: string, pct = "Zentralwert") => g.values[age]?.[pct] ?? null;
@@ -112,10 +113,11 @@ function lseInputs(isco08: string): Inputs {
   };
 }
 
-function unemploymentInput(isco08: string): DatasetDatapoint {
+function unemploymentInput(isco08: string, chIsco19?: string): DatasetDatapoint {
   const rows = seco.stmp.rows as Record<string, { code: string; name: string; rate: number }>;
-  const candidates = [isco08 + "0", isco08];
-  const hit = Object.values(rows).find((r) => candidates.includes(r.code) || (r.code.length === 4 && isco08 === r.code));
+  const code5 = chIsco19 ?? isco08 + "0";
+  // SECO lists 5-digit occupation types, or 4-digit unit groups that have no 5-digit split.
+  const hit = Object.values(rows).find((r) => r.code === code5 || (r.code.length === 4 && code5.startsWith(r.code)));
   if (hit)
     return dp(hit.rate, "%", "seco-stmp-2027", SECO_STMP_URL, 2026, "measured", "isco4", `SECO Berufsart ${hit.code} ${hit.name}`, "Registered unemployed ÷ employed, Q4 2025 – Q3 2026.");
   const major = seco.majorGroups.average[isco08[0]];
@@ -173,20 +175,25 @@ function nightInput(isco08: string): DatasetDatapoint {
 }
 
 function aiInput(isco08: string): DatasetDatapoint {
-  const o = ai.occupations[isco08];
+  const own = ai.occupations[isco08];
+  const o = own ?? ai.groups[isco08.slice(0, 2)];
+  const level: MatchLevel = own ? "isco4" : "isco2";
   if (!o) {
-    fail(`ISCO ${isco08}: no AI task-content entry`);
+    fail(`ISCO ${isco08}: no AI task-content entry or group default`);
     return dp(null, "index 0–100", "ai-task-content", `${METHODOLOGY_URL}#4-ai--automation-resilience`, 2026, "expert-judgment", "isco4");
   }
   const s = o.shares as Record<string, number>;
   const w = ai.weights as Record<string, number>;
   const exposure = Object.keys(w).reduce((sum, k) => sum + (s[k] ?? 0) * w[k], 0);
-  return dp(exposure, "index 0–100", "ai-task-content", `${METHODOLOGY_URL}#4-ai--automation-resilience`, 2026, "expert-judgment", "isco4", `ISCO ${isco08} ${o.label}: NRA ${s.NRA}%, NRI ${s.NRI}%, RC ${s.RC}%, RM ${s.RM}%, NRM ${s.NRM}%`, `Estimate. ${o.rationale}`);
+  return dp(exposure, "index 0–100", "ai-task-content", `${METHODOLOGY_URL}#4-ai--automation-resilience`, 2026, "expert-judgment", level, `${own ? "ISCO " + isco08 : "ISCO group " + isco08.slice(0, 2) + " (default)"} ${o.label}: NRA ${s.NRA}%, NRI ${s.NRI}%, RC ${s.RC}%, RM ${s.RM}%, NRM ${s.NRM}%`, `Estimate. ${o.rationale}`);
 }
 
 function educationOwnInputs(e: EntityFile): Inputs {
   const out: Inputs = {};
   // time to qualify — sum of pathway stages, each verified against the cited page
+  if (!e.pathway.length) {
+    out.yearsToQualify = dp(null, "years", "berufsberatung", "https://www.berufsberatung.ch/", 2026, "measured", "exact", undefined, "No official duration published on berufsberatung.ch — missing, not estimated.");
+  }
   let years = 0;
   const confs: Confidence[] = [];
   for (const s of e.pathway) {
@@ -199,14 +206,14 @@ function educationOwnInputs(e: EntityFile): Inputs {
         fail(`${e.id}: stage "${s.label}" = ${s.years} y not stated on ${s.sourceUrl} (page says: ${page.durationSnippets.join(" / ")})`);
     }
   }
-  out.yearsToQualify = dp(years, "years", "berufsberatung", e.pathway[e.pathway.length - 1].sourceUrl, 2026, worstConf(confs), "exact", e.pathway.map((s) => `${s.label} (${s.years} y)`).join(" + "), "Shortest standard full-time route after compulsory school. Bridging years, gap years and specialist training are not included.");
+  if (e.pathway.length) out.yearsToQualify = dp(years, "years", "berufsberatung", e.pathway[e.pathway.length - 1].sourceUrl, 2026, worstConf(confs), "exact", e.pathway.map((s) => `${s.label} (${s.years} y)`).join(" + "), "Shortest standard full-time route after compulsory school. Bridging years, gap years and specialist training are not included.");
   // apprentice wage (display only)
-  const last = bb.pages[e.pathway[e.pathway.length - 1].sourceUrl];
+  const last = e.pathway.length ? bb.pages[e.pathway[e.pathway.length - 1].sourceUrl] : undefined;
   if ((e.eduType === "EFZ" || e.eduType === "EBA") && last?.apprenticeWages?.length) {
     const lastYear = last.apprenticeWages[last.apprenticeWages.length - 1];
     const nums = String(lastYear.chf).match(/\d[\d’']*/g)?.map((x: string) => Number(x.replace(/[’']/g, ""))) ?? [];
     const val = nums.length ? nums.reduce((a: number, b: number) => a + b, 0) / nums.length : null;
-    out.apprenticeWage = dp(val, "CHF/month", "berufsberatung", e.pathway[e.pathway.length - 1].sourceUrl, 2026, "measured", "exact", `Recommended apprentice wage, final year: CHF ${lastYear.chf}`, "Recommendation of the professional association; varies by region and employer. Display only, not scored.");
+    out.apprenticeWage = dp(val, "CHF/month", "berufsberatung", e.pathway[e.pathway.length - 1]!.sourceUrl, 2026, "measured", "exact", `Recommended apprentice wage, final year: CHF ${lastYear.chf}`, "Recommendation of the professional association; varies by region and employer. Display only, not scored.");
   }
   // training completion
   if (e.refs.vetName) {
@@ -244,7 +251,7 @@ function occupationOwnInputs(e: EntityFile): Inputs {
   const isco = e.codes.isco08!;
   const out: Inputs = {
     ...lseInputs(isco),
-    unemploymentRate: unemploymentInput(isco),
+    unemploymentRate: unemploymentInput(isco, e.codes.chIsco19),
     aiExposure: aiInput(isco),
     nightWork: nightInput(isco),
     ...sectionInputs(e.refs.nogaSection),
@@ -417,7 +424,32 @@ if (process.argv.includes("--check")) {
   process.exit(0);
 }
 mkdirSync(path.join(ROOT, "data", "derived"), { recursive: true });
-writeFileSync(target, JSON.stringify(dataset, null, 1) + "\n");
+writeFileSync(target, JSON.stringify(dataset) + "\n");
+// Compact client bundle: everything the ranking needs, nothing the detail pages need.
+const C = { measured: "m", estimated: "e", "expert-judgment": "x" } as const;
+const core: CoreDataset = {
+  version: dataset.version,
+  generated: dataset.generated,
+  sources: dataset.sources.map((s) => ({ ...s, rawFiles: undefined })),
+  correlations: dataset.correlations,
+  entities: out.map((e) => ({
+    id: e.id,
+    kind: e.kind,
+    route: e.route,
+    ...(e.eduType ? { eduType: e.eduType } : {}),
+    name: e.name,
+    sector: e.sector,
+    languageRegions: e.languageRegions,
+    leadsTo: e.leadsTo,
+    trainedVia: e.trainedVia,
+    m: Object.fromEntries(
+      Object.entries(e.metrics).map(([k, v]) => [k, [v!.raw, C[v!.confidence], v!.matchLevel]]),
+    ) as CoreEntity["m"],
+    y: e.inputs.yearsToQualify?.value ?? null,
+    p: e.inputs.payMid?.value ?? null,
+  })),
+};
+writeFileSync(path.join(ROOT, "data", "derived", "core.json"), JSON.stringify(core) + "\n");
 
 // summary
 const coverage = DIMENSION_IDS.map((d) => `${d}: ${out.filter((e) => e.metrics[d]?.raw !== null && e.metrics[d]?.raw !== undefined).length}/${out.length}`);

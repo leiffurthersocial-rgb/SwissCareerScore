@@ -1,0 +1,64 @@
+{
+  "id": "occ-hoersystemakustiker-in",
+  "kind": "occupation",
+  "route": "vocational",
+  "name": {
+    "en": "Hearing Aid Professional",
+    "de": "Medizinische und zahnmedizinische Prothetiktechniker",
+    "fr": "Acousticien en systèmes auditifs",
+    "it": "Tecnologo per sistemi uditivi"
+  },
+  "codes": {
+    "isco08": "3214",
+    "chIsco19": "32140"
+  },
+  "sector": "CH-ISCO-19 32: Assistenzberufe im Gesundheitswesen",
+  "refs": {
+    "qualLevel": "apprenticeship",
+    "nogaSection": "Q",
+    "besta": "86-88"
+  },
+  "pathway": [],
+  "leadsTo": [],
+  "trainedVia": [
+    "edu-efz-hoersystemakustiker-in",
+    "edu-efz-orthopaedist-in",
+    "edu-hfp-orthopaedist-in",
+    "edu-efz-zahntechniker-in",
+    "edu-bp-fachzahntechniker-in-kieferorthopaedie",
+    "edu-bp-fachmann-frau-fuer-rehatechnik",
+    "edu-bp-hoersystemspezialist-in"
+  ],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "mobility": {
+      "value": 4,
+      "unit": "rubric 0–9",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#11-international-mobility",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed): recognition 1/3, language independence 1/3, transferability 2/3."
+    },
+    "regionalUbiquity": {
+      "value": 3,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#12-regional-availability",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed)."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Occupation = CH-ISCO-19 occupation type 32140 (Medizinische und zahnmedizinische Prothetiktechniker). Sector for demand/telework/hours assigned from the occupation group (estimate). Several job titles share this occupation type: Fachmann für Rehatechnik / Fachfrau für Rehatechnik; Fachzahntechnikerin Kieferorthopädie / Fachzahntechniker Kieferorthopädie; Hörsystemakustiker / Hörsystemakustikerin; Hörsystemspezialist/in; Orthopädist / Orthopädistin; Orthopädist/in; Zahntechniker/in."
+  }
+}

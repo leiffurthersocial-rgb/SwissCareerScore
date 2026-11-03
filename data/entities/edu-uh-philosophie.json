@@ -1,0 +1,69 @@
+{
+  "id": "edu-uh-philosophie",
+  "kind": "education",
+  "route": "academic",
+  "eduType": "UH-MSc",
+  "name": {
+    "en": "Philosophie – MSc/MA (UH)",
+    "de": "Master Philosophie (UH)",
+    "fr": null,
+    "it": null
+  },
+  "codes": {
+    "isco08": "2633"
+  },
+  "sector": "CH-ISCO-19 26: Juristen, Sozialwissenschaftler und Kulturberufe",
+  "refs": {
+    "qualLevel": "higherEducation",
+    "studyField": "UH:Geistes- und Sozialwissenschaften",
+    "gradIncome": "uh:Master:Geistes- und Sozialwissenschaften",
+    "besta": "68-75",
+    "nogaSection": "M"
+  },
+  "pathway": [
+    {
+      "label": "Gymnasiale Maturität",
+      "years": 4,
+      "sourceUrl": "https://www.berufsberatung.ch/de/bildungssystem/d/gymnasiale-maturitaetsschulen",
+      "confidence": "estimated",
+      "note": "berufsberatung.ch states 3–6 years depending on canton (partly overlapping compulsory school); 4 years after compulsory school assumed."
+    },
+    {
+      "label": "Bachelor Philosophie (UH)",
+      "years": 3.0,
+      "sourceUrl": "https://www.berufsberatung.ch/de/studienrichtungen/philosophie",
+      "confidence": "measured"
+    },
+    {
+      "label": "Master Philosophie (UH)",
+      "years": 2.0,
+      "sourceUrl": "https://www.berufsberatung.ch/de/studienrichtungen/philosophie",
+      "confidence": "measured"
+    }
+  ],
+  "leadsTo": [
+    "occ-politologe-politologin"
+  ],
+  "trainedVia": [],
+  "languageRegions": [
+    "de",
+    "fr"
+  ],
+  "raw": {
+    "entryAccess": {
+      "value": 0,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://www.berufsberatung.ch/de/studienrichtungen/philosophie",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "Open admission with Matura."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "English name of the field kept in German where no official translation was available. Target occupation chosen by the project as the most typical professional destination (estimate)."
+  }
+}

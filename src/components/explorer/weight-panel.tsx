@@ -15,7 +15,7 @@ import { AhpWizard } from "./ahp-wizard";
 
 /** Dimensions with no data at all cannot be weighted meaningfully; hidden unless opted in. */
 const EMPTY_DIMS = new Set<DimensionId>(
-  DIMENSION_IDS.filter((d) => dataset.entities.every((e) => e.metrics[d]?.raw === null || e.metrics[d] === undefined)),
+  DIMENSION_IDS.filter((d) => dataset.entities.every((e) => e.m[d]?.[0] === null || e.m[d] === undefined)),
 );
 
 export function WeightPanel({

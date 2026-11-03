@@ -1,0 +1,55 @@
+{
+  "id": "edu-efz-fachmann-frau-reinigungstechnik",
+  "kind": "education",
+  "route": "vocational",
+  "eduType": "EFZ",
+  "name": {
+    "en": "Fachfrau Reinigungstechnik / Fachmann Reinigungstechnik EFZ",
+    "de": "Fachfrau Reinigungstechnik / Fachmann Reinigungstechnik EFZ",
+    "fr": null,
+    "it": null
+  },
+  "codes": {
+    "isco08": "9112"
+  },
+  "sector": "CH-ISCO-19 91: Reinigungspersonal und Hilfskräfte",
+  "refs": {
+    "qualLevel": "apprenticeship",
+    "besta": "77-82",
+    "nogaSection": "N"
+  },
+  "pathway": [
+    {
+      "label": "Fachfrau Reinigungstechnik / Fachmann Reinigungstechnik EFZ",
+      "years": 3.0,
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/fachmann-frau-reinigungstechnik-efz",
+      "confidence": "measured"
+    }
+  ],
+  "leadsTo": [
+    "occ-praktiker-in-reinigungstechnik"
+  ],
+  "trainedVia": [],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "entryAccess": {
+      "value": 1,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/fachmann-frau-reinigungstechnik-efz",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "Apprenticeship contract with a training company required (default for dual VET)."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Language regions assumed (all three) — not individually verified. No BFS completion statistic for this occupation (missing). Occupation code 91120 assigned by the project (title not in the SECO/AVAM list) — estimate."
+  }
+}

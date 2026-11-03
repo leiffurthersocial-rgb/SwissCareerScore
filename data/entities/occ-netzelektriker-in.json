@@ -1,0 +1,59 @@
+{
+  "id": "occ-netzelektriker-in",
+  "kind": "occupation",
+  "route": "vocational",
+  "name": {
+    "en": "Network Electrician",
+    "de": "Elektroleitungsinstallateure und Wartungspersonal",
+    "fr": "Electricien de réseau",
+    "it": "Elettricista per reti di distribuzione"
+  },
+  "codes": {
+    "isco08": "7413",
+    "chIsco19": "74130"
+  },
+  "sector": "CH-ISCO-19 74: Elektriker und Elektroniker",
+  "refs": {
+    "qualLevel": "apprenticeship",
+    "nogaSection": "D",
+    "besta": "5-43"
+  },
+  "pathway": [],
+  "leadsTo": [],
+  "trainedVia": [
+    "edu-efz-netzelektriker-in",
+    "edu-bp-netzfachmann-frau"
+  ],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "mobility": {
+      "value": 5,
+      "unit": "rubric 0–9",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#11-international-mobility",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed): recognition 1/3, language independence 2/3, transferability 2/3."
+    },
+    "regionalUbiquity": {
+      "value": 3,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#12-regional-availability",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed)."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Occupation = CH-ISCO-19 occupation type 74130 (Elektroleitungsinstallateure und Wartungspersonal). Sector for demand/telework/hours assigned from the occupation group (estimate). Several job titles share this occupation type: Netzelektriker / Netzelektrikerin; Netzfachmann / Netzfachfrau."
+  }
+}

@@ -83,8 +83,8 @@ async function telework() {
   const out: Record<string, { label: string; pct: number }> = {};
   for (const r of g) {
     const label = str(r[1]);
-    const m = label.match(/^([A-Z](?:\/[A-Z])*(?:-[A-Z])?)\s*-?\s*(.*)$/);
-    if (!m || out[m[1].trim()] || /^Total/.test(label)) continue;
+    const m = /^Total$/.test(label) ? ["", "*", "Total (whole economy)"] : label.match(/^([A-Z](?:\/[A-Z])*(?:-[A-Z])?)\s*-?\s*(.*)$/);
+    if (!m || out[m[1].trim()]) continue;
     const nums = r.slice(2).map(parseNum);
     const total = nums[years.length * 4 - 1]; // last block's "Total" column
     if (total !== null && total !== undefined) out[m[1].trim()] = { label: m[2].trim(), pct: round(total * 100, 1) };

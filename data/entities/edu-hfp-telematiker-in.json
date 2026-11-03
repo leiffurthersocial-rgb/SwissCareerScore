@@ -1,0 +1,63 @@
+{
+  "id": "edu-hfp-telematiker-in",
+  "kind": "education",
+  "route": "vocational",
+  "eduType": "HFP",
+  "name": {
+    "en": "Telematics Engineer (HFP)",
+    "de": "Telematiker / Telematikerin HFP",
+    "fr": "Télématicien DF",
+    "it": "Telematico DPF"
+  },
+  "codes": {
+    "isco08": "3513"
+  },
+  "sector": "CH-ISCO-19 35: Informations- und Kommunikationstechniker",
+  "refs": {
+    "qualLevel": "higherVet",
+    "besta": "62-63",
+    "nogaSection": "J"
+  },
+  "pathway": [
+    {
+      "label": "EFZ apprenticeship in a related occupation",
+      "years": 3,
+      "sourceUrl": "https://www.berufsberatung.ch/de/bildungssystem/d/lehre-efz",
+      "confidence": "measured",
+      "note": "Admission normally requires a relevant EFZ (3 or 4 years); the shorter variant is counted."
+    },
+    {
+      "label": "Preparation for the advanced federal exam: Telematiker / Telematikerin HFP",
+      "years": 0.5,
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/telematiker-in-hfp",
+      "confidence": "estimated",
+      "note": "Duration of the preparatory course as stated; admission also requires professional experience (see exam regulations), so the true time to qualify is longer."
+    }
+  ],
+  "leadsTo": [
+    "occ-telematiker-in"
+  ],
+  "trainedVia": [],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "entryAccess": {
+      "value": 0,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/telematiker-in-hfp",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "Admission to the federal exam is based on professional experience; no capacity limit."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Language regions assumed (all three) — not individually verified."
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "id": "occ-fachmann-frau-bahntransport",
+  "kind": "occupation",
+  "route": "vocational",
+  "name": {
+    "en": "Bediener von Sicherungs-, Signal- und Leittechnik im Schienennetzbetrieb",
+    "de": "Fachmann Bahntransport / Fachfrau Bahntransport",
+    "fr": "Serre-freins, aiguilleurs et agents de manœuvre",
+    "it": "Frenatori, segnalatori e agenti di manovra ferroviari"
+  },
+  "codes": {
+    "isco08": "8312",
+    "chIsco19": "83120"
+  },
+  "sector": "CH-ISCO-19 83: Fahrzeugführer und Bediener mobiler Anlagen",
+  "refs": {
+    "qualLevel": "apprenticeship",
+    "nogaSection": "H",
+    "besta": "49-53"
+  },
+  "pathway": [],
+  "leadsTo": [],
+  "trainedVia": [
+    "edu-efz-fachmann-frau-bahntransport"
+  ],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "mobility": {
+      "value": 4,
+      "unit": "rubric 0–9",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#11-international-mobility",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed): recognition 1/3, language independence 2/3, transferability 1/3."
+    },
+    "regionalUbiquity": {
+      "value": 3,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#12-regional-availability",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed)."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Occupation = CH-ISCO-19 occupation type 83120 (Bediener von Sicherungs-, Signal- und Leittechnik im Schienennetzbetrieb). Sector for demand/telework/hours assigned from the occupation group (estimate)."
+  }
+}

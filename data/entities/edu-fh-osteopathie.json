@@ -1,0 +1,62 @@
+{
+  "id": "edu-fh-osteopathie",
+  "kind": "education",
+  "route": "mixed",
+  "eduType": "FH-BSc",
+  "name": {
+    "en": "Osteopathie – BSc/BA (FH)",
+    "de": "Bachelor Osteopathie (FH)",
+    "fr": null,
+    "it": null
+  },
+  "codes": {
+    "isco08": "2269"
+  },
+  "sector": "CH-ISCO-19 22: Spezialisten in Gesundheitsberufen",
+  "refs": {
+    "qualLevel": "higherEducation",
+    "studyField": "FH:Gesundheit",
+    "gradIncome": "fh:Bachelor:Gesundheit",
+    "besta": "86-88",
+    "nogaSection": "Q"
+  },
+  "pathway": [
+    {
+      "label": "EFZ with integrated Berufsmaturität (BM 1)",
+      "years": 3,
+      "sourceUrl": "https://www.berufsberatung.ch/de/bildungssystem/d/berufsmaturitaet",
+      "confidence": "measured",
+      "note": "Typical vocational route to FH (3–4 years); Gymnasiale Matura plus one year of work experience is an alternative."
+    },
+    {
+      "label": "Bachelor Osteopathie (FH)",
+      "years": 3.0,
+      "sourceUrl": "https://www.berufsberatung.ch/de/studienrichtungen/osteopathie",
+      "confidence": "measured"
+    }
+  ],
+  "leadsTo": [
+    "occ-experte-expertin-bewegungs-und-gesundheitsfoerderung"
+  ],
+  "trainedVia": [],
+  "languageRegions": [
+    "fr"
+  ],
+  "raw": {
+    "entryAccess": {
+      "value": 3,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://www.berufsberatung.ch/de/studienrichtungen/osteopathie",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "Single programme (HES-SO) with strongly limited places."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "English name of the field kept in German where no official translation was available. Target occupation chosen by the project as the most typical professional destination (estimate)."
+  }
+}

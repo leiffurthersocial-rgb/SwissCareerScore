@@ -9,8 +9,8 @@
     "it": null
   },
   "codes": {
-    "isco08": "7223",
-    "chIsco19": "72230"
+    "isco08": "7200",
+    "chIsco19": "72001"
   },
   "sector": "Industry (MEM)",
   "refs": {
@@ -21,7 +21,8 @@
   "pathway": [],
   "leadsTo": [],
   "trainedVia": [
-    "edu-efz-polymechaniker"
+    "edu-efz-polymechaniker",
+    "edu-efz-produktionsmechaniker-in"
   ],
   "languageRegions": [
     "de",
@@ -52,6 +53,7 @@
   },
   "meta": {
     "addedBy": "initial-dataset",
-    "reviewed": "2026-11-03"
+    "reviewed": "2026-11-03",
+    "notes": "CH-ISCO-19 code corrected to 72001 per SECO/AVAM occupation list."
   }
 }

@@ -1,0 +1,58 @@
+{
+  "id": "occ-gesundheitswissenschaftler-in",
+  "kind": "occupation",
+  "route": "academic",
+  "name": {
+    "en": "Public health specialist",
+    "de": "Gesundheitswissenschaftler/in",
+    "fr": "Spécialistes de la salubrité de l’environnement, de l’hygiène et de la santé au travail",
+    "it": "Specialisti in medicina ambientale, medicina del lavoro e igiene"
+  },
+  "codes": {
+    "isco08": "2263",
+    "chIsco19": "22630"
+  },
+  "sector": "CH-ISCO-19 22: Spezialisten in Gesundheitsberufen",
+  "refs": {
+    "qualLevel": "higherEducation",
+    "nogaSection": "O",
+    "besta": "84"
+  },
+  "pathway": [],
+  "leadsTo": [],
+  "trainedVia": [
+    "edu-uh-gesundheitswissenschaften"
+  ],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "mobility": {
+      "value": 6,
+      "unit": "rubric 0–9",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#11-international-mobility",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed): recognition 2/3, language independence 1/3, transferability 3/3."
+    },
+    "regionalUbiquity": {
+      "value": 3,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#12-regional-availability",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed)."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Occupation = CH-ISCO-19 occupation type 22630 (Spezialisten in den Bereichen Umwelt- und Arbeitsmedizin sowie Hygiene). Sector for demand/telework/hours assigned from the occupation group (estimate)."
+  }
+}

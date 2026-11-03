@@ -8,12 +8,12 @@ import { Card } from "@/components/ui/card";
 import { useAppState, useScores } from "@/hooks/use-app-state";
 import { Link } from "@/i18n/navigation";
 import { displayName, entities, getEntity } from "@/lib/dataset";
-import { INPUT_IDS } from "@/lib/dataset-types";
+import { INPUT_IDS, type DatasetEntity } from "@/lib/dataset-types";
 import { DIMENSIONS, DIMENSION_IDS } from "@/lib/dimensions";
 import { formatNumber } from "@/lib/format";
 import { ScoreRadar } from "./radar";
 
-export function EntityView({ id }: { id: string }) {
+export function EntityView({ detail }: { detail: DatasetEntity }) {
   const t = useTranslations("entity");
   const tl = useTranslations("list");
   const td = useTranslations("dims");
@@ -23,8 +23,8 @@ export function EntityView({ id }: { id: string }) {
   const locale = useLocale();
   const { state, queryString, toggleCompare } = useAppState();
   const results = useScores(state.weights);
-  const e = getEntity(id);
-  if (!e) return <p>{t("notFound")}</p>;
+  const e = detail;
+  const id = e.id;
   const r = results.get(id)!;
   const qs = queryString ? `?${queryString}` : "";
   const poolSize = entities.filter((x) => x.kind === e.kind && results.get(x.id)?.rank !== null).length;

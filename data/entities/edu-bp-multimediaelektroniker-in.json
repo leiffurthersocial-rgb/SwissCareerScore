@@ -1,0 +1,63 @@
+{
+  "id": "edu-bp-multimediaelektroniker-in",
+  "kind": "education",
+  "route": "vocational",
+  "eduType": "BP",
+  "name": {
+    "en": "Multimedia Electronics Technician (BP)",
+    "de": "Multimediaelektroniker / Multimediaelektronikerin BP",
+    "fr": "Electronicien en multimédia BF",
+    "it": "Elettronico multimediale APF"
+  },
+  "codes": {
+    "isco08": "7422"
+  },
+  "sector": "CH-ISCO-19 74: Elektriker und Elektroniker",
+  "refs": {
+    "qualLevel": "higherVet",
+    "besta": "26",
+    "nogaSection": "C"
+  },
+  "pathway": [
+    {
+      "label": "EFZ apprenticeship in a related occupation",
+      "years": 3,
+      "sourceUrl": "https://www.berufsberatung.ch/de/bildungssystem/d/lehre-efz",
+      "confidence": "measured",
+      "note": "Admission normally requires a relevant EFZ (3 or 4 years); the shorter variant is counted."
+    },
+    {
+      "label": "Preparation for the federal exam: Multimediaelektroniker / Multimediaelektronikerin BP",
+      "years": 2.0,
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/multimediaelektroniker-in-bp",
+      "confidence": "estimated",
+      "note": "Duration of the preparatory course as stated; admission also requires professional experience (see exam regulations), so the true time to qualify is longer."
+    }
+  ],
+  "leadsTo": [
+    "occ-multimediaelektroniker-in"
+  ],
+  "trainedVia": [],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "entryAccess": {
+      "value": 0,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/multimediaelektroniker-in-bp",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "Admission to the federal exam is based on professional experience; no capacity limit."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Language regions assumed (all three) — not individually verified."
+  }
+}

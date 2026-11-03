@@ -9,8 +9,8 @@
     "it": null
   },
   "codes": {
-    "isco08": "5311",
-    "chIsco19": "53110"
+    "isco08": "5322",
+    "chIsco19": "53222"
   },
   "sector": "Social care",
   "refs": {
@@ -52,6 +52,7 @@
   },
   "meta": {
     "addedBy": "initial-dataset",
-    "reviewed": "2026-11-03"
+    "reviewed": "2026-11-03",
+    "notes": "CH-ISCO-19 code corrected to 53222 per SECO/AVAM occupation list."
   }
 }

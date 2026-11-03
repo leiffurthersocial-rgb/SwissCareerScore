@@ -1,0 +1,63 @@
+{
+  "id": "edu-bp-automobil-verkaufsberater-in",
+  "kind": "education",
+  "route": "vocational",
+  "eduType": "BP",
+  "name": {
+    "en": "Automobile Sales Representative (BP)",
+    "de": "Automobil-Verkaufsberater / Automobil-Verkaufsberaterin BP",
+    "fr": "Conseiller de vente automobile BF",
+    "it": "Consulente di vendita d'automobili APF"
+  },
+  "codes": {
+    "isco08": "5223"
+  },
+  "sector": "Retail",
+  "refs": {
+    "qualLevel": "higherVet",
+    "besta": "45-47",
+    "nogaSection": "G"
+  },
+  "pathway": [
+    {
+      "label": "EFZ apprenticeship in a related occupation",
+      "years": 3,
+      "sourceUrl": "https://www.berufsberatung.ch/de/bildungssystem/d/lehre-efz",
+      "confidence": "measured",
+      "note": "Admission normally requires a relevant EFZ (3 or 4 years); the shorter variant is counted."
+    },
+    {
+      "label": "Preparation for the federal exam: Automobil-Verkaufsberater / Automobil-Verkaufsberaterin BP",
+      "years": 1.0,
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/automobil-verkaufsberater-in-bp",
+      "confidence": "estimated",
+      "note": "Duration of the preparatory course as stated; admission also requires professional experience (see exam regulations), so the true time to qualify is longer."
+    }
+  ],
+  "leadsTo": [
+    "occ-detailhandel"
+  ],
+  "trainedVia": [],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "entryAccess": {
+      "value": 0,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/automobil-verkaufsberater-in-bp",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "Admission to the federal exam is based on professional experience; no capacity limit."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Language regions assumed (all three) — not individually verified."
+  }
+}

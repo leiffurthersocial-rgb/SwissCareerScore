@@ -9,8 +9,8 @@
     "it": null
   },
   "codes": {
-    "isco08": "5321",
-    "chIsco19": "53210"
+    "isco08": "3221",
+    "chIsco19": "32210"
   },
   "sector": "Health",
   "refs": {
@@ -21,7 +21,9 @@
   "pathway": [],
   "leadsTo": [],
   "trainedVia": [
-    "edu-efz-fage"
+    "edu-efz-fage",
+    "edu-eba-assistent-in-gesundheit-und-soziales",
+    "edu-bp-fachmann-frau-in-psychiatrischer-pflege-und-betreuung"
   ],
   "languageRegions": [
     "de",
@@ -52,6 +54,7 @@
   },
   "meta": {
     "addedBy": "initial-dataset",
-    "reviewed": "2026-11-03"
+    "reviewed": "2026-11-03",
+    "notes": "CH-ISCO-19 code corrected to 32210 per SECO/AVAM occupation list."
   }
 }

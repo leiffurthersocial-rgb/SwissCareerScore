@@ -1,0 +1,62 @@
+{
+  "id": "edu-fh-sport-sportwissenschaften",
+  "kind": "education",
+  "route": "mixed",
+  "eduType": "FH-BSc",
+  "name": {
+    "en": "Sport, Sportwissenschaften – BSc/BA (FH)",
+    "de": "Bachelor Sport, Sportwissenschaften (FH)",
+    "fr": null,
+    "it": null
+  },
+  "codes": {
+    "isco08": "3422"
+  },
+  "sector": "CH-ISCO-19 34: Juristische, soziale, kulturelle und verwandte Fachkräfte",
+  "refs": {
+    "qualLevel": "higherEducation",
+    "studyField": "FH:Sport",
+    "besta": "90-96",
+    "nogaSection": "R"
+  },
+  "pathway": [
+    {
+      "label": "EFZ with integrated Berufsmaturität (BM 1)",
+      "years": 3,
+      "sourceUrl": "https://www.berufsberatung.ch/de/bildungssystem/d/berufsmaturitaet",
+      "confidence": "measured",
+      "note": "Typical vocational route to FH (3–4 years); Gymnasiale Matura plus one year of work experience is an alternative."
+    },
+    {
+      "label": "Bachelor Sport, Sportwissenschaften (FH)",
+      "years": 3.0,
+      "sourceUrl": "https://www.berufsberatung.ch/de/studienrichtungen/sport-sportwissenschaften",
+      "confidence": "measured"
+    }
+  ],
+  "leadsTo": [
+    "occ-schneesportlehrer-in"
+  ],
+  "trainedVia": [],
+  "languageRegions": [
+    "de",
+    "fr"
+  ],
+  "raw": {
+    "entryAccess": {
+      "value": 2,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://www.berufsberatung.ch/de/studienrichtungen/sport-sportwissenschaften",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "Sports aptitude test."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "English name of the field kept in German where no official translation was available. Target occupation chosen by the project as the most typical professional destination (estimate)."
+  }
+}

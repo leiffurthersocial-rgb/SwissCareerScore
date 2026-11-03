@@ -1,0 +1,55 @@
+{
+  "id": "edu-efz-verpackungsdrucker-in",
+  "kind": "education",
+  "route": "vocational",
+  "eduType": "EFZ",
+  "name": {
+    "en": "Verpackungsdrucker/in EFZ",
+    "de": "Verpackungsdrucker/in EFZ",
+    "fr": null,
+    "it": null
+  },
+  "codes": {
+    "isco08": "7322"
+  },
+  "sector": "CH-ISCO-19 73: Präzisionshandwerker, Drucker und kunsthandwerkliche Berufe",
+  "refs": {
+    "qualLevel": "apprenticeship",
+    "besta": "10-33",
+    "nogaSection": "C"
+  },
+  "pathway": [
+    {
+      "label": "Verpackungsdrucker/in EFZ",
+      "years": 3.0,
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/verpackungsdrucker-in-efz",
+      "confidence": "measured"
+    }
+  ],
+  "leadsTo": [
+    "occ-printmedienpraktiker-in"
+  ],
+  "trainedVia": [],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "entryAccess": {
+      "value": 1,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/verpackungsdrucker-in-efz",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "Apprenticeship contract with a training company required (default for dual VET)."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Language regions assumed (all three) — not individually verified. No BFS completion statistic for this occupation (missing). Occupation code 73220 assigned by the project (title not in the SECO/AVAM list) — estimate."
+  }
+}

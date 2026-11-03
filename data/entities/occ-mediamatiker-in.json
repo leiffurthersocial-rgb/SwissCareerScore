@@ -1,0 +1,58 @@
+{
+  "id": "occ-mediamatiker-in",
+  "kind": "occupation",
+  "route": "vocational",
+  "name": {
+    "en": "Mediamatics Technician",
+    "de": "Mediamatiker/in",
+    "fr": "Médiamaticien",
+    "it": "Mediamatico"
+  },
+  "codes": {
+    "isco08": "2513",
+    "chIsco19": "25130"
+  },
+  "sector": "CH-ISCO-19 25: Spezialisten in der Informations- und Kommunikationstechnologie",
+  "refs": {
+    "qualLevel": "apprenticeship",
+    "nogaSection": "J",
+    "besta": "62-63"
+  },
+  "pathway": [],
+  "leadsTo": [],
+  "trainedVia": [
+    "edu-efz-mediamatiker-in"
+  ],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "mobility": {
+      "value": 9,
+      "unit": "rubric 0–9",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#11-international-mobility",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed): recognition 3/3, language independence 3/3, transferability 3/3."
+    },
+    "regionalUbiquity": {
+      "value": 2,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#12-regional-availability",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed)."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Occupation = CH-ISCO-19 occupation type 25130 (Mediamatiker). Sector for demand/telework/hours assigned from the occupation group (estimate)."
+  }
+}

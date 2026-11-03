@@ -1,0 +1,60 @@
+{
+  "id": "occ-kosmetiker-in",
+  "kind": "occupation",
+  "route": "vocational",
+  "name": {
+    "en": "Beauty Therapist",
+    "de": "Kosmetiker und verwandte Berufe",
+    "fr": "Esthéticien",
+    "it": "Estetista"
+  },
+  "codes": {
+    "isco08": "5142",
+    "chIsco19": "51420"
+  },
+  "sector": "CH-ISCO-19 51: Berufe im Bereich personenbezogener Dienstleistungen",
+  "refs": {
+    "qualLevel": "apprenticeship",
+    "nogaSection": "S",
+    "besta": "90-96"
+  },
+  "pathway": [],
+  "leadsTo": [],
+  "trainedVia": [
+    "edu-efz-kosmetiker-in",
+    "edu-bp-kosmetiker-in-medizinische-kosmetik",
+    "edu-hfp-kosmetiker-in"
+  ],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "mobility": {
+      "value": 5,
+      "unit": "rubric 0–9",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#11-international-mobility",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed): recognition 1/3, language independence 2/3, transferability 2/3."
+    },
+    "regionalUbiquity": {
+      "value": 3,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#12-regional-availability",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed)."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Occupation = CH-ISCO-19 occupation type 51420 (Kosmetiker und verwandte Berufe). Sector for demand/telework/hours assigned from the occupation group (estimate). Several job titles share this occupation type: Kosmetiker / Kosmetikerin; Kosmetiker Medizinische Kosmetik / Kosmetikerin Medizinische Kosmetik; Kosmetiker/in."
+  }
+}

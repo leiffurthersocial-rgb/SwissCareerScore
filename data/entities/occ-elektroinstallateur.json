@@ -21,7 +21,10 @@
   "pathway": [],
   "leadsTo": [],
   "trainedVia": [
-    "edu-efz-elektroinstallateur"
+    "edu-efz-elektroinstallateur",
+    "edu-efz-montage-elektriker-in",
+    "edu-efz-solarinstallateur-in",
+    "edu-eba-solarmonteur-in"
   ],
   "languageRegions": [
     "de",

@@ -1,0 +1,65 @@
+{
+  "id": "occ-job-coach-in-arbeitsintegration",
+  "kind": "occupation",
+  "route": "vocational",
+  "name": {
+    "en": "Soziale Fachkräfte",
+    "de": "Soziale Fachkräfte",
+    "fr": "Spécialiste en insertion professionnelle",
+    "it": "Job Coach per l'inserimento lavorativo"
+  },
+  "codes": {
+    "isco08": "3412",
+    "chIsco19": "34120"
+  },
+  "sector": "CH-ISCO-19 34: Juristische, soziale, kulturelle und verwandte Fachkräfte",
+  "refs": {
+    "qualLevel": "higherVet",
+    "nogaSection": "Q",
+    "besta": "86-88"
+  },
+  "pathway": [],
+  "leadsTo": [],
+  "trainedVia": [
+    "edu-bp-job-coach-in-arbeitsintegration",
+    "edu-hfp-berater-in-im-psychosozialen-bereich",
+    "edu-bp-spezialist-in-fuer-die-begleitung-von-menschen-mit-beeintrae",
+    "edu-bp-arbeitsagoge-agogin",
+    "edu-bp-sozialbegleiter-in",
+    "edu-hf-leiter-in-arbeitsagogik",
+    "edu-hf-gemeindeanimator-in",
+    "edu-bp-teamleiter-in-in-sozialen-und-sozialmedizinischen-organisati"
+  ],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "mobility": {
+      "value": 3,
+      "unit": "rubric 0–9",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#11-international-mobility",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed): recognition 1/3, language independence 1/3, transferability 1/3."
+    },
+    "regionalUbiquity": {
+      "value": 2,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#12-regional-availability",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed)."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Occupation = CH-ISCO-19 occupation type 34120 (Soziale Fachkräfte). Sector for demand/telework/hours assigned from the occupation group (estimate). Several job titles share this occupation type: Arbeitsagogin / Arbeitsagoge; Beraterin im psychosozialen Bereich / Berater im psychosozialen Bereich; Gemeindeanimator / Gemeindeanimatorin; Job Coach Arbeitsintegration / Job Coachin Arbeitsintegration; Leiter Arbeitsagogik / Leiterin Arbeitsagogik; Sozialbegleiter / Sozialbegleiterin; Spezialistin für die Begleitung von Menschen mit Beeinträchtigungen / Spezialist für die Begleitung von Mensche."
+  }
+}

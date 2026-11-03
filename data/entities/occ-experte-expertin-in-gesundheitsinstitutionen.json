@@ -1,0 +1,59 @@
+{
+  "id": "occ-experte-expertin-in-gesundheitsinstitutionen",
+  "kind": "occupation",
+  "route": "vocational",
+  "name": {
+    "en": "Führungskräfte in der Gesundheitsversorgung",
+    "de": "Führungskräfte in der Gesundheitsversorgung",
+    "fr": "Expert en gestion d'institutions de santé",
+    "it": "Esperto in gestione di istituzioni sanitarie"
+  },
+  "codes": {
+    "isco08": "1342",
+    "chIsco19": "13420"
+  },
+  "sector": "CH-ISCO-19 13: Führungskräfte in der Produktion und bei spezialisierten Dienstle",
+  "refs": {
+    "qualLevel": "higherVet",
+    "nogaSection": "C",
+    "besta": "5-43"
+  },
+  "pathway": [],
+  "leadsTo": [],
+  "trainedVia": [
+    "edu-hfp-experte-expertin-in-gesundheitsinstitutionen",
+    "edu-bp-fachmann-frau-in-gesundheitsinstitutionen"
+  ],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "mobility": {
+      "value": 5,
+      "unit": "rubric 0–9",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#11-international-mobility",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed): recognition 2/3, language independence 1/3, transferability 2/3."
+    },
+    "regionalUbiquity": {
+      "value": 2,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#12-regional-availability",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed)."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Occupation = CH-ISCO-19 occupation type 13420 (Führungskräfte in der Gesundheitsversorgung). Sector for demand/telework/hours assigned from the occupation group (estimate). Several job titles share this occupation type: Expertin in Gesundheitsinstitutionen / Experte in Gesundheitsinstitutionen; Fachfrau in Gesundheitsinstitutionen / Fachmann in Gesundheitsinstitutionen."
+  }
+}

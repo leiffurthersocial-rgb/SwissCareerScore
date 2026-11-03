@@ -1,0 +1,55 @@
+{
+  "id": "edu-efz-entwickler-in-digitales-business",
+  "kind": "education",
+  "route": "vocational",
+  "eduType": "EFZ",
+  "name": {
+    "en": "Entwicklerin digitales Business / Entwickler digitales Business EFZ",
+    "de": "Entwicklerin digitales Business / Entwickler digitales Business EFZ",
+    "fr": null,
+    "it": null
+  },
+  "codes": {
+    "isco08": "2512"
+  },
+  "sector": "CH-ISCO-19 25: Spezialisten in der Informations- und Kommunikationstechnologie",
+  "refs": {
+    "qualLevel": "apprenticeship",
+    "besta": "62-63",
+    "nogaSection": "J"
+  },
+  "pathway": [
+    {
+      "label": "Entwicklerin digitales Business / Entwickler digitales Business EFZ",
+      "years": 4.0,
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/entwickler-in-digitales-business-efz",
+      "confidence": "measured"
+    }
+  ],
+  "leadsTo": [
+    "occ-entwickler-in-digitales-business"
+  ],
+  "trainedVia": [],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "entryAccess": {
+      "value": 1,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/entwickler-in-digitales-business-efz",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "Apprenticeship contract with a training company required (default for dual VET)."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Language regions assumed (all three) — not individually verified. No BFS completion statistic for this occupation (missing). Occupation code 25122 assigned by the project (title not in the SECO/AVAM list) — estimate."
+  }
+}

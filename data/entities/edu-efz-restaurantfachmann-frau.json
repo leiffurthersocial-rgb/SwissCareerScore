@@ -1,0 +1,56 @@
+{
+  "id": "edu-efz-restaurantfachmann-frau",
+  "kind": "education",
+  "route": "vocational",
+  "eduType": "EFZ",
+  "name": {
+    "en": "Restaurantfachfrau/-mann EFZ",
+    "de": "Restaurantfachfrau/-mann EFZ",
+    "fr": "Spécialiste en restauration CFC",
+    "it": "Impiegato di ristorazione AFC"
+  },
+  "codes": {
+    "isco08": "5131"
+  },
+  "sector": "CH-ISCO-19 51: Berufe im Bereich personenbezogener Dienstleistungen",
+  "refs": {
+    "qualLevel": "apprenticeship",
+    "besta": "55-56",
+    "nogaSection": "I",
+    "vetName": "Restaurantfachmann/-frau EFZ (ab 2019)"
+  },
+  "pathway": [
+    {
+      "label": "Restaurantfachfrau/-mann EFZ",
+      "years": 3.0,
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/restaurantfachmann-frau-efz",
+      "confidence": "measured"
+    }
+  ],
+  "leadsTo": [
+    "occ-restaurantangestellte-r"
+  ],
+  "trainedVia": [],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "entryAccess": {
+      "value": 1,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/restaurantfachmann-frau-efz",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "Apprenticeship contract with a training company required (default for dual VET)."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Language regions assumed (all three) — not individually verified."
+  }
+}

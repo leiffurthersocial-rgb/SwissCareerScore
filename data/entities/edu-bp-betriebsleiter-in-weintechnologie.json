@@ -1,0 +1,48 @@
+{
+  "id": "edu-bp-betriebsleiter-in-weintechnologie",
+  "kind": "education",
+  "route": "vocational",
+  "eduType": "BP",
+  "name": {
+    "en": "Cellar Master (BP)",
+    "de": "Betriebsleiterin Weintechnologie / Betriebsleiter Weintechnologie BP",
+    "fr": "Chef d'exploitation caviste BF",
+    "it": "Responsabile di azienda cantiniera APF"
+  },
+  "codes": {
+    "isco08": "1321"
+  },
+  "sector": "CH-ISCO-19 13: Führungskräfte in der Produktion und bei spezialisierten Dienstle",
+  "refs": {
+    "qualLevel": "higherVet",
+    "besta": "5-43",
+    "nogaSection": "C"
+  },
+  "pathway": [],
+  "leadsTo": [
+    "occ-packaging-manager-in"
+  ],
+  "trainedVia": [],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "entryAccess": {
+      "value": 0,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/betriebsleiter-in-weintechnologie-bp",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "Admission to the federal exam is based on professional experience; no capacity limit."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Language regions assumed (all three) — not individually verified. No duration statement found on berufsberatung.ch — time to qualify is missing."
+  }
+}

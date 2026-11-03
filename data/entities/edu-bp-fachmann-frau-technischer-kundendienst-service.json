@@ -1,0 +1,63 @@
+{
+  "id": "edu-bp-fachmann-frau-technischer-kundendienst-service",
+  "kind": "education",
+  "route": "vocational",
+  "eduType": "BP",
+  "name": {
+    "en": "Technical Services Specialist (BP)",
+    "de": "Fachfrau Technischer Kundendienst/Service / Fachmann Technischer Kundendienst/Service BP",
+    "fr": "Spécialiste de service technique après-vente BF",
+    "it": "Specialista del servizio tecnico clienti APF"
+  },
+  "codes": {
+    "isco08": "2433"
+  },
+  "sector": "CH-ISCO-19 24: Betriebswirte und vergleichbare Spezialisten",
+  "refs": {
+    "qualLevel": "higherVet",
+    "besta": "68-75",
+    "nogaSection": "M"
+  },
+  "pathway": [
+    {
+      "label": "EFZ apprenticeship in a related occupation",
+      "years": 3,
+      "sourceUrl": "https://www.berufsberatung.ch/de/bildungssystem/d/lehre-efz",
+      "confidence": "measured",
+      "note": "Admission normally requires a relevant EFZ (3 or 4 years); the shorter variant is counted."
+    },
+    {
+      "label": "Preparation for the federal exam: Fachfrau Technischer Kundendienst/Service / Fachmann Technischer Kundendienst/Service BP",
+      "years": 1.0,
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/fachmann-frau-technischer-kundendienst-service-bp",
+      "confidence": "estimated",
+      "note": "Duration of the preparatory course as stated; admission also requires professional experience (see exam regulations), so the true time to qualify is longer."
+    }
+  ],
+  "leadsTo": [
+    "occ-fachmann-frau-technischer-kundendienst-service"
+  ],
+  "trainedVia": [],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "entryAccess": {
+      "value": 0,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/fachmann-frau-technischer-kundendienst-service-bp",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "Admission to the federal exam is based on professional experience; no capacity limit."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Language regions assumed (all three) — not individually verified."
+  }
+}

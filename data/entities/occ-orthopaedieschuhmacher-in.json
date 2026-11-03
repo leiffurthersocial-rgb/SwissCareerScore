@@ -1,0 +1,60 @@
+{
+  "id": "occ-orthopaedieschuhmacher-in",
+  "kind": "occupation",
+  "route": "vocational",
+  "name": {
+    "en": "Orthopaedic Shoemaker",
+    "de": "Schuhmacher und verwandte Berufe",
+    "fr": "Bottier-orthopédiste",
+    "it": "Calzolaio ortopedico"
+  },
+  "codes": {
+    "isco08": "7536",
+    "chIsco19": "75360"
+  },
+  "sector": "CH-ISCO-19 75: Berufe in der Nahrungsmittelverarbeitung, Holzverarbeitung und Be",
+  "refs": {
+    "qualLevel": "apprenticeship",
+    "nogaSection": "C",
+    "besta": "10-33"
+  },
+  "pathway": [],
+  "leadsTo": [],
+  "trainedVia": [
+    "edu-efz-orthopaedieschuhmacher-in",
+    "edu-efz-schuhmacher-in",
+    "edu-efz-fachmann-frau-leder-und-textil"
+  ],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "mobility": {
+      "value": 5,
+      "unit": "rubric 0–9",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#11-international-mobility",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed): recognition 1/3, language independence 3/3, transferability 1/3."
+    },
+    "regionalUbiquity": {
+      "value": 2,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#12-regional-availability",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed)."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Occupation = CH-ISCO-19 occupation type 75360 (Schuhmacher und verwandte Berufe). Sector for demand/telework/hours assigned from the occupation group (estimate). Several job titles share this occupation type: Fachmann Leder und Textil / Fachfrau Leder und Textil; Orthopädieschuhmacher/in; Schuhmacher/in."
+  }
+}

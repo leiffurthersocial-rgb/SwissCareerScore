@@ -1,0 +1,61 @@
+{
+  "id": "occ-geigenbauer-in",
+  "kind": "occupation",
+  "route": "vocational",
+  "name": {
+    "en": "Violin Maker",
+    "de": "Musikinstrumentenbauer und -stimmer",
+    "fr": "Luthier",
+    "it": "Liutaio"
+  },
+  "codes": {
+    "isco08": "7312",
+    "chIsco19": "73120"
+  },
+  "sector": "CH-ISCO-19 73: Präzisionshandwerker, Drucker und kunsthandwerkliche Berufe",
+  "refs": {
+    "qualLevel": "apprenticeship",
+    "nogaSection": "C",
+    "besta": "10-33"
+  },
+  "pathway": [],
+  "leadsTo": [],
+  "trainedVia": [
+    "edu-efz-geigenbauer-in",
+    "edu-efz-orgelbauer-in",
+    "edu-efz-klavierbauer-in",
+    "edu-efz-blasinstrumentenbauer-in"
+  ],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "mobility": {
+      "value": 5,
+      "unit": "rubric 0–9",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#11-international-mobility",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed): recognition 1/3, language independence 3/3, transferability 1/3."
+    },
+    "regionalUbiquity": {
+      "value": 1,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#12-regional-availability",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed)."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Occupation = CH-ISCO-19 occupation type 73120 (Musikinstrumentenbauer und -stimmer). Sector for demand/telework/hours assigned from the occupation group (estimate). Several job titles share this occupation type: Blasinstrumentenbauer/in; Geigenbauer/in; Klavierbauer / Klavierbauerin; Orgelbauer / Orgelbauerin."
+  }
+}

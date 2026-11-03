@@ -1,0 +1,56 @@
+{
+  "id": "edu-efz-kaeltesystem-monteur-in",
+  "kind": "education",
+  "route": "vocational",
+  "eduType": "EFZ",
+  "name": {
+    "en": "Refrigeration Engineer (EFZ)",
+    "de": "Kältesystem-Monteur/in EFZ",
+    "fr": "Monteur frigoriste CFC",
+    "it": "Installatore di sistemi di refrigerazione AFC"
+  },
+  "codes": {
+    "isco08": "7127"
+  },
+  "sector": "CH-ISCO-19 71: Bau- und Ausbaufachkräfte sowie verwandte Berufe, ausgenommen Ele",
+  "refs": {
+    "qualLevel": "apprenticeship",
+    "besta": "41-43",
+    "nogaSection": "F",
+    "vetName": "Kältesystem-Monteur/in EFZ"
+  },
+  "pathway": [
+    {
+      "label": "Kältesystem-Monteur/in EFZ",
+      "years": 4.0,
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/kaeltesystem-monteur-in-efz",
+      "confidence": "measured"
+    }
+  ],
+  "leadsTo": [
+    "occ-kaeltesystem-monteur-in"
+  ],
+  "trainedVia": [],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "entryAccess": {
+      "value": 1,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/kaeltesystem-monteur-in-efz",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "Apprenticeship contract with a training company required (default for dual VET)."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Language regions assumed (all three) — not individually verified."
+  }
+}

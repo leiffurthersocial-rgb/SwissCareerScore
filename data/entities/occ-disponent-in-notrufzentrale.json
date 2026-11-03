@@ -1,0 +1,61 @@
+{
+  "id": "occ-disponent-in-notrufzentrale",
+  "kind": "occupation",
+  "route": "vocational",
+  "name": {
+    "en": "Rettungsdienstpersonal",
+    "de": "Rettungsdienstpersonal",
+    "fr": "Opérateur de centrale d'appels d'urgence",
+    "it": "Operatore di centrale d'allarme"
+  },
+  "codes": {
+    "isco08": "3258",
+    "chIsco19": "32580"
+  },
+  "sector": "CH-ISCO-19 32: Assistenzberufe im Gesundheitswesen",
+  "refs": {
+    "qualLevel": "higherVet",
+    "nogaSection": "Q",
+    "besta": "86-88"
+  },
+  "pathway": [],
+  "leadsTo": [],
+  "trainedVia": [
+    "edu-bp-disponent-in-notrufzentrale",
+    "edu-bp-transportsanitaeter-in",
+    "edu-bp-fachmann-frau-im-pisten-und-rettungsdienst",
+    "edu-hf-rettungssanitaeter-in"
+  ],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "mobility": {
+      "value": 4,
+      "unit": "rubric 0–9",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#11-international-mobility",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed): recognition 1/3, language independence 1/3, transferability 2/3."
+    },
+    "regionalUbiquity": {
+      "value": 3,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#12-regional-availability",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed)."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Occupation = CH-ISCO-19 occupation type 32580 (Rettungsdienstpersonal). Sector for demand/telework/hours assigned from the occupation group (estimate). Several job titles share this occupation type: Disponent Notrufzentrale / Disponentin Notrufzentrale; Fachmann im Pisten- und Rettungsdienst / Fachfrau im Pisten- und Rettungsdienst; Rettungssanitäter / Rettungssanitäterin; Transportsanitäter / Transportsanitäterin."
+  }
+}

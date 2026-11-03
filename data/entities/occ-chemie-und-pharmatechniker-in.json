@@ -1,0 +1,60 @@
+{
+  "id": "occ-chemie-und-pharmatechniker-in",
+  "kind": "occupation",
+  "route": "vocational",
+  "name": {
+    "en": "Pharmazeutische Techniker und Assistenten",
+    "de": "Pharmazeutische Techniker und Assistenten",
+    "fr": "Technicien en production chimique et pharmaceutique",
+    "it": "Tecnico in chimica e chimica farmaceutica"
+  },
+  "codes": {
+    "isco08": "3213",
+    "chIsco19": "32130"
+  },
+  "sector": "CH-ISCO-19 32: Assistenzberufe im Gesundheitswesen",
+  "refs": {
+    "qualLevel": "higherVet",
+    "nogaSection": "G",
+    "besta": "45-47"
+  },
+  "pathway": [],
+  "leadsTo": [],
+  "trainedVia": [
+    "edu-bp-chemie-und-pharmatechniker-in",
+    "edu-bp-pharma-betriebsassistent-in",
+    "edu-efz-fachmann-frau-apotheke"
+  ],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "mobility": {
+      "value": 4,
+      "unit": "rubric 0–9",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#11-international-mobility",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed): recognition 1/3, language independence 1/3, transferability 2/3."
+    },
+    "regionalUbiquity": {
+      "value": 3,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#12-regional-availability",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed)."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Occupation = CH-ISCO-19 occupation type 32130 (Pharmazeutische Techniker und Assistenten). Sector for demand/telework/hours assigned from the occupation group (estimate). Several job titles share this occupation type: Chemie- und Pharmatechniker/in; Fachmann Apotheke / Fachfrau Apotheke; Pharma-Betriebsassistent/in."
+  }
+}

@@ -101,12 +101,61 @@ async function ingestMajorGroups() {
   return { sourceUrl: STATS_PAGE, window: WINDOW, monthsUsed: months, perMonth, average: avg };
 }
 
+/**
+ * SECO/AVAM occupation list: ~1,300 job titles (m/f, DE/FR/IT, EN) mapped to CH-ISCO-19
+ * occupation types (5 digits). Used as the authoritative crosswalk from a job title to its
+ * classification code. Published as the Excel file on the job-registration check-up page.
+ */
+async function ingestAvamCrosswalk() {
+  const XLSX = await import("xlsx");
+  const html = (await fetchRaw(STMP_PAGE, "seco/stellenmeldepflicht-checkup-2027.html")).toString();
+  const file = findFiles(html).find((f) => f.url.endsWith(".xlsx"));
+  if (!file) throw new Error("AVAM xlsx not found on page");
+  const wb = XLSX.read(await fetchRaw(file.url, "seco/avam-berufsliste.xlsx"), { type: "buffer" });
+  const sheet = (name: string) => XLSX.utils.sheet_to_json(wb.Sheets[name], { header: 1, defval: null }) as unknown[][];
+  const rowsOf = (name: string, key: string) => {
+    const g = sheet(name);
+    const hi = g.findIndex((r) => r.includes(key));
+    const header = g[hi].map((h) => String(h ?? ""));
+    return g.slice(hi + 1).map((r) => Object.fromEntries(header.map((h, i) => [h, r[i]])) as Record<string, unknown>);
+  };
+  const en = new Map<string, string>();
+  for (const r of rowsOf("AVAM-Berufsliste_INTERN_2022", "STAMMCODE_BFS")) {
+    const v = r["BEZEICHNUNG_EN_M_NEU"] ?? r["BEZEICHNUNG_EN_ALT"];
+    if (r["STAMMCODE_BFS"] && v) en.set(String(r["STAMMCODE_BFS"]), String(v).trim());
+  }
+  const titles = rowsOf("AVAM-Berufsliste_INTERN_2024", "STAMMCODE_BFS_NEU")
+    .filter((r) => r["NR_BERUFSART_CH-ISCO_NEU"] && r["BEZEICHNUNG_M_DE_NEU"])
+    .map((r) => ({
+      code: String(r["NR_BERUFSART_CH-ISCO_NEU"]),
+      berufsart: String(r["NAME_BERUFSART_CH-ISCO_DE_NEU"] ?? "").trim(),
+      de_m: String(r["BEZEICHNUNG_M_DE_NEU"]).trim(),
+      de_f: String(r["BEZEICHNUNG_W_DE_NEU"] ?? "").trim(),
+      fr_m: String(r["BEZEICHNUNG_M_FR_NEU"] ?? "").trim(),
+      fr_f: String(r["BEZEICHNUNG_W_FR_NEU"] ?? "").trim(),
+      it_m: String(r["BEZEICHNUNG_M_IT_NEU"] ?? "").trim(),
+      it_f: String(r["BEZEICHNUNG_W_IT_NEU"] ?? "").trim(),
+      en: en.get(String(r["STAMMCODE_BFS_NEU"])) ?? null,
+    }));
+  // Full CH-ISCO-19 classification (all levels) with official DE/FR/IT names.
+  const classification: Record<string, { de: string; fr: string; it: string }> = {};
+  const cls = sheet(wb.SheetNames.filter((n) => /^CH-ISCO-19_\d{4}$/.test(n)).sort().at(-1)!);
+  for (const r of cls) {
+    const code = r.slice(0, 5).find((c) => c !== null && c !== undefined && String(c).trim() !== "");
+    if (code === undefined || !/^\d{1,5}$/.test(String(code)) || !r[6]) continue;
+    classification[String(code)] = { de: String(r[6]).trim(), fr: String(r[7] ?? "").trim(), it: String(r[8] ?? "").trim() };
+  }
+  console.log(`  AVAM crosswalk: ${titles.length} job titles, ${Object.keys(classification).length} CH-ISCO-19 codes`);
+  return { fileUrl: file.url, sheet: "AVAM-Berufsliste_INTERN_2024", titles, classification };
+}
+
 export async function ingestSeco() {
   console.log("SECO unemployment");
   const stmp = await ingestStmpList();
   const major = await ingestMajorGroups();
   const out = { source: "seco", stmp, majorGroups: major };
   writeIngested("seco-unemployment", out);
+  writeIngested("seco-avam", { source: "seco-avam", ...(await ingestAvamCrosswalk()) });
   return out;
 }
 

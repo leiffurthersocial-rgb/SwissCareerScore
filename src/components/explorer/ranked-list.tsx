@@ -5,13 +5,13 @@ import { ScoreBar } from "@/components/score-bar";
 import { Badge } from "@/components/ui/badge";
 import { Link } from "@/i18n/navigation";
 import { displayName } from "@/lib/dataset";
-import type { DatasetEntity } from "@/lib/dataset-types";
+import type { CoreEntity } from "@/lib/dataset-types";
 import type { EntityResult } from "@/lib/scoring";
 import { MAX_COMPARE } from "@/lib/url-state";
 import { cn } from "@/lib/utils";
 
 export interface Row {
-  entity: DatasetEntity;
+  entity: CoreEntity;
   result: EntityResult;
 }
 

@@ -10,7 +10,7 @@
   },
   "codes": {
     "isco08": "7126",
-    "chIsco19": "71260"
+    "chIsco19": "71263"
   },
   "sector": "Construction / building services",
   "refs": {
@@ -21,7 +21,10 @@
   "pathway": [],
   "leadsTo": [],
   "trainedVia": [
-    "edu-efz-sanitaerinstallateur"
+    "edu-efz-sanitaerinstallateur",
+    "edu-efz-entwaesserungstechnologe-login",
+    "edu-eba-entwaesserungspraktiker-in",
+    "edu-eba-sanitaerpraktiker-in"
   ],
   "languageRegions": [
     "de",
@@ -52,6 +55,7 @@
   },
   "meta": {
     "addedBy": "initial-dataset",
-    "reviewed": "2026-11-03"
+    "reviewed": "2026-11-03",
+    "notes": "CH-ISCO-19 code corrected to 71263 per SECO/AVAM occupation list."
   }
 }

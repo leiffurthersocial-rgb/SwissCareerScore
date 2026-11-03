@@ -1,0 +1,60 @@
+{
+  "id": "occ-architekturmodellbauer-in",
+  "kind": "occupation",
+  "route": "vocational",
+  "name": {
+    "en": "Architectural Modeler",
+    "de": "Möbeltischler und verwandte Berufe",
+    "fr": "Maquettiste en architecture",
+    "it": "Costruttore di plastici architettonici"
+  },
+  "codes": {
+    "isco08": "7522",
+    "chIsco19": "75220"
+  },
+  "sector": "CH-ISCO-19 75: Berufe in der Nahrungsmittelverarbeitung, Holzverarbeitung und Be",
+  "refs": {
+    "qualLevel": "apprenticeship",
+    "nogaSection": "C",
+    "besta": "10-33"
+  },
+  "pathway": [],
+  "leadsTo": [],
+  "trainedVia": [
+    "edu-efz-architekturmodellbauer-in",
+    "edu-efz-kuefer-in",
+    "edu-bp-holzfachspezialist-in"
+  ],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "mobility": {
+      "value": 5,
+      "unit": "rubric 0–9",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#11-international-mobility",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed): recognition 1/3, language independence 3/3, transferability 1/3."
+    },
+    "regionalUbiquity": {
+      "value": 2,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#12-regional-availability",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed)."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Occupation = CH-ISCO-19 occupation type 75220 (Möbeltischler und verwandte Berufe). Sector for demand/telework/hours assigned from the occupation group (estimate). Several job titles share this occupation type: Architekturmodellbauer / Architekturmodellbauerin; Holzfachspezialist/in; Küfer / Küferin."
+  }
+}

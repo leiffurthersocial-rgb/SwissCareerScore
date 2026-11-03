@@ -1,0 +1,59 @@
+{
+  "id": "occ-tierphysiotherapeut-in",
+  "kind": "occupation",
+  "route": "vocational",
+  "name": {
+    "en": "Animal Physiotherapist",
+    "de": "Tierärzte",
+    "fr": "Physiothérapeute pour animaux",
+    "it": "Fisioterapista per animali"
+  },
+  "codes": {
+    "isco08": "2250",
+    "chIsco19": "22500"
+  },
+  "sector": "CH-ISCO-19 22: Spezialisten in Gesundheitsberufen",
+  "refs": {
+    "qualLevel": "higherVet",
+    "nogaSection": "M",
+    "besta": "68-75"
+  },
+  "pathway": [],
+  "leadsTo": [],
+  "trainedVia": [
+    "edu-hfp-tierphysiotherapeut-in",
+    "edu-uh-veterinaermedizin"
+  ],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "mobility": {
+      "value": 6,
+      "unit": "rubric 0–9",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#11-international-mobility",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed): recognition 2/3, language independence 1/3, transferability 3/3."
+    },
+    "regionalUbiquity": {
+      "value": 3,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#12-regional-availability",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed)."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Occupation = CH-ISCO-19 occupation type 22500 (Tierärzte). Sector for demand/telework/hours assigned from the occupation group (estimate). Several job titles share this occupation type: Tierarzt/Tierärztin; Tierphysiotherapeut / Tierphysiotherapeutin."
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "id": "occ-gefluegelwirtschaftsmeister-in",
+  "kind": "occupation",
+  "route": "vocational",
+  "name": {
+    "en": "Poultry Production Manager",
+    "de": "Geflügelhalter",
+    "fr": "Maître aviculteur",
+    "it": "Maestro avicoltore"
+  },
+  "codes": {
+    "isco08": "6122",
+    "chIsco19": "61220"
+  },
+  "sector": "CH-ISCO-19 61: Fachkräfte in der Landwirtschaft",
+  "refs": {
+    "qualLevel": "higherVet",
+    "nogaSection": "A"
+  },
+  "pathway": [],
+  "leadsTo": [],
+  "trainedVia": [
+    "edu-hfp-gefluegelwirtschaftsmeister-in",
+    "edu-bp-betriebsleiter-in-gefluegelwirtschaft"
+  ],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "mobility": {
+      "value": 4,
+      "unit": "rubric 0–9",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#11-international-mobility",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed): recognition 1/3, language independence 2/3, transferability 1/3."
+    },
+    "regionalUbiquity": {
+      "value": 2,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#12-regional-availability",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed)."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Occupation = CH-ISCO-19 occupation type 61220 (Geflügelhalter). Sector for demand/telework/hours assigned from the occupation group (estimate). Several job titles share this occupation type: Betriebsleiter Geflügelwirtschaft / Betriebsleiterin Geflügelwirtschaft; Geflügelwirtschaftsmeister/in."
+  }
+}

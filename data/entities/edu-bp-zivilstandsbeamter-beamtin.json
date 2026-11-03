@@ -1,0 +1,48 @@
+{
+  "id": "edu-bp-zivilstandsbeamter-beamtin",
+  "kind": "education",
+  "route": "vocational",
+  "eduType": "BP",
+  "name": {
+    "en": "Registrar (BP)",
+    "de": "Zivilstandsbeamtin / Zivilstandsbeamter BP",
+    "fr": "Officier d'état civil BF",
+    "it": "Ufficiale dello stato civile APF"
+  },
+  "codes": {
+    "isco08": "3354"
+  },
+  "sector": "CH-ISCO-19 33: Betriebswirtschaftliche und kaufmännische Fachkräfte und Verwaltu",
+  "refs": {
+    "qualLevel": "higherVet",
+    "besta": "5-96",
+    "nogaSection": "*"
+  },
+  "pathway": [],
+  "leadsTo": [
+    "occ-zivilstandsbeamter-beamtin"
+  ],
+  "trainedVia": [],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "entryAccess": {
+      "value": 0,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/zivilstandsbeamter-beamtin-bp",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "Admission to the federal exam is based on professional experience; no capacity limit."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Language regions assumed (all three) — not individually verified. No duration statement found on berufsberatung.ch — time to qualify is missing."
+  }
+}

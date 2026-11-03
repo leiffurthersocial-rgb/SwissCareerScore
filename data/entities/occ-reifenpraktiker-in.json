@@ -1,0 +1,59 @@
+{
+  "id": "occ-reifenpraktiker-in",
+  "kind": "occupation",
+  "route": "vocational",
+  "name": {
+    "en": "Tyre Work Assistant",
+    "de": "Tankwarte",
+    "fr": "Praticien en pneumatiques",
+    "it": "Addetto del pneumatico"
+  },
+  "codes": {
+    "isco08": "5245",
+    "chIsco19": "52450"
+  },
+  "sector": "CH-ISCO-19 52: Verkaufskräfte",
+  "refs": {
+    "qualLevel": "apprenticeship",
+    "nogaSection": "G",
+    "besta": "45-47"
+  },
+  "pathway": [],
+  "leadsTo": [],
+  "trainedVia": [
+    "edu-eba-reifenpraktiker-in",
+    "edu-bp-reifenfachmann-frau"
+  ],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "mobility": {
+      "value": 2,
+      "unit": "rubric 0–9",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#11-international-mobility",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed): recognition 1/3, language independence 0/3, transferability 1/3."
+    },
+    "regionalUbiquity": {
+      "value": 3,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#12-regional-availability",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed)."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Occupation = CH-ISCO-19 occupation type 52450 (Tankwarte). Sector for demand/telework/hours assigned from the occupation group (estimate). Several job titles share this occupation type: Reifenfachfrau/-mann; Reifenpraktiker / Reifenpraktikerin."
+  }
+}

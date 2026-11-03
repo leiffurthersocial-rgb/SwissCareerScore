@@ -1,0 +1,62 @@
+{
+  "id": "edu-fh-optometrie",
+  "kind": "education",
+  "route": "mixed",
+  "eduType": "FH-BSc",
+  "name": {
+    "en": "Optometrie – BSc/BA (FH)",
+    "de": "Bachelor Optometrie (FH)",
+    "fr": null,
+    "it": null
+  },
+  "codes": {
+    "isco08": "2267"
+  },
+  "sector": "CH-ISCO-19 22: Spezialisten in Gesundheitsberufen",
+  "refs": {
+    "qualLevel": "higherEducation",
+    "studyField": "FH:Gesundheit",
+    "gradIncome": "fh:Bachelor:Gesundheit",
+    "besta": "86-88",
+    "nogaSection": "Q"
+  },
+  "pathway": [
+    {
+      "label": "EFZ with integrated Berufsmaturität (BM 1)",
+      "years": 3,
+      "sourceUrl": "https://www.berufsberatung.ch/de/bildungssystem/d/berufsmaturitaet",
+      "confidence": "measured",
+      "note": "Typical vocational route to FH (3–4 years); Gymnasiale Matura plus one year of work experience is an alternative."
+    },
+    {
+      "label": "Bachelor Optometrie (FH)",
+      "years": 3.0,
+      "sourceUrl": "https://www.berufsberatung.ch/de/studienrichtungen/optometrie",
+      "confidence": "measured"
+    }
+  ],
+  "leadsTo": [
+    "occ-rehabilitationsexperte-expertin-fuer-sehbehinderte-und-blind"
+  ],
+  "trainedVia": [],
+  "languageRegions": [
+    "de"
+  ],
+  "raw": {
+    "entryAccess": {
+      "value": 0,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://www.berufsberatung.ch/de/studienrichtungen/optometrie",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "Admission with a relevant Berufsmaturität; no capacity limit."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "English name of the field kept in German where no official translation was available. Target occupation chosen by the project as the most typical professional destination (estimate)."
+  }
+}

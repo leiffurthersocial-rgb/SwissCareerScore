@@ -1,0 +1,56 @@
+{
+  "id": "edu-efz-kunststofftechnologe-login",
+  "kind": "education",
+  "route": "vocational",
+  "eduType": "EFZ",
+  "name": {
+    "en": "Kunststofftechnologin / Kunststofftechnologe EFZ",
+    "de": "Kunststofftechnologin / Kunststofftechnologe EFZ",
+    "fr": "Technologue en matières plastiques CFC",
+    "it": "Agente tecnico di materie sintetiche AFC"
+  },
+  "codes": {
+    "isco08": "8142"
+  },
+  "sector": "CH-ISCO-19 81: Bediener stationärer Anlagen und Maschinen",
+  "refs": {
+    "qualLevel": "apprenticeship",
+    "besta": "10-33",
+    "nogaSection": "C",
+    "vetName": "Kunststofftechnologe/-technologin EFZ"
+  },
+  "pathway": [
+    {
+      "label": "Kunststofftechnologin / Kunststofftechnologe EFZ",
+      "years": 4.0,
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/kunststofftechnologe-login-efz",
+      "confidence": "measured"
+    }
+  ],
+  "leadsTo": [
+    "occ-kunststoffpraktiker-in"
+  ],
+  "trainedVia": [],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "entryAccess": {
+      "value": 1,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://www.berufsberatung.ch/de/berufe/kunststofftechnologe-login-efz",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "Apprenticeship contract with a training company required (default for dual VET)."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion",
+    "reviewed": "2026-11-03",
+    "notes": "Language regions assumed (all three) — not individually verified."
+  }
+}
