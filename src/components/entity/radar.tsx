@@ -22,7 +22,7 @@ export function ScoreRadar({ dims, series, caption }: { dims: DimensionId[]; ser
     <figure>
       <div className="h-80 w-full" aria-hidden>
         <ResponsiveContainer>
-          <RadarChart data={data} outerRadius="70%">
+          <RadarChart data={data} outerRadius="70%" accessibilityLayer={false}>
             <PolarGrid stroke="var(--border)" />
             <PolarAngleAxis dataKey="dim" tick={{ fill: "var(--muted-foreground)", fontSize: 11 }} />
             <PolarRadiusAxis domain={[0, 100]} tick={false} axisLine={false} />

@@ -32,6 +32,13 @@ export default async function MethodologyPage({ params }: PageProps<"/[locale]/m
         components={{
           h2: ({ children }) => <h2 id={slug(children)}>{children}</h2>,
           h3: ({ children }) => <h3 id={slug(children)}>{children}</h3>,
+          // Scrollable regions must be keyboard-focusable (WCAG 2.1.1).
+          pre: ({ children }) => <pre tabIndex={0}>{children}</pre>,
+          table: ({ children }) => (
+            <div tabIndex={0} className="overflow-x-auto">
+              <table>{children}</table>
+            </div>
+          ),
         }}
       >
         {md}
