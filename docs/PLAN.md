@@ -1,6 +1,19 @@
 # SwissCareerScore — Implementation Plan (draft v0, for review)
 
-Status: **awaiting answers to open questions** (bottom of file). Nothing is coded yet.
+Status: **implemented** (phases 0–8). This file is kept as the original plan; deviations decided
+during implementation:
+
+- Demand uses BFS BESTA recruitment difficulty by sector × qualification level (SECO's indicator
+  system tables were not machine-readable); Job-Room requires authentication.
+- Entry competition is a documented admission-hurdle rubric (applicant-per-place data is not
+  published consistently).
+- Work-life balance uses night work (SAKE 2013, ISCO major group) and usual weekly hours (SAKE 2025,
+  sector); flexibility uses SAKE telework by sector.
+- AI resilience uses project-assigned task shares per ISCO unit group (ILO/O*NET datasets were not
+  reachable); labelled expert judgment.
+- Meaning has no defensible source → null everywhere, weight 0 by default.
+- Time-to-qualify scores years only; direct cost is excluded to avoid double counting (see methodology §4.7).
+- Ranking is per pool (occupations vs education paths) shown in one page with a type filter.
 
 ## 1. What the source check found (2026-11-03)
 
