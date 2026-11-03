@@ -187,3 +187,21 @@ describe("ranking stability / sensitivity", () => {
     }
   });
 });
+
+describe("ranking pools", () => {
+  it("ranks each pool independently starting at 1", () => {
+    const ents: ScorableEntity[] = [
+      { id: "occ-a", pool: "occupation", metrics: { pay: m(1) } },
+      { id: "occ-b", pool: "occupation", metrics: { pay: m(2) } },
+      { id: "edu-a", pool: "education", metrics: { pay: m(100) } },
+      { id: "edu-b", pool: "education", metrics: { pay: m(200) } },
+    ];
+    const res = scoreEntities(ents, { pay: 1 }, { draws: 50 });
+    const rank = (id: string) => res.find((r) => r.id === id)!.rank;
+    expect(rank("occ-b")).toBe(1);
+    expect(rank("edu-b")).toBe(1);
+    expect(rank("occ-a")).toBe(2);
+    expect(rank("edu-a")).toBe(2);
+    for (const r of res) expect(r.rankBand!.worst).toBeLessThanOrEqual(2);
+  });
+});

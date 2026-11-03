@@ -108,14 +108,31 @@ export function compositeFor(
   };
 }
 
-/** Rank (1 = best) entities by composite, descending; ties broken by id for determinism. */
-export function rankOrder(ids: ReadonlyArray<string>, composites: ReadonlyArray<number | null>, eligible: ReadonlyArray<boolean>): (number | null)[] {
-  const idx = ids
-    .map((id, i) => ({ id, i, c: composites[i] }))
-    .filter((x) => eligible[x.i] && x.c !== null)
-    .sort((a, b) => (b.c as number) - (a.c as number) || a.id.localeCompare(b.id));
+/**
+ * Rank (1 = best) entities by composite, descending, separately within each pool (scores are
+ * percentiles within a pool, so ranks across pools would compare unlike things). Ties are broken
+ * by id for determinism. Ineligible (insufficient-data) entities get null.
+ */
+export function rankOrder(
+  ids: ReadonlyArray<string>,
+  composites: ReadonlyArray<number | null>,
+  eligible: ReadonlyArray<boolean>,
+  pools?: ReadonlyArray<string>,
+): (number | null)[] {
   const ranks: (number | null)[] = ids.map(() => null);
-  idx.forEach((x, r) => (ranks[x.i] = r + 1));
+  const byPool = new Map<string, { id: string; i: number; c: number }[]>();
+  ids.forEach((id, i) => {
+    const c = composites[i];
+    if (!eligible[i] || c === null) return;
+    const key = pools?.[i] ?? "";
+    const arr = byPool.get(key) ?? [];
+    arr.push({ id, i, c });
+    byPool.set(key, arr);
+  });
+  for (const arr of byPool.values()) {
+    arr.sort((a, b) => b.c - a.c || a.id.localeCompare(b.id));
+    arr.forEach((x, r) => (ranks[x.i] = r + 1));
+  }
   return ranks;
 }
 
@@ -152,10 +169,12 @@ export function scoreEntities(
     return compositeFor(s, shares);
   });
   const eligible = rows.map((r) => r.composite !== null && r.coverage >= opt.minCoverage);
+  const pools = entities.map((e) => e.pool);
   const ranks = rankOrder(
     ids,
     rows.map((r) => r.composite),
     eligible,
+    pools,
   );
 
   const sigmas: Record<DimensionId, number[]> = {} as Record<DimensionId, number[]>;
@@ -191,7 +210,7 @@ export function scoreEntities(
         comp.push(total);
         drawsComposite[i].push(total);
       }
-      const r = rankOrder(ids, comp, eligible);
+      const r = rankOrder(ids, comp, eligible, pools);
       r.forEach((rk, i) => rk !== null && drawsRank[i].push(rk));
     }
     for (let i = 0; i < n; i++) {
@@ -220,7 +239,7 @@ export function scoreEntities(
     for (const id of active) {
       for (const f of [1 - opt.sensitivityDelta, 1 + opt.sensitivityDelta]) {
         const comp = pointComposites(matrix, n, perturbWeight(weights, id, f));
-        const r = rankOrder(ids, comp, eligible);
+        const r = rankOrder(ids, comp, eligible, pools);
         for (let i = 0; i < n; i++) {
           if (ranks[i] === null || r[i] === null) continue;
           const shift = Math.abs((r[i] as number) - (ranks[i] as number));

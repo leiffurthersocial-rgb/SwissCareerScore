@@ -1,26 +1,118 @@
 @import "tailwindcss";
 
+/* Dark mode is class-based (next-themes sets .dark on <html>). */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/*
+ * Design tokens. Contrast (WCAG AA, ≥ 4.5:1 for text) checked for both themes:
+ *  foreground/background ≈ 16:1, muted-fg/background ≈ 5.9:1 (light) / 6.3:1 (dark),
+ *  primary-fg/primary ≈ 7:1, accent text tokens ≥ 4.5:1 on background.
+ */
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #16181d;
+  --card: #ffffff;
+  --muted: #f3f4f6;
+  --muted-foreground: #525866;
+  --border: #d9dce3;
+  --ring: #2453c8;
+  --primary: #1f46a8;
+  --primary-foreground: #ffffff;
+  --accent: #e8eefc;
+  --accent-foreground: #1a3a8a;
+  --danger: #b42318;
+  --warning: #8a5300;
+  --warning-bg: #fff4e0;
+  --success: #17703a;
+  --chart-1: #1f46a8;
+  --chart-2: #c2410c;
+  --chart-3: #0f766e;
+  --chart-4: #7c3aed;
+  --band: #9fb3e6;
+}
+
+.dark {
+  --background: #0f1115;
+  --foreground: #eceef2;
+  --card: #161a21;
+  --muted: #1d222b;
+  --muted-foreground: #a6adbb;
+  --border: #303744;
+  --ring: #8fb0ff;
+  --primary: #8fb0ff;
+  --primary-foreground: #0d1630;
+  --accent: #1c2740;
+  --accent-foreground: #c7d6ff;
+  --danger: #ff8a80;
+  --warning: #ffc266;
+  --warning-bg: #2c2210;
+  --success: #6fd49a;
+  --chart-1: #8fb0ff;
+  --chart-2: #fb923c;
+  --chart-3: #2dd4bf;
+  --chart-4: #c4a5ff;
+  --band: #3c5591;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-card: var(--card);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+  --color-ring: var(--ring);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-danger: var(--danger);
+  --color-warning: var(--warning);
+  --color-warning-bg: var(--warning-bg);
+  --color-success: var(--success);
+  --color-band: var(--band);
+  --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  color-scheme: light;
+}
+html.dark {
+  color-scheme: dark;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
 }
+
+*:focus-visible {
+  outline: 2px solid var(--ring);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition: none !important;
+    animation: none !important;
+  }
+}
+
+/* Markdown (methodology page) */
+.prose-doc h1 { font-size: 1.75rem; font-weight: 700; margin: 1.5rem 0 1rem; }
+.prose-doc h2 { font-size: 1.35rem; font-weight: 700; margin: 2rem 0 0.75rem; scroll-margin-top: 5rem; }
+.prose-doc h3 { font-size: 1.1rem; font-weight: 600; margin: 1.5rem 0 0.5rem; scroll-margin-top: 5rem; }
+.prose-doc p, .prose-doc ul, .prose-doc ol { margin: 0.75rem 0; line-height: 1.65; }
+.prose-doc ul { list-style: disc; padding-left: 1.5rem; }
+.prose-doc ol { list-style: decimal; padding-left: 1.5rem; }
+.prose-doc a { color: var(--primary); text-decoration: underline; }
+.prose-doc code { background: var(--muted); padding: 0.1rem 0.3rem; border-radius: 4px; font-size: 0.9em; }
+.prose-doc pre { background: var(--muted); padding: 0.75rem; border-radius: 6px; overflow-x: auto; font-size: 0.85rem; }
+.prose-doc pre code { background: none; padding: 0; }
+.prose-doc table { width: 100%; border-collapse: collapse; font-size: 0.9rem; display: block; overflow-x: auto; }
+.prose-doc th, .prose-doc td { border: 1px solid var(--border); padding: 0.4rem 0.5rem; text-align: left; vertical-align: top; }
+.prose-doc th { background: var(--muted); }
+.prose-doc blockquote { border-left: 3px solid var(--border); padding-left: 1rem; color: var(--muted-foreground); }
