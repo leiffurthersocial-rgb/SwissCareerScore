@@ -410,6 +410,55 @@ npm run data:validate          # CI: fail if dataset.json is stale
 Source registry with URLs, retrieval dates and SHA-256 hashes: `dataset.sources` in
 `data/derived/dataset.json` (generated from `scripts/sources.ts` and `data/raw/manifest.json`).
 
+## 13. Expert judgment layer
+
+Official statistics are often published only at a coarse level (ISCO-2 wage groups, ISCO-1
+unemployment, NOGA-section telework). Applied to a specific occupation they can be badly off — a
+physician and a pharmacist share an ISCO-2 wage group. To correct this, every occupation type has a
+documented expert estimate in [`data/inputs/expert-occupations.tsv`](../data/inputs/expert-occupations.tsv)
+for five inputs: mid-career pay (`payMidExpert`), home-office share (`teleworkExpert`),
+work-life balance 0–100 (`wlbExpert`), shortage/demand (`demandExpert`) and AI exposure (`aiExpert`).
+The estimates were written by the project author (an AI model, reviewed for plausibility) from
+public Swiss wage calculators, collective agreements, job-ad patterns and task descriptions; each
+row may carry a note.
+
+**Blending.** The statistic and the estimate are combined as a weighted mean. The statistic's
+weight depends on how well it matches the occupation:
+
+| Statistic match level | Statistic weight | Expert weight |
+|---|---|---|
+| exact | 4 | 1 |
+| isco4 | 3 | 1 |
+| isco3, field | 2.5 | 1 |
+| isco2, derived | 1.5 | 1 (2 if the estimate is only an ISCO-2 group default) |
+| isco1, sector, education-level | 1 | 1 |
+
+So a precise statistic dominates, while a coarse group average is pulled towards the
+occupation-specific judgment. When no statistic exists the estimate is used alone. Blended
+metrics are labelled `estimated`, and the breakdown shows both components and their weights
+(e.g. "statistic 9707 (weight 1.5) ⊕ expert 9000 (weight 1)"). Both inputs remain clickable with
+their own source. Education paths inherit blended values through their career links like any
+other occupation statistic.
+
+**Not covered yet.** Unemployment is still SECO data only. Below the occupation-type list
+(≥ 5 %) it is the ISCO major-group average, so most professionals show the same rate.
+
+## 14. Career graph
+
+"Where this leads" and "How to get there" come from the official profiles on berufsberatung.ch.
+For each education path, the ingest step follows the links on its profile (one hop) and maps
+linked occupation pages to CH-ISCO-19 codes via the SECO AVAM title crosswalk:
+
+- `careers`: education → occupations it qualifies for (plus curated `leadsTo`).
+- `nextSteps`: education → higher-level education linked from its profile (only paths at a
+  higher qualification level: EBA < EFZ < BM/GYM/FMS < BP/HF < HFP/FH-BSc < masters < doctorate).
+- `entryPaths`: the reverse of `careers` and `trainedVia`, i.e. occupation ← education paths.
+- "Reachable with further training" = careers of the next steps that are not direct careers.
+
+Medical and other regulated paths use an explicit `infoPage`, so links are read from the study
+page, not from "similar occupations" lists. Links show what is typical, not every legal route.
+Lists are sorted by the current composite score.
+
 ## References
 
 - Acemoglu, D. & Autor, D. (2011). Skills, tasks and technologies. *Handbook of Labor Economics* 4B.

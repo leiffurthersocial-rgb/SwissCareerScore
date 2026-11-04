@@ -19,7 +19,8 @@
     "qualLevel": "higherEducation",
     "besta": "86-88",
     "nogaSection": "Q",
-    "gradField": "fh:Gesundheit"
+    "gradField": "fh:Gesundheit",
+    "infoPage": "https://www.berufsberatung.ch/de/studienrichtungen/pflege-pflegewissenschaft"
   },
   "pathway": [
     {

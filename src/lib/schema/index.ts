@@ -137,6 +137,8 @@ export const EntityFile = z
         gradField: z.string().optional(),
         /** SECO unemployment by education level, for paths without a target occupation. */
         eduLevel: z.enum(["Sekundarstufe I", "Sekundarstufe II", "Tertiärstufe"]).optional(),
+        /** berufsberatung.ch page whose "continuing education" / "careers" links define the career graph. */
+        infoPage: z.url().optional(),
         /** Direct entry into work after compulsory school (time to qualify = 0). */
         directEntry: z.boolean().optional(),
         /** BFS graduate income level override, e.g. "uh:Doktorat:<field>". Uses gradIncome otherwise. */

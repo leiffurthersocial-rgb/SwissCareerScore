@@ -1,0 +1,463 @@
+# Expert judgment per CH-ISCO-19 occupation type (SwissCareerScore project). Blended with official statistics at build time.
+# payMid = typical full-time gross monthly wage at mid-career (age 30–49, incl. 13th salary), CHF
+# remote = % who work from home at least occasionally; wlb = work-life balance 0–100 (higher = better: regular hours, little night/weekend work, manageable stress)
+# demand = shortage on the BESTA scale (% of employers finding recruiting hard, 15–85); ai = AI/automation exposure 0–100 (task-based)
+# "-" = no judgment (statistic used alone)
+code	payMid	remote	wlb	demand	ai	note
+11120	13500	55	35	45	35	senior public officials
+11140	9500	50	45	35	40	interest-group / union officials
+11200	12000	40	30	55	35	SME general managers; wide spread
+12110	13000	60	45	50	45	finance managers
+12120	12500	60	45	45	45	HR managers
+12130	14000	60	40	50	45	strategy/planning
+12190	11500	40	45	55	40	facility/business-service managers
+12210	13000	55	40	50	40	sales & marketing managers
+12211	12500	50	40	55	35	sales managers
+12212	12500	65	45	45	50	marketing managers
+12220	11500	65	45	40	55	advertising/PR managers
+12230	14000	55	50	60	35	R&D managers
+13110	8500	15	30	45	30	farm/forestry production managers
+13210	11500	30	45	55	35	manufacturing managers
+13231	11000	20	40	75	30	master builders
+13232	10000	20	45	70	30	finishing-trade managers
+13240	10500	40	50	55	45	logistics/procurement managers
+13300	13000	70	50	65	40	ICT managers
+13410	9000	20	40	70	25	childcare-service managers
+13420	12000	30	40	70	30	health-service managers
+13430	9000	25	45	60	30	elderly-care managers
+13440	9500	30	45	60	30	social-service managers
+13450	10500	35	50	55	30	education managers (school heads)
+13461	15000	60	40	45	45	financial-services managers
+13462	11000	55	50	45	55	insurance management
+13490	10000	30	45	55	35	other specialised-service managers
+14110	8000	10	25	50	30	hotel managers
+14120	7000	5	20	55	30	restaurant managers
+14200	8500	15	35	45	40	retail managers
+14300	7500	35	45	35	45	tourism managers
+14310	7500	25	40	35	35	sports/culture facility managers
+21110	9500	55	65	45	45	physicists
+21120	9500	50	55	35	45	meteorologists
+21130	9000	35	65	30	45	chemists
+21140	8500	40	60	35	40	geologists
+21200	10000	75	70	55	55	mathematicians, actuaries, statisticians
+21310	8000	35	65	30	45	biologists (temp. contracts common)
+21320	8000	35	55	35	40	agronomists
+21330	8000	50	65	35	45	environmental scientists
+21410	10000	50	60	60	40	industrial engineers
+21420	9500	40	60	75	35	civil engineers (shortage)
+21430	9000	45	65	55	40	environmental engineers
+21441	9800	45	60	70	40	mechanical engineers
+21442	9800	45	60	70	40	mechatronics/systems engineers
+21450	9500	40	60	55	40	chemical engineers
+21460	9500	40	65	50	40	materials scientists
+21490	9300	45	60	60	40	other engineers
+21510	10000	45	60	75	40	electrical engineers (shortage)
+21520	9800	45	60	65	40	electronics engineers
+21530	9800	55	60	60	45	telecom engineers
+21610	8500	45	45	50	45	architects (long hours common)
+21620	8000	40	55	45	40	landscape architects
+21630	7500	50	55	30	55	product designers
+21640	9000	50	65	60	45	spatial planners (public sector demand)
+21650	8500	35	65	65	45	surveying engineers
+21660	6800	60	55	25	65	graphic designers (oversupply, GenAI)
+22110	14000	10	25	85	35	GPs (incl. employed)
+22120	16000	10	20	85	30	medical specialists
+22211	10000	15	35	80	30	nursing managers
+22212	7800	5	30	85	25	registered nurses (shifts)
+22213	8800	5	30	85	25	specialised nurses (ICU, anaesthesia)
+22220	7500	5	30	75	20	midwives
+22300	6500	10	55	35	25	complementary medicine
+22500	8000	5	35	65	30	veterinarians
+22610	12000	5	55	60	30	dentists
+22620	9500	5	50	65	40	pharmacists
+22630	9000	55	65	45	45	public-health specialists
+22640	7000	5	55	75	20	physiotherapists
+22650	7000	20	60	40	35	dietitians
+22660	8000	15	60	70	25	speech therapists
+22670	7500	5	60	50	35	optometrists
+22690	7000	10	55	50	25	other health specialists
+22691	7300	10	60	70	20	occupational therapists
+23000	9500	30	60	60	30	teachers (general)
+23100	12000	55	55	40	45	university teachers/researchers (academic ladder competitive)
+23301	12000	35	60	55	35	Gymnasium teachers
+23302	10500	30	55	70	30	lower-secondary teachers (shortage)
+23410	9000	30	60	75	25	primary teachers (shortage)
+23420	8500	15	60	75	20	kindergarten teachers
+23421	6800	5	50	70	20	early-childhood educators
+23510	9500	50	65	40	40	education specialists
+23520	10000	25	55	80	25	special-needs teachers (strong shortage)
+23530	7500	40	60	30	55	language teachers
+23540	7500	25	55	35	30	music teachers
+23550	7500	25	55	30	35	art educators
+23560	8500	45	65	45	45	IT trainers
+24110	10500	55	40	65	55	auditors, tax advisers
+24120	10500	50	45	40	55	financial advisers
+24130	12000	65	45	40	55	financial analysts
+24210	10000	60	50	50	50	management/organisation analysts
+24220	10500	55	50	30	45	policy specialists
+24230	9000	55	60	45	45	HR/career specialists
+24240	9000	55	60	40	45	training & development
+24310	9000	65	55	30	55	marketing specialists
+24320	9000	65	55	30	60	PR/communication
+24331	10000	40	50	55	40	technical sales
+24332	10000	45	50	50	45	medical/pharma sales
+24340	10500	55	50	55	45	ICT sales
+25000	10000	80	65	65	55	ICT professionals
+25101	11000	80	65	65	50	software/computer engineers
+25111	11000	80	65	60	50	systems analysts
+25112	10500	80	60	55	60	AI/business specialists
+25121	10000	85	65	60	60	software developers
+25122	10000	80	65	55	55	business informatics
+25123	11000	80	65	65	50	systems architects
+25124	9500	80	60	50	55	web project managers
+25130	7000	60	60	40	55	mediamatics technicians
+25140	9000	85	65	50	65	application programmers
+25190	9500	80	65	45	60	other software/analysts
+25191	9000	80	65	50	60	QA/testing
+25210	10000	80	65	55	55	database specialists
+25220	9500	70	55	60	45	system administrators
+25230	9500	65	55	60	45	network specialists
+25290	11000	75	55	75	40	information-security managers
+25291	11000	75	55	80	40	cyber-security specialists
+26100	11000	55	40	50	50	jurists
+26110	13000	50	30	45	50	attorneys (long hours)
+26120	15000	40	60	40	40	judges
+26210	7500	30	65	20	40	archivists, curators (few posts)
+26220	8000	45	65	30	50	librarians/information scientists
+26310	11000	65	60	45	55	economists
+26320	8500	55	60	25	50	sociologists etc.
+26330	8500	55	60	25	50	historians, philosophers, political scientists
+26340	8500	30	55	60	30	psychologists (psychotherapy demand)
+26350	8300	20	50	65	30	social workers
+26360	8000	20	45	55	25	clergy/pastors (shortage)
+26410	6500	75	45	15	70	authors (GenAI exposure)
+26420	8000	65	40	20	60	journalists (shrinking market)
+26430	7500	75	60	20	80	translators/interpreters (machine translation)
+26510	5000	30	45	15	35	visual artists (precarious income)
+26520	6000	20	40	20	30	musicians (mostly part-time/freelance)
+26530	5500	5	35	15	15	dancers
+26540	7000	40	35	20	45	film/stage directors, producers
+26550	5800	10	35	15	30	actors
+26560	7500	40	45	20	55	broadcasters
+31110	7000	10	65	50	50	lab technicians
+31111	7500	10	60	55	45	chemical technicians
+31112	7500	15	65	50	45	physics technicians
+31120	8000	30	55	55	40	building biology/technicians
+31121	9000	15	45	80	35	construction site managers (shortage)
+31122	8500	20	45	75	35	finishing-trade site managers
+31130	8500	35	60	75	40	electrical technicians
+31140	8000	30	60	65	40	electronics technicians
+31151	8500	35	60	65	45	mechanical engineering technicians
+31152	8500	35	60	70	40	automation technicians
+31153	8500	45	60	50	50	business-process technicians
+31160	8000	15	45	55	45	process technicians (shifts)
+31181	7000	35	65	45	60	mechanical draughtspersons
+31182	7000	40	65	55	55	construction draughtspersons
+31183	7300	40	65	65	55	building-services draughtspersons
+31184	7300	30	65	60	50	geomatics technicians
+31190	7500	25	60	50	45	other engineering technicians
+31220	9000	20	45	55	35	production supervisors
+31231	8000	5	40	75	25	construction foremen
+31232	7500	5	45	70	25	finishing-trade foremen
+31310	9500	5	35	60	40	power-plant operators (shifts)
+31320	7500	5	40	55	40	incineration/water plant operators
+31330	7500	5	35	50	50	chemical plant operators
+31350	7000	5	35	40	50	metal-processing operators
+31410	7000	10	60	45	45	biotech technicians
+31420	6800	15	50	45	35	agricultural technicians
+31430	7000	10	50	50	30	forestry technicians
+31510	7500	0	25	45	40	ship engineers
+31520	8000	0	30	45	35	inland-navigation captains
+31530	12000	5	30	55	35	pilots (irregular hours)
+31540	13000	0	35	70	30	air-traffic controllers (shifts, strict selection)
+31550	8500	5	45	55	40	air-navigation technicians
+32110	7300	5	40	75	40	radiographers
+32120	7000	5	45	70	45	biomedical lab scientists
+32130	5500	5	50	50	50	pharmacy assistants
+32140	6500	5	60	45	45	dental technicians
+32210	6000	2	35	80	25	health-care assistants FaGe (shifts)
+32220	6500	5	35	65	25	birth assistants
+32400	5000	5	50	40	30	veterinary assistants
+32510	7500	5	65	70	20	dental hygienists
+32511	5200	5	60	50	40	dental assistants
+32520	7500	40	65	45	70	medical coders
+32530	7500	25	60	45	30	early-childhood counsellors
+32540	6500	5	55	45	35	opticians
+32550	6000	5	55	50	25	physio assistants
+32560	5800	5	60	60	50	medical practice assistants
+32570	7500	25	65	50	40	environmental/occupational inspectors
+32580	7000	5	30	70	20	paramedics (shifts)
+32590	6500	10	60	40	30	other health associate professionals
+33100	8500	50	55	45	65	financial-market operations
+33110	10000	55	40	35	70	traders/brokers
+33120	8500	55	60	35	70	credit specialists
+33130	8000	55	60	65	70	accountants (federal certificate)
+33140	8000	60	65	40	70	statistical associates
+33150	8500	30	60	40	50	appraisers
+33210	8000	40	50	50	55	insurance agents
+33220	7500	30	50	45	45	sales representatives
+33230	8000	45	60	45	55	purchasers
+33240	7500	35	55	40	50	traders/brokers (goods)
+33310	7000	40	60	45	70	freight forwarders, billing
+33320	7000	35	40	30	45	event planners
+33330	7500	45	55	35	55	recruiters
+33340	8000	30	50	40	45	real-estate agents/managers
+33390	7500	45	60	40	55	business-service associates
+33410	7500	40	60	35	65	office supervisors
+33420	6800	40	60	35	75	legal secretaries
+33430	7000	40	60	35	70	executive assistants
+33440	6200	30	60	45	70	medical secretaries
+33510	7500	5	35	55	35	customs/border officers (shifts)
+33520	7500	45	65	45	65	tax officers
+33530	7500	45	65	50	65	social-insurance officers
+33540	7000	30	70	40	60	registrars, licensing officers
+33550	9000	15	35	55	30	police inspectors, detectives
+33590	7500	25	65	40	50	other public-administration associates
+34110	7000	35	60	35	65	paralegals
+34120	6800	15	50	65	30	social care professionals
+34130	5000	5	45	30	20	religious associates
+34210	5000	5	30	15	10	professional athletes (very few earn well)
+34220	6000	15	40	40	15	sports coaches/teachers
+34230	5000	10	45	35	20	fitness trainers
+34310	5500	20	45	15	55	photographers
+34320	5800	15	55	30	35	interior decorators
+34330	6000	15	60	20	40	gallery/museum/library technicians
+34340	6500	2	15	65	30	head chefs (long, late hours)
+34350	6000	10	30	45	35	event technicians
+35110	7500	50	50	55	50	ICT operations technicians
+35120	7300	50	55	55	55	ICT support technicians
+35130	7500	20	55	65	40	telematics technicians
+35140	7500	75	60	40	60	webmasters
+35210	6800	20	35	30	50	broadcast/AV technicians
+35220	7500	20	55	60	40	telecom technicians
+41100	6600	40	65	35	75	commercial employees / office clerks
+41310	5500	40	65	15	90	typists
+41320	5500	40	65	15	90	data entry
+42111	5300	0	55	20	60	post-office counter staff
+42112	6800	35	60	40	70	bank customer advisers
+42120	5000	0	25	15	40	casino staff
+42130	5500	5	60	15	60	pawnbrokers
+42140	6500	30	60	30	70	debt collectors
+42210	5800	20	55	30	70	travel agents
+42220	5200	25	45	35	85	call-centre agents
+42230	5000	10	55	15	85	telephone operators
+42240	5000	0	30	45	55	hotel receptionists
+42250	5200	10	55	25	70	information clerks
+42260	5300	5	60	25	65	receptionists
+42270	5000	30	55	15	80	survey interviewers
+43110	6800	40	65	45	80	bookkeeping clerks
+43120	6800	40	65	35	80	finance/insurance clerks
+43130	6800	40	65	40	80	payroll clerks
+43200	5900	5	50	50	45	logisticians
+43210	5900	5	50	45	50	stock clerks
+43220	6500	15	55	45	55	process specialists
+43230	6200	20	55	45	60	transport clerks
+44110	5800	15	65	20	55	library assistants
+44120	5500	0	45	35	50	mail sorters/carriers
+44130	6000	50	65	15	75	proofreaders
+44140	5800	35	65	20	80	scribes/clerks
+44150	6000	30	65	30	60	information & documentation specialists
+44160	6600	40	65	35	75	HR clerks
+44191	6200	45	60	30	70	marketing clerks
+44192	6000	30	60	35	65	sales clerks
+51110	5500	0	25	45	30	cabin crew
+51120	6000	0	35	50	45	train conductors
+51130	5000	5	40	30	30	tour guides
+51200	5000	0	20	75	35	cooks (evenings/weekends)
+51311	5300	0	20	65	30	restaurant heads of service
+51312	4800	0	20	65	30	waiters
+51313	4400	0	25	55	30	waiter assistants
+51320	4700	0	15	50	30	bartenders
+51410	4500	0	50	45	10	hairdressers (low pay)
+51420	4600	0	55	30	15	beauticians
+51511	6000	5	50	55	25	housekeeping supervisors
+51512	4600	0	50	50	35	housekeeping staff
+51520	4800	0	50	45	30	domestic housekeepers
+51530	6000	5	55	50	30	caretakers/janitors
+51630	5800	0	45	35	20	undertakers
+51640	4800	0	45	40	20	animal keepers
+51650	7000	5	55	40	30	driving instructors
+52110	4500	0	45	15	40	market stall vendors
+52120	4300	0	45	15	40	street food vendors
+52210	6500	5	45	45	40	shop managers
+52220	5800	5	45	45	45	sales supervisors
+52230	5000	2	45	35	55	retail sales assistants
+52231	5600	2	45	45	45	druggists
+52410	4500	0	40	15	30	models
+52420	5000	5	45	20	50	product demonstrators
+52430	5000	5	45	15	55	door-to-door sales
+52440	4800	20	50	15	85	telesales
+52450	4500	0	40	20	55	petrol-station attendants
+52460	4300	0	35	30	45	snack-bar sellers
+53110	5500	0	55	70	15	childcare workers
+53120	5300	5	55	55	25	learning support workers
+53210	5300	0	35	70	20	nursing aides
+53221	5300	0	45	65	15	home-care workers (Spitex)
+53222	5600	0	50	65	20	social-care workers FaBe
+54110	7500	0	35	45	15	firefighters (24h shifts)
+54120	8000	0	35	55	20	police officers
+54130	7300	0	35	55	20	prison officers
+54140	5500	0	30	40	35	security guards
+54190	6000	0	35	40	30	other protective services
+61110	5000	0	30	55	30	vegetable growers
+61121	5000	0	30	50	30	fruit growers
+61122	5200	0	30	50	30	wine growers
+61130	5300	0	50	55	25	gardeners (plant production)
+61131	5500	0	55	60	25	landscape gardeners
+61132	6000	0	50	60	20	arborists
+61140	5000	0	20	55	30	mixed farmers
+61211	5000	0	15	55	30	livestock & dairy farmers (7-day weeks)
+61212	4800	0	25	45	20	horse keepers
+61220	5000	0	30	40	35	poultry farmers
+61230	4500	0	45	20	20	beekeepers
+61300	5200	0	20	55	30	farmers
+62100	5500	0	50	55	25	forestry workers
+62220	5000	0	30	20	30	fishers
+62240	5500	0	35	20	20	gamekeepers/hunters
+71110	5800	0	50	65	30	structural builders
+71121	6200	0	50	75	30	masons
+71122	6200	0	55	60	25	stove builders
+71130	6000	0	55	45	30	stonemasons
+71140	5900	0	50	70	35	concrete workers
+71151	6200	0	55	75	25	carpenters (timber construction)
+71152	6000	0	60	70	30	joiners
+71153	6000	0	55	60	25	blind installers
+71154	5800	0	55	30	25	boat builders
+71190	5900	0	50	60	30	other construction trades
+71210	6000	0	50	75	25	roofers
+71220	6000	0	55	65	30	floor/tile layers
+71230	5800	0	50	60	30	plasterers/drywall
+71241	6000	0	50	65	25	building-envelope insulators
+71242	6000	0	55	55	30	insulation tinsmiths
+71250	6000	0	55	55	30	glaziers
+71261	6500	0	55	80	25	heating installers (shortage)
+71262	6300	0	55	75	25	roof tinsmiths
+71263	6500	0	55	80	25	plumbers (shortage)
+71271	6400	0	55	75	25	ventilation installers
+71272	6800	0	55	80	25	refrigeration/HVAC (heat pumps)
+71310	5800	0	60	50	30	painters
+71320	5800	0	55	50	40	coaters/varnishers
+71330	6000	0	55	55	25	chimney sweeps, facade cleaners
+72001	6800	5	60	65	45	polymechanics
+72101	6300	0	55	60	40	plant & apparatus builders
+72110	5800	0	50	45	50	foundry moulders
+72120	6000	0	50	55	45	welders
+72130	5800	0	50	45	55	sheet-metal formers
+72140	6000	0	55	60	40	metal construction workers
+72150	5800	0	50	40	40	riggers
+72210	5500	0	50	40	20	farriers
+72220	6500	0	60	55	50	tool makers
+72230	6000	0	45	50	60	machine-tool setters/operators
+72240	5500	0	55	45	55	polishers
+72310	6300	0	60	60	35	automotive mechatronics
+72320	7500	5	40	60	35	aircraft technicians (shifts)
+72330	6000	0	55	60	35	agricultural/industrial machinery mechanics
+72340	5000	0	60	40	30	bicycle mechanics
+73111	6000	5	65	45	35	watchmakers
+73112	5000	0	60	30	60	watch assemblers (cyclical)
+73113	6000	5	60	45	50	micromechanics
+73120	5500	0	60	25	25	instrument makers
+73130	5500	0	60	25	35	goldsmiths
+73140	5000	0	60	15	35	ceramicists
+73150	5500	0	60	25	40	glassblowers
+73160	5300	5	60	20	50	sign painters/engravers
+73170	5000	0	60	15	35	wood/basket crafts
+73180	5000	0	60	15	40	textile crafts
+73210	6000	25	60	25	70	prepress technicians
+73220	6000	0	50	30	55	printers (shrinking)
+73230	5500	0	55	25	60	bookbinders/print finishing
+74110	6800	0	55	80	25	electricians (shortage)
+74120	7000	5	60	75	35	automation technicians
+74130	6800	0	45	70	25	power-line electricians (on call)
+74210	6600	5	60	60	40	electronics technicians
+74220	6000	5	55	45	40	multimedia electronics
+75100	6000	5	50	40	45	brewing technologists
+75110	5500	0	50	55	40	butchers
+75120	5000	0	30	60	40	bakers/confectioners (early hours)
+75130	5500	0	30	50	40	dairy/cheese makers
+75140	5000	0	50	35	55	fruit/vegetable processing
+75150	5500	0	55	20	50	food tasters
+75160	5000	0	50	15	60	tobacco processing
+75200	5500	0	55	45	45	wood processing
+75210	5300	0	55	30	50	wood treaters
+75220	5800	0	60	55	40	furniture makers
+75230	5500	0	50	40	60	woodworking machine operators
+75300	4800	0	55	20	55	garment sewers
+75310	5000	5	55	20	40	clothing designers
+75320	5000	5	55	15	60	pattern makers/cutters
+75330	5000	0	55	20	40	upholstery textile designers
+75340	5300	0	55	30	40	upholsterers
+75350	4800	0	50	10	55	tanners
+75360	5000	0	55	20	40	shoemakers
+75410	7000	0	40	35	20	divers
+75420	7000	0	45	45	25	blasters
+75430	5500	5	55	30	65	product testers
+75440	5800	0	50	35	30	pest control
+75490	5500	0	55	30	45	other crafts
+81000	6200	0	40	50	55	plant operators (shifts)
+81110	6500	0	40	30	50	miners/tunnel workers
+81120	6000	0	40	35	55	mineral processing operators
+81140	5800	0	45	45	55	concrete product makers
+81210	6000	0	40	40	55	foundry technologists
+81220	5700	0	40	35	60	metal finishing operators
+81310	6200	0	35	45	55	chemical machine operators
+81320	5500	15	50	20	60	photo specialists
+81410	5500	0	40	30	65	rubber machine operators
+81420	5700	0	40	40	60	plastics machine operators
+81430	5800	0	45	40	60	packaging technologists
+81500	5000	0	40	20	65	textile machine operators
+81510	5000	0	40	15	65	spinning operators
+81520	5000	0	40	15	65	weaving/knitting operators
+81530	4600	0	50	15	65	sewing machine operators
+81540	5000	0	40	15	65	dyeing operators
+81550	4800	0	40	10	65	leather preparation operators
+81560	4800	0	45	10	65	shoe machine operators
+81570	4800	0	50	30	55	textile care (laundry)
+81601	5500	0	35	40	60	food machine operators
+81602	5500	0	35	40	60	beverage machine operators
+81710	6200	0	35	40	55	paper technologists
+81720	5800	0	45	40	55	wood-industry workers
+81810	5600	0	40	25	60	glass/ceramics plant operators
+81820	6000	0	40	30	55	boiler operators
+81830	5200	0	40	35	70	packaging machine operators
+82110	5500	0	50	40	70	mechanical assemblers
+82120	5500	0	50	45	70	electrical/electronic assemblers
+83110	8000	0	30	75	40	train drivers (shifts, shortage)
+83120	6500	0	35	60	45	rail transport specialists
+83210	5000	0	45	30	50	motorcycle couriers
+83220	5200	0	45	40	50	van/taxi drivers
+83310	6200	0	35	70	45	bus/tram drivers (split shifts)
+83320	6000	0	30	70	45	truck drivers
+83410	5800	0	45	45	40	agricultural/forestry machine operators
+83421	6200	0	50	55	40	earthmoving machine operators
+83422	6200	0	50	55	40	construction machine operators
+83431	6500	0	50	55	45	crane operators
+83432	6200	0	50	50	45	lift/hoist operators
+83440	5300	0	45	45	55	forklift drivers
+83500	5800	0	30	40	40	deck crew
+91110	4300	0	55	45	30	domestic cleaners
+91120	4500	0	45	45	35	office/hotel cleaners
+91210	4200	0	55	20	50	hand launderers
+91220	4500	0	55	30	45	vehicle cleaners
+91230	4700	0	55	35	30	window cleaners
+91290	4500	0	50	35	35	other cleaners
+92110	4200	0	35	45	35	fruit & vegetable farm hands
+92120	4300	0	25	45	35	livestock farm hands
+92130	4200	0	30	45	35	mixed farm hands
+92140	4500	0	50	45	30	gardening labourers
+92150	4800	0	50	45	30	forestry labourers
+93120	5200	0	50	45	35	civil-engineering labourers
+93131	5200	0	50	45	35	building labourers
+93132	5100	0	50	40	35	finishing-trade labourers
+93210	4700	0	50	35	65	packers
+93330	5000	0	45	35	55	freight handlers
+93340	4600	0	45	30	55	shelf fillers
+94110	4600	0	30	40	45	fast-food staff
+94121	4600	0	30	50	35	assistant cooks
+94122	4400	0	30	45	40	kitchen helpers
+96110	5300	0	55	40	35	refuse collectors
+96120	5300	0	55	40	45	recycling specialists
+96130	5000	0	55	30	35	street sweepers
+96210	4800	0	45	35	45	couriers/porters
+96220	4500	0	40	15	40	odd-job workers
+96230	5200	0	55	15	60	meter readers (declining)

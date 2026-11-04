@@ -19,7 +19,8 @@
     "qualLevel": "higherEducation",
     "besta": "86-88",
     "nogaSection": "Q",
-    "gradField": "uh:Gesundheit"
+    "gradField": "uh:Gesundheit",
+    "infoPage": "https://www.berufsberatung.ch/de/studienrichtungen/humanmedizin"
   },
   "pathway": [
     {

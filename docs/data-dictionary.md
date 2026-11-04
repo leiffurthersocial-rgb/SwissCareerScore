@@ -85,6 +85,23 @@ Every number in the dataset is a Datapoint:
 | `regionalUbiquity` | rubric 0–3 | rubric | regional |
 | `trainingRegions` | 1–3 | count of `languageRegions` | regional |
 | `apprenticeWage` | CHF/month | berufsberatung.ch recommendation, final year | display only |
+| `payP90` | CHF/month | LSE 2024 P90, all ages | pay |
+| `payMidExpert` | CHF/month | expert estimate (methodology §13) | pay (blended with `payMid`) |
+| `teleworkExpert` | % | expert estimate | flexibility (blended) |
+| `wlbExpert` | index 0–100 | expert estimate | workLifeBalance (blended) |
+| `demandExpert` | % | expert estimate of shortage | demand (blended) |
+| `aiExpert` | index 0–100 | expert estimate of AI exposure | aiResilience (blended) |
+
+### Career graph fields
+
+| Field | Meaning |
+|---|---|
+| `careers` | education → occupation ids it qualifies for (berufsberatung.ch links + `leadsTo`) |
+| `nextSteps` | education → higher-level education ids linked from its profile |
+| `entryPaths` | occupation → education ids that lead into it |
+
+`core.json` (client bundle) holds per entity: `m` = dimension → `[raw, confidence initial, matchLevel]`,
+`y` = years to qualify, `p` = mid-career median pay, plus the career graph fields.
 
 ## `dataset.json` → `metrics`
 

@@ -136,6 +136,13 @@ export const SOURCES: SourceDef[] = [
     year: 2026,
   },
   {
+    id: "expert-occupations",
+    publisher: "SwissCareerScore (expert judgment)",
+    title: "Per-occupation expert estimates (pay, remote work, work-life balance, shortage, AI exposure) — data/inputs/expert-occupations.tsv",
+    url: `${METHODOLOGY_URL}#13-expert-judgment-layer`,
+    year: 2026,
+  },
+  {
     id: "expert-rubric",
     publisher: "SwissCareerScore (expert judgment)",
     title: "Documented scoring rubrics (entry access, international mobility, regional availability)",

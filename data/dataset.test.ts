@@ -42,8 +42,9 @@ describe("derived dataset", () => {
   it("missing inputs produce null metrics, never zeros", () => {
     for (const e of ds.entities) {
       if (e.inputs.nonCompletion?.value === null) expect(e.metrics.trainingEase?.raw).toBeNull();
-      if (!e.inputs.recruitmentDifficulty || e.inputs.recruitmentDifficulty.value === null)
-        expect(e.metrics.demand?.raw ?? null).toBeNull();
+      const noStat = !e.inputs.recruitmentDifficulty || e.inputs.recruitmentDifficulty.value === null;
+      const noExpert = !e.inputs.demandExpert || e.inputs.demandExpert.value === null;
+      if (noStat && noExpert) expect(e.metrics.demand?.raw ?? null).toBeNull();
     }
   });
 

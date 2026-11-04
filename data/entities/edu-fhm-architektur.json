@@ -17,7 +17,8 @@
     "qualLevel": "higherEducation",
     "gradIncome": "fh:Master:Architektur, Bau- und Planungswesen",
     "besta": "68-75",
-    "nogaSection": "M"
+    "nogaSection": "M",
+    "infoPage": "https://www.berufsberatung.ch/de/studienrichtungen/architektur"
   },
   "pathway": [
     {

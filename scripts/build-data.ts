@@ -32,6 +32,16 @@ const ai = read<any>("data/inputs/ai-task-content.json");
 const manifest = read<Record<string, { sha256: string; retrieved: string }>>("data/raw/manifest.json");
 /* eslint-enable @typescript-eslint/no-explicit-any */
 
+// Expert judgment per CH-ISCO-19 code (data/inputs/expert-occupations.tsv)
+const EXPERT_URL = `${METHODOLOGY_URL}#13-expert-judgment-layer`;
+const expert = new Map<string, Record<string, number | null>>();
+for (const line of readFileSync(path.join(ROOT, "data", "inputs", "expert-occupations.tsv"), "utf8").split("\n")) {
+  if (!line.trim() || line.startsWith("#") || line.startsWith("code\t")) continue;
+  const [code, pay, remote, wlb, demand, aiv, note] = line.split("\t");
+  const n = (x: string) => (x === "-" || x === undefined ? null : Number(x));
+  expert.set(code, { payMid: n(pay), remote: n(remote), wlb: n(wlb), demand: n(demand), ai: n(aiv), note: note as unknown as number });
+}
+
 const errors: string[] = [];
 const fail = (msg: string) => errors.push(msg);
 
@@ -288,6 +298,19 @@ function occupationOwnInputs(e: EntityFile): Inputs {
   if (e.raw.mobility) out.mobility = { ...e.raw.mobility } as DatasetDatapoint;
   if (e.raw.regionalUbiquity) out.regionalUbiquity = { ...e.raw.regionalUbiquity } as DatasetDatapoint;
   out.trainingRegions = dp(e.languageRegions.length, "language regions", "berufsberatung", "https://www.berufsberatung.ch/", 2026, "expert-judgment", "exact", `Practised/trained in: ${e.languageRegions.join(", ")}`);
+  const x = expert.get(e.codes.chIsco19 ?? "");
+  if (!x) fail(`${e.id}: no expert row for ${e.codes.chIsco19}`);
+  else {
+    const note = `Project expert judgment for occupation type ${e.codes.chIsco19}${x.note ? ` (${x.note})` : ""}; blended with the official statistic.`;
+    const ex = (k: string, unit: string, label: string) =>
+      x[k] === null ? undefined : dp(x[k] as number, unit, "expert-occupations", EXPERT_URL, 2026, "expert-judgment", "exact", label, note);
+    const add = (id: InputId, d: DatasetDatapoint | undefined) => d && (out[id] = d);
+    add("payMidExpert", ex("payMid", "CHF/month", "Typical mid-career wage (expert estimate)"));
+    add("teleworkExpert", ex("remote", "%", "Share working from home at least occasionally (expert estimate)"));
+    add("wlbExpert", ex("wlb", "index 0–100", "Work-life balance (expert estimate)"));
+    add("demandExpert", ex("demand", "% firms", "Recruiting difficulty / shortage (expert estimate)"));
+    add("aiExpert", ex("ai", "index 0–100", "AI/automation exposure (expert estimate)"));
+  }
   return out;
 }
 
@@ -295,7 +318,7 @@ function occupationOwnInputs(e: EntityFile): Inputs {
 const own = new Map<string, Inputs>();
 for (const e of entities) own.set(e.id, e.kind === "occupation" ? occupationOwnInputs(e) : educationOwnInputs(e));
 
-const OUTCOME_INPUTS: InputId[] = ["payEntry", "payMid", "paySenior", "payP25", "payP75", "payP90", "unemploymentRate", "aiExposure", "nightWork", "mobility", "regionalUbiquity"];
+const OUTCOME_INPUTS: InputId[] = ["payMidExpert", "teleworkExpert", "wlbExpert", "demandExpert", "aiExpert", "payEntry", "payMid", "paySenior", "payP25", "payP75", "payP90", "unemploymentRate", "aiExposure", "nightWork", "mobility", "regionalUbiquity"];
 const TRAINING_INPUTS: InputId[] = ["yearsToQualify", "nonCompletion", "entryAccess"];
 
 function inherit(dpIn: DatasetDatapoint, from: string): DatasetDatapoint {
@@ -365,20 +388,47 @@ function metricsFor(e: EntityFile, idx: number): Partial<Record<DimensionId, Dat
     };
   };
   const v = (k: InputId) => I[k]?.value ?? null;
+  /**
+   * Blend an official statistic with the project's expert estimate. The statistic's weight grows
+   * with how precisely it matches the entity; the estimate always has weight 1 (2 when the
+   * statistic is itself only a group default of expert judgment).
+   */
+  const STAT_W: Record<MatchLevel, number> = { exact: 4, isco4: 3, isco3: 2.5, field: 2.5, isco2: 1.5, derived: 1.5, isco1: 1, sector: 1, "education-level": 1 };
+  const blend = (stat: number | null, statDp: DatasetDatapoint | undefined, expKey: InputId, digits = 0) => {
+    const ev = v(expKey);
+    if (ev === null) return { value: stat, text: stat === null ? "n/a" : `statistic ${fmt(stat, digits)}`, blended: false };
+    if (stat === null || !statDp) return { value: ev, text: `expert estimate ${fmt(ev, digits)} (no statistic)`, blended: true };
+    const wsStat = statDp.confidence === "expert-judgment" ? 1 : STAT_W[statDp.matchLevel] ?? 1;
+    const wsExp = statDp.confidence === "expert-judgment" && statDp.matchLevel === "isco2" ? 2 : 1;
+    const val = (wsStat * stat + wsExp * ev) / (wsStat + wsExp);
+    return { value: val, text: `statistic ${fmt(stat, digits)} (weight ${wsStat}) ⊕ expert ${fmt(ev, digits)} (weight ${wsExp}) = ${fmt(val, digits)}`, blended: true };
+  };
+  const withExpert = (metric: DatasetMetric, used: boolean, expKey: InputId): DatasetMetric =>
+    used && metric.raw !== null
+      ? { ...metric, inputs: [...metric.inputs, expKey], confidence: "estimated", matchLevel: "exact" }
+      : metric;
 
   const entry = v("payEntry");
-  const mid = v("payMid");
+  const midB = blend(v("payMid"), I.payMid, "payMidExpert");
+  const mid = midB.value;
   const p90 = v("payP90");
   // 30 % entry, 50 % mid-career, 20 % earning potential (P90). Missing components are dropped and
   // the rest renormalized (no imputation); mid-career pay is required.
   const parts = ([[0.3, entry, "entry", "payEntry"], [0.5, mid, "mid-career", "payMid"], [0.2, p90, "P90", "payP90"]] as const).filter((x) => x[1] !== null);
   const wsum = parts.reduce((a, x) => a + x[0], 0);
   const payRaw = mid !== null && wsum > 0 ? parts.reduce((a, x) => a + (x[0] / wsum) * (x[1] as number), 0) : null;
-  m.pay = from(parts.map((x) => x[3] as InputId), payRaw,
-    parts.map((x) => `${(x[0] / wsum).toFixed(2)} × ${x[2]} ${fmt(x[1], 0)}`).join(" + ") + " CHF/month" + (parts.length < 3 ? " (missing components dropped, weights renormalized)" : ""));
+  m.pay = withExpert(
+    from(parts.map((x) => x[3] as InputId), payRaw,
+      parts.map((x) => `${(x[0] / wsum).toFixed(2)} × ${x[2]} ${fmt(x[1], 0)}`).join(" + ") + " CHF/month" +
+        (parts.length < 3 ? " (missing components dropped, weights renormalized)" : "") +
+        (midB.blended ? ` — mid-career: ${midB.text}` : "")),
+    midB.blended, "payMidExpert");
   m.stability = from(["unemploymentRate"], v("unemploymentRate"), `registered unemployment rate ${fmt(v("unemploymentRate"))} %`);
-  if (I.recruitmentDifficulty) m.demand = from(["recruitmentDifficulty"], v("recruitmentDifficulty"), `${fmt(v("recruitmentDifficulty"))} % of firms found recruiting hard or impossible`);
-  m.aiResilience = from(["aiExposure"], v("aiExposure"), `task-based exposure index ${fmt(v("aiExposure"))} (lower = more resilient)`);
+  const demB = blend(v("recruitmentDifficulty"), I.recruitmentDifficulty, "demandExpert", 1);
+  if (I.recruitmentDifficulty || demB.blended)
+    m.demand = withExpert(from(["recruitmentDifficulty"], demB.value, `% of employers finding recruiting hard — ${demB.text}`), demB.blended, "demandExpert");
+  const aiB = blend(v("aiExposure"), I.aiExposure, "aiExpert", 1);
+  m.aiResilience = withExpert(from(["aiExposure"], aiB.value, `task-based exposure index (lower = more resilient) — ${aiB.text}`), aiB.blended, "aiExpert");
   m.trainingEase = from(["nonCompletion"], v("nonCompletion"), `${fmt(v("nonCompletion"))} % did not complete`);
   m.entryAccess = from(["entryAccess"], v("entryAccess"), `admission hurdle ${fmt(v("entryAccess"), 0)} on 0–3 rubric`);
   m.timeToQualify = from(["yearsToQualify"], v("yearsToQualify"), `${fmt(v("yearsToQualify"))} years after compulsory school`);
@@ -388,8 +438,14 @@ function metricsFor(e: EntityFile, idx: number): Partial<Record<DimensionId, Dat
   m.careerGrowth = from(["paySenior", "payEntry"], senior !== null && growthEntry ? senior / growthEntry : null, `median age ≥50 ${fmt(senior, 0)} ÷ median age ≤29 ${fmt(growthEntry, 0)} (LSE, same ISCO group)`);
   const np = nightPct[idx];
   const hp = hourPct[idx];
-  m.workLifeBalance = from(["nightWork", "weeklyHours"], np !== null && hp !== null ? (np + hp) / 2 : null, `mean of percentile(low night-work share ${fmt(v("nightWork"))} %) = ${fmt(np, 0)} and percentile(low weekly hours ${fmt(v("weeklyHours"), 2)} h) = ${fmt(hp, 0)}`);
-  m.flexibility = from(["telework"], v("telework"), `${fmt(v("telework"))} % of employed in the sector work from home at least occasionally`);
+  const wlbStat = np !== null && hp !== null ? (np + hp) / 2 : null;
+  const wlbStatDp = I.nightWork && I.weeklyHours ? { ...I.nightWork, matchLevel: "isco1" as MatchLevel } : undefined;
+  const wlbB = blend(wlbStat, wlbStatDp, "wlbExpert");
+  m.workLifeBalance = withExpert(
+    from(["nightWork", "weeklyHours"], wlbB.value, `statistical index = mean of percentile(low night work ${fmt(v("nightWork"))} %) ${fmt(np, 0)} and percentile(low weekly hours ${fmt(v("weeklyHours"), 2)} h) ${fmt(hp, 0)} — ${wlbB.text}`),
+    wlbB.blended, "wlbExpert");
+  const flxB = blend(v("telework"), I.telework, "teleworkExpert");
+  m.flexibility = withExpert(from(["telework"], flxB.value, `% working from home at least occasionally — ${flxB.text}`), flxB.blended, "teleworkExpert");
   m.mobility = from(["mobility"], v("mobility"), `rubric ${fmt(v("mobility"), 0)} / 9`);
   const ub = v("regionalUbiquity");
   const tr = v("trainingRegions");
@@ -415,6 +471,66 @@ const out: DatasetEntity[] = entities.map((e, idx) => ({
   metrics: metricsFor(e, idx),
   ...(e.meta.notes ? { notes: e.meta.notes } : {}),
 }));
+
+// ------------------------------------------------------------------ career graph (berufsberatung.ch links)
+const avamTitles = read<{ titles: { code: string; de_m: string; de_f: string }[] }>("data/ingested/seco-avam.json").titles;
+const normTitle = (t: string) =>
+  t
+    .toLowerCase()
+    .replace(/ß/g, "ss")
+    .replace(/\(.*?\)/g, "")
+    .replace(/\b(efz|eba|hf|bp|hfp|hfp|eidg\.?|dipl\.?|mit|fachausweis|diplom|nds)\b/g, " ")
+    .replace(/[^a-zäöüéèàç0-9]+/g, " ")
+    .trim();
+const titleToCode = new Map<string, string>();
+for (const t of avamTitles) for (const x of [t.de_m, t.de_f]) if (x) titleToCode.set(normTitle(x), t.code);
+const occByCode = new Map(entities.filter((e) => e.kind === "occupation").map((e) => [e.codes.chIsco19!, e.id]));
+const isEduPage = (u: string) => /\/de\/studienrichtungen\//.test(u) || /-(efz|eba|hf|bp|hfp)$/.test(u);
+const urlToEdu = new Map<string, string[]>();
+/** The berufsberatung.ch page describing an education path: explicit infoPage, else the last pathway stage that is a profile/study page. */
+const infoPage = (e: EntityFile) => e.refs.infoPage ?? [...e.pathway].reverse().map((s) => s.sourceUrl).find(isEduPage);
+for (const e of entities) {
+  const u = e.kind === "education" ? infoPage(e) : undefined;
+  if (u) urlToEdu.set(u, [...(urlToEdu.get(u) ?? []), e.id]);
+}
+const LEVEL: Record<string, number> = { NONE: 0, EBA: 1, EFZ: 2, GYM: 2.5, FMS: 2.5, BM: 2.5, BP: 3, HF: 3, HFP: 4, "FH-BSc": 4, "UH-BSc": 4, "FH-MSc": 5, "UH-MSc": 5, "ETH-MSc": 5, "UH-MMed": 5, DR: 6 };
+const careers = new Map<string, string[]>();
+const nextSteps = new Map<string, string[]>();
+for (const e of entities) {
+  if (e.kind !== "education") continue;
+  const ip = infoPage(e);
+  const page = ip ? bb.pages[ip] : undefined;
+  const c = new Set(e.leadsTo);
+  const n = new Set<string>();
+  for (const link of (page?.links ?? []) as string[]) {
+    if (isEduPage(link)) {
+      for (const id of urlToEdu.get(link) ?? []) {
+        const t = byId.get(id)!;
+        if (id !== e.id && (LEVEL[t.eduType ?? ""] ?? 0) > (LEVEL[e.eduType ?? ""] ?? 0)) n.add(id);
+      }
+    } else {
+      const lp = bb.pages[link];
+      const code = ((lp?.titles ?? []) as string[]).map((t) => titleToCode.get(normTitle(t))).find(Boolean);
+      const occ = code ? occByCode.get(code) : undefined;
+      if (occ) c.add(occ);
+    }
+  }
+  careers.set(e.id, [...c]);
+  nextSteps.set(e.id, [...n]);
+}
+for (const o of entities)
+  if (o.kind === "occupation")
+    for (const via of o.trainedVia) if (careers.has(via) && !careers.get(via)!.includes(o.id)) careers.get(via)!.push(o.id);
+const entryPaths = new Map<string, string[]>();
+for (const [eid, cs] of careers) for (const o of cs) entryPaths.set(o, [...(entryPaths.get(o) ?? []), eid]);
+for (const e of out) {
+  if (e.kind === "education") {
+    e.careers = careers.get(e.id) ?? [];
+    e.nextSteps = nextSteps.get(e.id) ?? [];
+  } else {
+    e.entryPaths = [...new Set([...e.trainedVia, ...(entryPaths.get(e.id) ?? [])])];
+  }
+}
 
 // ------------------------------------------------------------------ correlations
 const dirScores = {} as Record<DimensionId, (number | null)[]>;
@@ -481,6 +597,7 @@ const core: CoreDataset = {
     languageRegions: e.languageRegions,
     leadsTo: e.leadsTo,
     trainedVia: e.trainedVia,
+    ...(e.careers ? { careers: e.careers, nextSteps: e.nextSteps } : { entryPaths: e.entryPaths }),
     m: Object.fromEntries(
       Object.entries(e.metrics).map(([k, v]) => [k, [v!.raw, C[v!.confidence], v!.matchLevel]]),
     ) as CoreEntity["m"],

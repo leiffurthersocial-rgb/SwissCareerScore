@@ -46,19 +46,36 @@ export async function ingestBerufsberatung() {
   for (const f of readdirSync(ENTITY_DIR).filter((x) => x.endsWith(".json"))) {
     const e = JSON.parse(readFileSync(path.join(ENTITY_DIR, f), "utf8"));
     for (const s of e.pathway ?? []) if (s.sourceUrl.includes("berufsberatung.ch")) urls.add(s.sourceUrl);
+    if (e.refs?.infoPage) urls.add(e.refs.infoPage);
   }
-  const pages: Record<string, { durationSnippets: string[]; yearsMentioned: number[]; apprenticeWages: { year: number; chf: string }[] }> = {};
-  const sorted = [...urls].sort();
+  const pages: Record<string, { durationSnippets: string[]; yearsMentioned: number[]; apprenticeWages: { year: number; chf: string }[]; titles: string[]; links: string[] }> = {};
   const texts = new Map<string, string>();
+  const meta = new Map<string, { titles: string[]; links: string[] }>();
+  const BASE = "https://www.berufsberatung.ch/de/";
   // polite concurrency: 8 parallel requests
-  for (let i = 0; i < sorted.length; i += 8) {
-    await Promise.all(
-      sorted.slice(i, i + 8).map(async (url) => {
-        const slug = url.replace(/^https:\/\/www\.berufsberatung\.ch\/de\//, "").replace(/\//g, "_");
-        texts.set(url, pageText((await fetchRaw(url, `berufsberatung/${slug}.html`)).toString()));
-      }),
-    );
-  }
+  const fetchAll = async (list: string[]) => {
+    for (let i = 0; i < list.length; i += 8) {
+      await Promise.all(
+        list.slice(i, i + 8).map(async (url) => {
+          const slug = url.replace(BASE, "").replace(/\//, "_");
+          const html = (await fetchRaw(url, `berufsberatung/${slug}.html`)).toString();
+          texts.set(url, pageText(html));
+          const h1 = html.match(/<h1[^>]*>([\s\S]*?)<\/h1>/)?.[1] ?? "";
+          const titles = [...h1.matchAll(/<span>([\s\S]*?)<\/span>/g)]
+            .map((m) => m[1].replace(/<[^>]+>/g, "").replace(/&amp;/g, "&").trim())
+            .filter(Boolean);
+          const self = url.replace(BASE, "");
+          const links = [...new Set([...html.matchAll(/href="\/de\/((?:berufe|studienrichtungen)\/[^"#?]+)"/g)].map((m) => m[1]))].filter((l) => l !== self);
+          meta.set(url, { titles, links: links.map((l) => BASE + l) });
+        }),
+      );
+    }
+  };
+  // 1) pages cited by pathways, 2) every profile they link to (career graph: next steps, careers)
+  await fetchAll([...urls].sort());
+  const linked = [...new Set([...meta.values()].flatMap((m) => m.links))].filter((u) => !meta.has(u)).sort();
+  await fetchAll(linked);
+  const sorted = [...texts.keys()].sort();
   for (const url of sorted) {
     const text = texts.get(url)!;
     const snippets: string[] = [];
@@ -72,7 +89,13 @@ export async function ingestBerufsberatung() {
     const wages: { year: number; chf: string }[] = [];
     const wr = /(\d)\. Lehrjahr: CHF ([\d’'–\-. ]+)/g;
     while ((m = wr.exec(text))) wages.push({ year: Number(m[1]), chf: m[2].replace(/[.\s]+$/, "").trim() });
-    pages[url] = { durationSnippets: snippets, yearsMentioned: yearsMentioned(snippets.join(" ")), apprenticeWages: wages };
+    pages[url] = {
+      durationSnippets: snippets,
+      yearsMentioned: yearsMentioned(snippets.join(" ")),
+      apprenticeWages: wages,
+      titles: meta.get(url)?.titles ?? [],
+      links: meta.get(url)?.links ?? [],
+    };
     if (!snippets.length) console.warn(`  ! no duration statement found on ${url}`);
   }
   console.log(`  ${Object.keys(pages).length} pages`);

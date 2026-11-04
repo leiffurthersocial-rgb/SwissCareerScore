@@ -22,6 +22,11 @@ export const INPUT_IDS = [
   "regionalUbiquity",
   "trainingRegions",
   "apprenticeWage",
+  "payMidExpert",
+  "teleworkExpert",
+  "wlbExpert",
+  "demandExpert",
+  "aiExpert",
 ] as const;
 export type InputId = (typeof INPUT_IDS)[number];
 
@@ -54,6 +59,12 @@ export interface DatasetEntity {
   pathway: { label: string; years: number; sourceUrl: string; confidence: Confidence; note?: string }[];
   inputs: Partial<Record<InputId, DatasetDatapoint>>;
   metrics: Partial<Record<DimensionId, DatasetMetric>>;
+  /** education: occupations it leads to (target + berufsberatung.ch "careers after the degree"). */
+  careers?: string[];
+  /** education: further qualifications it gives access to (berufsberatung.ch "continuing education"). */
+  nextSteps?: string[];
+  /** occupation: education paths leading to it. */
+  entryPaths?: string[];
   notes?: string;
 }
 
@@ -77,6 +88,9 @@ export interface CoreEntity {
   languageRegions: LanguageRegion[];
   leadsTo: string[];
   trainedVia: string[];
+  careers?: string[];
+  nextSteps?: string[];
+  entryPaths?: string[];
   /** dimension → [raw, confidence initial (m|e|x), match level] */
   m: Partial<Record<DimensionId, [number | null, "m" | "e" | "x", MatchLevel]>>;
   /** years to qualify */

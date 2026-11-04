@@ -231,7 +231,7 @@ LINK = {"22120": ["edu-uh-medizin"], "26110": ["edu-uh-mlaw"], "26120": ["edu-uh
         "24110": ["edu-bp-finanz-rechnungswesen"], "24120": ["edu-fh-betriebsoekonomie"], "24130": ["edu-uh-economics"],
         "23530": ["edu-uh-englische-sprach-und-literaturwissenschaft"], "13420": ["edu-hf-pflege"], "12110": ["edu-uh-betriebswirtschaft"],
         "21120": ["edu-uh-physik"], "26560": ["edu-fh-kommunikation-medien"], "31111": ["edu-efz-laborant"]}
-SKIP_WORDS = ("Häuptling", "häuptling", "gesetzgebender", "Erdöl", "Bergbau", "Aquakultur", "Fischerei", "Hochseefischer", "Subsistenz", "Astrologen", "Tiefbohrer")
+SKIP_WORDS = ("Häuptling", "häuptling", "gesetzgebender", "Zofen", "Wasserträger", "Zugtierantrieb", "Handwagen", "Erdöl", "Bergbau", "Aquakultur", "Fischerei", "Hochseefischer", "Subsistenz", "Astrologen", "Tiefbohrer")
 n_occ = 0
 have = {o["codes"].get("chIsco19") for o in ents.values() if o["kind"] == "occupation"}
 for code in sorted(CLS):
