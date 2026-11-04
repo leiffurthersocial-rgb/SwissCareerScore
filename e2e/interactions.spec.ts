@@ -3,10 +3,10 @@ import { expect, test } from "@playwright/test";
 test.describe("weights, filters, URL state", () => {
   test("preset writes p= to the URL and survives reload", async ({ page }) => {
     await page.goto("/en");
-    await page.getByRole("button", { name: "Money first" }).click();
+    await page.getByRole("button", { name: /^Money first/ }).first().click();
     await expect(page).toHaveURL(/p=money/);
     await page.reload();
-    await expect(page.getByRole("button", { name: "Money first" })).toHaveAttribute("aria-pressed", "true");
+    await expect(page.getByRole("button", { name: /^Money first/ }).first()).toHaveAttribute("aria-pressed", "true");
   });
 
   test("keyboard slider change switches to custom weights and lock is encoded", async ({ page }) => {
@@ -24,20 +24,21 @@ test.describe("weights, filters, URL state", () => {
     await page.goto("/en?q=Cook");
     const row = page.locator("li", { hasText: "Cook" }).filter({ has: page.getByRole("link", { name: "Cook", exact: true }) });
     const before = await row.locator("span[aria-label^='Score']").textContent();
-    await page.getByRole("combobox", { name: /^Show/ }).selectOption("occupation");
+    await page.getByRole("tab", { name: "Education paths" }).click();
+    await expect(page).toHaveURL(/k=education/);
+    await page.getByRole("tab", { name: "Occupations" }).click();
     await expect(page).toHaveURL(/k=occupation/);
-    await expect(page.getByRole("heading", { name: "Education paths" })).toHaveCount(0);
     await expect(row.locator("span[aria-label^='Score']")).toHaveText(before!);
     await page.getByRole("combobox", { name: /^Max. years of training/ }).selectOption("3");
-    await page.getByRole("searchbox", { name: "Search" }).fill("Physician");
+    await page.getByRole("searchbox", { name: "Search", exact: true }).fill("Physician");
     await expect(page.getByRole("link", { name: "Physician" })).toHaveCount(0);
   });
 
   test("compare up to four entries", async ({ page }) => {
     await page.goto("/en?k=occupation");
-    await page.getByRole("searchbox", { name: "Search" }).fill("Cook");
+    await page.getByRole("searchbox", { name: "Search", exact: true }).fill("Cook");
     await page.getByRole("button", { name: "Add Cook to comparison" }).click();
-    await page.getByRole("searchbox", { name: "Search" }).fill("Electrician");
+    await page.getByRole("searchbox", { name: "Search", exact: true }).fill("Electrician");
     await page.getByRole("button", { name: "Add Electrician to comparison" }).click();
     await page.getByRole("link", { name: "Compare 2 selected" }).click();
     await expect(page).toHaveURL(/\/en\/compare\?.*c=/);

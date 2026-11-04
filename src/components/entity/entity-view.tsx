@@ -2,6 +2,7 @@
 import { AlertTriangle, ArrowLeft, ExternalLink } from "lucide-react";
 import { useLocale, useTranslations } from "next-intl";
 import { ScoreBar } from "@/components/score-bar";
+import { ScoreBadge } from "@/components/score-badge";
 import { SourceBadge } from "@/components/source-badge";
 import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
@@ -11,6 +12,7 @@ import { displayName, entities, getEntity } from "@/lib/dataset";
 import { INPUT_IDS, type DatasetEntity } from "@/lib/dataset-types";
 import { DIMENSIONS, DIMENSION_IDS } from "@/lib/dimensions";
 import { formatNumber } from "@/lib/format";
+import { CareerLinks } from "./career-links";
 import { ScoreRadar } from "./radar";
 
 export function EntityView({ detail }: { detail: DatasetEntity }) {
@@ -20,6 +22,7 @@ export function EntityView({ detail }: { detail: DatasetEntity }) {
   const ti = useTranslations("inputs");
   const tk = useTranslations("kind");
   const tf = useTranslations("filters");
+  const th = useTranslations("home");
   const locale = useLocale();
   const { state, queryString, toggleCompare } = useAppState();
   const results = useScores(state);
@@ -32,6 +35,7 @@ export function EntityView({ detail }: { detail: DatasetEntity }) {
   const weighted = r.contributions;
   const name = displayName(e, locale);
   const inCompare = state.compare.includes(e.id);
+  const core = getEntity(id);
 
   return (
     <article className="space-y-6">
@@ -50,12 +54,27 @@ export function EntityView({ detail }: { detail: DatasetEntity }) {
         <p className="text-sm text-muted-foreground">
           {t("regions")}: {e.languageRegions.map((l) => tf(`lang.${l}`)).join(", ")}
         </p>
+        {core ? (
+          <dl className="grid grid-cols-2 gap-2 pt-2 sm:grid-cols-4">
+            {[
+              { k: th("facts.pay"), v: core.p !== null ? `CHF ${formatNumber(Math.round(core.p / 100) * 100, locale)}` : null },
+              { k: th("facts.years"), v: core.y !== null ? formatNumber(core.y, locale, 1) : null },
+              { k: th("facts.unemp"), v: core.m.stability?.[0] != null ? `${formatNumber(core.m.stability[0]!, locale, 1)} %` : null },
+              { k: td("aiResilience.name"), v: r.dimensionScores.aiResilience?.score != null ? `${r.dimensionScores.aiResilience.score.toFixed(0)} / 100` : null },
+            ].map((f) => (
+              <div key={f.k} className="rounded-lg border border-border bg-card px-3 py-2">
+                <dt className="text-xs text-muted-foreground">{f.k}</dt>
+                <dd className="text-lg font-semibold tabular-nums">{f.v ?? "—"}</dd>
+              </div>
+            ))}
+          </dl>
+        ) : null}
       </header>
 
       <div className="grid gap-4 md:grid-cols-[1fr_1.2fr]">
         <Card className="space-y-3 p-4">
           <h2 className="text-sm font-medium text-muted-foreground">{t("composite")}</h2>
-          <p className="text-5xl font-bold tabular-nums">{r.composite !== null ? r.composite.toFixed(0) : "—"}</p>
+          <ScoreBadge score={r.composite} size="lg" />
           {r.band ? (
             <>
               <ScoreBar value={r.composite ?? 0} lo={r.band.p10} hi={r.band.p90} />
@@ -95,6 +114,8 @@ export function EntityView({ detail }: { detail: DatasetEntity }) {
           />
         </Card>
       </div>
+
+      <CareerLinks id={e.id} results={results} qs={qs} />
 
       <section aria-labelledby="breakdown" className="space-y-2">
         <h2 id="breakdown" className="text-lg font-semibold">

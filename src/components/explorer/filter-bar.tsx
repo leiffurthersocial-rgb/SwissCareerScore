@@ -1,14 +1,13 @@
 "use client";
 import { useTranslations } from "next-intl";
 import type { Filters } from "@/lib/filters";
-import type { EntityKind, LanguageRegion, Route } from "@/lib/schema";
+import type { LanguageRegion, Route } from "@/lib/schema";
 import { Button } from "@/components/ui/button";
 
 const field = "w-full rounded-md border border-border bg-card px-2 py-1.5 text-sm";
 
 export function FilterBar({ filters, onChange }: { filters: Filters; onChange: (f: Filters) => void }) {
   const t = useTranslations("filters");
-  const tk = useTranslations("kind");
   const tr = useTranslations("route");
   const set = (patch: Partial<Filters>) => {
     const next = { ...filters, ...patch };
@@ -18,14 +17,13 @@ export function FilterBar({ filters, onChange }: { filters: Filters; onChange: (
     }
     onChange(next);
   };
-  const kind = filters.kinds?.length === 1 ? filters.kinds[0] : "";
   return (
     <section aria-labelledby="filters-title">
       <h2 id="filters-title" className="sr-only">
         {t("title")}
       </h2>
-      <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6">
-        <label className="col-span-2 text-xs font-medium sm:col-span-3 lg:col-span-2">
+      <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-5">
+        <label className="col-span-2 text-xs font-medium sm:col-span-3 lg:col-span-1">
           {t("search")}
           <input
             type="search"
@@ -34,14 +32,6 @@ export function FilterBar({ filters, onChange }: { filters: Filters; onChange: (
             value={filters.query ?? ""}
             onChange={(e) => set({ query: e.target.value || undefined })}
           />
-        </label>
-        <label className="text-xs font-medium">
-          {t("kind")}
-          <select className={field} value={kind} onChange={(e) => set({ kinds: e.target.value ? [e.target.value as EntityKind] : undefined })}>
-            <option value="">{t("all")}</option>
-            <option value="occupation">{tk("occupations")}</option>
-            <option value="education">{tk("educations")}</option>
-          </select>
         </label>
         <label className="text-xs font-medium">
           {t("route")}

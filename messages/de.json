@@ -207,7 +207,19 @@
     "linearSum": "Gewichteter Durchschnitt",
     "flawPenalty": "Abzug für Schwachstellen",
     "scaleAbsolute": "Dimensionswerte auf absoluten Wertskalen (siehe Methodik).",
-    "scaleRelative": "Dimensionswerte sind Perzentilränge innerhalb der Gruppe."
+    "scaleRelative": "Dimensionswerte sind Perzentilränge innerhalb der Gruppe.",
+    "leadsTitle": "Wohin das führt",
+    "leadsDesc": "Berufe, für die diese Ausbildung qualifiziert – nach deiner Gewichtung sortiert.",
+    "nextTitle": "Weiterbildungen",
+    "nextDesc": "Ausbildungen, die du danach machen kannst.",
+    "furtherTitle": "Mit Weiterbildung erreichbar",
+    "pathsTitle": "Wie du dorthin kommst",
+    "pathsDesc": "Ausbildungen, die in diesen Beruf führen.",
+    "noLinks": "Für diesen Eintrag sind keine Laufbahn-Verknüpfungen erfasst.",
+    "careerSource": "Verknüpfungen aus berufsberatung.ch-Profilen.",
+    "keyFacts": "Eckdaten",
+    "expert": "Expertenschätzung",
+    "stat": "Statistik"
   },
   "inputs": {
     "payEntry": "Einstiegslohn (Median)",
@@ -228,7 +240,12 @@
     "regionalUbiquity": "Räumliche Verbreitung (0–3)",
     "trainingRegions": "Sprachregionen mit Angebot",
     "apprenticeWage": "Lehrlingslohn, letztes Lehrjahr",
-    "payP90": "Lohn P90 (oberste 10 % verdienen mehr)"
+    "payP90": "Lohn P90 (oberste 10 % verdienen mehr)",
+    "payMidExpert": "Lohn mittlere Karriere — Experteneinschätzung",
+    "teleworkExpert": "Homeoffice — Experteneinschätzung",
+    "wlbExpert": "Work-Life-Balance — Experteneinschätzung",
+    "demandExpert": "Fachkräftemangel — Experteneinschätzung",
+    "aiExpert": "KI-Exposition — Experteneinschätzung"
   },
   "source": {
     "title": "Quelle",
@@ -301,5 +318,75 @@
   "common": {
     "close": "Schliessen",
     "loading": "Wird geladen…"
+  },
+  "home": {
+    "eyebrow": "Schweizer Berufe, bewertet mit amtlichen Daten",
+    "title": "Finde den Beruf oder die Ausbildung, die zu dir passt",
+    "subtitle": "Über 450 Berufe und 800 Lehren, Höhere Fachschulen und Studiengänge nach Lohn, Sicherheit, KI-Risiko, Work-Life-Balance und mehr — mit Quelle zu jeder Zahl.",
+    "searchLabel": "Berufe und Ausbildungen suchen",
+    "searchPlaceholder": "Suche z. B. Pflege, Informatiker, Arzt …",
+    "sources": "Daten: BFS, SECO, berufsberatung.ch + markierte Experten­schätzungen",
+    "jump": "Zur vollständigen Rangliste",
+    "presetsTitle": "Was ist dir am wichtigsten?",
+    "presetDesc": {
+      "balanced": "Alles gleich gewichtet",
+      "money": "Lohn und Aufstieg zuerst",
+      "security": "Tiefe Arbeitslosigkeit, hohe Nachfrage",
+      "futureProof": "Schwer durch KI ersetzbar",
+      "lowStress": "Work-Life-Balance und Flexibilität",
+      "fastStart": "Schnell und günstig zum Abschluss"
+    },
+    "topTitle": "Top-Treffer für deine Gewichtung",
+    "top": {
+      "occupations": "Berufe",
+      "apprenticeships": "Lehren",
+      "higherVet": "Höhere Berufsbildung (HF, BP, HFP)",
+      "degrees": "Hochschulabschlüsse"
+    },
+    "startTitle": "Wo stehst du gerade?",
+    "start": {
+      "afterSchool": {
+        "title": "Nach der obligatorischen Schule",
+        "desc": "Lehre, Gymnasium, FMS oder Direkteinstieg"
+      },
+      "afterApprenticeship": {
+        "title": "Nach der Lehre",
+        "desc": "BM, HF, Berufsprüfungen, FH-Bachelor"
+      },
+      "afterMatura": {
+        "title": "Nach der Matura",
+        "desc": "Universität, ETH, Medizin, FH"
+      },
+      "afterDegree": {
+        "title": "Nach dem Studium",
+        "desc": "FH-Master oder Doktorat"
+      }
+    },
+    "exploreTitle": "Vollständige Rangliste",
+    "typeFilter": "Nach Abschlusstyp filtern",
+    "types": {
+      "NONE": "Direkteinstieg ohne Abschluss",
+      "GYM": "Gymnasium (Matura)",
+      "FMS": "Fachmittelschule",
+      "EBA": "2-jährige Grundbildung (Berufsattest)",
+      "EFZ": "3–4-jährige Lehre (Fähigkeitszeugnis)",
+      "BM": "Berufsmaturität",
+      "BP": "Berufsprüfung (eidg. Fachausweis)",
+      "HFP": "Höhere Fachprüfung (eidg. Diplom)",
+      "HF": "Höhere Fachschule",
+      "FH-BSc": "Bachelor Fachhochschule",
+      "FH-MSc": "Master Fachhochschule",
+      "UH-BSc": "Bachelor Universität",
+      "UH-MSc": "Master Universität",
+      "ETH-MSc": "Master ETH/EPFL",
+      "UH-MMed": "Humanmedizin (Master)",
+      "DR": "Doktorat"
+    },
+    "leadsTo": "Führt zu",
+    "facts": {
+      "pay": "Medianlohn / Monat",
+      "years": "Jahre bis Abschluss",
+      "unemp": "Arbeitslosigkeit"
+    }
   }
 }

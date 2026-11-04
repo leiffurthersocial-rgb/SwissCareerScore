@@ -207,7 +207,19 @@
     "linearSum": "Weighted average",
     "flawPenalty": "Penalty for weak spots",
     "scaleAbsolute": "Dimension scores use absolute value scales (see methodology).",
-    "scaleRelative": "Dimension scores are percentile ranks within the group."
+    "scaleRelative": "Dimension scores are percentile ranks within the group.",
+    "leadsTitle": "Where this leads",
+    "leadsDesc": "Occupations this training qualifies you for, ranked by your current weights.",
+    "nextTitle": "Further training options",
+    "nextDesc": "Education paths you can take next.",
+    "furtherTitle": "Reachable with further training",
+    "pathsTitle": "How to get there",
+    "pathsDesc": "Education paths that lead into this occupation.",
+    "noLinks": "No career links recorded for this entry.",
+    "careerSource": "Links from berufsberatung.ch profiles.",
+    "keyFacts": "Key facts",
+    "expert": "expert estimate",
+    "stat": "statistic"
   },
   "inputs": {
     "payEntry": "Entry wage (median)",
@@ -228,7 +240,12 @@
     "regionalUbiquity": "Spatial ubiquity (0–3)",
     "trainingRegions": "Language regions offering it",
     "apprenticeWage": "Apprentice wage, final year",
-    "payP90": "Wage P90 (top 10 % earn more)"
+    "payP90": "Wage P90 (top 10 % earn more)",
+    "payMidExpert": "Mid-career wage — expert estimate",
+    "teleworkExpert": "Home office — expert estimate",
+    "wlbExpert": "Work-life balance — expert estimate",
+    "demandExpert": "Shortage — expert estimate",
+    "aiExpert": "AI exposure — expert estimate"
   },
   "source": {
     "title": "Source",
@@ -301,5 +318,75 @@
   "common": {
     "close": "Close",
     "loading": "Loading…"
+  },
+  "home": {
+    "eyebrow": "Swiss careers, scored with official data",
+    "title": "Find the job or training that fits what matters to you",
+    "subtitle": "Rank 450+ Swiss occupations and 800+ apprenticeships, colleges and degrees by pay, security, AI risk, work-life balance and more — with sources for every number.",
+    "searchLabel": "Search occupations and education paths",
+    "searchPlaceholder": "Search e.g. nurse, Informatiker, physician …",
+    "sources": "Data: BFS, SECO, berufsberatung.ch + flagged expert estimates",
+    "jump": "Explore the full ranking",
+    "presetsTitle": "What matters most to you?",
+    "presetDesc": {
+      "balanced": "Equal weight on everything",
+      "money": "Pay and growth above all",
+      "security": "Low unemployment, high demand",
+      "futureProof": "Hard to automate with AI",
+      "lowStress": "Work-life balance and flexibility",
+      "fastStart": "Quick and cheap to qualify"
+    },
+    "topTitle": "Top picks for your weights",
+    "top": {
+      "occupations": "Occupations",
+      "apprenticeships": "Apprenticeships",
+      "higherVet": "Higher VET (HF, BP, HFP)",
+      "degrees": "University degrees"
+    },
+    "startTitle": "Where are you starting from?",
+    "start": {
+      "afterSchool": {
+        "title": "After compulsory school",
+        "desc": "Apprenticeships, Gymnasium, FMS or direct entry"
+      },
+      "afterApprenticeship": {
+        "title": "After an apprenticeship",
+        "desc": "BM, HF, professional exams, FH bachelor"
+      },
+      "afterMatura": {
+        "title": "After the Matura",
+        "desc": "University, ETH, medicine, FH"
+      },
+      "afterDegree": {
+        "title": "After a degree",
+        "desc": "FH master or doctorate"
+      }
+    },
+    "exploreTitle": "Full ranking",
+    "typeFilter": "Filter by qualification type",
+    "types": {
+      "NONE": "Direct entry, no formal qualification",
+      "GYM": "Gymnasium (academic Matura)",
+      "FMS": "Specialised middle school",
+      "EBA": "2-year apprenticeship (federal certificate)",
+      "EFZ": "3–4-year apprenticeship (federal diploma)",
+      "BM": "Vocational baccalaureate",
+      "BP": "Federal professional exam",
+      "HFP": "Advanced federal professional exam",
+      "HF": "College of higher education",
+      "FH-BSc": "Bachelor, university of applied sciences",
+      "FH-MSc": "Master, university of applied sciences",
+      "UH-BSc": "Bachelor, university",
+      "UH-MSc": "Master, university",
+      "ETH-MSc": "Master, ETH/EPFL",
+      "UH-MMed": "Medicine (master)",
+      "DR": "Doctorate"
+    },
+    "leadsTo": "Leads to",
+    "facts": {
+      "pay": "Median pay / month",
+      "years": "Years to qualify",
+      "unemp": "Unemployment"
+    }
   }
 }

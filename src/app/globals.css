@@ -29,6 +29,11 @@
   --chart-3: #0f766e;
   --chart-4: #7c3aed;
   --band: #9fb3e6;
+  --good-bg: #d7f2df; --good-fg: #0f5a2c;
+  --ok-bg: #e3edfb; --ok-fg: #1a3f8a;
+  --mid-bg: #fff1d6; --mid-fg: #7a4a00;
+  --low-bg: #fde2df; --low-fg: #8f1d14;
+  --hero-from: #eef3ff; --hero-to: #ffffff;
 }
 
 .dark {
@@ -52,6 +57,11 @@
   --chart-3: #2dd4bf;
   --chart-4: #c4a5ff;
   --band: #3c5591;
+  --good-bg: #133a22; --good-fg: #8be3a8;
+  --ok-bg: #1a2a4d; --ok-fg: #b5c9ff;
+  --mid-bg: #3a2c10; --mid-fg: #ffd18a;
+  --low-bg: #42181a; --low-fg: #ffaaa3;
+  --hero-from: #141b2e; --hero-to: #0f1115;
 }
 
 @theme inline {
