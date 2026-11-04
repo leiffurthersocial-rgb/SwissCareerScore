@@ -51,7 +51,10 @@ for (const f of files) {
 const byId = new Map(entities.map((e) => [e.id, e]));
 for (const e of entities) {
   for (const ref of [...e.leadsTo, ...e.trainedVia]) if (!byId.has(ref)) fail(`${e.id}: unknown reference ${ref}`);
-  if (e.kind === "occupation" && e.trainedVia.length === 0) fail(`${e.id}: occupation needs trainedVia`);
+}
+if (errors.length) {
+  console.error(`\n✖ build-data: ${errors.length} problem(s)\n  - ${errors.join("\n  - ")}`);
+  process.exit(1);
 }
 
 // ------------------------------------------------------------------ helpers
@@ -110,6 +113,7 @@ function lseInputs(isco08: string): Inputs {
     paySenior: mk(v("> =50 Jahre"), "median, age ≥50"),
     payP25: mk(v("Lebensalter - Total", "P25"), "P25, all ages"),
     payP75: mk(v("Lebensalter - Total", "P75"), "P75, all ages"),
+    payP90: mk(v("Lebensalter - Total", "P90"), "P90 (top 10 % earn more), all ages"),
   };
 }
 
@@ -143,9 +147,9 @@ function unemploymentInput(isco08: string, chIsco19?: string): DatasetDatapoint 
 
 function recruitmentInput(besta: string | undefined, level: string | undefined): DatasetDatapoint | undefined {
   if (!level) return undefined;
-  const levelKey = { apprenticeship: "apprenticeship", higherVet: "higherVet", higherEducation: "higherEducation" }[level]!;
-  const asset = { apprenticeship: ASSETS.recruitApprentice, higherVet: ASSETS.recruitHigherVet, higherEducation: ASSETS.recruitHigherEd }[level]!;
-  const levelLabel = { apprenticeship: "Berufslehre", higherVet: "höhere Berufsbildung", higherEducation: "Hochschulabschluss" }[level];
+  const levelKey = { compulsory: "compulsory", apprenticeship: "apprenticeship", higherVet: "higherVet", higherEducation: "higherEducation" }[level]!;
+  const asset = { compulsory: ASSETS.recruitCompulsory, apprenticeship: ASSETS.recruitApprentice, higherVet: ASSETS.recruitHigherVet, higherEducation: ASSETS.recruitHigherEd }[level]!;
+  const levelLabel = { compulsory: "obligatorischer Schulbildung", apprenticeship: "Berufslehre", higherVet: "höhere Berufsbildung", higherEducation: "Hochschulabschluss" }[level];
   if (!besta) return dp(null, "% firms", "bfs-besta-recruitment", BFS_ASSET_PAGE(asset), 2026, "measured", "sector", undefined, "Sector not covered by BESTA (e.g. agriculture).");
   const row = dam.recruitment[levelKey][besta];
   if (!row) {
@@ -191,7 +195,9 @@ function aiInput(isco08: string): DatasetDatapoint {
 function educationOwnInputs(e: EntityFile): Inputs {
   const out: Inputs = {};
   // time to qualify — sum of pathway stages, each verified against the cited page
-  if (!e.pathway.length) {
+  if (e.refs.directEntry) {
+    out.yearsToQualify = dp(0, "years", "berufsberatung", "https://www.berufsberatung.ch/de/bildungssystem/d/brueckenangebote-zwischenloesungen", 2026, "measured", "exact", "Direct entry into work after compulsory school", "No post-compulsory qualification: 0 years by definition.");
+  } else if (!e.pathway.length) {
     out.yearsToQualify = dp(null, "years", "berufsberatung", "https://www.berufsberatung.ch/", 2026, "measured", "exact", undefined, "No official duration published on berufsberatung.ch — missing, not estimated.");
   }
   let years = 0;
@@ -200,7 +206,10 @@ function educationOwnInputs(e: EntityFile): Inputs {
     years += s.years;
     confs.push(s.confidence);
     const page = bb.pages[s.sourceUrl];
-    if (s.sourceUrl.includes("berufsberatung.ch")) {
+    if (s.sourceUrl.endsWith(`/${ASSETS.studyDuration}`)) {
+      const ok = Object.values(dam.studyDuration.byField as Record<string, { doctorate: number | null }>).some((v) => v.doctorate !== null && Math.abs(v.doctorate - s.years) < 0.01);
+      if (!ok) fail(`${e.id}: doctorate duration ${s.years} not in BFS study-duration table`);
+    } else if (s.sourceUrl.includes("berufsberatung.ch")) {
       if (!page) fail(`${e.id}: page not ingested ${s.sourceUrl} (run npm run data:ingest)`);
       else if (!page.yearsMentioned.includes(s.years))
         fail(`${e.id}: stage "${s.label}" = ${s.years} y not stated on ${s.sourceUrl} (page says: ${page.durationSnippets.join(" / ")})`);
@@ -239,8 +248,26 @@ function educationOwnInputs(e: EntityFile): Inputs {
       const label = `EHA, ${t.toUpperCase()} ${level} ${field}, graduates ${dam.gradIncome[t].year}, 1 year after degree`;
       const mk = (v: number | null, what: string) => dp(v === null ? null : v / 12, "CHF/month", "bfs-eha-grad-income", BFS_ASSET_PAGE(ASSETS.gradIncome), dam.gradIncome[t].year + 1, "measured", "field", `${label} — ${what} (annual ÷ 12)`, "Standardised gross annual income for a full-time position, divided by 12 to compare with LSE monthly wages.");
       out.payEntry = mk(r.median, "median");
+      const r5 = dam.gradIncome5[t]?.byLevel?.[level]?.[field];
+      if (r5?.median) {
+        const y5 = dam.gradIncome5[t].graduationYear;
+        out.payMid = dp(r5.median / 12, "CHF/month", "bfs-eha-grad-income-5y", BFS_ASSET_PAGE(ASSETS.gradIncome5), y5 + 5, "measured", "field", `EHA, ${t.toUpperCase()} ${level} ${field}, graduates ${y5}, 5 years after degree — median (annual ÷ 12)`, "Used as mid-career pay for this path (typically age ~30); replaces the occupation-group wage.");
+      }
     }
   }
+  if (e.refs.gradField) {
+    const [t, field] = e.refs.gradField.split(":");
+    const key = t === "uh" ? "UH Master" : "FH Bachelor";
+    const r = dam.gradUnemployment[key]?.[field];
+    if (!r) fail(`${e.id}: gradField "${e.refs.gradField}" not in BFS table`);
+    else
+      out.unemploymentRate = dp(r.rate, "%", "bfs-eha-grad-unemployment", BFS_ASSET_PAGE(ASSETS.gradUnemployment), Math.max(...r.years), "measured", "field", `ILO unemployment of ${key} graduates in ${field}, one year after degree (mean of graduation years ${r.years.join(", ")})`, "Measures this education path directly; ILO definition (incl. people not registered with the RAV), so values run higher than SECO registered rates.");
+  } else if (e.refs.eduLevel) {
+    const v = seco.majorGroups.byEducation?.[e.refs.eduLevel];
+    out.unemploymentRate = dp(v ?? null, "%", "seco-lage-2026", SECO_STATS_URL, 2026, "measured", "education-level", `SECO registered unemployment, highest education: ${e.refs.eduLevel} (average of monthly reports 2026)`);
+  }
+  if (e.raw.mobility) out.mobility = { ...e.raw.mobility } as DatasetDatapoint;
+  if (e.raw.regionalUbiquity) out.regionalUbiquity = { ...e.raw.regionalUbiquity } as DatasetDatapoint;
   // own rubric
   if (e.raw.entryAccess) out.entryAccess = { ...e.raw.entryAccess } as DatasetDatapoint;
   out.trainingRegions = dp(e.languageRegions.length, "language regions", "berufsberatung", "https://www.berufsberatung.ch/", 2026, "expert-judgment", "exact", `Offered in: ${e.languageRegions.join(", ")}`);
@@ -268,7 +295,7 @@ function occupationOwnInputs(e: EntityFile): Inputs {
 const own = new Map<string, Inputs>();
 for (const e of entities) own.set(e.id, e.kind === "occupation" ? occupationOwnInputs(e) : educationOwnInputs(e));
 
-const OUTCOME_INPUTS: InputId[] = ["payEntry", "payMid", "paySenior", "payP25", "payP75", "unemploymentRate", "aiExposure", "nightWork", "mobility", "regionalUbiquity"];
+const OUTCOME_INPUTS: InputId[] = ["payEntry", "payMid", "paySenior", "payP25", "payP75", "payP90", "unemploymentRate", "aiExposure", "nightWork", "mobility", "regionalUbiquity"];
 const TRAINING_INPUTS: InputId[] = ["yearsToQualify", "nonCompletion", "entryAccess"];
 
 function inherit(dpIn: DatasetDatapoint, from: string): DatasetDatapoint {
@@ -303,8 +330,13 @@ for (const e of entities) {
     }
   } else {
     const via = e.trainedVia[0];
-    const t = own.get(via)!;
-    for (const k of TRAINING_INPUTS) if (!mine[k] && t[k]) mine[k] = inherit(t[k]!, via);
+    if (via) {
+      const t = own.get(via)!;
+      for (const k of TRAINING_INPUTS) if (!mine[k] && t[k]) mine[k] = inherit(t[k]!, via);
+    } else {
+      for (const k of TRAINING_INPUTS)
+        mine[k] = dp(null, k === "yearsToQualify" ? "years" : k === "entryAccess" ? "rubric 0–3" : "%", "expert-rubric", METHODOLOGY_URL, 2026, "expert-judgment", "exact", undefined, "No single standard training path for this occupation (usually reached through experience or various qualifications) — missing.");
+    }
   }
   allInputs.set(e.id, mine);
 }
@@ -336,7 +368,14 @@ function metricsFor(e: EntityFile, idx: number): Partial<Record<DimensionId, Dat
 
   const entry = v("payEntry");
   const mid = v("payMid");
-  m.pay = from(["payEntry", "payMid"], entry !== null && mid !== null ? 0.35 * entry + 0.65 * mid : null, `0.35 × entry ${fmt(entry, 0)} + 0.65 × mid-career ${fmt(mid, 0)} CHF/month`);
+  const p90 = v("payP90");
+  // 30 % entry, 50 % mid-career, 20 % earning potential (P90). Missing components are dropped and
+  // the rest renormalized (no imputation); mid-career pay is required.
+  const parts = ([[0.3, entry, "entry", "payEntry"], [0.5, mid, "mid-career", "payMid"], [0.2, p90, "P90", "payP90"]] as const).filter((x) => x[1] !== null);
+  const wsum = parts.reduce((a, x) => a + x[0], 0);
+  const payRaw = mid !== null && wsum > 0 ? parts.reduce((a, x) => a + (x[0] / wsum) * (x[1] as number), 0) : null;
+  m.pay = from(parts.map((x) => x[3] as InputId), payRaw,
+    parts.map((x) => `${(x[0] / wsum).toFixed(2)} × ${x[2]} ${fmt(x[1], 0)}`).join(" + ") + " CHF/month" + (parts.length < 3 ? " (missing components dropped, weights renormalized)" : ""));
   m.stability = from(["unemploymentRate"], v("unemploymentRate"), `registered unemployment rate ${fmt(v("unemploymentRate"))} %`);
   if (I.recruitmentDifficulty) m.demand = from(["recruitmentDifficulty"], v("recruitmentDifficulty"), `${fmt(v("recruitmentDifficulty"))} % of firms found recruiting hard or impossible`);
   m.aiResilience = from(["aiExposure"], v("aiExposure"), `task-based exposure index ${fmt(v("aiExposure"))} (lower = more resilient)`);

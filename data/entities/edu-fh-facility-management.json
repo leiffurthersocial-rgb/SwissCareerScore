@@ -18,7 +18,8 @@
     "studyField": "FH:Wirtschaft und Dienstleistungen",
     "gradIncome": "fh:Bachelor:Wirtschaft und Dienstleistungen",
     "besta": "5-96",
-    "nogaSection": "*"
+    "nogaSection": "*",
+    "gradField": "fh:Wirtschaft und Verwaltung"
   },
   "pathway": [
     {

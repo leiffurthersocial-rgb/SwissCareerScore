@@ -3,6 +3,7 @@ import type { Filters } from "./filters";
 import { PRESETS, PRESET_IDS, type PresetId } from "./presets";
 import { EDU_TYPES, ENTITY_KINDS, LANGUAGE_REGIONS, type EduType, type EntityKind, type LanguageRegion, type Route } from "./schema";
 import { toPercentages } from "./scoring/weights";
+import { DEFAULT_FLAW_PENALTY, DEFAULT_SCORING_MODE, FLAW_PENALTIES, type FlawPenaltyId, type ScoringMode } from "./scoring/curves";
 
 /**
  * Shareable app state ↔ URL search params. No accounts: the URL *is* the saved setting.
@@ -19,6 +20,10 @@ export interface AppState {
   locked: Set<DimensionId>;
   filters: Filters;
   compare: string[];
+  /** Absolute value curves (default) or percentile ranks. */
+  mode: ScoringMode;
+  /** How strongly weak dimensions pull the composite down. */
+  flaw: FlawPenaltyId;
 }
 
 export const MAX_COMPARE = 4;
@@ -30,6 +35,8 @@ export function defaultState(): AppState {
     locked: new Set(),
     filters: {},
     compare: [],
+    mode: DEFAULT_SCORING_MODE,
+    flaw: DEFAULT_FLAW_PENALTY,
   };
 }
 
@@ -62,6 +69,8 @@ export function encodeState(s: AppState): URLSearchParams {
   if (f.minPay !== undefined) p.set("min", String(f.minPay));
   if (f.query) p.set("q", f.query);
   if (s.compare.length) p.set("c", s.compare.slice(0, MAX_COMPARE).join("~"));
+  if (s.mode !== DEFAULT_SCORING_MODE) p.set("sm", s.mode === "relative" ? "rel" : "abs");
+  if (s.flaw !== DEFAULT_FLAW_PENALTY) p.set("fp", s.flaw);
   return p;
 }
 
@@ -119,6 +128,11 @@ export function decodeState(params: URLSearchParams | Record<string, string | st
     query: get("q") ?? undefined,
   };
   for (const k of Object.keys(s.filters) as (keyof Filters)[]) if (s.filters[k] === undefined) delete s.filters[k];
+  const sm = get("sm");
+  if (sm === "rel") s.mode = "relative";
+  if (sm === "abs") s.mode = "absolute";
+  const fp = get("fp");
+  if (fp && FLAW_PENALTIES.some((f) => f.id === fp)) s.flaw = fp as FlawPenaltyId;
   const c = get("c");
   if (c) s.compare = [...new Set(c.split("~").filter((x) => /^(occ|edu)-[a-z0-9-]+$/.test(x)))].slice(0, MAX_COMPARE);
   return s;

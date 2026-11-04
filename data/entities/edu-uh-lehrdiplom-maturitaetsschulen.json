@@ -17,7 +17,8 @@
     "qualLevel": "higherEducation",
     "besta": "85",
     "nogaSection": "P",
-    "gradIncome": "fh:Lehrdiplome:Lehrkräfteausbildung"
+    "gradIncome": "fh:Lehrdiplome:Lehrkräfteausbildung",
+    "gradField": "uh:Pädagogik"
   },
   "pathway": [
     {

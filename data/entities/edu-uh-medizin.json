@@ -18,7 +18,8 @@
     "gradIncome": "uh:Master:Medizin und Pharmazie",
     "qualLevel": "higherEducation",
     "besta": "86-88",
-    "nogaSection": "Q"
+    "nogaSection": "Q",
+    "gradField": "uh:Gesundheit"
   },
   "pathway": [
     {

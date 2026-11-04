@@ -9,6 +9,7 @@ npm run data:ingest                      # needs data/ingested/seco-avam.json + 
 python3 scripts/authoring/fetch_bb.py    # list + cache berufsberatung.ch profiles from the sitemap
 python3 scripts/authoring/parse_bb.py    # extract titles and duration statements
 python3 scripts/authoring/expand.py      # write entity files (logs unmatched titles to .work/log.json)
+python3 scripts/authoring/expand2.py     # baselines, FH masters, doctorates, all remaining occupation types, graduate fields
 npm run data:ingest && npm run data:build
 ```
 

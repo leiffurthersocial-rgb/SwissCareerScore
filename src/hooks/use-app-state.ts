@@ -61,17 +61,22 @@ export function useAppState() {
   }, []);
   const clearCompare = useCallback(() => setState((s) => ({ ...s, compare: [] })), []);
 
+  const setScoring = useCallback(
+    (patch: Partial<Pick<AppState, "mode" | "flaw">>) => setState((s) => ({ ...s, ...patch })),
+    [],
+  );
+
   const queryString = useMemo(() => encodeState(state).toString(), [state]);
 
-  return { state, activeDims, applyPreset, setWeight, setWeights, toggleLock, setFilters, toggleCompare, clearCompare, queryString };
+  return { state, activeDims, applyPreset, setWeight, setWeights, toggleLock, setFilters, toggleCompare, clearCompare, setScoring, queryString };
 }
 
 /** Score all entities for the current weights. Memoised; full pipeline incl. MC + sensitivity. */
-export function useScores(weights: Record<DimensionId, number>): Map<string, EntityResult> {
+export function useScores(state: Pick<AppState, "weights" | "mode" | "flaw">): Map<string, EntityResult> {
   // Deferred: slider drags stay responsive while the full pipeline (MC + sensitivity) recomputes.
-  const deferred = useDeferredValue(weights);
+  const deferred = useDeferredValue(state);
   return useMemo(() => {
-    const res = scoreEntities(scorable, deferred, { draws: 200 });
+    const res = scoreEntities(scorable, deferred.weights, { draws: 120, mode: deferred.mode, flawPenalty: deferred.flaw });
     return new Map(res.map((r) => [r.id, r]));
   }, [deferred]);
 }

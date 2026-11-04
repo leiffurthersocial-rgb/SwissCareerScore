@@ -1,0 +1,58 @@
+{
+  "id": "occ-lehrkraefte-im-kindergarten",
+  "kind": "occupation",
+  "route": "academic",
+  "name": {
+    "en": "Lehrkräfte im Kindergarten",
+    "de": "Lehrkräfte im Kindergarten",
+    "fr": "Enseignants, école enfantine",
+    "it": "Professori di scuola pre-primaria"
+  },
+  "codes": {
+    "isco08": "2342",
+    "chIsco19": "23420"
+  },
+  "sector": "CH-ISCO-19 23: Lehrkräfte",
+  "refs": {
+    "qualLevel": "higherEducation",
+    "nogaSection": "P",
+    "besta": "85"
+  },
+  "pathway": [],
+  "leadsTo": [],
+  "trainedVia": [
+    "edu-ph-primar"
+  ],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "mobility": {
+      "value": 3,
+      "unit": "rubric 0–9",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#11-international-mobility",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed): recognition 2/3, language independence 0/3, transferability 1/3."
+    },
+    "regionalUbiquity": {
+      "value": 3,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#12-regional-availability",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed)."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion-2",
+    "reviewed": "2026-11-04",
+    "notes": "Official CH-ISCO-19 occupation type 23420. Sector for demand/telework/hours assigned from the occupation group (estimate)."
+  }
+}

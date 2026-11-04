@@ -18,7 +18,8 @@
     "gradIncome": "uh:Master:Wirtschaftswissenschaften",
     "qualLevel": "higherEducation",
     "besta": "68-75",
-    "nogaSection": "M"
+    "nogaSection": "M",
+    "gradField": "uh:Wirtschaft und Verwaltung"
   },
   "pathway": [
     {

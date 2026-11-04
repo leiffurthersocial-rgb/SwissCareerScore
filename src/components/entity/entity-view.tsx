@@ -22,7 +22,7 @@ export function EntityView({ detail }: { detail: DatasetEntity }) {
   const tf = useTranslations("filters");
   const locale = useLocale();
   const { state, queryString, toggleCompare } = useAppState();
-  const results = useScores(state.weights);
+  const results = useScores(state);
   const e = detail;
   const id = e.id;
   const r = results.get(id)!;
@@ -101,6 +101,7 @@ export function EntityView({ detail }: { detail: DatasetEntity }) {
           {t("breakdown")}
         </h2>
         <p className="text-sm text-muted-foreground">{t("breakdownHelp")}</p>
+        <p className="text-xs text-muted-foreground">{t(state.mode === "absolute" ? "scaleAbsolute" : "scaleRelative")}</p>
         <div className="overflow-x-auto rounded-lg border border-border">
           <table className="w-full min-w-[42rem] text-sm">
             <thead className="bg-muted text-left text-xs">
@@ -147,6 +148,22 @@ export function EntityView({ detail }: { detail: DatasetEntity }) {
               })}
             </tbody>
             <tfoot>
+              {r.penalty > 0.05 ? (
+                <>
+                  <tr className="border-t border-border">
+                    <th scope="row" className="p-2 text-left font-normal" colSpan={5}>
+                      {t("linearSum")}
+                    </th>
+                    <td className="p-2 text-right tabular-nums">{r.linearComposite?.toFixed(1)}</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" className="p-2 text-left font-normal text-warning" colSpan={5}>
+                      {t("flawPenalty")}
+                    </th>
+                    <td className="p-2 text-right tabular-nums text-warning">−{r.penalty.toFixed(1)}</td>
+                  </tr>
+                </>
+              ) : null}
               <tr className="border-t border-border font-semibold">
                 <th scope="row" className="p-2 text-left" colSpan={5}>
                   {t("composite")}

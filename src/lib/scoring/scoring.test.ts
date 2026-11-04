@@ -2,7 +2,8 @@ import { describe, expect, it } from "vitest";
 import type { DimensionId } from "../dimensions";
 import { percentileRanks, percentileRanksByPool } from "./normalize";
 import { normalizeWeights, setWeight, toPercentages } from "./weights";
-import { compositeFor, scoreEntities, sigmaFor } from "./score";
+import { compositeFor, powerMean, scoreEntities, sigmaFor } from "./score";
+import { ABSOLUTE_CURVES, applyCurve } from "./curves";
 import type { ScorableEntity } from "./types";
 
 const m = (raw: number | null, confidence: "measured" | "estimated" | "expert-judgment" = "measured") => ({
@@ -98,7 +99,7 @@ describe("null handling in composite", () => {
       { id: "occ-b", pool: "o", metrics: { pay: m(2), stability: m(null), demand: m(null) } },
       { id: "occ-c", pool: "o", metrics: { pay: m(3), stability: m(2), demand: m(2) } },
     ];
-    const res = scoreEntities(ents, { pay: 1, stability: 1, demand: 1 }, { draws: 0 });
+    const res = scoreEntities(ents, { pay: 1, stability: 1, demand: 1 }, { draws: 0, mode: "relative", flawPenalty: "none" });
     const b = res.find((r) => r.id === "occ-b")!;
     expect(b.insufficientData).toBe(true);
     expect(b.rank).toBeNull();
@@ -119,25 +120,25 @@ describe("scoreEntities", () => {
   }));
 
   it("ranks consistently with weights", () => {
-    const res = scoreEntities(ents, { pay: 1, stability: 1 }, { draws: 0 });
+    const res = scoreEntities(ents, { pay: 1, stability: 1 }, { draws: 0, mode: "relative", flawPenalty: "none" });
     const top = res.find((r) => r.rank === 1)!;
     expect(top.id).toBe("occ-11");
     expect(top.composite).toBeCloseTo(100);
   });
 
   it("is deterministic for a fixed seed", () => {
-    const a = scoreEntities(ents, { pay: 1, demand: 1 }, { draws: 200, seed: 7 });
-    const b = scoreEntities(ents, { pay: 1, demand: 1 }, { draws: 200, seed: 7 });
+    const a = scoreEntities(ents, { pay: 1, demand: 1 }, { draws: 200, seed: 7, mode: "relative" });
+    const b = scoreEntities(ents, { pay: 1, demand: 1 }, { draws: 200, seed: 7, mode: "relative" });
     expect(a.map((r) => r.band)).toEqual(b.map((r) => r.band));
   });
 
   it("uncertainty bands contain the point estimate and widen with lower confidence", () => {
-    const res = scoreEntities(ents, { pay: 1, demand: 1 }, { draws: 300 });
+    const res = scoreEntities(ents, { pay: 1, demand: 1 }, { draws: 300, mode: "relative" });
     for (const r of res) {
       expect(r.band!.p10).toBeLessThanOrEqual(r.composite!);
       expect(r.band!.p90).toBeGreaterThanOrEqual(r.composite!);
     }
-    const measuredOnly = scoreEntities(ents, { pay: 1 }, { draws: 300 });
+    const measuredOnly = scoreEntities(ents, { pay: 1 }, { draws: 300, mode: "relative" });
     const width = (rs: typeof res) =>
       rs.reduce((s, r) => s + (r.band!.p90 - r.band!.p10), 0) / rs.length;
     expect(width(res)).toBeGreaterThan(width(measuredOnly));
@@ -157,7 +158,7 @@ describe("ranking stability / sensitivity", () => {
       pool: "o",
       metrics: { pay: m(i), stability: m(10 - i) }, // both agree: higher i better
     }));
-    const res = scoreEntities(ents, { pay: 1, stability: 1 }, { draws: 0 });
+    const res = scoreEntities(ents, { pay: 1, stability: 1 }, { draws: 0, mode: "relative", flawPenalty: "none" });
     for (const r of res) expect(r.sensitivity!.maxShift).toBe(0);
     expect(res.every((r) => !r.sensitivity!.fragile)).toBe(true);
   });
@@ -169,7 +170,7 @@ describe("ranking stability / sensitivity", () => {
       pool: "o",
       metrics: { pay: m(i), stability: m(i) }, // pay: higher better; stability raw = unemployment, higher worse
     }));
-    const res = scoreEntities(ents, { pay: 1, stability: 1 }, { draws: 0, fragileShift: 3 });
+    const res = scoreEntities(ents, { pay: 1, stability: 1 }, { draws: 0, fragileShift: 3, mode: "relative", flawPenalty: "none" });
     expect(res.some((r) => r.sensitivity!.fragile)).toBe(true);
     const extremes = res.filter((r) => r.id === "occ-0" || r.id === "occ-9");
     expect(extremes.every((r) => r.sensitivity!.maxShift >= 3)).toBe(true);
@@ -181,7 +182,7 @@ describe("ranking stability / sensitivity", () => {
       pool: "o",
       metrics: { pay: m(i), demand: m(4 - i) },
     }));
-    const res = scoreEntities(ents, { pay: 3, demand: 1 }, { draws: 0 });
+    const res = scoreEntities(ents, { pay: 3, demand: 1 }, { draws: 0, mode: "relative", flawPenalty: "none" });
     for (const r of res) {
       expect(Object.keys(r.sensitivity!.byDimension).sort()).toEqual(["demand", "pay"]);
     }
@@ -196,12 +197,78 @@ describe("ranking pools", () => {
       { id: "edu-a", pool: "education", metrics: { pay: m(100) } },
       { id: "edu-b", pool: "education", metrics: { pay: m(200) } },
     ];
-    const res = scoreEntities(ents, { pay: 1 }, { draws: 50 });
+    const res = scoreEntities(ents, { pay: 1 }, { draws: 50, mode: "relative" });
     const rank = (id: string) => res.find((r) => r.id === id)!.rank;
     expect(rank("occ-b")).toBe(1);
     expect(rank("edu-b")).toBe(1);
     expect(rank("occ-a")).toBe(2);
     expect(rank("edu-a")).toBe(2);
     for (const r of res) expect(r.rankBand!.worst).toBeLessThanOrEqual(2);
+  });
+});
+
+describe("absolute value curves", () => {
+  it("log pay curve: CHF 300k/yr scores 100, low wages 0, doublings add equal points", () => {
+    const c = ABSOLUTE_CURVES.pay;
+    expect(applyCurve(25000, c)).toBeCloseTo(100);
+    expect(applyCurve(3000, c)).toBe(0);
+    const a = applyCurve(4000, c)!;
+    const b = applyCurve(8000, c)!;
+    const d = applyCurve(16000, c)!;
+    expect(b - a).toBeCloseTo(d - b, 6);
+    expect(applyCurve(25000, c)! - applyCurve(8333, c)!).toBeGreaterThan(35); // 300k vs 100k a year
+  });
+  it("lower-is-better curves are flipped and clamped", () => {
+    expect(applyCurve(1, ABSOLUTE_CURVES.stability)).toBeCloseTo(100);
+    expect(applyCurve(8, ABSOLUTE_CURVES.stability)).toBeCloseTo(0);
+    expect(applyCurve(20, ABSOLUTE_CURVES.stability)).toBe(0);
+    expect(applyCurve(null, ABSOLUTE_CURVES.stability)).toBeNull();
+  });
+  it("absolute scores keep magnitude: a huge pay gap is not flattened to a rank step", () => {
+    const ents: ScorableEntity[] = [
+      { id: "occ-a", pool: "o", metrics: { pay: m(6000) } },
+      { id: "occ-b", pool: "o", metrics: { pay: m(6500) } },
+      { id: "occ-c", pool: "o", metrics: { pay: m(25000) } },
+    ];
+    const abs = scoreEntities(ents, { pay: 1 }, { draws: 0, mode: "absolute" });
+    const rel = scoreEntities(ents, { pay: 1 }, { draws: 0, mode: "relative" });
+    const gap = (rs: typeof abs) => rs[2].composite! - rs[1].composite!;
+    expect(gap(abs)).toBeGreaterThan(gap(rel) - 1); // relative: 50 vs 100; absolute keeps the real distance
+    expect(abs[1].composite! - abs[0].composite!).toBeLessThan(5); // 6,000 vs 6,500 is a small difference
+    expect(rel[1].composite! - rel[0].composite!).toBeCloseTo(50); // relative exaggerates it
+  });
+});
+
+describe("flaw penalty (power mean)", () => {
+  it("p = 1 equals the weighted average; lower p never exceeds it", () => {
+    const v = [90, 90, 10];
+    const w = [1, 1, 1];
+    expect(powerMean(v, w, 1)).toBeCloseTo(190 / 3);
+    expect(powerMean(v, w, 0.5)).toBeLessThan(powerMean(v, w, 1));
+    expect(powerMean(v, w, 0)).toBeLessThan(powerMean(v, w, 0.5));
+    expect(powerMean(v, w, -1)).toBeLessThan(powerMean(v, w, 0));
+  });
+  it("balanced profiles are not penalized", () => {
+    expect(powerMean([60, 60, 60], [1, 2, 3], 0)).toBeCloseTo(60);
+    expect(powerMean([60, 60, 60], [1, 2, 3], -1)).toBeCloseTo(60);
+  });
+  it("one serious flaw costs more than the same average spread evenly", () => {
+    const ents: ScorableEntity[] = [
+      { id: "occ-even", pool: "o", metrics: { pay: m(1), stability: m(1) } },
+      { id: "occ-flaw", pool: "o", metrics: { pay: m(1), stability: m(1) } },
+    ];
+    // craft scores directly via relative mode on 3 entries
+    const three: ScorableEntity[] = [
+      { id: "occ-even", pool: "o", metrics: { pay: m(1), stability: m(2) } }, // pay 50, stab 50
+      { id: "occ-flaw", pool: "o", metrics: { pay: m(2), stability: m(3) } }, // pay 100, stab 0
+      { id: "occ-x", pool: "o", metrics: { pay: m(0), stability: m(1) } },
+    ];
+    void ents;
+    const none = scoreEntities(three, { pay: 1, stability: 1 }, { draws: 0, mode: "relative", flawPenalty: "none" });
+    const strong = scoreEntities(three, { pay: 1, stability: 1 }, { draws: 0, mode: "relative", flawPenalty: "strong" });
+    const get = (rs: typeof none, id: string) => rs.find((r) => r.id === id)!;
+    expect(get(none, "occ-even").composite).toBeCloseTo(get(none, "occ-flaw").composite!);
+    expect(get(strong, "occ-even").composite!).toBeGreaterThan(get(strong, "occ-flaw").composite! + 20);
+    expect(get(strong, "occ-flaw").penalty).toBeGreaterThan(0);
   });
 });

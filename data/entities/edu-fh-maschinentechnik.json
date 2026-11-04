@@ -18,7 +18,8 @@
     "gradIncome": "fh:Bachelor:Technik und IT",
     "qualLevel": "higherEducation",
     "besta": "28",
-    "nogaSection": "C"
+    "nogaSection": "C",
+    "gradField": "fh:Ingenieurwesen und Technische Berufe"
   },
   "pathway": [
     {

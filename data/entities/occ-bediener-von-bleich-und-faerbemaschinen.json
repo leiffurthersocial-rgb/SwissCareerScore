@@ -1,0 +1,56 @@
+{
+  "id": "occ-bediener-von-bleich-und-faerbemaschinen",
+  "kind": "occupation",
+  "route": "vocational",
+  "name": {
+    "en": "Bediener von Bleich- und Färbemaschinen",
+    "de": "Bediener von Bleich- und Färbemaschinen",
+    "fr": "Conducteurs de machines à blanchir, à teindre et à nettoyer les tissus",
+    "it": "Conduttori di macchinari per il candeggio, la tintura e la lavatura di filati e tessuti"
+  },
+  "codes": {
+    "isco08": "8154",
+    "chIsco19": "81540"
+  },
+  "sector": "CH-ISCO-19 81: Bediener stationärer Anlagen und Maschinen",
+  "refs": {
+    "qualLevel": "apprenticeship",
+    "nogaSection": "C",
+    "besta": "10-33"
+  },
+  "pathway": [],
+  "leadsTo": [],
+  "trainedVia": [],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "mobility": {
+      "value": 4,
+      "unit": "rubric 0–9",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#11-international-mobility",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed): recognition 1/3, language independence 2/3, transferability 1/3."
+    },
+    "regionalUbiquity": {
+      "value": 1,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#12-regional-availability",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed)."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion-2",
+    "reviewed": "2026-11-04",
+    "notes": "Official CH-ISCO-19 occupation type 81540. No single standard training path (usually reached via experience or various qualifications): training dimensions are missing. Sector for demand/telework/hours assigned from the occupation group (estimate)."
+  }
+}

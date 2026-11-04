@@ -18,7 +18,8 @@
     "studyField": "FH:Musik, Theater und andere Künste",
     "gradIncome": "fh:Bachelor:Musik, Theater und andere Künste",
     "besta": "90-96",
-    "nogaSection": "R"
+    "nogaSection": "R",
+    "gradField": "fh:Künste"
   },
   "pathway": [
     {

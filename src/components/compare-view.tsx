@@ -19,7 +19,7 @@ export function CompareView() {
   const tk = useTranslations("kind");
   const locale = useLocale();
   const { state, toggleCompare, queryString } = useAppState();
-  const results = useScores(state.weights);
+  const results = useScores(state);
   const items = state.compare.map((id) => getEntity(id)).filter((e): e is NonNullable<typeof e> => !!e);
   const qs = queryString ? `?${queryString}` : "";
   const [details, setDetails] = useState<Record<string, DatasetEntity>>({});

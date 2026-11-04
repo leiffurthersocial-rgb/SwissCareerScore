@@ -18,7 +18,8 @@
     "studyField": "UH:Medizin und Pharmazie",
     "gradIncome": "uh:Master:Medizin und Pharmazie",
     "besta": "68-75",
-    "nogaSection": "M"
+    "nogaSection": "M",
+    "gradField": "uh:Gesundheit"
   },
   "pathway": [
     {

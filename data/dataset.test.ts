@@ -71,11 +71,29 @@ describe("expanded catalogue", () => {
     for (const t of ["EBA", "EFZ", "BM", "HF", "BP", "HFP", "FH-BSc", "UH-MSc", "ETH-MSc", "UH-MMed"]) expect(types.has(t as never)).toBe(true);
   });
 
-  it("every occupation has a 5-digit CH-ISCO-19 code and at least one training path", () => {
+  it("every occupation has a 5-digit CH-ISCO-19 code; without a training path its training dimensions are missing", () => {
     for (const e of ds.entities.filter((x) => x.kind === "occupation")) {
       expect(e.codes.chIsco19, e.id).toMatch(/^\d{5}$/);
-      expect(e.trainedVia.length, e.id).toBeGreaterThan(0);
+      if (!e.trainedVia.length) {
+        expect(e.metrics.timeToQualify?.raw ?? null, e.id).toBeNull();
+        expect(e.metrics.trainingEase?.raw ?? null, e.id).toBeNull();
+      }
     }
+  });
+
+  it("baselines, FH masters and doctorates exist and use their own statistics", () => {
+    const none = ds.entities.find((e) => e.id === "edu-none-direkteinstieg")!;
+    expect(none.inputs.yearsToQualify?.value).toBe(0);
+    expect(none.inputs.unemploymentRate?.matchLevel).toBe("education-level");
+    expect(ds.entities.filter((e) => e.eduType === "DR").length).toBeGreaterThanOrEqual(5);
+    expect(ds.entities.filter((e) => e.eduType === "FH-MSc").length).toBeGreaterThanOrEqual(8);
+    const dr = ds.entities.find((e) => e.eduType === "DR")!;
+    expect(dr.inputs.payMid?.sourceId).toBe("bfs-eha-grad-income-5y");
+  });
+
+  it("FH/UH paths use their own graduates' unemployment where a field statistic exists", () => {
+    const withField = ds.entities.filter((e) => e.inputs.unemploymentRate?.sourceId === "bfs-eha-grad-unemployment");
+    expect(withField.length).toBeGreaterThan(100);
   });
 
   it("no tertiary path counts only its prerequisite as time to qualify", () => {

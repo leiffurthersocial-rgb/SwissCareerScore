@@ -1,6 +1,6 @@
 {
   "source": "berufsberatung",
-  "retrieved": "2026-11-03",
+  "retrieved": "2026-11-04",
   "pages": {
     "https://www.berufsberatung.ch/de/berufe/abdichter-in-efz": {
       "durationSnippets": [
@@ -9437,6 +9437,24 @@
         3.5,
         3.75,
         4
+      ],
+      "apprenticeWages": []
+    },
+    "https://www.berufsberatung.ch/de/bildungssystem/d/fachmaturitaet": {
+      "durationSnippets": [
+        "1 Jahr zusätzlich nach dem Fachmittelschulausweis"
+      ],
+      "yearsMentioned": [
+        1
+      ],
+      "apprenticeWages": []
+    },
+    "https://www.berufsberatung.ch/de/bildungssystem/d/fachmittelschulen": {
+      "durationSnippets": [
+        "3 Jahre in Vollzeit."
+      ],
+      "yearsMentioned": [
+        3
       ],
       "apprenticeWages": []
     },

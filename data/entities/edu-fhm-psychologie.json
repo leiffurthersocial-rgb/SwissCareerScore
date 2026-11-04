@@ -1,0 +1,68 @@
+{
+  "id": "edu-fhm-psychologie",
+  "kind": "education",
+  "route": "mixed",
+  "eduType": "FH-MSc",
+  "name": {
+    "en": "Angewandte Psychologie – Master (FH)",
+    "de": "Master Angewandte Psychologie (FH)",
+    "fr": null,
+    "it": null
+  },
+  "codes": {
+    "isco08": "2634"
+  },
+  "sector": "Health",
+  "refs": {
+    "qualLevel": "higherEducation",
+    "gradIncome": "fh:Master:Angewandte Psychologie",
+    "besta": "86-88",
+    "nogaSection": "Q"
+  },
+  "pathway": [
+    {
+      "label": "EFZ with integrated Berufsmaturität (BM 1)",
+      "years": 3,
+      "sourceUrl": "https://www.berufsberatung.ch/de/bildungssystem/d/berufsmaturitaet",
+      "confidence": "measured",
+      "note": "Typical vocational route to FH (3–4 years); Gymnasiale Matura plus one year of work experience is an alternative."
+    },
+    {
+      "label": "Bachelor (FH)",
+      "years": 3.0,
+      "sourceUrl": "https://www.berufsberatung.ch/de/studienrichtungen/psychologie",
+      "confidence": "measured"
+    },
+    {
+      "label": "Master Angewandte Psychologie (FH)",
+      "years": 2.0,
+      "sourceUrl": "https://www.berufsberatung.ch/de/studienrichtungen/psychologie",
+      "confidence": "measured"
+    }
+  ],
+  "leadsTo": [
+    "occ-psychologe"
+  ],
+  "trainedVia": [],
+  "languageRegions": [
+    "de",
+    "fr"
+  ],
+  "raw": {
+    "entryAccess": {
+      "value": 1,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://www.berufsberatung.ch/de/studienrichtungen/psychologie",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "Admission with a relevant bachelor; some programmes select by dossier/interview."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion-2",
+    "reviewed": "2026-11-04",
+    "notes": "Outcomes other than pay are inherited from the bachelor's target occupation. No completion statistic for FH master programmes (missing)."
+  }
+}

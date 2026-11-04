@@ -1,0 +1,56 @@
+{
+  "id": "occ-fachkraefte-in-der-lagerwirtschaft",
+  "kind": "occupation",
+  "route": "vocational",
+  "name": {
+    "en": "Fachkräfte in der Lagerwirtschaft",
+    "de": "Fachkräfte in der Lagerwirtschaft",
+    "fr": "Employés du service des stocks",
+    "it": "Addetti alla gestione degli stock"
+  },
+  "codes": {
+    "isco08": "4321",
+    "chIsco19": "43210"
+  },
+  "sector": "CH-ISCO-19 43: Bürokräfte im Finanz- und Rechnungswesen, in der Statistik und in",
+  "refs": {
+    "qualLevel": "apprenticeship",
+    "nogaSection": "*",
+    "besta": "5-96"
+  },
+  "pathway": [],
+  "leadsTo": [],
+  "trainedVia": [],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "mobility": {
+      "value": 2,
+      "unit": "rubric 0–9",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#11-international-mobility",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed): recognition 1/3, language independence 0/3, transferability 1/3."
+    },
+    "regionalUbiquity": {
+      "value": 3,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#12-regional-availability",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed)."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion-2",
+    "reviewed": "2026-11-04",
+    "notes": "Official CH-ISCO-19 occupation type 43210. No single standard training path (usually reached via experience or various qualifications): training dimensions are missing. Sector for demand/telework/hours assigned from the occupation group (estimate)."
+  }
+}

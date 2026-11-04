@@ -1,0 +1,77 @@
+{
+  "id": "edu-fms-fachmaturitaet",
+  "kind": "education",
+  "route": "mixed",
+  "eduType": "FMS",
+  "name": {
+    "en": "Specialised baccalaureate (Fachmittelschule + Fachmaturität)",
+    "de": "Fachmittelschule und Fachmaturität",
+    "fr": "École de culture générale et maturité spécialisée",
+    "it": "Scuola specializzata e maturità specializzata"
+  },
+  "codes": {},
+  "sector": "Whole economy",
+  "refs": {
+    "lseEducation": "5",
+    "eduLevel": "Sekundarstufe II",
+    "nogaSection": "*"
+  },
+  "pathway": [
+    {
+      "label": "Fachmittelschule (FMS)",
+      "years": 3,
+      "sourceUrl": "https://www.berufsberatung.ch/de/bildungssystem/d/fachmittelschulen",
+      "confidence": "measured"
+    },
+    {
+      "label": "Fachmaturität",
+      "years": 1,
+      "sourceUrl": "https://www.berufsberatung.ch/de/bildungssystem/d/fachmaturitaet",
+      "confidence": "measured"
+    }
+  ],
+  "leadsTo": [],
+  "trainedVia": [],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "entryAccess": {
+      "value": 1,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://www.berufsberatung.ch/de/bildungssystem/d/fachmittelschulen",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "Admission by school grades or entrance exam, depending on canton."
+    },
+    "mobility": {
+      "value": 3,
+      "unit": "rubric 0–9",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#11-international-mobility",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "General school-leaving certificate; widely recognised for study access, not as a vocational qualification."
+    },
+    "regionalUbiquity": {
+      "value": 6,
+      "unit": "rubric 0–6",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#12-regional-availability",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "Offered in every canton."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion-2",
+    "reviewed": "2026-11-04",
+    "notes": "Gateway to FH/PH programmes in health, social work, education and arts; scored here as a terminal qualification. LSE pools it with Matura/BM."
+  }
+}

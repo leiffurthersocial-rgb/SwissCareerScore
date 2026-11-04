@@ -41,6 +41,10 @@ export interface EntityResult {
   id: string;
   pool: string;
   composite: number | null;
+  /** Plain weighted average before the flaw penalty. */
+  linearComposite: number | null;
+  /** Points lost to the flaw penalty (linearComposite − composite). */
+  penalty: number;
   /** Share of total nominal weight that is backed by data (0–1). */
   coverage: number;
   insufficientData: boolean;
@@ -64,6 +68,10 @@ export interface SensitivityResult {
 }
 
 export interface ScoreOptions {
+  /** "absolute" (fixed value curves, default) or "relative" (percentile within pool). */
+  mode?: import("./curves").ScoringMode;
+  /** How hard weak dimensions pull the composite down. Default "moderate" (power mean p = 0.5). */
+  flawPenalty?: import("./curves").FlawPenaltyId;
   /** Coverage threshold below which an entity is flagged "insufficient data". Default 0.6. */
   minCoverage?: number;
   /** Monte-Carlo draws for uncertainty bands. 0 disables. Default 400. */

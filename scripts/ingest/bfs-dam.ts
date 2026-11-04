@@ -10,6 +10,7 @@ export const DAM = (id: number) => `https://dam-api.bfs.admin.ch/hub/api/dam/ass
 export const BFS_ASSET_PAGE = (id: number) => `https://www.bfs.admin.ch/asset/de/${id}`;
 
 export const ASSETS = {
+  recruitCompulsory: 36829805, // BESTA: … Arbeitskräfte mit obligatorischer Schulbildung
   recruitApprentice: 36829817, // BESTA: Schwierigkeiten Rekrutierung Arbeitskräfte mit Berufslehre
   recruitHigherVet: 36829811, // … mit höherer Berufsausbildung
   recruitHigherEd: 36829823, // … mit Hochschulabschluss
@@ -19,6 +20,9 @@ export const ASSETS = {
   studySuccess: 36077550, // LABB: Studienerfolgsquote an den Hochschulen nach Fachbereich
   vetCertification: 36304956, // LABB: Zertifikationsstatus berufliche Grundbildung nach Beruf
   gradIncome: 36732664, // EHA: Standardisiertes Bruttoerwerbseinkommen 1 Jahr nach Abschluss
+  gradIncome5: 36515424, // EHA: … fünf Jahre (und ein Jahr) nach Abschluss
+  studyDuration: 5566823, // LABB: Studiendauer UH nach Studienstufe und Fachbereichsgruppe (2015/16)
+  gradUnemployment: 36835383, // EHA: Erwerbslosenquote gemäss ILO 1 Jahr nach Abschluss nach Bildungsfeld (ISCED)
 } as const;
 
 type Grid = (string | number | undefined)[][];
@@ -35,7 +39,7 @@ function grid(wb: XLSX.WorkBook, sheet: string): Grid {
 const str = (v: unknown) => (v === undefined || v === null ? "" : String(v)).replace(/[\u00a0\u202f]/g, " ").replace(/\s+/g, " ").trim();
 
 // ---------- BESTA recruitment difficulty -------------------------------------------------------
-async function recruitment(id: number, prefix: "BL" | "HBB" | "HS") {
+async function recruitment(id: number, prefix: "OS" | "BL" | "HBB" | "HS") {
   const wb = await workbook(id, "xlsx");
   const sheets = {
     easy: grid(wb, `${prefix} leicht gefunden BESCH`),
@@ -191,12 +195,73 @@ async function gradIncome() {
   return { uh: parse("TA3E61-2"), fh: parse("TA3E61-3") };
 }
 
+// ---------- graduate income five years after degree ------------------------------------------
+async function gradIncome5() {
+  const wb = await workbook(ASSETS.gradIncome5, "xlsx");
+  const parse = (sheet: string) => {
+    const g = grid(wb, sheet);
+    const year = Number(str(g[1]?.[0]).match(/Abschlussjahr (20\d\d)/)?.[1]);
+    const out: Record<string, Record<string, { p25: number | null; median: number | null; p75: number | null }>> = {};
+    let level = "";
+    for (const r of g) {
+      const cells = r.map(str);
+      if (/Stand ein Jahr/.test(cells.join(" "))) break; // second table on the sheet is 1-year data
+      const idx = cells.findIndex((c, i) => i < 4 && parseNum(c) !== null);
+      if (idx < 1) continue;
+      const labels = cells.slice(0, idx).filter(Boolean);
+      const field = labels.at(-1)!;
+      if (labels.length >= 2) level = labels.at(-2)!;
+      const nums = r.slice(idx).map(parseNum);
+      (out[level] ??= {})[field] = { p25: nums[0], median: nums[2], p75: nums[4] };
+    }
+    return { graduationYear: year, surveyYear: year + 5, byLevel: out };
+  };
+  return { uh: parse("TA3Z61-2"), fh: parse("TA3Z61-3") };
+}
+
+// ---------- graduate ILO unemployment one year after degree by ISCED field ----------------
+async function gradUnemployment() {
+  const g = grid(await workbook(ASSETS.gradUnemployment, "xlsx"), "TA2E02-2");
+  const yearsRow = g.find((r) => r.some((c) => /^20\d\d/.test(str(c))))!;
+  const years = yearsRow.map(str).filter((c) => /^20\d\d/.test(c)).slice(0, 11).map((y) => Number(y.slice(0, 4)));
+  const out: Record<string, Record<string, { rate: number; years: number[] }>> = {};
+  let type = "Total";
+  for (const r of g) {
+    const cells = r.map(str);
+    const idx = cells.findIndex((c, i) => i < 4 && (parseNum(c) !== null || c === "**" || c === "."));
+    if (idx < 1) continue;
+    const labels = cells.slice(0, idx).filter(Boolean);
+    if (labels.length >= 2) type = labels[0] === "Total" ? "Total" : `${labels[0]} ${labels[1]}`.trim();
+    const field = labels.at(-1)!;
+    const nums = r.slice(idx).map(parseNum);
+    // pairs (%, ±) per year; "Total" place-of-residence block comes first
+    const pick = [years.length - 1, years.length - 2].map((k) => ({ y: years[k], v: nums[2 * k] })).filter((x) => x.v !== null && x.v !== undefined);
+    if (!pick.length) continue;
+    (out[type] ??= {})[field] = { rate: round(pick.reduce((s, x) => s + (x.v as number), 0) / pick.length, 2), years: pick.map((x) => x.y) };
+  }
+  return out;
+}
+
+// ---------- mean study duration by level and field (incl. doctorate) -----------------------
+async function studyDuration() {
+  const g = grid(await workbook(ASSETS.studyDuration, "xlsx"), "UH");
+  const out: Record<string, { bachelor: number | null; master: number | null; doctorate: number | null }> = {};
+  for (const r of g) {
+    const label = str(r[0]).replace(/\s*\d$/, "");
+    const nums = r.slice(1).map(parseNum);
+    if (!label || nums.filter((x) => x !== null).length < 3) continue;
+    out[label] = { bachelor: nums[0], master: nums[1], doctorate: nums[2] };
+  }
+  return { year: 2016, byField: out };
+}
+
 export async function ingestBfsDam() {
   console.log("BFS DAM assets");
   const out = {
     source: "bfs-dam",
     assets: ASSETS,
     recruitment: {
+      compulsory: await recruitment(ASSETS.recruitCompulsory, "OS"),
       apprenticeship: await recruitment(ASSETS.recruitApprentice, "BL"),
       higherVet: await recruitment(ASSETS.recruitHigherVet, "HBB"),
       higherEducation: await recruitment(ASSETS.recruitHigherEd, "HS"),
@@ -207,6 +272,9 @@ export async function ingestBfsDam() {
     studySuccess: await studySuccess(),
     vetCertification: await vetCertification(),
     gradIncome: await gradIncome(),
+    gradIncome5: await gradIncome5(),
+    gradUnemployment: await gradUnemployment(),
+    studyDuration: await studyDuration(),
   };
   writeIngested("bfs-dam", out);
   return out;

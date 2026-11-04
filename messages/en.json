@@ -37,7 +37,7 @@
   "dims": {
     "pay": {
       "name": "Pay",
-      "desc": "Median gross monthly wage, weighted 35 % entry level and 65 % mid-career."
+      "desc": "Gross monthly wage: 30 % entry, 50 % mid-career, 20 % earning potential (top-decile wage)."
     },
     "stability": {
       "name": "Job stability",
@@ -109,7 +109,25 @@
     "wizard": "Help me choose (pairwise)",
     "showMeaning": "Show disabled dimension",
     "overlap": "{a} and {b} move together (ρ = {rho}). Weighting both counts a similar signal twice.",
-    "noData": "no data yet"
+    "noData": "no data yet",
+    "model": "Scoring model",
+    "modeLabel": "Scale",
+    "mode": {
+      "absolute": "Absolute value scales (recommended)",
+      "relative": "Relative to other entries (percentiles)"
+    },
+    "modeHelp": {
+      "absolute": "Each dimension is scored on a fixed, documented scale, so magnitude counts: pay uses a log curve where CHF 300k a year = 100.",
+      "relative": "Each dimension is ranked against all other occupations (or paths): best = 100, worst = 0. Differences in magnitude are lost."
+    },
+    "flawLabel": "Penalty for weak spots",
+    "flaw": {
+      "none": "None (plain weighted average)",
+      "moderate": "Moderate",
+      "strong": "Strong (geometric mean)",
+      "severe": "Severe (harmonic mean)"
+    },
+    "flawHelp": "With a penalty, one very weak dimension pulls the overall score down more than an equally strong one lifts it."
   },
   "filters": {
     "title": "Filters",
@@ -185,7 +203,11 @@
     "regions": "Language regions",
     "notFound": "Entry not found.",
     "formula": "Formula",
-    "estimate": "Estimate"
+    "estimate": "Estimate",
+    "linearSum": "Weighted average",
+    "flawPenalty": "Penalty for weak spots",
+    "scaleAbsolute": "Dimension scores use absolute value scales (see methodology).",
+    "scaleRelative": "Dimension scores are percentile ranks within the group."
   },
   "inputs": {
     "payEntry": "Entry wage (median)",
@@ -205,7 +227,8 @@
     "mobility": "International mobility (0–9)",
     "regionalUbiquity": "Spatial ubiquity (0–3)",
     "trainingRegions": "Language regions offering it",
-    "apprenticeWage": "Apprentice wage, final year"
+    "apprenticeWage": "Apprentice wage, final year",
+    "payP90": "Wage P90 (top 10 % earn more)"
   },
   "source": {
     "title": "Source",

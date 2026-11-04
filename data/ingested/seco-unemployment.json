@@ -417,6 +417,11 @@
         "rate": 8.21,
         "months": 9
       }
+    },
+    "byEducation": {
+      "Sekundarstufe I": 5.49,
+      "Sekundarstufe II": 2.82,
+      "Tertiärstufe": 2.42
     }
   }
 }

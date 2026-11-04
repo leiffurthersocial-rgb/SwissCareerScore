@@ -1,0 +1,56 @@
+{
+  "id": "occ-produkttester-und-klassierer-ohne-nahrungsmittel-u",
+  "kind": "occupation",
+  "route": "vocational",
+  "name": {
+    "en": "Produkttester und -klassierer (ohne Nahrungsmittel und Getränke)",
+    "de": "Produkttester und -klassierer (ohne Nahrungsmittel und Getränke)",
+    "fr": "Contrôleurs et testeurs de produits (à l’exception des aliments et des boissons)",
+    "it": "Classificatori e collaudatori di prodotti (ad eccezione dei prodotti alimentari e delle bevande)"
+  },
+  "codes": {
+    "isco08": "7543",
+    "chIsco19": "75430"
+  },
+  "sector": "CH-ISCO-19 75: Berufe in der Nahrungsmittelverarbeitung, Holzverarbeitung und Be",
+  "refs": {
+    "qualLevel": "apprenticeship",
+    "nogaSection": "C",
+    "besta": "10-33"
+  },
+  "pathway": [],
+  "leadsTo": [],
+  "trainedVia": [],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "mobility": {
+      "value": 5,
+      "unit": "rubric 0–9",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#11-international-mobility",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed): recognition 1/3, language independence 3/3, transferability 1/3."
+    },
+    "regionalUbiquity": {
+      "value": 2,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#12-regional-availability",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed)."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion-2",
+    "reviewed": "2026-11-04",
+    "notes": "Official CH-ISCO-19 occupation type 75430. No single standard training path (usually reached via experience or various qualifications): training dimensions are missing. Sector for demand/telework/hours assigned from the occupation group (estimate)."
+  }
+}

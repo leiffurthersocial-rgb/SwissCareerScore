@@ -18,7 +18,8 @@
     "gradIncome": "fh:Bachelor:Technik und IT",
     "qualLevel": "higherEducation",
     "besta": "62-63",
-    "nogaSection": "J"
+    "nogaSection": "J",
+    "gradField": "fh:Informations- und Kommunikationstechnologie"
   },
   "pathway": [
     {

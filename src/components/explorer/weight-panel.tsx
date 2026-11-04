@@ -8,7 +8,7 @@ import { Switch } from "@/components/ui/switch";
 import { dataset } from "@/lib/dataset";
 import { DIMENSION_IDS, type DimensionId } from "@/lib/dimensions";
 import { PRESET_IDS, type PresetId } from "@/lib/presets";
-import { overlapWarnings } from "@/lib/scoring";
+import { FLAW_PENALTIES, overlapWarnings } from "@/lib/scoring";
 import type { AppState } from "@/lib/url-state";
 import { cn } from "@/lib/utils";
 import { AhpWizard } from "./ahp-wizard";
@@ -24,12 +24,14 @@ export function WeightPanel({
   setWeight,
   setWeights,
   toggleLock,
+  setScoring,
 }: {
   state: AppState;
   applyPreset: (p: PresetId) => void;
   setWeight: (id: DimensionId, pct: number, visible: readonly DimensionId[]) => void;
   setWeights: (w: Partial<Record<DimensionId, number>>) => void;
   toggleLock: (id: DimensionId) => void;
+  setScoring: (patch: Partial<Pick<AppState, "mode" | "flaw">>) => void;
 }) {
   const t = useTranslations("weights");
   const td = useTranslations("dims");
@@ -78,6 +80,37 @@ export function WeightPanel({
       </div>
 
       <AhpWizard onApply={setWeights} />
+
+      <fieldset className="space-y-2 rounded-md border border-border p-3">
+        <legend className="px-1 text-xs font-medium text-muted-foreground">{t("model")}</legend>
+        <label className="block text-xs font-medium">
+          {t("modeLabel")}
+          <select
+            className="mt-1 w-full rounded-md border border-border bg-card px-2 py-1.5 text-sm"
+            value={state.mode}
+            onChange={(e) => setScoring({ mode: e.target.value as AppState["mode"] })}
+          >
+            <option value="absolute">{t("mode.absolute")}</option>
+            <option value="relative">{t("mode.relative")}</option>
+          </select>
+        </label>
+        <p className="text-xs text-muted-foreground">{t(`modeHelp.${state.mode}`)}</p>
+        <label className="block text-xs font-medium">
+          {t("flawLabel")}
+          <select
+            className="mt-1 w-full rounded-md border border-border bg-card px-2 py-1.5 text-sm"
+            value={state.flaw}
+            onChange={(e) => setScoring({ flaw: e.target.value as AppState["flaw"] })}
+          >
+            {FLAW_PENALTIES.map((f) => (
+              <option key={f.id} value={f.id}>
+                {t(`flaw.${f.id}`)}
+              </option>
+            ))}
+          </select>
+        </label>
+        <p className="text-xs text-muted-foreground">{t("flawHelp")}</p>
+      </fieldset>
 
       <ul className="space-y-3">
         {visible.map((d) => {

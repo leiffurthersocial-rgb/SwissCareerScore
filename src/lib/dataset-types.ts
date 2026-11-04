@@ -8,6 +8,7 @@ export const INPUT_IDS = [
   "paySenior",
   "payP25",
   "payP75",
+  "payP90",
   "unemploymentRate",
   "recruitmentDifficulty",
   "aiExposure",

@@ -1,7 +1,8 @@
 import { DIMENSIONS, DIMENSION_IDS, type DimensionId } from "../dimensions";
 import type { Confidence, MatchLevel } from "../schema";
 import { percentileRanksByPool } from "./normalize";
-import { gaussian, mulberry32, quantile } from "./rng";
+import { ABSOLUTE_CURVES, applyCurve, flawExponent, type FlawPenaltyId, type ScoringMode } from "./curves";
+import { mulberry32, quantile } from "./rng";
 import type {
   Contribution,
   DimensionScore,
@@ -40,6 +41,8 @@ export function sigmaFor(confidence: Confidence, matchLevel: MatchLevel): number
 }
 
 const DEFAULTS: Required<ScoreOptions> = {
+  mode: "absolute",
+  flawPenalty: "moderate",
   minCoverage: 0.6,
   draws: 400,
   seed: 20261103,
@@ -50,19 +53,44 @@ const DEFAULTS: Required<ScoreOptions> = {
 
 type ScoreMatrix = Record<DimensionId, (number | null)[]>;
 
-/** Percentile scores for every dimension, computed within each entity's pool. */
-export function computeDimensionScores(entities: ReadonlyArray<ScorableEntity>): ScoreMatrix {
+/**
+ * Dimension scores 0–100. `absolute`: fixed value curves (magnitude matters, comparable across
+ * pools). `relative`: percentile rank within each entity's pool.
+ */
+export function computeDimensionScores(entities: ReadonlyArray<ScorableEntity>, mode: ScoringMode = "absolute"): ScoreMatrix {
   const pools = entities.map((e) => e.pool);
   const out = {} as ScoreMatrix;
   for (const id of DIMENSION_IDS) {
     const raw = entities.map((e) => e.metrics[id]?.raw ?? null);
-    out[id] = percentileRanksByPool(raw, pools, DIMENSIONS[id].higherIsBetter);
+    out[id] =
+      mode === "absolute"
+        ? raw.map((x) => applyCurve(x, ABSOLUTE_CURVES[id]))
+        : percentileRanksByPool(raw, pools, DIMENSIONS[id].higherIsBetter);
   }
   return out;
 }
 
+/**
+ * Weighted power mean M_p = (Σ wᵢ·sᵢ^p)^(1/p) over present dimensions (weights renormalized).
+ * p = 1 is the plain weighted average; p < 1 pulls the result towards the weakest dimensions, so
+ * one serious flaw costs more than an equal strength gains (p = 0 → geometric mean, p = −1 →
+ * harmonic). Scores are floored at 1 for p ≤ 0 so a single 0 does not zero everything.
+ */
+export function powerMean(values: ReadonlyArray<number>, weights: ReadonlyArray<number>, p: number): number {
+  const W = weights.reduce((a, b) => a + b, 0);
+  if (W <= 0 || !values.length) return NaN;
+  if (p === 1) return values.reduce((s, v, i) => s + weights[i] * v, 0) / W;
+  const v = values.map((x) => (p <= 0 ? Math.max(1, x) : Math.max(0, x)));
+  if (p === 0) return Math.exp(v.reduce((s, x, i) => s + weights[i] * Math.log(x), 0) / W);
+  return Math.pow(v.reduce((s, x, i) => s + weights[i] * Math.pow(x, p), 0) / W, 1 / p);
+}
+
 interface CompositeRow {
   composite: number | null;
+  /** Plain weighted average (what the composite would be without a flaw penalty). */
+  linear: number | null;
+  /** linear − composite: points lost to the flaw penalty. */
+  penalty: number;
   coverage: number;
   contributions: Contribution[];
 }
@@ -75,6 +103,7 @@ interface CompositeRow {
 export function compositeFor(
   scores: Partial<Record<DimensionId, number | null>>,
   shares: Record<DimensionId, number>,
+  p = 1,
 ): CompositeRow {
   let presentWeight = 0;
   let totalWeight = 0;
@@ -101,8 +130,15 @@ export function compositeFor(
       points,
     });
   }
+  let final = presentWeight > 0 ? composite : null;
+  if (final !== null && p !== 1) {
+    const present = contributions.filter((c) => c.score !== null);
+    final = powerMean(present.map((c) => c.score as number), present.map((c) => c.effectiveWeight), p);
+  }
   return {
-    composite: presentWeight > 0 ? composite : null,
+    composite: final,
+    linear: presentWeight > 0 ? composite : null,
+    penalty: final !== null && presentWeight > 0 ? composite - final : 0,
     coverage: totalWeight > 0 ? presentWeight / totalWeight : 0,
     contributions,
   };
@@ -136,13 +172,13 @@ export function rankOrder(
   return ranks;
 }
 
-function pointComposites(matrix: ScoreMatrix, n: number, weights: Weights): (number | null)[] {
+function pointComposites(matrix: ScoreMatrix, n: number, weights: Weights, p: number): (number | null)[] {
   const shares = normalizeWeights(weights);
   const out: (number | null)[] = [];
   for (let i = 0; i < n; i++) {
     const s: Partial<Record<DimensionId, number | null>> = {};
     for (const id of DIMENSION_IDS) s[id] = matrix[id][i];
-    out.push(compositeFor(s, shares).composite);
+    out.push(compositeFor(s, shares, p).composite);
   }
   return out;
 }
@@ -159,14 +195,15 @@ export function scoreEntities(
   const opt = { ...DEFAULTS, ...options };
   const n = entities.length;
   const ids = entities.map((e) => e.id);
-  const matrix = computeDimensionScores(entities);
+  const matrix = computeDimensionScores(entities, opt.mode);
+  const p = flawExponent(opt.flawPenalty as FlawPenaltyId);
   const shares = normalizeWeights(weights);
   const active = DIMENSION_IDS.filter((id) => shares[id] > 0);
 
   const rows = entities.map((_, i) => {
     const s: Partial<Record<DimensionId, number | null>> = {};
     for (const id of DIMENSION_IDS) s[id] = matrix[id][i];
-    return compositeFor(s, shares);
+    return compositeFor(s, shares, p);
   });
   const eligible = rows.map((r) => r.composite !== null && r.coverage >= opt.minCoverage);
   const pools = entities.map((e) => e.pool);
@@ -192,26 +229,66 @@ export function scoreEntities(
     const rand = mulberry32(opt.seed);
     const drawsComposite: number[][] = ids.map(() => []);
     const drawsRank: number[][] = ids.map(() => []);
-    for (let d = 0; d < opt.draws; d++) {
-      const comp: (number | null)[] = [];
+    // Flat typed arrays for speed: score (NaN = missing) and sigma per entity × active dimension.
+    const k = active.length;
+    const S = new Float64Array(n * k);
+    const SG = new Float64Array(n * k);
+    const W = new Float64Array(k);
+    active.forEach((id, j) => {
+      W[j] = shares[id];
       for (let i = 0; i < n; i++) {
-        if (rows[i].composite === null) {
-          comp.push(null);
-          continue;
-        }
-        let total = 0;
-        for (const id of active) {
-          const s = matrix[id][i];
+        const v = matrix[id][i];
+        S[i * k + j] = v === null ? NaN : v;
+        SG[i * k + j] = sigmas[id][i];
+      }
+    });
+    const Wsum = W.reduce((a, b) => a + b, 0);
+    // Eligible entity indices per pool, pre-sorted by id for deterministic tie-breaking.
+    const poolIdx = new Map<string, number[]>();
+    for (let i = 0; i < n; i++) {
+      if (!eligible[i]) continue;
+      const arr = poolIdx.get(pools[i]) ?? [];
+      arr.push(i);
+      poolIdx.set(pools[i], arr);
+    }
+    const idOrder = new Float64Array(n);
+    [...ids.keys()].sort((a, b) => ids[a].localeCompare(ids[b])).forEach((i, r) => (idOrder[i] = r));
+    const comp = new Float64Array(n);
+    let spare: number | null = null;
+    const gauss = () => {
+      if (spare !== null) {
+        const v = spare;
+        spare = null;
+        return v;
+      }
+      let u = 0;
+      while (u === 0) u = rand();
+      const r = Math.sqrt(-2 * Math.log(u));
+      const th = 2 * Math.PI * rand();
+      spare = r * Math.sin(th);
+      return r * Math.cos(th);
+    };
+    for (let d = 0; d < opt.draws; d++) {
+      for (let i = 0; i < n; i++) {
+        if (rows[i].composite === null) continue;
+        let acc = 0;
+        for (let j = 0; j < k; j++) {
+          const sv = S[i * k + j];
           // Missing → could be anywhere: uniform on [0,100]. Present → Gaussian noise, clamped.
-          const x =
-            s === null ? rand() * 100 : Math.min(100, Math.max(0, s + sigmas[id][i] * gaussian(rand)));
-          total += shares[id] * x;
+          let x = sv !== sv ? rand() * 100 : sv + SG[i * k + j] * gauss();
+          x = x < 0 ? 0 : x > 100 ? 100 : x;
+          if (p === 1) acc += W[j] * x;
+          else if (p === 0) acc += W[j] * Math.log(x < 1 ? 1 : x);
+          else acc += W[j] * Math.pow(p < 0 && x < 1 ? 1 : x, p);
         }
-        comp.push(total);
+        const total = p === 1 ? acc / Wsum : p === 0 ? Math.exp(acc / Wsum) : Math.pow(acc / Wsum, 1 / p);
+        comp[i] = total;
         drawsComposite[i].push(total);
       }
-      const r = rankOrder(ids, comp, eligible, pools);
-      r.forEach((rk, i) => rk !== null && drawsRank[i].push(rk));
+      for (const idx of poolIdx.values()) {
+        idx.sort((a, b) => comp[b] - comp[a] || idOrder[a] - idOrder[b]);
+        for (let r = 0; r < idx.length; r++) drawsRank[idx[r]].push(r + 1);
+      }
     }
     for (let i = 0; i < n; i++) {
       const c = rows[i].composite;
@@ -238,7 +315,7 @@ export function scoreEntities(
     const byDim: Partial<Record<DimensionId, number>>[] = ids.map(() => ({}));
     for (const id of active) {
       for (const f of [1 - opt.sensitivityDelta, 1 + opt.sensitivityDelta]) {
-        const comp = pointComposites(matrix, n, perturbWeight(weights, id, f));
+        const comp = pointComposites(matrix, n, perturbWeight(weights, id, f), p);
         const r = rankOrder(ids, comp, eligible, pools);
         for (let i = 0; i < n; i++) {
           if (ranks[i] === null || r[i] === null) continue;
@@ -247,13 +324,13 @@ export function scoreEntities(
         }
       }
     }
-    // Threshold scales with pool size: ≥ fragileShift places or ≥ 2 % of the ranked pool.
+    // Threshold scales with pool size: ≥ fragileShift places or ≥ 5 % of the ranked pool.
     const poolSize = new Map<string, number>();
     ranks.forEach((r, i) => r !== null && poolSize.set(pools[i], (poolSize.get(pools[i]) ?? 0) + 1));
     for (let i = 0; i < n; i++) {
       if (ranks[i] === null) continue;
       const maxShift = Math.max(0, ...Object.values(byDim[i]).map((v) => v ?? 0));
-      const threshold = Math.max(opt.fragileShift, Math.ceil(0.02 * (poolSize.get(pools[i]) ?? 0)));
+      const threshold = Math.max(opt.fragileShift, Math.ceil(0.05 * (poolSize.get(pools[i]) ?? 0)));
       sens[i] = { maxShift, byDimension: byDim[i], fragile: maxShift >= threshold };
     }
   }
@@ -268,6 +345,8 @@ export function scoreEntities(
       id: e.id,
       pool: e.pool,
       composite: rows[i].composite,
+      linearComposite: rows[i].linear,
+      penalty: rows[i].penalty,
       coverage: rows[i].coverage,
       insufficientData: !eligible[i],
       contributions: rows[i].contributions,

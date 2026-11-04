@@ -18,7 +18,8 @@
     "gradIncome": "uh:Master:Technische Wissenschaften",
     "qualLevel": "higherEducation",
     "besta": "26",
-    "nogaSection": "C"
+    "nogaSection": "C",
+    "gradField": "uh:Ingenieurwesen und Technische Berufe"
   },
   "pathway": [
     {

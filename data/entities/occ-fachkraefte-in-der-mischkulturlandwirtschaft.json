@@ -1,0 +1,55 @@
+{
+  "id": "occ-fachkraefte-in-der-mischkulturlandwirtschaft",
+  "kind": "occupation",
+  "route": "vocational",
+  "name": {
+    "en": "Fachkräfte in der Mischkulturlandwirtschaft",
+    "de": "Fachkräfte in der Mischkulturlandwirtschaft",
+    "fr": "Agriculteurs et ouvriers qualifiés, cultures diversifiées",
+    "it": "Lavoratori agricoli specializzati di colture miste"
+  },
+  "codes": {
+    "isco08": "6114",
+    "chIsco19": "61140"
+  },
+  "sector": "CH-ISCO-19 61: Fachkräfte in der Landwirtschaft",
+  "refs": {
+    "qualLevel": "apprenticeship",
+    "nogaSection": "A"
+  },
+  "pathway": [],
+  "leadsTo": [],
+  "trainedVia": [],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "mobility": {
+      "value": 4,
+      "unit": "rubric 0–9",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#11-international-mobility",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed): recognition 1/3, language independence 2/3, transferability 1/3."
+    },
+    "regionalUbiquity": {
+      "value": 2,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#12-regional-availability",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed)."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion-2",
+    "reviewed": "2026-11-04",
+    "notes": "Official CH-ISCO-19 occupation type 61140. No single standard training path (usually reached via experience or various qualifications): training dimensions are missing. Sector for demand/telework/hours assigned from the occupation group (estimate)."
+  }
+}

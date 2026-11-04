@@ -1,0 +1,56 @@
+{
+  "id": "occ-fuehrungskraefte-in-der-erbringung-von-dienstleist-4",
+  "kind": "occupation",
+  "route": "mixed",
+  "name": {
+    "en": "Führungskräfte in der Erbringung von Dienstleistungen im Bereich Sport, Erholung und Kultur",
+    "de": "Führungskräfte in der Erbringung von Dienstleistungen im Bereich Sport, Erholung und Kultur",
+    "fr": "Directeurs et gérants, centres sportifs, centres de loisirs et centres culturels",
+    "it": "Dirigenti di centri per le attività sportive, ricreative e culturali"
+  },
+  "codes": {
+    "isco08": "1431",
+    "chIsco19": "14310"
+  },
+  "sector": "CH-ISCO-19 14: Führungskräfte in Hotels und Restaurants, im Handel und in der Er",
+  "refs": {
+    "qualLevel": "higherEducation",
+    "nogaSection": "R",
+    "besta": "90-96"
+  },
+  "pathway": [],
+  "leadsTo": [],
+  "trainedVia": [],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "mobility": {
+      "value": 5,
+      "unit": "rubric 0–9",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#11-international-mobility",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed): recognition 2/3, language independence 1/3, transferability 2/3."
+    },
+    "regionalUbiquity": {
+      "value": 2,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#12-regional-availability",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "ISCO group default (not individually assessed)."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion-2",
+    "reviewed": "2026-11-04",
+    "notes": "Official CH-ISCO-19 occupation type 14310. No single standard training path (usually reached via experience or various qualifications): training dimensions are missing. Sector for demand/telework/hours assigned from the occupation group (estimate)."
+  }
+}

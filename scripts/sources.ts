@@ -55,7 +55,7 @@ export const SOURCES: SourceDef[] = [
     title: "Beschäftigungsstatistik (BESTA): Schwierigkeiten bei der Rekrutierung von Arbeitskräften nach Ausbildungsniveau und Wirtschaftsabteilung",
     url: BFS_ASSET_PAGE(ASSETS.recruitApprentice),
     year: 2026,
-    rawFiles: [`bfs-dam/${ASSETS.recruitApprentice}.xlsx`, `bfs-dam/${ASSETS.recruitHigherVet}.xlsx`, `bfs-dam/${ASSETS.recruitHigherEd}.xlsx`],
+    rawFiles: [`bfs-dam/${ASSETS.recruitCompulsory}.xlsx`, `bfs-dam/${ASSETS.recruitApprentice}.xlsx`, `bfs-dam/${ASSETS.recruitHigherVet}.xlsx`, `bfs-dam/${ASSETS.recruitHigherEd}.xlsx`],
   },
   {
     id: "bfs-sake-telework",
@@ -104,6 +104,22 @@ export const SOURCES: SourceDef[] = [
     url: BFS_ASSET_PAGE(ASSETS.gradIncome),
     year: 2025,
     rawFiles: [`bfs-dam/${ASSETS.gradIncome}.xlsx`],
+  },
+  {
+    id: "bfs-eha-grad-income-5y",
+    publisher: "Bundesamt für Statistik (BFS)",
+    title: "Befragung der Hochschulabsolvent/-innen (EHA): Standardisiertes Bruttoerwerbseinkommen fünf Jahre nach Abschluss, Abschlussjahr 2020",
+    url: BFS_ASSET_PAGE(ASSETS.gradIncome5),
+    year: 2025,
+    rawFiles: [`bfs-dam/${ASSETS.gradIncome5}.xlsx`],
+  },
+  {
+    id: "bfs-eha-grad-unemployment",
+    publisher: "Bundesamt für Statistik (BFS)",
+    title: "EHA: Erwerbslosenquote gemäss ILO der Hochschulabsolvent/-innen ein Jahr nach Abschluss nach Bildungsfeld (ISCED)",
+    url: BFS_ASSET_PAGE(ASSETS.gradUnemployment),
+    year: 2025,
+    rawFiles: [`bfs-dam/${ASSETS.gradUnemployment}.xlsx`],
   },
   {
     id: "berufsberatung",

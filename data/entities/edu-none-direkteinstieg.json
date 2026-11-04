@@ -1,0 +1,67 @@
+{
+  "id": "edu-none-direkteinstieg",
+  "kind": "education",
+  "route": "vocational",
+  "eduType": "NONE",
+  "name": {
+    "en": "Direct entry into work (no post-compulsory qualification)",
+    "de": "Direkteinstieg ohne nachobligatorischen Abschluss",
+    "fr": "Entrée directe dans la vie active (sans diplôme post-obligatoire)",
+    "it": "Ingresso diretto nel mondo del lavoro (senza titolo post-obbligatorio)"
+  },
+  "codes": {},
+  "sector": "Whole economy",
+  "refs": {
+    "lseEducation": "8",
+    "eduLevel": "Sekundarstufe I",
+    "directEntry": true,
+    "besta": "5-96",
+    "qualLevel": "compulsory",
+    "nogaSection": "*"
+  },
+  "pathway": [],
+  "leadsTo": [],
+  "trainedVia": [],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "entryAccess": {
+      "value": 0,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#6-entry-competition",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "No admission requirement."
+    },
+    "mobility": {
+      "value": 1,
+      "unit": "rubric 0–9",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#11-international-mobility",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "No recognised qualification to take abroad; unskilled work is available but poorly paid."
+    },
+    "regionalUbiquity": {
+      "value": 6,
+      "unit": "rubric 0–6",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#12-regional-availability",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "Unskilled jobs exist everywhere."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion-2",
+    "reviewed": "2026-11-04",
+    "notes": "Baseline for comparison. Pay: LSE 2024 for people whose highest education is compulsory school; unemployment: SECO by education level. AI exposure and career growth have no education-level statistic (missing)."
+  }
+}

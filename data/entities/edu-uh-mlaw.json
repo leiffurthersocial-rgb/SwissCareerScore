@@ -18,7 +18,8 @@
     "gradIncome": "uh:Master:Recht",
     "qualLevel": "higherEducation",
     "besta": "68-75",
-    "nogaSection": "M"
+    "nogaSection": "M",
+    "gradField": "uh:Recht"
   },
   "pathway": [
     {

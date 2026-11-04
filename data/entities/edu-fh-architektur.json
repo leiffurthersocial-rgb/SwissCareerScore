@@ -18,7 +18,8 @@
     "gradIncome": "fh:Bachelor:Architektur, Bau- und Planungswesen",
     "qualLevel": "higherEducation",
     "besta": "68-75",
-    "nogaSection": "M"
+    "nogaSection": "M",
+    "gradField": "fh:Architektur und Baugewerbe"
   },
   "pathway": [
     {

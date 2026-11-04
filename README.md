@@ -10,13 +10,13 @@ UH/ETH — across up to 13 dimensions, with **fully adjustable weights**.
 
 ## What it does
 
-- **1,091 entries**: 309 occupations (CH-ISCO-19 occupation types) and 782 education paths —
-  185 EFZ and 60 EBA apprenticeships, 50 HF diplomas, 226 federal professional
-  exams (BP), 133 advanced federal exams (HFP), Berufsmaturität, 54 FH/PH programmes and
-  73 university/ETH programmes — every profile on berufsberatung.ch
-  that could be classified, plus ~100 fields of study. Where a statistic does not exist the value is
-  shown as missing; where we had to estimate (rubrics, AI task profiles, sector or code assignments),
-  the entry says so.
+- **1,262 entries**: 461 occupations (every official CH-ISCO-19 occupation type except residual
+  categories) and 801 education paths — 185 EFZ and 60 EBA apprenticeships, 50 HF diplomas,
+  226 federal professional exams (BP), 133 advanced federal exams (HFP), Berufsmaturität,
+  Gymnasiale Matura, Fachmaturität, 54 FH/PH bachelor's and 11 FH master's programmes,
+  73 university/ETH programmes, 5 doctorates, and a "no qualification"
+  baseline. Where a statistic does not exist the value is shown as missing; where we had to estimate
+  (rubrics, AI task profiles, sector or code assignments), the entry says so.
 - **Dimensions:** pay, job stability, demand, AI/automation resilience, training ease, entry access,
   time to qualify, career growth, work-life balance, remote/flexibility, international mobility,
   regional availability, and meaning (disabled: no defensible source yet).
@@ -24,8 +24,9 @@ UH/ETH — across up to 13 dimensions, with **fully adjustable weights**.
   statistics BESTA, longitudinal education analyses LABB, graduate survey), SECO (unemployment by
   occupation), berufsberatung.ch (official training durations). Every number has its source,
   year, confidence and match level — click it in the app.
-- **Scoring:** percentile-rank normalization within occupations / within education paths, weighted
-  composite with explicit missing-data handling, Monte-Carlo **uncertainty ranges**, ±20 % weight
+- **Scoring:** absolute value curves per dimension (log scale for pay: CHF 300k/year = 100) or
+  percentile ranks; weighted power-mean composite with a selectable penalty for weak spots;
+  explicit missing-data handling, Monte-Carlo **uncertainty ranges**, ±20 % weight
   **sensitivity** with *fragile* flags, correlation overlap warnings.
 - **Weighting UX:** evidence-based *Balanced* default (equal weights), presets (Money first, Security
   first, Future-proof, Low stress, Fast start), sliders with **locks**, a pairwise **AHP wizard**,

@@ -56,13 +56,60 @@ the weights. This document explains every number: where it comes from, how it is
   ubiquity rubrics (note *"ISCO group default"*), and the economic sector used for demand, telework
   and hours (note *"assigned from the occupation group"*). Cross-sector jobs (clerks, managers) use
   the whole-economy figures.
+- **Baselines and further degrees.** Three comparison paths: *direct entry without a post-compulsory
+  qualification* (LSE wages for highest education = compulsory school, SECO unemployment for
+  Sek I, BESTA recruitment difficulty for unskilled staff, 0 years), *Gymnasiale Matura* and
+  *Fachmittelschule + Fachmaturität* scored as terminal qualifications (LSE pools Matura and BM).
+  FH **master's** programmes use the graduate survey for FH masters. **Doctorates** (five field
+  groups) use the graduate survey for doctorates and BFS's mean observed doctoral study duration
+  (2015/16 entry cohorts; there is no standard length) and link to *university teacher/researcher*
+  as target occupation (estimate).
+- **All official occupation types.** Every CH-ISCO-19 occupation type (5 digits) that is not a
+  residual "not elsewhere classified" category is included as an occupation, also when there is no
+  single standard training path (e.g. many management roles). For those, *time to qualify*,
+  *training ease* and *easy entry* are missing.
 - **Missing, not guessed.** No completion statistic exists for HF, BP, HFP and most PH programmes →
   *training ease* is missing for those. BP/HFP durations are the preparation-course lengths stated on
   berufsberatung.ch and are marked *estimated*: the professional experience required for exam
   admission is not counted, so true time to qualify is longer. Profiles without any duration
   statement have *time to qualify* missing.
 
-## 3. Normalization: percentile ranks
+## 3. From raw values to dimension scores (0–100)
+
+Two scales are available (switch in the weight panel). **Absolute value scales are the default.**
+
+### 3a. Absolute value scales (default)
+
+Each dimension has a fixed, documented value curve. The raw value is placed between a *worst* and a
+*best* anchor:
+
+`t = (f(x) − f(worst)) / (f(best) − f(worst))`, clamped to 0–1, `score = 100 · t`
+
+with `f` = identity (linear) or natural logarithm (log). Because the anchors are fixed, **magnitude
+counts**: a job paying twice as much scores clearly higher, not just "one rank higher", and
+occupations and education paths share one scale.
+
+| Dimension | Curve | Worst (0) | Best (100) | Why |
+|---|---|---|---|---|
+| Pay | **log** | CHF 3,500 / month | CHF 25,000 / month (= CHF 300,000 / year) | below the low-wage threshold (⅔ of the 2024 median 7,024) vs. top-executive pay. Log scale: every doubling adds the same ~35 points, so 4k→8k counts as much as 8k→16k, and 300k a year scores ~45 points above 100k a year. |
+| Job stability | linear | 8 % unemployment | 1 % | worst Swiss occupation groups vs. frictional minimum |
+| Demand | linear | 15 % of firms with recruiting difficulty | 85 % | observed BESTA range |
+| AI resilience | linear | exposure 75 | exposure 15 | mostly routine office work vs. mostly non-routine physical/interpersonal |
+| Training ease | linear | 25 % non-completion | 3 % | observed range |
+| Easy entry | linear | rubric 3 | rubric 0 | |
+| Fast start | linear | 11 years | 0 years | medicine incl. Matura vs. direct entry |
+| Career growth | linear | age-50+/age-≤29 wage ratio 1.0 | 1.8 | flat vs. steepest groups |
+| Work-life balance | linear | index 0 | index 100 | already an index |
+| Remote / flexibility | linear | 5 % | 85 % | observed range 10–82 % |
+| International mobility | linear | rubric 0 | rubric 9 | |
+| Regional availability | linear | rubric 1 | rubric 6 | |
+
+The anchors are judgment calls (documented in `src/lib/scoring/curves.ts`); values beyond them are
+clamped. Note that the Swiss statistics used here are **group medians**: no occupation *median*
+reaches CHF 25,000 a month, so even the best-paid groups score about 60 on pay — the scale leaves
+room above them on purpose, and the earning-potential component (P90) rewards high-ceiling careers.
+
+### 3b. Relative scale: percentile ranks
 
 For each dimension, raw values of all entries in the same pool that have data are converted to
 **percentile ranks**:
@@ -89,15 +136,29 @@ limitations**. Confidence and match level of a dimension are the *worst* of its 
   public sector, by ISCO-08 2-digit group and age band. For FH/PH/UH paths the *entry* wage is the
   BFS graduate survey (EHA, graduates 2024, one year after degree) standardized annual income ÷ 12,
   by field. For the Berufsmaturität path: LSE 2024 by highest education (`px-x-0304010000_202`).
-- **Formula:** `0.35 × median(age ≤ 29) + 0.65 × median(age 30–49)`. P25 and P75 are shown, not scored.
-  The 35/65 split reflects that most of a working life is spent past entry level while keeping
-  early-career pay visible.
+- **Formula:** `0.30 × entry + 0.50 × mid-career + 0.20 × earning potential`, where entry = median
+  age ≤ 29, mid-career = median age 30–49 and earning potential = **P90** of the occupation group
+  (the wage the top 10 % exceed). Most of a working life is spent past entry level; the P90 term
+  rewards careers with a high ceiling (management, finance, medicine) over ones with a similar
+  median but a flat top. If BFS publishes no figure for a component (e.g. too few managers under 30)
+  that component is dropped and the others renormalized — mid-career pay is required.
+  For **FH/PH/UH paths and doctorates**, entry = BFS graduate survey one year after the degree and
+  mid-career = the same survey **five years** after the degree (graduates 2020, surveyed 2025),
+  both by field — this replaces the occupation-group wage, so e.g. FH social-work graduates are no
+  longer assigned the wages of ISCO group 26 (which includes lawyers). P25 and P75 are shown, not scored.
 - **Limitations:** LSE is published only at ISCO **2-digit** level in machine-readable form (48
   groups). Occupations in the same group share wages — e.g. social workers (ISCO 2635) share group
   26 with lawyers. Match level `isco2` adds uncertainty (§6). Pay is gross and not adjusted for
   regional living costs. Self-employed are not covered by LSE.
 
 ### 2. Job stability
+
+*Education paths at FH/UH level* use the **ILO unemployment rate of their own graduates one year
+after the degree** (BFS graduate survey, mean of graduation years 2022 and 2024, by ISCED field;
+UH master's and FH bachelor's). This measures the path directly. Note: ILO unemployment includes
+people not registered with the RAV, so these values run higher than SECO's registered rates used
+for occupations. *Baseline paths* (no qualification, Matura, Fachmaturität) use SECO registered
+unemployment by highest education (Sek I 5.5 %, Sek II 2.8 %, 2026 average).
 
 - **Source:** SECO. (a) *Meldepflichtige Berufsarten 2027*: registered unemployment rate per
   CH-ISCO-19 occupation type for every type with a rate ≥ 5 % (reference period Q4 2025 – Q3 2026).
@@ -228,9 +289,25 @@ redistributed (§5).
 
 ## 5. Composite score and missing data
 
-`composite = Σ wᵢ·sᵢ / Σ wᵢ` over the dimensions **that have data** for the entry, where `wᵢ` are the
-user weights normalized to 100 % and `sᵢ` the percentile scores. Missing dimensions are dropped and
-their weight redistributed proportionally — never imputed.
+Over the dimensions **that have data** for the entry (missing dimensions are dropped and their
+weight redistributed proportionally — never imputed), the composite is a **weighted power mean**
+
+`composite = ( Σ wᵢ · sᵢ^p )^(1/p)` with weights `wᵢ` renormalized to sum to 1.
+
+`p` is the **penalty for weak spots**, selectable in the weight panel:
+
+| Setting | p | Effect |
+|---|---|---|
+| None | 1 | plain weighted average — strengths fully compensate weaknesses |
+| **Moderate (default)** | 0.5 | a 0 in one of four equally weighted dimensions costs ~44 % of the score instead of 25 % |
+| Strong | 0 (geometric mean) | weaknesses compound multiplicatively |
+| Severe | −1 (harmonic mean) | the composite stays close to the weakest dimension |
+
+A balanced profile (all dimensions equal) is never penalized; an uneven one is. This implements
+"punish flaws more" without any arbitrary cut-offs: one very weak dimension pulls the total down
+more than an equally strong one lifts it. Scores are floored at 1 for p ≤ 0 so a single 0 does not
+zero everything. Each entry page shows the plain weighted average, the penalty in points, and the
+final score.
 
 **Coverage** = share of the total weight backed by data. Below **60 %** the entry is flagged
 *insufficient data* and shown without a rank. The breakdown table on each entry page shows nominal
@@ -262,7 +339,7 @@ judgment calls documented here; they express *relative* trust, not a statistical
 For every dimension with positive weight, the weight is multiplied by 0.8 and by 1.2 (others
 unchanged, then renormalized) and the pool is re-ranked. The largest absolute rank change across
 these 2·k scenarios is reported per entry and per dimension. An entry is **fragile** if this change is
-**≥ 3 places or ≥ 2 % of its pool**, whichever is larger (6 places among ~300 occupations). Fragile rankings mean "small changes in what you care about would reorder this part of
+**≥ 3 places or ≥ 5 % of its pool**, whichever is larger (23 places among ~460 occupations). Many entries share identical group statistics, so small shuffles among them are not meaningful. Fragile rankings mean "small changes in what you care about would reorder this part of
 the list" — treat neighbouring entries as ties.
 
 ## 8. Correlated dimensions

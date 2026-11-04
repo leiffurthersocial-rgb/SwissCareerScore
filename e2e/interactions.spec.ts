@@ -71,3 +71,13 @@ test.describe("weights, filters, URL state", () => {
     expect(Number(pct)).toBeGreaterThan(15);
   });
 });
+
+test("scoring model controls: scale and flaw penalty are encoded and shown in the breakdown", async ({ page }) => {
+  await page.goto("/en");
+  await page.getByRole("combobox", { name: "Scale" }).selectOption("relative");
+  await expect(page).toHaveURL(/sm=rel/);
+  await page.getByRole("combobox", { name: "Penalty for weak spots" }).selectOption("severe");
+  await expect(page).toHaveURL(/fp=severe/);
+  await page.goto("/en/entity/occ-koch?fp=severe");
+  await expect(page.getByRole("rowheader", { name: "Penalty for weak spots" })).toBeVisible();
+});

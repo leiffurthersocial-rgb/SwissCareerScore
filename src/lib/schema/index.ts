@@ -69,6 +69,9 @@ export const EntityKind = z.enum(ENTITY_KINDS);
 export type EntityKind = z.infer<typeof EntityKind>;
 
 export const EDU_TYPES = [
+  "NONE",
+  "GYM",
+  "FMS",
   "EBA",
   "EFZ",
   "BM",
@@ -81,6 +84,7 @@ export const EDU_TYPES = [
   "UH-MSc",
   "ETH-MSc",
   "UH-MMed",
+  "DR",
 ] as const;
 export const EduType = z.enum(EDU_TYPES);
 export type EduType = z.infer<typeof EduType>;
@@ -120,7 +124,7 @@ export const EntityFile = z
         /** BESTA economic-division code used for recruitment difficulty, e.g. "86-88". */
         besta: z.string().optional(),
         /** Qualification level of the job / path for BESTA recruitment difficulty. */
-        qualLevel: z.enum(["apprenticeship", "higherVet", "higherEducation"]).optional(),
+        qualLevel: z.enum(["compulsory", "apprenticeship", "higherVet", "higherEducation"]).optional(),
         /** NOGA section letter(s) for SAKE tables by economic section (telework, hours). */
         nogaSection: z.string().regex(/^([A-U]|\*)$/).optional(), // "*" = whole economy
         /** Exact occupation name in BFS LABB certification table (VET only). */
@@ -129,6 +133,13 @@ export const EntityFile = z
         studyField: z.string().optional(),
         /** BFS graduate-survey income field: "uh:Master:<field>" / "fh:Bachelor:<field>". */
         gradIncome: z.string().optional(),
+        /** BFS graduate-survey ILO unemployment field: "uh:<ISCED field>" (UH master) / "fh:<ISCED field>" (FH bachelor). */
+        gradField: z.string().optional(),
+        /** SECO unemployment by education level, for paths without a target occupation. */
+        eduLevel: z.enum(["Sekundarstufe I", "Sekundarstufe II", "Tertiärstufe"]).optional(),
+        /** Direct entry into work after compulsory school (time to qualify = 0). */
+        directEntry: z.boolean().optional(),
+        /** BFS graduate income level override, e.g. "uh:Doktorat:<field>". Uses gradIncome otherwise. */
         /** LSE education category code (PXWeb px-x-0304010000_202) for paths without a target occupation. */
         lseEducation: z.string().optional(),
       })

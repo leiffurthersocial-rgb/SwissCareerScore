@@ -21,7 +21,7 @@ export function Explorer() {
   const locale = useLocale();
   const app = useAppState();
   const { state } = app;
-  const results = useScores(state.weights);
+  const results = useScores(state);
   const [panelOpen, setPanelOpen] = useState(false);
   const [limit, setLimit] = useState<Record<string, number>>({ occupation: PAGE, education: PAGE });
 
@@ -51,7 +51,7 @@ export function Explorer() {
           </Button>
         </div>
         <div id="weight-panel" className={panelOpen ? "mt-4 block" : "hidden lg:block"}>
-          <WeightPanel state={state} applyPreset={app.applyPreset} setWeight={app.setWeight} setWeights={app.setWeights} toggleLock={app.toggleLock} />
+          <WeightPanel state={state} applyPreset={app.applyPreset} setWeight={app.setWeight} setWeights={app.setWeights} toggleLock={app.toggleLock} setScoring={app.setScoring} />
         </div>
       </aside>
 

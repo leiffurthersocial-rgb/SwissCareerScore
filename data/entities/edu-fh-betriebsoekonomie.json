@@ -18,7 +18,8 @@
     "gradIncome": "fh:Bachelor:Wirtschaft und Dienstleistungen",
     "qualLevel": "higherEducation",
     "besta": "68-75",
-    "nogaSection": "M"
+    "nogaSection": "M",
+    "gradField": "fh:Wirtschaft und Verwaltung"
   },
   "pathway": [
     {

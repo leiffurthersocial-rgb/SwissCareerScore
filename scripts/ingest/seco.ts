@@ -74,11 +74,21 @@ async function ingestMajorGroups() {
     .sort((a, b) => a.month.localeCompare(b.month));
   if (!files.length) throw new Error("no monthly reports found in window");
   const perMonth: Record<string, Record<string, number>> = {};
+  const eduPerMonth: Record<string, Record<string, number>> = {};
   const labels: Record<string, string> = {};
   for (const f of files) {
     const lines = await pdfLines(await fetchRaw(f.url, `seco/lage-${f.month}.pdf`));
     const start = lines.findIndex((l) => /Tabelle\s*14/.test(l.text.replace(/\s/g, "")) || /^Tabelle14/.test(l.text.replace(/\s/g, "")));
     if (start < 0) throw new Error(`table 14 not found in ${f.month}`);
+    const t5 = lines.findIndex((l) => /^Tabelle\s*5:/.test(l.text) && l.page > 3);
+    const edu: Record<string, number> = {};
+    for (const l of lines.slice(t5 + 1, t5 + 40)) {
+      if (/^Quelle/.test(l.text)) break;
+      const m = l.text.match(/^(Sekundarstufe I|Sekundarstufe II|Tertiärstufe)\s+(\d+,\d)\s/);
+      if (m) edu[m[1]] = parseNum(m[2])!;
+    }
+    if (Object.keys(edu).length !== 3) throw new Error(`table 5 education rows missing in ${f.month}`);
+    eduPerMonth[f.month] = edu;
     const rates: Record<string, number> = {};
     for (const l of lines.slice(start + 1, start + 30)) {
       if (/^Quelle/.test(l.text)) break;
@@ -98,7 +108,10 @@ async function ingestMajorGroups() {
     avg[code] = { label: labels[code], rate: round(vals.reduce((s, v) => s + v, 0) / vals.length, 2), months: vals.length };
   }
   console.log(`  averaged major-group rates over ${months.length} monthly reports (${months[0]}…${months.at(-1)})`);
-  return { sourceUrl: STATS_PAGE, window: WINDOW, monthsUsed: months, perMonth, average: avg };
+  const byEducation: Record<string, number> = {};
+  for (const k of ["Sekundarstufe I", "Sekundarstufe II", "Tertiärstufe"])
+    byEducation[k] = round(months.reduce((s, m) => s + eduPerMonth[m][k], 0) / months.length, 2);
+  return { sourceUrl: STATS_PAGE, window: WINDOW, monthsUsed: months, perMonth, average: avg, byEducation };
 }
 
 /**

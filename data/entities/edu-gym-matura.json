@@ -1,0 +1,72 @@
+{
+  "id": "edu-gym-matura",
+  "kind": "education",
+  "route": "academic",
+  "eduType": "GYM",
+  "name": {
+    "en": "Gymnasiale Matura (entering work with Matura only)",
+    "de": "Gymnasiale Maturität (Berufseinstieg nur mit Matura)",
+    "fr": "Maturité gymnasiale (entrée dans la vie active avec la maturité)",
+    "it": "Maturità liceale (ingresso nel lavoro con la sola maturità)"
+  },
+  "codes": {},
+  "sector": "Whole economy",
+  "refs": {
+    "lseEducation": "5",
+    "eduLevel": "Sekundarstufe II",
+    "nogaSection": "*"
+  },
+  "pathway": [
+    {
+      "label": "Gymnasiale Maturität",
+      "years": 4,
+      "sourceUrl": "https://www.berufsberatung.ch/de/bildungssystem/d/gymnasiale-maturitaetsschulen",
+      "confidence": "estimated",
+      "note": "berufsberatung.ch states 3–6 years depending on canton (partly overlapping compulsory school); 4 years after compulsory school assumed."
+    }
+  ],
+  "leadsTo": [],
+  "trainedVia": [],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "entryAccess": {
+      "value": 1,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://www.berufsberatung.ch/de/bildungssystem/d/gymnasiale-maturitaetsschulen",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "Admission by school grades or entrance exam, depending on canton."
+    },
+    "mobility": {
+      "value": 3,
+      "unit": "rubric 0–9",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#11-international-mobility",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "General school-leaving certificate; widely recognised for study access, not as a vocational qualification."
+    },
+    "regionalUbiquity": {
+      "value": 6,
+      "unit": "rubric 0–6",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#12-regional-availability",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "Offered in every canton."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion-2",
+    "reviewed": "2026-11-04",
+    "notes": "Mainly a gateway to university; scored here as a terminal qualification for comparison. LSE pools Gymnasiale and Berufsmaturität."
+  }
+}

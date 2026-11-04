@@ -1,0 +1,75 @@
+{
+  "id": "edu-dr-exakte",
+  "kind": "education",
+  "route": "academic",
+  "eduType": "DR",
+  "name": {
+    "en": "Doctorate (PhD) – Natural sciences and mathematics",
+    "de": "Doktorat – Exakte und Naturwissenschaften",
+    "fr": null,
+    "it": null
+  },
+  "codes": {
+    "isco08": "2310"
+  },
+  "sector": "Research / higher education",
+  "refs": {
+    "qualLevel": "higherEducation",
+    "gradIncome": "uh:Doktorat:Exakte und Naturwissenschaften",
+    "besta": "85",
+    "nogaSection": "P"
+  },
+  "pathway": [
+    {
+      "label": "Gymnasiale Maturität",
+      "years": 4,
+      "sourceUrl": "https://www.berufsberatung.ch/de/bildungssystem/d/gymnasiale-maturitaetsschulen",
+      "confidence": "estimated",
+      "note": "berufsberatung.ch states 3–6 years depending on canton (partly overlapping compulsory school); 4 years after compulsory school assumed."
+    },
+    {
+      "label": "Bachelor Biologie",
+      "years": 3,
+      "sourceUrl": "https://www.berufsberatung.ch/de/studienrichtungen/biologie",
+      "confidence": "measured"
+    },
+    {
+      "label": "Master Biologie",
+      "years": 2,
+      "sourceUrl": "https://www.berufsberatung.ch/de/studienrichtungen/biologie",
+      "confidence": "measured"
+    },
+    {
+      "label": "Doctorate (Exakte und Naturwissenschaften)",
+      "years": 4.09,
+      "sourceUrl": "https://www.bfs.admin.ch/asset/de/5566823",
+      "confidence": "measured",
+      "note": "Mean observed duration (BFS, entry cohorts up to 2016) — doctorates have no fixed standard length."
+    }
+  ],
+  "leadsTo": [
+    "occ-hochschullehrer-in-forscher-in"
+  ],
+  "trainedVia": [],
+  "languageRegions": [
+    "de",
+    "fr"
+  ],
+  "raw": {
+    "entryAccess": {
+      "value": 2,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://github.com/leiffurthersocial-rgb/SwissCareerScore/blob/main/docs/methodology.md#6-entry-competition",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "Requires a master's degree and a funded doctoral position or supervisor (competitive)."
+    }
+  },
+  "meta": {
+    "addedBy": "generated-expansion-2",
+    "reviewed": "2026-11-04",
+    "notes": "Pay from the BFS graduate survey for doctorates in this field (1 and 5 years after). Other outcomes are inherited from 'university teacher/researcher' (estimate). No completion statistic for doctorates (missing)."
+  }
+}

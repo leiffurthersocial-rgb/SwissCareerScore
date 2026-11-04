@@ -16,7 +16,8 @@
   "refs": {
     "qualLevel": "higherEducation",
     "besta": "86-88",
-    "nogaSection": "Q"
+    "nogaSection": "Q",
+    "gradField": "fh:Gesundheit"
   },
   "pathway": [
     {

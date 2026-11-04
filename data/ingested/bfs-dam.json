@@ -1,6 +1,7 @@
 {
   "source": "bfs-dam",
   "assets": {
+    "recruitCompulsory": 36829805,
     "recruitApprentice": 36829817,
     "recruitHigherVet": 36829811,
     "recruitHigherEd": 36829823,
@@ -9,9 +10,114 @@
     "nightWork": 304654,
     "studySuccess": 36077550,
     "vetCertification": 36304956,
-    "gradIncome": 36732664
+    "gradIncome": 36732664,
+    "gradIncome5": 36515424,
+    "studyDuration": 5566823,
+    "gradUnemployment": 36835383
   },
   "recruitment": {
+    "compulsory": {
+      "26": {
+        "label": "Herstellung von Datenverarbeitungsgeräten und Uhren",
+        "difficultyPct": 10.6,
+        "quarters": 4
+      },
+      "28": {
+        "label": "Maschinenbau",
+        "difficultyPct": 20.6,
+        "quarters": 4
+      },
+      "84": {
+        "label": "Öffentliche Verwaltung",
+        "difficultyPct": 11.6,
+        "quarters": 4
+      },
+      "85": {
+        "label": "Erziehung und Unterricht",
+        "difficultyPct": 13.4,
+        "quarters": 4
+      },
+      "5-96": {
+        "label": "Total",
+        "difficultyPct": 17,
+        "quarters": 4
+      },
+      "5-43": {
+        "label": "SEKTOR II",
+        "difficultyPct": 23.3,
+        "quarters": 4
+      },
+      "10-33": {
+        "label": "Verarbeitendes Gewerbe/Herstellung von Waren",
+        "difficultyPct": 20.2,
+        "quarters": 4
+      },
+      "24-25": {
+        "label": "Herstellung von Metallerzeugnissen",
+        "difficultyPct": 27.6,
+        "quarters": 4
+      },
+      "41-43": {
+        "label": "Baugewerbe/Bau",
+        "difficultyPct": 31,
+        "quarters": 4
+      },
+      "45-96": {
+        "label": "SEKTOR III",
+        "difficultyPct": 15.4,
+        "quarters": 4
+      },
+      "45-47": {
+        "label": "Handel, Instandhaltung und Rep. von Kraftfahrzeugen",
+        "difficultyPct": 15.5,
+        "quarters": 4
+      },
+      "49-53": {
+        "label": "Verkehr und Lagerei",
+        "difficultyPct": 9.2,
+        "quarters": 4
+      },
+      "55-56": {
+        "label": "Gastgewerbe/Beherbergung und Gastronomie",
+        "difficultyPct": 21.5,
+        "quarters": 4
+      },
+      "58-63": {
+        "label": "Information und Kommunikation",
+        "difficultyPct": 9.2,
+        "quarters": 4
+      },
+      "62-63": {
+        "label": "Informationstechnologische und Informationsdienstl.",
+        "difficultyPct": 11.6,
+        "quarters": 4
+      },
+      "64-66": {
+        "label": "Erbringung von Finanz- und Versicherungsdienstl.",
+        "difficultyPct": 12.8,
+        "quarters": 4
+      },
+      "68-75": {
+        "label": "Grundstk- u. Wohn.wesen; freiberufl., wiss., techn. Dienstl.",
+        "difficultyPct": 14.7,
+        "quarters": 4
+      },
+      "77-82": {
+        "label": "Erbringung von sonstigen wirtschaftlichen Dienstl.",
+        "difficultyPct": 21.1,
+        "quarters": 4
+      },
+      "86-88": {
+        "label": "Gesundheits- und Sozialwesen",
+        "difficultyPct": 16.6,
+        "quarters": 4
+      },
+      "90-96": {
+        "label": "Kunst, Unterhaltung u. Erholung; sonstige Dienstl.",
+        "difficultyPct": 19.2,
+        "quarters": 4
+      }
+    },
     "apprenticeship": {
       "26": {
         "label": "Herstellung von Datenverarbeitungsgeräten und Uhren",
@@ -1890,6 +1996,725 @@
             "p75": 115900
           }
         }
+      }
+    }
+  },
+  "gradIncome5": {
+    "uh": {
+      "graduationYear": 2020,
+      "surveyYear": 2025,
+      "byLevel": {
+        "Bachelor": {
+          "Total": {
+            "p25": 70000,
+            "median": 87500,
+            "p75": 103100
+          },
+          "Geistes- und Sozialwissenschaften": {
+            "p25": 69300,
+            "median": 85000,
+            "p75": 100000
+          },
+          "Wirtschaftswissenschaften": {
+            "p25": 72000,
+            "median": 98000,
+            "p75": 110000
+          },
+          "Recht": {
+            "p25": 80000,
+            "median": 96000,
+            "p75": 118800
+          },
+          "Exakte und Naturwissenschaften": {
+            "p25": 60000,
+            "median": 85800,
+            "p75": 107900
+          },
+          "Medizin und Pharmazie": {
+            "p25": 78100,
+            "median": 90000,
+            "p75": 100000
+          },
+          "Technische Wissenschaften": {
+            "p25": 68000,
+            "median": 78500,
+            "p75": 90000
+          },
+          "Interdisziplinäre und Andere": {
+            "p25": 65000,
+            "median": 78000,
+            "p75": 100000
+          }
+        },
+        "Master": {
+          "Total": {
+            "p25": 84000,
+            "median": 100000,
+            "p75": 115000
+          },
+          "Geistes- und Sozialwissenschaften": {
+            "p25": 80600,
+            "median": 97300,
+            "p75": 110300
+          },
+          "Wirtschaftswissenschaften": {
+            "p25": 92000,
+            "median": 108300,
+            "p75": 123300
+          },
+          "Recht": {
+            "p25": 97000,
+            "median": 109000,
+            "p75": 120900
+          },
+          "Exakte und Naturwissenschaften": {
+            "p25": 69900,
+            "median": 92500,
+            "p75": 110000
+          },
+          "Medizin und Pharmazie": {
+            "p25": 97500,
+            "median": 105000,
+            "p75": 112200
+          },
+          "Technische Wissenschaften": {
+            "p25": 80600,
+            "median": 95000,
+            "p75": 106300
+          },
+          "Interdisziplinäre und Andere": {
+            "p25": 81900,
+            "median": 96000,
+            "p75": 114000
+          }
+        },
+        "Doktorat": {
+          "Total": {
+            "p25": 84000,
+            "median": 111000,
+            "p75": 133300
+          },
+          "Geistes- und Sozialwissenschaften": {
+            "p25": 66900,
+            "median": 106000,
+            "p75": 130000
+          },
+          "Wirtschaftswissenschaften": {
+            "p25": 101900,
+            "median": 130000,
+            "p75": 156300
+          },
+          "Recht": {
+            "p25": 108000,
+            "median": 130000,
+            "p75": 152300
+          },
+          "Exakte und Naturwissenschaften": {
+            "p25": 72000,
+            "median": 105000,
+            "p75": 120800
+          },
+          "Medizin und Pharmazie": {
+            "p25": 101600,
+            "median": 120000,
+            "p75": 152300
+          },
+          "Technische Wissenschaften": {
+            "p25": 80000,
+            "median": 108800,
+            "p75": 125000
+          }
+        }
+      }
+    },
+    "fh": {
+      "graduationYear": 2020,
+      "surveyYear": 2025,
+      "byLevel": {
+        "Bachelor": {
+          "Total": {
+            "p25": 80000,
+            "median": 91500,
+            "p75": 105000
+          },
+          "Architektur, Bau- und Planungswesen": {
+            "p25": 78000,
+            "median": 87800,
+            "p75": 98800
+          },
+          "Technik und IT": {
+            "p25": 89100,
+            "median": 96800,
+            "p75": 108000
+          },
+          "Chemie und Life Sciences": {
+            "p25": 84000,
+            "median": 93000,
+            "p75": 100000
+          },
+          "Land- und Forstwirtschaft": {
+            "p25": 75000,
+            "median": 87100,
+            "p75": 102000
+          },
+          "Wirtschaft und Dienstleistungen": {
+            "p25": 84500,
+            "median": 99400,
+            "p75": 115000
+          },
+          "Design": {
+            "p25": 50000,
+            "median": 67700,
+            "p75": 82500
+          },
+          "Musik, Theater und andere Künste": {
+            "p25": 50000,
+            "median": 68600,
+            "p75": 91600
+          },
+          "Soziale Arbeit": {
+            "p25": 85000,
+            "median": 92900,
+            "p75": 103200
+          },
+          "Gesundheit": {
+            "p25": 76400,
+            "median": 83000,
+            "p75": 90800
+          }
+        },
+        "Master": {
+          "Total": {
+            "p25": 75600,
+            "median": 100000,
+            "p75": 120000
+          },
+          "Architektur, Bau- und Planungswesen": {
+            "p25": 76800,
+            "median": 94000,
+            "p75": 108900
+          },
+          "Technik und IT": {
+            "p25": 91500,
+            "median": 103000,
+            "p75": 117000
+          },
+          "Chemie und Life Sciences": {
+            "p25": 75000,
+            "median": 95500,
+            "p75": 109900
+          },
+          "Wirtschaft und Dienstleistungen": {
+            "p25": 100000,
+            "median": 115000,
+            "p75": 132000
+          },
+          "Design": {
+            "p25": 69000,
+            "median": 91200,
+            "p75": 102400
+          },
+          "Musik, Theater und andere Künste": {
+            "p25": 40000,
+            "median": 80000,
+            "p75": 105000
+          },
+          "Soziale Arbeit": {
+            "p25": 97200,
+            "median": 113800,
+            "p75": 125000
+          },
+          "Angewandte Psychologie": {
+            "p25": 100000,
+            "median": 109500,
+            "p75": 122200
+          },
+          "Gesundheit": {
+            "p25": 86700,
+            "median": 101300,
+            "p75": 116000
+          }
+        },
+        "Lehrdiplome": {
+          "Total": {
+            "p25": 90200,
+            "median": 105300,
+            "p75": 122000
+          },
+          "Lehrkräfteausbildung": {
+            "p25": 90200,
+            "median": 105300,
+            "p75": 122000
+          }
+        }
+      }
+    }
+  },
+  "gradUnemployment": {
+    "Total": {
+      "Total": {
+        "rate": 4.75,
+        "years": [
+          2024,
+          2022
+        ]
+      },
+      "Pädagogik": {
+        "rate": 3,
+        "years": [
+          2024,
+          2022
+        ]
+      },
+      "Künste": {
+        "rate": 10.1,
+        "years": [
+          2024,
+          2022
+        ]
+      },
+      "Geisteswissenschaften (ohne Sprachen)": {
+        "rate": 4.15,
+        "years": [
+          2024,
+          2022
+        ]
+      },
+      "Sprachen": {
+        "rate": 7.1,
+        "years": [
+          2024,
+          2022
+        ]
+      },
+      "Sozial- und Verhaltenswissenschaften": {
+        "rate": 7.85,
+        "years": [
+          2024,
+          2022
+        ]
+      },
+      "Journalismus und Informationswesen": {
+        "rate": 7.75,
+        "years": [
+          2024,
+          2022
+        ]
+      },
+      "Wirtschaft und Verwaltung": {
+        "rate": 5.3,
+        "years": [
+          2024,
+          2022
+        ]
+      },
+      "Recht": {
+        "rate": 4.35,
+        "years": [
+          2024,
+          2022
+        ]
+      },
+      "Biologie und verwandte Wissenschaften": {
+        "rate": 6.35,
+        "years": [
+          2024,
+          2022
+        ]
+      },
+      "Umwelt": {
+        "rate": 5.9,
+        "years": [
+          2024,
+          2022
+        ]
+      },
+      "Exakte Naturwissenschaften": {
+        "rate": 7.05,
+        "years": [
+          2024,
+          2022
+        ]
+      },
+      "Mathematik und Statistik": {
+        "rate": 3.6,
+        "years": [
+          2024,
+          2022
+        ]
+      },
+      "Informations- und Kommunikationstechnologie": {
+        "rate": 3.55,
+        "years": [
+          2024,
+          2022
+        ]
+      },
+      "Ingenieurwesen und Technische Berufe": {
+        "rate": 4.45,
+        "years": [
+          2024,
+          2022
+        ]
+      },
+      "Verarbeitendes Gewerbe und Bergbau": {
+        "rate": 4.6,
+        "years": [
+          2024,
+          2022
+        ]
+      },
+      "Architektur und Baugewerbe": {
+        "rate": 2.4,
+        "years": [
+          2024,
+          2022
+        ]
+      },
+      "Landwirtschaft": {
+        "rate": 2.75,
+        "years": [
+          2024,
+          2022
+        ]
+      },
+      "Tiermedizin": {
+        "rate": 0.8,
+        "years": [
+          2024,
+          2022
+        ]
+      },
+      "Gesundheit": {
+        "rate": 1.4,
+        "years": [
+          2024,
+          2022
+        ]
+      },
+      "Sozialwesen": {
+        "rate": 1.7,
+        "years": [
+          2024,
+          2022
+        ]
+      },
+      "Persönliche Dienstleistungen": {
+        "rate": 8.05,
+        "years": [
+          2024,
+          2022
+        ]
+      },
+      "Feld unbekannt": {
+        "rate": 11.6,
+        "years": [
+          2024,
+          2022
+        ]
+      }
+    },
+    "UH Master": {
+      "Total": {
+        "rate": 5.15,
+        "years": [
+          2024,
+          2022
+        ]
+      },
+      "Pädagogik": {
+        "rate": 2.7,
+        "years": [
+          2024,
+          2022
+        ]
+      },
+      "Künste": {
+        "rate": 13.3,
+        "years": [
+          2024,
+          2022
+        ]
+      },
+      "Geisteswissenschaften (ohne Sprachen)": {
+        "rate": 4.15,
+        "years": [
+          2024,
+          2022
+        ]
+      },
+      "Sprachen": {
+        "rate": 6.85,
+        "years": [
+          2024,
+          2022
+        ]
+      },
+      "Sozial- und Verhaltenswissenschaften": {
+        "rate": 7.85,
+        "years": [
+          2024,
+          2022
+        ]
+      },
+      "Journalismus und Informationswesen": {
+        "rate": 9.7,
+        "years": [
+          2024,
+          2022
+        ]
+      },
+      "Wirtschaft und Verwaltung": {
+        "rate": 5.75,
+        "years": [
+          2024,
+          2022
+        ]
+      },
+      "Recht": {
+        "rate": 4.45,
+        "years": [
+          2024,
+          2022
+        ]
+      },
+      "Biologie und verwandte Wissenschaften": {
+        "rate": 7,
+        "years": [
+          2024,
+          2022
+        ]
+      },
+      "Umwelt": {
+        "rate": 5.15,
+        "years": [
+          2024,
+          2022
+        ]
+      },
+      "Exakte Naturwissenschaften": {
+        "rate": 6.8,
+        "years": [
+          2024,
+          2022
+        ]
+      },
+      "Mathematik und Statistik": {
+        "rate": 3.6,
+        "years": [
+          2024,
+          2022
+        ]
+      },
+      "Informations- und Kommunikationstechnologie": {
+        "rate": 4.15,
+        "years": [
+          2024,
+          2022
+        ]
+      },
+      "Ingenieurwesen und Technische Berufe": {
+        "rate": 3.65,
+        "years": [
+          2024,
+          2022
+        ]
+      },
+      "Verarbeitendes Gewerbe und Bergbau": {
+        "rate": 4.05,
+        "years": [
+          2024,
+          2022
+        ]
+      },
+      "Architektur und Baugewerbe": {
+        "rate": 3,
+        "years": [
+          2024,
+          2022
+        ]
+      },
+      "Landwirtschaft": {
+        "rate": 3.55,
+        "years": [
+          2024,
+          2022
+        ]
+      },
+      "Tiermedizin": {
+        "rate": 0.8,
+        "years": [
+          2024,
+          2022
+        ]
+      },
+      "Gesundheit": {
+        "rate": 1.5,
+        "years": [
+          2024,
+          2022
+        ]
+      },
+      "Feld unbekannt": {
+        "rate": 11.6,
+        "years": [
+          2024,
+          2022
+        ]
+      }
+    },
+    "FH Bachelor": {
+      "Total": {
+        "rate": 4.15,
+        "years": [
+          2024,
+          2022
+        ]
+      },
+      "Pädagogik": {
+        "rate": 6.1,
+        "years": [
+          2024,
+          2022
+        ]
+      },
+      "Künste": {
+        "rate": 9.7,
+        "years": [
+          2024,
+          2022
+        ]
+      },
+      "Sprachen": {
+        "rate": 7.6,
+        "years": [
+          2024,
+          2022
+        ]
+      },
+      "Journalismus und Informationswesen": {
+        "rate": 5.25,
+        "years": [
+          2024,
+          2022
+        ]
+      },
+      "Wirtschaft und Verwaltung": {
+        "rate": 4.85,
+        "years": [
+          2024,
+          2022
+        ]
+      },
+      "Recht": {
+        "rate": 4,
+        "years": [
+          2024,
+          2022
+        ]
+      },
+      "Biologie und verwandte Wissenschaften": {
+        "rate": 4.55,
+        "years": [
+          2024,
+          2022
+        ]
+      },
+      "Umwelt": {
+        "rate": 8.15,
+        "years": [
+          2024,
+          2022
+        ]
+      },
+      "Informations- und Kommunikationstechnologie": {
+        "rate": 2.95,
+        "years": [
+          2024,
+          2022
+        ]
+      },
+      "Ingenieurwesen und Technische Berufe": {
+        "rate": 5.35,
+        "years": [
+          2024,
+          2022
+        ]
+      },
+      "Architektur und Baugewerbe": {
+        "rate": 1.75,
+        "years": [
+          2024,
+          2022
+        ]
+      },
+      "Landwirtschaft": {
+        "rate": 2.15,
+        "years": [
+          2024,
+          2022
+        ]
+      },
+      "Gesundheit": {
+        "rate": 1.3,
+        "years": [
+          2024,
+          2022
+        ]
+      },
+      "Sozialwesen": {
+        "rate": 1.65,
+        "years": [
+          2024,
+          2022
+        ]
+      },
+      "Persönliche Dienstleistungen": {
+        "rate": 8.05,
+        "years": [
+          2024,
+          2022
+        ]
+      }
+    }
+  },
+  "studyDuration": {
+    "year": 2016,
+    "byField": {
+      "Total": {
+        "bachelor": 3.94,
+        "master": 2.19,
+        "doctorate": 4.27
+      },
+      "Geistes- und Sozialwissenschaften": {
+        "bachelor": 3.98,
+        "master": 2.66,
+        "doctorate": 4.66
+      },
+      "Wirtschaftswissenschaften": {
+        "bachelor": 3.9,
+        "master": 2.44,
+        "doctorate": 4.74
+      },
+      "Recht": {
+        "bachelor": 3.7,
+        "master": 1.86,
+        "doctorate": 3.95
+      },
+      "Exakte und Naturwissenschaften": {
+        "bachelor": 3.97,
+        "master": 2.09,
+        "doctorate": 4.09
+      },
+      "Technische Wissenschaften": {
+        "bachelor": 4.08,
+        "master": 2.25,
+        "doctorate": 4.19
+      },
+      "Interdisziplinäre und andere": {
+        "bachelor": 3.96,
+        "master": 2.23,
+        "doctorate": 4.2
       }
     }
   }

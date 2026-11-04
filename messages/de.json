@@ -37,7 +37,7 @@
   "dims": {
     "pay": {
       "name": "Lohn",
-      "desc": "Medianer Bruttomonatslohn, gewichtet 35 % Einstieg und 65 % mittlere Karriere."
+      "desc": "Bruttomonatslohn: 30 % Einstieg, 50 % mittlere Karriere, 20 % Verdienstpotenzial (oberstes Dezil)."
     },
     "stability": {
       "name": "Arbeitsplatzsicherheit",
@@ -109,7 +109,25 @@
     "wizard": "Hilfe beim Gewichten (Paarvergleich)",
     "showMeaning": "Deaktivierte Dimension anzeigen",
     "overlap": "{a} und {b} hängen eng zusammen (ρ = {rho}). Wer beide gewichtet, zählt ein ähnliches Signal doppelt.",
-    "noData": "noch keine Daten"
+    "noData": "noch keine Daten",
+    "model": "Bewertungsmodell",
+    "modeLabel": "Skala",
+    "mode": {
+      "absolute": "Absolute Wertskalen (empfohlen)",
+      "relative": "Relativ zu anderen Einträgen (Perzentile)"
+    },
+    "modeHelp": {
+      "absolute": "Jede Dimension wird auf einer festen, dokumentierten Skala bewertet – die Grösse zählt: Lohn auf logarithmischer Kurve, CHF 300'000 pro Jahr = 100.",
+      "relative": "Jede Dimension wird gegen alle anderen Berufe (bzw. Wege) gerankt: bester = 100, schlechtester = 0. Grössenunterschiede gehen verloren."
+    },
+    "flawLabel": "Abzug für Schwachstellen",
+    "flaw": {
+      "none": "Keiner (gewichteter Durchschnitt)",
+      "moderate": "Mittel",
+      "strong": "Stark (geometrisches Mittel)",
+      "severe": "Sehr stark (harmonisches Mittel)"
+    },
+    "flawHelp": "Mit Abzug zieht eine sehr schwache Dimension den Gesamtwert stärker hinunter, als eine gleich starke ihn anhebt."
   },
   "filters": {
     "title": "Filter",
@@ -185,7 +203,11 @@
     "regions": "Sprachregionen",
     "notFound": "Eintrag nicht gefunden.",
     "formula": "Formel",
-    "estimate": "Schätzung"
+    "estimate": "Schätzung",
+    "linearSum": "Gewichteter Durchschnitt",
+    "flawPenalty": "Abzug für Schwachstellen",
+    "scaleAbsolute": "Dimensionswerte auf absoluten Wertskalen (siehe Methodik).",
+    "scaleRelative": "Dimensionswerte sind Perzentilränge innerhalb der Gruppe."
   },
   "inputs": {
     "payEntry": "Einstiegslohn (Median)",
@@ -205,7 +227,8 @@
     "mobility": "Internationale Mobilität (0–9)",
     "regionalUbiquity": "Räumliche Verbreitung (0–3)",
     "trainingRegions": "Sprachregionen mit Angebot",
-    "apprenticeWage": "Lehrlingslohn, letztes Lehrjahr"
+    "apprenticeWage": "Lehrlingslohn, letztes Lehrjahr",
+    "payP90": "Lohn P90 (oberste 10 % verdienen mehr)"
   },
   "source": {
     "title": "Quelle",
