@@ -48,6 +48,9 @@ export function weightsEqual(a: Record<DimensionId, number>, b: Record<Dimension
   return DIMENSION_IDS.every((id) => Math.abs((a[id] ?? 0) - (b[id] ?? 0)) < 0.05);
 }
 
+/** Query keys owned by the app state (other keys, e.g. page-specific filters, are left alone). */
+export const STATE_KEYS = ["p", "w", "l", "k", "r", "e", "y", "lang", "min", "q", "c", "sm", "fp"] as const;
+
 export function encodeState(s: AppState): URLSearchParams {
   const p = new URLSearchParams();
   const presetWeights = s.preset !== "custom" ? toPercentages(PRESETS[s.preset]) : null;

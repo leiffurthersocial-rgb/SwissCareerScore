@@ -1,4 +1,10 @@
-import { expect, test } from "@playwright/test";
+import { expect, test, type Page } from "@playwright/test";
+
+/** On small screens the after-Matura filter column is collapsed behind a button. */
+async function openMaturaFilters(page: Page) {
+  const toggle = page.getByRole("button", { name: /^Filters/ });
+  if (await toggle.isVisible()) await toggle.click();
+}
 
 test("home loads with hero, top picks and a ranked list", async ({ page }) => {
   await page.goto("/en");
@@ -45,6 +51,7 @@ test("after the Matura: catalogue with institutions, filters and blended numbers
   await page.goto("/en/after-matura");
   await expect(page.getByRole("heading", { level: 1 })).toContainText("Every study path in Switzerland");
   await expect(page.getByText(/128 programmes/)).toBeVisible();
+  await openMaturaFilters(page);
   await page.getByRole("combobox", { name: "Institution" }).selectOption("EPFL");
   await expect(page.getByRole("link", { name: "Microengineering" })).toBeVisible();
   await expect(page.getByRole("link", { name: "Human medicine" })).toHaveCount(0);
@@ -57,6 +64,7 @@ test("after the Matura: catalogue with institutions, filters and blended numbers
 
 test("after the Matura: institutions are differentiated within a programme", async ({ page }) => {
   await page.goto("/en/after-matura");
+  await openMaturaFilters(page);
   await page.getByRole("combobox", { name: "Institution" }).selectOption("UNISG");
   const card = page.locator("li", { has: page.getByRole("link", { name: "Business administration (university)" }) });
   await expect(card.getByText(/^At HSG/)).toBeVisible();
@@ -64,4 +72,27 @@ test("after the Matura: institutions are differentiated within a programme", asy
   const rows = card.locator("tbody tr");
   await expect(rows.first()).toContainText("HSG");
   await expect(rows.first()).toContainText("reputation premium +12 %");
+});
+
+test("after the Matura: filters combine, persist in the URL and survive weight changes", async ({ page }) => {
+  await page.goto("/en/after-matura");
+  await openMaturaFilters(page);
+  await page.getByRole("button", { name: "Ticino", exact: true }).click();
+  await expect(page).toHaveURL(/mr=ticino/);
+  await expect(page.getByRole("link", { name: "Microengineering" })).toHaveCount(0);
+  await expect(page.getByRole("link", { name: "Computer science (university)" })).toBeVisible();
+  await page.getByRole("combobox", { name: "Min. pay after 5 years" }).selectOption("8000");
+  await expect(page).toHaveURL(/mp=8000/);
+  await expect(page.getByRole("link", { name: "Fine arts" })).toHaveCount(0);
+  // weights live on the same page and must not wipe the filters from the URL
+  await page.getByText("Adjust your weights").click();
+  await page.getByRole("button", { name: /^Money first/ }).first().click();
+  await expect(page).toHaveURL(/p=money/);
+  await expect(page).toHaveURL(/mr=ticino/);
+  await page.reload();
+  await openMaturaFilters(page);
+  await expect(page.getByRole("button", { name: "Ticino", exact: true })).toHaveAttribute("aria-pressed", "true");
+  await expect(page.getByRole("link", { name: "Computer science (university)" })).toBeVisible();
+  await page.getByRole("button", { name: "Clear all filters" }).first().click();
+  await expect(page.getByText(/128 programmes/)).toBeVisible();
 });

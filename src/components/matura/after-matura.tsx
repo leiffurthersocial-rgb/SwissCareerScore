@@ -5,13 +5,17 @@ import {
   GraduationCap,
   Landmark,
   School,
+  SlidersHorizontal,
   Star,
   Stethoscope,
+  X,
 } from "lucide-react";
 import { useLocale, useTranslations } from "next-intl";
-import { useMemo, useState } from "react";
+import { useState } from "react";
 import { ScoreBadge } from "@/components/score-badge";
+import { WeightPanel } from "@/components/explorer/weight-panel";
 import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
 import { useAppState, useScores } from "@/hooks/use-app-state";
 import { Link } from "@/i18n/navigation";
 import { displayName, getEntity } from "@/lib/dataset";
@@ -19,85 +23,36 @@ import type { Blended, CoreEntity, Programme } from "@/lib/dataset-types";
 import { formatNumber } from "@/lib/format";
 import { catalogue, INSTITUTION_TYPES } from "@/lib/programmes";
 import { cn } from "@/lib/utils";
+import { ActiveFilters, MaturaFilterPanel } from "./filter-panel";
+import {
+  activeCount,
+  institutionFilterActive,
+  useFilteredProgrammes,
+  useMaturaFilters,
+} from "./use-matura-filters";
 
-type Sort = "field" | "score" | "payMid" | "payEntry" | "unemployment" | "nonCompletion" | "years";
-const SORTS: Sort[] = [
-  "field",
-  "score",
-  "payMid",
-  "payEntry",
-  "unemployment",
-  "nonCompletion",
-  "years",
-];
-const field = "w-full rounded-md border border-border bg-card px-2 py-1.5 text-sm";
 const { programmes, institutions, groups } = catalogue;
-const GROUP_IDS = Object.keys(groups);
-
-function normalize(s: string) {
-  return s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "");
-}
 
 export function AfterMatura() {
+  const app = useAppState();
   const t = useTranslations("matura");
   const locale = useLocale();
-  const { state, queryString } = useAppState();
-  const results = useScores(state);
-  const qs = queryString ? `?${queryString}` : "";
+  const results = useScores(app.state);
+  const qs = app.queryString ? `?${app.queryString}` : "";
   const lang = locale === "de" ? "de" : "en";
 
-  const [q, setQ] = useState("");
-  const [group, setGroup] = useState("");
-  const [inst, setInst] = useState("");
-  const [types, setTypes] = useState<string[]>([]);
-  const [admission, setAdmission] = useState("");
-  const [sort, setSort] = useState<Sort>("field");
-  const [hideMaster, setHideMaster] = useState(false);
-
+  const { f, update, toggle, reset } = useMaturaFilters();
+  const [panelOpen, setPanelOpen] = useState(false);
   const score = (p: Programme) => results.get(p.entity)?.composite ?? null;
-  const rows = useMemo(() => {
-    const n = normalize(q.trim());
-    const list = programmes.filter(
-      (p) =>
-        (!n ||
-          normalize(
-            `${p.name.en} ${p.name.de} ${p.institutions.map((i) => institutions[i].name).join(" ")}`,
-          ).includes(n)) &&
-        (!group || p.group === group) &&
-        (!inst || p.institutions.includes(inst)) &&
-        (!types.length || types.includes(p.type)) &&
-        (!admission || p.admission === admission) &&
-        (!hideMaster || !p.masterOnly),
-    );
-    const key: Record<Sort, (p: Programme) => number> = {
-      field: (p) => GROUP_IDS.indexOf(p.group) * 1000 + (p.masterOnly ? 500 : 0) - (score(p) ?? 0),
-      score: (p) => -(score(p) ?? -1),
-      payMid: (p) =>
-        -(
-          (inst ? p.offers.find((o) => o.institution === inst)?.payMid : null) ??
-          p.payMid.value ??
-          0
-        ),
-      payEntry: (p) =>
-        -(
-          (inst ? p.offers.find((o) => o.institution === inst)?.payEntry : null) ??
-          p.payEntry.value ??
-          0
-        ),
-      unemployment: (p) => p.unemployment.value ?? 99,
-      nonCompletion: (p) => p.nonCompletion.value ?? 99,
-      years: (p) => p.years,
-    };
-    return [...list].sort((a, b) => key[sort](a) - key[sort](b));
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [q, group, inst, types, admission, sort, hideMaster, results]);
-
+  const rows = useFilteredProgrammes(f, score, results);
+  const instActive = institutionFilterActive(f);
   const sections =
-    sort === "field"
-      ? GROUP_IDS.map((g) => ({ g, items: rows.filter((p) => p.group === g) })).filter(
-          (s) => s.items.length,
-        )
+    f.sort === "field"
+      ? Object.keys(groups)
+          .map((g) => ({ g, items: rows.filter((r) => r.p.group === g) }))
+          .filter((x) => x.items.length)
       : [{ g: "", items: rows }];
+  const n = activeCount(f);
   const progCount = (code: string) =>
     programmes.filter((p) => p.institutions.includes(code)).length;
 
@@ -144,147 +99,97 @@ export function AfterMatura() {
         </p>
       </section>
 
-      <section aria-labelledby="list-h" className="space-y-4">
+      <section aria-labelledby="list-h" className="scroll-mt-24 space-y-4">
         <div>
           <h2 id="list-h" className="text-xl font-semibold">
             {t("listTitle")}
           </h2>
           <p className="text-muted-foreground text-sm">{t("listHelp")}</p>
         </div>
-        <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6">
-          <label className="col-span-2 text-xs font-medium sm:col-span-3 lg:col-span-2">
-            {t("search")}
-            <input
-              type="search"
-              className={field}
-              value={q}
-              onChange={(e) => setQ(e.target.value)}
-              placeholder={t("searchPlaceholder")}
-            />
-          </label>
-          <label className="text-xs font-medium">
-            {t("field")}
-            <select className={field} value={group} onChange={(e) => setGroup(e.target.value)}>
-              <option value="">{t("all")}</option>
-              {GROUP_IDS.map((g) => (
-                <option key={g} value={g}>
-                  {groups[g][lang]}
-                </option>
-              ))}
-            </select>
-          </label>
-          <label className="text-xs font-medium">
-            {t("institution")}
-            <select className={field} value={inst} onChange={(e) => setInst(e.target.value)}>
-              <option value="">{t("all")}</option>
-              {INSTITUTION_TYPES.map((ty) => (
-                <optgroup key={ty} label={t(`types.${ty}`)}>
-                  {Object.entries(institutions)
-                    .filter(([, i]) => i.type === ty)
-                    .map(([code, i]) => (
-                      <option key={code} value={code}>
-                        {i.short} — {i.city}
-                      </option>
-                    ))}
-                </optgroup>
-              ))}
-            </select>
-          </label>
-          <label className="text-xs font-medium">
-            {t("admission")}
-            <select
-              className={field}
-              value={admission}
-              onChange={(e) => setAdmission(e.target.value)}
-            >
-              <option value="">{t("all")}</option>
-              {(["open", "ems", "selection", "work"] as const).map((a) => (
-                <option key={a} value={a}>
-                  {t(`adm.${a}`)}
-                </option>
-              ))}
-            </select>
-          </label>
-          <label className="text-xs font-medium">
-            {t("sort")}
-            <select
-              className={field}
-              value={sort}
-              onChange={(e) => setSort(e.target.value as Sort)}
-            >
-              {SORTS.map((s) => (
-                <option key={s} value={s}>
-                  {t(`sorts.${s}`)}
-                </option>
-              ))}
-            </select>
-          </label>
-        </div>
-        <div className="flex flex-wrap items-center gap-2">
-          <div className="flex flex-wrap gap-1.5" role="group" aria-label={t("typeFilter")}>
-            {INSTITUTION_TYPES.map((ty) => {
-              const on = types.includes(ty);
-              return (
-                <button
-                  key={ty}
-                  type="button"
-                  aria-pressed={on}
-                  onClick={() => setTypes(on ? types.filter((x) => x !== ty) : [...types, ty])}
-                  className={cn(
-                    "rounded-full border px-3 py-1 text-xs font-medium",
-                    on
-                      ? "border-primary bg-primary text-primary-foreground"
-                      : "border-border hover:bg-muted",
-                  )}
-                >
-                  {t(`types.${ty}`)}
-                </button>
-              );
-            })}
-          </div>
-          <label className="ml-auto flex items-center gap-2 text-xs">
-            <input
-              type="checkbox"
-              checked={hideMaster}
-              onChange={(e) => setHideMaster(e.target.checked)}
-            />
-            {t("hideMaster")}
-          </label>
-        </div>
-        <p className="text-muted-foreground text-sm" aria-live="polite">
-          {t("results", { count: rows.length })}
-        </p>
-        <p className="text-muted-foreground text-xs">{t("legend")}</p>
-
-        {rows.length ? (
-          sections.map((s) => (
-            <div key={s.g || "all"} className="space-y-3">
-              {s.g ? (
-                <h3 className="pt-2 text-lg font-semibold">
-                  {groups[s.g][lang]}{" "}
-                  <span className="text-muted-foreground text-sm font-normal">
-                    ({s.items.length})
-                  </span>
-                </h3>
-              ) : null}
-              <ol className="space-y-3">
-                {s.items.map((p) => (
-                  <ProgrammeCard
-                    key={p.id}
-                    p={p}
-                    score={score(p)}
-                    qs={qs}
-                    lang={lang}
-                    results={results}
-                    selected={inst}
-                  />
-                ))}
-              </ol>
+        <div className="grid gap-6 lg:grid-cols-[19rem_1fr]">
+          <aside className="lg:sticky lg:top-20 lg:max-h-[calc(100dvh-6rem)] lg:self-start lg:overflow-y-auto lg:pr-2">
+            <div className="lg:hidden">
+              <Button
+                variant="outline"
+                className="w-full"
+                onClick={() => setPanelOpen((o) => !o)}
+                aria-expanded={panelOpen}
+                aria-controls="matura-filters"
+              >
+                {panelOpen ? <X aria-hidden /> : <SlidersHorizontal aria-hidden />}{" "}
+                {t("filtersTitle")}
+                {n ? ` (${n})` : ""}
+              </Button>
             </div>
-          ))
-        ) : (
-          <p className="text-muted-foreground py-10 text-center">{t("noResults")}</p>
-        )}
+            <div
+              id="matura-filters"
+              className={panelOpen ? "mt-4 block space-y-6" : "hidden space-y-6 lg:block"}
+            >
+              <MaturaFilterPanel f={f} update={update} toggle={toggle} reset={reset} />
+              <details className="border-border border-t pt-4">
+                <summary className="cursor-pointer text-sm font-semibold">
+                  {t("weightsTitle")}
+                </summary>
+                <p className="text-muted-foreground mt-1 text-xs">{t("weightsHelp")}</p>
+                <div className="mt-3">
+                  <WeightPanel
+                    state={app.state}
+                    applyPreset={app.applyPreset}
+                    setWeight={app.setWeight}
+                    setWeights={app.setWeights}
+                    toggleLock={app.toggleLock}
+                    setScoring={app.setScoring}
+                  />
+                </div>
+              </details>
+            </div>
+          </aside>
+
+          <div className="min-w-0 space-y-4">
+            <ActiveFilters f={f} update={update} toggle={toggle} reset={reset} />
+            <p className="text-sm font-medium" aria-live="polite">
+              {t("results", { count: rows.length })}
+              {instActive ? (
+                <span className="text-muted-foreground font-normal"> · {t("payAtMatching")}</span>
+              ) : null}
+            </p>
+            <p className="text-muted-foreground text-xs">{t("legend")}</p>
+            {rows.length ? (
+              sections.map((sec) => (
+                <div key={sec.g || "all"} className="space-y-3">
+                  {sec.g ? (
+                    <h3 className="pt-2 text-lg font-semibold">
+                      {groups[sec.g][lang]}{" "}
+                      <span className="text-muted-foreground text-sm font-normal">
+                        ({sec.items.length})
+                      </span>
+                    </h3>
+                  ) : null}
+                  <ol className="space-y-3">
+                    {sec.items.map((r) => (
+                      <ProgrammeCard
+                        key={r.p.id}
+                        p={r.p}
+                        score={score(r.p)}
+                        qs={qs}
+                        lang={lang}
+                        results={results}
+                        match={instActive ? r.match.map((o) => o.institution) : null}
+                      />
+                    ))}
+                  </ol>
+                </div>
+              ))
+            ) : (
+              <div className="border-border rounded-xl border border-dashed py-10 text-center">
+                <p className="text-muted-foreground">{t("noResults")}</p>
+                <Button variant="outline" size="sm" className="mt-3" onClick={reset}>
+                  {t("resetAll")}
+                </Button>
+              </div>
+            )}
+          </div>
+        </div>
       </section>
 
       <section aria-labelledby="inst-h" className="space-y-3">
@@ -338,7 +243,7 @@ export function AfterMatura() {
                           className="text-primary tabular-nums underline"
 
                           onClick={() => {
-                            setInst(code);
+                            update({ inst: code });
                             document
                               .getElementById("list-h")
                               ?.scrollIntoView({ behavior: "smooth" });
@@ -417,14 +322,15 @@ function ProgrammeCard({
   qs,
   lang,
   results,
-  selected,
+  match,
 }: {
   p: Programme;
   score: number | null;
   qs: string;
   lang: "en" | "de";
   results: ReturnType<typeof useScores>;
-  selected: string;
+  /** Institutions passing the institution-level filters, or null when none is active. */
+  match: string[] | null;
 }) {
   const t = useTranslations("matura");
   const locale = useLocale();
@@ -436,9 +342,16 @@ function ProgrammeCard({
     .slice(0, 4);
   const name = p.name[lang];
   const offers = [...p.offers].sort((a, b) => Number(b.strong) - Number(a.strong));
-  const here = selected ? p.offers.find((o) => o.institution === selected) : undefined;
   const chf = (v: number | null) =>
     v === null ? "—" : `CHF ${formatNumber(Math.round(v / 100) * 100, locale)}`;
+  const hits = match ? p.offers.filter((o) => match.includes(o.institution)) : [];
+  const isHit = (code: string) => !!match && match.includes(code);
+  const payRange = (k: "payEntry" | "payMid") => {
+    const v = hits.map((o) => o[k] ?? 0);
+    const lo = Math.min(...v);
+    const hi = Math.max(...v);
+    return lo === hi ? chf(hi) : `${chf(lo)}–${chf(hi)}`;
+  };
   const signed = (n: number) => (n > 0 ? `+${n}` : `${n}`);
   return (
     <li className="border-border bg-card rounded-xl border p-4">
@@ -487,7 +400,8 @@ function ProgrammeCard({
                 o.strong
                   ? "border-primary/60 bg-accent text-accent-foreground font-medium"
                   : "border-border",
-                o.institution === selected && "ring-primary ring-2",
+                isHit(o.institution) && "ring-primary ring-2",
+                match && !isHit(o.institution) && "opacity-50",
               )}
             >
               {o.strong ? <Star className="size-3 fill-current" aria-hidden /> : null}
@@ -497,12 +411,16 @@ function ProgrammeCard({
           );
         })}
       </div>
-      {here ? (
+      {hits.length ? (
         <p className="mt-2 text-xs">
-          {t("atInstitution", { name: institutions[here.institution].short })}:{" "}
-          <span className="font-semibold tabular-nums">{chf(here.payEntry)}</span> →{" "}
-          <span className="font-semibold tabular-nums">{chf(here.payMid)}</span>
-          {here.note ? <span className="text-muted-foreground"> · {here.note}</span> : null}
+          {hits.length === 1
+            ? t("atInstitution", { name: institutions[hits[0].institution].short })
+            : t("atMatching", { count: hits.length })}
+          : <span className="font-semibold tabular-nums">{payRange("payEntry")}</span> →{" "}
+          <span className="font-semibold tabular-nums">{payRange("payMid")}</span>
+          {hits.length === 1 && hits[0].note ? (
+            <span className="text-muted-foreground"> · {hits[0].note}</span>
+          ) : null}
         </p>
       ) : null}
       {offers.length > 1 ? (
@@ -539,7 +457,7 @@ function ProgrammeCard({
                     return (
                       <tr
                         key={o.institution}
-                        className={o.institution === selected ? "bg-accent" : undefined}
+                        className={isHit(o.institution) ? "bg-accent" : undefined}
                       >
                         <th scope="row" className="p-1.5 text-left font-medium">
                           {o.strong ? (

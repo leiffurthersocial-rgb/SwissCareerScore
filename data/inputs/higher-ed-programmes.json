@@ -55,7 +55,10 @@
     "en"
    ],
    "url": "https://ethz.ch",
-   "regionPay": 1.06
+   "regionPay": 1.06,
+   "regions": [
+    "zurich"
+   ]
   },
   "EPFL": {
    "name": "EPFL – École polytechnique fédérale de Lausanne",
@@ -67,7 +70,10 @@
     "en"
    ],
    "url": "https://www.epfl.ch",
-   "regionPay": 1.01
+   "regionPay": 1.01,
+   "regions": [
+    "lemanic"
+   ]
   },
   "UZH": {
    "name": "Universität Zürich",
@@ -78,7 +84,10 @@
     "de"
    ],
    "url": "https://www.uzh.ch",
-   "regionPay": 1.06
+   "regionPay": 1.06,
+   "regions": [
+    "zurich"
+   ]
   },
   "UNIBE": {
    "name": "Universität Bern",
@@ -89,7 +98,10 @@
     "de"
    ],
    "url": "https://www.unibe.ch",
-   "regionPay": 0.98
+   "regionPay": 0.98,
+   "regions": [
+    "mittelland"
+   ]
   },
   "UNIBAS": {
    "name": "Universität Basel",
@@ -100,7 +112,10 @@
     "de"
    ],
    "url": "https://www.unibas.ch",
-   "regionPay": 1.05
+   "regionPay": 1.05,
+   "regions": [
+    "northwest"
+   ]
   },
   "UNIGE": {
    "name": "Université de Genève",
@@ -111,7 +126,10 @@
     "fr"
    ],
    "url": "https://www.unige.ch",
-   "regionPay": 1.04
+   "regionPay": 1.04,
+   "regions": [
+    "lemanic"
+   ]
   },
   "UNIL": {
    "name": "Université de Lausanne",
@@ -122,7 +140,10 @@
     "fr"
    ],
    "url": "https://www.unil.ch",
-   "regionPay": 1.01
+   "regionPay": 1.01,
+   "regions": [
+    "lemanic"
+   ]
   },
   "UNIFR": {
    "name": "Universität Freiburg / Université de Fribourg",
@@ -134,7 +155,10 @@
     "fr"
    ],
    "url": "https://www.unifr.ch",
-   "regionPay": 0.97
+   "regionPay": 0.97,
+   "regions": [
+    "mittelland"
+   ]
   },
   "UNINE": {
    "name": "Université de Neuchâtel",
@@ -145,7 +169,10 @@
     "fr"
    ],
    "url": "https://www.unine.ch",
-   "regionPay": 0.96
+   "regionPay": 0.96,
+   "regions": [
+    "mittelland"
+   ]
   },
   "UNILU": {
    "name": "Universität Luzern",
@@ -156,7 +183,10 @@
     "de"
    ],
    "url": "https://www.unilu.ch",
-   "regionPay": 1.0
+   "regionPay": 1.0,
+   "regions": [
+    "central"
+   ]
   },
   "UNISG": {
    "name": "Universität St. Gallen (HSG)",
@@ -168,7 +198,10 @@
     "en"
    ],
    "url": "https://www.unisg.ch",
-   "regionPay": 1.03
+   "regionPay": 1.03,
+   "regions": [
+    "east"
+   ]
   },
   "USI": {
    "name": "Università della Svizzera italiana",
@@ -180,7 +213,10 @@
     "en"
    ],
    "url": "https://www.usi.ch",
-   "regionPay": 0.86
+   "regionPay": 0.86,
+   "regions": [
+    "ticino"
+   ]
   },
   "UNIDIST": {
    "name": "UniDistance Suisse (distance learning)",
@@ -192,7 +228,11 @@
     "fr"
    ],
    "url": "https://unidistance.ch",
-   "regionPay": 1.0
+   "regionPay": 1.0,
+   "regions": [
+    "lemanic",
+    "online"
+   ]
   },
   "ZHAW": {
    "name": "ZHAW Zürcher Hochschule für Angewandte Wissenschaften",
@@ -203,7 +243,10 @@
     "de"
    ],
    "url": "https://www.zhaw.ch",
-   "regionPay": 1.06
+   "regionPay": 1.06,
+   "regions": [
+    "zurich"
+   ]
   },
   "FHNW": {
    "name": "FHNW Fachhochschule Nordwestschweiz",
@@ -214,7 +257,10 @@
     "de"
    ],
    "url": "https://www.fhnw.ch",
-   "regionPay": 1.03
+   "regionPay": 1.03,
+   "regions": [
+    "northwest"
+   ]
   },
   "BFH": {
    "name": "BFH Berner Fachhochschule",
@@ -226,7 +272,10 @@
     "fr"
    ],
    "url": "https://www.bfh.ch",
-   "regionPay": 0.98
+   "regionPay": 0.98,
+   "regions": [
+    "mittelland"
+   ]
   },
   "HSLU": {
    "name": "HSLU Hochschule Luzern",
@@ -237,7 +286,10 @@
     "de"
    ],
    "url": "https://www.hslu.ch",
-   "regionPay": 1.0
+   "regionPay": 1.0,
+   "regions": [
+    "central"
+   ]
   },
   "OST": {
    "name": "OST Ostschweizer Fachhochschule",
@@ -248,7 +300,10 @@
     "de"
    ],
    "url": "https://www.ost.ch",
-   "regionPay": 0.97
+   "regionPay": 0.97,
+   "regions": [
+    "east"
+   ]
   },
   "FHGR": {
    "name": "FHGR Fachhochschule Graubünden",
@@ -259,7 +314,10 @@
     "de"
    ],
    "url": "https://www.fhgr.ch",
-   "regionPay": 0.95
+   "regionPay": 0.95,
+   "regions": [
+    "east"
+   ]
   },
   "HESSO": {
    "name": "HES-SO Haute école spécialisée de Suisse occidentale (incl. EHL, ECAL, HEAD, HEIG-VD)",
@@ -271,7 +329,11 @@
     "de"
    ],
    "url": "https://www.hes-so.ch",
-   "regionPay": 0.99
+   "regionPay": 0.99,
+   "regions": [
+    "lemanic",
+    "mittelland"
+   ]
   },
   "SUPSI": {
    "name": "SUPSI Scuola universitaria professionale della Svizzera italiana",
@@ -282,7 +344,10 @@
     "it"
    ],
    "url": "https://www.supsi.ch",
-   "regionPay": 0.86
+   "regionPay": 0.86,
+   "regions": [
+    "ticino"
+   ]
   },
   "KALAIDOS": {
    "name": "Kalaidos Fachhochschule (private)",
@@ -293,7 +358,10 @@
     "de"
    ],
    "url": "https://www.kalaidos-fh.ch",
-   "regionPay": 1.06
+   "regionPay": 1.06,
+   "regions": [
+    "zurich"
+   ]
   },
   "ZHDK": {
    "name": "ZHdK Zürcher Hochschule der Künste",
@@ -304,7 +372,10 @@
     "de"
    ],
    "url": "https://www.zhdk.ch",
-   "regionPay": 1.06
+   "regionPay": 1.06,
+   "regions": [
+    "zurich"
+   ]
   },
   "HKB": {
    "name": "HKB Hochschule der Künste Bern (BFH)",
@@ -316,7 +387,10 @@
     "fr"
    ],
    "url": "https://www.hkb.bfh.ch",
-   "regionPay": 0.98
+   "regionPay": 0.98,
+   "regions": [
+    "mittelland"
+   ]
   },
   "HFH": {
    "name": "HfH Interkantonale Hochschule für Heilpädagogik",
@@ -327,7 +401,10 @@
     "de"
    ],
    "url": "https://www.hfh.ch",
-   "regionPay": 1.06
+   "regionPay": 1.06,
+   "regions": [
+    "zurich"
+   ]
   },
   "EHSM": {
    "name": "EHSM Eidgenössische Hochschule für Sport Magglingen",
@@ -339,7 +416,10 @@
     "fr"
    ],
    "url": "https://www.ehsm.admin.ch",
-   "regionPay": 0.98
+   "regionPay": 0.98,
+   "regions": [
+    "mittelland"
+   ]
   },
   "PHZH": {
    "name": "PH Zürich",
@@ -350,7 +430,10 @@
     "de"
    ],
    "url": "https://phzh.ch",
-   "regionPay": 1.06
+   "regionPay": 1.06,
+   "regions": [
+    "zurich"
+   ]
   },
   "PHBERN": {
    "name": "PH Bern",
@@ -361,7 +444,10 @@
     "de"
    ],
    "url": "https://www.phbern.ch",
-   "regionPay": 0.98
+   "regionPay": 0.98,
+   "regions": [
+    "mittelland"
+   ]
   },
   "PHLU": {
    "name": "PH Luzern",
@@ -372,7 +458,10 @@
     "de"
    ],
    "url": "https://www.phlu.ch",
-   "regionPay": 1.0
+   "regionPay": 1.0,
+   "regions": [
+    "central"
+   ]
   },
   "PHSG": {
    "name": "PH St. Gallen",
@@ -383,7 +472,10 @@
     "de"
    ],
    "url": "https://www.phsg.ch",
-   "regionPay": 0.97
+   "regionPay": 0.97,
+   "regions": [
+    "east"
+   ]
   },
   "PHFHNW": {
    "name": "PH FHNW",
@@ -394,7 +486,11 @@
     "de"
    ],
    "url": "https://www.fhnw.ch/de/die-fhnw/hochschulen/ph",
-   "regionPay": 1.03
+   "regionPay": 1.03,
+   "regions": [
+    "mittelland",
+    "northwest"
+   ]
   },
   "PHTG": {
    "name": "PH Thurgau",
@@ -405,7 +501,10 @@
     "de"
    ],
    "url": "https://www.phtg.ch",
-   "regionPay": 0.96
+   "regionPay": 0.96,
+   "regions": [
+    "east"
+   ]
   },
   "PHGR": {
    "name": "PH Graubünden",
@@ -418,7 +517,10 @@
     "rm"
    ],
    "url": "https://phgr.ch",
-   "regionPay": 0.95
+   "regionPay": 0.95,
+   "regions": [
+    "east"
+   ]
   },
   "PHZG": {
    "name": "PH Zug",
@@ -429,7 +531,10 @@
     "de"
    ],
    "url": "https://www.phzg.ch",
-   "regionPay": 1.02
+   "regionPay": 1.02,
+   "regions": [
+    "central"
+   ]
   },
   "PHSZ": {
    "name": "PH Schwyz",
@@ -440,7 +545,10 @@
     "de"
    ],
    "url": "https://www.phsz.ch",
-   "regionPay": 0.98
+   "regionPay": 0.98,
+   "regions": [
+    "central"
+   ]
   },
   "PHSH": {
    "name": "PH Schaffhausen",
@@ -451,7 +559,10 @@
     "de"
    ],
    "url": "https://www.phsh.ch",
-   "regionPay": 0.98
+   "regionPay": 0.98,
+   "regions": [
+    "east"
+   ]
   },
   "HEPVD": {
    "name": "HEP Vaud",
@@ -462,7 +573,10 @@
     "fr"
    ],
    "url": "https://www.hepl.ch",
-   "regionPay": 1.01
+   "regionPay": 1.01,
+   "regions": [
+    "lemanic"
+   ]
   },
   "HEPBEJUNE": {
    "name": "HEP-BEJUNE",
@@ -473,7 +587,10 @@
     "fr"
    ],
    "url": "https://www.hep-bejune.ch",
-   "regionPay": 0.96
+   "regionPay": 0.96,
+   "regions": [
+    "mittelland"
+   ]
   },
   "HEPFR": {
    "name": "HEP | PH Fribourg",
@@ -485,7 +602,10 @@
     "de"
    ],
    "url": "https://www.hepfr.ch",
-   "regionPay": 0.97
+   "regionPay": 0.97,
+   "regions": [
+    "mittelland"
+   ]
   },
   "HEPVS": {
    "name": "HEP-VS / PH Wallis",
@@ -497,7 +617,10 @@
     "de"
    ],
    "url": "https://hepvs.ch",
-   "regionPay": 0.94
+   "regionPay": 0.94,
+   "regions": [
+    "lemanic"
+   ]
   }
  },
  "programmes": [

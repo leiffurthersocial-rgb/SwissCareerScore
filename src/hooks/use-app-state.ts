@@ -5,7 +5,7 @@ import { scorable } from "@/lib/dataset";
 import { DIMENSION_IDS, type DimensionId } from "@/lib/dimensions";
 import { PRESETS, type PresetId } from "@/lib/presets";
 import { scoreEntities, setWeight as setWeightLocked, toPercentages, type EntityResult } from "@/lib/scoring";
-import { decodeState, encodeState, MAX_COMPARE, type AppState } from "@/lib/url-state";
+import { decodeState, encodeState, MAX_COMPARE, STATE_KEYS, type AppState } from "@/lib/url-state";
 import type { Filters } from "@/lib/filters";
 
 /**
@@ -22,7 +22,11 @@ export function useAppState() {
       first.current = false;
       return;
     }
-    const qs = encodeState(state).toString();
+    // Keep page-specific keys (e.g. the after-Matura filters); replace only the app-state keys.
+    const cur = new URLSearchParams(window.location.search);
+    for (const k of STATE_KEYS) cur.delete(k);
+    encodeState(state).forEach((v, k) => cur.set(k, v));
+    const qs = cur.toString();
     const url = `${window.location.pathname}${qs ? `?${qs}` : ""}`;
     window.history.replaceState(window.history.state, "", url);
   }, [state]);

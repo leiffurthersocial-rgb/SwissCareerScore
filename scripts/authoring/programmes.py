@@ -243,6 +243,17 @@ REGION = {
     "FHGR": 0.95, "PHGR": 0.95, "USI": 0.86, "SUPSI": 0.86, "UNIDIST": 1.00,
 }
 
+# BFS major regions (Grossregionen) where the institution teaches; distance/multi-site schools list several.
+REGIONS = {
+    "zurich": ["ETHZ", "UZH", "ZHAW", "ZHDK", "KALAIDOS", "HFH", "PHZH"],
+    "lemanic": ["EPFL", "UNIGE", "UNIL", "HEPVD", "HEPVS", "HESSO", "UNIDIST"],
+    "mittelland": ["UNIBE", "UNIFR", "UNINE", "BFH", "HKB", "PHBERN", "EHSM", "HEPFR", "HEPBEJUNE", "HESSO", "PHFHNW"],
+    "northwest": ["UNIBAS", "FHNW", "PHFHNW"],
+    "central": ["UNILU", "HSLU", "PHLU", "PHZG", "PHSZ"],
+    "east": ["UNISG", "OST", "FHGR", "PHSG", "PHTG", "PHGR", "PHSH"],
+    "ticino": ["USI", "SUPSI"],
+}
+
 # Where an institution is clearly stronger in a field with employers: (premium on pay, note).
 # Premium = own estimate of the pay advantage over the programme average, before regional level.
 STRONG = {
@@ -323,9 +334,11 @@ out = {
     "sourceUrl": "https://www.studyprogrammes.ch/",
     "year": 2026,
     "groups": {k: {"en": v[0], "de": v[1]} for k, v in GROUPS.items()},
-    "institutions": {k: {"name": v[0], "short": v[1], "type": v[2], "city": v[3], "languages": v[4], "url": v[5], "regionPay": REGION[k]} for k, v in INST.items()},
+    "institutions": {k: {"name": v[0], "short": v[1], "type": v[2], "city": v[3], "languages": v[4], "url": v[5], "regionPay": REGION[k], "regions": [r for r, members in REGIONS.items() if k in members] + (["online"] if k == "UNIDIST" else [])} for k, v in INST.items()},
     "programmes": programmes,
 }
+for k in INST:
+    assert any(k in m for m in REGIONS.values()), k
 for (pid, u) in STRONG:
     assert any(p["id"] == pid and u in p["institutions"] for p in programmes), (pid, u)
 dst = ROOT / "data" / "inputs" / "higher-ed-programmes.json"

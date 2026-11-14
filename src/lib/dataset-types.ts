@@ -121,6 +121,8 @@ export interface Institution {
   url: string;
   /** Regional pay level where graduates typically work (1 = Swiss median), own estimate. */
   regionPay: number;
+  /** BFS major regions where it teaches. */
+  regions: string[];
 }
 /** One institution offering a programme, with institution-level pay estimates. */
 export interface Offer {

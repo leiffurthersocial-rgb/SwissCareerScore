@@ -422,7 +422,7 @@
     "gapYear": "Noch unsicher? Zwischenjahr, Militär/Zivildienst oder zuerst arbeiten sind verbreitet.",
     "gapYearLink": "Bewertung für den Berufseinstieg nur mit Matura ansehen →",
     "listTitle": "Alle Studiengänge",
-    "listHelp": "Bewertet mit deiner aktuellen Gewichtung (einstellbar auf der Ranglisten-Seite). Klicke auf einen Namen für Details und Quellen.",
+    "listHelp": "Bewertet mit deiner Gewichtung (anpassbar in der Filterspalte). Klicke auf einen Namen für Details und Quellen.",
     "search": "Suche",
     "searchPlaceholder": "z. B. Medizin, Informatik, ZHAW …",
     "field": "Fachbereich",
@@ -482,7 +482,41 @@
     "compareInstitutions": "Die {count} Hochschulen vergleichen",
     "why": "Warum",
     "premium": "Reputationszuschlag +{pct} %",
-    "region": "regionales Lohnniveau {pct} %",
-    "institutionNote": "Unterschiede zwischen Hochschulen sind unsere Schätzungen: ein Reputationszuschlag, wo Arbeitgeber eine Hochschule in diesem Fach klar bevorzugen, plus das regionale Lohnniveau, wo ihre Absolvent:innen meist arbeiten (bei Unis halbe Gewichtung, da mobiler). Sie verändern die Bewertung nicht, die pro Fach gilt. ★ = in diesem Fach besonders stark."
+    "region": "Region",
+    "institutionNote": "Unterschiede zwischen Hochschulen sind unsere Schätzungen: ein Reputationszuschlag, wo Arbeitgeber eine Hochschule in diesem Fach klar bevorzugen, plus das regionale Lohnniveau, wo ihre Absolvent:innen meist arbeiten (bei Unis halbe Gewichtung, da mobiler). Sie verändern die Bewertung nicht, die pro Fach gilt. ★ = in diesem Fach besonders stark.",
+    "filtersTitle": "Filter",
+    "reset": "Zurücksetzen",
+    "resetAll": "Alle Filter entfernen",
+    "any": "Alle",
+    "whereHelp": "Wo studieren – diese Filter wirken auf die anbietenden Hochschulen; Lohnangaben beziehen sich dann auf diese Hochschulen.",
+    "regions": {
+      "zurich": "Zürich",
+      "lemanic": "Genferseeregion (VD, GE, VS)",
+      "mittelland": "Mittelland (BE, FR, NE, SO, JU)",
+      "northwest": "Nordwestschweiz (BS, BL, AG)",
+      "central": "Zentralschweiz (LU, ZG, SZ)",
+      "east": "Ostschweiz (SG, TG, GR, SH)",
+      "ticino": "Tessin",
+      "online": "Fernstudium"
+    },
+    "teachingLanguage": "Unterrichtssprache",
+    "langs": {
+      "de": "Deutsch",
+      "fr": "Französisch",
+      "it": "Italienisch",
+      "en": "Englisch"
+    },
+    "strongOnly": "Nur Hochschulen, die im Fach besonders stark sind",
+    "maxYears": "Max. Dauer",
+    "upToYears": "≤ {n} Jahre",
+    "minPay": "Min. Lohn nach 5 Jahren",
+    "maxUnemp": "Max. Arbeitslosigkeit",
+    "maxDrop": "Max. Studienabbruch",
+    "activeFilters": "Aktive Filter",
+    "removeFilter": "Filter entfernen",
+    "payAtMatching": "Lohnfilter und Sortierung beziehen sich auf die passenden Hochschulen",
+    "atMatching": "An den {count} passenden Hochschulen",
+    "weightsTitle": "Gewichtung anpassen",
+    "weightsHelp": "Verändert die Bewertung aller Studiengänge (gleiche Gewichtung wie auf der Ranglisten-Seite)."
   }
 }

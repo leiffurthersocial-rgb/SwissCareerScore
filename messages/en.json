@@ -422,7 +422,7 @@
     "gapYear": "Not sure yet? A gap year, the military/civilian service or working first are common.",
     "gapYearLink": "See the score for starting work with a Matura only →",
     "listTitle": "All programmes",
-    "listHelp": "Scored with your current weights (set them on the ranking page). Click a name for the full breakdown and sources.",
+    "listHelp": "Scored with your weights (adjust them in the filter column). Click a name for the full breakdown and sources.",
     "search": "Search",
     "searchPlaceholder": "e.g. medicine, Informatik, ZHAW …",
     "field": "Field",
@@ -482,7 +482,41 @@
     "compareInstitutions": "Compare the {count} institutions",
     "why": "Why",
     "premium": "reputation premium +{pct} %",
-    "region": "regional pay {pct} %",
-    "institutionNote": "Institution differences are our estimates: a reputation premium where employers clearly favour an institution in this field, plus the regional pay level where its graduates usually work (half weight for university graduates, who are more mobile). They don't change the score, which is per field. ★ = especially strong in this field."
+    "region": "Region",
+    "institutionNote": "Institution differences are our estimates: a reputation premium where employers clearly favour an institution in this field, plus the regional pay level where its graduates usually work (half weight for university graduates, who are more mobile). They don't change the score, which is per field. ★ = especially strong in this field.",
+    "filtersTitle": "Filters",
+    "reset": "Reset",
+    "resetAll": "Clear all filters",
+    "any": "Any",
+    "whereHelp": "Where to study — these filter by the institutions offering a programme, and pay figures then use those institutions.",
+    "regions": {
+      "zurich": "Zurich",
+      "lemanic": "Lake Geneva (VD, GE, VS)",
+      "mittelland": "Mittelland (BE, FR, NE, SO, JU)",
+      "northwest": "Northwestern CH (BS, BL, AG)",
+      "central": "Central CH (LU, ZG, SZ)",
+      "east": "Eastern CH (SG, TG, GR, SH)",
+      "ticino": "Ticino",
+      "online": "Distance learning"
+    },
+    "teachingLanguage": "Language of instruction",
+    "langs": {
+      "de": "German",
+      "fr": "French",
+      "it": "Italian",
+      "en": "English"
+    },
+    "strongOnly": "Only institutions especially strong in the field",
+    "maxYears": "Max. duration",
+    "upToYears": "≤ {n} years",
+    "minPay": "Min. pay after 5 years",
+    "maxUnemp": "Max. unemployment",
+    "maxDrop": "Max. drop-out",
+    "activeFilters": "Active filters",
+    "removeFilter": "remove filter",
+    "payAtMatching": "pay filters and sorting use the matching institutions",
+    "atMatching": "At the {count} matching institutions",
+    "weightsTitle": "Adjust your weights",
+    "weightsHelp": "Changes the score of every programme (same weights as the ranking page)."
   }
 }
