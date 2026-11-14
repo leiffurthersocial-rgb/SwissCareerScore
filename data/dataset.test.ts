@@ -1,6 +1,7 @@
 import { describe, expect, it } from "vitest";
 import data from "./derived/dataset.json";
-import type { Dataset } from "../src/lib/dataset-types";
+import programmes from "./derived/programmes.json";
+import type { Dataset, ProgrammeCatalogue } from "../src/lib/dataset-types";
 import { DIMENSION_IDS } from "../src/lib/dimensions";
 import { Datapoint } from "../src/lib/schema";
 
@@ -41,7 +42,7 @@ describe("derived dataset", () => {
 
   it("missing inputs produce null metrics, never zeros", () => {
     for (const e of ds.entities) {
-      if (e.inputs.nonCompletion?.value === null) expect(e.metrics.trainingEase?.raw).toBeNull();
+      if (e.inputs.nonCompletion?.value === null && !e.inputs.nonCompletionExpert) expect(e.metrics.trainingEase?.raw).toBeNull();
       const noStat = !e.inputs.recruitmentDifficulty || e.inputs.recruitmentDifficulty.value === null;
       const noExpert = !e.inputs.demandExpert || e.inputs.demandExpert.value === null;
       if (noStat && noExpert) expect(e.metrics.demand?.raw ?? null).toBeNull();
@@ -108,5 +109,18 @@ describe("expanded catalogue", () => {
     const curated = new Set(["edu-bp-polizist", "edu-bp-finanz-rechnungswesen"]); // hand-checked: durations are the training itself
     for (const e of ds.entities.filter((x) => (x.eduType === "BP" || x.eduType === "HFP") && !curated.has(x.id)))
       for (const s of e.pathway.slice(1)) expect(s.confidence, e.id).toBe("estimated");
+  });
+
+
+  it("higher-education catalogue covers every university/FH path and only known institutions", () => {
+    const cat = programmes as unknown as ProgrammeCatalogue;
+    const covered = new Set(cat.programmes.map((p) => p.entity));
+    for (const e of ds.entities)
+      if (["UH-MSc", "ETH-MSc", "UH-MMed", "FH-BSc"].includes(e.eduType ?? "")) expect(covered.has(e.id), e.id).toBe(true);
+    for (const p of cat.programmes) {
+      expect(p.institutions.length, p.id).toBeGreaterThan(0);
+      for (const i of p.institutions) expect(cat.institutions[i], `${p.id}: ${i}`).toBeDefined();
+      for (const k of ["payEntry", "payMid", "unemployment", "nonCompletion"] as const) expect(p[k].est, `${p.id}.${k}`).not.toBeNull();
+    }
   });
 });

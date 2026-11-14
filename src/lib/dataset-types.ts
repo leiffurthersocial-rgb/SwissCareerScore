@@ -27,6 +27,9 @@ export const INPUT_IDS = [
   "wlbExpert",
   "demandExpert",
   "aiExpert",
+  "payEntryExpert",
+  "unemploymentExpert",
+  "nonCompletionExpert",
 ] as const;
 export type InputId = (typeof INPUT_IDS)[number];
 
@@ -105,4 +108,44 @@ export interface CoreDataset {
   entities: CoreEntity[];
   sources: Source[];
   correlations: Dataset["correlations"];
+}
+
+/** Higher-education programme catalogue (data/derived/programmes.json). */
+export type Admission = "open" | "ems" | "selection" | "work";
+export interface Institution {
+  name: string;
+  short: string;
+  type: "ETH" | "UH" | "FH" | "PH";
+  city: string;
+  languages: string[];
+  url: string;
+}
+/** A blended number: official statistic, own estimate, and the value used for scoring. */
+export interface Blended {
+  stat: number | null;
+  est: number | null;
+  value: number | null;
+}
+export interface Programme {
+  id: string;
+  group: string;
+  entity: string;
+  name: { en: string; de: string };
+  type: "ETH" | "UH" | "FH" | "PH";
+  institutions: string[];
+  admission: Admission;
+  years: number;
+  masterOnly: boolean;
+  note?: string;
+  payEntry: Blended;
+  payMid: Blended;
+  unemployment: Blended;
+  nonCompletion: Blended;
+}
+export interface ProgrammeCatalogue {
+  sourceUrl: string;
+  year: number;
+  groups: Record<string, { en: string; de: string }>;
+  institutions: Record<string, Institution>;
+  programmes: Programme[];
 }

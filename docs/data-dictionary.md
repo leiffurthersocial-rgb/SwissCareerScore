@@ -91,6 +91,13 @@ Every number in the dataset is a Datapoint:
 | `wlbExpert` | index 0–100 | expert estimate | workLifeBalance (blended) |
 | `demandExpert` | % | expert estimate of shortage | demand (blended) |
 | `aiExpert` | index 0–100 | expert estimate of AI exposure | aiResilience (blended) |
+| `payEntryExpert` | CHF/month | programme estimate, ~1 year after degree (methodology §15) | pay (blended with `payEntry`) |
+| `unemploymentExpert` | % | programme estimate, ILO, 1 year after degree | stability (blended) |
+| `nonCompletionExpert` | % | programme estimate of drop-out | trainingEase (blended) |
+
+`data/derived/programmes.json` holds the higher-education catalogue: `institutions` (name, type,
+city, languages, url), `groups`, and `programmes` (entity id, institutions, admission, years,
+`masterOnly`, and `payEntry`/`payMid`/`unemployment`/`nonCompletion` as `{stat, est, value}`).
 
 ### Career graph fields
 

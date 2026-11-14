@@ -1,0 +1,3764 @@
+{
+ "about": "Catalogue of Swiss higher-education study programmes open after the Matura, with the institutions",
+ "sourceUrl": "https://www.studyprogrammes.ch/",
+ "year": 2026,
+ "groups": {
+  "medicine": {
+   "en": "Medicine and health (university)",
+   "de": "Medizin und Gesundheit (Universität)"
+  },
+  "health": {
+   "en": "Health professions (FH)",
+   "de": "Gesundheitsberufe (FH)"
+  },
+  "science": {
+   "en": "Natural sciences and mathematics",
+   "de": "Naturwissenschaften und Mathematik"
+  },
+  "computing": {
+   "en": "Computer science",
+   "de": "Informatik"
+  },
+  "engineering": {
+   "en": "Engineering, architecture and life sciences",
+   "de": "Technik, Architektur und Life Sciences"
+  },
+  "business": {
+   "en": "Business, economics and law",
+   "de": "Wirtschaft und Recht"
+  },
+  "social": {
+   "en": "Social sciences, psychology and social work",
+   "de": "Sozialwissenschaften, Psychologie, Soziale Arbeit"
+  },
+  "humanities": {
+   "en": "Humanities and languages",
+   "de": "Geistes- und Sprachwissenschaften"
+  },
+  "teaching": {
+   "en": "Teaching",
+   "de": "Lehrberufe"
+  },
+  "arts": {
+   "en": "Arts, design and music",
+   "de": "Kunst, Design und Musik"
+  }
+ },
+ "institutions": {
+  "ETHZ": {
+   "name": "ETH Zürich",
+   "short": "ETH",
+   "type": "ETH",
+   "city": "Zürich",
+   "languages": [
+    "de",
+    "en"
+   ],
+   "url": "https://ethz.ch"
+  },
+  "EPFL": {
+   "name": "EPFL – École polytechnique fédérale de Lausanne",
+   "short": "EPFL",
+   "type": "ETH",
+   "city": "Lausanne",
+   "languages": [
+    "fr",
+    "en"
+   ],
+   "url": "https://www.epfl.ch"
+  },
+  "UZH": {
+   "name": "Universität Zürich",
+   "short": "UZH",
+   "type": "UH",
+   "city": "Zürich",
+   "languages": [
+    "de"
+   ],
+   "url": "https://www.uzh.ch"
+  },
+  "UNIBE": {
+   "name": "Universität Bern",
+   "short": "Bern",
+   "type": "UH",
+   "city": "Bern",
+   "languages": [
+    "de"
+   ],
+   "url": "https://www.unibe.ch"
+  },
+  "UNIBAS": {
+   "name": "Universität Basel",
+   "short": "Basel",
+   "type": "UH",
+   "city": "Basel",
+   "languages": [
+    "de"
+   ],
+   "url": "https://www.unibas.ch"
+  },
+  "UNIGE": {
+   "name": "Université de Genève",
+   "short": "Genève",
+   "type": "UH",
+   "city": "Genève",
+   "languages": [
+    "fr"
+   ],
+   "url": "https://www.unige.ch"
+  },
+  "UNIL": {
+   "name": "Université de Lausanne",
+   "short": "UNIL",
+   "type": "UH",
+   "city": "Lausanne",
+   "languages": [
+    "fr"
+   ],
+   "url": "https://www.unil.ch"
+  },
+  "UNIFR": {
+   "name": "Universität Freiburg / Université de Fribourg",
+   "short": "Fribourg",
+   "type": "UH",
+   "city": "Fribourg",
+   "languages": [
+    "de",
+    "fr"
+   ],
+   "url": "https://www.unifr.ch"
+  },
+  "UNINE": {
+   "name": "Université de Neuchâtel",
+   "short": "Neuchâtel",
+   "type": "UH",
+   "city": "Neuchâtel",
+   "languages": [
+    "fr"
+   ],
+   "url": "https://www.unine.ch"
+  },
+  "UNILU": {
+   "name": "Universität Luzern",
+   "short": "Luzern",
+   "type": "UH",
+   "city": "Luzern",
+   "languages": [
+    "de"
+   ],
+   "url": "https://www.unilu.ch"
+  },
+  "UNISG": {
+   "name": "Universität St. Gallen (HSG)",
+   "short": "HSG",
+   "type": "UH",
+   "city": "St. Gallen",
+   "languages": [
+    "de",
+    "en"
+   ],
+   "url": "https://www.unisg.ch"
+  },
+  "USI": {
+   "name": "Università della Svizzera italiana",
+   "short": "USI",
+   "type": "UH",
+   "city": "Lugano / Mendrisio",
+   "languages": [
+    "it",
+    "en"
+   ],
+   "url": "https://www.usi.ch"
+  },
+  "UNIDIST": {
+   "name": "UniDistance Suisse (distance learning)",
+   "short": "UniDistance",
+   "type": "UH",
+   "city": "Brig",
+   "languages": [
+    "de",
+    "fr"
+   ],
+   "url": "https://unidistance.ch"
+  },
+  "ZHAW": {
+   "name": "ZHAW Zürcher Hochschule für Angewandte Wissenschaften",
+   "short": "ZHAW",
+   "type": "FH",
+   "city": "Winterthur / Zürich / Wädenswil",
+   "languages": [
+    "de"
+   ],
+   "url": "https://www.zhaw.ch"
+  },
+  "FHNW": {
+   "name": "FHNW Fachhochschule Nordwestschweiz",
+   "short": "FHNW",
+   "type": "FH",
+   "city": "Windisch / Basel / Olten / Muttenz",
+   "languages": [
+    "de"
+   ],
+   "url": "https://www.fhnw.ch"
+  },
+  "BFH": {
+   "name": "BFH Berner Fachhochschule",
+   "short": "BFH",
+   "type": "FH",
+   "city": "Bern / Biel / Burgdorf / Zollikofen",
+   "languages": [
+    "de",
+    "fr"
+   ],
+   "url": "https://www.bfh.ch"
+  },
+  "HSLU": {
+   "name": "HSLU Hochschule Luzern",
+   "short": "HSLU",
+   "type": "FH",
+   "city": "Luzern / Zug",
+   "languages": [
+    "de"
+   ],
+   "url": "https://www.hslu.ch"
+  },
+  "OST": {
+   "name": "OST Ostschweizer Fachhochschule",
+   "short": "OST",
+   "type": "FH",
+   "city": "Rapperswil / St. Gallen / Buchs",
+   "languages": [
+    "de"
+   ],
+   "url": "https://www.ost.ch"
+  },
+  "FHGR": {
+   "name": "FHGR Fachhochschule Graubünden",
+   "short": "FHGR",
+   "type": "FH",
+   "city": "Chur",
+   "languages": [
+    "de"
+   ],
+   "url": "https://www.fhgr.ch"
+  },
+  "HESSO": {
+   "name": "HES-SO Haute école spécialisée de Suisse occidentale (incl. EHL, ECAL, HEAD, HEIG-VD)",
+   "short": "HES-SO",
+   "type": "FH",
+   "city": "Western Switzerland",
+   "languages": [
+    "fr",
+    "de"
+   ],
+   "url": "https://www.hes-so.ch"
+  },
+  "SUPSI": {
+   "name": "SUPSI Scuola universitaria professionale della Svizzera italiana",
+   "short": "SUPSI",
+   "type": "FH",
+   "city": "Ticino",
+   "languages": [
+    "it"
+   ],
+   "url": "https://www.supsi.ch"
+  },
+  "KALAIDOS": {
+   "name": "Kalaidos Fachhochschule (private)",
+   "short": "Kalaidos",
+   "type": "FH",
+   "city": "Zürich",
+   "languages": [
+    "de"
+   ],
+   "url": "https://www.kalaidos-fh.ch"
+  },
+  "ZHDK": {
+   "name": "ZHdK Zürcher Hochschule der Künste",
+   "short": "ZHdK",
+   "type": "FH",
+   "city": "Zürich",
+   "languages": [
+    "de"
+   ],
+   "url": "https://www.zhdk.ch"
+  },
+  "HKB": {
+   "name": "HKB Hochschule der Künste Bern (BFH)",
+   "short": "HKB",
+   "type": "FH",
+   "city": "Bern / Biel",
+   "languages": [
+    "de",
+    "fr"
+   ],
+   "url": "https://www.hkb.bfh.ch"
+  },
+  "HFH": {
+   "name": "HfH Interkantonale Hochschule für Heilpädagogik",
+   "short": "HfH",
+   "type": "FH",
+   "city": "Zürich",
+   "languages": [
+    "de"
+   ],
+   "url": "https://www.hfh.ch"
+  },
+  "EHSM": {
+   "name": "EHSM Eidgenössische Hochschule für Sport Magglingen",
+   "short": "EHSM",
+   "type": "FH",
+   "city": "Magglingen",
+   "languages": [
+    "de",
+    "fr"
+   ],
+   "url": "https://www.ehsm.admin.ch"
+  },
+  "PHZH": {
+   "name": "PH Zürich",
+   "short": "PHZH",
+   "type": "PH",
+   "city": "Zürich",
+   "languages": [
+    "de"
+   ],
+   "url": "https://phzh.ch"
+  },
+  "PHBERN": {
+   "name": "PH Bern",
+   "short": "PHBern",
+   "type": "PH",
+   "city": "Bern",
+   "languages": [
+    "de"
+   ],
+   "url": "https://www.phbern.ch"
+  },
+  "PHLU": {
+   "name": "PH Luzern",
+   "short": "PHLU",
+   "type": "PH",
+   "city": "Luzern",
+   "languages": [
+    "de"
+   ],
+   "url": "https://www.phlu.ch"
+  },
+  "PHSG": {
+   "name": "PH St. Gallen",
+   "short": "PHSG",
+   "type": "PH",
+   "city": "St. Gallen / Rorschach",
+   "languages": [
+    "de"
+   ],
+   "url": "https://www.phsg.ch"
+  },
+  "PHFHNW": {
+   "name": "PH FHNW",
+   "short": "PH FHNW",
+   "type": "PH",
+   "city": "Windisch / Muttenz / Solothurn",
+   "languages": [
+    "de"
+   ],
+   "url": "https://www.fhnw.ch/de/die-fhnw/hochschulen/ph"
+  },
+  "PHTG": {
+   "name": "PH Thurgau",
+   "short": "PHTG",
+   "type": "PH",
+   "city": "Kreuzlingen",
+   "languages": [
+    "de"
+   ],
+   "url": "https://www.phtg.ch"
+  },
+  "PHGR": {
+   "name": "PH Graubünden",
+   "short": "PHGR",
+   "type": "PH",
+   "city": "Chur",
+   "languages": [
+    "de",
+    "it",
+    "rm"
+   ],
+   "url": "https://phgr.ch"
+  },
+  "PHZG": {
+   "name": "PH Zug",
+   "short": "PHZG",
+   "type": "PH",
+   "city": "Zug",
+   "languages": [
+    "de"
+   ],
+   "url": "https://www.phzg.ch"
+  },
+  "PHSZ": {
+   "name": "PH Schwyz",
+   "short": "PHSZ",
+   "type": "PH",
+   "city": "Goldau",
+   "languages": [
+    "de"
+   ],
+   "url": "https://www.phsz.ch"
+  },
+  "PHSH": {
+   "name": "PH Schaffhausen",
+   "short": "PHSH",
+   "type": "PH",
+   "city": "Schaffhausen",
+   "languages": [
+    "de"
+   ],
+   "url": "https://www.phsh.ch"
+  },
+  "HEPVD": {
+   "name": "HEP Vaud",
+   "short": "HEP Vaud",
+   "type": "PH",
+   "city": "Lausanne",
+   "languages": [
+    "fr"
+   ],
+   "url": "https://www.hepl.ch"
+  },
+  "HEPBEJUNE": {
+   "name": "HEP-BEJUNE",
+   "short": "HEP-BEJUNE",
+   "type": "PH",
+   "city": "Bienne / Delémont / La Chaux-de-Fonds",
+   "languages": [
+    "fr"
+   ],
+   "url": "https://www.hep-bejune.ch"
+  },
+  "HEPFR": {
+   "name": "HEP | PH Fribourg",
+   "short": "HEP FR",
+   "type": "PH",
+   "city": "Fribourg",
+   "languages": [
+    "fr",
+    "de"
+   ],
+   "url": "https://www.hepfr.ch"
+  },
+  "HEPVS": {
+   "name": "HEP-VS / PH Wallis",
+   "short": "PH VS",
+   "type": "PH",
+   "city": "St-Maurice / Brig",
+   "languages": [
+    "fr",
+    "de"
+   ],
+   "url": "https://hepvs.ch"
+  }
+ },
+ "programmes": [
+  {
+   "id": "humanmedizin",
+   "group": "medicine",
+   "entity": "edu-uh-medizin",
+   "name": {
+    "en": "Human medicine",
+    "de": "Humanmedizin"
+   },
+   "type": "UH",
+   "institutions": [
+    "ETHZ",
+    "UZH",
+    "UNIBE",
+    "UNIBAS",
+    "UNIFR",
+    "UNIGE",
+    "UNIL",
+    "USI",
+    "UNILU",
+    "UNISG"
+   ],
+   "admission": "ems",
+   "years": 6,
+   "masterOnly": false,
+   "estimate": {
+    "payEntry": 8200,
+    "payMid": 9800,
+    "unemployment": 0.5,
+    "nonCompletion": 6
+   },
+   "note": "German-speaking universities select with the EMS aptitude test (~1 in 3 admitted); Geneva and Lausanne select after year 1. USI, Lucerne and St. Gallen offer the master (bachelor at a partner). Specialist training (FMH) takes another 5–6 years."
+  },
+  {
+   "id": "zahnmedizin",
+   "group": "medicine",
+   "entity": "edu-uh-zahnmedizin",
+   "name": {
+    "en": "Dental medicine",
+    "de": "Zahnmedizin"
+   },
+   "type": "UH",
+   "institutions": [
+    "UZH",
+    "UNIBE",
+    "UNIBAS",
+    "UNIGE"
+   ],
+   "admission": "ems",
+   "years": 5,
+   "masterOnly": false,
+   "estimate": {
+    "payEntry": 7000,
+    "payMid": 10500,
+    "unemployment": 1.5,
+    "nonCompletion": 6
+   },
+   "note": "EMS numerus clausus (Geneva: selection after year 1)."
+  },
+  {
+   "id": "veterinaermedizin",
+   "group": "medicine",
+   "entity": "edu-uh-veterinaermedizin",
+   "name": {
+    "en": "Veterinary medicine",
+    "de": "Veterinärmedizin"
+   },
+   "type": "UH",
+   "institutions": [
+    "UZH",
+    "UNIBE"
+   ],
+   "admission": "ems",
+   "years": 5,
+   "masterOnly": false,
+   "estimate": {
+    "payEntry": 5600,
+    "payMid": 7300,
+    "unemployment": 1.5,
+    "nonCompletion": 7
+   },
+   "note": "Vetsuisse faculty; EMS numerus clausus. Starting salaries are low relative to study length."
+  },
+  {
+   "id": "chiropraktik",
+   "group": "medicine",
+   "entity": "edu-uh-chiropraktik",
+   "name": {
+    "en": "Chiropractic medicine",
+    "de": "Chiropraktik"
+   },
+   "type": "UH",
+   "institutions": [
+    "UZH"
+   ],
+   "admission": "ems",
+   "years": 6,
+   "masterOnly": false,
+   "estimate": {
+    "payEntry": 6500,
+    "payMid": 10000,
+    "unemployment": 1.0,
+    "nonCompletion": 6
+   },
+   "note": "Bachelor shared with human medicine (EMS); then 2 years of assistantship."
+  },
+  {
+   "id": "pharmazie",
+   "group": "medicine",
+   "entity": "edu-uh-pharmazie",
+   "name": {
+    "en": "Pharmacy",
+    "de": "Pharmazie"
+   },
+   "type": "UH",
+   "institutions": [
+    "ETHZ",
+    "UNIBAS",
+    "UNIBE",
+    "UNIGE"
+   ],
+   "admission": "open",
+   "years": 5,
+   "masterOnly": false,
+   "estimate": {
+    "payEntry": 8000,
+    "payMid": 9300,
+    "unemployment": 1.5,
+    "nonCompletion": 20
+   },
+   "note": "Federal pharmacist diploma after the master. Demanding first year (chemistry)."
+  },
+  {
+   "id": "biomedizin",
+   "group": "medicine",
+   "entity": "edu-uh-biomedizinische-wissenschaften",
+   "name": {
+    "en": "Biomedical sciences",
+    "de": "Biomedizinische Wissenschaften"
+   },
+   "type": "UH",
+   "institutions": [
+    "UZH",
+    "UNIBE",
+    "UNIFR",
+    "UNIBAS"
+   ],
+   "admission": "open",
+   "years": 5,
+   "masterOnly": false,
+   "estimate": {
+    "payEntry": 5000,
+    "payMid": 7800,
+    "unemployment": 4.0,
+    "nonCompletion": 18
+   },
+   "note": "Research-oriented; a doctorate is common, which lowers early pay."
+  },
+  {
+   "id": "gesundheitswissenschaften",
+   "group": "medicine",
+   "entity": "edu-uh-gesundheitswissenschaften",
+   "name": {
+    "en": "Health sciences and technology",
+    "de": "Gesundheitswissenschaften und Technologie"
+   },
+   "type": "UH",
+   "institutions": [
+    "ETHZ",
+    "UNILU"
+   ],
+   "admission": "open",
+   "years": 5,
+   "masterOnly": false,
+   "estimate": {
+    "payEntry": 5700,
+    "payMid": 8300,
+    "unemployment": 4.0,
+    "nonCompletion": 15
+   },
+   "note": "ETH: Health Sciences and Technology (HST); Lucerne: Health Sciences."
+  },
+  {
+   "id": "sport-uh",
+   "group": "medicine",
+   "entity": "edu-uh-sport-sportwissenschaften",
+   "name": {
+    "en": "Sport and exercise science",
+    "de": "Sportwissenschaften"
+   },
+   "type": "UH",
+   "institutions": [
+    "ETHZ",
+    "UNIBE",
+    "UNIBAS",
+    "UNIFR",
+    "UNIGE",
+    "UNIL"
+   ],
+   "admission": "selection",
+   "years": 5,
+   "masterOnly": false,
+   "estimate": {
+    "payEntry": 5800,
+    "payMid": 8000,
+    "unemployment": 3.0,
+    "nonCompletion": 12
+   },
+   "note": "Sports aptitude test. Many graduates teach sport with an additional teaching diploma."
+  },
+  {
+   "id": "pflegewissenschaft",
+   "group": "medicine",
+   "entity": "edu-uh-pflege-pflegewissenschaft",
+   "name": {
+    "en": "Nursing science (master)",
+    "de": "Pflegewissenschaft (Master)"
+   },
+   "type": "UH",
+   "institutions": [
+    "UNIBAS",
+    "UNIL"
+   ],
+   "admission": "open",
+   "years": 5,
+   "masterOnly": true,
+   "estimate": {
+    "payEntry": 8000,
+    "payMid": 9200,
+    "unemployment": 1.0,
+    "nonCompletion": 8
+   },
+   "note": "Master only — entry after a nursing bachelor (FH)."
+  },
+  {
+   "id": "pflege",
+   "group": "health",
+   "entity": "edu-fh-pflege",
+   "name": {
+    "en": "Nursing",
+    "de": "Pflege"
+   },
+   "type": "FH",
+   "institutions": [
+    "ZHAW",
+    "BFH",
+    "OST",
+    "KALAIDOS",
+    "HESSO",
+    "SUPSI"
+   ],
+   "admission": "work",
+   "years": 3,
+   "masterOnly": false,
+   "estimate": {
+    "payEntry": 6500,
+    "payMid": 7500,
+    "unemployment": 0.8,
+    "nonCompletion": 12
+   },
+   "note": "Gymnasium graduates need additional practical modules first. Very high demand."
+  },
+  {
+   "id": "physiotherapie",
+   "group": "health",
+   "entity": "edu-fh-physio",
+   "name": {
+    "en": "Physiotherapy",
+    "de": "Physiotherapie"
+   },
+   "type": "FH",
+   "institutions": [
+    "ZHAW",
+    "BFH",
+    "HESSO",
+    "SUPSI"
+   ],
+   "admission": "selection",
+   "years": 4,
+   "masterOnly": false,
+   "estimate": {
+    "payEntry": 6300,
+    "payMid": 7400,
+    "unemployment": 1.0,
+    "nonCompletion": 8
+   },
+   "note": "Aptitude/selection procedure; German-speaking schools add a 10-month clinical module."
+  },
+  {
+   "id": "ergotherapie",
+   "group": "health",
+   "entity": "edu-fh-ergotherapie",
+   "name": {
+    "en": "Occupational therapy",
+    "de": "Ergotherapie"
+   },
+   "type": "FH",
+   "institutions": [
+    "ZHAW",
+    "HESSO",
+    "SUPSI"
+   ],
+   "admission": "work",
+   "years": 3,
+   "masterOnly": false,
+   "estimate": {
+    "payEntry": 6100,
+    "payMid": 7000,
+    "unemployment": 1.0,
+    "nonCompletion": 8
+   }
+  },
+  {
+   "id": "hebamme",
+   "group": "health",
+   "entity": "edu-fh-hebamme",
+   "name": {
+    "en": "Midwifery",
+    "de": "Hebamme"
+   },
+   "type": "FH",
+   "institutions": [
+    "ZHAW",
+    "BFH",
+    "HESSO"
+   ],
+   "admission": "selection",
+   "years": 4,
+   "masterOnly": false,
+   "estimate": {
+    "payEntry": 6500,
+    "payMid": 7400,
+    "unemployment": 0.8,
+    "nonCompletion": 8
+   },
+   "note": "Selection procedure; German-speaking schools add a clinical module."
+  },
+  {
+   "id": "ernaehrung",
+   "group": "health",
+   "entity": "edu-fh-ernaehrung-und-diaetetik",
+   "name": {
+    "en": "Nutrition and dietetics",
+    "de": "Ernährung und Diätetik"
+   },
+   "type": "FH",
+   "institutions": [
+    "BFH",
+    "HESSO"
+   ],
+   "admission": "work",
+   "years": 3,
+   "masterOnly": false,
+   "estimate": {
+    "payEntry": 6000,
+    "payMid": 6900,
+    "unemployment": 3.0,
+    "nonCompletion": 10
+   }
+  },
+  {
+   "id": "radiologie",
+   "group": "health",
+   "entity": "edu-fh-medizinisch-technische-radiologie",
+   "name": {
+    "en": "Medical radiology technology",
+    "de": "Medizinisch-technische Radiologie"
+   },
+   "type": "FH",
+   "institutions": [
+    "HESSO"
+   ],
+   "admission": "work",
+   "years": 3,
+   "masterOnly": false,
+   "estimate": {
+    "payEntry": 6400,
+    "payMid": 7300,
+    "unemployment": 1.0,
+    "nonCompletion": 10
+   },
+   "note": "German-speaking Switzerland trains MTR at HF level instead."
+  },
+  {
+   "id": "osteopathie",
+   "group": "health",
+   "entity": "edu-fh-osteopathie",
+   "name": {
+    "en": "Osteopathy",
+    "de": "Osteopathie"
+   },
+   "type": "FH",
+   "institutions": [
+    "HESSO"
+   ],
+   "admission": "selection",
+   "years": 5,
+   "masterOnly": false,
+   "estimate": {
+    "payEntry": 6000,
+    "payMid": 8500,
+    "unemployment": 2.0,
+    "nonCompletion": 10
+   },
+   "note": "Bachelor + master required for practice; often self-employed."
+  },
+  {
+   "id": "optometrie",
+   "group": "health",
+   "entity": "edu-fh-optometrie",
+   "name": {
+    "en": "Optometry",
+    "de": "Optometrie"
+   },
+   "type": "FH",
+   "institutions": [
+    "FHNW"
+   ],
+   "admission": "work",
+   "years": 3,
+   "masterOnly": false,
+   "estimate": {
+    "payEntry": 6300,
+    "payMid": 7500,
+    "unemployment": 1.5,
+    "nonCompletion": 12
+   }
+  },
+  {
+   "id": "logopaedie",
+   "group": "health",
+   "entity": "edu-fh-logopaedie",
+   "name": {
+    "en": "Speech and language therapy",
+    "de": "Logopädie"
+   },
+   "type": "FH",
+   "institutions": [
+    "HFH",
+    "FHNW",
+    "UNIFR",
+    "UNINE",
+    "UNIGE"
+   ],
+   "admission": "selection",
+   "years": 3,
+   "masterOnly": false,
+   "estimate": {
+    "payEntry": 6700,
+    "payMid": 8000,
+    "unemployment": 1.0,
+    "nonCompletion": 8
+   },
+   "note": "Paid on teacher scales in most cantons; Romandie trains at university level (master)."
+  },
+  {
+   "id": "psychomotorik",
+   "group": "health",
+   "entity": "edu-fh-psychomotoriktherapie",
+   "name": {
+    "en": "Psychomotor therapy",
+    "de": "Psychomotoriktherapie"
+   },
+   "type": "FH",
+   "institutions": [
+    "HFH",
+    "HESSO"
+   ],
+   "admission": "selection",
+   "years": 3,
+   "masterOnly": false,
+   "estimate": {
+    "payEntry": 6700,
+    "payMid": 8000,
+    "unemployment": 1.5,
+    "nonCompletion": 8
+   }
+  },
+  {
+   "id": "sport-fh",
+   "group": "health",
+   "entity": "edu-fh-sport-sportwissenschaften",
+   "name": {
+    "en": "Sport (applied)",
+    "de": "Sport (FH)"
+   },
+   "type": "FH",
+   "institutions": [
+    "EHSM"
+   ],
+   "admission": "selection",
+   "years": 3,
+   "masterOnly": false,
+   "estimate": {
+    "payEntry": 5500,
+    "payMid": 6800,
+    "unemployment": 3.0,
+    "nonCompletion": 10
+   },
+   "note": "Sports aptitude test; small cohorts."
+  },
+  {
+   "id": "mathematik",
+   "group": "science",
+   "entity": "edu-uh-mathematik",
+   "name": {
+    "en": "Mathematics",
+    "de": "Mathematik"
+   },
+   "type": "UH",
+   "institutions": [
+    "ETHZ",
+    "EPFL",
+    "UZH",
+    "UNIBE",
+    "UNIBAS",
+    "UNIGE",
+    "UNIFR",
+    "UNINE"
+   ],
+   "admission": "open",
+   "years": 4.5,
+   "masterOnly": false,
+   "estimate": {
+    "payEntry": 6000,
+    "payMid": 9500,
+    "unemployment": 3.5,
+    "nonCompletion": 30
+   },
+   "note": "Very demanding first year; graduates are sought in finance, insurance, IT and data."
+  },
+  {
+   "id": "physik",
+   "group": "science",
+   "entity": "edu-uh-physik",
+   "name": {
+    "en": "Physics",
+    "de": "Physik"
+   },
+   "type": "UH",
+   "institutions": [
+    "ETHZ",
+    "EPFL",
+    "UZH",
+    "UNIBE",
+    "UNIBAS",
+    "UNIGE",
+    "UNIFR"
+   ],
+   "admission": "open",
+   "years": 5,
+   "masterOnly": false,
+   "estimate": {
+    "payEntry": 5300,
+    "payMid": 9000,
+    "unemployment": 3.5,
+    "nonCompletion": 30
+   },
+   "note": "Most graduates start a doctorate (low pay at first), later strong pay in industry/finance."
+  },
+  {
+   "id": "chemie",
+   "group": "science",
+   "entity": "edu-uh-chemie",
+   "name": {
+    "en": "Chemistry",
+    "de": "Chemie"
+   },
+   "type": "UH",
+   "institutions": [
+    "ETHZ",
+    "EPFL",
+    "UZH",
+    "UNIBE",
+    "UNIBAS",
+    "UNIGE",
+    "UNIFR"
+   ],
+   "admission": "open",
+   "years": 4.5,
+   "masterOnly": false,
+   "estimate": {
+    "payEntry": 5000,
+    "payMid": 8800,
+    "unemployment": 3.5,
+    "nonCompletion": 25
+   },
+   "note": "A doctorate is the norm for chemists in industry."
+  },
+  {
+   "id": "biochemie",
+   "group": "science",
+   "entity": "edu-uh-biochemie",
+   "name": {
+    "en": "Biochemistry",
+    "de": "Biochemie"
+   },
+   "type": "UH",
+   "institutions": [
+    "UZH",
+    "UNIBE",
+    "UNIGE",
+    "UNIFR",
+    "ETHZ"
+   ],
+   "admission": "open",
+   "years": 5,
+   "masterOnly": false,
+   "estimate": {
+    "payEntry": 4900,
+    "payMid": 8000,
+    "unemployment": 4.0,
+    "nonCompletion": 22
+   },
+   "note": "ETH: Chemistry and biochemistry track; doctorate common."
+  },
+  {
+   "id": "biologie",
+   "group": "science",
+   "entity": "edu-uh-biologie",
+   "name": {
+    "en": "Biology",
+    "de": "Biologie"
+   },
+   "type": "UH",
+   "institutions": [
+    "ETHZ",
+    "UZH",
+    "UNIBE",
+    "UNIBAS",
+    "UNIGE",
+    "UNIL",
+    "UNIFR",
+    "UNINE"
+   ],
+   "admission": "open",
+   "years": 5,
+   "masterOnly": false,
+   "estimate": {
+    "payEntry": 4800,
+    "payMid": 7600,
+    "unemployment": 5.5,
+    "nonCompletion": 22
+   },
+   "note": "Large cohorts; many doctorates and fixed-term research jobs."
+  },
+  {
+   "id": "erdwissenschaften",
+   "group": "science",
+   "entity": "edu-uh-erdwissenschaften",
+   "name": {
+    "en": "Earth sciences",
+    "de": "Erdwissenschaften"
+   },
+   "type": "UH",
+   "institutions": [
+    "ETHZ",
+    "UNIBE",
+    "UNIBAS",
+    "UNIGE",
+    "UNIL",
+    "UNIFR"
+   ],
+   "admission": "open",
+   "years": 5,
+   "masterOnly": false,
+   "estimate": {
+    "payEntry": 5400,
+    "payMid": 8000,
+    "unemployment": 4.5,
+    "nonCompletion": 20
+   }
+  },
+  {
+   "id": "geographie",
+   "group": "science",
+   "entity": "edu-uh-geographie",
+   "name": {
+    "en": "Geography",
+    "de": "Geographie"
+   },
+   "type": "UH",
+   "institutions": [
+    "UZH",
+    "UNIBE",
+    "UNIBAS",
+    "UNIGE",
+    "UNIL",
+    "UNIFR",
+    "UNINE"
+   ],
+   "admission": "open",
+   "years": 4.5,
+   "masterOnly": false,
+   "estimate": {
+    "payEntry": 5800,
+    "payMid": 8000,
+    "unemployment": 4.5,
+    "nonCompletion": 18
+   },
+   "note": "Many become teachers or work in planning, environment and GIS."
+  },
+  {
+   "id": "umweltwissenschaften",
+   "group": "science",
+   "entity": "edu-eth-umweltwissenschaften-waldwissenschaften",
+   "name": {
+    "en": "Environmental sciences",
+    "de": "Umweltnaturwissenschaften"
+   },
+   "type": "ETH",
+   "institutions": [
+    "ETHZ",
+    "UNIL",
+    "UNIGE",
+    "UNIBAS"
+   ],
+   "admission": "open",
+   "years": 4.5,
+   "masterOnly": false,
+   "estimate": {
+    "payEntry": 5600,
+    "payMid": 8000,
+    "unemployment": 4.5,
+    "nonCompletion": 18
+   }
+  },
+  {
+   "id": "agrar-eth",
+   "group": "science",
+   "entity": "edu-eth-agrarwissenschaften",
+   "name": {
+    "en": "Agricultural sciences",
+    "de": "Agrarwissenschaften"
+   },
+   "type": "ETH",
+   "institutions": [
+    "ETHZ"
+   ],
+   "admission": "open",
+   "years": 5,
+   "masterOnly": false,
+   "estimate": {
+    "payEntry": 6000,
+    "payMid": 8200,
+    "unemployment": 3.0,
+    "nonCompletion": 18
+   }
+  },
+  {
+   "id": "lebensmittel-eth",
+   "group": "science",
+   "entity": "edu-eth-lebensmittelwissenschaften",
+   "name": {
+    "en": "Food science",
+    "de": "Lebensmittelwissenschaften"
+   },
+   "type": "ETH",
+   "institutions": [
+    "ETHZ"
+   ],
+   "admission": "open",
+   "years": 4.5,
+   "masterOnly": false,
+   "estimate": {
+    "payEntry": 6300,
+    "payMid": 8600,
+    "unemployment": 3.0,
+    "nonCompletion": 20
+   }
+  },
+  {
+   "id": "forensik",
+   "group": "science",
+   "entity": "edu-uh-forensische-wissenschaften",
+   "name": {
+    "en": "Forensic science",
+    "de": "Forensische Wissenschaften"
+   },
+   "type": "UH",
+   "institutions": [
+    "UNIL"
+   ],
+   "admission": "open",
+   "years": 5,
+   "masterOnly": false,
+   "estimate": {
+    "payEntry": 5800,
+    "payMid": 8300,
+    "unemployment": 4.0,
+    "nonCompletion": 20
+   },
+   "note": "École des sciences criminelles, Lausanne (French)."
+  },
+  {
+   "id": "informatik-eth",
+   "group": "computing",
+   "entity": "edu-eth-informatik",
+   "name": {
+    "en": "Computer science (ETH/EPFL)",
+    "de": "Informatik (ETH/EPFL)"
+   },
+   "type": "ETH",
+   "institutions": [
+    "ETHZ",
+    "EPFL"
+   ],
+   "admission": "open",
+   "years": 4.5,
+   "masterOnly": false,
+   "estimate": {
+    "payEntry": 8500,
+    "payMid": 11000,
+    "unemployment": 2.5,
+    "nonCompletion": 35
+   },
+   "note": "First-year exam (Basisprüfung) eliminates a large share; top starting pay in Switzerland."
+  },
+  {
+   "id": "informatik-uh",
+   "group": "computing",
+   "entity": "edu-uh-informatik",
+   "name": {
+    "en": "Computer science (university)",
+    "de": "Informatik (Universität)"
+   },
+   "type": "UH",
+   "institutions": [
+    "UZH",
+    "UNIBE",
+    "UNIBAS",
+    "UNIGE",
+    "UNIFR",
+    "UNINE",
+    "USI",
+    "UNISG",
+    "UNIDIST"
+   ],
+   "admission": "open",
+   "years": 4.5,
+   "masterOnly": false,
+   "estimate": {
+    "payEntry": 7300,
+    "payMid": 9800,
+    "unemployment": 3.0,
+    "nonCompletion": 30
+   }
+  },
+  {
+   "id": "cse",
+   "group": "computing",
+   "entity": "edu-eth-rechnergestuetzte-wissenschaften",
+   "name": {
+    "en": "Computational science and engineering",
+    "de": "Rechnergestützte Wissenschaften"
+   },
+   "type": "ETH",
+   "institutions": [
+    "ETHZ"
+   ],
+   "admission": "open",
+   "years": 4.5,
+   "masterOnly": false,
+   "estimate": {
+    "payEntry": 7800,
+    "payMid": 10500,
+    "unemployment": 2.5,
+    "nonCompletion": 30
+   }
+  },
+  {
+   "id": "wirtschaftsinformatik-uh",
+   "group": "computing",
+   "entity": "edu-uh-wirtschaftsinformatik",
+   "name": {
+    "en": "Business information systems (university)",
+    "de": "Wirtschaftsinformatik (Universität)"
+   },
+   "type": "UH",
+   "institutions": [
+    "UZH",
+    "UNIBE",
+    "UNIFR",
+    "UNIGE",
+    "UNIL",
+    "UNISG"
+   ],
+   "admission": "open",
+   "years": 4.5,
+   "masterOnly": false,
+   "estimate": {
+    "payEntry": 7500,
+    "payMid": 9800,
+    "unemployment": 2.5,
+    "nonCompletion": 20
+   }
+  },
+  {
+   "id": "computerlinguistik",
+   "group": "computing",
+   "entity": "edu-uh-computerlinguistik",
+   "name": {
+    "en": "Computational linguistics",
+    "de": "Computerlinguistik"
+   },
+   "type": "UH",
+   "institutions": [
+    "UZH",
+    "UNIGE"
+   ],
+   "admission": "open",
+   "years": 5,
+   "masterOnly": false,
+   "estimate": {
+    "payEntry": 6800,
+    "payMid": 9000,
+    "unemployment": 3.5,
+    "nonCompletion": 20
+   }
+  },
+  {
+   "id": "informatik-fh",
+   "group": "computing",
+   "entity": "edu-fh-informatik",
+   "name": {
+    "en": "Computer science (applied)",
+    "de": "Informatik (FH)"
+   },
+   "type": "FH",
+   "institutions": [
+    "ZHAW",
+    "FHNW",
+    "BFH",
+    "HSLU",
+    "OST",
+    "FHGR",
+    "HESSO",
+    "SUPSI"
+   ],
+   "admission": "work",
+   "years": 3,
+   "masterOnly": false,
+   "estimate": {
+    "payEntry": 7000,
+    "payMid": 9000,
+    "unemployment": 2.5,
+    "nonCompletion": 20
+   },
+   "note": "Gymnasium graduates need one year of IT work experience (several schools offer integrated practice models)."
+  },
+  {
+   "id": "wirtschaftsinformatik-fh",
+   "group": "computing",
+   "entity": "edu-fh-wirtschaftsinformatik",
+   "name": {
+    "en": "Business information systems (applied)",
+    "de": "Wirtschaftsinformatik (FH)"
+   },
+   "type": "FH",
+   "institutions": [
+    "ZHAW",
+    "FHNW",
+    "BFH",
+    "HSLU",
+    "OST",
+    "FHGR",
+    "HESSO",
+    "SUPSI",
+    "KALAIDOS"
+   ],
+   "admission": "work",
+   "years": 3,
+   "masterOnly": false,
+   "estimate": {
+    "payEntry": 7200,
+    "payMid": 9300,
+    "unemployment": 2.0,
+    "nonCompletion": 15
+   }
+  },
+  {
+   "id": "elektrotechnik-eth",
+   "group": "engineering",
+   "entity": "edu-eth-elektrotechnik",
+   "name": {
+    "en": "Electrical engineering (ETH/EPFL)",
+    "de": "Elektrotechnik (ETH/EPFL)"
+   },
+   "type": "ETH",
+   "institutions": [
+    "ETHZ",
+    "EPFL"
+   ],
+   "admission": "open",
+   "years": 4.5,
+   "masterOnly": false,
+   "estimate": {
+    "payEntry": 7800,
+    "payMid": 10200,
+    "unemployment": 2.5,
+    "nonCompletion": 30
+   }
+  },
+  {
+   "id": "maschinenbau-eth",
+   "group": "engineering",
+   "entity": "edu-eth-maschineningenieurwissenschaften",
+   "name": {
+    "en": "Mechanical engineering (ETH/EPFL)",
+    "de": "Maschineningenieurwissenschaften (ETH/EPFL)"
+   },
+   "type": "ETH",
+   "institutions": [
+    "ETHZ",
+    "EPFL"
+   ],
+   "admission": "open",
+   "years": 4.5,
+   "masterOnly": false,
+   "estimate": {
+    "payEntry": 7600,
+    "payMid": 10000,
+    "unemployment": 2.5,
+    "nonCompletion": 30
+   }
+  },
+  {
+   "id": "bauingenieur-eth",
+   "group": "engineering",
+   "entity": "edu-eth-bauingenieur",
+   "name": {
+    "en": "Civil engineering (ETH/EPFL)",
+    "de": "Bauingenieurwissenschaften (ETH/EPFL)"
+   },
+   "type": "ETH",
+   "institutions": [
+    "ETHZ",
+    "EPFL"
+   ],
+   "admission": "open",
+   "years": 4.5,
+   "masterOnly": false,
+   "estimate": {
+    "payEntry": 7000,
+    "payMid": 9200,
+    "unemployment": 1.5,
+    "nonCompletion": 25
+   },
+   "note": "Strong shortage of civil engineers."
+  },
+  {
+   "id": "architektur-eth",
+   "group": "engineering",
+   "entity": "edu-eth-architektur",
+   "name": {
+    "en": "Architecture (ETH/EPFL/USI)",
+    "de": "Architektur (ETH/EPFL/USI)"
+   },
+   "type": "ETH",
+   "institutions": [
+    "ETHZ",
+    "EPFL",
+    "USI"
+   ],
+   "admission": "open",
+   "years": 6,
+   "masterOnly": false,
+   "estimate": {
+    "payEntry": 5700,
+    "payMid": 7500,
+    "unemployment": 3.5,
+    "nonCompletion": 18
+   },
+   "note": "Includes a one-year practical internship; architect salaries are modest for the study length."
+  },
+  {
+   "id": "materialwissenschaft",
+   "group": "engineering",
+   "entity": "edu-eth-materialwissenschaft",
+   "name": {
+    "en": "Materials science",
+    "de": "Materialwissenschaft"
+   },
+   "type": "ETH",
+   "institutions": [
+    "ETHZ",
+    "EPFL"
+   ],
+   "admission": "open",
+   "years": 4.5,
+   "masterOnly": false,
+   "estimate": {
+    "payEntry": 7000,
+    "payMid": 9500,
+    "unemployment": 3.0,
+    "nonCompletion": 28
+   }
+  },
+  {
+   "id": "mikrotechnik",
+   "group": "engineering",
+   "entity": "edu-eth-mikrotechnik",
+   "name": {
+    "en": "Microengineering",
+    "de": "Mikrotechnik"
+   },
+   "type": "ETH",
+   "institutions": [
+    "EPFL"
+   ],
+   "admission": "open",
+   "years": 5,
+   "masterOnly": false,
+   "estimate": {
+    "payEntry": 7500,
+    "payMid": 9800,
+    "unemployment": 3.0,
+    "nonCompletion": 30
+   },
+   "note": "EPFL (French/English)."
+  },
+  {
+   "id": "geomatik-eth",
+   "group": "engineering",
+   "entity": "edu-eth-raumplanung-geomatik",
+   "name": {
+    "en": "Geomatics and spatial engineering",
+    "de": "Raumbezogene Ingenieurwissenschaften"
+   },
+   "type": "ETH",
+   "institutions": [
+    "ETHZ"
+   ],
+   "admission": "open",
+   "years": 4.5,
+   "masterOnly": false,
+   "estimate": {
+    "payEntry": 6800,
+    "payMid": 8800,
+    "unemployment": 2.0,
+    "nonCompletion": 22
+   }
+  },
+  {
+   "id": "umweltingenieur-eth",
+   "group": "engineering",
+   "entity": "edu-eth-umweltingenieurwissenschaften",
+   "name": {
+    "en": "Environmental engineering (ETH/EPFL)",
+    "de": "Umweltingenieurwissenschaften (ETH/EPFL)"
+   },
+   "type": "ETH",
+   "institutions": [
+    "ETHZ",
+    "EPFL"
+   ],
+   "admission": "open",
+   "years": 4.5,
+   "masterOnly": false,
+   "estimate": {
+    "payEntry": 6800,
+    "payMid": 8900,
+    "unemployment": 2.5,
+    "nonCompletion": 22
+   }
+  },
+  {
+   "id": "elektrotechnik-fh",
+   "group": "engineering",
+   "entity": "edu-fh-elektrotechnik-informationstechnologie",
+   "name": {
+    "en": "Electrical engineering (applied)",
+    "de": "Elektrotechnik (FH)"
+   },
+   "type": "FH",
+   "institutions": [
+    "ZHAW",
+    "FHNW",
+    "BFH",
+    "HSLU",
+    "OST",
+    "HESSO",
+    "SUPSI"
+   ],
+   "admission": "work",
+   "years": 3,
+   "masterOnly": false,
+   "estimate": {
+    "payEntry": 7000,
+    "payMid": 8900,
+    "unemployment": 2.0,
+    "nonCompletion": 20
+   }
+  },
+  {
+   "id": "maschinentechnik-fh",
+   "group": "engineering",
+   "entity": "edu-fh-maschinentechnik",
+   "name": {
+    "en": "Mechanical engineering (applied)",
+    "de": "Maschinentechnik (FH)"
+   },
+   "type": "FH",
+   "institutions": [
+    "ZHAW",
+    "FHNW",
+    "BFH",
+    "HSLU",
+    "OST",
+    "HESSO",
+    "SUPSI"
+   ],
+   "admission": "work",
+   "years": 3,
+   "masterOnly": false,
+   "estimate": {
+    "payEntry": 6900,
+    "payMid": 8800,
+    "unemployment": 2.0,
+    "nonCompletion": 18
+   }
+  },
+  {
+   "id": "mechatronik-fh",
+   "group": "engineering",
+   "entity": "edu-fh-mechatronik",
+   "name": {
+    "en": "Mechatronics",
+    "de": "Mechatronik"
+   },
+   "type": "FH",
+   "institutions": [
+    "FHNW",
+    "FHGR",
+    "BFH"
+   ],
+   "admission": "work",
+   "years": 3,
+   "masterOnly": false,
+   "estimate": {
+    "payEntry": 6900,
+    "payMid": 8800,
+    "unemployment": 2.0,
+    "nonCompletion": 18
+   }
+  },
+  {
+   "id": "systemtechnik-fh",
+   "group": "engineering",
+   "entity": "edu-fh-systemtechnik",
+   "name": {
+    "en": "Systems engineering",
+    "de": "Systemtechnik"
+   },
+   "type": "FH",
+   "institutions": [
+    "ZHAW",
+    "OST",
+    "FHNW",
+    "HESSO"
+   ],
+   "admission": "work",
+   "years": 3,
+   "masterOnly": false,
+   "estimate": {
+    "payEntry": 6900,
+    "payMid": 8800,
+    "unemployment": 2.0,
+    "nonCompletion": 18
+   }
+  },
+  {
+   "id": "medizintechnik-fh",
+   "group": "engineering",
+   "entity": "edu-fh-medizintechnik",
+   "name": {
+    "en": "Medical engineering",
+    "de": "Medizintechnik"
+   },
+   "type": "FH",
+   "institutions": [
+    "BFH",
+    "HSLU"
+   ],
+   "admission": "work",
+   "years": 3,
+   "masterOnly": false,
+   "estimate": {
+    "payEntry": 6700,
+    "payMid": 8500,
+    "unemployment": 3.0,
+    "nonCompletion": 18
+   }
+  },
+  {
+   "id": "wirtschaftsing-fh",
+   "group": "engineering",
+   "entity": "edu-fh-wirtschaftsingenieurwesen",
+   "name": {
+    "en": "Industrial engineering and management",
+    "de": "Wirtschaftsingenieurwesen"
+   },
+   "type": "FH",
+   "institutions": [
+    "ZHAW",
+    "FHNW",
+    "BFH",
+    "HSLU",
+    "OST",
+    "HESSO",
+    "SUPSI"
+   ],
+   "admission": "work",
+   "years": 3,
+   "masterOnly": false,
+   "estimate": {
+    "payEntry": 7200,
+    "payMid": 9200,
+    "unemployment": 2.0,
+    "nonCompletion": 15
+   }
+  },
+  {
+   "id": "aviatik",
+   "group": "engineering",
+   "entity": "edu-fh-aviatik",
+   "name": {
+    "en": "Aviation",
+    "de": "Aviatik"
+   },
+   "type": "FH",
+   "institutions": [
+    "ZHAW"
+   ],
+   "admission": "work",
+   "years": 3,
+   "masterOnly": false,
+   "estimate": {
+    "payEntry": 6800,
+    "payMid": 9000,
+    "unemployment": 3.0,
+    "nonCompletion": 18
+   }
+  },
+  {
+   "id": "architektur-fh",
+   "group": "engineering",
+   "entity": "edu-fh-architektur",
+   "name": {
+    "en": "Architecture (applied)",
+    "de": "Architektur (FH)"
+   },
+   "type": "FH",
+   "institutions": [
+    "ZHAW",
+    "FHNW",
+    "BFH",
+    "HSLU",
+    "OST",
+    "FHGR",
+    "HESSO",
+    "SUPSI"
+   ],
+   "admission": "work",
+   "years": 3,
+   "masterOnly": false,
+   "estimate": {
+    "payEntry": 5900,
+    "payMid": 7600,
+    "unemployment": 3.0,
+    "nonCompletion": 15
+   }
+  },
+  {
+   "id": "bauingenieur-fh",
+   "group": "engineering",
+   "entity": "edu-fh-bauingenieurwissenschaften",
+   "name": {
+    "en": "Civil engineering (applied)",
+    "de": "Bauingenieurwesen (FH)"
+   },
+   "type": "FH",
+   "institutions": [
+    "ZHAW",
+    "FHNW",
+    "BFH",
+    "HSLU",
+    "OST",
+    "FHGR",
+    "HESSO",
+    "SUPSI"
+   ],
+   "admission": "work",
+   "years": 3,
+   "masterOnly": false,
+   "estimate": {
+    "payEntry": 6900,
+    "payMid": 8700,
+    "unemployment": 1.2,
+    "nonCompletion": 15
+   }
+  },
+  {
+   "id": "gebaeudetechnik",
+   "group": "engineering",
+   "entity": "edu-fh-gebaeudetechnik",
+   "name": {
+    "en": "Building services engineering",
+    "de": "Gebäudetechnik"
+   },
+   "type": "FH",
+   "institutions": [
+    "HSLU",
+    "FHNW",
+    "HESSO"
+   ],
+   "admission": "work",
+   "years": 3,
+   "masterOnly": false,
+   "estimate": {
+    "payEntry": 7000,
+    "payMid": 8800,
+    "unemployment": 1.0,
+    "nonCompletion": 15
+   },
+   "note": "Severe shortage; energy transition demand."
+  },
+  {
+   "id": "holztechnik",
+   "group": "engineering",
+   "entity": "edu-fh-holztechnik",
+   "name": {
+    "en": "Wood engineering",
+    "de": "Holztechnik"
+   },
+   "type": "FH",
+   "institutions": [
+    "BFH"
+   ],
+   "admission": "work",
+   "years": 3,
+   "masterOnly": false,
+   "estimate": {
+    "payEntry": 6600,
+    "payMid": 8300,
+    "unemployment": 1.5,
+    "nonCompletion": 12
+   }
+  },
+  {
+   "id": "landschaftsarchitektur",
+   "group": "engineering",
+   "entity": "edu-fh-landschaftsarchitektur",
+   "name": {
+    "en": "Landscape architecture",
+    "de": "Landschaftsarchitektur"
+   },
+   "type": "FH",
+   "institutions": [
+    "OST",
+    "HESSO"
+   ],
+   "admission": "work",
+   "years": 3,
+   "masterOnly": false,
+   "estimate": {
+    "payEntry": 5800,
+    "payMid": 7300,
+    "unemployment": 3.0,
+    "nonCompletion": 12
+   }
+  },
+  {
+   "id": "geomatik-fh",
+   "group": "engineering",
+   "entity": "edu-fh-raumplanung-geomatik",
+   "name": {
+    "en": "Spatial planning and geomatics (applied)",
+    "de": "Raumplanung, Geomatik (FH)"
+   },
+   "type": "FH",
+   "institutions": [
+    "OST",
+    "FHNW",
+    "HESSO"
+   ],
+   "admission": "work",
+   "years": 3,
+   "masterOnly": false,
+   "estimate": {
+    "payEntry": 6500,
+    "payMid": 8200,
+    "unemployment": 2.0,
+    "nonCompletion": 15
+   }
+  },
+  {
+   "id": "biotech-fh",
+   "group": "engineering",
+   "entity": "edu-fh-biotechnologie",
+   "name": {
+    "en": "Biotechnology",
+    "de": "Biotechnologie"
+   },
+   "type": "FH",
+   "institutions": [
+    "ZHAW",
+    "HESSO",
+    "FHNW"
+   ],
+   "admission": "work",
+   "years": 3,
+   "masterOnly": false,
+   "estimate": {
+    "payEntry": 5900,
+    "payMid": 7600,
+    "unemployment": 4.5,
+    "nonCompletion": 15
+   }
+  },
+  {
+   "id": "chemie-fh",
+   "group": "engineering",
+   "entity": "edu-fh-chemie",
+   "name": {
+    "en": "Chemistry (applied)",
+    "de": "Chemie (FH)"
+   },
+   "type": "FH",
+   "institutions": [
+    "ZHAW",
+    "FHNW",
+    "HESSO"
+   ],
+   "admission": "work",
+   "years": 3,
+   "masterOnly": false,
+   "estimate": {
+    "payEntry": 6100,
+    "payMid": 7800,
+    "unemployment": 4.0,
+    "nonCompletion": 15
+   }
+  },
+  {
+   "id": "lebensmittel-fh",
+   "group": "engineering",
+   "entity": "edu-fh-lebensmittelwissenschaften",
+   "name": {
+    "en": "Food technology",
+    "de": "Lebensmitteltechnologie"
+   },
+   "type": "FH",
+   "institutions": [
+    "BFH",
+    "ZHAW"
+   ],
+   "admission": "work",
+   "years": 3,
+   "masterOnly": false,
+   "estimate": {
+    "payEntry": 6000,
+    "payMid": 7600,
+    "unemployment": 3.0,
+    "nonCompletion": 12
+   }
+  },
+  {
+   "id": "umweltingenieur-fh",
+   "group": "engineering",
+   "entity": "edu-fh-umweltingenieurwissenschaften",
+   "name": {
+    "en": "Environmental engineering (applied)",
+    "de": "Umweltingenieurwesen (FH)"
+   },
+   "type": "FH",
+   "institutions": [
+    "ZHAW",
+    "OST",
+    "HESSO"
+   ],
+   "admission": "work",
+   "years": 3,
+   "masterOnly": false,
+   "estimate": {
+    "payEntry": 5900,
+    "payMid": 7500,
+    "unemployment": 3.5,
+    "nonCompletion": 12
+   }
+  },
+  {
+   "id": "wald-fh",
+   "group": "engineering",
+   "entity": "edu-fh-umweltwissenschaften-waldwissenschaften",
+   "name": {
+    "en": "Forest sciences",
+    "de": "Waldwissenschaften"
+   },
+   "type": "FH",
+   "institutions": [
+    "BFH"
+   ],
+   "admission": "work",
+   "years": 3,
+   "masterOnly": false,
+   "estimate": {
+    "payEntry": 5900,
+    "payMid": 7500,
+    "unemployment": 3.0,
+    "nonCompletion": 12
+   }
+  },
+  {
+   "id": "agrar-fh",
+   "group": "engineering",
+   "entity": "edu-fh-agrarwissenschaften",
+   "name": {
+    "en": "Agriculture (applied)",
+    "de": "Agronomie (FH)"
+   },
+   "type": "FH",
+   "institutions": [
+    "BFH",
+    "HESSO"
+   ],
+   "admission": "work",
+   "years": 3,
+   "masterOnly": false,
+   "estimate": {
+    "payEntry": 5900,
+    "payMid": 7500,
+    "unemployment": 2.0,
+    "nonCompletion": 12
+   }
+  },
+  {
+   "id": "bwl-uh",
+   "group": "business",
+   "entity": "edu-uh-betriebswirtschaft",
+   "name": {
+    "en": "Business administration (university)",
+    "de": "Betriebswirtschaft (Universität)"
+   },
+   "type": "UH",
+   "institutions": [
+    "UZH",
+    "UNIBE",
+    "UNIBAS",
+    "UNIGE",
+    "UNIL",
+    "UNIFR",
+    "UNINE",
+    "UNILU",
+    "UNISG",
+    "USI"
+   ],
+   "admission": "open",
+   "years": 4.5,
+   "masterOnly": false,
+   "estimate": {
+    "payEntry": 7000,
+    "payMid": 10000,
+    "unemployment": 3.5,
+    "nonCompletion": 20
+   },
+   "note": "Includes banking & finance and accounting specialisations (UZH, HSG …)."
+  },
+  {
+   "id": "vwl-uh",
+   "group": "business",
+   "entity": "edu-uh-economics",
+   "name": {
+    "en": "Economics",
+    "de": "Volkswirtschaftslehre"
+   },
+   "type": "UH",
+   "institutions": [
+    "UZH",
+    "UNIBE",
+    "UNIBAS",
+    "UNIGE",
+    "UNIL",
+    "UNIFR",
+    "UNINE",
+    "UNILU",
+    "UNISG",
+    "USI"
+   ],
+   "admission": "open",
+   "years": 4.5,
+   "masterOnly": false,
+   "estimate": {
+    "payEntry": 7200,
+    "payMid": 10500,
+    "unemployment": 3.5,
+    "nonCompletion": 25
+   }
+  },
+  {
+   "id": "recht",
+   "group": "business",
+   "entity": "edu-uh-mlaw",
+   "name": {
+    "en": "Law",
+    "de": "Rechtswissenschaft"
+   },
+   "type": "UH",
+   "institutions": [
+    "UZH",
+    "UNIBE",
+    "UNIBAS",
+    "UNIGE",
+    "UNIL",
+    "UNIFR",
+    "UNINE",
+    "UNILU",
+    "UNISG"
+   ],
+   "admission": "open",
+   "years": 6,
+   "masterOnly": false,
+   "estimate": {
+    "payEntry": 5600,
+    "payMid": 10000,
+    "unemployment": 3.0,
+    "nonCompletion": 20
+   },
+   "note": "Master plus 1–2 years of traineeship for the bar exam; low trainee pay, then steep growth."
+  },
+  {
+   "id": "internationale-studien",
+   "group": "business",
+   "entity": "edu-uh-internationale-studien",
+   "name": {
+    "en": "International relations",
+    "de": "Internationale Beziehungen"
+   },
+   "type": "UH",
+   "institutions": [
+    "UNIGE",
+    "UNISG"
+   ],
+   "admission": "open",
+   "years": 5,
+   "masterOnly": false,
+   "estimate": {
+    "payEntry": 6000,
+    "payMid": 8500,
+    "unemployment": 5.0,
+    "nonCompletion": 18
+   }
+  },
+  {
+   "id": "bwl-fh",
+   "group": "business",
+   "entity": "edu-fh-betriebsoekonomie",
+   "name": {
+    "en": "Business administration (applied)",
+    "de": "Betriebsökonomie (FH)"
+   },
+   "type": "FH",
+   "institutions": [
+    "ZHAW",
+    "FHNW",
+    "BFH",
+    "HSLU",
+    "OST",
+    "FHGR",
+    "HESSO",
+    "SUPSI",
+    "KALAIDOS"
+   ],
+   "admission": "work",
+   "years": 3,
+   "masterOnly": false,
+   "estimate": {
+    "payEntry": 6700,
+    "payMid": 8800,
+    "unemployment": 3.0,
+    "nonCompletion": 15
+   },
+   "note": "Most popular FH programme; part-time study possible."
+  },
+  {
+   "id": "tourismus",
+   "group": "business",
+   "entity": "edu-fh-tourismus",
+   "name": {
+    "en": "Tourism",
+    "de": "Tourismus"
+   },
+   "type": "FH",
+   "institutions": [
+    "HSLU",
+    "FHGR",
+    "HESSO"
+   ],
+   "admission": "work",
+   "years": 3,
+   "masterOnly": false,
+   "estimate": {
+    "payEntry": 5500,
+    "payMid": 7000,
+    "unemployment": 4.0,
+    "nonCompletion": 12
+   }
+  },
+  {
+   "id": "hospitality",
+   "group": "business",
+   "entity": "edu-fh-hospitality-management",
+   "name": {
+    "en": "Hospitality management",
+    "de": "Hospitality Management"
+   },
+   "type": "FH",
+   "institutions": [
+    "HESSO"
+   ],
+   "admission": "selection",
+   "years": 4,
+   "masterOnly": false,
+   "estimate": {
+    "payEntry": 6000,
+    "payMid": 8500,
+    "unemployment": 3.0,
+    "nonCompletion": 10
+   },
+   "note": "EHL Lausanne; high tuition fees for this school (unlike public universities)."
+  },
+  {
+   "id": "facility",
+   "group": "business",
+   "entity": "edu-fh-facility-management",
+   "name": {
+    "en": "Facility management",
+    "de": "Facility Management"
+   },
+   "type": "FH",
+   "institutions": [
+    "ZHAW"
+   ],
+   "admission": "work",
+   "years": 3,
+   "masterOnly": false,
+   "estimate": {
+    "payEntry": 6300,
+    "payMid": 8000,
+    "unemployment": 2.5,
+    "nonCompletion": 12
+   }
+  },
+  {
+   "id": "informationswissenschaft",
+   "group": "business",
+   "entity": "edu-fh-informationswissenschaft",
+   "name": {
+    "en": "Information science",
+    "de": "Informationswissenschaft"
+   },
+   "type": "FH",
+   "institutions": [
+    "FHGR",
+    "HESSO"
+   ],
+   "admission": "work",
+   "years": 3,
+   "masterOnly": false,
+   "estimate": {
+    "payEntry": 6000,
+    "payMid": 7500,
+    "unemployment": 3.5,
+    "nonCompletion": 15
+   }
+  },
+  {
+   "id": "psychologie-uh",
+   "group": "social",
+   "entity": "edu-uh-psychologie",
+   "name": {
+    "en": "Psychology (university)",
+    "de": "Psychologie (Universität)"
+   },
+   "type": "UH",
+   "institutions": [
+    "UZH",
+    "UNIBE",
+    "UNIBAS",
+    "UNIGE",
+    "UNIL",
+    "UNIFR",
+    "UNINE",
+    "UNIDIST"
+   ],
+   "admission": "open",
+   "years": 5,
+   "masterOnly": false,
+   "estimate": {
+    "payEntry": 5800,
+    "payMid": 8000,
+    "unemployment": 4.5,
+    "nonCompletion": 20
+   },
+   "note": "Psychotherapist licence needs another 4–5 years of paid-but-low-wage training."
+  },
+  {
+   "id": "psychologie-fh",
+   "group": "social",
+   "entity": "edu-fh-psychologie",
+   "name": {
+    "en": "Applied psychology",
+    "de": "Angewandte Psychologie (FH)"
+   },
+   "type": "FH",
+   "institutions": [
+    "ZHAW",
+    "FHNW",
+    "KALAIDOS"
+   ],
+   "admission": "work",
+   "years": 4.5,
+   "masterOnly": false,
+   "estimate": {
+    "payEntry": 6300,
+    "payMid": 8000,
+    "unemployment": 4.0,
+    "nonCompletion": 12
+   },
+   "note": "The protected title 'psychologist' requires the master."
+  },
+  {
+   "id": "soziale-arbeit",
+   "group": "social",
+   "entity": "edu-fh-soziale-arbeit",
+   "name": {
+    "en": "Social work",
+    "de": "Soziale Arbeit"
+   },
+   "type": "FH",
+   "institutions": [
+    "ZHAW",
+    "FHNW",
+    "BFH",
+    "HSLU",
+    "OST",
+    "HESSO",
+    "SUPSI"
+   ],
+   "admission": "work",
+   "years": 3,
+   "masterOnly": false,
+   "estimate": {
+    "payEntry": 6500,
+    "payMid": 7600,
+    "unemployment": 1.5,
+    "nonCompletion": 12
+   },
+   "note": "Part-time, work-integrated study common."
+  },
+  {
+   "id": "soziologie",
+   "group": "social",
+   "entity": "edu-uh-soziologie",
+   "name": {
+    "en": "Sociology",
+    "de": "Soziologie"
+   },
+   "type": "UH",
+   "institutions": [
+    "UZH",
+    "UNIBE",
+    "UNIBAS",
+    "UNIGE",
+    "UNIL",
+    "UNIFR",
+    "UNINE",
+    "UNILU"
+   ],
+   "admission": "open",
+   "years": 5,
+   "masterOnly": false,
+   "estimate": {
+    "payEntry": 5800,
+    "payMid": 7900,
+    "unemployment": 5.5,
+    "nonCompletion": 25
+   }
+  },
+  {
+   "id": "politikwissenschaft",
+   "group": "social",
+   "entity": "edu-uh-politikwissenschaft",
+   "name": {
+    "en": "Political science",
+    "de": "Politikwissenschaft"
+   },
+   "type": "UH",
+   "institutions": [
+    "UZH",
+    "UNIBE",
+    "UNIBAS",
+    "UNIGE",
+    "UNIL",
+    "UNILU",
+    "UNISG"
+   ],
+   "admission": "open",
+   "years": 5,
+   "masterOnly": false,
+   "estimate": {
+    "payEntry": 6000,
+    "payMid": 8300,
+    "unemployment": 5.0,
+    "nonCompletion": 22
+   }
+  },
+  {
+   "id": "kommunikation-uh",
+   "group": "social",
+   "entity": "edu-uh-kommunikation-medien",
+   "name": {
+    "en": "Communication and media (university)",
+    "de": "Kommunikations- und Medienwissenschaft"
+   },
+   "type": "UH",
+   "institutions": [
+    "UZH",
+    "UNIFR",
+    "USI",
+    "UNINE",
+    "UNIBE"
+   ],
+   "admission": "open",
+   "years": 4.5,
+   "masterOnly": false,
+   "estimate": {
+    "payEntry": 5800,
+    "payMid": 7800,
+    "unemployment": 5.0,
+    "nonCompletion": 18
+   }
+  },
+  {
+   "id": "kommunikation-fh",
+   "group": "social",
+   "entity": "edu-fh-kommunikation-medien",
+   "name": {
+    "en": "Communication and journalism (applied)",
+    "de": "Kommunikation, Journalismus (FH)"
+   },
+   "type": "FH",
+   "institutions": [
+    "ZHAW",
+    "FHGR",
+    "HSLU"
+   ],
+   "admission": "work",
+   "years": 3,
+   "masterOnly": false,
+   "estimate": {
+    "payEntry": 5600,
+    "payMid": 7200,
+    "unemployment": 4.5,
+    "nonCompletion": 12
+   }
+  },
+  {
+   "id": "erziehungswissenschaft",
+   "group": "social",
+   "entity": "edu-uh-erziehungswissenschaft",
+   "name": {
+    "en": "Educational science",
+    "de": "Erziehungswissenschaft"
+   },
+   "type": "UH",
+   "institutions": [
+    "UZH",
+    "UNIBE",
+    "UNIGE",
+    "UNIFR"
+   ],
+   "admission": "open",
+   "years": 5,
+   "masterOnly": false,
+   "estimate": {
+    "payEntry": 6200,
+    "payMid": 8300,
+    "unemployment": 3.5,
+    "nonCompletion": 20
+   }
+  },
+  {
+   "id": "ethnologie",
+   "group": "social",
+   "entity": "edu-uh-sozialanthropologie-kulturanthropologie",
+   "name": {
+    "en": "Social and cultural anthropology",
+    "de": "Sozial- und Kulturanthropologie"
+   },
+   "type": "UH",
+   "institutions": [
+    "UZH",
+    "UNIBE",
+    "UNIBAS",
+    "UNIL",
+    "UNIFR",
+    "UNINE",
+    "UNILU"
+   ],
+   "admission": "open",
+   "years": 5,
+   "masterOnly": false,
+   "estimate": {
+    "payEntry": 5500,
+    "payMid": 7500,
+    "unemployment": 6.0,
+    "nonCompletion": 25
+   }
+  },
+  {
+   "id": "gender",
+   "group": "social",
+   "entity": "edu-uh-gender-studies",
+   "name": {
+    "en": "Gender studies (master)",
+    "de": "Gender Studies (Master)"
+   },
+   "type": "UH",
+   "institutions": [
+    "UZH",
+    "UNIBE",
+    "UNIBAS",
+    "UNIGE",
+    "UNIL"
+   ],
+   "admission": "open",
+   "years": 5,
+   "masterOnly": true,
+   "estimate": {
+    "payEntry": 5300,
+    "payMid": 7300,
+    "unemployment": 6.5,
+    "nonCompletion": 15
+   },
+   "note": "Mostly a master or minor subject."
+  },
+  {
+   "id": "osteuropa",
+   "group": "social",
+   "entity": "edu-uh-osteuropa-studien",
+   "name": {
+    "en": "Eastern European studies (master)",
+    "de": "Osteuropa-Studien (Master)"
+   },
+   "type": "UH",
+   "institutions": [
+    "UNIBAS",
+    "UNIBE"
+   ],
+   "admission": "open",
+   "years": 5,
+   "masterOnly": true,
+   "estimate": {
+    "payEntry": 5300,
+    "payMid": 7400,
+    "unemployment": 6.0,
+    "nonCompletion": 20
+   }
+  },
+  {
+   "id": "geschichte",
+   "group": "humanities",
+   "entity": "edu-uh-geschichte",
+   "name": {
+    "en": "History",
+    "de": "Geschichte"
+   },
+   "type": "UH",
+   "institutions": [
+    "UZH",
+    "UNIBE",
+    "UNIBAS",
+    "UNIGE",
+    "UNIL",
+    "UNIFR",
+    "UNINE",
+    "UNILU"
+   ],
+   "admission": "open",
+   "years": 5,
+   "masterOnly": false,
+   "estimate": {
+    "payEntry": 5800,
+    "payMid": 7900,
+    "unemployment": 5.5,
+    "nonCompletion": 25
+   },
+   "note": "Many graduates add a teaching diploma for upper secondary schools."
+  },
+  {
+   "id": "philosophie",
+   "group": "humanities",
+   "entity": "edu-uh-philosophie",
+   "name": {
+    "en": "Philosophy",
+    "de": "Philosophie"
+   },
+   "type": "UH",
+   "institutions": [
+    "UZH",
+    "UNIBE",
+    "UNIBAS",
+    "UNIGE",
+    "UNIL",
+    "UNIFR",
+    "UNINE",
+    "UNILU"
+   ],
+   "admission": "open",
+   "years": 5,
+   "masterOnly": false,
+   "estimate": {
+    "payEntry": 5400,
+    "payMid": 7600,
+    "unemployment": 6.0,
+    "nonCompletion": 30
+   }
+  },
+  {
+   "id": "kunstgeschichte",
+   "group": "humanities",
+   "entity": "edu-uh-kunstgeschichte",
+   "name": {
+    "en": "Art history",
+    "de": "Kunstgeschichte"
+   },
+   "type": "UH",
+   "institutions": [
+    "UZH",
+    "UNIBE",
+    "UNIBAS",
+    "UNIGE",
+    "UNIL",
+    "UNIFR",
+    "UNINE"
+   ],
+   "admission": "open",
+   "years": 5,
+   "masterOnly": false,
+   "estimate": {
+    "payEntry": 5000,
+    "payMid": 6900,
+    "unemployment": 6.5,
+    "nonCompletion": 25
+   }
+  },
+  {
+   "id": "archaeologie",
+   "group": "humanities",
+   "entity": "edu-uh-archaeologie-aegyptologie",
+   "name": {
+    "en": "Archaeology",
+    "de": "Archäologie"
+   },
+   "type": "UH",
+   "institutions": [
+    "UZH",
+    "UNIBE",
+    "UNIBAS",
+    "UNIGE",
+    "UNIL",
+    "UNINE"
+   ],
+   "admission": "open",
+   "years": 5,
+   "masterOnly": false,
+   "estimate": {
+    "payEntry": 4800,
+    "payMid": 6600,
+    "unemployment": 7.0,
+    "nonCompletion": 25
+   }
+  },
+  {
+   "id": "germanistik",
+   "group": "humanities",
+   "entity": "edu-uh-deutsche-sprach-und-literaturwissenschaft",
+   "name": {
+    "en": "German language and literature",
+    "de": "Germanistik"
+   },
+   "type": "UH",
+   "institutions": [
+    "UZH",
+    "UNIBE",
+    "UNIBAS",
+    "UNIGE",
+    "UNIL",
+    "UNIFR",
+    "UNINE"
+   ],
+   "admission": "open",
+   "years": 5,
+   "masterOnly": false,
+   "estimate": {
+    "payEntry": 5900,
+    "payMid": 8000,
+    "unemployment": 4.5,
+    "nonCompletion": 22
+   }
+  },
+  {
+   "id": "anglistik",
+   "group": "humanities",
+   "entity": "edu-uh-englische-sprach-und-literaturwissenschaft",
+   "name": {
+    "en": "English language and literature",
+    "de": "Anglistik"
+   },
+   "type": "UH",
+   "institutions": [
+    "UZH",
+    "UNIBE",
+    "UNIBAS",
+    "UNIGE",
+    "UNIL",
+    "UNIFR",
+    "UNINE"
+   ],
+   "admission": "open",
+   "years": 5,
+   "masterOnly": false,
+   "estimate": {
+    "payEntry": 5800,
+    "payMid": 7900,
+    "unemployment": 5.0,
+    "nonCompletion": 22
+   }
+  },
+  {
+   "id": "franzoesisch",
+   "group": "humanities",
+   "entity": "edu-uh-franzoesische-sprach-und-literaturwissenschaft",
+   "name": {
+    "en": "French language and literature",
+    "de": "Französistik"
+   },
+   "type": "UH",
+   "institutions": [
+    "UZH",
+    "UNIBE",
+    "UNIBAS",
+    "UNIGE",
+    "UNIL",
+    "UNIFR",
+    "UNINE"
+   ],
+   "admission": "open",
+   "years": 5,
+   "masterOnly": false,
+   "estimate": {
+    "payEntry": 5900,
+    "payMid": 8000,
+    "unemployment": 4.5,
+    "nonCompletion": 22
+   }
+  },
+  {
+   "id": "italienisch",
+   "group": "humanities",
+   "entity": "edu-uh-italienische-sprach-und-literaturwissenschaft",
+   "name": {
+    "en": "Italian language and literature",
+    "de": "Italianistik"
+   },
+   "type": "UH",
+   "institutions": [
+    "UZH",
+    "UNIBE",
+    "UNIBAS",
+    "UNIGE",
+    "UNIL",
+    "UNIFR",
+    "USI"
+   ],
+   "admission": "open",
+   "years": 5,
+   "masterOnly": false,
+   "estimate": {
+    "payEntry": 5900,
+    "payMid": 8000,
+    "unemployment": 4.5,
+    "nonCompletion": 22
+   }
+  },
+  {
+   "id": "spanisch",
+   "group": "humanities",
+   "entity": "edu-uh-spanische-sprach-und-literaturwissenschaft",
+   "name": {
+    "en": "Spanish language and literature",
+    "de": "Hispanistik"
+   },
+   "type": "UH",
+   "institutions": [
+    "UZH",
+    "UNIBE",
+    "UNIBAS",
+    "UNIGE",
+    "UNIL",
+    "UNINE"
+   ],
+   "admission": "open",
+   "years": 5,
+   "masterOnly": false,
+   "estimate": {
+    "payEntry": 5500,
+    "payMid": 7500,
+    "unemployment": 6.0,
+    "nonCompletion": 25
+   }
+  },
+  {
+   "id": "raetoromanisch",
+   "group": "humanities",
+   "entity": "edu-uh-raetoromanische-sprach-und-literaturwissenschaft",
+   "name": {
+    "en": "Romansh language and literature",
+    "de": "Rätoromanistik"
+   },
+   "type": "UH",
+   "institutions": [
+    "UZH",
+    "UNIFR"
+   ],
+   "admission": "open",
+   "years": 5,
+   "masterOnly": false,
+   "estimate": {
+    "payEntry": 6000,
+    "payMid": 8200,
+    "unemployment": 2.5,
+    "nonCompletion": 20
+   },
+   "note": "Tiny cohorts; teachers and media (RTR) are in demand."
+  },
+  {
+   "id": "latein-griechisch",
+   "group": "humanities",
+   "entity": "edu-uh-latein-griechisch",
+   "name": {
+    "en": "Classics (Latin, Greek)",
+    "de": "Latein, Griechisch"
+   },
+   "type": "UH",
+   "institutions": [
+    "UZH",
+    "UNIBE",
+    "UNIBAS",
+    "UNIGE",
+    "UNIL",
+    "UNIFR"
+   ],
+   "admission": "open",
+   "years": 5,
+   "masterOnly": false,
+   "estimate": {
+    "payEntry": 6200,
+    "payMid": 8400,
+    "unemployment": 3.0,
+    "nonCompletion": 25
+   },
+   "note": "Shortage of Latin teachers at Gymnasien."
+  },
+  {
+   "id": "linguistik",
+   "group": "humanities",
+   "entity": "edu-uh-allgemeine-sprachwissenschaft",
+   "name": {
+    "en": "Linguistics",
+    "de": "Allgemeine Sprachwissenschaft"
+   },
+   "type": "UH",
+   "institutions": [
+    "UZH",
+    "UNIBE",
+    "UNIGE",
+    "UNIL"
+   ],
+   "admission": "open",
+   "years": 5,
+   "masterOnly": false,
+   "estimate": {
+    "payEntry": 5500,
+    "payMid": 7600,
+    "unemployment": 5.5,
+    "nonCompletion": 22
+   }
+  },
+  {
+   "id": "vergleichende-literatur",
+   "group": "humanities",
+   "entity": "edu-uh-vergleichende-literaturwissenschaft",
+   "name": {
+    "en": "Comparative literature",
+    "de": "Vergleichende Literaturwissenschaft"
+   },
+   "type": "UH",
+   "institutions": [
+    "UZH",
+    "UNIGE",
+    "UNIL"
+   ],
+   "admission": "open",
+   "years": 5,
+   "masterOnly": false,
+   "estimate": {
+    "payEntry": 5200,
+    "payMid": 7200,
+    "unemployment": 6.5,
+    "nonCompletion": 25
+   }
+  },
+  {
+   "id": "uebersetzen-uh",
+   "group": "humanities",
+   "entity": "edu-uh-uebersetzen-dolmetschen",
+   "name": {
+    "en": "Translation and interpreting (university)",
+    "de": "Übersetzen und Dolmetschen (Universität)"
+   },
+   "type": "UH",
+   "institutions": [
+    "UNIGE"
+   ],
+   "admission": "open",
+   "years": 5,
+   "masterOnly": false,
+   "estimate": {
+    "payEntry": 5800,
+    "payMid": 7900,
+    "unemployment": 4.5,
+    "nonCompletion": 20
+   },
+   "note": "AI translation puts pressure on routine translation work."
+  },
+  {
+   "id": "uebersetzen-fh",
+   "group": "humanities",
+   "entity": "edu-fh-uebersetzen-dolmetschen",
+   "name": {
+    "en": "Applied languages / translation",
+    "de": "Angewandte Sprachen (FH)"
+   },
+   "type": "FH",
+   "institutions": [
+    "ZHAW"
+   ],
+   "admission": "work",
+   "years": 3,
+   "masterOnly": false,
+   "estimate": {
+    "payEntry": 5500,
+    "payMid": 7200,
+    "unemployment": 5.0,
+    "nonCompletion": 15
+   },
+   "note": "AI translation puts pressure on routine translation work."
+  },
+  {
+   "id": "theologie",
+   "group": "humanities",
+   "entity": "edu-uh-theologie",
+   "name": {
+    "en": "Theology",
+    "de": "Theologie"
+   },
+   "type": "UH",
+   "institutions": [
+    "UZH",
+    "UNIBE",
+    "UNIBAS",
+    "UNIGE",
+    "UNIL",
+    "UNIFR",
+    "UNILU"
+   ],
+   "admission": "open",
+   "years": 5,
+   "masterOnly": false,
+   "estimate": {
+    "payEntry": 6500,
+    "payMid": 8200,
+    "unemployment": 1.5,
+    "nonCompletion": 20
+   },
+   "note": "Churches report a shortage of pastors; church practical year follows."
+  },
+  {
+   "id": "religionswissenschaft",
+   "group": "humanities",
+   "entity": "edu-uh-religionswissenschaft",
+   "name": {
+    "en": "Religious studies",
+    "de": "Religionswissenschaft"
+   },
+   "type": "UH",
+   "institutions": [
+    "UZH",
+    "UNIBE",
+    "UNIBAS",
+    "UNIL",
+    "UNIFR",
+    "UNILU"
+   ],
+   "admission": "open",
+   "years": 5,
+   "masterOnly": false,
+   "estimate": {
+    "payEntry": 5200,
+    "payMid": 7200,
+    "unemployment": 6.0,
+    "nonCompletion": 25
+   }
+  },
+  {
+   "id": "musikwissenschaft",
+   "group": "humanities",
+   "entity": "edu-uh-musikwissenschaft",
+   "name": {
+    "en": "Musicology",
+    "de": "Musikwissenschaft"
+   },
+   "type": "UH",
+   "institutions": [
+    "UZH",
+    "UNIBE",
+    "UNIBAS",
+    "UNIGE",
+    "UNIFR"
+   ],
+   "admission": "open",
+   "years": 5,
+   "masterOnly": false,
+   "estimate": {
+    "payEntry": 5000,
+    "payMid": 7000,
+    "unemployment": 6.5,
+    "nonCompletion": 25
+   }
+  },
+  {
+   "id": "filmwissenschaft",
+   "group": "humanities",
+   "entity": "edu-uh-filmwissenschaft",
+   "name": {
+    "en": "Film studies",
+    "de": "Filmwissenschaft"
+   },
+   "type": "UH",
+   "institutions": [
+    "UZH",
+    "UNIL"
+   ],
+   "admission": "open",
+   "years": 5,
+   "masterOnly": false,
+   "estimate": {
+    "payEntry": 4900,
+    "payMid": 6800,
+    "unemployment": 7.5,
+    "nonCompletion": 25
+   }
+  },
+  {
+   "id": "theaterwissenschaft",
+   "group": "humanities",
+   "entity": "edu-uh-theaterwissenschaft-tanzwissenschaft",
+   "name": {
+    "en": "Theatre and dance studies",
+    "de": "Theater- und Tanzwissenschaft"
+   },
+   "type": "UH",
+   "institutions": [
+    "UNIBE"
+   ],
+   "admission": "open",
+   "years": 5,
+   "masterOnly": false,
+   "estimate": {
+    "payEntry": 4800,
+    "payMid": 6600,
+    "unemployment": 7.5,
+    "nonCompletion": 25
+   }
+  },
+  {
+   "id": "chinesisch",
+   "group": "humanities",
+   "entity": "edu-uh-chinesische-sprachen-und-kulturen",
+   "name": {
+    "en": "Chinese studies",
+    "de": "Sinologie"
+   },
+   "type": "UH",
+   "institutions": [
+    "UZH",
+    "UNIGE"
+   ],
+   "admission": "open",
+   "years": 5,
+   "masterOnly": false,
+   "estimate": {
+    "payEntry": 5500,
+    "payMid": 7800,
+    "unemployment": 6.0,
+    "nonCompletion": 25
+   }
+  },
+  {
+   "id": "japanisch",
+   "group": "humanities",
+   "entity": "edu-uh-japanische-sprache-und-kulturen",
+   "name": {
+    "en": "Japanese studies",
+    "de": "Japanologie"
+   },
+   "type": "UH",
+   "institutions": [
+    "UZH",
+    "UNIGE"
+   ],
+   "admission": "open",
+   "years": 5,
+   "masterOnly": false,
+   "estimate": {
+    "payEntry": 5400,
+    "payMid": 7600,
+    "unemployment": 6.0,
+    "nonCompletion": 25
+   }
+  },
+  {
+   "id": "indisch",
+   "group": "humanities",
+   "entity": "edu-uh-indische-sprachen-und-kulturen",
+   "name": {
+    "en": "South Asian studies",
+    "de": "Südasienstudien"
+   },
+   "type": "UH",
+   "institutions": [
+    "UNIL",
+    "UZH"
+   ],
+   "admission": "open",
+   "years": 5,
+   "masterOnly": false,
+   "estimate": {
+    "payEntry": 5000,
+    "payMid": 7000,
+    "unemployment": 7.0,
+    "nonCompletion": 25
+   }
+  },
+  {
+   "id": "islamwissenschaft",
+   "group": "humanities",
+   "entity": "edu-uh-islamische-kulturen-arabisch",
+   "name": {
+    "en": "Islamic and Middle Eastern studies",
+    "de": "Islamwissenschaft, Arabistik"
+   },
+   "type": "UH",
+   "institutions": [
+    "UZH",
+    "UNIBE",
+    "UNIBAS",
+    "UNIGE"
+   ],
+   "admission": "open",
+   "years": 5,
+   "masterOnly": false,
+   "estimate": {
+    "payEntry": 5200,
+    "payMid": 7400,
+    "unemployment": 6.5,
+    "nonCompletion": 25
+   }
+  },
+  {
+   "id": "judaistik",
+   "group": "humanities",
+   "entity": "edu-uh-juedische-kulturen-hebraeisch",
+   "name": {
+    "en": "Jewish studies",
+    "de": "Jüdische Studien"
+   },
+   "type": "UH",
+   "institutions": [
+    "UNIBAS",
+    "UNILU",
+    "UNIBE"
+   ],
+   "admission": "open",
+   "years": 5,
+   "masterOnly": false,
+   "estimate": {
+    "payEntry": 5200,
+    "payMid": 7300,
+    "unemployment": 6.0,
+    "nonCompletion": 25
+   }
+  },
+  {
+   "id": "slavistik",
+   "group": "humanities",
+   "entity": "edu-uh-slavische-sprach-und-literaturwissenschaft",
+   "name": {
+    "en": "Slavic studies",
+    "de": "Slavistik"
+   },
+   "type": "UH",
+   "institutions": [
+    "UZH",
+    "UNIBE",
+    "UNIBAS",
+    "UNIGE",
+    "UNIL",
+    "UNIFR"
+   ],
+   "admission": "open",
+   "years": 5,
+   "masterOnly": false,
+   "estimate": {
+    "payEntry": 5300,
+    "payMid": 7400,
+    "unemployment": 6.0,
+    "nonCompletion": 25
+   }
+  },
+  {
+   "id": "skandinavistik",
+   "group": "humanities",
+   "entity": "edu-uh-nordische-sprach-und-literaturwissenschaft",
+   "name": {
+    "en": "Scandinavian studies",
+    "de": "Skandinavistik"
+   },
+   "type": "UH",
+   "institutions": [
+    "UZH",
+    "UNIBAS"
+   ],
+   "admission": "open",
+   "years": 5,
+   "masterOnly": false,
+   "estimate": {
+    "payEntry": 5300,
+    "payMid": 7400,
+    "unemployment": 6.0,
+    "nonCompletion": 25
+   }
+  },
+  {
+   "id": "neugriechisch",
+   "group": "humanities",
+   "entity": "edu-uh-neugriechische-sprach-und-literaturwissenschaft",
+   "name": {
+    "en": "Modern Greek studies",
+    "de": "Neogräzistik"
+   },
+   "type": "UH",
+   "institutions": [
+    "UNIGE",
+    "UZH"
+   ],
+   "admission": "open",
+   "years": 5,
+   "masterOnly": false,
+   "estimate": {
+    "payEntry": 5200,
+    "payMid": 7200,
+    "unemployment": 6.5,
+    "nonCompletion": 25
+   }
+  },
+  {
+   "id": "armenisch",
+   "group": "humanities",
+   "entity": "edu-uh-armenische-sprach-und-literaturwissenschaft",
+   "name": {
+    "en": "Armenian studies",
+    "de": "Armenologie"
+   },
+   "type": "UH",
+   "institutions": [
+    "UNIGE"
+   ],
+   "admission": "open",
+   "years": 5,
+   "masterOnly": false,
+   "estimate": {
+    "payEntry": 5000,
+    "payMid": 7000,
+    "unemployment": 7.0,
+    "nonCompletion": 25
+   },
+   "note": "Offered as a minor/specialisation."
+  },
+  {
+   "id": "primar",
+   "group": "teaching",
+   "entity": "edu-ph-primar",
+   "name": {
+    "en": "Teaching: kindergarten and primary",
+    "de": "Lehrdiplom Kindergarten / Primarstufe"
+   },
+   "type": "PH",
+   "institutions": [
+    "PHZH",
+    "PHBERN",
+    "PHLU",
+    "PHSG",
+    "PHFHNW",
+    "PHTG",
+    "PHGR",
+    "PHZG",
+    "PHSZ",
+    "PHSH",
+    "HEPVD",
+    "HEPBEJUNE",
+    "HEPFR",
+    "HEPVS",
+    "SUPSI",
+    "UNIGE"
+   ],
+   "admission": "open",
+   "years": 3,
+   "masterOnly": false,
+   "estimate": {
+    "payEntry": 7500,
+    "payMid": 8600,
+    "unemployment": 0.5,
+    "nonCompletion": 10
+   },
+   "note": "Direct admission with a gymnasial Matura. Strong teacher shortage."
+  },
+  {
+   "id": "sek1",
+   "group": "teaching",
+   "entity": "edu-ph-unterricht-sekundarstufe-1",
+   "name": {
+    "en": "Teaching: lower secondary",
+    "de": "Lehrdiplom Sekundarstufe I"
+   },
+   "type": "PH",
+   "institutions": [
+    "PHZH",
+    "PHBERN",
+    "PHLU",
+    "PHSG",
+    "PHFHNW",
+    "PHZG",
+    "HEPVD",
+    "HEPBEJUNE",
+    "HEPFR",
+    "HEPVS",
+    "SUPSI",
+    "UNIGE"
+   ],
+   "admission": "open",
+   "years": 4.5,
+   "masterOnly": false,
+   "estimate": {
+    "payEntry": 8200,
+    "payMid": 9500,
+    "unemployment": 0.5,
+    "nonCompletion": 12
+   }
+  },
+  {
+   "id": "sek2",
+   "group": "teaching",
+   "entity": "edu-uh-lehrdiplom-maturitaetsschulen",
+   "name": {
+    "en": "Teaching: Gymnasium (upper secondary)",
+    "de": "Lehrdiplom für Maturitätsschulen"
+   },
+   "type": "UH",
+   "institutions": [
+    "ETHZ",
+    "UZH",
+    "UNIBE",
+    "UNIBAS",
+    "UNIGE",
+    "UNIFR",
+    "HEPVD",
+    "HEPBEJUNE",
+    "PHZH",
+    "PHFHNW",
+    "PHSG",
+    "SUPSI"
+   ],
+   "admission": "open",
+   "years": 6,
+   "masterOnly": false,
+   "estimate": {
+    "payEntry": 9200,
+    "payMid": 11000,
+    "unemployment": 1.5,
+    "nonCompletion": 15
+   },
+   "note": "Subject master (UH) plus a teaching diploma (~1 year)."
+  },
+  {
+   "id": "sonderpaedagogik",
+   "group": "teaching",
+   "entity": "edu-ph-sonderpaedagogik",
+   "name": {
+    "en": "Special needs education (master)",
+    "de": "Sonderpädagogik (Master)"
+   },
+   "type": "PH",
+   "institutions": [
+    "HFH",
+    "PHFHNW",
+    "PHBERN",
+    "PHLU",
+    "UNIFR",
+    "HEPVD"
+   ],
+   "admission": "open",
+   "years": 5,
+   "masterOnly": true,
+   "estimate": {
+    "payEntry": 8300,
+    "payMid": 9500,
+    "unemployment": 0.5,
+    "nonCompletion": 8
+   },
+   "note": "Usually after a teaching diploma."
+  },
+  {
+   "id": "musik",
+   "group": "arts",
+   "entity": "edu-fh-musik",
+   "name": {
+    "en": "Music",
+    "de": "Musik"
+   },
+   "type": "FH",
+   "institutions": [
+    "ZHDK",
+    "HKB",
+    "FHNW",
+    "HSLU",
+    "HESSO",
+    "SUPSI"
+   ],
+   "admission": "selection",
+   "years": 5,
+   "masterOnly": false,
+   "estimate": {
+    "payEntry": 4900,
+    "payMid": 6800,
+    "unemployment": 6.0,
+    "nonCompletion": 8
+   },
+   "note": "Entrance audition. The master is the usual exit degree (performance or music pedagogy)."
+  },
+  {
+   "id": "bildende-kunst",
+   "group": "arts",
+   "entity": "edu-fh-bildende-kunst",
+   "name": {
+    "en": "Fine arts",
+    "de": "Bildende Kunst"
+   },
+   "type": "FH",
+   "institutions": [
+    "ZHDK",
+    "HKB",
+    "FHNW",
+    "HSLU",
+    "HESSO",
+    "SUPSI"
+   ],
+   "admission": "selection",
+   "years": 3,
+   "masterOnly": false,
+   "estimate": {
+    "payEntry": 3800,
+    "payMid": 5200,
+    "unemployment": 10.0,
+    "nonCompletion": 10
+   },
+   "note": "Portfolio; incomes are often low and irregular."
+  },
+  {
+   "id": "design",
+   "group": "arts",
+   "entity": "edu-fh-design",
+   "name": {
+    "en": "Design",
+    "de": "Design"
+   },
+   "type": "FH",
+   "institutions": [
+    "ZHDK",
+    "HKB",
+    "FHNW",
+    "HSLU",
+    "HESSO",
+    "SUPSI"
+   ],
+   "admission": "selection",
+   "years": 3,
+   "masterOnly": false,
+   "estimate": {
+    "payEntry": 5000,
+    "payMid": 6500,
+    "unemployment": 7.0,
+    "nonCompletion": 10
+   },
+   "note": "Portfolio and aptitude test."
+  },
+  {
+   "id": "visuelle-kommunikation",
+   "group": "arts",
+   "entity": "edu-fh-visuelle-kommunikation",
+   "name": {
+    "en": "Visual communication",
+    "de": "Visuelle Kommunikation"
+   },
+   "type": "FH",
+   "institutions": [
+    "ZHDK",
+    "HKB",
+    "FHNW",
+    "HSLU",
+    "HESSO",
+    "SUPSI"
+   ],
+   "admission": "selection",
+   "years": 3,
+   "masterOnly": false,
+   "estimate": {
+    "payEntry": 5100,
+    "payMid": 6700,
+    "unemployment": 6.5,
+    "nonCompletion": 10
+   }
+  },
+  {
+   "id": "film",
+   "group": "arts",
+   "entity": "edu-fh-film",
+   "name": {
+    "en": "Film",
+    "de": "Film"
+   },
+   "type": "FH",
+   "institutions": [
+    "ZHDK",
+    "HSLU",
+    "HESSO"
+   ],
+   "admission": "selection",
+   "years": 3,
+   "masterOnly": false,
+   "estimate": {
+    "payEntry": 4500,
+    "payMid": 6000,
+    "unemployment": 9.0,
+    "nonCompletion": 10
+   }
+  },
+  {
+   "id": "theater-tanz",
+   "group": "arts",
+   "entity": "edu-fh-theater-tanz",
+   "name": {
+    "en": "Theatre and dance",
+    "de": "Theater, Tanz"
+   },
+   "type": "FH",
+   "institutions": [
+    "ZHDK",
+    "HKB",
+    "HESSO",
+    "SUPSI"
+   ],
+   "admission": "selection",
+   "years": 5,
+   "masterOnly": false,
+   "estimate": {
+    "payEntry": 4300,
+    "payMid": 5800,
+    "unemployment": 9.0,
+    "nonCompletion": 8
+   },
+   "note": "Audition; very selective."
+  },
+  {
+   "id": "literarisches-schreiben",
+   "group": "arts",
+   "entity": "edu-fh-literarisches-schreiben",
+   "name": {
+    "en": "Creative writing",
+    "de": "Literarisches Schreiben"
+   },
+   "type": "FH",
+   "institutions": [
+    "HKB"
+   ],
+   "admission": "selection",
+   "years": 3,
+   "masterOnly": false,
+   "estimate": {
+    "payEntry": 3800,
+    "payMid": 5000,
+    "unemployment": 10.0,
+    "nonCompletion": 10
+   }
+  },
+  {
+   "id": "kunstvermittlung",
+   "group": "arts",
+   "entity": "edu-fh-kunstvermittlung",
+   "name": {
+    "en": "Art education",
+    "de": "Kunst & Vermittlung"
+   },
+   "type": "FH",
+   "institutions": [
+    "ZHDK",
+    "HKB",
+    "HSLU"
+   ],
+   "admission": "selection",
+   "years": 3,
+   "masterOnly": false,
+   "estimate": {
+    "payEntry": 5500,
+    "payMid": 7300,
+    "unemployment": 4.0,
+    "nonCompletion": 10
+   },
+   "note": "With a teaching diploma: visual arts teacher at schools."
+  },
+  {
+   "id": "innenarchitektur",
+   "group": "arts",
+   "entity": "edu-fh-innenarchitektur",
+   "name": {
+    "en": "Interior architecture",
+    "de": "Innenarchitektur"
+   },
+   "type": "FH",
+   "institutions": [
+    "HSLU",
+    "HESSO"
+   ],
+   "admission": "selection",
+   "years": 3,
+   "masterOnly": false,
+   "estimate": {
+    "payEntry": 5500,
+    "payMid": 7000,
+    "unemployment": 4.0,
+    "nonCompletion": 12
+   }
+  },
+  {
+   "id": "konservierung",
+   "group": "arts",
+   "entity": "edu-fh-konservierung-restaurierung",
+   "name": {
+    "en": "Conservation and restoration",
+    "de": "Konservierung, Restaurierung"
+   },
+   "type": "FH",
+   "institutions": [
+    "HKB",
+    "HESSO",
+    "SUPSI"
+   ],
+   "admission": "selection",
+   "years": 5,
+   "masterOnly": false,
+   "estimate": {
+    "payEntry": 5200,
+    "payMid": 6800,
+    "unemployment": 5.0,
+    "nonCompletion": 10
+   },
+   "note": "The master is required for professional practice."
+  }
+ ]
+}

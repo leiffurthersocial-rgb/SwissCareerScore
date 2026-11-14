@@ -143,6 +143,13 @@ export const SOURCES: SourceDef[] = [
     year: 2026,
   },
   {
+    id: "expert-programmes",
+    publisher: "SwissCareerScore (expert judgment)",
+    title: "Per-programme estimates for higher-education graduates (pay 1 and 5 years after the degree, unemployment, drop-out) — data/inputs/higher-ed-programmes.json",
+    url: `${METHODOLOGY_URL}#15-after-the-matura-higher-education-catalogue`,
+    year: 2026,
+  },
+  {
     id: "expert-rubric",
     publisher: "SwissCareerScore (expert judgment)",
     title: "Documented scoring rubrics (entry access, international mobility, regional availability)",

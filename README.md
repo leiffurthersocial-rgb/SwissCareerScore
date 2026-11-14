@@ -10,13 +10,16 @@ UH/ETH — across up to 13 dimensions, with **fully adjustable weights**.
 
 ## What it does
 
-- **1,258 entries**: 457 occupations (every official CH-ISCO-19 occupation type except residual
-  categories) and 801 education paths — 185 EFZ and 60 EBA apprenticeships, 50 HF diplomas,
+- **1,259 entries**: 457 occupations (every official CH-ISCO-19 occupation type except residual
+  categories) and 802 education paths — 185 EFZ and 60 EBA apprenticeships, 50 HF diplomas,
   226 federal professional exams (BP), 133 advanced federal exams (HFP), Berufsmaturität,
   Gymnasiale Matura, Fachmaturität, 54 FH/PH bachelor's and 11 FH master's programmes,
-  73 university/ETH programmes, 5 doctorates, and a "no qualification"
+  74 university/ETH programmes, 5 doctorates, and a "no qualification"
   baseline. Where a statistic does not exist the value is shown as missing; where we had to estimate
   (rubrics, AI task profiles, sector or code assignments), the entry says so.
+- **After the Matura:** every university, ETH, FH and PH study path (128 programmes, 40
+  institutions) with where to study it, admission, pay after 1 and 5 years, unemployment and
+  drop-out — official BFS figures blended with own programme-level estimates, both shown.
 - **Career graph:** every education path shows which occupations it leads to, which further
   training follows, and what becomes reachable with it. Every occupation shows the paths into it.
 - **Statistics + judgment:** coarse official statistics are blended with documented,

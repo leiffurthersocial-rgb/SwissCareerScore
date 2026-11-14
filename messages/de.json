@@ -8,7 +8,9 @@
     "ranking": "Rangliste",
     "compare": "Vergleich",
     "methodology": "Methodik",
-    "menu": "Hauptnavigation"
+    "menu": "Hauptnavigation",
+    "matura": "Nach der Matura",
+    "maturaShort": "Nach Matura"
   },
   "disclaimer": {
     "short": "Entscheidungshilfe, keine Berufsberatung.",
@@ -245,7 +247,10 @@
     "teleworkExpert": "Homeoffice — Experteneinschätzung",
     "wlbExpert": "Work-Life-Balance — Experteneinschätzung",
     "demandExpert": "Fachkräftemangel — Experteneinschätzung",
-    "aiExpert": "KI-Exposition — Experteneinschätzung"
+    "aiExpert": "KI-Exposition — Experteneinschätzung",
+    "payEntryExpert": "Lohn ~1 Jahr nach Abschluss — Experteneinschätzung",
+    "unemploymentExpert": "Arbeitslosigkeit — Experteneinschätzung",
+    "nonCompletionExpert": "Studienabbruch — Experteneinschätzung"
   },
   "source": {
     "title": "Quelle",
@@ -355,7 +360,7 @@
       },
       "afterMatura": {
         "title": "Nach der Matura",
-        "desc": "Universität, ETH, Medizin, FH"
+        "desc": "Alle 128 Studiengänge an Uni, ETH, FH und PH mit Lohn und Arbeitslosigkeit"
       },
       "afterDegree": {
         "title": "Nach dem Studium",
@@ -388,5 +393,89 @@
       "years": "Jahre bis Abschluss",
       "unemp": "Arbeitslosigkeit"
     }
+  },
+  "matura": {
+    "eyebrow": "Nach der Matura",
+    "title": "Alle Studienwege der Schweiz im Vergleich",
+    "intro": "Alle Bachelor- und Masterstudiengänge an Universitäten, ETH/EPFL, Fachhochschulen (FH) und Pädagogischen Hochschulen (PH): wo du sie studieren kannst, Zulassung, Lohn 1 und 5 Jahre nach dem Abschluss, Arbeitslosigkeit und Studienabbruch. Jede Zahl kombiniert die amtliche BFS-Absolventenstatistik mit unserer eigenen Schätzung pro Studiengang – beide werden angezeigt.",
+    "countProgrammes": "Studiengänge",
+    "countInstitutions": "Hochschulen",
+    "routesTitle": "Vier Wege nach der Matura",
+    "routes": {
+      "uh": {
+        "title": "Universität / ETH",
+        "desc": "Zulassung mit gymnasialer Matura. Bachelor 3 Jahre + Master 1,5–2 Jahre; der Master ist der übliche Abschluss. ETH/EPFL sieben mit der Basisprüfung aus."
+      },
+      "fh": {
+        "title": "Fachhochschule (FH)",
+        "desc": "Praxisnaher Bachelor in 3 Jahren. Mit gymnasialer Matura braucht es zuerst rund ein Jahr Arbeitswelterfahrung (Kunsthochschulen: Mappe/Eignungsprüfung)."
+      },
+      "ph": {
+        "title": "Pädagogische Hochschule (PH)",
+        "desc": "Direkte Zulassung. Kindergarten/Primar 3 Jahre, Sekundarstufe I 4,5 Jahre. Grosser Lehrkräftemangel in den meisten Kantonen."
+      },
+      "med": {
+        "title": "Medizin (Numerus clausus)",
+        "desc": "Human-, Zahn-, Veterinärmedizin und Chiropraktik: Eignungstest EMS in der Deutschschweiz, Selektion nach dem 1. Jahr in Genf und Lausanne."
+      }
+    },
+    "gapYear": "Noch unsicher? Zwischenjahr, Militär/Zivildienst oder zuerst arbeiten sind verbreitet.",
+    "gapYearLink": "Bewertung für den Berufseinstieg nur mit Matura ansehen →",
+    "listTitle": "Alle Studiengänge",
+    "listHelp": "Bewertet mit deiner aktuellen Gewichtung (einstellbar auf der Ranglisten-Seite). Klicke auf einen Namen für Details und Quellen.",
+    "search": "Suche",
+    "searchPlaceholder": "z. B. Medizin, Informatik, ZHAW …",
+    "field": "Fachbereich",
+    "institution": "Hochschule",
+    "admission": "Zulassung",
+    "sort": "Sortieren nach",
+    "all": "Alle",
+    "sorts": {
+      "field": "Fachbereich",
+      "score": "Bewertung",
+      "payMid": "Lohn nach 5 Jahren",
+      "payEntry": "Einstiegslohn",
+      "unemployment": "Tiefste Arbeitslosigkeit",
+      "nonCompletion": "Tiefster Studienabbruch",
+      "years": "Kürzeste Dauer"
+    },
+    "typeFilter": "Hochschultyp",
+    "types": {
+      "ETH": "ETH / EPFL",
+      "UH": "Universität",
+      "FH": "Fachhochschule",
+      "PH": "Pädagogische Hochschule"
+    },
+    "hideMaster": "Reine Masterstudiengänge ausblenden",
+    "results": "{count, plural, =0 {Keine Studiengänge} one {# Studiengang} other {# Studiengänge}}",
+    "legend": "Grosse Zahl = Wert für die Bewertung (amtliche Statistik kombiniert mit unserer Schätzung). Kleingedrucktes: BFS-Statistik · eigene Schätzung. Lohn brutto pro Monat (Jahreslohn ÷ 12), Vollzeit.",
+    "noResults": "Kein Studiengang entspricht diesen Filtern.",
+    "adm": {
+      "open": "Freie Zulassung",
+      "ems": "Numerus clausus",
+      "selection": "Eignungsprüfung",
+      "work": "1 Jahr Praxis"
+    },
+    "masterOnly": "Nur Master",
+    "yearsTo": "{years} Jahre nach der Matura bis zum üblichen Abschluss",
+    "payEntry": "Lohn nach 1 Jahr",
+    "payMid": "Lohn nach 5 Jahren",
+    "unemployment": "Arbeitslosigkeit",
+    "dropout": "Studienabbruch",
+    "stat": "BFS",
+    "est": "eigene",
+    "noStat": "keine Statistik",
+    "offeredAt": "Angeboten an",
+    "leadsTo": "Führt zu",
+    "scoreLabel": "Bewertung {score} von 100",
+    "institutionsTitle": "Universitäten und Hochschulen",
+    "institutionsHelp": "Kantonale Universitäten, ETH-Bereich, Fachhochschulen und Kunsthochschulen sowie Pädagogische Hochschulen. Klicke auf eine Zahl, um die Liste zu filtern.",
+    "type": "Typ",
+    "location": "Standort",
+    "languages": "Sprachen",
+    "programmesCol": "Studiengänge",
+    "showProgrammesOf": "Studiengänge an {name}",
+    "catalogueSource": "Angebotslisten zusammengestellt aus den Websites der Hochschulen und",
+    "methodLink": "So entstehen die Schätzungen"
   }
 }

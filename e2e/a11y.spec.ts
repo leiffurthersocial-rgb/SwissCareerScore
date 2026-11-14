@@ -1,7 +1,7 @@
 import AxeBuilder from "@axe-core/playwright";
 import { expect, test } from "@playwright/test";
 
-const pages = ["/en", "/de", "/en/entity/edu-fh-pflege", "/en/compare?c=occ-koch~occ-arzt", "/en/methodology"];
+const pages = ["/en", "/de", "/en/entity/edu-fh-pflege", "/en/compare?c=occ-koch~occ-arzt", "/en/methodology", "/de/after-matura"];
 
 for (const scheme of ["light", "dark"] as const) {
   for (const path of pages) {

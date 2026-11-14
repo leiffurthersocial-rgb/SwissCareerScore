@@ -8,7 +8,9 @@
     "ranking": "Ranking",
     "compare": "Compare",
     "methodology": "Methodology",
-    "menu": "Main navigation"
+    "menu": "Main navigation",
+    "matura": "After the Matura",
+    "maturaShort": "After Matura"
   },
   "disclaimer": {
     "short": "Decision support, not career advice.",
@@ -245,7 +247,10 @@
     "teleworkExpert": "Home office — expert estimate",
     "wlbExpert": "Work-life balance — expert estimate",
     "demandExpert": "Shortage — expert estimate",
-    "aiExpert": "AI exposure — expert estimate"
+    "aiExpert": "AI exposure — expert estimate",
+    "payEntryExpert": "Pay ~1 year after degree — expert estimate",
+    "unemploymentExpert": "Unemployment — expert estimate",
+    "nonCompletionExpert": "Drop-out — expert estimate"
   },
   "source": {
     "title": "Source",
@@ -355,7 +360,7 @@
       },
       "afterMatura": {
         "title": "After the Matura",
-        "desc": "University, ETH, medicine, FH"
+        "desc": "All 128 university, ETH, FH and PH programmes with pay and unemployment"
       },
       "afterDegree": {
         "title": "After a degree",
@@ -388,5 +393,89 @@
       "years": "Years to qualify",
       "unemp": "Unemployment"
     }
+  },
+  "matura": {
+    "eyebrow": "After the Matura",
+    "title": "Every study path in Switzerland, compared",
+    "intro": "All bachelor and master programmes at Swiss universities, ETH/EPFL, universities of applied sciences (FH) and universities of teacher education (PH): where you can study them, admission, pay 1 and 5 years after the degree, unemployment and drop-out. Each number blends the official BFS graduate statistic with our own programme-level estimate, and both are shown.",
+    "countProgrammes": "study programmes",
+    "countInstitutions": "institutions",
+    "routesTitle": "Four routes after the Matura",
+    "routes": {
+      "uh": {
+        "title": "University / ETH",
+        "desc": "Open admission with a gymnasial Matura. Bachelor 3 years + master 1.5–2 years; the master is the usual exit degree. ETH/EPFL weed out in the first-year exam."
+      },
+      "fh": {
+        "title": "University of applied sciences (FH)",
+        "desc": "Practice-oriented bachelor in 3 years. With a gymnasial Matura you first need about one year of work experience in the field (art schools: portfolio/aptitude test)."
+      },
+      "ph": {
+        "title": "Teacher education (PH)",
+        "desc": "Direct admission. Kindergarten/primary 3 years, lower secondary 4.5 years. Strong teacher shortage in most cantons."
+      },
+      "med": {
+        "title": "Medicine (numerus clausus)",
+        "desc": "Human, dental, veterinary medicine and chiropractic: EMS aptitude test in German-speaking Switzerland, selection after year 1 in Geneva and Lausanne."
+      }
+    },
+    "gapYear": "Not sure yet? A gap year, the military/civilian service or working first are common.",
+    "gapYearLink": "See the score for starting work with a Matura only →",
+    "listTitle": "All programmes",
+    "listHelp": "Scored with your current weights (set them on the ranking page). Click a name for the full breakdown and sources.",
+    "search": "Search",
+    "searchPlaceholder": "e.g. medicine, Informatik, ZHAW …",
+    "field": "Field",
+    "institution": "Institution",
+    "admission": "Admission",
+    "sort": "Sort by",
+    "all": "All",
+    "sorts": {
+      "field": "Field",
+      "score": "Score",
+      "payMid": "Pay after 5 years",
+      "payEntry": "Starting pay",
+      "unemployment": "Lowest unemployment",
+      "nonCompletion": "Lowest drop-out",
+      "years": "Shortest"
+    },
+    "typeFilter": "Type of institution",
+    "types": {
+      "ETH": "ETH / EPFL",
+      "UH": "University",
+      "FH": "Univ. of applied sciences",
+      "PH": "Teacher education"
+    },
+    "hideMaster": "Hide master-only programmes",
+    "results": "{count, plural, =0 {No programmes} one {# programme} other {# programmes}}",
+    "legend": "Large number = value used for scoring (official statistic blended with our estimate). Small print: BFS statistic · own estimate. Pay is gross per month (annual ÷ 12), full-time.",
+    "noResults": "No programme matches these filters.",
+    "adm": {
+      "open": "Open admission",
+      "ems": "Numerus clausus",
+      "selection": "Aptitude test",
+      "work": "1 year work experience"
+    },
+    "masterOnly": "Master only",
+    "yearsTo": "{years} years after the Matura to the usual degree",
+    "payEntry": "Pay after 1 year",
+    "payMid": "Pay after 5 years",
+    "unemployment": "Unemployment",
+    "dropout": "Drop-out",
+    "stat": "BFS",
+    "est": "own",
+    "noStat": "no statistic",
+    "offeredAt": "Offered at",
+    "leadsTo": "Leads to",
+    "scoreLabel": "Score {score} of 100",
+    "institutionsTitle": "Universities and colleges",
+    "institutionsHelp": "Public universities, ETH domain, universities of applied sciences and arts, and universities of teacher education. Click a number to filter the list.",
+    "type": "Type",
+    "location": "Location",
+    "languages": "Languages",
+    "programmesCol": "Programmes",
+    "showProgrammesOf": "programmes at {name}",
+    "catalogueSource": "Institution lists compiled from university websites and",
+    "methodLink": "How the estimates were made"
   }
 }

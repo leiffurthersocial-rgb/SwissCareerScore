@@ -42,6 +42,13 @@ for (const line of readFileSync(path.join(ROOT, "data", "inputs", "expert-occupa
   expert.set(code, { payMid: n(pay), remote: n(remote), wlb: n(wlb), demand: n(demand), ai: n(aiv), note: note as unknown as number });
 }
 
+// Higher-education catalogue with per-programme estimates (data/inputs/higher-ed-programmes.json)
+const PROG_URL = `${METHODOLOGY_URL}#15-after-the-matura-higher-education-catalogue`;
+/* eslint-disable-next-line @typescript-eslint/no-explicit-any */
+const progIn = read<any>("data/inputs/higher-ed-programmes.json");
+type ProgIn = { id: string; entity: string; name: { en: string; de: string }; institutions: string[]; estimate: Record<"payEntry" | "payMid" | "unemployment" | "nonCompletion", number>; note?: string } & Record<string, unknown>;
+const progByEntity = new Map<string, ProgIn>((progIn.programmes as ProgIn[]).map((p) => [p.entity, p]));
+
 const errors: string[] = [];
 const fail = (msg: string) => errors.push(msg);
 
@@ -59,6 +66,13 @@ for (const f of files) {
   entities.push(parsed.data);
 }
 const byId = new Map(entities.map((e) => [e.id, e]));
+for (const p of progIn.programmes as ProgIn[]) {
+  if (!byId.has(p.entity)) fail(`programme ${p.id}: unknown entity ${p.entity}`);
+  for (const u of p.institutions) if (!progIn.institutions[u]) fail(`programme ${p.id}: unknown institution ${u}`);
+}
+for (const e of entities)
+  if (e.kind === "education" && ["UH-MSc", "ETH-MSc", "UH-MMed", "FH-BSc"].includes(e.eduType ?? "") && !progByEntity.has(e.id))
+    fail(`${e.id}: higher-education path missing from data/inputs/higher-ed-programmes.json`);
 for (const e of entities) {
   for (const ref of [...e.leadsTo, ...e.trainedVia]) if (!byId.has(ref)) fail(`${e.id}: unknown reference ${ref}`);
 }
@@ -281,6 +295,15 @@ function educationOwnInputs(e: EntityFile): Inputs {
   // own rubric
   if (e.raw.entryAccess) out.entryAccess = { ...e.raw.entryAccess } as DatasetDatapoint;
   out.trainingRegions = dp(e.languageRegions.length, "language regions", "berufsberatung", "https://www.berufsberatung.ch/", 2026, "expert-judgment", "exact", `Offered in: ${e.languageRegions.join(", ")}`);
+  const pr = progByEntity.get(e.id);
+  if (pr) {
+    const note = `Project estimate for "${pr.name.en}" (offered at ${pr.institutions.join(", ")}); blended with the official statistic.${pr.note ? ` ${pr.note}` : ""}`;
+    const ex = (v: number, unit: string, label: string) => dp(v, unit, "expert-programmes", PROG_URL, 2026, "expert-judgment", "exact", label, note);
+    out.payEntryExpert = ex(pr.estimate.payEntry, "CHF/month", "Pay ~1 year after the degree (expert estimate)");
+    out.payMidExpert = ex(pr.estimate.payMid, "CHF/month", "Pay ~5 years after the degree (expert estimate)");
+    out.unemploymentExpert = ex(pr.estimate.unemployment, "%", "Graduate unemployment 1 year after the degree (expert estimate)");
+    out.nonCompletionExpert = ex(pr.estimate.nonCompletion, "%", "Leave without a bachelor's degree (expert estimate)");
+  }
   return out;
 }
 
@@ -374,6 +397,23 @@ const hourVals = ids.map((id) => allInputs.get(id)!.weeklyHours?.value ?? null);
 const nightPct = percentileRanks(nightVals, false);
 const hourPct = percentileRanks(hourVals, false);
 
+/**
+ * Blend an official statistic with the project's expert estimate. The statistic's weight grows
+ * with how precisely it matches the entity; the estimate always has weight 1 (2 when the
+ * statistic is itself only a group default of expert judgment).
+ */
+const STAT_W: Record<MatchLevel, number> = { exact: 4, isco4: 3, isco3: 2.5, field: 1, isco2: 1.5, derived: 1.5, isco1: 1, sector: 1, "education-level": 1 };
+function blendDp(stat: number | null, statDp: DatasetDatapoint | undefined, expDp: DatasetDatapoint | undefined, digits = 0) {
+  const fmt0 = (x: number) => Number(x).toFixed(digits);
+  const ev = expDp?.value ?? null;
+  if (ev === null) return { value: stat, text: stat === null ? "n/a" : `statistic ${fmt0(stat)}`, blended: false };
+  if (stat === null || !statDp) return { value: ev, text: `expert estimate ${fmt0(ev)} (no statistic)`, blended: true };
+  const wsStat = statDp.confidence === "expert-judgment" ? 1 : STAT_W[statDp.matchLevel] ?? 1;
+  const wsExp = statDp.confidence === "expert-judgment" && statDp.matchLevel === "isco2" ? 2 : 1;
+  const val = (wsStat * stat + wsExp * ev) / (wsStat + wsExp);
+  return { value: val, text: `statistic ${fmt0(stat)} (weight ${wsStat}) ⊕ expert ${fmt0(ev)} (weight ${wsExp}) = ${fmt0(val)}`, blended: true };
+}
+
 function metricsFor(e: EntityFile, idx: number): Partial<Record<DimensionId, DatasetMetric>> {
   const I = allInputs.get(e.id)!;
   const m: Partial<Record<DimensionId, DatasetMetric>> = {};
@@ -388,27 +428,14 @@ function metricsFor(e: EntityFile, idx: number): Partial<Record<DimensionId, Dat
     };
   };
   const v = (k: InputId) => I[k]?.value ?? null;
-  /**
-   * Blend an official statistic with the project's expert estimate. The statistic's weight grows
-   * with how precisely it matches the entity; the estimate always has weight 1 (2 when the
-   * statistic is itself only a group default of expert judgment).
-   */
-  const STAT_W: Record<MatchLevel, number> = { exact: 4, isco4: 3, isco3: 2.5, field: 2.5, isco2: 1.5, derived: 1.5, isco1: 1, sector: 1, "education-level": 1 };
-  const blend = (stat: number | null, statDp: DatasetDatapoint | undefined, expKey: InputId, digits = 0) => {
-    const ev = v(expKey);
-    if (ev === null) return { value: stat, text: stat === null ? "n/a" : `statistic ${fmt(stat, digits)}`, blended: false };
-    if (stat === null || !statDp) return { value: ev, text: `expert estimate ${fmt(ev, digits)} (no statistic)`, blended: true };
-    const wsStat = statDp.confidence === "expert-judgment" ? 1 : STAT_W[statDp.matchLevel] ?? 1;
-    const wsExp = statDp.confidence === "expert-judgment" && statDp.matchLevel === "isco2" ? 2 : 1;
-    const val = (wsStat * stat + wsExp * ev) / (wsStat + wsExp);
-    return { value: val, text: `statistic ${fmt(stat, digits)} (weight ${wsStat}) ⊕ expert ${fmt(ev, digits)} (weight ${wsExp}) = ${fmt(val, digits)}`, blended: true };
-  };
+  const blend = (stat: number | null, statDp: DatasetDatapoint | undefined, expKey: InputId, digits = 0) => blendDp(stat, statDp, I[expKey], digits);
   const withExpert = (metric: DatasetMetric, used: boolean, expKey: InputId): DatasetMetric =>
     used && metric.raw !== null
       ? { ...metric, inputs: [...metric.inputs, expKey], confidence: "estimated", matchLevel: "exact" }
       : metric;
 
-  const entry = v("payEntry");
+  const entryB = blend(v("payEntry"), I.payEntry, "payEntryExpert");
+  const entry = entryB.value;
   const midB = blend(v("payMid"), I.payMid, "payMidExpert");
   const mid = midB.value;
   const p90 = v("payP90");
@@ -421,20 +448,24 @@ function metricsFor(e: EntityFile, idx: number): Partial<Record<DimensionId, Dat
     from(parts.map((x) => x[3] as InputId), payRaw,
       parts.map((x) => `${(x[0] / wsum).toFixed(2)} × ${x[2]} ${fmt(x[1], 0)}`).join(" + ") + " CHF/month" +
         (parts.length < 3 ? " (missing components dropped, weights renormalized)" : "") +
+        (entryB.blended ? ` — entry: ${entryB.text}` : "") +
         (midB.blended ? ` — mid-career: ${midB.text}` : "")),
-    midB.blended, "payMidExpert");
-  m.stability = from(["unemploymentRate"], v("unemploymentRate"), `registered unemployment rate ${fmt(v("unemploymentRate"))} %`);
+    midB.blended || entryB.blended, midB.blended ? "payMidExpert" : "payEntryExpert");
+  if (entryB.blended && midB.blended) m.pay.inputs.push("payEntryExpert");
+  const unB = blend(v("unemploymentRate"), I.unemploymentRate, "unemploymentExpert", 1);
+  m.stability = withExpert(from(["unemploymentRate"], unB.value, unB.blended ? `unemployment rate — ${unB.text} %` : `registered unemployment rate ${fmt(v("unemploymentRate"))} %`), unB.blended, "unemploymentExpert");
   const demB = blend(v("recruitmentDifficulty"), I.recruitmentDifficulty, "demandExpert", 1);
   if (I.recruitmentDifficulty || demB.blended)
     m.demand = withExpert(from(["recruitmentDifficulty"], demB.value, `% of employers finding recruiting hard — ${demB.text}`), demB.blended, "demandExpert");
   const aiB = blend(v("aiExposure"), I.aiExposure, "aiExpert", 1);
   m.aiResilience = withExpert(from(["aiExposure"], aiB.value, `task-based exposure index (lower = more resilient) — ${aiB.text}`), aiB.blended, "aiExpert");
-  m.trainingEase = from(["nonCompletion"], v("nonCompletion"), `${fmt(v("nonCompletion"))} % did not complete`);
+  const ncB = blend(v("nonCompletion"), I.nonCompletion, "nonCompletionExpert", 1);
+  m.trainingEase = withExpert(from(["nonCompletion"], ncB.value, ncB.blended ? `% who do not complete — ${ncB.text}` : `${fmt(v("nonCompletion"))} % did not complete`), ncB.blended, "nonCompletionExpert");
   m.entryAccess = from(["entryAccess"], v("entryAccess"), `admission hurdle ${fmt(v("entryAccess"), 0)} on 0–3 rubric`);
   m.timeToQualify = from(["yearsToQualify"], v("yearsToQualify"), `${fmt(v("yearsToQualify"))} years after compulsory school`);
   const senior = v("paySenior");
   const entryLse = I.payEntry?.sourceId === "bfs-lse-2024" ? entry : (e.kind === "education" ? allInputs.get(e.leadsTo[0] ?? "")?.payEntry?.value ?? null : null);
-  const growthEntry = e.kind === "occupation" ? entry : entryLse;
+  const growthEntry = e.kind === "occupation" ? v("payEntry") : entryLse;
   m.careerGrowth = from(["paySenior", "payEntry"], senior !== null && growthEntry ? senior / growthEntry : null, `median age ≥50 ${fmt(senior, 0)} ÷ median age ≤29 ${fmt(growthEntry, 0)} (LSE, same ISCO group)`);
   const np = nightPct[idx];
   const hp = hourPct[idx];
@@ -567,6 +598,27 @@ const dataset: Dataset = {
   sources,
   correlations: corr,
 };
+// Higher-education catalogue joined with the statistics and the blended values used for scoring.
+const progOut = {
+  sourceUrl: progIn.sourceUrl,
+  year: progIn.year,
+  groups: progIn.groups,
+  institutions: progIn.institutions,
+  programmes: (progIn.programmes as ProgIn[]).map((pIn) => {
+    const { estimate: _estimate, ...p } = pIn;
+    void _estimate;
+    const I = allInputs.get(p.entity)!;
+    const r = (x: number | null) => (x === null ? null : Math.round(x * 10) / 10);
+    const b = (statKey: InputId, expKey: InputId) => {
+      const res = blendDp(I[statKey]?.value ?? null, I[statKey], I[expKey], 1);
+      return { stat: r(I[statKey]?.value ?? null), est: r(I[expKey]?.value ?? null), value: r(res.value) };
+    };
+    return { ...p, payEntry: b("payEntry", "payEntryExpert"), payMid: b("payMid", "payMidExpert"), unemployment: b("unemploymentRate", "unemploymentExpert"), nonCompletion: b("nonCompletion", "nonCompletionExpert") };
+  }),
+};
+const progTarget = path.join(ROOT, "data", "derived", "programmes.json");
+const progJson = JSON.stringify(progOut) + "\n";
+
 const target = path.join(ROOT, "data", "derived", "dataset.json");
 if (process.argv.includes("--check")) {
   // CI mode: the committed dataset must equal a fresh build (ignoring the build date).
@@ -575,11 +627,16 @@ if (process.argv.includes("--check")) {
     console.error("✖ data/derived/dataset.json is stale — run `npm run data:build` and commit the result.");
     process.exit(1);
   }
+  if (!existsSync(progTarget) || readFileSync(progTarget, "utf8") !== progJson) {
+    console.error("✖ data/derived/programmes.json is stale — run `npm run data:build` and commit the result.");
+    process.exit(1);
+  }
   console.log(`✔ dataset.json is up to date (${out.length} entities, all references and pathway durations verified)`);
   process.exit(0);
 }
 mkdirSync(path.join(ROOT, "data", "derived"), { recursive: true });
 writeFileSync(target, JSON.stringify(dataset) + "\n");
+writeFileSync(progTarget, progJson);
 // Compact client bundle: everything the ranking needs, nothing the detail pages need.
 const C = { measured: "m", estimated: "e", "expert-judgment": "x" } as const;
 const core: CoreDataset = {

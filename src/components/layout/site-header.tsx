@@ -15,6 +15,7 @@ export function SiteHeader() {
   const withQs = (p: string) => `${p}${qs ? `?${qs}` : ""}`;
   const links = [
     { href: "/", label: t("nav.ranking") },
+    { href: "/after-matura", label: t("nav.matura"), short: t("nav.maturaShort") },
     { href: "/compare", label: t("nav.compare") },
     { href: "/methodology", label: t("nav.methodology") },
   ];
@@ -46,9 +47,9 @@ export function SiteHeader() {
             key={l.href}
             href={withQs(l.href)}
             aria-current={pathname === l.href ? "page" : undefined}
-            className={cn("flex-1 py-2 text-center", pathname === l.href && "font-semibold text-primary")}
+            className={cn("flex-1 py-2 text-center text-xs whitespace-nowrap", pathname === l.href && "font-semibold text-primary")}
           >
-            {l.label}
+            {"short" in l ? l.short : l.label}
           </Link>
         ))}
       </nav>

@@ -40,3 +40,17 @@ test("education entries show where they lead and occupations show how to get the
   await page.goto("/en/entity/occ-polymechaniker");
   await expect(page.getByRole("heading", { name: /How to get there/ })).toBeVisible();
 });
+
+test("after the Matura: catalogue with institutions, filters and blended numbers", async ({ page }) => {
+  await page.goto("/en/after-matura");
+  await expect(page.getByRole("heading", { level: 1 })).toContainText("Every study path in Switzerland");
+  await expect(page.getByText(/128 programmes/)).toBeVisible();
+  await page.getByRole("combobox", { name: "Institution" }).selectOption("EPFL");
+  await expect(page.getByRole("link", { name: "Microengineering" })).toBeVisible();
+  await expect(page.getByRole("link", { name: "Human medicine" })).toHaveCount(0);
+  await page.getByRole("combobox", { name: "Institution" }).selectOption("");
+  await page.getByRole("searchbox", { name: "Search" }).fill("medicine");
+  const card = page.locator("li", { has: page.getByRole("link", { name: "Human medicine" }) });
+  await expect(card.getByText("Numerus clausus")).toBeVisible();
+  await expect(card.getByText(/BFS CHF .* · own CHF/).first()).toBeVisible();
+});

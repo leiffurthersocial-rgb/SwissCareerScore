@@ -1,0 +1,71 @@
+{
+  "id": "edu-uh-informatik",
+  "kind": "education",
+  "route": "academic",
+  "eduType": "UH-MSc",
+  "name": {
+    "en": "MSc Computer Science (university)",
+    "de": "Master Informatik (Universität)",
+    "fr": null,
+    "it": null
+  },
+  "codes": {
+    "isco08": "2512"
+  },
+  "sector": "ICT",
+  "refs": {
+    "studyField": "UH:Exakte und Naturwissenschaften",
+    "gradIncome": "uh:Master:Exakte und Naturwissenschaften",
+    "qualLevel": "higherEducation",
+    "besta": "62-63",
+    "nogaSection": "J",
+    "gradField": "uh:Informations- und Kommunikationstechnologie"
+  },
+  "pathway": [
+    {
+      "label": "Gymnasiale Maturität",
+      "years": 4,
+      "sourceUrl": "https://www.berufsberatung.ch/de/bildungssystem/d/gymnasiale-maturitaetsschulen",
+      "confidence": "estimated",
+      "note": "berufsberatung.ch states 3–6 years depending on canton (partly overlapping compulsory school); 4 years after compulsory school assumed."
+    },
+    {
+      "label": "Bachelor Informatik (Universität)",
+      "years": 3,
+      "sourceUrl": "https://www.berufsberatung.ch/de/studienrichtungen/informatik",
+      "confidence": "measured"
+    },
+    {
+      "label": "Master Informatik (Universität)",
+      "years": 1.5,
+      "sourceUrl": "https://www.berufsberatung.ch/de/studienrichtungen/informatik",
+      "confidence": "measured"
+    }
+  ],
+  "leadsTo": [
+    "occ-softwareentwickler"
+  ],
+  "trainedVia": [],
+  "languageRegions": [
+    "de",
+    "fr",
+    "it"
+  ],
+  "raw": {
+    "entryAccess": {
+      "value": 0,
+      "unit": "rubric 0–3",
+      "sourceId": "expert-rubric",
+      "sourceUrl": "https://www.berufsberatung.ch/de/studienrichtungen/informatik",
+      "year": 2026,
+      "confidence": "expert-judgment",
+      "matchLevel": "exact",
+      "note": "Open admission with Swiss Matura."
+    }
+  },
+  "meta": {
+    "addedBy": "higher-ed-catalogue",
+    "reviewed": "2026-11-14",
+    "notes": "Computer science at cantonal universities (UZH, Bern, Basel, Geneva, Fribourg, Neuchâtel, USI, HSG, UniDistance); ETH/EPFL is a separate entry."
+  }
+}

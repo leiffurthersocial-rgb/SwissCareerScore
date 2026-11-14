@@ -22,12 +22,34 @@ const PAGE = 30;
 
 /** Starting points: which education paths are open to you right now. */
 const START_POINTS: { id: string; filters: Filters }[] = [
-  { id: "afterSchool", filters: { kinds: ["education"], eduTypes: ["EBA", "EFZ", "GYM", "FMS", "NONE"] } },
-  { id: "afterApprenticeship", filters: { kinds: ["education"], eduTypes: ["BM", "HF", "BP", "HFP", "FH-BSc"] } },
-  { id: "afterMatura", filters: { kinds: ["education"], eduTypes: ["UH-MSc", "ETH-MSc", "UH-MMed", "FH-BSc"] } },
+  {
+    id: "afterSchool",
+    filters: { kinds: ["education"], eduTypes: ["EBA", "EFZ", "GYM", "FMS", "NONE"] },
+  },
+  {
+    id: "afterApprenticeship",
+    filters: { kinds: ["education"], eduTypes: ["BM", "HF", "BP", "HFP", "FH-BSc"] },
+  },
+  {
+    id: "afterMatura",
+    filters: { kinds: ["education"], eduTypes: ["UH-MSc", "ETH-MSc", "UH-MMed", "FH-BSc"] },
+  },
   { id: "afterDegree", filters: { kinds: ["education"], eduTypes: ["FH-MSc", "DR"] } },
 ];
-const TYPE_CHIPS: EduType[] = ["EBA", "EFZ", "BM", "HF", "BP", "HFP", "FH-BSc", "FH-MSc", "UH-MSc", "ETH-MSc", "UH-MMed", "DR"];
+const TYPE_CHIPS: EduType[] = [
+  "EBA",
+  "EFZ",
+  "BM",
+  "HF",
+  "BP",
+  "HFP",
+  "FH-BSc",
+  "FH-MSc",
+  "UH-MSc",
+  "ETH-MSc",
+  "UH-MMed",
+  "DR",
+];
 
 export function Explorer() {
   const t = useTranslations("list");
@@ -42,7 +64,11 @@ export function Explorer() {
   const tab: EntityKind = state.filters.kinds?.length === 1 ? state.filters.kinds[0] : "occupation";
   const setTab = (k: EntityKind) => {
     setLimit(PAGE);
-    app.setFilters({ ...state.filters, kinds: [k], ...(k === "occupation" ? { eduTypes: undefined } : {}) });
+    app.setFilters({
+      ...state.filters,
+      kinds: [k],
+      ...(k === "occupation" ? { eduTypes: undefined } : {}),
+    });
   };
 
   const rows = useMemo(() => {
@@ -61,7 +87,11 @@ export function Explorer() {
     const cur = new Set(state.filters.eduTypes ?? []);
     if (cur.has(ty)) cur.delete(ty);
     else cur.add(ty);
-    app.setFilters({ ...state.filters, kinds: ["education"], eduTypes: cur.size ? [...cur] : undefined });
+    app.setFilters({
+      ...state.filters,
+      kinds: ["education"],
+      eduTypes: cur.size ? [...cur] : undefined,
+    });
     setLimit(PAGE);
   };
 
@@ -76,21 +106,36 @@ export function Explorer() {
           {th("startTitle")}
         </h2>
         <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-          {START_POINTS.map((sp) => (
-            <button
-              key={sp.id}
-              type="button"
-              onClick={() => {
-                app.setFilters({ ...sp.filters });
-                setLimit(PAGE);
-                document.getElementById("explore")?.scrollIntoView({ behavior: "smooth" });
-              }}
-              className="rounded-xl border border-border bg-card p-4 text-left hover:border-primary/50 hover:bg-muted"
-            >
-              <span className="block font-semibold">{th(`start.${sp.id}.title`)}</span>
-              <span className="mt-1 block text-sm text-muted-foreground">{th(`start.${sp.id}.desc`)}</span>
-            </button>
-          ))}
+          {START_POINTS.map((sp) =>
+            sp.id === "afterMatura" ? (
+              <Link
+                key={sp.id}
+                href={`/after-matura${app.queryString ? `?${app.queryString}` : ""}`}
+                className="border-primary/40 bg-accent hover:border-primary rounded-xl border p-4 text-left"
+              >
+                <span className="block font-semibold">{th(`start.${sp.id}.title`)}</span>
+                <span className="text-muted-foreground mt-1 block text-sm">
+                  {th(`start.${sp.id}.desc`)}
+                </span>
+              </Link>
+            ) : (
+              <button
+                key={sp.id}
+                type="button"
+                onClick={() => {
+                  app.setFilters({ ...sp.filters });
+                  setLimit(PAGE);
+                  document.getElementById("explore")?.scrollIntoView({ behavior: "smooth" });
+                }}
+                className="border-border bg-card hover:border-primary/50 hover:bg-muted rounded-xl border p-4 text-left"
+              >
+                <span className="block font-semibold">{th(`start.${sp.id}.title`)}</span>
+                <span className="text-muted-foreground mt-1 block text-sm">
+                  {th(`start.${sp.id}.desc`)}
+                </span>
+              </button>
+            ),
+          )}
         </div>
       </section>
 
@@ -100,7 +145,7 @@ export function Explorer() {
             <h2 id="explore-h" className="text-xl font-semibold">
               {th("exploreTitle")}
             </h2>
-            <p className="text-sm text-muted-foreground">{t("pool")}</p>
+            <p className="text-muted-foreground text-sm">{t("pool")}</p>
           </div>
           <ShareButton />
         </div>
@@ -108,7 +153,13 @@ export function Explorer() {
         <div className="grid gap-6 lg:grid-cols-[20rem_1fr]">
           <aside className="lg:sticky lg:top-20 lg:max-h-[calc(100dvh-6rem)] lg:self-start lg:overflow-y-auto lg:pr-2">
             <div className="lg:hidden">
-              <Button variant="outline" className="w-full" onClick={() => setPanelOpen((o) => !o)} aria-expanded={panelOpen} aria-controls="weight-panel">
+              <Button
+                variant="outline"
+                className="w-full"
+                onClick={() => setPanelOpen((o) => !o)}
+                aria-expanded={panelOpen}
+                aria-controls="weight-panel"
+              >
                 {panelOpen ? <X aria-hidden /> : <SlidersHorizontal aria-hidden />} {tw("title")}
               </Button>
             </div>
@@ -125,7 +176,11 @@ export function Explorer() {
           </aside>
 
           <div className="min-w-0 space-y-4">
-            <div role="tablist" aria-label={th("exploreTitle")} className="inline-flex rounded-xl border border-border bg-muted p-1">
+            <div
+              role="tablist"
+              aria-label={th("exploreTitle")}
+              className="border-border bg-muted inline-flex rounded-xl border p-1"
+            >
               {(["occupation", "education"] as const).map((k) => (
                 <button
                   key={k}
@@ -133,7 +188,10 @@ export function Explorer() {
                   aria-selected={tab === k}
                   aria-controls="results"
                   onClick={() => setTab(k)}
-                  className={cn("rounded-lg px-4 py-2 text-sm font-medium", tab === k ? "bg-card shadow-sm" : "text-muted-foreground hover:text-foreground")}
+                  className={cn(
+                    "rounded-lg px-4 py-2 text-sm font-medium",
+                    tab === k ? "bg-card shadow-sm" : "text-muted-foreground hover:text-foreground",
+                  )}
                 >
                   {k === "occupation" ? tk("occupations") : tk("educations")}
                 </button>
@@ -149,7 +207,12 @@ export function Explorer() {
                       type="button"
                       aria-pressed={on}
                       onClick={() => toggleType(ty)}
-                      className={cn("rounded-full border px-3 py-1 text-xs font-medium", on ? "border-primary bg-primary text-primary-foreground" : "border-border hover:bg-muted")}
+                      className={cn(
+                        "rounded-full border px-3 py-1 text-xs font-medium",
+                        on
+                          ? "border-primary bg-primary text-primary-foreground"
+                          : "border-border hover:bg-muted",
+                      )}
                       title={th(`types.${ty}`)}
                     >
                       {ty}
@@ -158,15 +221,28 @@ export function Explorer() {
                 })}
               </div>
             ) : null}
-            <FilterBar filters={state.filters} onChange={(f) => (setLimit(PAGE), app.setFilters({ ...f, kinds: [tab] }))} />
-            <p className="text-sm text-muted-foreground" aria-live="polite">
+            <FilterBar
+              filters={state.filters}
+              onChange={(f) => (setLimit(PAGE), app.setFilters({ ...f, kinds: [tab] }))}
+            />
+            <p className="text-muted-foreground text-sm" aria-live="polite">
               {t("results", { count: rows.length })}
             </p>
             <div id="results" role="tabpanel">
-              <RankedList rows={rows.slice(0, limit)} results={results} compare={state.compare} onToggleCompare={app.toggleCompare} queryString={app.queryString} />
+              <RankedList
+                rows={rows.slice(0, limit)}
+                results={results}
+                compare={state.compare}
+                onToggleCompare={app.toggleCompare}
+                queryString={app.queryString}
+              />
             </div>
             {rows.length > limit ? (
-              <Button variant="outline" className="w-full" onClick={() => setLimit((l) => l + PAGE * 2)}>
+              <Button
+                variant="outline"
+                className="w-full"
+                onClick={() => setLimit((l) => l + PAGE * 2)}
+              >
                 {t("showMore", { shown: limit, total: rows.length })}
               </Button>
             ) : null}
@@ -175,13 +251,19 @@ export function Explorer() {
       </section>
 
       {state.compare.length ? (
-        <div className="fixed inset-x-0 bottom-0 z-30 border-t border-border bg-card/95 p-3 backdrop-blur" role="region" aria-label={t("compare")}>
+        <div
+          className="border-border bg-card/95 fixed inset-x-0 bottom-0 z-30 border-t p-3 backdrop-blur"
+          role="region"
+          aria-label={t("compare")}
+        >
           <div className="mx-auto flex max-w-6xl items-center justify-between gap-2">
             <Button variant="ghost" size="sm" onClick={app.clearCompare}>
               {t("clearCompare")}
             </Button>
             <Button asChild>
-              <Link href={`/compare?${app.queryString}`}>{t("openCompare", { count: state.compare.length })}</Link>
+              <Link href={`/compare?${app.queryString}`}>
+                {t("openCompare", { count: state.compare.length })}
+              </Link>
             </Button>
           </div>
         </div>
