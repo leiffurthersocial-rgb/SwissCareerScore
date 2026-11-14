@@ -476,6 +476,13 @@
     "programmesCol": "Programmes",
     "showProgrammesOf": "programmes at {name}",
     "catalogueSource": "Institution lists compiled from university websites and",
-    "methodLink": "How the estimates were made"
+    "methodLink": "How the estimates were made",
+    "strong": "especially strong in this field",
+    "atInstitution": "At {name}",
+    "compareInstitutions": "Compare the {count} institutions",
+    "why": "Why",
+    "premium": "reputation premium +{pct} %",
+    "region": "regional pay {pct} %",
+    "institutionNote": "Institution differences are our estimates: a reputation premium where employers clearly favour an institution in this field, plus the regional pay level where its graduates usually work (half weight for university graduates, who are more mobile). They don't change the score, which is per field. ★ = especially strong in this field."
   }
 }

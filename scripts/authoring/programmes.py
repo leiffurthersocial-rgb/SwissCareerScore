@@ -227,6 +227,75 @@ GROUPS = {
     "arts": ("Arts, design and music", "Kunst, Design und Musik"),
 }
 
+
+# Regional pay level where graduates typically work (own estimate informed by BFS LSE regional
+# medians; 1.00 = Swiss median). Applied in full for FH/PH graduates (mostly work in the region)
+# and at half strength for university/ETH graduates (nationally mobile).
+REGION = {
+    "ETHZ": 1.06, "UZH": 1.06, "ZHAW": 1.06, "ZHDK": 1.06, "KALAIDOS": 1.06, "HFH": 1.06, "PHZH": 1.06,
+    "UNIBAS": 1.05, "FHNW": 1.03, "PHFHNW": 1.03, "UNIGE": 1.04,
+    "EPFL": 1.01, "UNIL": 1.01, "HEPVD": 1.01, "HESSO": 0.99,
+    "UNIBE": 0.98, "BFH": 0.98, "HKB": 0.98, "PHBERN": 0.98, "EHSM": 0.98,
+    "UNIFR": 0.97, "HEPFR": 0.97, "UNINE": 0.96, "HEPBEJUNE": 0.96, "HEPVS": 0.94,
+    "UNILU": 1.00, "HSLU": 1.00, "PHLU": 1.00, "PHZG": 1.02, "PHSZ": 0.98,
+    "UNISG": 1.03,  # most HSG graduates work in Zurich/Geneva, not eastern Switzerland
+    "OST": 0.97, "PHSG": 0.97, "PHTG": 0.96, "PHSH": 0.98,
+    "FHGR": 0.95, "PHGR": 0.95, "USI": 0.86, "SUPSI": 0.86, "UNIDIST": 1.00,
+}
+
+# Where an institution is clearly stronger in a field with employers: (premium on pay, note).
+# Premium = own estimate of the pay advantage over the programme average, before regional level.
+STRONG = {
+    ("bwl-uh", "UNISG"): (0.12, "HSG: Switzerland's leading business school (top FT rankings); strongest recruiting pipeline to banks, consulting and Big Four."),
+    ("bwl-uh", "UZH"): (0.03, "Banking & finance specialisation next to the Zurich financial centre."),
+    ("bwl-uh", "UNIL"): (0.03, "HEC Lausanne: finance and actuarial science with strong industry links."),
+    ("bwl-uh", "UNIGE"): (0.02, "GSEM: finance, commodity trading hub Geneva."),
+    ("vwl-uh", "UNISG"): (0.06, "HSG economics feeds into banking, consulting and policy."),
+    ("vwl-uh", "UZH"): (0.04, "Top-ranked economics research department in Switzerland."),
+    ("vwl-uh", "UNIL"): (0.02, "HEC Lausanne economics."),
+    ("recht", "UNISG"): (0.04, "Business law and law & economics; strong ties to commercial law firms."),
+    ("recht", "UZH"): (0.03, "Largest law faculty; Zurich business law firms recruit heavily."),
+    ("recht", "UNIGE"): (0.03, "International and commercial law, Geneva arbitration hub."),
+    ("internationale-studien", "UNIGE"): (0.05, "Next to the UN and international organisations in Geneva."),
+    ("internationale-studien", "UNISG"): (0.05, "International Affairs with business focus."),
+    ("wirtschaftsinformatik-uh", "UNISG"): (0.06, "HSG business information systems; strong consulting placement."),
+    ("wirtschaftsinformatik-uh", "UZH"): (0.02, None),
+    ("informatik-uh", "UZH"): (0.02, None),
+    ("informatik-uh", "USI"): (0.0, "Strong AI research (IDSIA); pay level of Ticino is lower."),
+    ("informatik-eth", "ETHZ"): (0.0, "Global top-10 computer science."),
+    ("informatik-eth", "EPFL"): (0.0, "Global top-20 computer science."),
+    ("mathematik", "ETHZ"): (0.05, "Global top mathematics; strong demand from finance and insurance."),
+    ("mathematik", "EPFL"): (0.04, None),
+    ("physik", "ETHZ"): (0.05, "Global top physics."),
+    ("physik", "EPFL"): (0.04, None),
+    ("chemie", "ETHZ"): (0.05, "Global top chemistry; pharma and chemical industry recruit directly."),
+    ("chemie", "EPFL"): (0.03, None),
+    ("chemie", "UNIBAS"): (0.02, "Basel chemical and pharma cluster."),
+    ("biologie", "ETHZ"): (0.03, None),
+    ("biologie", "UNIBAS"): (0.03, "Biozentrum; Basel life-sciences cluster."),
+    ("pharmazie", "UNIBAS"): (0.02, "Basel pharma hub."),
+    ("pharmazie", "ETHZ"): (0.02, None),
+    ("architektur-eth", "ETHZ"): (0.04, "Internationally top-ranked architecture school."),
+    ("architektur-eth", "EPFL"): (0.03, None),
+    ("elektrotechnik-eth", "ETHZ"): (0.02, None),
+    ("maschinenbau-eth", "ETHZ"): (0.02, None),
+    ("mikrotechnik", "EPFL"): (0.0, "Swiss reference for micro- and precision engineering (watch and medtech industry)."),
+    ("forensik", "UNIL"): (0.0, "Internationally renowned school of criminal sciences."),
+    ("uebersetzen-uh", "UNIGE"): (0.0, "FTI Geneva: renowned interpreting school (UN, EU)."),
+    ("hospitality", "HESSO"): (0.0, "EHL Lausanne: ranked among the best hospitality schools worldwide."),
+    ("bwl-fh", "HSLU"): (0.02, "Banking & finance specialisation."),
+    ("bwl-fh", "ZHAW"): (0.02, "School of Management and Law, close to the Zurich job market."),
+    ("design", "ZHDK"): (0.03, "Largest Swiss art university."),
+    ("design", "HESSO"): (0.03, "ECAL Lausanne: internationally renowned design school."),
+    ("visuelle-kommunikation", "ZHDK"): (0.03, None),
+    ("visuelle-kommunikation", "HESSO"): (0.03, "ECAL / HEAD Genève."),
+    ("film", "ZHDK"): (0.03, None),
+    ("film", "HESSO"): (0.03, "ECAL / HEAD Genève."),
+    ("musik", "ZHDK"): (0.02, None),
+    ("musik", "FHNW"): (0.02, "Musik-Akademie Basel incl. Schola Cantorum (early music, world reference)."),
+    ("humanmedizin", "UZH"): (0.0, "Hospital pay follows cantonal scales; the university barely affects pay."),
+}
+
 ids = set()
 programmes = []
 for row in P:
@@ -234,12 +303,17 @@ for row in P:
     assert g in GROUPS and pid not in ids, pid
     ids.add(pid)
     for u in unis:
-        assert u in INST, (pid, u)
+        assert u in INST and u in REGION, (pid, u)
     assert adm in ("open", "ems", "selection", "work"), pid
+    offers = []
+    for u in unis:
+        prem, note2 = STRONG.get((pid, u), (None, None))
+        offers.append({"institution": u, "strong": (pid, u) in STRONG and (prem > 0 or note2 is not None), "premium": prem or 0.0, **({"note": note2} if note2 else {})})
     assert 3000 <= pay1 <= pay5 <= 15000 and 0 <= unemp <= 15 and 0 <= drop <= 50, pid
     programmes.append({
         "id": pid, "group": g, "entity": ent, "name": {"en": en, "de": de}, "type": typ,
         "institutions": unis, "admission": adm, "years": years, "masterOnly": master_only,
+        "offers": offers,
         "estimate": {"payEntry": pay1, "payMid": pay5, "unemployment": unemp, "nonCompletion": drop},
         **({"note": note} if note else {}),
     })
@@ -249,9 +323,11 @@ out = {
     "sourceUrl": "https://www.studyprogrammes.ch/",
     "year": 2026,
     "groups": {k: {"en": v[0], "de": v[1]} for k, v in GROUPS.items()},
-    "institutions": {k: {"name": v[0], "short": v[1], "type": v[2], "city": v[3], "languages": v[4], "url": v[5]} for k, v in INST.items()},
+    "institutions": {k: {"name": v[0], "short": v[1], "type": v[2], "city": v[3], "languages": v[4], "url": v[5], "regionPay": REGION[k]} for k, v in INST.items()},
     "programmes": programmes,
 }
+for (pid, u) in STRONG:
+    assert any(p["id"] == pid and u in p["institutions"] for p in programmes), (pid, u)
 dst = ROOT / "data" / "inputs" / "higher-ed-programmes.json"
 dst.write_text(json.dumps(out, ensure_ascii=False, indent=1) + "\n")
 print(f"wrote {dst.relative_to(ROOT)}: {len(programmes)} programmes, {len(INST)} institutions")

@@ -613,7 +613,17 @@ const progOut = {
       const res = blendDp(I[statKey]?.value ?? null, I[statKey], I[expKey], 1);
       return { stat: r(I[statKey]?.value ?? null), est: r(I[expKey]?.value ?? null), value: r(res.value) };
     };
-    return { ...p, payEntry: b("payEntry", "payEntryExpert"), payMid: b("payMid", "payMidExpert"), unemployment: b("unemploymentRate", "unemploymentExpert"), nonCompletion: b("nonCompletion", "nonCompletionExpert") };
+    const payEntry = b("payEntry", "payEntryExpert");
+    const payMid = b("payMid", "payMidExpert");
+    // Institution-level pay: programme value × regional pay level (half strength for nationally
+    // mobile university/ETH graduates) × field-specific premium. Own estimates (methodology §15).
+    const mobile = p.type === "UH" || p.type === "ETH";
+    const offers = (p.offers as { institution: string; premium: number }[]).map((o) => {
+      const factor = Math.pow(progIn.institutions[o.institution].regionPay, mobile ? 0.5 : 1) * (1 + o.premium);
+      const at = (x: number | null) => (x === null ? null : Math.round((x * factor) / 10) * 10);
+      return { ...o, factor: Math.round(factor * 1000) / 1000, payEntry: at(payEntry.value), payMid: at(payMid.value) };
+    });
+    return { ...p, offers, payEntry, payMid, unemployment: b("unemploymentRate", "unemploymentExpert"), nonCompletion: b("nonCompletion", "nonCompletionExpert") };
   }),
 };
 const progTarget = path.join(ROOT, "data", "derived", "programmes.json");

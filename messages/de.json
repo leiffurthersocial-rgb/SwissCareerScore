@@ -476,6 +476,13 @@
     "programmesCol": "Studiengänge",
     "showProgrammesOf": "Studiengänge an {name}",
     "catalogueSource": "Angebotslisten zusammengestellt aus den Websites der Hochschulen und",
-    "methodLink": "So entstehen die Schätzungen"
+    "methodLink": "So entstehen die Schätzungen",
+    "strong": "in diesem Fach besonders stark",
+    "atInstitution": "An {name}",
+    "compareInstitutions": "Die {count} Hochschulen vergleichen",
+    "why": "Warum",
+    "premium": "Reputationszuschlag +{pct} %",
+    "region": "regionales Lohnniveau {pct} %",
+    "institutionNote": "Unterschiede zwischen Hochschulen sind unsere Schätzungen: ein Reputationszuschlag, wo Arbeitgeber eine Hochschule in diesem Fach klar bevorzugen, plus das regionale Lohnniveau, wo ihre Absolvent:innen meist arbeiten (bei Unis halbe Gewichtung, da mobiler). Sie verändern die Bewertung nicht, die pro Fach gilt. ★ = in diesem Fach besonders stark."
   }
 }

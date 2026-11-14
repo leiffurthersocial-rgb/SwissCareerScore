@@ -54,3 +54,14 @@ test("after the Matura: catalogue with institutions, filters and blended numbers
   await expect(card.getByText("Numerus clausus")).toBeVisible();
   await expect(card.getByText(/BFS CHF .* · own CHF/).first()).toBeVisible();
 });
+
+test("after the Matura: institutions are differentiated within a programme", async ({ page }) => {
+  await page.goto("/en/after-matura");
+  await page.getByRole("combobox", { name: "Institution" }).selectOption("UNISG");
+  const card = page.locator("li", { has: page.getByRole("link", { name: "Business administration (university)" }) });
+  await expect(card.getByText(/^At HSG/)).toBeVisible();
+  await card.locator("summary", { hasText: "Compare the 10 institutions" }).click();
+  const rows = card.locator("tbody tr");
+  await expect(rows.first()).toContainText("HSG");
+  await expect(rows.first()).toContainText("reputation premium +12 %");
+});

@@ -497,6 +497,27 @@ page shows both next to the blended value. The blended value feeds pay (entry an
 job stability and training ease for the linked education path, so it changes the scores
 everywhere in the app.
 
+**Differences between institutions.** Swiss statistics do not publish graduate outcomes per
+university. The page therefore estimates pay per institution as programme value × regional pay
+level × reputation premium:
+
+- *Regional pay level* where graduates typically work: Zurich 1.06, Basel 1.05, Geneva 1.04,
+  Lausanne 1.01, Bern 0.98, Fribourg 0.97, Neuchâtel 0.96, Graubünden 0.95, Ticino 0.86, etc.
+  These are own estimates informed by the BFS LSE regional medians. HSG is set to 1.03 because
+  most of its graduates work in Zurich or Geneva. The factor applies in full to FH/PH graduates,
+  who mostly stay in the region, and at half strength (square root) to university/ETH graduates,
+  who are more mobile.
+- *Reputation premium*, only where employers clearly favour an institution in that field. For
+  example: HSG +12 % for business administration and +6 % for economics, information systems and
+  wider recruiting; ETH/EPFL +4–5 % for mathematics, physics and chemistry; UZH, HEC Lausanne and
+  GSEM Geneva +2–4 % for finance and business; Basel +2–3 % for life sciences and pharmacy.
+  Renowned schools without a pay premium are marked too: EHL (hospitality), ECAL/ZHdK (design),
+  UNIL (forensics), FTI Geneva (interpreting), EPFL (microengineering).
+
+Medicine, teaching and other regulated professions follow cantonal pay scales, so the university
+barely matters there. The institution figures are shown on the page only and do not change the
+scores, which are per field.
+
 **Duration** is years after the Matura to the usual exit degree: the master for universities, the
 bachelor for most FH programmes, and the master where the profession requires it (psychology,
 music, conservation, osteopathy). It excludes later specialist training such as FMH or the bar

@@ -5,6 +5,7 @@ import {
   GraduationCap,
   Landmark,
   School,
+  Star,
   Stethoscope,
 } from "lucide-react";
 import { useLocale, useTranslations } from "next-intl";
@@ -71,8 +72,18 @@ export function AfterMatura() {
     const key: Record<Sort, (p: Programme) => number> = {
       field: (p) => GROUP_IDS.indexOf(p.group) * 1000 + (p.masterOnly ? 500 : 0) - (score(p) ?? 0),
       score: (p) => -(score(p) ?? -1),
-      payMid: (p) => -(p.payMid.value ?? 0),
-      payEntry: (p) => -(p.payEntry.value ?? 0),
+      payMid: (p) =>
+        -(
+          (inst ? p.offers.find((o) => o.institution === inst)?.payMid : null) ??
+          p.payMid.value ??
+          0
+        ),
+      payEntry: (p) =>
+        -(
+          (inst ? p.offers.find((o) => o.institution === inst)?.payEntry : null) ??
+          p.payEntry.value ??
+          0
+        ),
       unemployment: (p) => p.unemployment.value ?? 99,
       nonCompletion: (p) => p.nonCompletion.value ?? 99,
       years: (p) => p.years,
@@ -265,6 +276,7 @@ export function AfterMatura() {
                     qs={qs}
                     lang={lang}
                     results={results}
+                    selected={inst}
                   />
                 ))}
               </ol>
@@ -324,7 +336,7 @@ export function AfterMatura() {
                         <button
                           type="button"
                           className="text-primary tabular-nums underline"
-                          
+
                           onClick={() => {
                             setInst(code);
                             document
@@ -333,7 +345,10 @@ export function AfterMatura() {
                           }}
                         >
                           {progCount(code)}
-                          <span className="sr-only"> {t("showProgrammesOf", { name: i.short })}</span>
+                          <span className="sr-only">
+                            {" "}
+                            {t("showProgrammesOf", { name: i.short })}
+                          </span>
                         </button>
                       </td>
                     </tr>
@@ -402,12 +417,14 @@ function ProgrammeCard({
   qs,
   lang,
   results,
+  selected,
 }: {
   p: Programme;
   score: number | null;
   qs: string;
   lang: "en" | "de";
   results: ReturnType<typeof useScores>;
+  selected: string;
 }) {
   const t = useTranslations("matura");
   const locale = useLocale();
@@ -418,6 +435,11 @@ function ProgrammeCard({
     .sort((a, b) => (results.get(b.id)?.composite ?? 0) - (results.get(a.id)?.composite ?? 0))
     .slice(0, 4);
   const name = p.name[lang];
+  const offers = [...p.offers].sort((a, b) => Number(b.strong) - Number(a.strong));
+  const here = selected ? p.offers.find((o) => o.institution === selected) : undefined;
+  const chf = (v: number | null) =>
+    v === null ? "—" : `CHF ${formatNumber(Math.round(v / 100) * 100, locale)}`;
+  const signed = (n: number) => (n > 0 ? `+${n}` : `${n}`);
   return (
     <li className="border-border bg-card rounded-xl border p-4">
       <div className="flex items-start gap-3">
@@ -451,22 +473,106 @@ function ProgrammeCard({
       </dl>
       <div className="mt-3 flex flex-wrap items-center gap-1.5 text-xs">
         <span className="text-muted-foreground">{t("offeredAt")}:</span>
-        {p.institutions.map((code) => {
-          const i = institutions[code];
+        {offers.map((o) => {
+          const i = institutions[o.institution];
           return (
             <a
-              key={code}
+              key={o.institution}
               href={i.url}
               target="_blank"
               rel="noopener noreferrer"
-              title={i.name}
-              className="border-border hover:bg-muted rounded-full border px-2 py-0.5"
+              title={o.note ? `${i.name} — ${o.note}` : i.name}
+              className={cn(
+                "hover:bg-muted inline-flex items-center gap-1 rounded-full border px-2 py-0.5",
+                o.strong
+                  ? "border-primary/60 bg-accent text-accent-foreground font-medium"
+                  : "border-border",
+                o.institution === selected && "ring-primary ring-2",
+              )}
             >
+              {o.strong ? <Star className="size-3 fill-current" aria-hidden /> : null}
               {i.short}
+              {o.strong ? <span className="sr-only"> ({t("strong")})</span> : null}
             </a>
           );
         })}
       </div>
+      {here ? (
+        <p className="mt-2 text-xs">
+          {t("atInstitution", { name: institutions[here.institution].short })}:{" "}
+          <span className="font-semibold tabular-nums">{chf(here.payEntry)}</span> →{" "}
+          <span className="font-semibold tabular-nums">{chf(here.payMid)}</span>
+          {here.note ? <span className="text-muted-foreground"> · {here.note}</span> : null}
+        </p>
+      ) : null}
+      {offers.length > 1 ? (
+        <details className="mt-2 text-xs">
+          <summary className="text-primary cursor-pointer">
+            {t("compareInstitutions", { count: offers.length })}
+          </summary>
+          <div tabIndex={0} className="border-border mt-2 overflow-x-auto rounded-lg border">
+            <table className="w-full min-w-[34rem]">
+              <caption className="sr-only">
+                {t("compareInstitutions", { count: offers.length })}
+              </caption>
+              <thead className="bg-muted text-left">
+                <tr>
+                  <th scope="col" className="p-1.5">
+                    {t("institution")}
+                  </th>
+                  <th scope="col" className="p-1.5 text-right">
+                    {t("payEntry")}
+                  </th>
+                  <th scope="col" className="p-1.5 text-right">
+                    {t("payMid")}
+                  </th>
+                  <th scope="col" className="p-1.5">
+                    {t("why")}
+                  </th>
+                </tr>
+              </thead>
+              <tbody className="divide-border divide-y">
+                {[...offers]
+                  .sort((a, b) => (b.payMid ?? 0) - (a.payMid ?? 0))
+                  .map((o) => {
+                    const i = institutions[o.institution];
+                    return (
+                      <tr
+                        key={o.institution}
+                        className={o.institution === selected ? "bg-accent" : undefined}
+                      >
+                        <th scope="row" className="p-1.5 text-left font-medium">
+                          {o.strong ? (
+                            <Star
+                              className="text-primary mr-1 inline size-3 fill-current"
+                              aria-label={t("strong")}
+                            />
+                          ) : null}
+                          {i.short}{" "}
+                          <span className="text-muted-foreground font-normal">· {i.city}</span>
+                        </th>
+                        <td className="p-1.5 text-right tabular-nums">{chf(o.payEntry)}</td>
+                        <td className="p-1.5 text-right tabular-nums">{chf(o.payMid)}</td>
+                        <td className="text-muted-foreground p-1.5">
+                          {[
+                            o.note,
+                            o.premium > 0
+                              ? t("premium", { pct: Math.round(o.premium * 100) })
+                              : null,
+                            t("region", { pct: signed(Math.round((i.regionPay - 1) * 100)) }),
+                          ]
+                            .filter(Boolean)
+                            .join(" · ")}
+                        </td>
+                      </tr>
+                    );
+                  })}
+              </tbody>
+            </table>
+          </div>
+          <p className="text-muted-foreground mt-1">{t("institutionNote")}</p>
+        </details>
+      ) : null}
       {careers.length ? (
         <p className="mt-2 flex flex-wrap items-center gap-1.5 text-xs">
           <span className="text-muted-foreground inline-flex items-center gap-1">

@@ -54,7 +54,8 @@
     "de",
     "en"
    ],
-   "url": "https://ethz.ch"
+   "url": "https://ethz.ch",
+   "regionPay": 1.06
   },
   "EPFL": {
    "name": "EPFL – École polytechnique fédérale de Lausanne",
@@ -65,7 +66,8 @@
     "fr",
     "en"
    ],
-   "url": "https://www.epfl.ch"
+   "url": "https://www.epfl.ch",
+   "regionPay": 1.01
   },
   "UZH": {
    "name": "Universität Zürich",
@@ -75,7 +77,8 @@
    "languages": [
     "de"
    ],
-   "url": "https://www.uzh.ch"
+   "url": "https://www.uzh.ch",
+   "regionPay": 1.06
   },
   "UNIBE": {
    "name": "Universität Bern",
@@ -85,7 +88,8 @@
    "languages": [
     "de"
    ],
-   "url": "https://www.unibe.ch"
+   "url": "https://www.unibe.ch",
+   "regionPay": 0.98
   },
   "UNIBAS": {
    "name": "Universität Basel",
@@ -95,7 +99,8 @@
    "languages": [
     "de"
    ],
-   "url": "https://www.unibas.ch"
+   "url": "https://www.unibas.ch",
+   "regionPay": 1.05
   },
   "UNIGE": {
    "name": "Université de Genève",
@@ -105,7 +110,8 @@
    "languages": [
     "fr"
    ],
-   "url": "https://www.unige.ch"
+   "url": "https://www.unige.ch",
+   "regionPay": 1.04
   },
   "UNIL": {
    "name": "Université de Lausanne",
@@ -115,7 +121,8 @@
    "languages": [
     "fr"
    ],
-   "url": "https://www.unil.ch"
+   "url": "https://www.unil.ch",
+   "regionPay": 1.01
   },
   "UNIFR": {
    "name": "Universität Freiburg / Université de Fribourg",
@@ -126,7 +133,8 @@
     "de",
     "fr"
    ],
-   "url": "https://www.unifr.ch"
+   "url": "https://www.unifr.ch",
+   "regionPay": 0.97
   },
   "UNINE": {
    "name": "Université de Neuchâtel",
@@ -136,7 +144,8 @@
    "languages": [
     "fr"
    ],
-   "url": "https://www.unine.ch"
+   "url": "https://www.unine.ch",
+   "regionPay": 0.96
   },
   "UNILU": {
    "name": "Universität Luzern",
@@ -146,7 +155,8 @@
    "languages": [
     "de"
    ],
-   "url": "https://www.unilu.ch"
+   "url": "https://www.unilu.ch",
+   "regionPay": 1.0
   },
   "UNISG": {
    "name": "Universität St. Gallen (HSG)",
@@ -157,7 +167,8 @@
     "de",
     "en"
    ],
-   "url": "https://www.unisg.ch"
+   "url": "https://www.unisg.ch",
+   "regionPay": 1.03
   },
   "USI": {
    "name": "Università della Svizzera italiana",
@@ -168,7 +179,8 @@
     "it",
     "en"
    ],
-   "url": "https://www.usi.ch"
+   "url": "https://www.usi.ch",
+   "regionPay": 0.86
   },
   "UNIDIST": {
    "name": "UniDistance Suisse (distance learning)",
@@ -179,7 +191,8 @@
     "de",
     "fr"
    ],
-   "url": "https://unidistance.ch"
+   "url": "https://unidistance.ch",
+   "regionPay": 1.0
   },
   "ZHAW": {
    "name": "ZHAW Zürcher Hochschule für Angewandte Wissenschaften",
@@ -189,7 +202,8 @@
    "languages": [
     "de"
    ],
-   "url": "https://www.zhaw.ch"
+   "url": "https://www.zhaw.ch",
+   "regionPay": 1.06
   },
   "FHNW": {
    "name": "FHNW Fachhochschule Nordwestschweiz",
@@ -199,7 +213,8 @@
    "languages": [
     "de"
    ],
-   "url": "https://www.fhnw.ch"
+   "url": "https://www.fhnw.ch",
+   "regionPay": 1.03
   },
   "BFH": {
    "name": "BFH Berner Fachhochschule",
@@ -210,7 +225,8 @@
     "de",
     "fr"
    ],
-   "url": "https://www.bfh.ch"
+   "url": "https://www.bfh.ch",
+   "regionPay": 0.98
   },
   "HSLU": {
    "name": "HSLU Hochschule Luzern",
@@ -220,7 +236,8 @@
    "languages": [
     "de"
    ],
-   "url": "https://www.hslu.ch"
+   "url": "https://www.hslu.ch",
+   "regionPay": 1.0
   },
   "OST": {
    "name": "OST Ostschweizer Fachhochschule",
@@ -230,7 +247,8 @@
    "languages": [
     "de"
    ],
-   "url": "https://www.ost.ch"
+   "url": "https://www.ost.ch",
+   "regionPay": 0.97
   },
   "FHGR": {
    "name": "FHGR Fachhochschule Graubünden",
@@ -240,7 +258,8 @@
    "languages": [
     "de"
    ],
-   "url": "https://www.fhgr.ch"
+   "url": "https://www.fhgr.ch",
+   "regionPay": 0.95
   },
   "HESSO": {
    "name": "HES-SO Haute école spécialisée de Suisse occidentale (incl. EHL, ECAL, HEAD, HEIG-VD)",
@@ -251,7 +270,8 @@
     "fr",
     "de"
    ],
-   "url": "https://www.hes-so.ch"
+   "url": "https://www.hes-so.ch",
+   "regionPay": 0.99
   },
   "SUPSI": {
    "name": "SUPSI Scuola universitaria professionale della Svizzera italiana",
@@ -261,7 +281,8 @@
    "languages": [
     "it"
    ],
-   "url": "https://www.supsi.ch"
+   "url": "https://www.supsi.ch",
+   "regionPay": 0.86
   },
   "KALAIDOS": {
    "name": "Kalaidos Fachhochschule (private)",
@@ -271,7 +292,8 @@
    "languages": [
     "de"
    ],
-   "url": "https://www.kalaidos-fh.ch"
+   "url": "https://www.kalaidos-fh.ch",
+   "regionPay": 1.06
   },
   "ZHDK": {
    "name": "ZHdK Zürcher Hochschule der Künste",
@@ -281,7 +303,8 @@
    "languages": [
     "de"
    ],
-   "url": "https://www.zhdk.ch"
+   "url": "https://www.zhdk.ch",
+   "regionPay": 1.06
   },
   "HKB": {
    "name": "HKB Hochschule der Künste Bern (BFH)",
@@ -292,7 +315,8 @@
     "de",
     "fr"
    ],
-   "url": "https://www.hkb.bfh.ch"
+   "url": "https://www.hkb.bfh.ch",
+   "regionPay": 0.98
   },
   "HFH": {
    "name": "HfH Interkantonale Hochschule für Heilpädagogik",
@@ -302,7 +326,8 @@
    "languages": [
     "de"
    ],
-   "url": "https://www.hfh.ch"
+   "url": "https://www.hfh.ch",
+   "regionPay": 1.06
   },
   "EHSM": {
    "name": "EHSM Eidgenössische Hochschule für Sport Magglingen",
@@ -313,7 +338,8 @@
     "de",
     "fr"
    ],
-   "url": "https://www.ehsm.admin.ch"
+   "url": "https://www.ehsm.admin.ch",
+   "regionPay": 0.98
   },
   "PHZH": {
    "name": "PH Zürich",
@@ -323,7 +349,8 @@
    "languages": [
     "de"
    ],
-   "url": "https://phzh.ch"
+   "url": "https://phzh.ch",
+   "regionPay": 1.06
   },
   "PHBERN": {
    "name": "PH Bern",
@@ -333,7 +360,8 @@
    "languages": [
     "de"
    ],
-   "url": "https://www.phbern.ch"
+   "url": "https://www.phbern.ch",
+   "regionPay": 0.98
   },
   "PHLU": {
    "name": "PH Luzern",
@@ -343,7 +371,8 @@
    "languages": [
     "de"
    ],
-   "url": "https://www.phlu.ch"
+   "url": "https://www.phlu.ch",
+   "regionPay": 1.0
   },
   "PHSG": {
    "name": "PH St. Gallen",
@@ -353,7 +382,8 @@
    "languages": [
     "de"
    ],
-   "url": "https://www.phsg.ch"
+   "url": "https://www.phsg.ch",
+   "regionPay": 0.97
   },
   "PHFHNW": {
    "name": "PH FHNW",
@@ -363,7 +393,8 @@
    "languages": [
     "de"
    ],
-   "url": "https://www.fhnw.ch/de/die-fhnw/hochschulen/ph"
+   "url": "https://www.fhnw.ch/de/die-fhnw/hochschulen/ph",
+   "regionPay": 1.03
   },
   "PHTG": {
    "name": "PH Thurgau",
@@ -373,7 +404,8 @@
    "languages": [
     "de"
    ],
-   "url": "https://www.phtg.ch"
+   "url": "https://www.phtg.ch",
+   "regionPay": 0.96
   },
   "PHGR": {
    "name": "PH Graubünden",
@@ -385,7 +417,8 @@
     "it",
     "rm"
    ],
-   "url": "https://phgr.ch"
+   "url": "https://phgr.ch",
+   "regionPay": 0.95
   },
   "PHZG": {
    "name": "PH Zug",
@@ -395,7 +428,8 @@
    "languages": [
     "de"
    ],
-   "url": "https://www.phzg.ch"
+   "url": "https://www.phzg.ch",
+   "regionPay": 1.02
   },
   "PHSZ": {
    "name": "PH Schwyz",
@@ -405,7 +439,8 @@
    "languages": [
     "de"
    ],
-   "url": "https://www.phsz.ch"
+   "url": "https://www.phsz.ch",
+   "regionPay": 0.98
   },
   "PHSH": {
    "name": "PH Schaffhausen",
@@ -415,7 +450,8 @@
    "languages": [
     "de"
    ],
-   "url": "https://www.phsh.ch"
+   "url": "https://www.phsh.ch",
+   "regionPay": 0.98
   },
   "HEPVD": {
    "name": "HEP Vaud",
@@ -425,7 +461,8 @@
    "languages": [
     "fr"
    ],
-   "url": "https://www.hepl.ch"
+   "url": "https://www.hepl.ch",
+   "regionPay": 1.01
   },
   "HEPBEJUNE": {
    "name": "HEP-BEJUNE",
@@ -435,7 +472,8 @@
    "languages": [
     "fr"
    ],
-   "url": "https://www.hep-bejune.ch"
+   "url": "https://www.hep-bejune.ch",
+   "regionPay": 0.96
   },
   "HEPFR": {
    "name": "HEP | PH Fribourg",
@@ -446,7 +484,8 @@
     "fr",
     "de"
    ],
-   "url": "https://www.hepfr.ch"
+   "url": "https://www.hepfr.ch",
+   "regionPay": 0.97
   },
   "HEPVS": {
    "name": "HEP-VS / PH Wallis",
@@ -457,7 +496,8 @@
     "fr",
     "de"
    ],
-   "url": "https://hepvs.ch"
+   "url": "https://hepvs.ch",
+   "regionPay": 0.94
   }
  },
  "programmes": [
@@ -485,6 +525,59 @@
    "admission": "ems",
    "years": 6,
    "masterOnly": false,
+   "offers": [
+    {
+     "institution": "ETHZ",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UZH",
+     "strong": true,
+     "premium": 0.0,
+     "note": "Hospital pay follows cantonal scales; the university barely affects pay."
+    },
+    {
+     "institution": "UNIBE",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIBAS",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIFR",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIGE",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIL",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "USI",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNILU",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNISG",
+     "strong": false,
+     "premium": 0.0
+    }
+   ],
    "estimate": {
     "payEntry": 8200,
     "payMid": 9800,
@@ -511,6 +604,28 @@
    "admission": "ems",
    "years": 5,
    "masterOnly": false,
+   "offers": [
+    {
+     "institution": "UZH",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIBE",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIBAS",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIGE",
+     "strong": false,
+     "premium": 0.0
+    }
+   ],
    "estimate": {
     "payEntry": 7000,
     "payMid": 10500,
@@ -535,6 +650,18 @@
    "admission": "ems",
    "years": 5,
    "masterOnly": false,
+   "offers": [
+    {
+     "institution": "UZH",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIBE",
+     "strong": false,
+     "premium": 0.0
+    }
+   ],
    "estimate": {
     "payEntry": 5600,
     "payMid": 7300,
@@ -558,6 +685,13 @@
    "admission": "ems",
    "years": 6,
    "masterOnly": false,
+   "offers": [
+    {
+     "institution": "UZH",
+     "strong": false,
+     "premium": 0.0
+    }
+   ],
    "estimate": {
     "payEntry": 6500,
     "payMid": 10000,
@@ -584,6 +718,29 @@
    "admission": "open",
    "years": 5,
    "masterOnly": false,
+   "offers": [
+    {
+     "institution": "ETHZ",
+     "strong": true,
+     "premium": 0.02
+    },
+    {
+     "institution": "UNIBAS",
+     "strong": true,
+     "premium": 0.02,
+     "note": "Basel pharma hub."
+    },
+    {
+     "institution": "UNIBE",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIGE",
+     "strong": false,
+     "premium": 0.0
+    }
+   ],
    "estimate": {
     "payEntry": 8000,
     "payMid": 9300,
@@ -610,6 +767,28 @@
    "admission": "open",
    "years": 5,
    "masterOnly": false,
+   "offers": [
+    {
+     "institution": "UZH",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIBE",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIFR",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIBAS",
+     "strong": false,
+     "premium": 0.0
+    }
+   ],
    "estimate": {
     "payEntry": 5000,
     "payMid": 7800,
@@ -634,6 +813,18 @@
    "admission": "open",
    "years": 5,
    "masterOnly": false,
+   "offers": [
+    {
+     "institution": "ETHZ",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNILU",
+     "strong": false,
+     "premium": 0.0
+    }
+   ],
    "estimate": {
     "payEntry": 5700,
     "payMid": 8300,
@@ -662,6 +853,38 @@
    "admission": "selection",
    "years": 5,
    "masterOnly": false,
+   "offers": [
+    {
+     "institution": "ETHZ",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIBE",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIBAS",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIFR",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIGE",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIL",
+     "strong": false,
+     "premium": 0.0
+    }
+   ],
    "estimate": {
     "payEntry": 5800,
     "payMid": 8000,
@@ -686,6 +909,18 @@
    "admission": "open",
    "years": 5,
    "masterOnly": true,
+   "offers": [
+    {
+     "institution": "UNIBAS",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIL",
+     "strong": false,
+     "premium": 0.0
+    }
+   ],
    "estimate": {
     "payEntry": 8000,
     "payMid": 9200,
@@ -714,6 +949,38 @@
    "admission": "work",
    "years": 3,
    "masterOnly": false,
+   "offers": [
+    {
+     "institution": "ZHAW",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "BFH",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "OST",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "KALAIDOS",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "HESSO",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "SUPSI",
+     "strong": false,
+     "premium": 0.0
+    }
+   ],
    "estimate": {
     "payEntry": 6500,
     "payMid": 7500,
@@ -740,6 +1007,28 @@
    "admission": "selection",
    "years": 4,
    "masterOnly": false,
+   "offers": [
+    {
+     "institution": "ZHAW",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "BFH",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "HESSO",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "SUPSI",
+     "strong": false,
+     "premium": 0.0
+    }
+   ],
    "estimate": {
     "payEntry": 6300,
     "payMid": 7400,
@@ -765,6 +1054,23 @@
    "admission": "work",
    "years": 3,
    "masterOnly": false,
+   "offers": [
+    {
+     "institution": "ZHAW",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "HESSO",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "SUPSI",
+     "strong": false,
+     "premium": 0.0
+    }
+   ],
    "estimate": {
     "payEntry": 6100,
     "payMid": 7000,
@@ -789,6 +1095,23 @@
    "admission": "selection",
    "years": 4,
    "masterOnly": false,
+   "offers": [
+    {
+     "institution": "ZHAW",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "BFH",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "HESSO",
+     "strong": false,
+     "premium": 0.0
+    }
+   ],
    "estimate": {
     "payEntry": 6500,
     "payMid": 7400,
@@ -813,6 +1136,18 @@
    "admission": "work",
    "years": 3,
    "masterOnly": false,
+   "offers": [
+    {
+     "institution": "BFH",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "HESSO",
+     "strong": false,
+     "premium": 0.0
+    }
+   ],
    "estimate": {
     "payEntry": 6000,
     "payMid": 6900,
@@ -835,6 +1170,13 @@
    "admission": "work",
    "years": 3,
    "masterOnly": false,
+   "offers": [
+    {
+     "institution": "HESSO",
+     "strong": false,
+     "premium": 0.0
+    }
+   ],
    "estimate": {
     "payEntry": 6400,
     "payMid": 7300,
@@ -858,6 +1200,13 @@
    "admission": "selection",
    "years": 5,
    "masterOnly": false,
+   "offers": [
+    {
+     "institution": "HESSO",
+     "strong": false,
+     "premium": 0.0
+    }
+   ],
    "estimate": {
     "payEntry": 6000,
     "payMid": 8500,
@@ -881,6 +1230,13 @@
    "admission": "work",
    "years": 3,
    "masterOnly": false,
+   "offers": [
+    {
+     "institution": "FHNW",
+     "strong": false,
+     "premium": 0.0
+    }
+   ],
    "estimate": {
     "payEntry": 6300,
     "payMid": 7500,
@@ -907,6 +1263,33 @@
    "admission": "selection",
    "years": 3,
    "masterOnly": false,
+   "offers": [
+    {
+     "institution": "HFH",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "FHNW",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIFR",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNINE",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIGE",
+     "strong": false,
+     "premium": 0.0
+    }
+   ],
    "estimate": {
     "payEntry": 6700,
     "payMid": 8000,
@@ -931,6 +1314,18 @@
    "admission": "selection",
    "years": 3,
    "masterOnly": false,
+   "offers": [
+    {
+     "institution": "HFH",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "HESSO",
+     "strong": false,
+     "premium": 0.0
+    }
+   ],
    "estimate": {
     "payEntry": 6700,
     "payMid": 8000,
@@ -953,6 +1348,13 @@
    "admission": "selection",
    "years": 3,
    "masterOnly": false,
+   "offers": [
+    {
+     "institution": "EHSM",
+     "strong": false,
+     "premium": 0.0
+    }
+   ],
    "estimate": {
     "payEntry": 5500,
     "payMid": 6800,
@@ -983,6 +1385,49 @@
    "admission": "open",
    "years": 4.5,
    "masterOnly": false,
+   "offers": [
+    {
+     "institution": "ETHZ",
+     "strong": true,
+     "premium": 0.05,
+     "note": "Global top mathematics; strong demand from finance and insurance."
+    },
+    {
+     "institution": "EPFL",
+     "strong": true,
+     "premium": 0.04
+    },
+    {
+     "institution": "UZH",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIBE",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIBAS",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIGE",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIFR",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNINE",
+     "strong": false,
+     "premium": 0.0
+    }
+   ],
    "estimate": {
     "payEntry": 6000,
     "payMid": 9500,
@@ -1012,6 +1457,44 @@
    "admission": "open",
    "years": 5,
    "masterOnly": false,
+   "offers": [
+    {
+     "institution": "ETHZ",
+     "strong": true,
+     "premium": 0.05,
+     "note": "Global top physics."
+    },
+    {
+     "institution": "EPFL",
+     "strong": true,
+     "premium": 0.04
+    },
+    {
+     "institution": "UZH",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIBE",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIBAS",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIGE",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIFR",
+     "strong": false,
+     "premium": 0.0
+    }
+   ],
    "estimate": {
     "payEntry": 5300,
     "payMid": 9000,
@@ -1041,6 +1524,45 @@
    "admission": "open",
    "years": 4.5,
    "masterOnly": false,
+   "offers": [
+    {
+     "institution": "ETHZ",
+     "strong": true,
+     "premium": 0.05,
+     "note": "Global top chemistry; pharma and chemical industry recruit directly."
+    },
+    {
+     "institution": "EPFL",
+     "strong": true,
+     "premium": 0.03
+    },
+    {
+     "institution": "UZH",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIBE",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIBAS",
+     "strong": true,
+     "premium": 0.02,
+     "note": "Basel chemical and pharma cluster."
+    },
+    {
+     "institution": "UNIGE",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIFR",
+     "strong": false,
+     "premium": 0.0
+    }
+   ],
    "estimate": {
     "payEntry": 5000,
     "payMid": 8800,
@@ -1068,6 +1590,33 @@
    "admission": "open",
    "years": 5,
    "masterOnly": false,
+   "offers": [
+    {
+     "institution": "UZH",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIBE",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIGE",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIFR",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "ETHZ",
+     "strong": false,
+     "premium": 0.0
+    }
+   ],
    "estimate": {
     "payEntry": 4900,
     "payMid": 8000,
@@ -1098,6 +1647,49 @@
    "admission": "open",
    "years": 5,
    "masterOnly": false,
+   "offers": [
+    {
+     "institution": "ETHZ",
+     "strong": true,
+     "premium": 0.03
+    },
+    {
+     "institution": "UZH",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIBE",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIBAS",
+     "strong": true,
+     "premium": 0.03,
+     "note": "Biozentrum; Basel life-sciences cluster."
+    },
+    {
+     "institution": "UNIGE",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIL",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIFR",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNINE",
+     "strong": false,
+     "premium": 0.0
+    }
+   ],
    "estimate": {
     "payEntry": 4800,
     "payMid": 7600,
@@ -1126,6 +1718,38 @@
    "admission": "open",
    "years": 5,
    "masterOnly": false,
+   "offers": [
+    {
+     "institution": "ETHZ",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIBE",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIBAS",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIGE",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIL",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIFR",
+     "strong": false,
+     "premium": 0.0
+    }
+   ],
    "estimate": {
     "payEntry": 5400,
     "payMid": 8000,
@@ -1154,6 +1778,43 @@
    "admission": "open",
    "years": 4.5,
    "masterOnly": false,
+   "offers": [
+    {
+     "institution": "UZH",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIBE",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIBAS",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIGE",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIL",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIFR",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNINE",
+     "strong": false,
+     "premium": 0.0
+    }
+   ],
    "estimate": {
     "payEntry": 5800,
     "payMid": 8000,
@@ -1180,6 +1841,28 @@
    "admission": "open",
    "years": 4.5,
    "masterOnly": false,
+   "offers": [
+    {
+     "institution": "ETHZ",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIL",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIGE",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIBAS",
+     "strong": false,
+     "premium": 0.0
+    }
+   ],
    "estimate": {
     "payEntry": 5600,
     "payMid": 8000,
@@ -1202,6 +1885,13 @@
    "admission": "open",
    "years": 5,
    "masterOnly": false,
+   "offers": [
+    {
+     "institution": "ETHZ",
+     "strong": false,
+     "premium": 0.0
+    }
+   ],
    "estimate": {
     "payEntry": 6000,
     "payMid": 8200,
@@ -1224,6 +1914,13 @@
    "admission": "open",
    "years": 4.5,
    "masterOnly": false,
+   "offers": [
+    {
+     "institution": "ETHZ",
+     "strong": false,
+     "premium": 0.0
+    }
+   ],
    "estimate": {
     "payEntry": 6300,
     "payMid": 8600,
@@ -1246,6 +1943,14 @@
    "admission": "open",
    "years": 5,
    "masterOnly": false,
+   "offers": [
+    {
+     "institution": "UNIL",
+     "strong": true,
+     "premium": 0.0,
+     "note": "Internationally renowned school of criminal sciences."
+    }
+   ],
    "estimate": {
     "payEntry": 5800,
     "payMid": 8300,
@@ -1270,6 +1975,20 @@
    "admission": "open",
    "years": 4.5,
    "masterOnly": false,
+   "offers": [
+    {
+     "institution": "ETHZ",
+     "strong": true,
+     "premium": 0.0,
+     "note": "Global top-10 computer science."
+    },
+    {
+     "institution": "EPFL",
+     "strong": true,
+     "premium": 0.0,
+     "note": "Global top-20 computer science."
+    }
+   ],
    "estimate": {
     "payEntry": 8500,
     "payMid": 11000,
@@ -1301,6 +2020,54 @@
    "admission": "open",
    "years": 4.5,
    "masterOnly": false,
+   "offers": [
+    {
+     "institution": "UZH",
+     "strong": true,
+     "premium": 0.02
+    },
+    {
+     "institution": "UNIBE",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIBAS",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIGE",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIFR",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNINE",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "USI",
+     "strong": true,
+     "premium": 0.0,
+     "note": "Strong AI research (IDSIA); pay level of Ticino is lower."
+    },
+    {
+     "institution": "UNISG",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIDIST",
+     "strong": false,
+     "premium": 0.0
+    }
+   ],
    "estimate": {
     "payEntry": 7300,
     "payMid": 9800,
@@ -1323,6 +2090,13 @@
    "admission": "open",
    "years": 4.5,
    "masterOnly": false,
+   "offers": [
+    {
+     "institution": "ETHZ",
+     "strong": false,
+     "premium": 0.0
+    }
+   ],
    "estimate": {
     "payEntry": 7800,
     "payMid": 10500,
@@ -1350,6 +2124,39 @@
    "admission": "open",
    "years": 4.5,
    "masterOnly": false,
+   "offers": [
+    {
+     "institution": "UZH",
+     "strong": true,
+     "premium": 0.02
+    },
+    {
+     "institution": "UNIBE",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIFR",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIGE",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIL",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNISG",
+     "strong": true,
+     "premium": 0.06,
+     "note": "HSG business information systems; strong consulting placement."
+    }
+   ],
    "estimate": {
     "payEntry": 7500,
     "payMid": 9800,
@@ -1373,6 +2180,18 @@
    "admission": "open",
    "years": 5,
    "masterOnly": false,
+   "offers": [
+    {
+     "institution": "UZH",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIGE",
+     "strong": false,
+     "premium": 0.0
+    }
+   ],
    "estimate": {
     "payEntry": 6800,
     "payMid": 9000,
@@ -1402,6 +2221,48 @@
    "admission": "work",
    "years": 3,
    "masterOnly": false,
+   "offers": [
+    {
+     "institution": "ZHAW",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "FHNW",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "BFH",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "HSLU",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "OST",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "FHGR",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "HESSO",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "SUPSI",
+     "strong": false,
+     "premium": 0.0
+    }
+   ],
    "estimate": {
     "payEntry": 7000,
     "payMid": 9000,
@@ -1433,6 +2294,53 @@
    "admission": "work",
    "years": 3,
    "masterOnly": false,
+   "offers": [
+    {
+     "institution": "ZHAW",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "FHNW",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "BFH",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "HSLU",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "OST",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "FHGR",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "HESSO",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "SUPSI",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "KALAIDOS",
+     "strong": false,
+     "premium": 0.0
+    }
+   ],
    "estimate": {
     "payEntry": 7200,
     "payMid": 9300,
@@ -1456,6 +2364,18 @@
    "admission": "open",
    "years": 4.5,
    "masterOnly": false,
+   "offers": [
+    {
+     "institution": "ETHZ",
+     "strong": true,
+     "premium": 0.02
+    },
+    {
+     "institution": "EPFL",
+     "strong": false,
+     "premium": 0.0
+    }
+   ],
    "estimate": {
     "payEntry": 7800,
     "payMid": 10200,
@@ -1479,6 +2399,18 @@
    "admission": "open",
    "years": 4.5,
    "masterOnly": false,
+   "offers": [
+    {
+     "institution": "ETHZ",
+     "strong": true,
+     "premium": 0.02
+    },
+    {
+     "institution": "EPFL",
+     "strong": false,
+     "premium": 0.0
+    }
+   ],
    "estimate": {
     "payEntry": 7600,
     "payMid": 10000,
@@ -1502,6 +2434,18 @@
    "admission": "open",
    "years": 4.5,
    "masterOnly": false,
+   "offers": [
+    {
+     "institution": "ETHZ",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "EPFL",
+     "strong": false,
+     "premium": 0.0
+    }
+   ],
    "estimate": {
     "payEntry": 7000,
     "payMid": 9200,
@@ -1527,6 +2471,24 @@
    "admission": "open",
    "years": 6,
    "masterOnly": false,
+   "offers": [
+    {
+     "institution": "ETHZ",
+     "strong": true,
+     "premium": 0.04,
+     "note": "Internationally top-ranked architecture school."
+    },
+    {
+     "institution": "EPFL",
+     "strong": true,
+     "premium": 0.03
+    },
+    {
+     "institution": "USI",
+     "strong": false,
+     "premium": 0.0
+    }
+   ],
    "estimate": {
     "payEntry": 5700,
     "payMid": 7500,
@@ -1551,6 +2513,18 @@
    "admission": "open",
    "years": 4.5,
    "masterOnly": false,
+   "offers": [
+    {
+     "institution": "ETHZ",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "EPFL",
+     "strong": false,
+     "premium": 0.0
+    }
+   ],
    "estimate": {
     "payEntry": 7000,
     "payMid": 9500,
@@ -1573,6 +2547,14 @@
    "admission": "open",
    "years": 5,
    "masterOnly": false,
+   "offers": [
+    {
+     "institution": "EPFL",
+     "strong": true,
+     "premium": 0.0,
+     "note": "Swiss reference for micro- and precision engineering (watch and medtech industry)."
+    }
+   ],
    "estimate": {
     "payEntry": 7500,
     "payMid": 9800,
@@ -1596,6 +2578,13 @@
    "admission": "open",
    "years": 4.5,
    "masterOnly": false,
+   "offers": [
+    {
+     "institution": "ETHZ",
+     "strong": false,
+     "premium": 0.0
+    }
+   ],
    "estimate": {
     "payEntry": 6800,
     "payMid": 8800,
@@ -1619,6 +2608,18 @@
    "admission": "open",
    "years": 4.5,
    "masterOnly": false,
+   "offers": [
+    {
+     "institution": "ETHZ",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "EPFL",
+     "strong": false,
+     "premium": 0.0
+    }
+   ],
    "estimate": {
     "payEntry": 6800,
     "payMid": 8900,
@@ -1647,6 +2648,43 @@
    "admission": "work",
    "years": 3,
    "masterOnly": false,
+   "offers": [
+    {
+     "institution": "ZHAW",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "FHNW",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "BFH",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "HSLU",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "OST",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "HESSO",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "SUPSI",
+     "strong": false,
+     "premium": 0.0
+    }
+   ],
    "estimate": {
     "payEntry": 7000,
     "payMid": 8900,
@@ -1675,6 +2713,43 @@
    "admission": "work",
    "years": 3,
    "masterOnly": false,
+   "offers": [
+    {
+     "institution": "ZHAW",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "FHNW",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "BFH",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "HSLU",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "OST",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "HESSO",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "SUPSI",
+     "strong": false,
+     "premium": 0.0
+    }
+   ],
    "estimate": {
     "payEntry": 6900,
     "payMid": 8800,
@@ -1699,6 +2774,23 @@
    "admission": "work",
    "years": 3,
    "masterOnly": false,
+   "offers": [
+    {
+     "institution": "FHNW",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "FHGR",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "BFH",
+     "strong": false,
+     "premium": 0.0
+    }
+   ],
    "estimate": {
     "payEntry": 6900,
     "payMid": 8800,
@@ -1724,6 +2816,28 @@
    "admission": "work",
    "years": 3,
    "masterOnly": false,
+   "offers": [
+    {
+     "institution": "ZHAW",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "OST",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "FHNW",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "HESSO",
+     "strong": false,
+     "premium": 0.0
+    }
+   ],
    "estimate": {
     "payEntry": 6900,
     "payMid": 8800,
@@ -1747,6 +2861,18 @@
    "admission": "work",
    "years": 3,
    "masterOnly": false,
+   "offers": [
+    {
+     "institution": "BFH",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "HSLU",
+     "strong": false,
+     "premium": 0.0
+    }
+   ],
    "estimate": {
     "payEntry": 6700,
     "payMid": 8500,
@@ -1775,6 +2901,43 @@
    "admission": "work",
    "years": 3,
    "masterOnly": false,
+   "offers": [
+    {
+     "institution": "ZHAW",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "FHNW",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "BFH",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "HSLU",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "OST",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "HESSO",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "SUPSI",
+     "strong": false,
+     "premium": 0.0
+    }
+   ],
    "estimate": {
     "payEntry": 7200,
     "payMid": 9200,
@@ -1797,6 +2960,13 @@
    "admission": "work",
    "years": 3,
    "masterOnly": false,
+   "offers": [
+    {
+     "institution": "ZHAW",
+     "strong": false,
+     "premium": 0.0
+    }
+   ],
    "estimate": {
     "payEntry": 6800,
     "payMid": 9000,
@@ -1826,6 +2996,48 @@
    "admission": "work",
    "years": 3,
    "masterOnly": false,
+   "offers": [
+    {
+     "institution": "ZHAW",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "FHNW",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "BFH",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "HSLU",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "OST",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "FHGR",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "HESSO",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "SUPSI",
+     "strong": false,
+     "premium": 0.0
+    }
+   ],
    "estimate": {
     "payEntry": 5900,
     "payMid": 7600,
@@ -1855,6 +3067,48 @@
    "admission": "work",
    "years": 3,
    "masterOnly": false,
+   "offers": [
+    {
+     "institution": "ZHAW",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "FHNW",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "BFH",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "HSLU",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "OST",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "FHGR",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "HESSO",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "SUPSI",
+     "strong": false,
+     "premium": 0.0
+    }
+   ],
    "estimate": {
     "payEntry": 6900,
     "payMid": 8700,
@@ -1879,6 +3133,23 @@
    "admission": "work",
    "years": 3,
    "masterOnly": false,
+   "offers": [
+    {
+     "institution": "HSLU",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "FHNW",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "HESSO",
+     "strong": false,
+     "premium": 0.0
+    }
+   ],
    "estimate": {
     "payEntry": 7000,
     "payMid": 8800,
@@ -1902,6 +3173,13 @@
    "admission": "work",
    "years": 3,
    "masterOnly": false,
+   "offers": [
+    {
+     "institution": "BFH",
+     "strong": false,
+     "premium": 0.0
+    }
+   ],
    "estimate": {
     "payEntry": 6600,
     "payMid": 8300,
@@ -1925,6 +3203,18 @@
    "admission": "work",
    "years": 3,
    "masterOnly": false,
+   "offers": [
+    {
+     "institution": "OST",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "HESSO",
+     "strong": false,
+     "premium": 0.0
+    }
+   ],
    "estimate": {
     "payEntry": 5800,
     "payMid": 7300,
@@ -1949,6 +3239,23 @@
    "admission": "work",
    "years": 3,
    "masterOnly": false,
+   "offers": [
+    {
+     "institution": "OST",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "FHNW",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "HESSO",
+     "strong": false,
+     "premium": 0.0
+    }
+   ],
    "estimate": {
     "payEntry": 6500,
     "payMid": 8200,
@@ -1973,6 +3280,23 @@
    "admission": "work",
    "years": 3,
    "masterOnly": false,
+   "offers": [
+    {
+     "institution": "ZHAW",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "HESSO",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "FHNW",
+     "strong": false,
+     "premium": 0.0
+    }
+   ],
    "estimate": {
     "payEntry": 5900,
     "payMid": 7600,
@@ -1997,6 +3321,23 @@
    "admission": "work",
    "years": 3,
    "masterOnly": false,
+   "offers": [
+    {
+     "institution": "ZHAW",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "FHNW",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "HESSO",
+     "strong": false,
+     "premium": 0.0
+    }
+   ],
    "estimate": {
     "payEntry": 6100,
     "payMid": 7800,
@@ -2020,6 +3361,18 @@
    "admission": "work",
    "years": 3,
    "masterOnly": false,
+   "offers": [
+    {
+     "institution": "BFH",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "ZHAW",
+     "strong": false,
+     "premium": 0.0
+    }
+   ],
    "estimate": {
     "payEntry": 6000,
     "payMid": 7600,
@@ -2044,6 +3397,23 @@
    "admission": "work",
    "years": 3,
    "masterOnly": false,
+   "offers": [
+    {
+     "institution": "ZHAW",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "OST",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "HESSO",
+     "strong": false,
+     "premium": 0.0
+    }
+   ],
    "estimate": {
     "payEntry": 5900,
     "payMid": 7500,
@@ -2066,6 +3436,13 @@
    "admission": "work",
    "years": 3,
    "masterOnly": false,
+   "offers": [
+    {
+     "institution": "BFH",
+     "strong": false,
+     "premium": 0.0
+    }
+   ],
    "estimate": {
     "payEntry": 5900,
     "payMid": 7500,
@@ -2089,6 +3466,18 @@
    "admission": "work",
    "years": 3,
    "masterOnly": false,
+   "offers": [
+    {
+     "institution": "BFH",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "HESSO",
+     "strong": false,
+     "premium": 0.0
+    }
+   ],
    "estimate": {
     "payEntry": 5900,
     "payMid": 7500,
@@ -2120,6 +3509,62 @@
    "admission": "open",
    "years": 4.5,
    "masterOnly": false,
+   "offers": [
+    {
+     "institution": "UZH",
+     "strong": true,
+     "premium": 0.03,
+     "note": "Banking & finance specialisation next to the Zurich financial centre."
+    },
+    {
+     "institution": "UNIBE",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIBAS",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIGE",
+     "strong": true,
+     "premium": 0.02,
+     "note": "GSEM: finance, commodity trading hub Geneva."
+    },
+    {
+     "institution": "UNIL",
+     "strong": true,
+     "premium": 0.03,
+     "note": "HEC Lausanne: finance and actuarial science with strong industry links."
+    },
+    {
+     "institution": "UNIFR",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNINE",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNILU",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNISG",
+     "strong": true,
+     "premium": 0.12,
+     "note": "HSG: Switzerland's leading business school (top FT rankings); strongest recruiting pipeline to banks, consulting and Big Four."
+    },
+    {
+     "institution": "USI",
+     "strong": false,
+     "premium": 0.0
+    }
+   ],
    "estimate": {
     "payEntry": 7000,
     "payMid": 10000,
@@ -2152,6 +3597,61 @@
    "admission": "open",
    "years": 4.5,
    "masterOnly": false,
+   "offers": [
+    {
+     "institution": "UZH",
+     "strong": true,
+     "premium": 0.04,
+     "note": "Top-ranked economics research department in Switzerland."
+    },
+    {
+     "institution": "UNIBE",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIBAS",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIGE",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIL",
+     "strong": true,
+     "premium": 0.02,
+     "note": "HEC Lausanne economics."
+    },
+    {
+     "institution": "UNIFR",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNINE",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNILU",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNISG",
+     "strong": true,
+     "premium": 0.06,
+     "note": "HSG economics feeds into banking, consulting and policy."
+    },
+    {
+     "institution": "USI",
+     "strong": false,
+     "premium": 0.0
+    }
+   ],
    "estimate": {
     "payEntry": 7200,
     "payMid": 10500,
@@ -2182,6 +3682,56 @@
    "admission": "open",
    "years": 6,
    "masterOnly": false,
+   "offers": [
+    {
+     "institution": "UZH",
+     "strong": true,
+     "premium": 0.03,
+     "note": "Largest law faculty; Zurich business law firms recruit heavily."
+    },
+    {
+     "institution": "UNIBE",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIBAS",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIGE",
+     "strong": true,
+     "premium": 0.03,
+     "note": "International and commercial law, Geneva arbitration hub."
+    },
+    {
+     "institution": "UNIL",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIFR",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNINE",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNILU",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNISG",
+     "strong": true,
+     "premium": 0.04,
+     "note": "Business law and law & economics; strong ties to commercial law firms."
+    }
+   ],
    "estimate": {
     "payEntry": 5600,
     "payMid": 10000,
@@ -2206,6 +3756,20 @@
    "admission": "open",
    "years": 5,
    "masterOnly": false,
+   "offers": [
+    {
+     "institution": "UNIGE",
+     "strong": true,
+     "premium": 0.05,
+     "note": "Next to the UN and international organisations in Geneva."
+    },
+    {
+     "institution": "UNISG",
+     "strong": true,
+     "premium": 0.05,
+     "note": "International Affairs with business focus."
+    }
+   ],
    "estimate": {
     "payEntry": 6000,
     "payMid": 8500,
@@ -2236,6 +3800,55 @@
    "admission": "work",
    "years": 3,
    "masterOnly": false,
+   "offers": [
+    {
+     "institution": "ZHAW",
+     "strong": true,
+     "premium": 0.02,
+     "note": "School of Management and Law, close to the Zurich job market."
+    },
+    {
+     "institution": "FHNW",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "BFH",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "HSLU",
+     "strong": true,
+     "premium": 0.02,
+     "note": "Banking & finance specialisation."
+    },
+    {
+     "institution": "OST",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "FHGR",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "HESSO",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "SUPSI",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "KALAIDOS",
+     "strong": false,
+     "premium": 0.0
+    }
+   ],
    "estimate": {
     "payEntry": 6700,
     "payMid": 8800,
@@ -2261,6 +3874,23 @@
    "admission": "work",
    "years": 3,
    "masterOnly": false,
+   "offers": [
+    {
+     "institution": "HSLU",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "FHGR",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "HESSO",
+     "strong": false,
+     "premium": 0.0
+    }
+   ],
    "estimate": {
     "payEntry": 5500,
     "payMid": 7000,
@@ -2283,6 +3913,14 @@
    "admission": "selection",
    "years": 4,
    "masterOnly": false,
+   "offers": [
+    {
+     "institution": "HESSO",
+     "strong": true,
+     "premium": 0.0,
+     "note": "EHL Lausanne: ranked among the best hospitality schools worldwide."
+    }
+   ],
    "estimate": {
     "payEntry": 6000,
     "payMid": 8500,
@@ -2306,6 +3944,13 @@
    "admission": "work",
    "years": 3,
    "masterOnly": false,
+   "offers": [
+    {
+     "institution": "ZHAW",
+     "strong": false,
+     "premium": 0.0
+    }
+   ],
    "estimate": {
     "payEntry": 6300,
     "payMid": 8000,
@@ -2329,6 +3974,18 @@
    "admission": "work",
    "years": 3,
    "masterOnly": false,
+   "offers": [
+    {
+     "institution": "FHGR",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "HESSO",
+     "strong": false,
+     "premium": 0.0
+    }
+   ],
    "estimate": {
     "payEntry": 6000,
     "payMid": 7500,
@@ -2358,6 +4015,48 @@
    "admission": "open",
    "years": 5,
    "masterOnly": false,
+   "offers": [
+    {
+     "institution": "UZH",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIBE",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIBAS",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIGE",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIL",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIFR",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNINE",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIDIST",
+     "strong": false,
+     "premium": 0.0
+    }
+   ],
    "estimate": {
     "payEntry": 5800,
     "payMid": 8000,
@@ -2383,6 +4082,23 @@
    "admission": "work",
    "years": 4.5,
    "masterOnly": false,
+   "offers": [
+    {
+     "institution": "ZHAW",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "FHNW",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "KALAIDOS",
+     "strong": false,
+     "premium": 0.0
+    }
+   ],
    "estimate": {
     "payEntry": 6300,
     "payMid": 8000,
@@ -2412,6 +4128,43 @@
    "admission": "work",
    "years": 3,
    "masterOnly": false,
+   "offers": [
+    {
+     "institution": "ZHAW",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "FHNW",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "BFH",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "HSLU",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "OST",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "HESSO",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "SUPSI",
+     "strong": false,
+     "premium": 0.0
+    }
+   ],
    "estimate": {
     "payEntry": 6500,
     "payMid": 7600,
@@ -2442,6 +4195,48 @@
    "admission": "open",
    "years": 5,
    "masterOnly": false,
+   "offers": [
+    {
+     "institution": "UZH",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIBE",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIBAS",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIGE",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIL",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIFR",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNINE",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNILU",
+     "strong": false,
+     "premium": 0.0
+    }
+   ],
    "estimate": {
     "payEntry": 5800,
     "payMid": 7900,
@@ -2470,6 +4265,43 @@
    "admission": "open",
    "years": 5,
    "masterOnly": false,
+   "offers": [
+    {
+     "institution": "UZH",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIBE",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIBAS",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIGE",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIL",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNILU",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNISG",
+     "strong": false,
+     "premium": 0.0
+    }
+   ],
    "estimate": {
     "payEntry": 6000,
     "payMid": 8300,
@@ -2496,6 +4328,33 @@
    "admission": "open",
    "years": 4.5,
    "masterOnly": false,
+   "offers": [
+    {
+     "institution": "UZH",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIFR",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "USI",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNINE",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIBE",
+     "strong": false,
+     "premium": 0.0
+    }
+   ],
    "estimate": {
     "payEntry": 5800,
     "payMid": 7800,
@@ -2520,6 +4379,23 @@
    "admission": "work",
    "years": 3,
    "masterOnly": false,
+   "offers": [
+    {
+     "institution": "ZHAW",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "FHGR",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "HSLU",
+     "strong": false,
+     "premium": 0.0
+    }
+   ],
    "estimate": {
     "payEntry": 5600,
     "payMid": 7200,
@@ -2545,6 +4421,28 @@
    "admission": "open",
    "years": 5,
    "masterOnly": false,
+   "offers": [
+    {
+     "institution": "UZH",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIBE",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIGE",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIFR",
+     "strong": false,
+     "premium": 0.0
+    }
+   ],
    "estimate": {
     "payEntry": 6200,
     "payMid": 8300,
@@ -2573,6 +4471,43 @@
    "admission": "open",
    "years": 5,
    "masterOnly": false,
+   "offers": [
+    {
+     "institution": "UZH",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIBE",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIBAS",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIL",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIFR",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNINE",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNILU",
+     "strong": false,
+     "premium": 0.0
+    }
+   ],
    "estimate": {
     "payEntry": 5500,
     "payMid": 7500,
@@ -2599,6 +4534,33 @@
    "admission": "open",
    "years": 5,
    "masterOnly": true,
+   "offers": [
+    {
+     "institution": "UZH",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIBE",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIBAS",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIGE",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIL",
+     "strong": false,
+     "premium": 0.0
+    }
+   ],
    "estimate": {
     "payEntry": 5300,
     "payMid": 7300,
@@ -2623,6 +4585,18 @@
    "admission": "open",
    "years": 5,
    "masterOnly": true,
+   "offers": [
+    {
+     "institution": "UNIBAS",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIBE",
+     "strong": false,
+     "premium": 0.0
+    }
+   ],
    "estimate": {
     "payEntry": 5300,
     "payMid": 7400,
@@ -2652,6 +4626,48 @@
    "admission": "open",
    "years": 5,
    "masterOnly": false,
+   "offers": [
+    {
+     "institution": "UZH",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIBE",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIBAS",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIGE",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIL",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIFR",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNINE",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNILU",
+     "strong": false,
+     "premium": 0.0
+    }
+   ],
    "estimate": {
     "payEntry": 5800,
     "payMid": 7900,
@@ -2682,6 +4698,48 @@
    "admission": "open",
    "years": 5,
    "masterOnly": false,
+   "offers": [
+    {
+     "institution": "UZH",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIBE",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIBAS",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIGE",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIL",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIFR",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNINE",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNILU",
+     "strong": false,
+     "premium": 0.0
+    }
+   ],
    "estimate": {
     "payEntry": 5400,
     "payMid": 7600,
@@ -2710,6 +4768,43 @@
    "admission": "open",
    "years": 5,
    "masterOnly": false,
+   "offers": [
+    {
+     "institution": "UZH",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIBE",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIBAS",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIGE",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIL",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIFR",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNINE",
+     "strong": false,
+     "premium": 0.0
+    }
+   ],
    "estimate": {
     "payEntry": 5000,
     "payMid": 6900,
@@ -2737,6 +4832,38 @@
    "admission": "open",
    "years": 5,
    "masterOnly": false,
+   "offers": [
+    {
+     "institution": "UZH",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIBE",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIBAS",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIGE",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIL",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNINE",
+     "strong": false,
+     "premium": 0.0
+    }
+   ],
    "estimate": {
     "payEntry": 4800,
     "payMid": 6600,
@@ -2765,6 +4892,43 @@
    "admission": "open",
    "years": 5,
    "masterOnly": false,
+   "offers": [
+    {
+     "institution": "UZH",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIBE",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIBAS",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIGE",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIL",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIFR",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNINE",
+     "strong": false,
+     "premium": 0.0
+    }
+   ],
    "estimate": {
     "payEntry": 5900,
     "payMid": 8000,
@@ -2793,6 +4957,43 @@
    "admission": "open",
    "years": 5,
    "masterOnly": false,
+   "offers": [
+    {
+     "institution": "UZH",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIBE",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIBAS",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIGE",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIL",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIFR",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNINE",
+     "strong": false,
+     "premium": 0.0
+    }
+   ],
    "estimate": {
     "payEntry": 5800,
     "payMid": 7900,
@@ -2821,6 +5022,43 @@
    "admission": "open",
    "years": 5,
    "masterOnly": false,
+   "offers": [
+    {
+     "institution": "UZH",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIBE",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIBAS",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIGE",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIL",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIFR",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNINE",
+     "strong": false,
+     "premium": 0.0
+    }
+   ],
    "estimate": {
     "payEntry": 5900,
     "payMid": 8000,
@@ -2849,6 +5087,43 @@
    "admission": "open",
    "years": 5,
    "masterOnly": false,
+   "offers": [
+    {
+     "institution": "UZH",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIBE",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIBAS",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIGE",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIL",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIFR",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "USI",
+     "strong": false,
+     "premium": 0.0
+    }
+   ],
    "estimate": {
     "payEntry": 5900,
     "payMid": 8000,
@@ -2876,6 +5151,38 @@
    "admission": "open",
    "years": 5,
    "masterOnly": false,
+   "offers": [
+    {
+     "institution": "UZH",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIBE",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIBAS",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIGE",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIL",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNINE",
+     "strong": false,
+     "premium": 0.0
+    }
+   ],
    "estimate": {
     "payEntry": 5500,
     "payMid": 7500,
@@ -2899,6 +5206,18 @@
    "admission": "open",
    "years": 5,
    "masterOnly": false,
+   "offers": [
+    {
+     "institution": "UZH",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIFR",
+     "strong": false,
+     "premium": 0.0
+    }
+   ],
    "estimate": {
     "payEntry": 6000,
     "payMid": 8200,
@@ -2927,6 +5246,38 @@
    "admission": "open",
    "years": 5,
    "masterOnly": false,
+   "offers": [
+    {
+     "institution": "UZH",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIBE",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIBAS",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIGE",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIL",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIFR",
+     "strong": false,
+     "premium": 0.0
+    }
+   ],
    "estimate": {
     "payEntry": 6200,
     "payMid": 8400,
@@ -2953,6 +5304,28 @@
    "admission": "open",
    "years": 5,
    "masterOnly": false,
+   "offers": [
+    {
+     "institution": "UZH",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIBE",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIGE",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIL",
+     "strong": false,
+     "premium": 0.0
+    }
+   ],
    "estimate": {
     "payEntry": 5500,
     "payMid": 7600,
@@ -2977,6 +5350,23 @@
    "admission": "open",
    "years": 5,
    "masterOnly": false,
+   "offers": [
+    {
+     "institution": "UZH",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIGE",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIL",
+     "strong": false,
+     "premium": 0.0
+    }
+   ],
    "estimate": {
     "payEntry": 5200,
     "payMid": 7200,
@@ -2999,6 +5389,14 @@
    "admission": "open",
    "years": 5,
    "masterOnly": false,
+   "offers": [
+    {
+     "institution": "UNIGE",
+     "strong": true,
+     "premium": 0.0,
+     "note": "FTI Geneva: renowned interpreting school (UN, EU)."
+    }
+   ],
    "estimate": {
     "payEntry": 5800,
     "payMid": 7900,
@@ -3022,6 +5420,13 @@
    "admission": "work",
    "years": 3,
    "masterOnly": false,
+   "offers": [
+    {
+     "institution": "ZHAW",
+     "strong": false,
+     "premium": 0.0
+    }
+   ],
    "estimate": {
     "payEntry": 5500,
     "payMid": 7200,
@@ -3051,6 +5456,43 @@
    "admission": "open",
    "years": 5,
    "masterOnly": false,
+   "offers": [
+    {
+     "institution": "UZH",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIBE",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIBAS",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIGE",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIL",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIFR",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNILU",
+     "strong": false,
+     "premium": 0.0
+    }
+   ],
    "estimate": {
     "payEntry": 6500,
     "payMid": 8200,
@@ -3079,6 +5521,38 @@
    "admission": "open",
    "years": 5,
    "masterOnly": false,
+   "offers": [
+    {
+     "institution": "UZH",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIBE",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIBAS",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIL",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIFR",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNILU",
+     "strong": false,
+     "premium": 0.0
+    }
+   ],
    "estimate": {
     "payEntry": 5200,
     "payMid": 7200,
@@ -3105,6 +5579,33 @@
    "admission": "open",
    "years": 5,
    "masterOnly": false,
+   "offers": [
+    {
+     "institution": "UZH",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIBE",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIBAS",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIGE",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIFR",
+     "strong": false,
+     "premium": 0.0
+    }
+   ],
    "estimate": {
     "payEntry": 5000,
     "payMid": 7000,
@@ -3128,6 +5629,18 @@
    "admission": "open",
    "years": 5,
    "masterOnly": false,
+   "offers": [
+    {
+     "institution": "UZH",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIL",
+     "strong": false,
+     "premium": 0.0
+    }
+   ],
    "estimate": {
     "payEntry": 4900,
     "payMid": 6800,
@@ -3150,6 +5663,13 @@
    "admission": "open",
    "years": 5,
    "masterOnly": false,
+   "offers": [
+    {
+     "institution": "UNIBE",
+     "strong": false,
+     "premium": 0.0
+    }
+   ],
    "estimate": {
     "payEntry": 4800,
     "payMid": 6600,
@@ -3173,6 +5693,18 @@
    "admission": "open",
    "years": 5,
    "masterOnly": false,
+   "offers": [
+    {
+     "institution": "UZH",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIGE",
+     "strong": false,
+     "premium": 0.0
+    }
+   ],
    "estimate": {
     "payEntry": 5500,
     "payMid": 7800,
@@ -3196,6 +5728,18 @@
    "admission": "open",
    "years": 5,
    "masterOnly": false,
+   "offers": [
+    {
+     "institution": "UZH",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIGE",
+     "strong": false,
+     "premium": 0.0
+    }
+   ],
    "estimate": {
     "payEntry": 5400,
     "payMid": 7600,
@@ -3219,6 +5763,18 @@
    "admission": "open",
    "years": 5,
    "masterOnly": false,
+   "offers": [
+    {
+     "institution": "UNIL",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UZH",
+     "strong": false,
+     "premium": 0.0
+    }
+   ],
    "estimate": {
     "payEntry": 5000,
     "payMid": 7000,
@@ -3244,6 +5800,28 @@
    "admission": "open",
    "years": 5,
    "masterOnly": false,
+   "offers": [
+    {
+     "institution": "UZH",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIBE",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIBAS",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIGE",
+     "strong": false,
+     "premium": 0.0
+    }
+   ],
    "estimate": {
     "payEntry": 5200,
     "payMid": 7400,
@@ -3268,6 +5846,23 @@
    "admission": "open",
    "years": 5,
    "masterOnly": false,
+   "offers": [
+    {
+     "institution": "UNIBAS",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNILU",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIBE",
+     "strong": false,
+     "premium": 0.0
+    }
+   ],
    "estimate": {
     "payEntry": 5200,
     "payMid": 7300,
@@ -3295,6 +5890,38 @@
    "admission": "open",
    "years": 5,
    "masterOnly": false,
+   "offers": [
+    {
+     "institution": "UZH",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIBE",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIBAS",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIGE",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIL",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIFR",
+     "strong": false,
+     "premium": 0.0
+    }
+   ],
    "estimate": {
     "payEntry": 5300,
     "payMid": 7400,
@@ -3318,6 +5945,18 @@
    "admission": "open",
    "years": 5,
    "masterOnly": false,
+   "offers": [
+    {
+     "institution": "UZH",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIBAS",
+     "strong": false,
+     "premium": 0.0
+    }
+   ],
    "estimate": {
     "payEntry": 5300,
     "payMid": 7400,
@@ -3341,6 +5980,18 @@
    "admission": "open",
    "years": 5,
    "masterOnly": false,
+   "offers": [
+    {
+     "institution": "UNIGE",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UZH",
+     "strong": false,
+     "premium": 0.0
+    }
+   ],
    "estimate": {
     "payEntry": 5200,
     "payMid": 7200,
@@ -3363,6 +6014,13 @@
    "admission": "open",
    "years": 5,
    "masterOnly": false,
+   "offers": [
+    {
+     "institution": "UNIGE",
+     "strong": false,
+     "premium": 0.0
+    }
+   ],
    "estimate": {
     "payEntry": 5000,
     "payMid": 7000,
@@ -3401,6 +6059,88 @@
    "admission": "open",
    "years": 3,
    "masterOnly": false,
+   "offers": [
+    {
+     "institution": "PHZH",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "PHBERN",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "PHLU",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "PHSG",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "PHFHNW",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "PHTG",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "PHGR",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "PHZG",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "PHSZ",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "PHSH",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "HEPVD",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "HEPBEJUNE",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "HEPFR",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "HEPVS",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "SUPSI",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIGE",
+     "strong": false,
+     "premium": 0.0
+    }
+   ],
    "estimate": {
     "payEntry": 7500,
     "payMid": 8600,
@@ -3435,6 +6175,68 @@
    "admission": "open",
    "years": 4.5,
    "masterOnly": false,
+   "offers": [
+    {
+     "institution": "PHZH",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "PHBERN",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "PHLU",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "PHSG",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "PHFHNW",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "PHZG",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "HEPVD",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "HEPBEJUNE",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "HEPFR",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "HEPVS",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "SUPSI",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIGE",
+     "strong": false,
+     "premium": 0.0
+    }
+   ],
    "estimate": {
     "payEntry": 8200,
     "payMid": 9500,
@@ -3468,6 +6270,68 @@
    "admission": "open",
    "years": 6,
    "masterOnly": false,
+   "offers": [
+    {
+     "institution": "ETHZ",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UZH",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIBE",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIBAS",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIGE",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIFR",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "HEPVD",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "HEPBEJUNE",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "PHZH",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "PHFHNW",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "PHSG",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "SUPSI",
+     "strong": false,
+     "premium": 0.0
+    }
+   ],
    "estimate": {
     "payEntry": 9200,
     "payMid": 11000,
@@ -3496,6 +6360,38 @@
    "admission": "open",
    "years": 5,
    "masterOnly": true,
+   "offers": [
+    {
+     "institution": "HFH",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "PHFHNW",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "PHBERN",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "PHLU",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "UNIFR",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "HEPVD",
+     "strong": false,
+     "premium": 0.0
+    }
+   ],
    "estimate": {
     "payEntry": 8300,
     "payMid": 9500,
@@ -3524,6 +6420,39 @@
    "admission": "selection",
    "years": 5,
    "masterOnly": false,
+   "offers": [
+    {
+     "institution": "ZHDK",
+     "strong": true,
+     "premium": 0.02
+    },
+    {
+     "institution": "HKB",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "FHNW",
+     "strong": true,
+     "premium": 0.02,
+     "note": "Musik-Akademie Basel incl. Schola Cantorum (early music, world reference)."
+    },
+    {
+     "institution": "HSLU",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "HESSO",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "SUPSI",
+     "strong": false,
+     "premium": 0.0
+    }
+   ],
    "estimate": {
     "payEntry": 4900,
     "payMid": 6800,
@@ -3552,6 +6481,38 @@
    "admission": "selection",
    "years": 3,
    "masterOnly": false,
+   "offers": [
+    {
+     "institution": "ZHDK",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "HKB",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "FHNW",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "HSLU",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "HESSO",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "SUPSI",
+     "strong": false,
+     "premium": 0.0
+    }
+   ],
    "estimate": {
     "payEntry": 3800,
     "payMid": 5200,
@@ -3580,6 +6541,40 @@
    "admission": "selection",
    "years": 3,
    "masterOnly": false,
+   "offers": [
+    {
+     "institution": "ZHDK",
+     "strong": true,
+     "premium": 0.03,
+     "note": "Largest Swiss art university."
+    },
+    {
+     "institution": "HKB",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "FHNW",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "HSLU",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "HESSO",
+     "strong": true,
+     "premium": 0.03,
+     "note": "ECAL Lausanne: internationally renowned design school."
+    },
+    {
+     "institution": "SUPSI",
+     "strong": false,
+     "premium": 0.0
+    }
+   ],
    "estimate": {
     "payEntry": 5000,
     "payMid": 6500,
@@ -3608,6 +6603,39 @@
    "admission": "selection",
    "years": 3,
    "masterOnly": false,
+   "offers": [
+    {
+     "institution": "ZHDK",
+     "strong": true,
+     "premium": 0.03
+    },
+    {
+     "institution": "HKB",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "FHNW",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "HSLU",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "HESSO",
+     "strong": true,
+     "premium": 0.03,
+     "note": "ECAL / HEAD Genève."
+    },
+    {
+     "institution": "SUPSI",
+     "strong": false,
+     "premium": 0.0
+    }
+   ],
    "estimate": {
     "payEntry": 5100,
     "payMid": 6700,
@@ -3632,6 +6660,24 @@
    "admission": "selection",
    "years": 3,
    "masterOnly": false,
+   "offers": [
+    {
+     "institution": "ZHDK",
+     "strong": true,
+     "premium": 0.03
+    },
+    {
+     "institution": "HSLU",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "HESSO",
+     "strong": true,
+     "premium": 0.03,
+     "note": "ECAL / HEAD Genève."
+    }
+   ],
    "estimate": {
     "payEntry": 4500,
     "payMid": 6000,
@@ -3657,6 +6703,28 @@
    "admission": "selection",
    "years": 5,
    "masterOnly": false,
+   "offers": [
+    {
+     "institution": "ZHDK",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "HKB",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "HESSO",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "SUPSI",
+     "strong": false,
+     "premium": 0.0
+    }
+   ],
    "estimate": {
     "payEntry": 4300,
     "payMid": 5800,
@@ -3680,6 +6748,13 @@
    "admission": "selection",
    "years": 3,
    "masterOnly": false,
+   "offers": [
+    {
+     "institution": "HKB",
+     "strong": false,
+     "premium": 0.0
+    }
+   ],
    "estimate": {
     "payEntry": 3800,
     "payMid": 5000,
@@ -3704,6 +6779,23 @@
    "admission": "selection",
    "years": 3,
    "masterOnly": false,
+   "offers": [
+    {
+     "institution": "ZHDK",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "HKB",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "HSLU",
+     "strong": false,
+     "premium": 0.0
+    }
+   ],
    "estimate": {
     "payEntry": 5500,
     "payMid": 7300,
@@ -3728,6 +6820,18 @@
    "admission": "selection",
    "years": 3,
    "masterOnly": false,
+   "offers": [
+    {
+     "institution": "HSLU",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "HESSO",
+     "strong": false,
+     "premium": 0.0
+    }
+   ],
    "estimate": {
     "payEntry": 5500,
     "payMid": 7000,
@@ -3752,6 +6856,23 @@
    "admission": "selection",
    "years": 5,
    "masterOnly": false,
+   "offers": [
+    {
+     "institution": "HKB",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "HESSO",
+     "strong": false,
+     "premium": 0.0
+    },
+    {
+     "institution": "SUPSI",
+     "strong": false,
+     "premium": 0.0
+    }
+   ],
    "estimate": {
     "payEntry": 5200,
     "payMid": 6800,

@@ -119,6 +119,19 @@ export interface Institution {
   city: string;
   languages: string[];
   url: string;
+  /** Regional pay level where graduates typically work (1 = Swiss median), own estimate. */
+  regionPay: number;
+}
+/** One institution offering a programme, with institution-level pay estimates. */
+export interface Offer {
+  institution: string;
+  /** Clearly stronger with employers in this field (own judgment). */
+  strong: boolean;
+  premium: number;
+  note?: string;
+  factor: number;
+  payEntry: number | null;
+  payMid: number | null;
 }
 /** A blended number: official statistic, own estimate, and the value used for scoring. */
 export interface Blended {
@@ -137,6 +150,7 @@ export interface Programme {
   years: number;
   masterOnly: boolean;
   note?: string;
+  offers: Offer[];
   payEntry: Blended;
   payMid: Blended;
   unemployment: Blended;
